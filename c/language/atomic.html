@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/c/language/atomic by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:18 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/c/language/atomic by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Atomic types - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Atomic types</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit">
+<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
@@ -109,93 +105,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_atomic skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Flanguage%2Fatomic&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Flanguage%2Fatomic" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="atomic.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:c/language/atomic&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="atomic.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -285,11 +195,11 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="siteSub">From cppreference.com</div>
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>&lrm; | <a href="../language.html" title="c/language">language</a></span></div>
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../language.html" title="c/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
@@ -306,8 +216,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="c/symbol index">Symbol index</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
@@ -318,9 +228,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="declarations.html" title="c/language/declarations"> Declarations</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="declarations.html" title="c/language/declarations"> Declarations</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="pointer.html" title="c/language/pointer">Pointer</a></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><a href="pointer.html" title="c/language/pointer">Pointer</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="array.html" title="c/language/array">Array</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enum.html" title="c/language/enum"><span class="t-lines"><span>enum</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="struct.html" title="c/language/struct"><span class="t-lines"><span>struct</span></span></a></div></div></td></tr>
@@ -337,9 +247,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="typedef.html" title="c/language/typedef"><span class="t-lines"><span>typedef</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="_Static_assert.html" title="c/language/ Static assert"><span class="t-lines"><span>Static assertions</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="attributes.html" title="c/language/attributes">Attributes</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/declarations/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+</tbody></table></div>
+</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/declarations/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
@@ -349,11 +259,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-6"><a href="#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
 <li class="toclevel-1 tocsection-7"><a href="#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
@@ -381,24 +291,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Use as a type specifier; this designates a new atomic type</div>
 <div class="t-li1"><span class="t-li">2)</span> Use as a type qualifier; this designates the atomic version of <span class="t-spar">type-name</span>. In this role, it may be mixed with <a href="const.html" title="c/language/const">const</a>, <a href="volatile.html" title="c/language/volatile">volatile</a>, and <a href="restrict.html" title="c/language/restrict">restrict</a>, although unlike other qualifiers, the atomic version of <span class="t-spar">type-name</span> may have a different size, alignment, and object representation.</div>
 <table class="t-par-begin">
 
 
-<tr class="t-par">
+<tbody><tr class="t-par">
 <td>  <span class="t-spar">type-name</span>
 </td>
 <td> -
 </td>
 <td>  any type other than array or function. For <span class="t-v">(1)</span>, <span class="t-spar">type-name</span> also cannot be atomic or cvr-qualified
-</td></tr></table>
+</td></tr></tbody></table>
 <p>The header <code>&lt;stdatomic.h&gt;</code> defines <a href="../thread.html#Atomic_operations" title="c/thread">37 convenience type aliases</a>, from <a href="../thread.html#Atomic_operations" title="c/thread"><tt>atomic_bool</tt></a> to <a href="../thread.html#Atomic_operations" title="c/thread"><tt>atomic_uintmax_t</tt></a>, which simplify the use of this keyword with built-in and library types.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1">_Atomic <span class="kw4">const</span> <span class="kw4">int</span> <span class="sy2">*</span> p1<span class="sy4">;</span>  <span class="co1">// p is a pointer to an atomic const int</span>
 <span class="kw4">const</span> <a href="../atomic.html"><span class="kw965">atomic_int</span></a> <span class="sy2">*</span> p2<span class="sy4">;</span>   <span class="co1">// same</span>
-<span class="kw4">const</span> _Atomic<span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy2">*</span> p3<span class="sy4">;</span> <span class="co1">// same</span></pre></div></div>
+<span class="kw4">const</span> _Atomic<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy2">*</span> p3<span class="sy4">;</span> <span class="co1">// same</span></pre></div></div>
 <p>If the macro constant <code>__STDC_NO_ATOMICS__</code> is defined by the compiler, the keyword <span class="t-c"><span class="mw-geshi c source-c">_Atomic</span></span> is not provided.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
@@ -416,12 +326,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p><p>Built-in <a href="operator_incdec.html" title="c/language/operator incdec">increment and decrement operators</a> and <a href="operator_assignment.html" title="c/language/operator assignment">compound assignment</a> are read-modify-write atomic operations with total sequentially consistent ordering (as if using <span class="t-lc"><a href="../atomic/memory_order.html" title="c/atomic/memory order">memory_order_seq_cst</a></span>). If less strict synchronization semantics are desired, the <a href="../thread.html#Atomic_operations" title="c/thread">standard library functions</a> may be used instead.
 </p><p>Atomic properties are only meaningful for <a href="value_category.html" title="c/language/value category">lvalue expressions</a>. Lvalue-to-rvalue conversion (which models a memory read from an atomic location to a CPU register) strips atomicity along with other qualifiers.
 </p>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br />Reason: more, review interaction with memory_order and atomic library pages </td></tr></table>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: more, review interaction with memory_order and atomic library pages </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Accessing a member of an atomic struct/union is undefined behavior.
 </p><p>The library type <span class="t-c"><span class="mw-geshi c source-c"><a href="../program/sig_atomic_t.html"><span class="kw499">sig_atomic_t</span></a></span></span> does not provide inter-thread synchronization or memory ordering, only atomicity.
 </p><p>The <a href="volatile.html" title="c/language/volatile">volatile</a> types do not provide inter-thread synchronization, memory ordering, or atomicity.
-</p><p>Implementations are recommended to ensure that the representation of <span class="t-c"><span class="mw-geshi c source-c">_Atomic<span class="br0">&#40;</span>T<span class="br0">&#41;</span></span></span> in C is same as that of <span class="t-c"><span class="mw-geshi c source-c">std<span class="sy4">::</span><span class="me2">atomic</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> in C++ for every possible type <code>T</code>. The mechanisms used to ensure atomicity and memory ordering should be compatible.
+</p><p>Implementations are recommended to ensure that the representation of <span class="t-c"><span class="mw-geshi c source-c">_Atomic<span class="br0">(</span>T<span class="br0">)</span></span></span> in C is same as that of <span class="t-c"><span class="mw-geshi c source-c">std<span class="sy4">::</span><span class="me2">atomic</span><span class="sy1">&lt;</span>T<span class="sy1">&gt;</span></span></span> in C++ for every possible type <code>T</code>. The mechanisms used to ensure atomicity and memory ordering should be compatible.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit&amp;section=4" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/_Atomic.html" title="c/keyword/ Atomic"><tt>_Atomic</tt></a>
@@ -431,32 +341,32 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;threads.h&gt;</span>
 <span class="co2">#include &lt;stdatomic.h&gt;</span>
-&#160;
+&nbsp;
 <a href="../atomic.html"><span class="kw965">atomic_int</span></a> acnt<span class="sy4">;</span>
 <span class="kw4">int</span> cnt<span class="sy4">;</span>
-&#160;
-<span class="kw4">int</span> f<span class="br0">&#40;</span><span class="kw4">void</span><span class="sy2">*</span> thr_data<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">1000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> thr_data<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">1000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span> <span class="br0">{</span>
         <span class="sy2">++</span>cnt<span class="sy4">;</span>
         <span class="sy2">++</span>acnt<span class="sy4">;</span>
         <span class="co1">// for this example, relaxed memory order is sufficient, e.g.</span>
         <span class="co1">// atomic_fetch_add_explicit(&amp;acnt, 1, memory_order_relaxed);</span>
-    <span class="br0">&#125;</span>
+    <span class="br0">}</span>
     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <a href="../thread.html"><span class="kw996">thrd_t</span></a> thr<span class="br0">&#91;</span><span class="nu0">10</span><span class="br0">&#93;</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-        <a href="../thread/thrd_create.html"><span class="kw997">thrd_create</span></a><span class="br0">&#40;</span><span class="sy3">&amp;</span>thr<span class="br0">&#91;</span>n<span class="br0">&#93;</span>, f, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">&#40;</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-        <a href="../thread/thrd_join.html"><span class="kw1004">thrd_join</span></a><span class="br0">&#40;</span>thr<span class="br0">&#91;</span>n<span class="br0">&#93;</span>, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;The atomic counter is&#160;%u<span class="es1">\n</span>&quot;</span>, acnt<span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;The non-atomic counter is&#160;%u<span class="es1">\n</span>&quot;</span>, cnt<span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../thread.html"><span class="kw996">thrd_t</span></a> thr<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        <a href="../thread/thrd_create.html"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>thr<span class="br0">[</span>n<span class="br0">]</span>, f, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        <a href="../thread/thrd_join.html"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>thr<span class="br0">[</span>n<span class="br0">]</span>, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The atomic counter is&nbsp;%u<span class="es1">\n</span>"</span>, acnt<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The non-atomic counter is&nbsp;%u<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">The atomic counter is 10000
@@ -486,7 +396,7 @@ The non-atomic counter is 8644</pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="../thread.html" title="c/thread">C documentation</a></span> for <span class="t-dsc-see-tt"><span>thread (Concurrency support library)</span></span></div>
 </td></tr>
 
@@ -495,7 +405,7 @@ The non-atomic counter is 8644</pre></div></div>
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/atomic/atomic" title="cpp/atomic/atomic">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>atomic</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -514,7 +424,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;oldid=156864">https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;oldid=156864</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.cppreference.com/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://en.cppreference.com/w/Category:Todo_with_reason" title="Category:Todo with reason">Todo with reason</a></li></ul></div></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.cppreference.com/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://en.cppreference.com/w/Category:Todo_with_reason" title="Category:Todo with reason">Todo with reason</a></li></ul></div></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -524,39 +434,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/c/language/atomic" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/c/language/atomic" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;oldid=156864" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/atomic&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/language/atomic" title="c/language/atomic" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 16 August 2023, at 12:54.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -567,8 +445,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 0.395 secs. -->
-	</body>
-<!-- Cached 20240801003815 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/c/language/atomic by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:18 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20240801003815 --><!-- Mirrored from en.cppreference.com/w/c/language/atomic by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:18 GMT --></html>

@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/c/preprocessor/conditional by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:04 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/c/preprocessor/conditional by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:04 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Conditional inclusion - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Conditional inclusion</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit">
+<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
@@ -109,93 +105,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_preprocessor_conditional skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fpreprocessor%2Fconditional&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fpreprocessor%2Fconditional" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="conditional.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:c/preprocessor/conditional"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="conditional.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -285,11 +195,11 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="siteSub">From cppreference.com</div>
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>&lrm; | <a href="../preprocessor.html" title="c/preprocessor">preprocessor</a></span></div>
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../preprocessor.html" title="c/preprocessor">preprocessor</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
@@ -306,8 +216,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="c/symbol index">Symbol index</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="../language/basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="../language/basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language/statements.html" title="c/language/statements"> Statements</a></td></tr>
@@ -318,18 +228,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../language/history.html" title="c/language/history"> History of C</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>&#35;if</span><span>&#35;ifdef</span><span>&#35;ifndef</span><span>&#35;else</span><span>&#35;elif</span><span>&#35;elifdef</span><span>&#35;elifndef</span><span>&#35;endif</span></span></strong></div><div><span class="t-lines"><span></span><span></span><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace.html" title="c/preprocessor/replace"><span class="t-lines"><span>&#35;define</span><span>&#35;undef</span><span>&#35;,&#35;&#35; operators</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="include.html" title="c/preprocessor/include"><span class="t-lines"><span>&#35;include</span><span>__has_include</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="c/preprocessor/error"><span class="t-lines"><span>&#35;error</span><span>&#35;warning</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/w/cpp/preprocessor/impl" title="cpp/preprocessor/impl"><span class="t-lines"><span>&#35;pragma</span><span>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="line.html" title="c/preprocessor/line"><span class="t-lines"><span>&#35;line</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="embed.html" title="c/preprocessor/embed"><span class="t-lines"><span>&#35;embed</span><span>__has_embed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/preprocessor/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>#if</span><span>#ifdef</span><span>#ifndef</span><span>#else</span><span>#elif</span><span>#elifdef</span><span>#elifndef</span><span>#endif</span></span></strong></div><div><span class="t-lines"><span></span><span></span><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="replace.html" title="c/preprocessor/replace"><span class="t-lines"><span>#define</span><span>#undef</span><span>#,## operators</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="include.html" title="c/preprocessor/include"><span class="t-lines"><span>#include</span><span>__has_include</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error.html" title="c/preprocessor/error"><span class="t-lines"><span>#error</span><span>#warning</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="https://en.cppreference.com/w/cpp/preprocessor/impl" title="cpp/preprocessor/impl"><span class="t-lines"><span>#pragma</span><span>_Pragma</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="line.html" title="c/preprocessor/line"><span class="t-lines"><span>#line</span></span></a></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="embed.html" title="c/preprocessor/embed"><span class="t-lines"><span>#embed</span><span>__has_embed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/preprocessor/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
 <p>The preprocessor supports conditional compilation of parts of source file. This behavior is controlled by <code>#if</code>, <code>#else</code>, <code>#elif</code>, <code>#ifdef</code>, <code>#ifndef</code><span class="t-rev-inl t-since-c23"><span>, <code>#elifdef</code>, <code>#elifndef</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, and <code>#endif</code> directives.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
@@ -345,11 +255,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-9"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
 <li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
@@ -455,7 +365,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The conditional preprocessing block starts with <code>#if</code>, <code>#ifdef</code> or <code>#ifndef</code> directive, then optionally includes any number of <code>#elif</code><span class="t-rev-inl t-since-c23"><span>, <code>#elifdef</code>, or <code>#elifndef</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> directives, then optionally includes at most one <code>#else</code> directive and is terminated with <code>#endif</code> directive. Any inner conditional preprocessing blocks are processed separately.
 </p><p>Each of <code>#if</code>, <code>#ifdef</code>, <code>#ifndef</code>, <code>#elif</code><span class="t-rev-inl t-since-c23"><span>, <code>#elifdef</code>, <code>#elifndef</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, and <code>#else</code> directives control code block until first <code>#elif</code><span class="t-rev-inl t-since-c23"><span>, <code>#elifdef</code>, <code>#elifndef</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, <code>#else</code>, <code>#endif</code> directive not belonging to any inner conditional preprocessing blocks.
@@ -466,31 +376,31 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>The <span class="t-spar">expression</span> is a constant expression, using only <a href="../language/expressions.html#Constants_and_literals" title="c/language/expressions">constants</a> and identifiers, defined using <a href="replace.html" title="c/preprocessor/replace"><tt>
 #define</tt></a> directive. Any identifier, which is not literal, non defined using <a href="replace.html" title="c/preprocessor/replace"><tt>
 #define</tt></a> directive, evaluates to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> <span class="t-rev-inl t-since-c23"><span>except <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> which evaluates to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.
-</p><p>The expression may contain unary operators in form <code>defined</code>&#160;<span class="t-spar">identifier</span> or  <code>defined (</code><span class="t-spar">identifier</span><code>)</code> which return <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if the <span class="t-spar">identifier</span> was defined using <a href="replace.html" title="c/preprocessor/replace"><tt>
+</p><p>The expression may contain unary operators in form <code>defined</code>&nbsp;<span class="t-spar">identifier</span> or  <code>defined (</code><span class="t-spar">identifier</span><code>)</code> which return <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if the <span class="t-spar">identifier</span> was defined using <a href="replace.html" title="c/preprocessor/replace"><tt>
 #define</tt></a> directive and <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> otherwise. <span class="t-rev-inl t-since-c23"><span>In this context, <span class="t-c"><span class="mw-geshi c source-c">__has_include</span></span>, <span class="t-c"><span class="mw-geshi c source-c">__has_embed</span></span> and <span class="t-c"><span class="mw-geshi c source-c">__has_c_attribute</span></span> are treated as if they were the name of defined macros.</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> If the <span class="t-spar">expression</span> evaluates to nonzero value, the controlled code block is included and skipped otherwise. If any used identifier is not a constant, it is replaced with <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>.
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-c23"><td>
+<tbody><tr class="t-rev t-since-c23"><td>
 <p>In context of a preprocessor directive, a <code>__has_c_attribute</code> expression detects whether a given attribute token is supported and its supported version. See <a href="../language/attributes.html#Attribute_testing" title="c/language/attributes">Attribute testing</a>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
-</table>
+</tbody></table>
 <p>Note: Until <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/dr_412.htm">DR 412</a>, <code>#if <i>cond1</i></code> ... <code>#elif <i>cond2</i></code> is different from <code>#if <i>cond1</i></code> ... <code>#else</code> followed by <code>#if <i>cond3</i></code> because if <code><i>cond1</i></code> is true, the second <code>#if</code> is skipped and <code><i>cond3</i></code> does not need to be well-formed, while <code>#elif</code>'s <code><i>cond2</i></code> must be a valid expression. As of <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/dr_412.htm">DR 412</a>, <code>#elif</code> that leads the skipped code block is also skipped.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=5" title="Edit section: Combined directives">edit</a>]</span> <span class="mw-headline" id="Combined_directives">Combined directives</span></h4>
 <p>Checks if the identifier was <a href="replace.html" title="c/preprocessor/replace">defined as a macro name</a>.
-</p><p><code>#ifdef</code>&#160;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if defined</code>&#160;<span class="t-spar">identifier</span>.
-</p><p><code>#ifndef</code>&#160;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if&#160;!defined</code>&#160;<span class="t-spar">identifier</span>.
+</p><p><code>#ifdef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if defined</code>&nbsp;<span class="t-spar">identifier</span>.
+</p><p><code>#ifndef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if&nbsp;!defined</code>&nbsp;<span class="t-spar">identifier</span>.
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-c23"><td>
-<p><code>#elifdef</code>&#160;<span class="t-spar">identifier</span> is essentially equivalent to <code>#elif defined</code>&#160;<span class="t-spar">identifier</span>.
-</p><p><code>#elifndef</code>&#160;<span class="t-spar">identifier</span> is essentially equivalent to <code>#elif&#160;!defined</code>&#160;<span class="t-spar">identifier</span>.
+<tbody><tr class="t-rev t-since-c23"><td>
+<p><code>#elifdef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#elif defined</code>&nbsp;<span class="t-spar">identifier</span>.
+</p><p><code>#elifndef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#elif&nbsp;!defined</code>&nbsp;<span class="t-spar">identifier</span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=6" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>While <code>#elifdef</code> and <code>#elifndef</code> directives target C23, implementations may backport them to the older language modes as conforming extensions.
 </p>
@@ -498,39 +408,39 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define ABCD 2</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-&#160;
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+&nbsp;
 <span class="co2">#ifdef ABCD</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;1: yes<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;1: no<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: no<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
-&#160;
+&nbsp;
 <span class="co2">#ifndef ABCD</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;2: no1<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elif ABCD == 2</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;2: yes<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;2: no2<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
-&#160;
-<span class="co2">#if&#160;!defined(DCBA) &amp;&amp; (ABCD &lt; 2 * 4 - 3)</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;3: yes<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="co2">#if&nbsp;!defined(DCBA) &amp;&amp; (ABCD &lt; 2 * 4 - 3)</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"3: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
-&#160;
+&nbsp;
 <span class="co1">// C23 directives #elifdef/#elifndef</span>
 <span class="co2">#ifdef CPU</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;4: no1<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elifdef GPU</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;4: no2<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elifndef RAM</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;4: yes<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// selected in C23 mode, may be selected in pre-C23 mode</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// selected in C23 mode, may be selected in pre-C23 mode</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;4: no3<span class="es1">\n</span>&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// may be selected in pre-C23 mode</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no3<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// may be selected in pre-C23 mode</span>
 <span class="co2">#endif</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">1: yes
@@ -542,7 +452,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>The following behavior-changing defect reports were applied retroactively to previously published C standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
-<tr>
+<tbody><tr>
 <th>DR
 </th>
 <th>Applied to
@@ -559,7 +469,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td>failed <code>#elif</code>'s expression was required to be valid
 </td>
 <td>failed <code>#elif</code> is skipped
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=9" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-23">
 <ul><li> C23 standard (ISO/IEC 9899:2024): 
@@ -599,11 +509,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/preprocessor/conditional" title="cpp/preprocessor/conditional">C++ documentation</a></span> for <span class=""><span>Conditional inclusion</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -622,7 +532,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;oldid=154407">https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;oldid=154407</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -632,39 +542,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/c/preprocessor/conditional" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/c/preprocessor/conditional" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;oldid=154407" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/preprocessor/conditional" title="c/preprocessor/conditional" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 29 June 2023, at 17:07.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -675,8 +553,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 0.543 secs. -->
-	</body>
-<!-- Cached 20240801011623 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/c/preprocessor/conditional by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:04 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20240801011623 --><!-- Mirrored from en.cppreference.com/w/c/preprocessor/conditional by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:04 GMT --></html>

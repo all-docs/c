@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/c/language/pointer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:15 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/c/language/pointer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:15 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Pointer declaration - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Pointer declaration</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit">
+<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
@@ -85,93 +81,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_pointer skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Flanguage%2Fpointer&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Flanguage%2Fpointer" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="pointer.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:c/language/pointer&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="pointer.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -261,11 +171,11 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="siteSub">From cppreference.com</div>
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>&lrm; | <a href="../language.html" title="c/language">language</a></span></div>
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../language.html" title="c/language">language</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
@@ -282,8 +192,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="c/symbol index">Symbol index</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../language.html" title="c/language"> C language</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"> <a href="basic_concepts.html" title="c/language/basic concepts">Basic concepts</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../keyword.html" title="c/keyword"> Keywords</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../preprocessor.html" title="c/preprocessor"> Preprocessor</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="statements.html" title="c/language/statements"> Statements</a></td></tr>
@@ -294,9 +204,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv-h2"><td colspan="5"> Miscellaneous</td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="history.html" title="c/language/history"> History of C</a></td></tr>
 <tr class="t-nv"><td colspan="5"> <a href="../experimental.html" title="c/experimental">Technical Specifications</a> </td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="declarations.html" title="c/language/declarations"> Declarations</a><div class="t-navbar-menu"><div><div style="display:inline-block">
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="declarations.html" title="c/language/declarations"> Declarations</a><div class="t-navbar-menu"><div><div style="display:inline-block">
 <div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><strong class="selflink">Pointer</strong></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><strong class="selflink">Pointer</strong></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="array.html" title="c/language/array">Array</a></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="enum.html" title="c/language/enum"><span class="t-lines"><span>enum</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="struct.html" title="c/language/struct"><span class="t-lines"><span>struct</span></span></a></div></div></td></tr>
@@ -313,11 +223,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="typedef.html" title="c/language/typedef"><span class="t-lines"><span>typedef</span></span></a></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="_Static_assert.html" title="c/language/ Static assert"><span class="t-lines"><span>Static assertions</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="attributes.html" title="c/language/attributes">Attributes</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/declarations/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+</tbody></table></div>
+</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/language/declarations/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
 <p>Pointer is a type of an object that refers to a function or an object of another type, possibly adding qualifiers. Pointer may also refer to nothing, which is indicated by the special null pointer value.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a>
@@ -332,17 +242,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-8"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
 <li class="toclevel-1 tocsection-9"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
 <p>In the <a href="declarations.html" title="c/language/declarations">declaration grammar</a> of a pointer declaration, the <span class="t-spar">type-specifier</span> sequence designates the pointed-to type (which may be function or object type and may be incomplete), and the <span class="t-spar">declarator</span> has the form:
 </p>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>*</b></code> <span class="t-spar">attr-spec-seq</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <span class="t-spar">qualifiers</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <span class="t-spar">declarator</span>
+<td class="t-sdsc-nopad"> <code><b>*</b></code> <span class="t-spar">attr-spec-seq</span> ﻿<span class="t-mark">(optional)</span> <span class="t-spar">qualifiers</span> ﻿<span class="t-mark">(optional)</span> <span class="t-spar">declarator</span>
 </td>
 <td class="t-sdsc-nopad">
 </td>
@@ -353,23 +263,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <p>where <span class="t-spar">declarator</span> may be the identifier that names the pointer being declared, including another pointer declarator (which would indicate a pointer to a pointer):
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">float</span> <span class="sy2">*</span>p, <span class="sy2">**</span>pp<span class="sy4">;</span> <span class="co1">// p is a pointer to float</span>
                 <span class="co1">// pp is a pointer to a pointer to float</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>fp<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// fp is a pointer to function with type int(int)</span></pre></div></div>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>fp<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// fp is a pointer to function with type int(int)</span></pre></div></div>
 <p>The <span class="t-spar">qualifiers</span> that appear between <code><b>*</b></code> and the identifier (or other nested declarator) qualify the type of the pointer that is being declared:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n<span class="sy4">;</span>
 <span class="kw4">const</span> <span class="kw4">int</span> <span class="sy2">*</span> pc <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="sy4">;</span> <span class="co1">// pc is a non-const pointer to a const int</span>
 <span class="co1">// *pc = 2; // Error: n cannot be changed through pc without a cast</span>
 pc <span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="sy4">;</span> <span class="co1">// OK: pc itself can be changed</span>
-&#160;
+&nbsp;
 <span class="kw4">int</span> <span class="sy2">*</span> <span class="kw4">const</span> cp <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="sy4">;</span> <span class="co1">// cp is a const pointer to a non-const int</span>
 <span class="sy2">*</span>cp <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span> <span class="co1">// OK to change n through cp</span>
 <span class="co1">// cp = NULL; // Error: cp itself cannot be changed</span>
-&#160;
+&nbsp;
 <span class="kw4">int</span> <span class="sy2">*</span> <span class="kw4">const</span> <span class="sy2">*</span> pcp <span class="sy1">=</span> <span class="sy3">&amp;</span>cp<span class="sy4">;</span> <span class="co1">// non-const pointer to const pointer to non-const int</span></pre></div></div>
 <p>The <span class="t-spar">attr-spec-seq</span><span class="t-mark-rev t-since-c23">(C23)</span> is an optional list of <a href="attributes.html" title="c/language/attributes">attributes</a>, applied to the declared pointer.
 </p>
@@ -382,26 +292,26 @@ pc <span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">N
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n<span class="sy4">;</span>
 <span class="kw4">int</span> <span class="sy2">*</span>np <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="sy4">;</span> <span class="co1">// pointer to int</span>
 <span class="kw4">int</span> <span class="sy2">*</span><span class="kw4">const</span> <span class="sy2">*</span>npp <span class="sy1">=</span> <span class="sy3">&amp;</span>np<span class="sy4">;</span> <span class="co1">// non-const pointer to const pointer to non-const int</span>
-&#160;
-<span class="kw4">int</span> a<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="sy4">;</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>ap<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>a<span class="sy4">;</span> <span class="co1">// pointer to array of int</span>
-&#160;
-<span class="kw1">struct</span> S <span class="br0">&#123;</span> <span class="kw4">int</span> n<span class="sy4">;</span> <span class="br0">&#125;</span> s <span class="sy1">=</span> <span class="br0">&#123;</span><span class="nu0">1</span><span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>ap<span class="br0">)</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>a<span class="sy4">;</span> <span class="co1">// pointer to array of int</span>
+&nbsp;
+<span class="kw1">struct</span> S <span class="br0">{</span> <span class="kw4">int</span> n<span class="sy4">;</span> <span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span>
 <span class="kw4">int</span><span class="sy2">*</span> sp <span class="sy1">=</span> <span class="sy3">&amp;</span>s.<span class="me1">n</span><span class="sy4">;</span> <span class="co1">// pointer to the int that is a member of s</span></pre></div></div>
 <p>Pointers may appear as operands to the <a href="operator_member_access.html#Dereference" title="c/language/operator member access">indirection operator</a> (unary <code><b>*</b></code>), which returns <a href="value_category.html" title="c/language/value category">the lvalue</a> identifying the pointed-to object:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n<span class="sy4">;</span>
 <span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="sy4">;</span> <span class="co1">// pointer p is pointing to n</span>
 <span class="sy2">*</span>p <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span> <span class="co1">// stores 7 in n</span>
-<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%d<span class="es1">\n</span>&quot;</span>, <span class="sy2">*</span>p<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// lvalue-to-rvalue conversion reads the value from n</span></pre></div></div>
+<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// lvalue-to-rvalue conversion reads the value from n</span></pre></div></div>
 <p>Pointers to objects of <a href="struct.html" title="c/language/struct">struct</a> and <a href="union.html" title="c/language/union">union</a> type may also appear as the left-hand operands of the <a href="operator_member_access.html" title="c/language/operator member access">member access through pointer</a> operator <code><b>-&gt;</b></code>.
 </p><p>Because of the <a href="array.html" title="c/language/array">array-to-pointer</a> implicit conversion, pointer to the first element of an array can be initialized with an expression of array type:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a<span class="br0">&#91;</span><span class="nu0">2</span><span class="br0">&#93;</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
 <span class="kw4">int</span> <span class="sy2">*</span>p <span class="sy1">=</span> a<span class="sy4">;</span> <span class="co1">// pointer to a[0]</span>
-&#160;
-<span class="kw4">int</span> b<span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span><span class="sy4">;</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>row<span class="br0">&#41;</span><span class="br0">&#91;</span><span class="nu0">3</span><span class="br0">&#93;</span> <span class="sy1">=</span> b<span class="sy4">;</span> <span class="co1">// pointer to b[0]</span></pre></div></div>
+&nbsp;
+<span class="kw4">int</span> b<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>row<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> b<span class="sy4">;</span> <span class="co1">// pointer to b[0]</span></pre></div></div>
 <p>Certain <a href="operator_arithmetic.html" title="c/language/operator arithmetic">addition, subtraction</a>, <a href="operator_assignment.html" title="c/language/operator assignment">compound assignment</a>, <a href="operator_incdec.html" title="c/language/operator incdec">increment, and decrement</a> operators are defined for pointers to elements of arrays.
 </p><p><a href="operator_comparison.html" title="c/language/operator comparison">Comparison operators</a> are defined for pointers to objects in some situations: two pointers that represent the same address compare equal, two null pointer values compare equal, pointers to elements of the same array compare the same as the array indices of those elements, and pointers to struct members compare in order of declaration of those members.
 </p><p>Many implementations also provide <a href="https://en.wikipedia.org/wiki/Total_order#Strict_total_order" class="extiw" title="enwiki:Total order">strict total ordering</a> of pointers of random origin, e.g. if they are implemented as addresses within continuous ("flat") virtual address space. 
@@ -409,37 +319,37 @@ pc <span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">N
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=4" title="Edit section: Pointers to functions">edit</a>]</span> <span class="mw-headline" id="Pointers_to_functions">Pointers to functions</span></h4>
 <p>A pointer to function can be initialized with an address of a function. Because of the <a href="conversion.html" title="c/language/conversion">function-to-pointer</a> conversion, the address-of operator is optional:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="kw4">void</span> <span class="br0">&#40;</span><span class="sy2">*</span>pf1<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>f<span class="sy4">;</span>
-<span class="kw4">void</span> <span class="br0">&#40;</span><span class="sy2">*</span>pf2<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy1">=</span> f<span class="sy4">;</span> <span class="co1">// same as &amp;f</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>pf1<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>f<span class="sy4">;</span>
+<span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>pf2<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy1">=</span> f<span class="sy4">;</span> <span class="co1">// same as &amp;f</span></pre></div></div>
 <p>Unlike functions, pointers to functions are objects and thus can be stored in arrays, copied, assigned, passed to other functions as arguments, etc.
 </p><p>A pointer to function can be used on the left-hand side of the <a href="operator_other.html#Function_call" title="c/language/operator other">function call operator</a>; this invokes the pointed-to function:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
-&#160;
-<span class="kw4">int</span> f<span class="br0">&#40;</span><span class="kw4">int</span> n<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%d<span class="es1">\n</span>&quot;</span>, n<span class="br0">&#41;</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> n <span class="sy2">*</span> n<span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>p<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy1">=</span> f<span class="sy4">;</span>
-    <span class="kw4">int</span> x <span class="sy1">=</span> p<span class="br0">&#40;</span><span class="nu0">7</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy1">=</span> f<span class="sy4">;</span>
+    <span class="kw4">int</span> x <span class="sy1">=</span> p<span class="br0">(</span><span class="nu0">7</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Dereferencing a function pointer yields the function designator for the pointed-to function:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>p<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">=</span> f<span class="sy4">;</span>    <span class="co1">// pointer p is pointing to f</span>
-<span class="br0">&#40;</span><span class="sy2">*</span>p<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// function f invoked through the function designator</span>
-p<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>    <span class="co1">// function f invoked directly through the pointer</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">=</span> f<span class="sy4">;</span>    <span class="co1">// pointer p is pointing to f</span>
+<span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// function f invoked through the function designator</span>
+p<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// function f invoked directly through the pointer</span></pre></div></div>
 <p><a href="operator_comparison.html" title="c/language/operator comparison">Equality comparison operators</a> are defined for pointers to functions (they compare equal if pointing to the same function).
 </p><p>Because <a href="type.html#Compatible_types" title="c/language/type">compatibility of function types</a> ignores top-level qualifiers of the function parameters, pointers to functions whose parameters only differ in their top-level qualifiers are interchangeable:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span>, fc<span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">int</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>pc<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy1">=</span> f<span class="sy4">;</span> <span class="co1">// OK</span>
-<span class="kw4">int</span> <span class="br0">&#40;</span><span class="sy2">*</span>p<span class="br0">&#41;</span><span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> <span class="sy1">=</span> fc<span class="sy4">;</span>       <span class="co1">// OK</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>, fc<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>pc<span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">int</span><span class="br0">)</span> <span class="sy1">=</span> f<span class="sy4">;</span> <span class="co1">// OK</span>
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy1">=</span> fc<span class="sy4">;</span>       <span class="co1">// OK</span>
 pc <span class="sy1">=</span> p<span class="sy4">;</span>                   <span class="co1">// OK</span></pre></div></div>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=5" title="Edit section: Pointers to void">edit</a>]</span> <span class="mw-headline" id="Pointers_to_void">Pointers to void</span></h4>
 <p>Pointer to object of any type can be <a href="conversion.html" title="c/language/conversion">implicitly converted</a> to pointer to <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span> (optionally <a href="const.html" title="c/language/const">const</a> or <a href="volatile.html" title="c/language/volatile">volatile</a>-qualified), and vice versa:
@@ -447,7 +357,7 @@ pc <span class="sy1">=</span> p<span class="sy4">;</span>                   <spa
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n<span class="sy1">=</span><span class="nu0">1</span>, <span class="sy2">*</span>p<span class="sy1">=</span><span class="sy3">&amp;</span>n<span class="sy4">;</span>
 <span class="kw4">void</span><span class="sy2">*</span> pv <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// int* to void*</span>
 <span class="kw4">int</span><span class="sy2">*</span> p2 <span class="sy1">=</span> pv<span class="sy4">;</span> <span class="co1">// void* to int*</span>
-<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;%d<span class="es1">\n</span>&quot;</span>, <span class="sy2">*</span>p2<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// prints 1</span></pre></div></div>
+<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p2<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 1</span></pre></div></div>
 <p>Pointers to void are used to pass objects of unknown type, which is common in generic interfaces: <span class="t-lc"><a href="../memory/malloc.html" title="c/memory/malloc">malloc</a></span> returns <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span></span></span>, <span class="t-lc"><a href="../algorithm/qsort.html" title="c/algorithm/qsort">qsort</a></span> expects a user-provided callback that accepts two <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span></span></span> arguments. <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/pthread_create.html">pthread_create</a> expects a user-provided callback that accepts and returns <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span></span></span>. In all cases, it is the caller's responsibility to convert the pointer to the correct type before use.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=6" title="Edit section: Null pointers">edit</a>]</span> <span class="mw-headline" id="Null_pointers">Null pointers</span></h3>
@@ -459,15 +369,15 @@ pc <span class="sy1">=</span> p<span class="sy4">;</span>                   <spa
 <p>Although any pointer to object <a href="cast.html" title="c/language/cast">can be cast</a> to pointer to object of a different type, dereferencing a pointer to the type different from the declared type of the object is almost always undefined behavior. See <a href="object.html#Strict_aliasing" title="c/language/object">strict aliasing</a> for details.
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-c99"><td>
+<tbody><tr class="t-rev t-since-c99"><td>
 <p>It is possible to indicate to a function that accesses objects through pointers that those pointers do not alias. See <a href="restrict.html" title="c/language/restrict">restrict</a> for details.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
-</table>
+</tbody></table>
 <p>lvalue expressions of array type, when used in most contexts, undergo an <a href="conversion.html" title="c/language/conversion">implicit conversion</a> to the pointer to the first element of the array. See <a href="array.html#Array_to_pointer_conversion" title="c/language/array">array</a> for details.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">char</span> <span class="sy2">*</span>str <span class="sy1">=</span> <span class="st0">&quot;abc&quot;</span><span class="sy4">;</span> <span class="co1">// &quot;abc&quot; is a char[4] array, str is a pointer to 'a'</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">char</span> <span class="sy2">*</span>str <span class="sy1">=</span> <span class="st0">"abc"</span><span class="sy4">;</span> <span class="co1">// "abc" is a char[4] array, str is a pointer to 'a'</span></pre></div></div>
 <p>Pointers to char are often <a href="../string/byte.html" title="c/string/byte">used to represent strings</a>. To represent a valid byte string, a pointer must be pointing at a char that is an element of an array of char, and there must be a char with the value zero at some index greater or equal to the index of the element referenced by the pointer.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=8" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
@@ -509,11 +419,11 @@ pc <span class="sy1">=</span> p<span class="sy4">;</span>                   <spa
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/language/pointer" title="cpp/language/pointer">C++ documentation</a></span> for <span class=""><span>Pointer declaration</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -532,7 +442,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;oldid=170726">https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;oldid=170726</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -542,39 +452,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/c/language/pointer" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/c/language/pointer" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;oldid=170726" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=c/language/pointer&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/language/pointer" title="c/language/pointer" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 9 April 2024, at 00:10.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -585,8 +463,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 0.622 secs. -->
-	</body>
-<!-- Cached 20240801005300 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/c/language/pointer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:15 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20240801005300 --><!-- Mirrored from en.cppreference.com/w/c/language/pointer by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:13:15 GMT --></html>

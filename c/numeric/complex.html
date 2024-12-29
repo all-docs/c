@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/c/numeric/complex by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:12:58 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/c/numeric/complex by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:12:58 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Complex number arithmetic - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Complex number arithmetic</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit">
+<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*">
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
@@ -109,93 +105,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_numeric_complex skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fnumeric%2Fcomplex&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=c%2Fnumeric%2Fcomplex" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="complex.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:c/numeric/complex"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="complex.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -285,11 +195,11 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="siteSub">From cppreference.com</div>
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>&lrm; | <a href="../numeric.html" title="c/numeric">numeric</a></span></div>
+                    <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../numeric.html" title="c/numeric">numeric</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
+<tbody><tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
@@ -306,95 +216,95 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="c/symbol index">Symbol index</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../numeric.html" title="c/numeric"> Numerics</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="math.html" title="c/numeric/math">Common mathematical functions</a></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../numeric.html" title="c/numeric"> Numerics</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><a href="math.html" title="c/numeric/math">Common mathematical functions</a></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="fenv.html" title="c/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="random.html" title="c/numeric/random">Pseudo-random number generation</a></td></tr>
 <tr class="t-nv"><td colspan="5"><strong class="selflink">Complex number arithmetic</strong> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="tgmath.html" title="c/numeric/tgmath">Type-generic math</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../numeric.html#Bit_manipulation" title="c/numeric">Bit manipulation</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
 <tr class="t-nv"><td colspan="5"><a href="../numeric.html#Checked_integer_arithmetic" title="c/numeric">Checked integer arithmetic</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><strong class="selflink"> Complex number arithmetic</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5">Types and the imaginary constant</td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><strong class="selflink"> Complex number arithmetic</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv-h2"><td colspan="5">Types and the imaginary constant</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/complex.html" title="c/numeric/complex/complex"><span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/Complex_I.html" title="c/numeric/complex/Complex I"><span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span>&#160;&#160;&#160;&#160;</span></span></div></div></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/complex.html" title="c/numeric/complex/complex"><span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/Complex_I.html" title="c/numeric/complex/Complex I"><span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/CMPLX.html" title="c/numeric/complex/CMPLX"><span class="t-lines"><span>CMPLX</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/imaginary.html" title="c/numeric/complex/imaginary"><span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/imaginary.html" title="c/numeric/complex/imaginary"><span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/Imaginary_I.html" title="c/numeric/complex/Imaginary I"><span class="t-lines"><span>_Imaginary_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/I.html" title="c/numeric/complex/I"><span class="t-lines"><span>I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
+</tbody></table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5">Manipulation</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cimag.html" title="c/numeric/complex/cimag"><span class="t-lines"><span>cimag</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cimag.html" title="c/numeric/complex/cimag"><span class="t-lines"><span>cimag</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/creal.html" title="c/numeric/complex/creal"><span class="t-lines"><span>creal</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/carg.html" title="c/numeric/complex/carg"><span class="t-lines"><span>carg</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cabs.html" title="c/numeric/complex/cabs"><span class="t-lines"><span>cabs</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cabs.html" title="c/numeric/complex/cabs"><span class="t-lines"><span>cabs</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/conj.html" title="c/numeric/complex/conj"><span class="t-lines"><span>conj</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cproj.html" title="c/numeric/complex/cproj"><span class="t-lines"><span>cproj</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
+</tbody></table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5">Power and exponential functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cexp.html" title="c/numeric/complex/cexp"><span class="t-lines"><span>cexp</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cexp.html" title="c/numeric/complex/cexp"><span class="t-lines"><span>cexp</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/clog.html" title="c/numeric/complex/clog"><span class="t-lines"><span>clog</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cpow.html" title="c/numeric/complex/cpow"><span class="t-lines"><span>cpow</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cpow.html" title="c/numeric/complex/cpow"><span class="t-lines"><span>cpow</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/csqrt.html" title="c/numeric/complex/csqrt"><span class="t-lines"><span>csqrt</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
+</tbody></table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5">Trigonometric functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ccos.html" title="c/numeric/complex/ccos"><span class="t-lines"><span>ccos</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ccos.html" title="c/numeric/complex/ccos"><span class="t-lines"><span>ccos</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/csin.html" title="c/numeric/complex/csin"><span class="t-lines"><span>csin</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ctan.html" title="c/numeric/complex/ctan"><span class="t-lines"><span>ctan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cacos.html" title="c/numeric/complex/cacos"><span class="t-lines"><span>cacos</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cacos.html" title="c/numeric/complex/cacos"><span class="t-lines"><span>cacos</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/casin.html" title="c/numeric/complex/casin"><span class="t-lines"><span>casin</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/catan.html" title="c/numeric/complex/catan"><span class="t-lines"><span>catan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
+</tbody></table></div></td></tr>
 <tr class="t-nv-h2"><td colspan="5">Hyperbolic functions</td></tr>
 <tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ccosh.html" title="c/numeric/complex/ccosh"><span class="t-lines"><span>ccosh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ccosh.html" title="c/numeric/complex/ccosh"><span class="t-lines"><span>ccosh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/csinh.html" title="c/numeric/complex/csinh"><span class="t-lines"><span>csinh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/ctanh.html" title="c/numeric/complex/ctanh"><span class="t-lines"><span>ctanh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cacosh.html" title="c/numeric/complex/cacosh"><span class="t-lines"><span>cacosh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
+</tbody></table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
+<tbody><tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/cacosh.html" title="c/numeric/complex/cacosh"><span class="t-lines"><span>cacosh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/casinh.html" title="c/numeric/complex/casinh"><span class="t-lines"><span>casinh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
 <tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="complex/catanh.html" title="c/numeric/complex/catanh"><span class="t-lines"><span>catanh</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+</tbody></table></div></td></tr>
+</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-c11"><td>
+<tbody><tr class="t-rev t-since-c11"><td>
 <p>If the macro constant <code>__STDC_NO_COMPLEX__</code> is defined by the implementation, the complex types, the header <code>&lt;complex.h&gt;</code> and all of the names listed here are not provided.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
-</table>
+</tbody></table>
 <p>The C programming language, as of C99, supports complex number math with the three built-in types <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> _Complex</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> _Complex</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> _Complex</span></span> (see <a href="../keyword/_Complex.html" title="c/keyword/ Complex"><tt>_Complex</tt></a>). When the header <code>&lt;complex.h&gt;</code> is included, the three complex number types are also accessible as <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex/complex.html"><span class="kw743">complex</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a></span></span>.
 </p><p>In addition to the complex types, the three imaginary types may be supported: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> _Imaginary</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> _Imaginary</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> _Imaginary</span></span> (see <a href="../keyword/_Imaginary.html" title="c/keyword/ Imaginary"><tt>_Imaginary</tt></a>). When the header <code>&lt;complex.h&gt;</code> is included, the three imaginary types are also accessible as <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex/imaginary.html"><span class="kw745">imaginary</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex/imaginary.html"><span class="kw745">imaginary</span></a></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex/imaginary.html"><span class="kw745">imaginary</span></a></span></span>.
 </p><p>Standard arithmetic operators <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">+</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">/</span></span></span> can be used with real, complex, and imaginary types in any combination. 
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-c99 t-until-c11"><td>
+<tbody><tr class="t-rev t-since-c99 t-until-c11"><td>
 <p>A compiler that defines <code>__STDC_IEC_559_COMPLEX__</code> is recommended, but not required to support imaginary numbers. POSIX recommends checking if the macro <span class="t-lc"><a href="complex/Imaginary_I.html" title="c/numeric/complex/Imaginary I">_Imaginary_I</a></span> is defined to identify imaginary number support.
 </p>
 </td>
-<td><span class="t-mark-rev t-since-c99">(since C99)</span><br /><span class="t-mark-rev t-until-c11">(until C11)</span></td></tr>
+<td><span class="t-mark-rev t-since-c99">(since C99)</span><br><span class="t-mark-rev t-until-c11">(until C11)</span></td></tr>
 <tr class="t-rev t-since-c11"><td>
 <p>Imaginary numbers are supported if <code>__STDC_IEC_559_COMPLEX__</code> <span class="t-rev-inl t-since-c23"><span>or  <code>__STDC_IEC_60559_COMPLEX__</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> is defined.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
-</table>
+</tbody></table>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-header">
+<tbody><tr class="t-dsc-header">
 <td colspan="2"> <div>Defined in header <code><strong class="selflink"><tt>&lt;complex.h&gt;</tt></strong></code> </div>
 </td></tr>
 
 <tr>
-<td colspan="2"> <table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<td colspan="2"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
 <li class="toclevel-1"><a href="#The_imaginary_constant"><span class="tocnumber">2</span> <span class="toctext">The imaginary constant</span></a></li>
@@ -408,20 +318,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-3"><a href="#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#See_also"><span class="tocnumber">11</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h5> <span class="mw-headline" id="Types"> Types </span></h5>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/imaginary.html" title="c/numeric/complex/imaginary"> <span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   imaginary type macro   <br /> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_imaginary&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   imaginary type macro   <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_imaginary&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/complex.html" title="c/numeric/complex/complex"> <span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   complex type macro  <br /> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_complex&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   complex type macro  <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_complex&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -432,19 +342,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/Imaginary_I.html" title="c/numeric/complex/Imaginary I"> <span class="t-lines"><span>_Imaginary_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   the imaginary unit constant i <br /> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Imaginary_I&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   the imaginary unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Imaginary_I&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/Complex_I.html" title="c/numeric/complex/Complex I"> <span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   the complex unit constant i <br /> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Complex_I&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   the complex unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Complex_I&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/I.html" title="c/numeric/complex/I"> <span class="t-lines"><span>I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   the complex or imaginary unit constant i <br /> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_I&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   the complex or imaginary unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_I&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -455,43 +365,43 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/CMPLX.html" title="c/numeric/complex/CMPLX"> <span class="t-lines"><span>CMPLX</span><span>CMPLXF</span><span>CMPLXL</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   constructs a complex number from real and imaginary parts  <br /> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_CMPLX&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   constructs a complex number from real and imaginary parts  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_CMPLX&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/creal.html" title="c/numeric/complex/creal"> <span class="t-lines"><span>creal</span><span>crealf</span><span>creall</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the real part of a complex number  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_creal&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the real part of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_creal&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cimag.html" title="c/numeric/complex/cimag"> <span class="t-lines"><span>cimag</span><span>cimagf</span><span>cimagl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the imaginary part a complex number  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cimag&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the imaginary part a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cimag&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cabs.html" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the magnitude of a complex number  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cabs&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the magnitude of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cabs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/carg.html" title="c/numeric/complex/carg"> <span class="t-lines"><span>carg</span><span>cargf</span><span>cargl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the phase angle of a complex number  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_carg&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the phase angle of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_carg&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/conj.html" title="c/numeric/complex/conj"> <span class="t-lines"><span>conj</span><span>conjf</span><span>conjl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex conjugate  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_conj&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex conjugate  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_conj&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cproj.html" title="c/numeric/complex/cproj"> <span class="t-lines"><span>cproj</span><span>cprojf</span><span>cprojl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the projection on Riemann sphere  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cproj&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the projection on Riemann sphere  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cproj&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -502,13 +412,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cexp.html" title="c/numeric/complex/cexp"> <span class="t-lines"><span>cexp</span><span>cexpf</span><span>cexpl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex base-e exponential <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cexp&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex base-e exponential <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cexp&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/clog.html" title="c/numeric/complex/clog"> <span class="t-lines"><span>clog</span><span>clogf</span><span>clogl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex natural logarithm <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_clog&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex natural logarithm <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_clog&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -519,13 +429,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cpow.html" title="c/numeric/complex/cpow"> <span class="t-lines"><span>cpow</span><span>cpowf</span><span>cpowl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex power function  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cpow&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex power function  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cpow&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/csqrt.html" title="c/numeric/complex/csqrt"> <span class="t-lines"><span>csqrt</span><span>csqrtf</span><span>csqrtl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex square root  <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csqrt&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex square root  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csqrt&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -536,37 +446,37 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/csin.html" title="c/numeric/complex/csin"> <span class="t-lines"><span>csin</span><span>csinf</span><span>csinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex sine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csin&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csin&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/ccos.html" title="c/numeric/complex/ccos"> <span class="t-lines"><span>ccos</span><span>ccosf</span><span>ccosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex cosine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccos&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccos&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/ctan.html" title="c/numeric/complex/ctan"> <span class="t-lines"><span>ctan</span><span>ctanf</span><span>ctanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex tangent <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctan&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctan&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/casin.html" title="c/numeric/complex/casin"> <span class="t-lines"><span>casin</span><span>casinf</span><span>casinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc sine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casin&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casin&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cacos.html" title="c/numeric/complex/cacos"> <span class="t-lines"><span>cacos</span><span>cacosf</span><span>cacosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc cosine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacos&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacos&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/catan.html" title="c/numeric/complex/catan"> <span class="t-lines"><span>catan</span><span>catanf</span><span>catanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc tangent <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catan&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catan&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
@@ -577,39 +487,39 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/csinh.html" title="c/numeric/complex/csinh"> <span class="t-lines"><span>csinh</span><span>csinhf</span><span>csinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex hyperbolic sine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csinh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex hyperbolic sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csinh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/ccosh.html" title="c/numeric/complex/ccosh"> <span class="t-lines"><span>ccosh</span><span>ccoshf</span><span>ccoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex hyperbolic cosine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccosh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex hyperbolic cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccosh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/ctanh.html" title="c/numeric/complex/ctanh"> <span class="t-lines"><span>ctanh</span><span>ctanhf</span><span>ctanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex hyperbolic tangent <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctanh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex hyperbolic tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctanh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/casinh.html" title="c/numeric/complex/casinh"> <span class="t-lines"><span>casinh</span><span>casinhf</span><span>casinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc hyperbolic sine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casinh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc hyperbolic sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casinh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/cacosh.html" title="c/numeric/complex/cacosh"> <span class="t-lines"><span>cacosh</span><span>cacoshf</span><span>cacoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc hyperbolic cosine <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacosh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc hyperbolic cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacosh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="complex/catanh.html" title="c/numeric/complex/catanh"> <span class="t-lines"><span>catanh</span><span>catanhf</span><span>catanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes the complex arc hyperbolic tangent <br /> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catanh&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   computes the complex arc hyperbolic tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catanh&amp;action=edit">[edit]</a></span>
 </td></tr>
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The following function names are <span class="t-rev-inl t-since-c23"><span>potentially</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> reserved for future addition to <code>complex.h</code> and are not available for use in the programs that include that header: <span class="t-lc">cerf</span>, <span class="t-lc">cerfc</span>, <span class="t-lc">cexp2</span>, <span class="t-lc">cexpm1</span>, <span class="t-lc">clog10</span>, <span class="t-lc">clog1p</span>, <span class="t-lc">clog2</span>, <span class="t-lc">clgamma</span>, <span class="t-lc">ctgamma</span><span class="t-rev-inl t-since-c23"><span>, <span class="t-lc">csinpi</span>, <span class="t-lc">ccospi</span>, <span class="t-lc">ctanpi</span>, <span class="t-lc">casinpi</span>, <span class="t-lc">cacospi</span>, <span class="t-lc">catanpi</span>, <span class="t-lc">ccompoundn</span>, <span class="t-lc">cpown</span>, <span class="t-lc">cpowr</span>, <span class="t-lc">crootn</span>, <span class="t-lc">crsqrt</span>, <span class="t-lc">cexp10m1</span>, <span class="t-lc">cexp10</span>, <span class="t-lc">cexp2m1</span>, <span class="t-lc">clog10p1</span>, <span class="t-lc">clog2p1</span>, <span class="t-lc">clogp1</span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, along with their -<code>f</code> and -<code>l</code> suffixed variants.
 </p><p>Although the C standard names the inverse hyperbolics with "complex arc hyperbolic sine" etc., the inverse functions of the hyperbolic functions are the area functions. Their argument is the area of a hyperbolic sector, not an arc. The correct names are "complex inverse hyperbolic sine" etc. Some authors use "complex area hyperbolic sine" etc.
@@ -623,22 +533,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;complex.h&gt;</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="co2">#include &lt;tgmath.h&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">void</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z1 <span class="sy1">=</span> I <span class="sy2">*</span> I<span class="sy4">;</span>     <span class="co1">// imaginary unit squared</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;I * I =&#160;%.1f%+.1fi<span class="es1">\n</span>&quot;</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">&#40;</span>z1<span class="br0">&#41;</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">&#40;</span>z1<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> <a href="math/pow.html"><span class="kw668">pow</span></a><span class="br0">&#40;</span>I, <span class="nu0">2</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// imaginary unit squared</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;pow(I, 2) =&#160;%.1f%+.1fi<span class="es1">\n</span>&quot;</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">&#40;</span>z2<span class="br0">&#41;</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">&#40;</span>z2<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    <span class="kw4">double</span> PI <span class="sy1">=</span> <a href="math/acos.html"><span class="kw673">acos</span></a><span class="br0">&#40;</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z3 <span class="sy1">=</span> <a href="math/exp.html"><span class="kw657">exp</span></a><span class="br0">&#40;</span>I <span class="sy2">*</span> PI<span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// Euler's formula</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;exp(I*PI) =&#160;%.1f%+.1fi<span class="es1">\n</span>&quot;</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">&#40;</span>z3<span class="br0">&#41;</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">&#40;</span>z3<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"I * I =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z1<span class="br0">)</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> <a href="math/pow.html"><span class="kw668">pow</span></a><span class="br0">(</span>I, <span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// imaginary unit squared</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"pow(I, 2) =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z2<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">double</span> PI <span class="sy1">=</span> <a href="math/acos.html"><span class="kw673">acos</span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z3 <span class="sy1">=</span> <a href="math/exp.html"><span class="kw657">exp</span></a><span class="br0">(</span>I <span class="sy2">*</span> PI<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// Euler's formula</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"exp(I*PI) =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z3<span class="br0">)</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z3<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> z4 <span class="sy1">=</span> <span class="nu0">1</span> <span class="sy2">+</span> <span class="nu0">2</span> <span class="sy2">*</span> I, z5 <span class="sy1">=</span> <span class="nu0">1</span> <span class="sy2">-</span> <span class="nu0">2</span> <span class="sy2">*</span> I<span class="sy4">;</span> <span class="co1">// conjugates</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">&#40;</span><span class="st0">&quot;(1+2i)*(1-2i) =&#160;%.1f%+.1fi<span class="es1">\n</span>&quot;</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">&#40;</span>z4 <span class="sy2">*</span> z5<span class="br0">&#41;</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">&#40;</span>z4 <span class="sy2">*</span> z5<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"(1+2i)*(1-2i) =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span>z4 <span class="sy2">*</span> z5<span class="br0">)</span>, <a href="complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span>z4 <span class="sy2">*</span> z5<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">I * I = -1.0+0.0i
@@ -735,11 +645,11 @@ exp(I*PI) = -1.0+0.0i
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/numeric/complex" title="cpp/numeric/complex">C++ documentation</a></span> for <span class=""><span>Complex number arithmetic</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -758,7 +668,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;oldid=169478">https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;oldid=169478</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -768,39 +678,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/c/numeric/complex" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/c/numeric/complex" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;oldid=169478" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-cs"><a href="http://cs.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="cs" hreflang="cs">Česky</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ko"><a href="http://ko.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="ko" hreflang="ko">한국어</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-tr"><a href="http://tr.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="tr" hreflang="tr">Türkçe</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/c/numeric/complex" title="c/numeric/complex" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 February 2024, at 12:35.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -811,8 +689,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 1.146 secs. -->
-	</body>
-<!-- Cached 20241221152856 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/c/numeric/complex by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:12:59 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20241221152856 --><!-- Mirrored from en.cppreference.com/w/c/numeric/complex by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Dec 2024 20:12:59 GMT --></html>
