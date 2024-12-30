@@ -198,33 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="contentSub"><span class="subpages">&lt; <a href="../../c.html" title="c">c</a>‎ | <a href="../numeric.html" title="c/numeric">numeric</a></span></div>
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../../c.html" title="c"> C</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tbody><tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="c/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="c/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="c/header">Headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../types.html" title="c/types">Type support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../program.html" title="c/program">Program utilities</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../variadic.html" title="c/variadic">Variadic function support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="c/error">Error handling</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="c/memory">Dynamic memory management</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="c/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="c/algorithm">Algorithms</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="c/numeric">Numerics</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="c/chrono">Date and time utilities</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="c/io">Input/output support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="c/locale">Localization support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="c/thread">Concurrency support</a> <span class="t-mark-rev t-since-c11">(C11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="c/experimental">Technical Specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="c/symbol index">Symbol index</a></td></tr>
-</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div><div class="t-navbar-head"><a href="../numeric.html" title="c/numeric"> Numerics</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tbody><tr class="t-nv"><td colspan="5"><a href="math.html" title="c/numeric/math">Common mathematical functions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="fenv.html" title="c/numeric/fenv">Floating-point environment</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="random.html" title="c/numeric/random">Pseudo-random number generation</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="complex.html" title="c/numeric/complex">Complex number arithmetic</a> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><strong class="selflink">Type-generic math</strong> <span class="t-mark-rev t-since-c99">(C99)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html#Bit_manipulation" title="c/numeric">Bit manipulation</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html#Checked_integer_arithmetic" title="c/numeric">Checked integer arithmetic</a> <span class="t-mark-rev t-since-c23">(C23)</span></td></tr>
-</tbody></table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/navbar_content&amp;action=edit">[edit]</a></span></div></div></div></div><div class="t-navbar-sep">&nbsp;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>The header <code>&lt;tgmath.h&gt;</code> includes the headers <a href="math.html" title="c/numeric/math"><tt>&lt;math.h&gt;</tt></a> and <a href="complex.html" title="c/numeric/complex"><tt>&lt;complex.h&gt;</tt></a> and defines several type-generic macros that determine which real or, when applicable, complex function to call based on the types of the arguments.
 </p><p>For each macro, the parameters whose corresponding real type in the unsuffixed math.h function is <span class="mw-geshi c source-c"><span class="kw4">double</span></span> are known as <i>generic parameters</i> (for example, both parameters of <span class="t-lc"><a href="math/pow.html" title="c/numeric/math/pow">pow</a></span> are generic parameters, but only the first parameter of <span class="t-lc"><a href="math/scalbn.html" title="c/numeric/math/scalbn">scalbn</a></span> is a generic parameter).
 </p><p>When a <code>&lt;tgmath.h&gt;</code> macro is used the types of the arguments passed to the generic parameters determine which function is selected by the macro as described below. If the types of the arguments are not <a href="../language/type.html#Compatible_types" title="c/language/type">compatible</a> with the parameter types of the selected function, the behavior is undefined (e.g. if a complex argument is passed into a real-only <code>&lt;tgmath.h&gt;</code>'s macro: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> fc<span class="sy4">;</span> <a href="math/ceil.html"><span class="kw686">ceil</span></a><span class="br0">(</span>fc<span class="br0">)</span><span class="sy4">;</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex/complex.html"><span class="kw743">complex</span></a> dc<span class="sy4">;</span> <span class="kw4">double</span> d<span class="sy4">;</span> <a href="math/fmax.html"><span class="kw651">fmax</span></a><span class="br0">(</span>dc, d<span class="br0">)</span><span class="sy4">;</span></span></span> are examples of undefined behavior).
