@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Standard library header &lt;tgmath.h&gt;&nbsp;(C99)</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/tgmath&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/tgmath&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_header_tgmath skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;tgmath.h&gt;&nbsp;<span class="t-mark-rev t-since-c99">(C99)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>This header is part of <a href="../numeric.html#Type-generic_math" title="c/numeric">numeric</a> library and provides <a href="../numeric/tgmath.html" title="c/numeric/tgmath">type-generic macros</a> that determine which real or, when applicable, complex function to call based on the types of the arguments.
+</p>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Includes">Includes</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td colspan="2"> <a href="math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td colspan="2"> <a href="complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a>
+</td></tr>
+
+</tbody></table>
+<p><br>
+</p>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: 7.28 Type-generic math &lt;tgmath.h&gt; </td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/tgmath&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: B.27 Type-generic math &lt;tgmath.h&gt; </td></tr></tbody></table>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;math.h&gt;</span>
+<span class="co2">#include &lt;complex.h&gt;</span>
+&nbsp;
+<span class="co2">#define __STDC_VERSION_TGMATH_H__ 202311L</span>
+<span class="co2">#define acos              /* see description */</span>
+<span class="co2">#define acosh             /* see description */</span>
+<span class="co2">#define acospi            /* see description */</span>
+<span class="co2">#define asin              /* see description */</span>
+<span class="co2">#define asinh             /* see description */</span>
+<span class="co2">#define asinpi            /* see description */</span>
+<span class="co2">#define atan              /* see description */</span>
+<span class="co2">#define atan2             /* see description */</span>
+<span class="co2">#define atan2pi           /* see description */</span>
+<span class="co2">#define atanh             /* see description */</span>
+<span class="co2">#define atanpi            /* see description */</span>
+<span class="co2">#define cbrt              /* see description */</span>
+<span class="co2">#define ceil              /* see description */</span>
+<span class="co2">#define compoundn         /* see description */</span>
+<span class="co2">#define copysign          /* see description */</span>
+<span class="co2">#define cos               /* see description */</span>
+<span class="co2">#define cosh              /* see description */</span>
+<span class="co2">#define cospi             /* see description */</span>
+<span class="co2">#define dadd              /* see description */</span>
+<span class="co2">#define ddiv              /* see description */</span>
+<span class="co2">#define dfma              /* see description */</span>
+<span class="co2">#define dmul              /* see description */</span>
+<span class="co2">#define dsqrt             /* see description */</span>
+<span class="co2">#define dsub              /* see description */</span>
+<span class="co2">#define erf               /* see description */</span>
+<span class="co2">#define erfc              /* see description */</span>
+<span class="co2">#define exp               /* see description */</span>
+<span class="co2">#define exp10             /* see description */</span>
+<span class="co2">#define exp10m1           /* see description */</span>
+<span class="co2">#define exp2              /* see description */</span>
+<span class="co2">#define exp2m1            /* see description */</span>
+<span class="co2">#define expm1             /* see description */</span>
+<span class="co2">#define fabs              /* see description */</span>
+<span class="co2">#define fadd              /* see description */</span>
+<span class="co2">#define fdim              /* see description */</span>
+<span class="co2">#define fdiv              /* see description */</span>
+<span class="co2">#define ffma              /* see description */</span>
+<span class="co2">#define floor             /* see description */</span>
+<span class="co2">#define fma               /* see description */</span>
+<span class="co2">#define fmax              /* see description */</span>
+<span class="co2">#define fmaximum          /* see description */</span>
+<span class="co2">#define fmaximum_mag      /* see description */</span>
+<span class="co2">#define fmaximum_mag_num  /* see description */</span>
+<span class="co2">#define fmaximum_num      /* see description */</span>
+<span class="co2">#define fmin              /* see description */</span>
+<span class="co2">#define fminimum          /* see description */</span>
+<span class="co2">#define fminimum_mag      /* see description */</span>
+<span class="co2">#define fminimum_mag_num  /* see description */</span>
+<span class="co2">#define fminimum_num      /* see description */</span>
+<span class="co2">#define fmod              /* see description */</span>
+<span class="co2">#define fmul              /* see description */</span>
+<span class="co2">#define frexp             /* see description */</span>
+<span class="co2">#define fromfp            /* see description */</span>
+<span class="co2">#define fromfpx           /* see description */</span>
+<span class="co2">#define fsqrt             /* see description */</span>
+<span class="co2">#define fsub              /* see description */</span>
+<span class="co2">#define hypot             /* see description */</span>
+<span class="co2">#define ilogb             /* see description */</span>
+<span class="co2">#define ldexp             /* see description */</span>
+<span class="co2">#define lgamma            /* see description */</span>
+<span class="co2">#define llogb             /* see description */</span>
+<span class="co2">#define llrint            /* see description */</span>
+<span class="co2">#define llround           /* see description */</span>
+<span class="co2">#define log               /* see description */</span>
+<span class="co2">#define log10             /* see description */</span>
+<span class="co2">#define log10p1           /* see description */</span>
+<span class="co2">#define log1p             /* see description */</span>
+<span class="co2">#define log2              /* see description */</span>
+<span class="co2">#define log2p1            /* see description */</span>
+<span class="co2">#define logb              /* see description */</span>
+<span class="co2">#define logp1             /* see description */</span>
+<span class="co2">#define lrint             /* see description */</span>
+<span class="co2">#define lround            /* see description */</span>
+<span class="co2">#define nearbyint         /* see description */</span>
+<span class="co2">#define nextafter         /* see description */</span>
+<span class="co2">#define nextdown          /* see description */</span>
+<span class="co2">#define nexttoward        /* see description */</span>
+<span class="co2">#define nextup            /* see description */</span>
+<span class="co2">#define pow               /* see description */</span>
+<span class="co2">#define pown              /* see description */</span>
+<span class="co2">#define powr              /* see description */</span>
+<span class="co2">#define remainder         /* see description */</span>
+<span class="co2">#define remquo            /* see description */</span>
+<span class="co2">#define rint              /* see description */</span>
+<span class="co2">#define rootn             /* see description */</span>
+<span class="co2">#define round             /* see description */</span>
+<span class="co2">#define roundeven         /* see description */</span>
+<span class="co2">#define rsqrt             /* see description */</span>
+<span class="co2">#define scalbln           /* see description */</span>
+<span class="co2">#define scalbn            /* see description */</span>
+<span class="co2">#define sin               /* see description */</span>
+<span class="co2">#define sinh              /* see description */</span>
+<span class="co2">#define sinpi             /* see description */</span>
+<span class="co2">#define sqrt              /* see description */</span>
+<span class="co2">#define tan               /* see description */</span>
+<span class="co2">#define tanh              /* see description */</span>
+<span class="co2">#define tanpi             /* see description */</span>
+<span class="co2">#define tgamma            /* see description */</span>
+<span class="co2">#define trunc             /* see description */</span>
+<span class="co2">#define ufromfp           /* see description */</span>
+<span class="co2">#define ufromfpx          /* see description */</span></pre></div></div>
+<p>Only if the implementation does not define <span class="t-c"><span class="mw-geshi c source-c">__STDC_NO_COMPLEX__</span></span>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#ifndef __STDC_WANT_LIB_EXT1__</span>
+<span class="co2">#define carg  /* see description */</span>
+<span class="co2">#define cimag /* see description */</span>
+<span class="co2">#define conj  /* see description */</span>
+<span class="co2">#define cproj /* see description */</span>
+<span class="co2">#define creal /* see description */</span>
+<span class="co2">#endif</span></pre></div></div>
+<p>Only if the implementation defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_IEC_60559_DFP__</span></span>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define d32add      /* see description */</span>
+<span class="co2">#define d32div      /* see description */</span>
+<span class="co2">#define d32fma      /* see description */</span>
+<span class="co2">#define d32mul      /* see description */</span>
+<span class="co2">#define d32sqrt     /* see description */</span>
+<span class="co2">#define d32sub      /* see description */</span>
+<span class="co2">#define d64add      /* see description */</span>
+<span class="co2">#define d64div      /* see description */</span>
+<span class="co2">#define d64fma      /* see description */</span>
+<span class="co2">#define d64mul      /* see description */</span>
+<span class="co2">#define d64sqrt     /* see description */</span>
+<span class="co2">#define d64sub      /* see description */</span>
+<span class="co2">#define llquantexp  /* see description */</span>
+<span class="co2">#define quantize    /* see description */</span>
+<span class="co2">#define quantum     /* see description */</span>
+<span class="co2">#define samequantum /* see description */</span></pre></div></div>
+<p>Only if the implementation defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_IEC_60559_TYPES__</span></span> and additionally the user code
+defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_IEC_60559_TYPES_EXT__</span></span> before any inclusion of <code>&lt;tgmath.h&gt;</code>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#ifdef __STDC_WANT_IEC_60559_TYPES_EXT__</span>
+<span class="co2">#define /*dMadd*/   /* see description */</span>
+<span class="co2">#define /*dMdiv*/   /* see description */</span>
+<span class="co2">#define /*dMfma*/   /* see description */</span>
+<span class="co2">#define /*dMmul*/   /* see description */</span>
+<span class="co2">#define /*dMsqrt*/  /* see description */</span>
+<span class="co2">#define /*dMsub*/   /* see description */</span>
+<span class="co2">#define /*dMxadd*/  /* see description */</span>
+<span class="co2">#define /*dMxdiv*/  /* see description */</span>
+<span class="co2">#define /*dMxfma*/  /* see description */</span>
+<span class="co2">#define /*dMxmul*/  /* see description */</span>
+<span class="co2">#define /*dMxsqrt*/ /* see description */</span>
+<span class="co2">#define /*dMxsub*/  /* see description */</span>
+<span class="co2">#define /*fMadd*/   /* see description */</span>
+<span class="co2">#define /*fMdiv*/   /* see description */</span>
+<span class="co2">#define /*fMfma*/   /* see description */</span>
+<span class="co2">#define /*fMmul*/   /* see description */</span>
+<span class="co2">#define /*fMsqrt*/  /* see description */</span>
+<span class="co2">#define /*fMsub*/   /* see description */</span>
+<span class="co2">#define /*fMxadd*/  /* see description */</span>
+<span class="co2">#define /*fMxdiv*/  /* see description */</span>
+<span class="co2">#define /*fMxfma*/  /* see description */</span>
+<span class="co2">#define /*fMxmul*/  /* see description */</span>
+<span class="co2">#define /*fMxsqrt*/ /* see description */</span>
+<span class="co2">#define /*fMxsub*/  /* see description */</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 3251/1000000
+Preprocessor generated node count: 6775/1000000
+Post‐expand include size: 54482/4194304 bytes
+Template argument size: 16162/4194304 bytes
+Highest expansion depth: 17/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:23249-0!*!0!!*!*!* and timestamp 20250215221325 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/tgmath&amp;oldid=180736">https://en.cppreference.com/mwiki/index.php?title=c/header/tgmath&amp;oldid=180736</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.cppreference.com/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://en.cppreference.com/w/Category%253ATodo_with_reason.html" title="Category:Todo with reason">Todo with reason</a></li></ul></div></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.805 secs. -->
+	
+
+
+</body><!-- Cached 20250215221325 --></html>

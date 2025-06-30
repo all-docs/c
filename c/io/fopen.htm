@@ -1,0 +1,505 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>fopen, fopen_s</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-text {line-height: normal;}
+.source-text li, .source-text pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for text
+ * CSS class: source-text, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.text.source-text .de1, .text.source-text .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.text.source-text  {font-family:monospace;}
+.text.source-text .imp {font-weight: bold; color: red;}
+.text.source-text li, .text.source-text .li1 {font-weight: normal; vertical-align:top;}
+.text.source-text .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.text.source-text .li2 {font-weight: bold; vertical-align:top;}
+.text.source-text .ln-xtra, .text.source-text li.ln-xtra, .text.source-text div.ln-xtra {background-color: #ffc;}
+.text.source-text span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_io_fopen skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading">fopen, fopen_s</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<table class="t-dcl-begin"><tbody>
+<tr class="t-dsc-header">
+<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+ </div></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+<tbody class="t-dcl-rev t-dcl-rev-num"><tr class="t-dcl-rev-aux">
+<td></td>
+<td rowspan="142">(1)</td>
+<td></td>
+</tr>
+<tr class="t-dcl t-until-c99">
+<td> <div><span class="mw-geshi c source-c"><a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
+</tr>
+<tr class="t-dcl t-since-c99">
+<td> <div><span class="mw-geshi c source-c"><a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad">  </td>
+<td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
+</tr>
+</tbody><tbody>
+<tr class="t-dcl t-since-c11">
+<td> <div><span class="mw-geshi c source-c">errno_t fopen_s<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> <span class="sy2">*</span><span class="kw4">restrict</span> streamptr,<br>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> filename,<br>
+</p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> (2) </td>
+<td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
+</tr>
+<tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
+</tbody></table>
+<div class="t-li1"><span class="t-li">1)</span> Opens a file indicated by <code>filename</code> and returns a pointer to the file stream associated with that file. <code>mode</code> is used to determine the file access mode. </div>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the pointer to the file stream is written to <code>streamptr</code> and the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<dl><dd><ul><li> <code>streamptr</code> is a null pointer
+</li><li> <code>filename</code> is a null pointer
+</li><li> <code>mode</code> is a null pointer
+</li></ul>
+</dd></dl>
+As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="fopen.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="fopen.htm#File_access_flags"><span class="tocnumber">2</span> <span class="toctext">File access flags</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="fopen.htm#Return_value"><span class="tocnumber">3</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="fopen.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="fopen.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="fopen.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="fopen.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<table class="t-par-begin">
+
+
+<tbody><tr class="t-par">
+<td>  filename
+</td>
+<td> -
+</td>
+<td>  file name to associate the file stream to
+</td></tr>
+<tr class="t-par">
+<td>  mode
+</td>
+<td> -
+</td>
+<td>  null-terminated character string determining <a href="fopen.htm#File_access_flags">file access mode</a>
+</td></tr>
+<tr class="t-par">
+<td>  streamptr
+</td>
+<td> -
+</td>
+<td>  pointer to a pointer where the function stores the result (an out-parameter)
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=2" title="Edit section: File access flags">edit</a>]</span> <span class="mw-headline" id="File_access_flags">File access flags</span></h3>
+<table class="wikitable">
+
+<tbody><tr>
+<th> File access <br>mode string
+</th>
+<th> Meaning
+</th>
+<th> Explanation
+</th>
+<th> Action if file <br> already exists
+</th>
+<th> Action if file <br> does not exist
+</th></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"r"</span></span></span>
+</td>
+<td> read
+</td>
+<td> Open a file for reading
+</td>
+<td> read from start
+</td>
+<td> failure to open
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span>
+</td>
+<td> write
+</td>
+<td> Create a file for writing
+</td>
+<td> destroy contents
+</td>
+<td> create new
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a"</span></span></span>
+</td>
+<td> append
+</td>
+<td> Append to a file
+</td>
+<td> write to end
+</td>
+<td> create new
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"r+"</span></span></span>
+</td>
+<td> read extended
+</td>
+<td> Open a file for read/write
+</td>
+<td> read from start
+</td>
+<td> error
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w+"</span></span></span>
+</td>
+<td> write extended
+</td>
+<td> Create a file for read/write
+</td>
+<td> destroy contents
+</td>
+<td> create new
+</td></tr>
+<tr>
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a+"</span></span></span>
+</td>
+<td> append extended
+</td>
+<td> Open a file for read/write
+</td>
+<td> write to end
+</td>
+<td> create new
+</td></tr>
+<tr>
+<td colspan="5"> File access mode flag <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"b"</span></span></span> can optionally be specified to open a file in binary mode. This flag has no effect on POSIX systems, but on Windows it disables special handling of <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es2">\x1A</span>'</span></span></span>. <br> On the append file access modes, data is written to the end of the file regardless of the current position of the file position indicator.
+</td></tr>
+<tr>
+<td colspan="5"> The behavior is undefined if the mode is not one of the strings listed above. Some implementations define additional supported modes (e.g. <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fopen-wfopen">Windows</a>).
+</td></tr>
+<tr>
+<td colspan="5"> In update mode (<span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'+'</span></span></span>), both input and output may be performed, but output cannot be followed by input without an intervening call to <span class="t-lc"><a href="fflush.htm" title="c/io/fflush">fflush</a></span>, <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="rewind.htm" title="c/io/rewind">rewind</a></span>, and input cannot be followed by output without an intervening call to <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="rewind.htm" title="c/io/rewind">rewind</a></span>, unless the input operation encountered end of file. In update mode, implementations are permitted to use binary mode even when text mode is specified.
+</td></tr>
+<tr>
+<td colspan="5"> File access mode flag <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"x"</span></span></span> can optionally be appended to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w+"</span></span></span> specifiers. This flag forces the function to fail if the file exists, instead of overwriting it. <span class="t-mark-rev t-since-c11">(C11)</span>
+</td></tr>
+<tr>
+<td colspan="5"> When using <span class="t-lc">fopen_s</span> or <span class="t-lc">freopen_s</span>, file access permissions for any file created with <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a"</span></span></span> prevents other users from accessing it. File access mode flag <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"u"</span></span></span> can optionally be prepended to any specifier that begins with <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a"</span></span></span>, to enable the default <span class="t-lc"><strong class="selflink">fopen</strong></span> permissions. <span class="t-mark-rev t-since-c11">(C11)</span>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=3" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
+<div class="t-li1"><span class="t-li">1)</span> If successful, returns a pointer to the new file stream. The stream is fully buffered unless <code>filename</code> refers to an interactive device. On error, returns a null pointer. <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/fopen.html">POSIX requires</a> that <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> be set in this case.</div>
+<div class="t-li1"><span class="t-li">2)</span> If successful, returns zero and a pointer to the new file stream is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>streamptr</span></span>.  On error, returns a non-zero error code and writes the null pointer to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>streamptr</span></span> (unless <code>streamptr</code> is a null pointer itself).</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<p>The format of <code>filename</code> is implementation-defined, and does not necessarily refer to a file (e.g. it may be the console or another device accessible though filesystem API). On platforms that support them, <code>filename</code> may include absolute or relative filesystem path.
+</p>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> fname <span class="sy1">=</span> <span class="st0">"/tmp/unique_name.txt"</span><span class="sy4">;</span> <span class="co1">// or tmpnam(NULL);</span>
+    <span class="kw4">int</span> is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+&nbsp;
+    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> fopen<span class="br0">(</span>fname, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>fp<span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"File opening failed"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> is_ok<span class="sy4">;</span>
+    <span class="br0">}</span>
+    <a href="fputs.htm"><span class="kw831">fputs</span></a><span class="br0">(</span><span class="st0">"Hello, world!<span class="es1">\n</span>"</span>, fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="rewind.htm"><span class="kw874">rewind</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw4">int</span> c<span class="sy4">;</span> <span class="co1">// note: int, not char, required to handle EOF</span>
+    <span class="kw1">while</span> <span class="br0">(</span><span class="br0">(</span>c <span class="sy1">=</span> <a href="fgetc.htm"><span class="kw826">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../io.html"><span class="kw888">EOF</span></a><span class="br0">)</span> <span class="co1">// standard C I/O file reading loop</span>
+        <a href="putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">(</span><a href="ferror.htm"><span class="kw877">ferror</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
+        <a href="puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"I/O error when reading"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span><a href="feof.htm"><span class="kw876">feof</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"End of file is reached successfully"</span><span class="br0">)</span><span class="sy4">;</span>
+        is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.html"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <a href="fclose.htm"><span class="kw821">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="remove.htm"><span class="kw879">remove</span></a><span class="br0">(</span>fname<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> is_ok<span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Possible output:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Hello, world!
+End of file is reached successfully</pre></div></div> 
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=6" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 7.21.5.3 The fopen function (p: 223-224)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.5.2.1 The fopen_s function (p: 428-429)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 7.21.5.3 The fopen function (p: 305-306)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.5.2.1 The fopen_s function (p: 588-590)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 7.19.5.3 The fopen function (p: 271-272)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c89">
+<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+</li></ul>
+<dl><dd><ul><li> 4.9.5.3 The fopen function 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="fclose.htm" title="c/io/fclose"> <span class="t-lines"><span>fclose</span></span></a></div></div>
+</td>
+<td>   closes a file  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fclose&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="fflush.htm" title="c/io/fflush"> <span class="t-lines"><span>fflush</span></span></a></div></div>
+</td>
+<td>   synchronizes an output stream with the actual file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fflush&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="freopen.htm" title="c/io/freopen"> <span class="t-lines"><span>freopen</span><span>freopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   open an existing stream with a different name <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_freopen&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/io/c/fopen.html" title="cpp/io/c/fopen">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>fopen</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 6444/1000000
+Preprocessor generated node count: 11217/1000000
+Post‐expand include size: 179761/4194304 bytes
+Template argument size: 32666/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:6197-0!*!0!!en!*!* and timestamp 20250317164505 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;oldid=149657">https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;oldid=149657</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 1.506 secs. -->
+	
+
+
+</body><!-- Cached 20250317164505 --></html>

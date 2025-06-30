@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Strings library</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit">
+<link rel="shortcut icon" href="../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_string skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading">Strings library</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="string.htm#Null-terminated_byte_string"><span class="tocnumber">1</span> <span class="toctext">Null-terminated byte string</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="string.htm#Null-terminated_multibyte_string"><span class="tocnumber">2</span> <span class="toctext">Null-terminated multibyte string</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="string.htm#Null-terminated_wide_string"><span class="tocnumber">3</span> <span class="toctext">Null-terminated wide string</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="string.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit&amp;section=1" title="Edit section: Null-terminated byte string">edit</a>]</span> <span class="mw-headline" id="Null-terminated_byte_string"><a href="string/byte.htm" title="c/string/byte">Null-terminated byte string</a></span></h3>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit&amp;section=2" title="Edit section: Null-terminated multibyte string">edit</a>]</span> <span class="mw-headline" id="Null-terminated_multibyte_string"><a href="string/multibyte.htm" title="c/string/multibyte">Null-terminated multibyte string</a></span></h3>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit&amp;section=3" title="Edit section: Null-terminated wide string">edit</a>]</span> <span class="mw-headline" id="Null-terminated_wide_string"><a href="string/wide.htm" title="c/string/wide">Null-terminated wide string</a></span></h3>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/string.html" title="cpp/string">C++ documentation</a></span> for <span class=""><span>Strings library</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 440/1000000
+Preprocessor generated node count: 2123/1000000
+Post‐expand include size: 15736/4194304 bytes
+Template argument size: 1318/4194304 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5756-0!*!0!!en!*!* and timestamp 20241231172752 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/string&amp;oldid=178895">https://en.cppreference.com/mwiki/index.php?title=c/string&amp;oldid=178895</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.097 secs. -->
+	
+
+
+</body><!-- Cached 20241231172752 --></html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Conformance</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_conformance skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading">Conformance</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p><i>Conformance</i> has a three-fold definition:
+</p>
+<ul><li> <i>strictly conforming program</i> - uses only well-defined language constructs, that is constructs with a single behavior. It excludes unspecified, undefined, or implementation-defined behavior, and does not exceed any minimum implementation limit.
+</li><li> <i>conforming program</i> - acceptable to a conforming implementation.
+</li><li> <i>conforming implementation</i> -
+<ul><li> A conforming hosted implementation shall accept any strictly conforming program.
+</li><li> A conforming freestanding implementation shall accept any strictly conforming program in which the use of the features specified in the library clause (clause 7) is confined to the contents of the freestanding standard library headers (see below).
+</li><li> A conforming implementation may have extensions (including additional library functions), provided they do not alter the behavior of any strictly conforming program.
+</li></ul>
+</li></ul>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="conformance.htm#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="conformance.htm#Freestanding_standard_library_headers"><span class="tocnumber">1.1</span> <span class="toctext">Freestanding standard library headers</span></a>
+<ul>
+<li class="toclevel-3"><a href="conformance.htm#Fully_freestanding_standard_library_headers"><span class="tocnumber">1.1.1</span> <span class="toctext">Fully freestanding standard library headers</span></a></li>
+<li class="toclevel-3"><a href="conformance.htm#Conditionally_fully_freestanding_standard_library_headers"><span class="tocnumber">1.1.2</span> <span class="toctext">Conditionally fully freestanding standard library headers</span></a></li>
+<li class="toclevel-3"><a href="conformance.htm#Partially_freestanding_standard_library_headers"><span class="tocnumber">1.1.3</span> <span class="toctext">Partially freestanding standard library headers</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="conformance.htm#References"><span class="tocnumber">2</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="conformance.htm#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p>The standard does not define any minimum implementation limit on translation units. A hosted environment has an operating system; a freestanding environment does not. A program running in a hosted environment may use all features described in the library clause (clause 7); a program running in a freestanding environment may use a subset of library features required by clause 4.
+</p>
+<h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit&amp;section=2" title="Edit section: Freestanding standard library headers">edit</a>]</span> <span class="mw-headline" id="Freestanding_standard_library_headers">Freestanding standard library headers</span></h4>
+<p>All standard library features in every fully freestanding header are required to be provided by a freestanding implementation.
+</p>
+<table class="t-rev-begin">
+<tbody><tr class="t-rev t-since-c23"><td>
+<p>Some standard library headers are conditionally freestanding.
+</p>
+<ul><li> If the implementation predefines the macro <code>__STDC_IEC_60559_BFP__</code> or <code>__STDC_IEC_60559_DFP__</code>, then <a href="../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a> and <a href="../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a> are fully freestanding headers. However, the behavior of functions in these headers is required to be well-defined in a freestanding environment only if a program does not set the state of the <a href="../preprocessor/impl.html#Standard_pragmas" title="c/preprocessor/impl"><tt>FENV_ACCESS</tt></a> pragma to <code>ON</code>.
+</li></ul>
+<p>Some standard library headers are partially freestanding.
+</p>
+<ul><li> In <a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>, <a href="../program/memalignment.html" title="c/program/memalignment"><tt>memalignment</tt></a> is freestanding. Additionally, when <code>__STDC_IEC_60559_BFP__</code> or <code>__STDC_IEC_60559_DFP__</code> are predefined, numeric conversion functions (<code>ato<i>X</i></code>, <code>strto<i>X</i></code>, and <code>strfrom<i>X</i></code>) are also freestanding, while their behavior is required to be well-defined in a freestanding environment only if a program does not set the state of the <a href="../preprocessor/impl.html#Standard_pragmas" title="c/preprocessor/impl"><tt>FENV_ACCESS</tt></a> pragma to <code>ON</code>. No other component in <a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a> is required to be to be provided by a freestanding implementation.
+</li><li> In <a href="../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>, <a href="../string/byte/strdup.html" title="c/string/byte/strdup"><tt>strdup</tt></a>, <a href="../string/byte/strndup.html" title="c/string/byte/strndup"><tt>strndup</tt></a>, <span class="t-lc"><a href="../string/byte/strcoll.html" title="c/string/byte/strcoll">strcoll</a></span>, <span class="t-lc"><a href="../string/byte/strxfrm.html" title="c/string/byte/strxfrm">strxfrm</a></span>, <span class="t-lc"><a href="../string/byte/strtok.html" title="c/string/byte/strtok">strtok</a></span>, and <span class="t-lc"><a href="../string/byte/strerror.html" title="c/string/byte/strerror">strerror</a></span> are not required to be provided by a freestanding implementation.
+</li></ul>
+</td>
+<td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
+</tbody></table>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Fully_freestanding_standard_library_headers"> Fully freestanding standard library headers </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <a href="../header/float.html" title="c/header/float"><tt>&lt;float.h&gt;</tt></a>
+</td>
+<td> <a href="../types/limits.html#Limits_of_floating-point_types" title="c/types/limits">Limits of floating-point types</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/iso646.html" title="c/header/iso646"><tt>&lt;iso646.h&gt;</tt></a> <span class="t-mark-rev t-since-c95">(since C95)</span>
+</td>
+<td> <a href="operator_alternative.htm" title="c/language/operator alternative">Alternative operator spellings</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/limits.html" title="c/header/limits"><tt>&lt;limits.h&gt;</tt></a>
+</td>
+<td> <a href="../types/limits.html" title="c/types/limits">Ranges of integer types</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdalign.html" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a> <span class="t-mark-rev t-since-c11">(since C11)</span>
+</td>
+<td> <a href="../types.html" title="c/types"><code>alignas</code> and <code>alignof</code></a> convenience macros
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdarg.html" title="c/header/stdarg"><tt>&lt;stdarg.h&gt;</tt></a>
+</td>
+<td> <a href="../variadic.html" title="c/variadic">Variable arguments</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdbool.html" title="c/header/stdbool"><tt>&lt;stdbool.h&gt;</tt></a> <span class="t-mark-rev t-since-c99">(since C99)</span>
+</td>
+<td> <a href="../types.html" title="c/types">Macros for boolean type</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a>
+</td>
+<td> <a href="../types.html" title="c/types">Common macro definitions</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdint.html" title="c/header/stdint"><tt>&lt;stdint.h&gt;</tt></a> <span class="t-mark-rev t-since-c99">(since C99)</span>
+</td>
+<td> <a href="../types/integer.html" title="c/types/integer">Fixed-width integer types</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdnoreturn.html" title="c/header/stdnoreturn"><tt>&lt;stdnoreturn.h&gt;</tt></a> <span class="t-mark-rev t-since-c11">(since C11)</span>
+</td>
+<td> <a href="../types.html" title="c/types"><tt>noreturn</tt></a> convenience macro
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/stdbit.html" title="c/header/stdbit"><tt>&lt;stdbit.h&gt;</tt></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</td>
+<td> Macros to work with the byte and bit representations of types
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Conditionally_fully_freestanding_standard_library_headers"> Conditionally fully freestanding standard library headers </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <a href="../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</td>
+<td> <a href="../numeric/fenv.html" title="c/numeric/fenv">Floating-point environment</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</td>
+<td> <a href="../numeric/math.html" title="c/numeric/math">Common mathematics functions</a>
+</td></tr>
+
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Partially_freestanding_standard_library_headers"> Partially freestanding standard library headers </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</td>
+<td> General utilities: <a href="../memory.html" title="c/memory">memory management</a>, <a href="../program.html" title="c/program">program utilities</a>, <a href="../string.html" title="c/string">string conversions</a>, <a href="../numeric/random.html" title="c/numeric/random">random numbers</a>, <a href="../algorithm.html" title="c/algorithm">algorithms</a>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td> <a href="../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</td>
+<td> <a href="../string/byte.html" title="c/string/byte">String handling</a>
+</td></tr>
+
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit&amp;section=3" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-23">
+<ul><li> C23 standard (ISO/IEC 9899:2024): 
+</li></ul>
+<dl><dd><ul><li> 4 Conformance (p: 9-10)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 4 Conformance (p: 4)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 4 Conformance (p: 8-9)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 4 Conformance (p: 7-8)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c89">
+<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+</li></ul>
+<dl><dd><ul><li> 1.7 Compliance 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/freestanding.html" title="cpp/freestanding">C++ documentation</a></span> for <span class=""><span>Freestanding and hosted implementation</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 2287/1000000
+Preprocessor generated node count: 4790/1000000
+Post‐expand include size: 39701/4194304 bytes
+Template argument size: 11665/4194304 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:15688-0!*!0!!en!*!* and timestamp 20250418080818 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;oldid=177001">https://en.cppreference.com/mwiki/index.php?title=c/language/conformance&amp;oldid=177001</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.253 secs. -->
+	
+
+
+</body><!-- Cached 20250418080818 --></html>

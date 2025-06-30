@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>C attribute: fallthrough (since C23)</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit">
+<link rel="shortcut icon" href="../../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_attributes_fallthrough skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">C attribute:</span> fallthrough <span class="t-mark-rev t-since-c23">(since C23)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>Indicates that the fall through from the previous case label is intentional and should not be diagnosed by a compiler that warns on fallthrough.
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="fallthrough.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="fallthrough.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="fallthrough.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="fallthrough.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
+<table class="t-sdsc-begin">
+
+<tbody><tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td class="t-sdsc-nopad"> <code><b>[[</b></code> <code><b>fallthrough</b></code> <code><b>]]</b></code><br><code><b>[[</b></code> <code><b>__fallthrough__</b></code> <code><b>]]</b></code>
+</td>
+<td class="t-sdsc-nopad">
+</td>
+<td class="t-sdsc-nopad">
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p>May only be used in an <a href="../declarations.html" title="c/language/declarations">attribute declaration</a> to create a <i>fallthrough declaration</i> (<span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span></span></span>).
+</p><p>A fallthrough declaration may only be used in a <a href="../switch.html" title="c/language/switch"><tt>switch</tt></a> statement, where the next block item (statement, declaration, or label) to be encounted is a statement with a <code>case</code> or <code>default</code> label for that switch statement.
+</p><p>Indicates that the fall through from the previous case label is intentional and should not be diagnosed by a compiler that warns on fallthrough.
+</p>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdbool.h&gt;</span>
+&nbsp;
+<span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+<span class="kw4">void</span> h<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+<span class="kw4">void</span> i<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+&nbsp;
+<span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">switch</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
+    <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>
+      g<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+     <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span>
+    <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span> <span class="co1">// no warning on fallthrough</span>
+      h<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span> <span class="co1">// compiler may warn on fallthrough</span>
+      <span class="kw1">if</span><span class="br0">(</span>n <span class="sy1">&lt;</span> <span class="nu0">3</span><span class="br0">)</span> <span class="br0">{</span>
+          i<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+          <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK</span>
+      <span class="br0">}</span>
+      <span class="kw1">else</span> <span class="br0">{</span>
+          <span class="kw1">return</span><span class="sy4">;</span>
+      <span class="br0">}</span>
+    <span class="kw1">case</span> <span class="nu0">5</span><span class="sy4">:</span>
+      <span class="kw1">while</span> <span class="br0">(</span><span class="kw2">false</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// ill-formed: no subsequent case or default label</span>
+      <span class="br0">}</span>
+    <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span>
+      <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// ill-formed: no subsequent case or default label</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span></pre></div></div>
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/language/attributes/fallthrough.html" title="cpp/language/attributes/fallthrough">C++ documentation</a></span> for <span class="t-dsc-see-tt"><span>fallthrough</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 1867/1000000
+Preprocessor generated node count: 4703/1000000
+Post‐expand include size: 61939/4194304 bytes
+Template argument size: 11366/4194304 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:19920-0!*!0!!en!*!* and timestamp 20250131145316 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;oldid=124533">https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/fallthrough&amp;oldid=124533</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.285 secs. -->
+	
+
+
+</body><!-- Cached 20250131145316 --></html>

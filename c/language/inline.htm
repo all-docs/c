@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>inline function specifier</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_inline skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading">inline function specifier</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>Declares an <a href="https://en.wikipedia.org/wiki/inline_function" class="extiw" title="enwiki:inline function">inline function</a>.
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="inline.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="inline.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="inline.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="inline.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="inline.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="inline.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="inline.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
+<table class="t-sdsc-begin">
+
+<tbody><tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr>
+<tr class="t-sdsc">
+<td> <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">inline</span></span></span> <span class="t-spar">function_declaration</span>
+</td>
+<td class="t-sdsc-nopad">
+</td>
+<td> <span class="t-mark-rev t-since-c99">(since C99)</span>
+</td></tr>
+
+
+
+<tr>
+<td colspan="10" class="t-sdsc-sep">
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
+<p>The intent of the <code><b>inline</b></code> specifier is to serve as a hint for the compiler to perform optimizations, such as <a href="https://en.wikipedia.org/wiki/inline_expansion" class="extiw" title="enwiki:inline expansion">function inlining</a>, which usually require the definition of a function to be visible at the call site. The compilers can (and usually do) ignore presence or absence of the <code>inline</code> specifier for the purpose of optimization.
+</p><p>If the compiler performs function inlining, it replaces a call of that function with its body, avoiding the overhead of a function call (placing data on stack and retrieving the result), which may result in a larger executable as the code for the function has to be repeated multiple times. The result is similar to <a href="../preprocessor/replace.html" title="c/preprocessor/replace">function-like macros</a>, except that identifiers and macros used in the function refer to the definitions visible at the point of definition, not at the point of call.
+</p><p>Regardless of whether inlining takes place, the following semantics of inline functions are guaranteed:
+</p><p>Any function with internal linkage may be declared <code>static inline</code> with no other restrictions.
+</p><p>A non-static inline function cannot define a non-const function-local static and cannot refer to a file-scope static.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">static</span> <span class="kw4">int</span> x<span class="sy4">;</span>
+&nbsp;
+<span class="kw1">inline</span> <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">static</span> <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// error: non-const static in a non-static inline function</span>
+    <span class="kw4">int</span> k <span class="sy1">=</span> x<span class="sy4">;</span> <span class="co1">// error: non-static inline function accesses a static variable</span>
+<span class="br0">}</span></pre></div></div>
+<p>If a non-static function is declared <code>inline</code>, then it must be defined in the same translation unit. The inline definition that does not use <code>extern</code> is not externally visible and does not prevent other translation units from defining the same function. This makes the <code><b>inline</b></code> keyword an alternative to <code>static</code> for defining functions inside header files, which may be included in multiple translation units of the same program.
+</p><p>If a function is declared <code>inline</code> in some translation units, it does not need to be declared <code>inline</code> everywhere: at most one translation unit may also provide a regular, non-inline non-static function, or a function declared <code>extern inline</code>. This one translation unit is said to provide the <i>external definition</i>. In order to avoid undefined behavior, one external definition must exist in the program if the name of the function with external linkage is used in an expression, see <a href="extern.htm#One_definition_rule" title="c/language/extern">one definition rule</a>.
+</p><p>The address of an inline function with external linkage is always the address of the external definition, but when this address is used to make a function call, it's unspecified whether the <i>inline definition</i> (if present in the translation unit) or the <i>external definition</i> is called. The static objects defined within an inline definition are distinct from the static objects defined within the external definition:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">inline</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>saddr<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="co1">// the inline definition for use in this file</span>
+<span class="br0">{</span>
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span> name<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"saddr"</span><span class="sy4">;</span>
+    <span class="kw1">return</span> name<span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> compare_name<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> saddr<span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> saddr<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// unspecified behavior, one call could be external</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw2">extern</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>saddr<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// an external definition is generated, too</span></pre></div></div>
+<p>A C program should not depend on whether the inline version or the external version of a function is called, otherwise the behavior is unspecified.
+</p>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
+<p><a href="../keyword/inline.html" title="c/keyword/inline"><tt>inline</tt></a>
+</p>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<p>The <code>inline</code> keyword was adopted from C++, but in C++, if a function is declared <code>inline</code>, it must be declared <code>inline</code> in every translation unit, and also every definition of an inline function must be exactly the same (in C, the definitions may be different, and depending on the differences only results in unspecified behavior). On the other hand, C++ allows non-const function-local statics and all function-local statics from different definitions of an inline function are the same in C++ but distinct in C.
+</p>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
+<p>Header file "test.h"
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#ifndef TEST_H_INCLUDED</span>
+<span class="co2">#define TEST_H_INCLUDED</span>
+&nbsp;
+<span class="kw1">inline</span> <span class="kw4">int</span> sum<span class="br0">(</span><span class="kw4">int</span> a, <span class="kw4">int</span> b<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> a <span class="sy2">+</span> b<span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="co2">#endif</span></pre></div></div>
+<p>Source file "sum.c"
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include "test.h"</span>
+&nbsp;
+<span class="kw2">extern</span> <span class="kw1">inline</span> <span class="kw4">int</span> sum<span class="br0">(</span><span class="kw4">int</span> a, <span class="kw4">int</span> b<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// provides external definition</span></pre></div></div>
+<p>Source file "test1.c"
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include "test.h"</span>
+&nbsp;
+<span class="kw2">extern</span> <span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, sum<span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">)</span> <span class="sy2">+</span> f<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Source file "test2.c"
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include "test.h"</span>
+&nbsp;
+<span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> sum<span class="br0">(</span><span class="nu0">3</span>, <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<p>Output
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="nu0">10</span></pre></div></div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=6" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-23">
+<ul><li> C23 standard (ISO/IEC 9899:2024): 
+</li></ul>
+<dl><dd><ul><li> 6.7.4 Function specifiers (p: TBD)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 6.7.4 Function specifiers (p: TBD)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 6.7.4 Function specifiers (p: 125-127)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 6.7.4 Function specifiers (p: 112-113)
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/language/inline.html" title="cpp/language/inline">C++ documentation</a></span> for <span class=""><span><code>inline</code> specifier</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 1163/1000000
+Preprocessor generated node count: 4855/1000000
+Post‐expand include size: 32293/4194304 bytes
+Template argument size: 5128/4194304 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:13833-0!*!0!!en!*!* and timestamp 20250418073912 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;oldid=159889">https://en.cppreference.com/mwiki/index.php?title=c/language/inline&amp;oldid=159889</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.380 secs. -->
+	
+
+
+</body><!-- Cached 20250418073912 --></html>

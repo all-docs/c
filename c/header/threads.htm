@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Standard library header &lt;threads.h&gt;&nbsp;(C11)</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_header_threads skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;threads.h&gt;&nbsp;<span class="t-mark-rev t-since-c11">(C11)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>This header is part of <a href="../thread.html" title="c/thread">concurrency support library</a> and provides support for threads, mutual exclusion, condition variables, and thread-specific storages.
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="threads.htm#Threads"><span class="tocnumber">1</span> <span class="toctext">Threads</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="threads.htm#Mutual_exclusion"><span class="tocnumber">2</span> <span class="toctext">Mutual exclusion</span></a>
+<ul>
+<li class="toclevel-2"><a href="threads.htm#Call_once"><span class="tocnumber">2.1</span> <span class="toctext">Call once</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="threads.htm#Condition_variables"><span class="tocnumber">3</span> <span class="toctext">Condition variables</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="threads.htm#Thread-local_storage"><span class="tocnumber">4</span> <span class="toctext">Thread-local storage</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="threads.htm#Synopsis"><span class="tocnumber">5</span> <span class="toctext">Synopsis</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit&amp;section=1" title="Edit section: Threads">edit</a>]</span> <span class="mw-headline" id="Threads">Threads</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td>  <code><b>thrd_t</b></code>
+</td>
+<td>  implementation-defined complete object type identifying a thread <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_create.html" title="c/thread/thrd create"> <span class="t-lines"><span>thrd_create</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   creates a thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_create&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_equal.html" title="c/thread/thrd equal"> <span class="t-lines"><span>thrd_equal</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   checks if two identifiers refer to the same thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_equal&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_current.html" title="c/thread/thrd current"> <span class="t-lines"><span>thrd_current</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   obtains the current thread identifier  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_current&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_sleep.html" title="c/thread/thrd sleep"> <span class="t-lines"><span>thrd_sleep</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   suspends execution of the calling thread for the given period of time  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_sleep&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_yield.html" title="c/thread/thrd yield"> <span class="t-lines"><span>thrd_yield</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   yields the current time slice  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_yield&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_exit.html" title="c/thread/thrd exit"> <span class="t-lines"><span>thrd_exit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   terminates the calling thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_exit&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_detach.html" title="c/thread/thrd detach"> <span class="t-lines"><span>thrd_detach</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   detaches a thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_detach&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_join.html" title="c/thread/thrd join"> <span class="t-lines"><span>thrd_join</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   blocks until a thread terminates  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_join&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thrd_errors.html" title="c/thread/thrd errors"> <span class="t-lines"><span>thrd_success</span><span>thrd_timedout</span><span>thrd_busy</span><span>thrd_nomem</span><span>thrd_error</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   indicates a thread error status  <br> <span class="t-mark">(constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_errors&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>thrd_start_t</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   a typedef of the function pointer type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span></span>, used by <span class="t-c"><span class="mw-geshi c source-c"><a href="../thread/thrd_create.html"><span class="kw997">thrd_create</span></a></span></span>  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_start_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit&amp;section=2" title="Edit section: Mutual exclusion">edit</a>]</span> <span class="mw-headline" id="Mutual_exclusion">Mutual exclusion</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td>  <code><b>mtx_t</b></code>
+</td>
+<td>  mutex identifier <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_init.html" title="c/thread/mtx init"> <span class="t-lines"><span>mtx_init</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   creates a mutex  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_init&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_lock.html" title="c/thread/mtx lock"> <span class="t-lines"><span>mtx_lock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   blocks until locks a mutex  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_lock&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_timedlock.html" title="c/thread/mtx timedlock"> <span class="t-lines"><span>mtx_timedlock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   blocks until locks a mutex or times out  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_timedlock&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_trylock.html" title="c/thread/mtx trylock"> <span class="t-lines"><span>mtx_trylock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   locks a mutex or returns without blocking if already locked  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_trylock&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_unlock.html" title="c/thread/mtx unlock"> <span class="t-lines"><span>mtx_unlock</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   unlocks a mutex  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_unlock&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_destroy.html" title="c/thread/mtx destroy"> <span class="t-lines"><span>mtx_destroy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   destroys a mutex  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_destroy&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/mtx_types.html" title="c/thread/mtx types"> <span class="t-lines"><span>mtx_plain</span><span>mtx_recursive</span><span>mtx_timed</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   defines the type of a mutex  <br> <span class="t-mark">(enum)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_mtx_types&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Call_once"> Call once </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/ONCE_FLAG_INIT.html" title="c/thread/call once"> <span class="t-lines"><span>call_once</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   calls a function exactly once  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_call_once&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit&amp;section=3" title="Edit section: Condition variables">edit</a>]</span> <span class="mw-headline" id="Condition_variables">Condition variables</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td> <code><b>cnd_t</b></code>
+</td>
+<td> condition variable identifier
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_init.html" title="c/thread/cnd init"> <span class="t-lines"><span>cnd_init</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   creates a condition variable  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_init&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_signal.html" title="c/thread/cnd signal"> <span class="t-lines"><span>cnd_signal</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   unblocks one thread blocked on a condition variable  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_signal&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_broadcast.html" title="c/thread/cnd broadcast"> <span class="t-lines"><span>cnd_broadcast</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   unblocks all threads blocked on a condition variable  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_broadcast&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_wait.html" title="c/thread/cnd wait"> <span class="t-lines"><span>cnd_wait</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   blocks on a condition variable  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_wait&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_timedwait.html" title="c/thread/cnd timedwait"> <span class="t-lines"><span>cnd_timedwait</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   blocks on a condition variable, with a timeout  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_timedwait&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/cnd_destroy.html" title="c/thread/cnd destroy"> <span class="t-lines"><span>cnd_destroy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   destroys a condition variable  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_cnd_destroy&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit&amp;section=4" title="Edit section: Thread-local storage">edit</a>]</span> <span class="mw-headline" id="Thread-local_storage">Thread-local storage</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/thread_local.html" title="c/thread/thread local"> <span class="t-lines"><span>thread_local</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-until-c23">(removed in C23)</span></span></span></div></div>
+</td>
+<td>  convenience macro for storage-class specifier <span class="mw-geshi c source-c">_Thread_local</span> <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thread_local&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <code><b>tss_t</b></code>
+</td>
+<td>  thread-specific storage pointer <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/TSS_DTOR_ITERATIONS.html" title="c/thread/TSS DTOR ITERATIONS"> <span class="t-lines"><span>TSS_DTOR_ITERATIONS</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   maximum number of times destructors are called  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_TSS_DTOR_ITERATIONS&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span><code><b>tss_dtor_t</b></code></span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   function pointer type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span></span>, used for TSS destructor <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_dtor_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/tss_create.html" title="c/thread/tss create"> <span class="t-lines"><span>tss_create</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   creates thread-specific storage pointer with a given destructor  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_create&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/tss_get.html" title="c/thread/tss get"> <span class="t-lines"><span>tss_get</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads from thread-specific storage  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_get&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/tss_set.html" title="c/thread/tss set"> <span class="t-lines"><span>tss_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   write to thread-specific storage  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_set&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../thread/tss_delete.html" title="c/thread/tss delete"> <span class="t-lines"><span>tss_delete</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   releases the resources held by a given thread-specific pointer   <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_delete&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;action=edit&amp;section=5" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define __STDC_NO_THREADS__ 202311L</span>
+&nbsp;
+<span class="co2">#define ONCE_FLAG_INIT      /* see description */</span>
+<span class="co2">#define TSS_DTOR_ITERATIONS /* see description */</span>
+&nbsp;
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw996">thrd_t</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw1034">tss_t</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw1035">tss_dtor_t</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../thread.html"><span class="kw1010">thrd_start_t</span></a><span class="sy4">;</span>
+&nbsp;
+<span class="co2">#define mtx_plain     /* see description */</span>
+<span class="co2">#define mtx_recursive /* see description */</span>
+<span class="co2">#define mtx_timed     /* see description */</span>
+<span class="co2">#define once_flag     /* see description */</span>
+<span class="co2">#define thrd_busy     /* see description */</span>
+<span class="co2">#define thrd_error    /* see description */</span>
+<span class="co2">#define thrd_nomem    /* see description */</span>
+<span class="co2">#define thrd_success  /* see description */</span>
+<span class="co2">#define thrd_timedout /* see description */</span>
+&nbsp;
+<span class="kw4">void</span> <a href="../thread/call_once.html"><span class="kw1024">call_once</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1022">once_flag</span></a><span class="sy2">*</span> flag, <span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>func<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/cnd_broadcast.html"><span class="kw1028">cnd_broadcast</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> cond<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../thread/cnd_destroy.html"><span class="kw1031">cnd_destroy</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> cond<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/cnd_init.html"><span class="kw1026">cnd_init</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> cond<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/cnd_signal.html"><span class="kw1027">cnd_signal</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> cond<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/cnd_timedwait.html"><span class="kw1030">cnd_timedwait</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> cond, <a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> mtx,
+<span class="kw4">const</span> <span class="kw1">struct</span> timespec<span class="sy2">*</span> <span class="kw4">restrict</span> ts<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/cnd_wait.html"><span class="kw1029">cnd_wait</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1025">cnd_t</span></a><span class="sy2">*</span> cond, <a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../thread/mtx_destroy.html"><span class="kw1017">mtx_destroy</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/mtx_init.html"><span class="kw1012">mtx_init</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx, <span class="kw4">int</span> type<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/mtx_lock.html"><span class="kw1013">mtx_lock</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/mtx_timedlock.html"><span class="kw1014">mtx_timedlock</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> mtx, <span class="kw4">const</span> <span class="kw1">struct</span> timespec<span class="sy2">*</span> <span class="kw4">restrict</span> ts<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/mtx_trylock.html"><span class="kw1015">mtx_trylock</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/mtx_unlock.html"><span class="kw1016">mtx_unlock</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mtx<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/thrd_create.html"><span class="kw997">thrd_create</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw996">thrd_t</span></a><span class="sy2">*</span> thr, <a href="../thread.html"><span class="kw1010">thrd_start_t</span></a> func, <span class="kw4">void</span><span class="sy2">*</span> arg<span class="br0">)</span><span class="sy4">;</span>
+<a href="../thread.html"><span class="kw996">thrd_t</span></a> <a href="../thread/thrd_current.html"><span class="kw999">thrd_current</span></a><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/thrd_detach.html"><span class="kw1003">thrd_detach</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw996">thrd_t</span></a> thr<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/thrd_equal.html"><span class="kw998">thrd_equal</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw996">thrd_t</span></a> thr0, <a href="../thread.html"><span class="kw996">thrd_t</span></a> thr1<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> <a href="../thread/thrd_exit.html"><span class="kw1002">thrd_exit</span></a><span class="br0">(</span><span class="kw4">int</span> res<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/thrd_join.html"><span class="kw1004">thrd_join</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw996">thrd_t</span></a> thr, <span class="kw4">int</span><span class="sy2">*</span> res<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/thrd_sleep.html"><span class="kw1000">thrd_sleep</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw1">struct</span> timespec<span class="sy2">*</span> duration, <span class="kw1">struct</span> timespec<span class="sy2">*</span> remaining<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../thread/thrd_yield.html"><span class="kw1001">thrd_yield</span></a><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/tss_create.html"><span class="kw1036">tss_create</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1034">tss_t</span></a><span class="sy2">*</span> key, <a href="../thread.html"><span class="kw1035">tss_dtor_t</span></a> dtor<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../thread/tss_delete.html"><span class="kw1039">tss_delete</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1034">tss_t</span></a> key<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span><span class="sy2">*</span> <a href="../thread/tss_get.html"><span class="kw1037">tss_get</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1034">tss_t</span></a> key<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../thread/tss_set.html"><span class="kw1038">tss_set</span></a><span class="br0">(</span><a href="../thread.html"><span class="kw1034">tss_t</span></a> key, <span class="kw4">void</span><span class="sy2">*</span> val<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 6471/1000000
+Preprocessor generated node count: 7299/1000000
+Post‐expand include size: 212576/4194304 bytes
+Template argument size: 39037/4194304 bytes
+Highest expansion depth: 22/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:23263-0!*!0!!en!*!* and timestamp 20250215220657 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;oldid=180751">https://en.cppreference.com/mwiki/index.php?title=c/header/threads&amp;oldid=180751</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.033 secs. -->
+	
+
+
+</body><!-- Cached 20250215221327 --></html>

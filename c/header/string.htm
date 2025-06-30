@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Standard library header &lt;string.h&gt;</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/string&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/string&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_header_string skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;string.h&gt;</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>This header provides functions for handling <a href="../string/byte.html" title="c/string/byte">null-terminated byte strings</a>.
+</p>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="string.htm#Macros"><span class="tocnumber">1</span> <span class="toctext">Macros</span></a></li>
+<li class="toclevel-1"><a href="string.htm#Types"><span class="tocnumber">2</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1"><a href="string.htm#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a>
+<ul>
+<li class="toclevel-2"><a href="string.htm#String_manipulation"><span class="tocnumber">3.1</span> <span class="toctext">String manipulation</span></a></li>
+<li class="toclevel-2"><a href="string.htm#String_examination"><span class="tocnumber">3.2</span> <span class="toctext">String examination</span></a></li>
+<li class="toclevel-2"><a href="string.htm#Character_array_manipulation"><span class="tocnumber">3.3</span> <span class="toctext">Character array manipulation</span></a></li>
+<li class="toclevel-2"><a href="string.htm#Miscellaneous"><span class="tocnumber">3.4</span> <span class="toctext">Miscellaneous</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-1"><a href="string.htm#Synopsis"><span class="tocnumber">4</span> <span class="toctext">Synopsis</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3> <span class="mw-headline" id="Macros">Macros</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../types/NULL.html" title="c/types/NULL"> <span class="t-lines"><span>NULL</span></span></a></div></div>
+</td>
+<td>   implementation-defined null pointer constant <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_NULL&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Types">Types</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../types/size_t.html" title="c/types/size t"> <span class="t-lines"><span>size_t</span></span></a></div></div>
+</td>
+<td>   unsigned integer type returned by the <a href="../language/sizeof.html" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_size_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Functions">Functions</span></h3>
+</td></tr>
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="String_manipulation"> String manipulation </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strcpy.html" title="c/string/byte/strcpy"> <span class="t-lines"><span>strcpy</span><span>strcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   copies one string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcpy&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strncpy.html" title="c/string/byte/strncpy"> <span class="t-lines"><span>strncpy</span><span>strncpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   copies a certain amount of characters from one string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncpy&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strcat.html" title="c/string/byte/strcat"> <span class="t-lines"><span>strcat</span><span>strcat_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   concatenates two strings <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcat&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strncat.html" title="c/string/byte/strncat"> <span class="t-lines"><span>strncat</span><span>strncat_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   concatenates a certain amount of characters of two strings <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncat&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strxfrm.html" title="c/string/byte/strxfrm"> <span class="t-lines"><span>strxfrm</span></span></a></div></div>
+</td>
+<td>   transform a string so that strcmp would produce the same result as strcoll <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strxfrm&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strdup.html" title="c/string/byte/strdup"> <span class="t-lines"><span>strdup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+</td>
+<td>   allocates a copy of a string  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strdup&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strndup.html" title="c/string/byte/strndup"> <span class="t-lines"><span>strndup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+</td>
+<td>   allocates a copy of a string of specified size  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strndup&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="String_examination"> String examination </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strlen.html" title="c/string/byte/strlen"> <span class="t-lines"><span>strlen</span><span>strnlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   returns the length of a given string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strlen&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strcmp.html" title="c/string/byte/strcmp"> <span class="t-lines"><span>strcmp</span></span></a></div></div>
+</td>
+<td>   compares two strings <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcmp&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strncmp.html" title="c/string/byte/strncmp"> <span class="t-lines"><span>strncmp</span></span></a></div></div>
+</td>
+<td>   compares a certain amount of characters of two strings <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncmp&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strcoll.html" title="c/string/byte/strcoll"> <span class="t-lines"><span>strcoll</span></span></a></div></div>
+</td>
+<td>   compares two strings in accordance to the current locale <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcoll&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strchr.html" title="c/string/byte/strchr"> <span class="t-lines"><span>strchr</span></span></a></div></div>
+</td>
+<td>   finds the first occurrence of a character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strchr&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strrchr.html" title="c/string/byte/strrchr"> <span class="t-lines"><span>strrchr</span></span></a></div></div>
+</td>
+<td>   finds the last occurrence of a character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strrchr&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strspn.html" title="c/string/byte/strspn"> <span class="t-lines"><span>strspn</span></span></a></div></div>
+</td>
+<td>   returns the length of the maximum initial segment that consists <br> of only the characters found in another byte string  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strspn&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strcspn.html" title="c/string/byte/strcspn"> <span class="t-lines"><span>strcspn</span></span></a></div></div>
+</td>
+<td>   returns the length of the maximum initial segment that consists <br> of only the characters not found in another byte string  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcspn&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strpbrk.html" title="c/string/byte/strpbrk"> <span class="t-lines"><span>strpbrk</span></span></a></div></div>
+</td>
+<td>   finds the first location of any character in one string, in another string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strpbrk&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strstr.html" title="c/string/byte/strstr"> <span class="t-lines"><span>strstr</span></span></a></div></div>
+</td>
+<td>   finds the first occurrence of a substring of characters <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strstr&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strtok.html" title="c/string/byte/strtok"> <span class="t-lines"><span>strtok</span><span>strtok_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   finds the next token in a byte string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strtok&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Character_array_manipulation"> Character array manipulation </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memchr.html" title="c/string/byte/memchr"> <span class="t-lines"><span>memchr</span></span></a></div></div>
+</td>
+<td>   searches an array for the first occurrence of a character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memchr&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memcmp.html" title="c/string/byte/memcmp"> <span class="t-lines"><span>memcmp</span></span></a></div></div>
+</td>
+<td>   compares two buffers <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memcmp&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memset.html" title="c/string/byte/memset"> <span class="t-lines"><span>memset</span><span>memset_explicit</span><span>memset_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   fills a buffer with a character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memset&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memcpy.html" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   copies one buffer to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memcpy&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memmove.html" title="c/string/byte/memmove"> <span class="t-lines"><span>memmove</span><span>memmove_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   moves one buffer to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memmove&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/memccpy.html" title="c/string/byte/memccpy"> <span class="t-lines"><span>memccpy</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+</td>
+<td>   copies one buffer to another, stopping after the specified delimiter <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memccpy&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Miscellaneous"> Miscellaneous </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strerror.html" title="c/string/byte/strerror"> <span class="t-lines"><span>strerror</span><span>strerror_s</span><span>strerrorlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   returns a text version of a given error code <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strerror&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/string&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define __STDC_VERSION_STRING_H__ 202311L</span>
+&nbsp;
+<span class="co2">#define NULL /* see description */</span>
+&nbsp;
+<span class="kw1">typedef</span> <span class="coMULTI">/* see description */</span> <a href="../types/size_t.html"><span class="kw100">size_t</span></a><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">void</span><span class="sy2">*</span> <a href="../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span><span class="sy2">*</span> memccpy<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <span class="kw4">int</span> c, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span><span class="sy2">*</span> <a href="../string/byte/memmove.html"><span class="kw573">memmove</span></a><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strcpy.html"><span class="kw553">strcpy</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strncpy.html"><span class="kw554">strncpy</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> strdup<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> strndup<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strcat.html"><span class="kw555">strcat</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strncat.html"><span class="kw556">strncat</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../string/byte/memcmp.html"><span class="kw570">memcmp</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../string/byte/strcmp.html"><span class="kw559">strcmp</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../string/byte/strcoll.html"><span class="kw561">strcoll</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">int</span> <a href="../string/byte/strncmp.html"><span class="kw560">strncmp</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> <a href="../string/byte/strxfrm.html"><span class="kw557">strxfrm</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*QVoid*/</span><span class="sy2">*</span> <a href="../string/byte/memchr.html"><span class="kw569">memchr</span></a><span class="br0">(</span><span class="coMULTI">/*QVoid*/</span><span class="sy2">*</span> s, <span class="kw4">int</span> c, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> <a href="../string/byte/strchr.html"><span class="kw562">strchr</span></a><span class="br0">(</span><span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> s, <span class="kw4">int</span> c<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> <a href="../string/byte/strcspn.html"><span class="kw565">strcspn</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> <a href="../string/byte/strpbrk.html"><span class="kw566">strpbrk</span></a><span class="br0">(</span><span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> <a href="../string/byte/strrchr.html"><span class="kw563">strrchr</span></a><span class="br0">(</span><span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> s, <span class="kw4">int</span> c<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> <a href="../string/byte/strspn.html"><span class="kw564">strspn</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> <a href="../string/byte/strstr.html"><span class="kw567">strstr</span></a><span class="br0">(</span><span class="coMULTI">/*QChar*/</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strtok.html"><span class="kw568">strtok</span></a><span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span><span class="sy2">*</span> <a href="../string/byte/memset.html"><span class="kw571">memset</span></a><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> s, <span class="kw4">int</span> c, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span><span class="sy2">*</span> memset_explicit<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> s, <span class="kw4">int</span> c, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../string/byte/strerror.html"><span class="kw574">strerror</span></a><span class="br0">(</span><span class="kw4">int</span> errnum<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> <a href="../string/byte/strlen.html"><span class="kw558">strlen</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> strnlen<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> n<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<p>Only if the implementation defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> and additionally the user code defines
+<span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> before any inclusion of <code>&lt;string.h&gt;</code>:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#ifdef __STDC_WANT_LIB_EXT1__</span>
+&nbsp;
+tyepdef <span class="coMULTI">/* see description */</span> errno_t<span class="sy4">;</span>
+tyepdef <span class="coMULTI">/* see description */</span> rsize_t<span class="sy4">;</span>
+&nbsp;
+errno_t memcpy_s<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, rsize_t n<span class="br0">)</span><span class="sy4">;</span>
+errno_t memmove_s<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> s2, rsize_t n<span class="br0">)</span><span class="sy4">;</span>
+errno_t strcpy_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2<span class="br0">)</span><span class="sy4">;</span>
+errno_t strncpy_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, rsize_t n<span class="br0">)</span><span class="sy4">;</span>
+errno_t strcat_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2<span class="br0">)</span><span class="sy4">;</span>
+errno_t strncat_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t s1max, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, rsize_t n<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">char</span><span class="sy2">*</span> strtok_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s1, rsize_t<span class="sy2">*</span> <span class="kw4">restrict</span> s1max,
+               <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s2, <span class="kw4">char</span><span class="sy2">**</span> <span class="kw4">restrict</span> ptr<span class="br0">)</span><span class="sy4">;</span>
+errno_t memset_s<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> s, rsize_t smax, <span class="kw4">int</span> c, rsize_t n<span class="br0">)</span>
+errno_t strerror_s<span class="br0">(</span><span class="kw4">char</span><span class="sy2">*</span> s, rsize_t maxsize, errno_t errnum<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> strerrorlen_s<span class="br0">(</span>errno_t errnum<span class="br0">)</span><span class="sy4">;</span>
+<a href="../types/size_t.html"><span class="kw100">size_t</span></a> strnlen_s<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> maxsize<span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+<span class="co2">#endif</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5487/1000000
+Preprocessor generated node count: 5904/1000000
+Post‐expand include size: 172174/4194304 bytes
+Template argument size: 32063/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:23245-0!*!0!!en!*!* and timestamp 20250312152813 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/string&amp;oldid=181830">https://en.cppreference.com/mwiki/index.php?title=c/header/string&amp;oldid=181830</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.033 secs. -->
+	
+
+
+</body><!-- Cached 20250312155224 --></html>

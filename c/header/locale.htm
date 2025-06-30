@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Standard library header &lt;locale.h&gt;</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_header_locale skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;locale.h&gt;</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>This header is part of the <a href="../locale.html" title="c/locale">localization</a> library.
+</p>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="locale.htm#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1"><a href="locale.htm#Constants"><span class="tocnumber">2</span> <span class="toctext">Constants</span></a></li>
+<li class="toclevel-1"><a href="locale.htm#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="locale.htm#Synopsis"><span class="tocnumber">4</span> <span class="toctext">Synopsis</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="locale.htm#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3> <span class="mw-headline" id="Types">Types</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td> <div class="t-dsc-member-div"><div><a href="../locale/lconv.html" title="c/locale/lconv"> <span class="t-lines"><span>lconv</span></span></a></div></div>
+</td>
+<td> formatting details, returned by <span class="t-lc"><a href="../locale/localeconv.html" title="c/locale/localeconv">localeconv</a></span><br><span class="t-mark">(struct)</span><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/locale/dsc_lconv&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Constants">Constants</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../types/NULL.html" title="c/types/NULL"> <span class="t-lines"><span>NULL</span></span></a></div></div>
+</td>
+<td>   implementation-defined null pointer constant <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_NULL&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../locale/LC_categories.html" title="c/locale/LC categories"> <span class="t-lines"><span>LC_ALL</span><span>LC_COLLATE</span><span>LC_CTYPE</span><span>LC_MONETARY</span><span>LC_NUMERIC</span><span>LC_TIME</span></span></a></div></div>
+</td>
+<td>  locale categories for <span class="t-lc"><a href="../locale/setlocale.html" title="c/locale/setlocale">setlocale</a></span> <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/locale/dsc_LC_categories&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr>
+<td colspan="2"> <h3> <span class="mw-headline" id="Functions">Functions</span></h3>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../locale/setlocale.html" title="c/locale/setlocale"> <span class="t-lines"><span>setlocale</span></span></a></div></div>
+</td>
+<td>   gets and sets the current C locale <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/locale/dsc_setlocale&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../locale/localeconv.html" title="c/locale/localeconv"> <span class="t-lines"><span>localeconv</span></span></a></div></div>
+</td>
+<td>   queries numeric and monetary formatting details of the current locale <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/locale/dsc_localeconv&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// In the "C" locale, the members shall have the values specified in the comments:</span>
+<span class="kw1">struct</span> <a href="../locale/lconv.html"><span class="kw903">lconv</span></a>
+<span class="br0">{</span>
+    <span class="kw4">char</span><span class="sy2">*</span> decimal_point<span class="sy4">;</span>        <span class="co1">// "."</span>
+    <span class="kw4">char</span><span class="sy2">*</span> thousands_sep<span class="sy4">;</span>        <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> grouping<span class="sy4">;</span>             <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> mon_decimal_point<span class="sy4">;</span>    <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> mon_thousands_sep<span class="sy4">;</span>    <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> mon_grouping<span class="sy4">;</span>         <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> positive_sign<span class="sy4">;</span>        <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> negative_sign<span class="sy4">;</span>        <span class="co1">// ""</span>
+    <span class="kw4">char</span><span class="sy2">*</span> currency_symbol<span class="sy4">;</span>      <span class="co1">// ""</span>
+    <span class="kw4">char</span>  frac_digits<span class="sy4">;</span>          <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  p_cs_precedes<span class="sy4">;</span>        <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  n_cs_precedes<span class="sy4">;</span>        <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  p_sep_by_space<span class="sy4">;</span>       <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  n_sep_by_space<span class="sy4">;</span>       <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  p_sign_posn<span class="sy4">;</span>          <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  n_sign_posn<span class="sy4">;</span>          <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span><span class="sy2">*</span> int_curr_symbol<span class="sy4">;</span>      <span class="co1">// ""</span>
+    <span class="kw4">char</span>  int_frac_digits<span class="sy4">;</span>      <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_p_cs_precedes<span class="sy4">;</span>    <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_n_cs_precedes<span class="sy4">;</span>    <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_p_sep_by_space<span class="sy4">;</span>   <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_n_sep_by_space<span class="sy4">;</span>   <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_p_sign_posn<span class="sy4">;</span>      <span class="co1">// CHAR_MAX</span>
+    <span class="kw4">char</span>  int_n_sign_posn<span class="sy4">;</span>      <span class="co1">// CHAR_MAX</span>
+<span class="br0">}</span><span class="sy4">;</span>
+&nbsp;
+<span class="kw4">char</span><span class="sy2">*</span> <a href="../locale/setlocale.html"><span class="kw901">setlocale</span></a><span class="br0">(</span><span class="kw4">int</span> category, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> locale<span class="br0">)</span><span class="sy4">;</span>
+<a href="../locale/lconv.html"><span class="kw903">lconv</span></a><span class="sy2">*</span> <a href="../locale/localeconv.html"><span class="kw902">localeconv</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+<span class="co2">#define NULL        /* see description */</span>
+<span class="co2">#define LC_ALL      /* see description */</span>
+<span class="co2">#define LC_COLLATE  /* see description */</span>
+<span class="co2">#define LC_CTYPE    /* see description */</span>
+<span class="co2">#define LC_MONETARY /* see description */</span>
+<span class="co2">#define LC_NUMERIC  /* see description */</span>
+<span class="co2">#define LC_TIME     /* see description */</span></pre></div></div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;action=edit&amp;section=2" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
+<ul><li> <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span> is also defined in the following headers:
+<ul><li> <a href="string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>
+</li><li> <a href="time.htm" title="c/header/time"><tt>&lt;time.h&gt;</tt></a>
+</li><li> <a href="stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a>
+</li><li> <a href="stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>
+</li><li> <a href="wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>
+</li></ul>
+</li></ul>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 3331/1000000
+Preprocessor generated node count: 4653/1000000
+Post‐expand include size: 71805/4194304 bytes
+Template argument size: 13545/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:23225-0!*!0!!en!*!* and timestamp 20250215221324 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;oldid=180073">https://en.cppreference.com/mwiki/index.php?title=c/header/locale&amp;oldid=180073</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 0.442 secs. -->
+	
+
+
+</body><!-- Cached 20250215221324 --></html>

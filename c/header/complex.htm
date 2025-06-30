@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>Standard library header &lt;complex.h&gt;&nbsp;(C99)</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/complex&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/header/complex&amp;action=edit">
+<link rel="shortcut icon" href="../../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_header_complex skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading"><span style="font-size:0.7em; line-height:130%">Standard library header</span> &lt;complex.h&gt;&nbsp;<span class="t-mark-rev t-since-c99">(C99)</span></h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>This header is part of the <a href="../numeric/complex.html" title="c/numeric/complex">complex number arithmetic</a> library.
+</p>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="complex.htm#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#The_imaginary_constant"><span class="tocnumber">2</span> <span class="toctext">The imaginary constant</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#Manipulation"><span class="tocnumber">3</span> <span class="toctext">Manipulation</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#Exponential_functions"><span class="tocnumber">4</span> <span class="toctext">Exponential functions</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#Power_functions"><span class="tocnumber">5</span> <span class="toctext">Power functions</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#Trigonometric_functions"><span class="tocnumber">6</span> <span class="toctext">Trigonometric functions</span></a></li>
+<li class="toclevel-1"><a href="complex.htm#Hyperbolic_functions"><span class="tocnumber">7</span> <span class="toctext">Hyperbolic functions</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="complex.htm#Synopsis"><span class="tocnumber">8</span> <span class="toctext">Synopsis</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h5> <span class="mw-headline" id="Types"> Types </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/imaginary.html" title="c/numeric/complex/imaginary"> <span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   imaginary type macro   <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_imaginary&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/complex.html" title="c/numeric/complex/complex"> <span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   complex type macro  <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_complex&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="The_imaginary_constant"> The imaginary constant </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/Imaginary_I.html" title="c/numeric/complex/Imaginary I"> <span class="t-lines"><span>_Imaginary_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   the imaginary unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Imaginary_I&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/Complex_I.html" title="c/numeric/complex/Complex I"> <span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   the complex unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Complex_I&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/I.html" title="c/numeric/complex/I"> <span class="t-lines"><span>I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   the complex or imaginary unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_I&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Manipulation"> Manipulation </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/CMPLX.html" title="c/numeric/complex/CMPLX"> <span class="t-lines"><span>CMPLX</span><span>CMPLXF</span><span>CMPLXL</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   constructs a complex number from real and imaginary parts  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_CMPLX&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/creal.html" title="c/numeric/complex/creal"> <span class="t-lines"><span>creal</span><span>crealf</span><span>creall</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the real part of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_creal&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cimag.html" title="c/numeric/complex/cimag"> <span class="t-lines"><span>cimag</span><span>cimagf</span><span>cimagl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the imaginary part a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cimag&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cabs.html" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the magnitude of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cabs&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/carg.html" title="c/numeric/complex/carg"> <span class="t-lines"><span>carg</span><span>cargf</span><span>cargl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the phase angle of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_carg&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/conj.html" title="c/numeric/complex/conj"> <span class="t-lines"><span>conj</span><span>conjf</span><span>conjl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex conjugate  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_conj&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cproj.html" title="c/numeric/complex/cproj"> <span class="t-lines"><span>cproj</span><span>cprojf</span><span>cprojl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the projection on Riemann sphere  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cproj&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Exponential_functions"> Exponential functions </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cexp.html" title="c/numeric/complex/cexp"> <span class="t-lines"><span>cexp</span><span>cexpf</span><span>cexpl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex base-e exponential <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cexp&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/clog.html" title="c/numeric/complex/clog"> <span class="t-lines"><span>clog</span><span>clogf</span><span>clogl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex natural logarithm <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_clog&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Power_functions"> Power functions </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cpow.html" title="c/numeric/complex/cpow"> <span class="t-lines"><span>cpow</span><span>cpowf</span><span>cpowl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex power function  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cpow&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/csqrt.html" title="c/numeric/complex/csqrt"> <span class="t-lines"><span>csqrt</span><span>csqrtf</span><span>csqrtl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex square root  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csqrt&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Trigonometric_functions"> Trigonometric functions </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/csin.html" title="c/numeric/complex/csin"> <span class="t-lines"><span>csin</span><span>csinf</span><span>csinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csin&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/ccos.html" title="c/numeric/complex/ccos"> <span class="t-lines"><span>ccos</span><span>ccosf</span><span>ccosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccos&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/ctan.html" title="c/numeric/complex/ctan"> <span class="t-lines"><span>ctan</span><span>ctanf</span><span>ctanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctan&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/casin.html" title="c/numeric/complex/casin"> <span class="t-lines"><span>casin</span><span>casinf</span><span>casinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casin&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cacos.html" title="c/numeric/complex/cacos"> <span class="t-lines"><span>cacos</span><span>cacosf</span><span>cacosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacos&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/catan.html" title="c/numeric/complex/catan"> <span class="t-lines"><span>catan</span><span>catanf</span><span>catanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catan&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Hyperbolic_functions"> Hyperbolic functions </span></h5>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/csinh.html" title="c/numeric/complex/csinh"> <span class="t-lines"><span>csinh</span><span>csinhf</span><span>csinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex hyperbolic sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_csinh&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/ccosh.html" title="c/numeric/complex/ccosh"> <span class="t-lines"><span>ccosh</span><span>ccoshf</span><span>ccoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex hyperbolic cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccosh&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/ctanh.html" title="c/numeric/complex/ctanh"> <span class="t-lines"><span>ctanh</span><span>ctanhf</span><span>ctanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex hyperbolic tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctanh&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/casinh.html" title="c/numeric/complex/casinh"> <span class="t-lines"><span>casinh</span><span>casinhf</span><span>casinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc hyperbolic sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casinh&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/cacosh.html" title="c/numeric/complex/cacosh"> <span class="t-lines"><span>cacosh</span><span>cacoshf</span><span>cacoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc hyperbolic cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacosh&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="../numeric/complex/catanh.html" title="c/numeric/complex/catanh"> <span class="t-lines"><span>catanh</span><span>catanhf</span><span>catanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+</td>
+<td>   computes the complex arc hyperbolic tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_catanh&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/complex&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define __STDC_VERSION_COMPLEX_H__ 202311L</span>
+&nbsp;
+<span class="co2">#define complex       _Complex</span>
+<span class="co2">#define imaginary     /* implementation-defined */</span>
+<span class="co2">#define _Imaginary_I  /* implementation-defined */</span>
+<span class="co2">#define _Complex_I    /* implementation-defined */</span>
+<span class="co2">#define I             _Complex_I</span>
+&nbsp;
+<span class="co2">#pragma STDC CX_LIMITED_RANGE /*on-off-switch*/</span>
+&nbsp;
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacos.html"><span class="kw781">cacos</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacos.html"><span class="kw782">cacosf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacos.html"><span class="kw783">cacosl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casin.html"><span class="kw784">casin</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casin.html"><span class="kw785">casinf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casin.html"><span class="kw786">casinl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catan.html"><span class="kw787">catan</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catan.html"><span class="kw788">catanf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catan.html"><span class="kw789">catanl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccos.html"><span class="kw790">ccos</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccos.html"><span class="kw791">ccosf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccos.html"><span class="kw792">ccosl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csin.html"><span class="kw793">csin</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csin.html"><span class="kw794">csinf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csin.html"><span class="kw795">csinl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctan.html"><span class="kw796">ctan</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctan.html"><span class="kw797">ctanf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctan.html"><span class="kw798">ctanl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacosh.html"><span class="kw799">cacosh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacosh.html"><span class="kw800">cacoshf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cacosh.html"><span class="kw801">cacoshl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casinh.html"><span class="kw802">casinh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casinh.html"><span class="kw803">casinhf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/casinh.html"><span class="kw804">casinhl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catanh.html"><span class="kw805">catanh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catanh.html"><span class="kw806">catanhf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/catanh.html"><span class="kw807">catanhl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccosh.html"><span class="kw808">ccosh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccosh.html"><span class="kw809">ccoshf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ccosh.html"><span class="kw810">ccoshl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csinh.html"><span class="kw811">csinh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csinh.html"><span class="kw812">csinhf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csinh.html"><span class="kw813">csinhl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctanh.html"><span class="kw814">ctanh</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctanh.html"><span class="kw815">ctanhf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/ctanh.html"><span class="kw816">ctanhl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cexp.html"><span class="kw769">cexp</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cexp.html"><span class="kw770">cexpf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cexp.html"><span class="kw771">cexpl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/clog.html"><span class="kw772">clog</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/clog.html"><span class="kw773">clogf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/clog.html"><span class="kw774">clogl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/cabs.html"><span class="kw766">cabs</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/cabs.html"><span class="kw767">cabsf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/cabs.html"><span class="kw768">cabsl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cpow.html"><span class="kw775">cpow</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> x, <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cpow.html"><span class="kw776">cpowf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> x, <span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cpow.html"><span class="kw777">cpowl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> x, <span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csqrt.html"><span class="kw778">csqrt</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csqrt.html"><span class="kw779">csqrtf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/csqrt.html"><span class="kw780">csqrtl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/carg.html"><span class="kw757">carg</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/carg.html"><span class="kw758">cargf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/carg.html"><span class="kw759">cargl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/cimag.html"><span class="kw751">cimag</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/cimag.html"><span class="kw752">cimagf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/cimag.html"><span class="kw753">cimagl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/CMPLX.html"><span class="kw748">CMPLX</span></a><span class="br0">(</span><span class="kw4">double</span> x, <span class="kw4">double</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/CMPLX.html"><span class="kw749">CMPLXF</span></a><span class="br0">(</span><span class="kw4">float</span> x, <span class="kw4">float</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/CMPLX.html"><span class="kw750">CMPLXL</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> x, <span class="kw4">long</span> <span class="kw4">double</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/conj.html"><span class="kw760">conj</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/conj.html"><span class="kw761">conjf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/conj.html"><span class="kw762">conjl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cproj.html"><span class="kw763">cproj</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cproj.html"><span class="kw764">cprojf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <a href="../numeric/complex/cproj.html"><span class="kw765">cprojl</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">double</span> <a href="../numeric/complex/creal.html"><span class="kw754">creal</span></a><span class="br0">(</span><span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">float</span> <a href="../numeric/complex/creal.html"><span class="kw755">crealf</span></a><span class="br0">(</span><span class="kw4">float</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/creal.html"><span class="kw756">creall</span></a><span class="br0">(</span><span class="kw4">long</span> <span class="kw4">double</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+<span class="co1">// Only if the implementation defines __STDC_IEC_60559_TYPES__ and additionally the user</span>
+<span class="co1">// code defines __STDC_WANT_IEC_60559_TYPES_EXT__ before any inclusion of &lt;complex.h&gt;:</span>
+<span class="co2">#ifdef __STDC_WANT_IEC_60559_TYPES_EXT__</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cacosfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cacosfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*casinfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*casinfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*catanfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*catanfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ccosfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ccosfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csinfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csinfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ctanfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ctanfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cacoshfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cacoshfNx*/</span><span class="br0">(</span> <span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*casinhfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*casinhfNx*/</span><span class="br0">(</span> <span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*catanhfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*catanhfNx*/</span><span class="br0">(</span> <span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ccoshfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ccoshfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csinhfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csinhfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ctanhfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*ctanhfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cexpfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cexpfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*clogfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*clogfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <span class="coMULTI">/*cabsfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <span class="coMULTI">/*cabsfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cpowfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> x, <span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cpowfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> x, <span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csqrtfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*csqrtfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <span class="coMULTI">/*cargfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <span class="coMULTI">/*cargfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <span class="coMULTI">/*cimagfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <span class="coMULTI">/*cimagfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*CMPLXFN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> x, <span class="coMULTI">/*_FloatN*/</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*CMPLXFNX*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> x, <span class="coMULTI">/*_FloatNx*/</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*conjfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*conjfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cprojfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> <span class="coMULTI">/*cprojfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatN*/</span> <span class="coMULTI">/*crealfN*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatN*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*_FloatNx*/</span> <span class="coMULTI">/*crealfNx*/</span><span class="br0">(</span><span class="coMULTI">/*_FloatNx*/</span> <a href="../numeric/complex/complex.html"><span class="kw743">complex</span></a> z<span class="br0">)</span><span class="sy4">;</span>
+<span class="co2">#endif</span></pre></div></div>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 5854/1000000
+Preprocessor generated node count: 6455/1000000
+Post‐expand include size: 236457/4194304 bytes
+Template argument size: 53688/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:23218-0!*!0!!en!*!* and timestamp 20250215221338 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/complex&amp;oldid=180079">https://en.cppreference.com/mwiki/index.php?title=c/header/complex&amp;oldid=180079</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 1.034 secs. -->
+	
+
+
+</body><!-- Cached 20250215221338 --></html>

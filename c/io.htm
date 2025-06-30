@@ -1,0 +1,793 @@
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><head>
+<title>File input/output</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit">
+<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit">
+<link rel="shortcut icon" href="../../favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="../../mwiki/opensearch_desc.php" title="cppreference.com (en)">
+<link rel="EditURI" type="application/rsd+xml" href="../../mwiki/api.php@action=rsd">
+<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
+/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
+
+
+
+
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #0000dd;}
+.c.source-c .kw2 {color: #0000ff;}
+.c.source-c .kw3 {color: #0000dd;}
+.c.source-c .kw4 {color: #0000ff;}
+.c.source-c .co1 {color: #909090;}
+.c.source-c .co2 {color: #339900;}
+.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
+.c.source-c .es0 {color: #008000; font-weight: bold;}
+.c.source-c .es1 {color: #008000; font-weight: bold;}
+.c.source-c .es2 {color: #008000; font-weight: bold;}
+.c.source-c .es3 {color: #008000; font-weight: bold;}
+.c.source-c .es4 {color: #008000; font-weight: bold;}
+.c.source-c .es5 {color: #008000; font-weight: bold;}
+.c.source-c .br0 {color: #008000;}
+.c.source-c .sy0 {color: #008000;}
+.c.source-c .sy1 {color: #000080;}
+.c.source-c .sy2 {color: #000040;}
+.c.source-c .sy3 {color: #000040;}
+.c.source-c .sy4 {color: #008080;}
+.c.source-c .st0 {color: #008000;}
+.c.source-c .nu0 {color: #000080;}
+.c.source-c .nu6 {color:#000080;}
+.c.source-c .nu8 {color:#000080;}
+.c.source-c .nu12 {color:#000080;}
+.c.source-c .nu16 {color:#000080;}
+.c.source-c .nu17 {color:#000080;}
+.c.source-c .nu18 {color:#000080;}
+.c.source-c .nu19 {color:#000080;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_io skin-cppreference2 action-view cpp-navbar">
+        <!-- header -->
+        
+        <!-- /header -->
+        <!-- content -->
+<style type="text/css">
+#carbonads {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  left: -170px;
+  max-width: 150px;
+  border-radius: 4px;
+  border: solid 1px hsla(0, 0%, 0%, .1);
+  background-color: hsl(0, 0%, 98%);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
+  Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin-bottom: 8px;
+  max-width: 150px;
+  line-height: 1;
+}
+
+.carbon-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px !important;
+  width: 150px;
+  height: auto;
+}
+
+.carbon-text {
+  display: block;
+  padding: 0 1em 8px;
+}
+
+.carbon-poweredby {
+  display: block;
+  padding: 8px 12px;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 1;
+}
+html { font-variant-ligatures: no-common-ligatures; }
+</style>
+        <div id="cpp-content-base">
+            <div id="content">
+                <a id="top"></a>
+                <div id="mw-js-message" style="display:none;"></div>
+                                <!-- firstHeading -->
+
+
+
+
+                <h1 id="firstHeading" class="firstHeading">File input/output</h1>
+                <!-- /firstHeading -->
+                <!-- bodyContent -->
+                <div id="bodyContent">
+                                        <!-- tagline -->
+                    
+                    <!-- /tagline -->
+                                        <!-- subtitle -->
+                    
+                    <!-- /subtitle -->
+                                                            <!-- bodycontent -->
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p>The <a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a> header provides generic file operation support and supplies functions with narrow character input/output capabilities.
+</p><p>The <a href="header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a> header supplies functions with wide character input/output capabilities.
+</p><p>I/O streams are denoted by objects of type <span class="t-lc"><a href="io/FILE.htm" title="c/io/FILE">FILE</a></span> that can only be accessed and manipulated through pointers of type <span class="mw-geshi c source-c"><a href="io/FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span></span>. Each stream is associated with an external physical device (file, standard input stream, printer, serial port, etc).
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="io.htm#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="io.htm#Predefined_standard_streams"><span class="tocnumber">2</span> <span class="toctext">Predefined standard streams</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="io.htm#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a>
+<ul>
+<li class="toclevel-2"><a href="io.htm#File_access"><span class="tocnumber">3.1</span> <span class="toctext">File access</span></a></li>
+<li class="toclevel-2"><a href="io.htm#Direct_input.2Foutput"><span class="tocnumber">3.2</span> <span class="toctext">Direct input/output</span></a></li>
+<li class="toclevel-2"><a href="io.htm#Unformatted_input.2Foutput"><span class="tocnumber">3.3</span> <span class="toctext">Unformatted input/output</span></a>
+<ul>
+<li class="toclevel-3"><a href="io.htm#Narrow_character"><span class="tocnumber">3.3.1</span> <span class="toctext">Narrow character</span></a></li>
+<li class="toclevel-3"><a href="io.htm#Wide_character"><span class="tocnumber">3.3.2</span> <span class="toctext">Wide character</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="io.htm#Formatted_input.2Foutput"><span class="tocnumber">3.4</span> <span class="toctext">Formatted input/output</span></a>
+<ul>
+<li class="toclevel-3"><a href="io.htm#Narrow_character_2"><span class="tocnumber">3.4.1</span> <span class="toctext">Narrow character</span></a></li>
+<li class="toclevel-3"><a href="io.htm#Wide_character_2"><span class="tocnumber">3.4.2</span> <span class="toctext">Wide character</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="io.htm#File_positioning"><span class="tocnumber">3.5</span> <span class="toctext">File positioning</span></a></li>
+<li class="toclevel-2"><a href="io.htm#Error_handling"><span class="tocnumber">3.6</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-2"><a href="io.htm#Operations_on_files"><span class="tocnumber">3.7</span> <span class="toctext">Operations on files</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="io.htm#Macro_constants"><span class="tocnumber">4</span> <span class="toctext">Macro constants</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="io.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="io.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=1" title="Edit section: Types">edit</a>]</span> <span class="mw-headline" id="Types">Types</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/FILE.htm" title="c/io/FILE"> <span class="t-lines"><span>FILE</span></span></a></div></div>
+</td>
+<td>   object type, capable of holding all information needed to control a C I/O stream <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_FILE&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fpos_t.htm" title="c/io/fpos t"> <span class="t-lines"><span>fpos_t</span></span></a></div></div>
+</td>
+<td>   non-array complete object type, capable of uniquely specifying a position and multibyte parser state in a file <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fpos_t&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=2" title="Edit section: Predefined standard streams">edit</a>]</span> <span class="mw-headline" id="Predefined_standard_streams">Predefined standard streams</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/std_streams.htm" title="c/io/std streams"> <span class="t-lines"><span>stdin</span><span>stdout</span><span>stderr</span></span></a></div></div>
+</td>
+<td>  expression of type <span class="mw-geshi c source-c"><a href="io/FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span></span> associated with the input stream<br>expression of type <span class="mw-geshi c source-c"><a href="io/FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span></span> associated with the output stream<br>expression of type <span class="mw-geshi c source-c"><a href="io/FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span></span> associated with the error output stream <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_std_streams&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=3" title="Edit section: Functions">edit</a>]</span> <span class="mw-headline" id="Functions">Functions</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="File_access"> File access </span></h5>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fopen.htm" title="c/io/fopen"> <span class="t-lines"><span>fopen</span><span>fopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   opens a file  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fopen&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/freopen.htm" title="c/io/freopen"> <span class="t-lines"><span>freopen</span><span>freopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   open an existing stream with a different name <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_freopen&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fclose.htm" title="c/io/fclose"> <span class="t-lines"><span>fclose</span></span></a></div></div>
+</td>
+<td>   closes a file  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fclose&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fflush.htm" title="c/io/fflush"> <span class="t-lines"><span>fflush</span></span></a></div></div>
+</td>
+<td>   synchronizes an output stream with the actual file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fflush&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/setbuf.htm" title="c/io/setbuf"> <span class="t-lines"><span>setbuf</span></span></a></div></div>
+</td>
+<td>   sets the buffer for a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_setbuf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/setvbuf.htm" title="c/io/setvbuf"> <span class="t-lines"><span>setvbuf</span></span></a></div></div>
+</td>
+<td>   sets the buffer and its size for a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_setvbuf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fwide.htm" title="c/io/fwide"> <span class="t-lines"><span>fwide</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   switches a file stream between wide character I/O and narrow character I/O <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwide&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Direct_input.2Foutput"> Direct input/output </span></h5>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fread.htm" title="c/io/fread"> <span class="t-lines"><span>fread</span></span></a></div></div>
+</td>
+<td>   reads from a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fread&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fwrite.htm" title="c/io/fwrite"> <span class="t-lines"><span>fwrite</span></span></a></div></div>
+</td>
+<td>   writes to a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwrite&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Unformatted_input.2Foutput"> Unformatted input/output </span></h5>
+</td></tr>
+
+<tr>
+<td colspan="2"><h6> <span class="mw-headline" id="Narrow_character">Narrow character</span></h6>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fgetc.htm" title="c/io/fgetc"> <span class="t-lines"><span>fgetc</span><span>getc</span></span></a></div></div>
+</td>
+<td>   gets a character from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fgets.htm" title="c/io/fgets"> <span class="t-lines"><span>fgets</span></span></a></div></div>
+</td>
+<td>   gets a character string from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgets&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/putc.htm" title="c/io/fputc"> <span class="t-lines"><span>fputc</span><span>putc</span></span></a></div></div>
+</td>
+<td>   writes a character to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
+</td>
+<td>   writes a character string to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputs&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/getchar.htm" title="c/io/getchar"> <span class="t-lines"><span>getchar</span></span></a></div></div>
+</td>
+<td>   reads a character from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_getchar&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/gets.htm" title="c/io/gets"> <span class="t-lines"><span>gets</span><span>gets_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-until-c11">(removed in C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads a character string from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_gets&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/putchar.htm" title="c/io/putchar"> <span class="t-lines"><span>putchar</span></span></a></div></div>
+</td>
+<td>    writes a character to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_putchar&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/puts.htm" title="c/io/puts"> <span class="t-lines"><span>puts</span></span></a></div></div>
+</td>
+<td>   writes a character string to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span>  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_puts&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/ungetc.htm" title="c/io/ungetc"> <span class="t-lines"><span>ungetc</span></span></a></div></div>
+</td>
+<td>   puts a character back into a file stream  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_ungetc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"><h6> <span class="mw-headline" id="Wide_character">Wide character</span></h6>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fgetwc.htm" title="c/io/fgetwc"> <span class="t-lines"><span>fgetwc</span><span>getwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   gets a wide character from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetwc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fgetws.htm" title="c/io/fgetws"> <span class="t-lines"><span>fgetws</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   gets a wide string from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetws&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fputwc.htm" title="c/io/fputwc"> <span class="t-lines"><span>fputwc</span><span>putwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   writes a wide character to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputwc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fputws.htm" title="c/io/fputws"> <span class="t-lines"><span>fputws</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   writes a wide string to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputws&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/getwchar.htm" title="c/io/getwchar"> <span class="t-lines"><span>getwchar</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   reads a wide character from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_getwchar&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/putwchar.htm" title="c/io/putwchar"> <span class="t-lines"><span>putwchar</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   writes a wide character to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_putwchar&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/ungetwc.htm" title="c/io/ungetwc"> <span class="t-lines"><span>ungetwc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+</td>
+<td>   puts a wide character back into a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_ungetwc&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Formatted_input.2Foutput"> Formatted input/output </span></h5>
+</td></tr>
+
+<tr>
+<td colspan="2"><h6> <span class="mw-headline" id="Narrow_character_2">Narrow character</span></h6>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fscanf.htm" title="c/io/fscanf"> <span class="t-lines"><span>scanf</span><span>fscanf</span><span>sscanf</span><span>scanf_s</span><span>fscanf_s</span><span>sscanf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads formatted input from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fscanf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/vfscanf.htm" title="c/io/vfscanf"> <span class="t-lines"><span>vscanf</span><span>vfscanf</span><span>vsscanf</span><span>vscanf_s</span><span>vfscanf_s</span><span>vsscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads formatted input from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer<br> using variable argument list <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_vfscanf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   prints formatted output to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/vfprintf.htm" title="c/io/vfprintf"> <span class="t-lines"><span>vprintf</span><span>vfprintf</span><span>vsprintf</span><span>vsnprintf</span><span>vprintf_s</span><span>vfprintf_s</span><span>vsprintf_s</span><span>vsnprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   prints formatted output to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer<br> using variable argument list  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_vfprintf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"><h6> <span class="mw-headline" id="Wide_character_2">Wide character</span></h6>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fwscanf.htm" title="c/io/fwscanf"> <span class="t-lines"><span>wscanf</span><span>fwscanf</span><span>swscanf</span><span>wscanf_s</span><span>fwscanf_s</span><span>swscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads formatted wide character input from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwscanf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/vfwscanf.htm" title="c/io/vfwscanf"> <span class="t-lines"><span>vwscanf</span><span>vfwscanf</span><span>vswscanf</span><span>vwscanf_s</span><span>vfwscanf_s</span><span>vswscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   reads formatted wide character input from <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream<br> or a buffer using variable argument list <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_vfwscanf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fwprintf.htm" title="c/io/fwprintf"> <span class="t-lines"><span>wprintf</span><span>fwprintf</span><span>swprintf</span><span>wprintf_s</span><span>fwprintf_s</span><span>swprintf_s</span><span>snwprintf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   prints formatted wide character output to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwprintf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/vfwprintf.htm" title="c/io/vfwprintf"> <span class="t-lines"><span>vwprintf</span><span>vfwprintf</span><span>vswprintf</span><span>vwprintf_s</span><span>vfwprintf_s</span><span>vswprintf_s</span><span>vsnwprintf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   prints formatted wide character output to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream<br> or a buffer using variable argument list <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_vfwprintf&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="File_positioning"> File positioning </span></h5>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/ftell.htm" title="c/io/ftell"> <span class="t-lines"><span>ftell</span></span></a></div></div>
+</td>
+<td>   returns the current file position indicator <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_ftell&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fgetpos.htm" title="c/io/fgetpos"> <span class="t-lines"><span>fgetpos</span></span></a></div></div>
+</td>
+<td>   gets the file position indicator <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetpos&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fseek.htm" title="c/io/fseek"> <span class="t-lines"><span>fseek</span></span></a></div></div>
+</td>
+<td>   moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fseek&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/fsetpos.htm" title="c/io/fsetpos"> <span class="t-lines"><span>fsetpos</span></span></a></div></div>
+</td>
+<td>   moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fsetpos&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/rewind.htm" title="c/io/rewind"> <span class="t-lines"><span>rewind</span></span></a></div></div>
+</td>
+<td>   moves the file position indicator to the beginning in a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_rewind&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Error_handling"> Error handling </span></h5>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/clearerr.htm" title="c/io/clearerr"> <span class="t-lines"><span>clearerr</span></span></a></div></div>
+</td>
+<td>   clears errors <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_clearerr&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/feof.htm" title="c/io/feof"> <span class="t-lines"><span>feof</span></span></a></div></div>
+</td>
+<td>   checks for the end-of-file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_feof&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/ferror.htm" title="c/io/ferror"> <span class="t-lines"><span>ferror</span></span></a></div></div>
+</td>
+<td>   checks for a file error <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_ferror&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/perror.htm" title="c/io/perror"> <span class="t-lines"><span>perror</span></span></a></div></div>
+</td>
+<td>   displays a character string corresponding of the current error to <span class="t-lc"><a href="io/std_streams.htm" title="c/io/std streams">stderr</a></span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_perror&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+
+<tr>
+<td colspan="2"> <h5> <span class="mw-headline" id="Operations_on_files"> Operations on files </span></h5>
+</td></tr>
+
+<tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/remove.htm" title="c/io/remove"> <span class="t-lines"><span>remove</span></span></a></div></div>
+</td>
+<td>   erases a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_remove&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/rename.htm" title="c/io/rename"> <span class="t-lines"><span>rename</span></span></a></div></div>
+</td>
+<td>   renames a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_rename&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/tmpfile.htm" title="c/io/tmpfile"> <span class="t-lines"><span>tmpfile</span><span>tmpfile_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   returns a pointer to a temporary file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_tmpfile&amp;action=edit">[edit]</a></span>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><a href="io/tmpnam.htm" title="c/io/tmpnam"> <span class="t-lines"><span>tmpnam</span><span>tmpnam_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>   returns a unique filename <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_tmpnam&amp;action=edit">[edit]</a></span>
+</td></tr>
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=4" title="Edit section: Macro constants">edit</a>]</span> <span class="mw-headline" id="Macro_constants">Macro constants</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc-header">
+<td colspan="2"> <div>Defined in header <code><a href="header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code> </div>
+</td></tr>
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>EOF</span></span></div></div>
+</td>
+<td>  integer constant expression of type <span class="mw-geshi c source-c"><span class="kw4">int</span></span> and negative value <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FOPEN_MAX</span></span></div></div>
+</td>
+<td>  maximum number of files that can be open simultaneously <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>FILENAME_MAX</span></span></div></div>
+</td>
+<td>  size needed for an array of <span class="mw-geshi c source-c"><span class="kw4">char</span></span> to hold the longest supported file name <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>BUFSIZ</span></span></div></div>
+</td>
+<td>  size of the buffer used by <span class="t-lc"><a href="io/setbuf.htm" title="c/io/setbuf">setbuf</a></span> <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>_IOFBF</span><span>_IOLBF</span><span>_IONBF</span></span></div></div>
+</td>
+<td>  argument to <span class="t-lc"><a href="io/setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> indicating fully buffered I/O<br>argument to <span class="t-lc"><a href="io/setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> indicating line buffered I/O<br>argument to <span class="t-lc"><a href="io/setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> indicating unbuffered I/O <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>SEEK_SET</span><span>SEEK_CUR</span><span>SEEK_END</span></span></div></div>
+</td>
+<td>  argument to <span class="t-lc"><a href="io/fseek.htm" title="c/io/fseek">fseek</a></span> indicating seeking from beginning of the file<br>argument to <span class="t-lc"><a href="io/fseek.htm" title="c/io/fseek">fseek</a></span> indicating seeking from the current file position<br>argument to <span class="t-lc"><a href="io/fseek.htm" title="c/io/fseek">fseek</a></span> indicating seeking from end of the file <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>TMP_MAX</span><span>TMP_MAX_S</span></span></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>  maximum number of unique filenames that can be generated by <span class="t-lc"><a href="io/tmpnam.htm" title="c/io/tmpnam">tmpnam</a></span><br>maximum number of unique filenames that can be generated by <span class="t-lc">tmpnam_s</span> <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+
+<tr class="t-dsc">
+<td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>L_tmpnam</span><span>L_tmpnam_s</span></span></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+</td>
+<td>  size needed for an array of <span class="mw-geshi c source-c"><span class="kw4">char</span></span> to hold the result of <span class="t-lc"><a href="io/tmpnam.htm" title="c/io/tmpnam">tmpnam</a></span><br>size needed for an array of <span class="mw-geshi c source-c"><span class="kw4">char</span></span> to hold the result of <span class="t-lc">tmpnam_s</span> <br> <span class="t-mark">(macro constant)</span>
+</td></tr>
+
+</tbody></table>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=5" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
+<div class="t-ref-std-23">
+<ul><li> C23 standard (ISO/IEC 9899:2024): 
+</li></ul>
+<dl><dd><ul><li> 7.21 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.29 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.11 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.16 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.5 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-17">
+<ul><li> C17 standard (ISO/IEC 9899:2018): 
+</li></ul>
+<dl><dd><ul><li> 7.21 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.29 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.11 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.16 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.5 Input/output &lt;stdio.h&gt; (p: TBD)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-11">
+<ul><li> C11 standard (ISO/IEC 9899:2011): 
+</li></ul>
+<dl><dd><ul><li> 7.21 Input/output &lt;stdio.h&gt; (p: 296-339)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.29 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: 402-446)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.11 Input/output &lt;stdio.h&gt; (p: 456)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.31.16 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: 456)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> K.3.5 Input/output &lt;stdio.h&gt; (p: 586-603)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c99">
+<ul><li> C99 standard (ISO/IEC 9899:1999): 
+</li></ul>
+<dl><dd><ul><li> 7.19 Input/output &lt;stdio.h&gt; (p: 262-305)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.24 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: 348-392)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.26.9 Input/output &lt;stdio.h&gt; (p: 402)
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 7.26.12 Extended multibyte and wide character utilities &lt;wchar.h&gt; (p: 402)
+</li></ul>
+</dd></dl>
+</div>
+<div class="t-ref-std-c89">
+<ul><li> C89/C90 standard (ISO/IEC 9899:1990): 
+</li></ul>
+<dl><dd><ul><li> 4.9 INPUT/OUTPUT &lt;stdio.h&gt; 
+</li></ul>
+</dd></dl>
+<dl><dd><ul><li> 4.13.6 Input/output &lt;stdio.h&gt; 
+</li></ul>
+</dd></dl>
+</div>
+<h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
+<table class="t-dsc-begin">
+
+<tbody><tr class="t-dsc">
+<td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/cpp/io/c.html" title="cpp/io/c">C++ documentation</a></span> for <span class=""><span>C-style file input/output</span></span></div>
+</td></tr>
+
+</tbody></table>
+
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 12302/1000000
+Preprocessor generated node count: 12240/1000000
+Post‐expand include size: 433278/4194304 bytes
+Template argument size: 85879/4194304 bytes
+Highest expansion depth: 20/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_en_:pcache:idhash:5867-0!*!0!!en!*!* and timestamp 20250317164544 -->
+</div>                    <!-- /bodycontent -->
+                                        <!-- printfooter -->
+                    <div class="printfooter">
+                    Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=c/io&amp;oldid=180208">https://en.cppreference.com/mwiki/index.php?title=c/io&amp;oldid=180208</a>"                    </div>
+                    <!-- /printfooter -->
+                                                            <!-- catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
+                                                            <div class="visualClear"></div>
+                    <!-- debughtml -->
+                                        <!-- /debughtml -->
+                </div>
+                <!-- /bodyContent -->
+            </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        
+        <!-- /footer -->
+        
+
+
+
+<!-- Served in 1.257 secs. -->
+	
+
+
+</body><!-- Cached 20250317164544 --></html>
