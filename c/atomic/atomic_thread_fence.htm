@@ -162,26 +162,26 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdatomic.html" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdatomic.htm" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> atomic_thread_fence<span class="br0">(</span> <a href="memory_order.htm"><span class="kw910">memory_order</span></a> order <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> atomic_thread_fence<span class="br0">(</span> <a href="./memory_order.htm"><span class="kw910">memory_order</span></a> order <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Establishes memory synchronization ordering of non-atomic and relaxed atomic accesses, as instructed by <code>order</code>, without an associated atomic operation. For example, all non-atomic and relaxed atomic stores that happen before a <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> fence in thread A will be synchronized with non-atomic and relaxed atomic loads from the same locations made in thread B after an <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_acquire</a></span> fence.
+<p>Establishes memory synchronization ordering of non-atomic and relaxed atomic accesses, as instructed by <code>order</code>, without an associated atomic operation. For example, all non-atomic and relaxed atomic stores that happen before a <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> fence in thread A will be synchronized with non-atomic and relaxed atomic loads from the same locations made in thread B after an <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_acquire</a></span> fence.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="atomic_thread_fence.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="atomic_thread_fence.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="atomic_thread_fence.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="atomic_thread_fence.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./atomic_thread_fence.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./atomic_thread_fence.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./atomic_thread_fence.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./atomic_thread_fence.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_thread_fence&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -217,7 +217,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="atomic_signal_fence.htm" title="c/atomic/atomic signal fence"> <span class="t-lines"><span>atomic_signal_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./atomic_signal_fence.htm" title="c/atomic/atomic signal fence"> <span class="t-lines"><span>atomic_signal_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   fence between a thread and a signal handler executed in the same thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_signal_fence&amp;action=edit">[edit]</a></span>
 </td></tr>

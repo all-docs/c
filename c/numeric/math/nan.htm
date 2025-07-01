@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -225,13 +225,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <p>Converts the implementation-defined character string <code>arg</code> into the corresponding quiet NaN value, as if by calling the appropriate parsing function <code><i>strtoX</i></code>, as follows:
 </p>
-<ul><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">"n-char-sequence"</span><span class="br0">)</span></span></span>, where <span class="t-spar">n-char-sequence</span> is a sequence of digits, Latin letters, and underscores, is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN(n-char-sequence)"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
-</li><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">""</span><span class="br0">)</span></span></span> is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN()"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
-</li><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">"string"</span><span class="br0">)</span></span></span>, where <span class="t-c"><span class="mw-geshi c source-c">string</span></span> is neither an <span class="t-spar">n-char-sequence</span> nor an empty string, is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
+<ul><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">"n-char-sequence"</span><span class="br0">)</span></span></span>, where <span class="t-spar">n-char-sequence</span> is a sequence of digits, Latin letters, and underscores, is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN(n-char-sequence)"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
+</li><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">""</span><span class="br0">)</span></span></span> is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN()"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
+</li><li> The call <span class="t-c"><span class="mw-geshi c source-c">nan<span class="br0">(</span><span class="st0">"string"</span><span class="br0">)</span></span></span>, where <span class="t-c"><span class="mw-geshi c source-c">string</span></span> is neither an <span class="t-spar">n-char-sequence</span> nor an empty string, is equivalent to the call <span class="t-c"><span class="mw-geshi c source-c"><span class="coMULTI">/*strtoX*/</span><span class="br0">(</span><span class="st0">"NAN"</span>, <span class="br0">(</span><span class="kw4">char</span><span class="sy2">**</span><span class="br0">)</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span></span></span>.
 </li></ul>
-<div class="t-li1"><span class="t-li">1)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.html" title="c/string/byte/strtof">strtof</a></span>.</div>
-<div class="t-li1"><span class="t-li">2)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.html" title="c/string/byte/strtof">strtod</a></span>.</div>
-<div class="t-li1"><span class="t-li">3)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.html" title="c/string/byte/strtof">strtold</a></span>.</div>
+<div class="t-li1"><span class="t-li">1)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.htm" title="c/string/byte/strtof">strtof</a></span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.htm" title="c/string/byte/strtof">strtod</a></span>.</div>
+<div class="t-li1"><span class="t-li">3)</span> The parsing function is <span class="t-lc"><a href="../../string/byte/strtof.htm" title="c/string/byte/strtof">strtold</a></span>.</div>
 <div class="t-li1"><span class="t-li">4)</span> The parsing function is <span class="t-lc">strtod32</span>.</div>
 <div class="t-li1"><span class="t-li">5)</span> The parsing function is <span class="t-lc">strtod64</span>.</div>
 <div class="t-li1"><span class="t-li">6)</span> The parsing function is <span class="t-lc">strtod128</span>.</div>
@@ -244,12 +244,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="nan.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="nan.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="nan.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="nan.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="nan.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="nan.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./nan.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./nan.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./nan.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./nan.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./nan.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./nan.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nan&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -268,7 +268,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559), it also supports quiet NaNs.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nan&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>This function is not subject to any of the error conditions specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><tt>math_errhandling</tt></a>.
+<p>This function is not subject to any of the error conditions specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><tt>math_errhandling</tt></a>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nan&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -281,16 +281,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">double</span> f1 <span class="sy1">=</span> nan<span class="br0">(</span><span class="st0">"1"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../types/integer.html"><span class="kw123">uint64_t</span></a> f1n<span class="sy4">;</span> <a href="../../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f1n, <span class="sy3">&amp;</span>f1, <span class="kw4">sizeof</span> f1<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>1<span class="es1">\"</span>)   =&nbsp;%f (%"</span> <a href="../../types/integer.html"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f1, f1n<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../types/integer.htm"><span class="kw123">uint64_t</span></a> f1n<span class="sy4">;</span> <a href="../../string/byte/memcpy.htm"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f1n, <span class="sy3">&amp;</span>f1, <span class="kw4">sizeof</span> f1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>1<span class="es1">\"</span>)   =&nbsp;%f (%"</span> <a href="../../types/integer.htm"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f1, f1n<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">double</span> f2 <span class="sy1">=</span> nan<span class="br0">(</span><span class="st0">"2"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../types/integer.html"><span class="kw123">uint64_t</span></a> f2n<span class="sy4">;</span> <a href="../../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f2n, <span class="sy3">&amp;</span>f2, <span class="kw4">sizeof</span> f2<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>2<span class="es1">\"</span>)   =&nbsp;%f (%"</span> <a href="../../types/integer.html"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f2, f2n<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../types/integer.htm"><span class="kw123">uint64_t</span></a> f2n<span class="sy4">;</span> <a href="../../string/byte/memcpy.htm"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f2n, <span class="sy3">&amp;</span>f2, <span class="kw4">sizeof</span> f2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>2<span class="es1">\"</span>)   =&nbsp;%f (%"</span> <a href="../../types/integer.htm"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f2, f2n<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">double</span> f3 <span class="sy1">=</span> nan<span class="br0">(</span><span class="st0">"0xF"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../types/integer.html"><span class="kw123">uint64_t</span></a> f3n<span class="sy4">;</span> <a href="../../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f3n, <span class="sy3">&amp;</span>f3, <span class="kw4">sizeof</span> f3<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>0xF<span class="es1">\"</span>) =&nbsp;%f (%"</span> <a href="../../types/integer.html"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f3, f3n<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../types/integer.htm"><span class="kw123">uint64_t</span></a> f3n<span class="sy4">;</span> <a href="../../string/byte/memcpy.htm"><span class="kw572">memcpy</span></a><span class="br0">(</span><span class="sy3">&amp;</span>f3n, <span class="sy3">&amp;</span>f3, <span class="kw4">sizeof</span> f3<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"nan(<span class="es1">\"</span>0xF<span class="es1">\"</span>) =&nbsp;%f (%"</span> <a href="../../types/integer.htm"><span class="kw235">PRIx64</span></a> <span class="st0">")<span class="es1">\n</span>"</span>, f3, f3n<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -333,13 +333,13 @@ nan("0xF") = nan (7ff800000000000f)</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="isnan.htm" title="c/numeric/math/isnan"> <span class="t-lines"><span>isnan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./isnan.htm" title="c/numeric/math/isnan"> <span class="t-lines"><span>isnan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   checks if the given number is NaN <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_isnan&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="NAN2.htm" title="c/numeric/math/NAN"> <span class="t-lines"><span>NAN</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./NAN2.htm" title="c/numeric/math/NAN"> <span class="t-lines"><span>NAN</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>  evaluates to a quiet NaN of type <span class="mw-geshi c source-c"><span class="kw4">float</span></span> <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_NAN&amp;action=edit">[edit]</a></span>
 </td></tr>

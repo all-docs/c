@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdckdint.html" title="c/header/stdckdint"><tt>&lt;stdckdint.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdckdint.htm" title="c/header/stdckdint"><tt>&lt;stdckdint.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -181,12 +181,12 @@ bool ckd_sub<span class="br0">(</span> type1<span class="sy2">*</span> result, t
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1"><a href="ckd_sub.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1"><a href="ckd_sub.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1"><a href="ckd_sub.htm#Note"><span class="tocnumber">3</span> <span class="toctext">Note</span></a></li>
-<li class="toclevel-1"><a href="ckd_sub.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1"><a href="ckd_sub.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1"><a href="ckd_sub.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#Note"><span class="tocnumber">3</span> <span class="toctext">Note</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1"><a href="./ckd_sub.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/ckd_op&amp;action=edit&amp;section=T-1" title="Template:c/numeric/ckd op">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -211,7 +211,7 @@ bool ckd_sub<span class="br0">(</span> type1<span class="sy2">*</span> result, t
 <p><span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> if the value assigned to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>result</span></span> correctly represents the mathematical result of the subtraction, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> otherwise.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/ckd_op&amp;action=edit&amp;section=T-3" title="Template:c/numeric/ckd op">edit</a>]</span> <span class="mw-headline" id="Note">Note</span></h3>
-<p>Both <span class="t-c"><span class="mw-geshi c source-c">type2</span></span> and <span class="t-c"><span class="mw-geshi c source-c">type3</span></span> shall be any integer type other than “plain” <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c">bool</span>, a <a href="../language/arithmetic_types.html" title="c/language/arithmetic types">bit-precise integer type</a>, or an <a href="../language/enum.html" title="c/language/enum">enumerated type</a>, and they can be the same. <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>result</span></span> shall be a modifiable lvalue of any integer type other than “plain” <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c">bool</span>, a bit-precise integer type, or an enumerated type.
+<p>Both <span class="t-c"><span class="mw-geshi c source-c">type2</span></span> and <span class="t-c"><span class="mw-geshi c source-c">type3</span></span> shall be any integer type other than “plain” <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c">bool</span>, a <a href="../language/arithmetic_types.htm" title="c/language/arithmetic types">bit-precise integer type</a>, or an <a href="../language/enum.htm" title="c/language/enum">enumerated type</a>, and they can be the same. <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>result</span></span> shall be a modifiable lvalue of any integer type other than “plain” <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c">bool</span>, a bit-precise integer type, or an enumerated type.
 </p><p>It is recommended to produce a diagnostic message if <span class="t-c"><span class="mw-geshi c source-c">type2</span></span> or <span class="t-c"><span class="mw-geshi c source-c">type3</span></span> are not suitable integer types, or if <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>result</span></span> is not a modifiable lvalue of a suitable integer type.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/ckd_op&amp;action=edit&amp;section=T-4" title="Template:c/numeric/ckd op">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -228,14 +228,14 @@ bool ckd_sub<span class="br0">(</span> type1<span class="sy2">*</span> result, t
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td> <div class="t-dsc-member-div"><div><a href="ckd_add.htm" title="c/numeric/ckd add"> <span class="t-lines"><span>ckd_add</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td> <div class="t-dsc-member-div"><div><a href="./ckd_add.htm" title="c/numeric/ckd add"> <span class="t-lines"><span>ckd_add</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td> checked addition operation on two integers<br><span class="t-mark">(type-generic function macro)</span><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/dsc_ckd_add&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
-<td> <div class="t-dsc-member-div"><div><a href="ckd_mul.htm" title="c/numeric/ckd mul"> <span class="t-lines"><span>ckd_mul</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td> <div class="t-dsc-member-div"><div><a href="./ckd_mul.htm" title="c/numeric/ckd mul"> <span class="t-lines"><span>ckd_mul</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td> checked multiplication operation on two integers<br><span class="t-mark">(type-generic function macro)</span><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/dsc_ckd_mul&amp;action=edit">[edit]</a></span>
 </td></tr>

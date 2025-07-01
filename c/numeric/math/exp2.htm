@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -207,7 +207,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -223,12 +223,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <code>n</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, <code>exp2l</code> is called. Otherwise, if <code>n</code> has integer type or the type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>, <code>exp2</code> is called. Otherwise, <code>exp2f</code> is called.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="exp2.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="exp2.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="exp2.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="exp2.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="exp2.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="exp2.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./exp2.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./exp2.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./exp2.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./exp2.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./exp2.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./exp2.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/exp2&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -244,11 +244,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/exp2&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If no errors occur, the base-<i>2</i> exponential of <code>n</code> (<span class="texhtml" style="white-space: nowrap;">2<span class="t-su">n<br></span></span>) is returned.
-</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">+HUGE_VAL</a></span>, <code>+HUGE_VALF</code>, or <code>+HUGE_VALL</code> is returned.
+</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="./HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">+HUGE_VAL</a></span>, <code>+HUGE_VALF</code>, or <code>+HUGE_VALL</code> is returned.
 </p><p>If a range error occurs due to underflow, the correct result (after rounding) is returned.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/exp2&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
 <ul><li> If the argument is ±0, 1 is returned
@@ -267,19 +267,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(5) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(0.5) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu16">0.5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-4) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span><span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(5) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(0.5) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu16">0.5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-4) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span><span class="nu0">4</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// special values</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-0.9) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.9</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-0.9) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.9</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(-Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="sy2">-</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">//error handling</span>
-    <span class="kw2">errno</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <a href="../fenv/feclearexcept.html"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(1024) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu0">1024</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.html"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
-        <a href="../../io/perror.html"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"    errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_OVERFLOW raised"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw2">errno</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <a href="../fenv/feclearexcept.htm"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"exp2(1024) =&nbsp;%f<span class="es1">\n</span>"</span>, exp2<span class="br0">(</span><span class="nu0">1024</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.htm"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
+        <a href="../../io/perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"    errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_OVERFLOW raised"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -349,19 +349,19 @@ exp2(1024) = Inf
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="exp.htm" title="c/numeric/math/exp"> <span class="t-lines"><span>exp</span><span>expf</span><span>expl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./exp.htm" title="c/numeric/math/exp"> <span class="t-lines"><span>exp</span><span>expf</span><span>expl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes <i>e</i> raised to the given power (<span class="mjax" style="display:none">\({\small e^x}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">e<sup>x</sup></span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_exp&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="expm1.htm" title="c/numeric/math/expm1"> <span class="t-lines"><span>expm1</span><span>expm1f</span><span>expm1l</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./expm1.htm" title="c/numeric/math/expm1"> <span class="t-lines"><span>expm1</span><span>expm1f</span><span>expm1l</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes <i>e</i> raised to the given power, minus one (<span class="mjax" style="display:none">\({\small e^x-1}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">e<sup>x</sup>-1</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_expm1&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="log2.htm" title="c/numeric/math/log2"> <span class="t-lines"><span>log2</span><span>log2f</span><span>log2l</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./log2.htm" title="c/numeric/math/log2"> <span class="t-lines"><span>log2</span><span>log2f</span><span>log2l</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes base-2 logarithm (<span class="mjax" style="display:none">\({\small \log_{2}{x} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">log<sub>2</sub>(x)</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_log2&amp;action=edit">[edit]</a></span>
 </td></tr>

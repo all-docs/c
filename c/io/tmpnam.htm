@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -224,24 +224,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1)</span> Creates a unique valid file name (no longer than <span class="t-lc"><a href="../io.html" title="c/io">L_tmpnam</a></span> in length) and stores it in character string pointed to by <span class="t-c"><span class="mw-geshi c source-c">filename</span></span>. The function is capable of generating up to <span class="t-lc"><a href="../io.html" title="c/io">TMP_MAX</a></span> of unique filenames, but some or all of them may be in use in the filesystem and thus not suitable return values.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that up to <span class="t-lc">TMP_MAX_S</span> names may be generated, no longer than <span class="t-lc">L_tmpnam_s</span> in length, and the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">1)</span> Creates a unique valid file name (no longer than <span class="t-lc"><a href="../io.htm" title="c/io">L_tmpnam</a></span> in length) and stores it in character string pointed to by <span class="t-c"><span class="mw-geshi c source-c">filename</span></span>. The function is capable of generating up to <span class="t-lc"><a href="../io.htm" title="c/io">TMP_MAX</a></span> of unique filenames, but some or all of them may be in use in the filesystem and thus not suitable return values.</div>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that up to <span class="t-lc">TMP_MAX_S</span> names may be generated, no longer than <span class="t-lc">L_tmpnam_s</span> in length, and the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">filename_s</span></span> is a null pointer
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">maxsize</span></span> is greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX</span></span>
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">maxsize</span></span> is less than the generated file name string
 </li></ul>
-</dd><dd> As with all bounds-checked functions, <code>tmpnam_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd> As with all bounds-checked functions, <code>tmpnam_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <p><span class="t-c"><span class="mw-geshi c source-c">tmpnam</span></span> and <span class="t-c"><span class="mw-geshi c source-c">tmpnam_s</span></span> modify static state (which may be shared between these functions) and are not required to be thread-safe.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="tmpnam.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="tmpnam.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="tmpnam.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="tmpnam.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="tmpnam.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="tmpnam.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./tmpnam.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./tmpnam.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./tmpnam.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./tmpnam.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./tmpnam.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./tmpnam.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/tmpnam&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -253,7 +253,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> pointer to the character array capable of holding at least <span class="t-lc"><a href="../io.html" title="c/io">L_tmpnam</a></span> bytes, to be used as a result buffer. If null pointer is passed, a pointer to an internal static buffer is returned.
+<td> pointer to the character array capable of holding at least <span class="t-lc"><a href="../io.htm" title="c/io">L_tmpnam</a></span> bytes, to be used as a result buffer. If null pointer is passed, a pointer to an internal static buffer is returned.
 </td></tr>
 <tr class="t-par">
 <td> filename_s
@@ -273,7 +273,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1)</span> <span class="t-c"><span class="mw-geshi c source-c">filename</span></span> if <span class="t-c"><span class="mw-geshi c source-c">filename</span></span> was not a null pointer. Otherwise a pointer to an internal static buffer is returned. If no suitable filename can be generated, null pointer is returned.</div>
 <div class="t-li1"><span class="t-li">2)</span> Returns zero and writes the file name to <span class="t-c"><span class="mw-geshi c source-c">filename_s</span></span> on success. On error, returns non-zero and writes the null character to <span class="t-c"><span class="mw-geshi c source-c">filename_s<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> (only if <span class="t-c"><span class="mw-geshi c source-c">filename_s</span></span> is not null and <span class="t-c"><span class="mw-geshi c source-c">maxsize</span></span> is not zero and is not greater than <span class="t-lc">RSIZE_MAX</span>).</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/tmpnam&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Although the names generated by <code>tmpnam</code> are difficult to guess, it is possible that a file with that name is created by another process between the moment <code>tmpnam</code> returns and the moment this program attempts to use the returned name to create a file. The standard function <span class="t-lc"><a href="tmpfile.htm" title="c/io/tmpfile">tmpfile</a></span> and the POSIX function <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/mkdtemp.html"><code>mkstemp</code></a> do not have this problem (creating a unique directory using only the standard C library still requires the use of <code>tmpnam</code>).
+<p>Although the names generated by <code>tmpnam</code> are difficult to guess, it is possible that a file with that name is created by another process between the moment <code>tmpnam</code> returns and the moment this program attempts to use the returned name to create a file. The standard function <span class="t-lc"><a href="./tmpfile.htm" title="c/io/tmpfile">tmpfile</a></span> and the POSIX function <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/mkdtemp.html"><code>mkstemp</code></a> do not have this problem (creating a unique directory using only the standard C library still requires the use of <code>tmpnam</code>).
 </p><p>POSIX systems additionally define the similarly named function <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/tempnam.html"><code>tempnam</code></a>, which offers the choice of a directory (which defaults to the optionally defined macro <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdio.h.html"><code>P_tmpdir</code></a>).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/tmpnam&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -286,12 +286,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="co1">// Note, the compiler/linker may issue a security warning, e.g. GCC:</span>
     <span class="co1">// "warning: the use of `tmpnam' is dangerous, better use `mkstemp'"</span>
-    <span class="kw4">char</span><span class="sy2">*</span> name1 <span class="sy1">=</span> tmpnam<span class="br0">(</span><a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name1<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">char</span><span class="sy2">*</span> name1 <span class="sy1">=</span> tmpnam<span class="br0">(</span><a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name1<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">char</span> name2<span class="br0">[</span><a href="../io.html"><span class="kw899">L_tmpnam</span></a><span class="br0">]</span><span class="sy4">;</span>
+    <span class="kw4">char</span> name2<span class="br0">[</span><a href="../io.htm"><span class="kw899">L_tmpnam</span></a><span class="br0">]</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>tmpnam<span class="br0">(</span>name2<span class="br0">)</span><span class="br0">)</span>
-        <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name2<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name2<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// POSIX offers mkstemp. The following declaration might be</span>
     <span class="co1">// necessary as mkstemp is absent in the standard C &lt;stdlib.h&gt;.</span>
@@ -300,9 +300,9 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">char</span> name3<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"/tmp/fileXXXXXX"</span><span class="sy4">;</span> <span class="co1">// at least six 'X' required ^_^</span>
     <span class="kw4">int</span> file_descriptor <span class="sy1">=</span> mkstemp<span class="br0">(</span>name3<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>file_descriptor <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span>
-        <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name3<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"temporary file name:&nbsp;%s<span class="es1">\n</span>"</span>, name3<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">else</span>
-        <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"mkstemp"</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"mkstemp"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -359,7 +359,7 @@ temporary file name: /tmp/filexgv8PF</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="tmpfile.htm" title="c/io/tmpfile"> <span class="t-lines"><span>tmpfile</span><span>tmpfile_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./tmpfile.htm" title="c/io/tmpfile"> <span class="t-lines"><span>tmpfile</span><span>tmpfile_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   returns a pointer to a temporary file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_tmpfile&amp;action=edit">[edit]</a></span>
 </td></tr>

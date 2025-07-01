@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -281,7 +281,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 </tbody></table>
 <p>The implementation may define additional macro constants in <code>&lt;fenv.h&gt;</code> to identify additional floating-point exceptions. All such constants begin with <code>FE_</code> followed by at least one uppercase letter.
-</p><p>See <a href="../math/math_errhandling.html" title="c/numeric/math/math errhandling">math_errhandling</a> for further details.
+</p><p>See <a href="../math/math_errhandling.htm" title="c/numeric/math/math errhandling">math_errhandling</a> for further details.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/fenv/FE_exceptions&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -293,38 +293,38 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#pragma STDC FENV_ACCESS ON</span>
 <span class="kw4">void</span> show_fe_exceptions<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"exceptions raised:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_DIVBYZERO<span class="br0">)</span><span class="br0">)</span> <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_INEXACT<span class="br0">)</span><span class="br0">)</span>   <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_INVALID<span class="br0">)</span><span class="br0">)</span>   <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_OVERFLOW<span class="br0">)</span><span class="br0">)</span>  <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_UNDERFLOW<span class="br0">)</span><span class="br0">)</span> <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span>FE_ALL_EXCEPT<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"exceptions raised:"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_DIVBYZERO<span class="br0">)</span><span class="br0">)</span> <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_INEXACT<span class="br0">)</span><span class="br0">)</span>   <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_INVALID<span class="br0">)</span><span class="br0">)</span>   <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_OVERFLOW<span class="br0">)</span><span class="br0">)</span>  <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span>FE_UNDERFLOW<span class="br0">)</span><span class="br0">)</span> <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span>FE_ALL_EXCEPT<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERREXCEPT is&nbsp;%s<span class="es1">\n</span>"</span>,
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERREXCEPT is&nbsp;%s<span class="es1">\n</span>"</span>,
            math_errhandling <span class="sy3">&amp;</span> MATH_ERREXCEPT <span class="sy4">?</span> <span class="st0">"set"</span> <span class="sy4">:</span> <span class="st0">"not set"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"0.0/0.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">0.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"0.0/0.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">0.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"1.0/10.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"1.0/10.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(-1) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(-1) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../math/sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MAX*2.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a><span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MAX*2.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a><span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(DBL_MIN/pow(2.0,52),0.0) =&nbsp;%.1f<span class="es1">\n</span>"</span>,
-                      <a href="../math/nexttoward.html"><span class="kw701">nextafter</span></a><span class="br0">(</span><a href="../../types/limits.html"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><a href="../math/pow.html"><span class="kw668">pow</span></a><span class="br0">(</span><span class="nu16">2.0</span>,<span class="nu0">52</span><span class="br0">)</span>,<span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw845">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(DBL_MIN/pow(2.0,52),0.0) =&nbsp;%.1f<span class="es1">\n</span>"</span>,
+                      <a href="../math/nexttoward.htm"><span class="kw701">nextafter</span></a><span class="br0">(</span><a href="../../types/limits.htm"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><a href="../math/pow.htm"><span class="kw668">pow</span></a><span class="br0">(</span><span class="nu16">2.0</span>,<span class="nu0">52</span><span class="br0">)</span>,<span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -361,7 +361,7 @@ exceptions raised: FE_INEXACT FE_UNDERFLOW</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../math/math_errhandling.html" title="c/numeric/math/math errhandling"> <span class="t-lines"><span>math_errhandling</span><span>MATH_ERRNO</span><span>MATH_ERREXCEPT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../math/math_errhandling.htm" title="c/numeric/math/math errhandling"> <span class="t-lines"><span>math_errhandling</span><span>MATH_ERRNO</span><span>MATH_ERREXCEPT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   defines the error handling mechanism used by the common mathematical functions  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_math_errhandling&amp;action=edit">[edit]</a></span>
 </td></tr>

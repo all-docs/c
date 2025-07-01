@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -199,16 +199,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Determines if the given floating-point number <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is a not-a-number (NaN) value. The macro returns an integral value.
-</p><p><span class="t-lc"><a href="../../types/limits/FLT_EVAL_METHOD.html" title="c/types/limits/FLT EVAL METHOD">FLT_EVAL_METHOD</a></span> is ignored: even if the argument is evaluated with more range and precision than its type, it is first converted to its semantic type, and the classification is based on that (this matters if the evaluation type supports NaNs, while the semantic type does not).
+</p><p><span class="t-lc"><a href="../../types/limits/FLT_EVAL_METHOD.htm" title="c/types/limits/FLT EVAL METHOD">FLT_EVAL_METHOD</a></span> is ignored: even if the argument is evaluated with more range and precision than its type, it is first converted to its semantic type, and the classification is based on that (this matters if the evaluation type supports NaNs, while the semantic type does not).
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="isnan.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="isnan.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="isnan.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="isnan.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="isnan.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="isnan.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./isnan.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./isnan.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./isnan.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./isnan.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./isnan.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./isnan.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/isnan&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -226,7 +226,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>Nonzero integral value if <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is a NaN, <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> otherwise.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/isnan&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>There are many different NaN values with different sign bits and payloads, see <span class="t-lc"><a href="nan.htm" title="c/numeric/math/nan">nan</a></span>.
+<p>There are many different NaN values with different sign bits and payloads, see <span class="t-lc"><a href="./nan.htm" title="c/numeric/math/nan">nan</a></span>.
 </p><p>NaN values never compare equal to themselves or to other NaN values. Copying a NaN may change its bit pattern.
 </p><p>Another way to test if a floating-point value is NaN is to compare it with itself: <span class="t-c"><span class="mw-geshi c source-c">bool is_nan<span class="br0">(</span><span class="kw4">double</span> x<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> x <span class="sy3">!</span><span class="sy1">=</span> x<span class="sy4">;</span> <span class="br0">}</span></span></span>
 </p>
@@ -238,12 +238,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(NAN)         =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>NAN<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(INFINITY)    =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(0.0)         =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(DBL_MIN/2.0) =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><a href="../../types/limits.html"><span class="kw375">DBL_MIN</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(0.0 / 0.0)   =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><span class="nu16">0.0</span> <span class="sy2">/</span> <span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(Inf - Inf)   =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>INFINITY <span class="sy2">-</span> INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(NAN)         =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>NAN<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(INFINITY)    =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(0.0)         =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(DBL_MIN/2.0) =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><a href="../../types/limits.htm"><span class="kw375">DBL_MIN</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(0.0 / 0.0)   =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span><span class="nu16">0.0</span> <span class="sy2">/</span> <span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"isnan(Inf - Inf)   =&nbsp;%d<span class="es1">\n</span>"</span>, isnan<span class="br0">(</span>INFINITY <span class="sy2">-</span> INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -287,37 +287,37 @@ isnan(Inf - Inf)   = 1</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="nan.htm" title="c/numeric/math/nan"> <span class="t-lines"><span>nan</span><span>nanf</span><span>nanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./nan.htm" title="c/numeric/math/nan"> <span class="t-lines"><span>nan</span><span>nanf</span><span>nanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   returns a NaN (not-a-number)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_fnan&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fpclassify.htm" title="c/numeric/math/fpclassify"> <span class="t-lines"><span>fpclassify</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fpclassify.htm" title="c/numeric/math/fpclassify"> <span class="t-lines"><span>fpclassify</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   classifies the given floating-point value  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_fpclassify&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="isfinite.htm" title="c/numeric/math/isfinite"> <span class="t-lines"><span>isfinite</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./isfinite.htm" title="c/numeric/math/isfinite"> <span class="t-lines"><span>isfinite</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   checks if the given number has finite value  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_isfinite&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="isinf.htm" title="c/numeric/math/isinf"> <span class="t-lines"><span>isinf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./isinf.htm" title="c/numeric/math/isinf"> <span class="t-lines"><span>isinf</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   checks if the given number is infinite  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_isinf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="isnormal.htm" title="c/numeric/math/isnormal"> <span class="t-lines"><span>isnormal</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./isnormal.htm" title="c/numeric/math/isnormal"> <span class="t-lines"><span>isnormal</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   checks if the given number is normal  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_isnormal&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="isunordered.htm" title="c/numeric/math/isunordered"> <span class="t-lines"><span>isunordered</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./isunordered.htm" title="c/numeric/math/isunordered"> <span class="t-lines"><span>isunordered</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   checks if two floating-point values are unordered <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_isunordered&amp;action=edit">[edit]</a></span>
 </td></tr>

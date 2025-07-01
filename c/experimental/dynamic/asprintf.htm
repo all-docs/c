@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -215,16 +215,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1)</span> Analog of <span class="t-lc"><a href="../../io/fprintf.html" title="c/io/fprintf">sprintf</a></span>, except that it allocates a storage large enough to hold the output including the terminating null character, as if by a call to <span class="t-lc"><a href="../../memory/malloc.html" title="c/memory/malloc">malloc</a></span>, and returns a pointer to that storage via the first argument. This pointer should be passed to <span class="t-lc"><a href="../../memory/free.html" title="c/memory/free">free</a></span> to release the allocated storage when it is no longer needed.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that it works with wide characters <span class="t-lc">wchar_t</span> (by analogy with <span class="t-lc"><a href="../../io/fwprintf.html" title="c/io/fwprintf">swprintf</a></span>). </div>
+<div class="t-li1"><span class="t-li">1)</span> Analog of <span class="t-lc"><a href="../../io/fprintf.htm" title="c/io/fprintf">sprintf</a></span>, except that it allocates a storage large enough to hold the output including the terminating null character, as if by a call to <span class="t-lc"><a href="../../memory/malloc.htm" title="c/memory/malloc">malloc</a></span>, and returns a pointer to that storage via the first argument. This pointer should be passed to <span class="t-lc"><a href="../../memory/free.htm" title="c/memory/free">free</a></span> to release the allocated storage when it is no longer needed.</div>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that it works with wide characters <span class="t-lc">wchar_t</span> (by analogy with <span class="t-lc"><a href="../../io/fwprintf.htm" title="c/io/fwprintf">swprintf</a></span>). </div>
 <div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(1)</span>, with the variable argument list replaced by <code>arg</code>, which shall be initialized by the <span class="t-lc">va_start</span> macro (and possibly subsequent <span class="t-lc">va_arg</span> calls).</div>
 <div class="t-li1"><span class="t-li">4)</span> Same as <span class="t-v">(3)</span>, except that it works with wide characters <span class="t-lc">wchar_t</span>.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="asprintf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="asprintf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="asprintf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="asprintf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./asprintf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./asprintf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./asprintf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./asprintf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/experimental/dynamic/asprintf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -243,17 +243,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  A format string as with <span class="t-lc"><a href="../../io/fprintf.html" title="c/io/fprintf">printf</a></span>/<span class="t-lc"><a href="../../io/fwprintf.html" title="c/io/fwprintf">wprintf</a></span> and related functions
+<td>  A format string as with <span class="t-lc"><a href="../../io/fprintf.htm" title="c/io/fprintf">printf</a></span>/<span class="t-lc"><a href="../../io/fwprintf.htm" title="c/io/fwprintf">wprintf</a></span> and related functions
 </td></tr>
 <tr class="t-par">
 <td>  arg
 </td>
 <td> -
 </td>
-<td>  Any extra arguments are used as with <span class="t-lc"><a href="../../io/vfprintf.html" title="c/io/vfprintf">vsprintf</a></span> and <span class="t-lc"><a href="../../io/vfwprintf.html" title="c/io/vfwprintf">vswprintf</a></span>
+<td>  Any extra arguments are used as with <span class="t-lc"><a href="../../io/vfprintf.htm" title="c/io/vfprintf">vsprintf</a></span> and <span class="t-lc"><a href="../../io/vfwprintf.htm" title="c/io/vfwprintf">vswprintf</a></span>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/experimental/dynamic/asprintf&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>The number of characters written, just like <span class="t-lc"><a href="../../io/fprintf.html" title="c/io/fprintf">sprintf</a></span> <span class="t-v">(1)</span>, <span class="t-lc"><a href="../../io/fwprintf.html" title="c/io/fwprintf">swprintf</a></span> <span class="t-v">(2)</span>, <span class="t-lc"><a href="../../io/vfprintf.html" title="c/io/vfprintf">vsprintf</a></span> <span class="t-v">(3)</span>, or <span class="t-lc"><a href="../../io/vfwprintf.html" title="c/io/vfwprintf">vswprintf</a></span> <span class="t-v">(4)</span>, respectively. If memory allocation wasn't possible, or some other error occurs, these functions will return <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span>, and the contents of <code>strp</code> is undefined.
+<p>The number of characters written, just like <span class="t-lc"><a href="../../io/fprintf.htm" title="c/io/fprintf">sprintf</a></span> <span class="t-v">(1)</span>, <span class="t-lc"><a href="../../io/fwprintf.htm" title="c/io/fwprintf">swprintf</a></span> <span class="t-v">(2)</span>, <span class="t-lc"><a href="../../io/vfprintf.htm" title="c/io/vfprintf">vsprintf</a></span> <span class="t-v">(3)</span>, or <span class="t-lc"><a href="../../io/vfwprintf.htm" title="c/io/vfwprintf">vswprintf</a></span> <span class="t-v">(4)</span>, respectively. If memory allocation wasn't possible, or some other error occurs, these functions will return <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span>, and the contents of <code>strp</code> is undefined.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/experimental/dynamic/asprintf&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>These functions are GNU extensions, not in C or POSIX. They are also available under *BSD. The FreeBSD implementation sets <code>strp</code> to <code>NULL</code> on error.
@@ -269,18 +269,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">char</span><span class="sy2">*</span> dyn_buf<span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Demo asprintf:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Demo asprintf:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">int</span> written_1 <span class="sy1">=</span> asprintf<span class="br0">(</span><span class="sy3">&amp;</span>dyn_buf, <span class="st0">"%s"</span>, fmt<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dyn_buf: <span class="es1">\"</span>%s<span class="es1">\"</span>;&nbsp;%i chars were written<span class="es1">\n</span>"</span>, dyn_buf, written_1<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>dyn_buf<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dyn_buf: <span class="es1">\"</span>%s<span class="es1">\"</span>;&nbsp;%i chars were written<span class="es1">\n</span>"</span>, dyn_buf, written_1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>dyn_buf<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Demo vasprintf:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Demo vasprintf:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     va_list args<span class="sy4">;</span>
     va_start<span class="br0">(</span>args, fmt<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">int</span> written_2 <span class="sy1">=</span> vasprintf<span class="br0">(</span><span class="sy3">&amp;</span>dyn_buf, fmt, args<span class="br0">)</span><span class="sy4">;</span>
     va_end<span class="br0">(</span>args<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dyn_buf: <span class="es1">\"</span>%s<span class="es1">\"</span>;&nbsp;%i chars were written<span class="es1">\n</span>"</span>, dyn_buf, written_2<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>dyn_buf<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dyn_buf: <span class="es1">\"</span>%s<span class="es1">\"</span>;&nbsp;%i chars were written<span class="es1">\n</span>"</span>, dyn_buf, written_2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>dyn_buf<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>

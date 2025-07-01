@@ -188,13 +188,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="comment.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="comment.htm#C-style"><span class="tocnumber">2</span> <span class="toctext">C-style</span></a></li>
-<li class="toclevel-1"><a href="comment.htm#C.2B.2B-style"><span class="tocnumber">3</span> <span class="toctext">C++-style</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="comment.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="comment.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="comment.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="comment.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./comment.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./comment.htm#C-style"><span class="tocnumber">2</span> <span class="toctext">C-style</span></a></li>
+<li class="toclevel-1"><a href="./comment.htm#C.2B.2B-style"><span class="tocnumber">3</span> <span class="toctext">C++-style</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./comment.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./comment.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./comment.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./comment.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -231,17 +231,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Often known as "C-style" or "multi-line" comments.</div>
 <div class="t-li1"><span class="t-li">2)</span> Often known as "C++-style" or "single-line" comments.</div>
-<p>All comments are removed from the program at <a href="language/translation_phases.htm" title="c/language/translation phases">translation phase 3</a> by replacing each comment with a single whitespace character.
+<p>All comments are removed from the program at <a href="./language/translation_phases.htm" title="c/language/translation phases">translation phase 3</a> by replacing each comment with a single whitespace character.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;action=edit&amp;section=2" title="Edit section: C-style">edit</a>]</span> <span class="mw-headline" id="C-style">C-style</span></h3>
 <p>C-style comments are usually used to comment large blocks of text or small fragments of code; however, they can be used to comment single lines. To insert text as a C-style comment, simply surround the text with <code>/*</code> and <code>*/</code>. C-style comments tell the compiler to ignore all content between <code>/*</code> and <code>*/</code>. Although it is not part of the C standard, <code>/**</code> and <code>**/</code> are often used to indicate documentation blocks; this is legal because the second asterisk is simply treated as part of the comment.
-</p><p>Except within a <a href="language/character_constant.htm" title="c/language/character constant">character constant</a>, a <a href="language/string_literal.htm" title="c/language/string literal">string literal</a>, or a comment, the characters <code>/*</code> introduce a comment. The contents of such a comment are examined only to identify multibyte characters and to find the characters <code>*/</code> that terminate the comment. C-style comments cannot be nested.
+</p><p>Except within a <a href="./language/character_constant.htm" title="c/language/character constant">character constant</a>, a <a href="./language/string_literal.htm" title="c/language/string literal">string literal</a>, or a comment, the characters <code>/*</code> introduce a comment. The contents of such a comment are examined only to identify multibyte characters and to find the characters <code>*/</code> that terminate the comment. C-style comments cannot be nested.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
 <h3> <span class="mw-headline" id="C.2B.2B-style">C++-style</span></h3>
 <p>C++-style comments are usually used to comment single lines of text or code; however, they can be placed together to form multi-line comments. To insert text as a C++-style comment, simply precede the text with <code>//</code> and follow the text with the new line character. C++-style comments tell the compiler to ignore all content between <code>//</code> and a new line.
-</p><p>Except within a <a href="language/character_constant.htm" title="c/language/character constant">character constant</a>, a <a href="language/string_literal.htm" title="c/language/string literal">string literal</a>, or a comment, the characters <code>//</code>
+</p><p>Except within a <a href="./language/character_constant.htm" title="c/language/character constant">character constant</a>, a <a href="./language/string_literal.htm" title="c/language/string literal">string literal</a>, or a comment, the characters <code>//</code>
 introduce a comment that includes all multibyte characters up to, but not including, the next new-line character. The contents of such a comment are examined only to identify
 multibyte characters and to find the new-line character that terminates the comment. C++-style comments can be nested:
 </p>
@@ -259,7 +259,7 @@ multibyte characters and to find the new-line character that terminates the comm
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/comment&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Because comments <a href="language/translation_phases.htm" title="c/language/translation phases">are removed</a> before the preprocessor stage, a macro cannot be used to form a comment and an unterminated C-style comment doesn't spill over from an #include'd file.
+<p>Because comments <a href="./language/translation_phases.htm" title="c/language/translation phases">are removed</a> before the preprocessor stage, a macro cannot be used to form a comment and an unterminated C-style comment doesn't spill over from an #include'd file.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="coMULTI">/* An attempt to use a macro to form a comment. */</span>
 <span class="coMULTI">/* But, a space replaces characters "//".       */</span>
@@ -273,14 +273,14 @@ multibyte characters and to find the new-line character that terminates the comm
 <p>Besides commenting out, other mechanisms used for source code exclusion are:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#if 0</span>
-    <a href="io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this will not be compiled"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this will not be compiled"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="coMULTI">/* no conflict with C-style comments */</span>
     <span class="co1">// no conflict with C++-style comments</span>
 <span class="co2">#endif</span></pre></div></div>
 <p>and
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">if</span><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-    <a href="io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this will be compiled but not be executed"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this will be compiled but not be executed"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="coMULTI">/* no conflict with C-style comments */</span>
     <span class="co1">// no conflict with C++-style comments</span>
 <span class="br0">}</span></pre></div></div>
@@ -310,7 +310,7 @@ multiple lines.
   <span class="co1">// puts("Hello");</span>
 &nbsp;
   <span class="co1">// The below code will be run</span>
-  <a href="io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"World"</span><span class="br0">)</span><span class="sy4">;</span>
+  <a href="./io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"World"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
   <span class="co1">// A note regarding backslash + newline.</span>
   <span class="co1">// Despite belonging to translation phase 2 (vs phase 3 for comments),</span>
@@ -318,7 +318,7 @@ multiple lines.
   <span class="co1">// as 'comments':</span>
   <span class="co1">// This comment will be promoted to the next line \
   puts("Won't be run"); // may issue a warning "multi-line comment"</span>
-  <a href="io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Hello, again"</span><span class="br0">)</span><span class="sy4">;</span>
+  <a href="./io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Hello, again"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdatomic.html" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdatomic.htm" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -182,36 +182,36 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl t-since-c11">
 <td> <div><span class="mw-geshi c source-c">_Bool atomic_compare_exchange_strong_explicit<span class="br0">(</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> obj, <br>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C<span class="sy2">*</span> expected, C desired,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="memory_order.htm"><span class="kw910">memory_order</span></a> succ, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./memory_order.htm"><span class="kw910">memory_order</span></a> succ, <br>
 </p>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="memory_order.htm"><span class="kw910">memory_order</span></a> fail <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./memory_order.htm"><span class="kw910">memory_order</span></a> fail <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
 <td> <div><span class="mw-geshi c source-c">_Bool atomic_compare_exchange_weak_explicit<span class="br0">(</span> <span class="kw4">volatile</span> A <span class="sy2">*</span>obj, <br>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;C<span class="sy2">*</span> expected, C desired,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="memory_order.htm"><span class="kw910">memory_order</span></a> succ, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./memory_order.htm"><span class="kw910">memory_order</span></a> succ, <br>
 </p>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="memory_order.htm"><span class="kw910">memory_order</span></a> fail <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./memory_order.htm"><span class="kw910">memory_order</span></a> fail <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (4) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Atomically compares the contents of memory pointed to by <code>obj</code> with the contents of memory pointed to by <code>expected</code>, and if those are bitwise equal, replaces the former with <code>desired</code> (performs read-modify-write operation). Otherwise, loads the actual contents of memory pointed to by <code>obj</code> into <code>*expected</code> (performs load operation).
-</p><p>The memory models for the read-modify-write and load operations are <code>succ</code> and <code>fail</code> respectively. The (1-2) versions use <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span> by default.
+</p><p>The memory models for the read-modify-write and load operations are <code>succ</code> and <code>fail</code> respectively. The (1-2) versions use <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span> by default.
 </p><p>The weak forms ((2) and (4)) of the functions are allowed to fail spuriously, that is, act as if <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>obj <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">*</span>expected</span></span> even if they are equal. When a compare-and-exchange is in a loop, the weak version will yield better performance on some platforms. When a weak compare-and-exchange would require a loop and a strong one would not, the strong one is preferable.
-</p><p>This is a <a href="../language/generic.html" title="c/language/generic">generic function</a> defined for all <a href="../language/atomic.html" title="c/language/atomic">atomic object types</a> <code>A</code>. The argument is pointer to a volatile atomic type to accept addresses of both non-volatile and <a href="../language/volatile.html" title="c/language/volatile">volatile</a> (e.g. memory-mapped I/O) atomic objects, and volatile semantic is preserved when applying this operation to volatile atomic objects. <code>C</code> is the non-atomic type corresponding to <code>A</code>.
+</p><p>This is a <a href="../language/generic.htm" title="c/language/generic">generic function</a> defined for all <a href="../language/atomic.htm" title="c/language/atomic">atomic object types</a> <code>A</code>. The argument is pointer to a volatile atomic type to accept addresses of both non-volatile and <a href="../language/volatile.htm" title="c/language/volatile">volatile</a> (e.g. memory-mapped I/O) atomic objects, and volatile semantic is preserved when applying this operation to volatile atomic objects. <code>C</code> is the non-atomic type corresponding to <code>A</code>.
 </p><p>It is unspecified whether the name of a generic function is a macro or an identifier declared with external linkage. If a macro definition is suppressed in order to access an actual function (e.g. parenthesized like <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>atomic_compare_exchange<span class="br0">)</span><span class="br0">(</span>...<span class="br0">)</span></span></span>), or a program defines an external identifier with the name of a generic function, the behavior is undefined.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="atomic_compare_exchange.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="atomic_compare_exchange.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="atomic_compare_exchange.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="atomic_compare_exchange.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="atomic_compare_exchange.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./atomic_compare_exchange.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./atomic_compare_exchange.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./atomic_compare_exchange.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./atomic_compare_exchange.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./atomic_compare_exchange.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_compare_exchange&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -251,7 +251,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  the memory synchronization ordering for the load operation if the comparison fails. Cannot be <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> or <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_acq_rel</a></span> and cannot specify stronger ordering than <code>succ</code>
+<td>  the memory synchronization ordering for the load operation if the comparison fails. Cannot be <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> or <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_acq_rel</a></span> and cannot specify stronger ordering than <code>succ</code>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_compare_exchange&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>The result of the comparison: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> if <code>*obj</code> was equal to <code>*exp</code>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> otherwise.
@@ -259,11 +259,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_compare_exchange&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The behavior of <code>atomic_compare_exchange_*</code> family is as if the following was executed atomically:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">if</span> <span class="br0">(</span><a href="../string/byte/memcmp.html"><span class="kw570">memcmp</span></a><span class="br0">(</span>obj, expected, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
-    <a href="../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span>obj, <span class="sy3">&amp;</span>desired, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">if</span> <span class="br0">(</span><a href="../string/byte/memcmp.htm"><span class="kw570">memcmp</span></a><span class="br0">(</span>obj, expected, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span>
+    <a href="../string/byte/memcpy.htm"><span class="kw572">memcpy</span></a><span class="br0">(</span>obj, <span class="sy3">&amp;</span>desired, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">true</span><span class="sy4">;</span>
 <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
-    <a href="../string/byte/memcpy.html"><span class="kw572">memcpy</span></a><span class="br0">(</span>expected, obj, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../string/byte/memcpy.htm"><span class="kw572">memcpy</span></a><span class="br0">(</span>expected, obj, <span class="kw4">sizeof</span> <span class="sy2">*</span>obj<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="kw2">false</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_compare_exchange&amp;action=edit&amp;section=4" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
@@ -285,7 +285,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="atomic_exchange.htm" title="c/atomic/atomic exchange"> <span class="t-lines"><span>atomic_exchange</span><span>atomic_exchange_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./atomic_exchange.htm" title="c/atomic/atomic exchange"> <span class="t-lines"><span>atomic_exchange</span><span>atomic_exchange_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   swaps a value with the value of an atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_exchange&amp;action=edit">[edit]</a></span>
 </td></tr>

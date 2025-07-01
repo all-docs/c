@@ -184,27 +184,27 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>A scalar object declared with the <span class="mw-geshi c source-c">constexpr</span> storage-class specifier is a <a href="constant_expression.htm" title="c/language/constant expression">constant</a>. It must be fully and explicitly initialized according to the static initialization rules. It still has linkage appropriate to its declaration and it exists at runtime to have its address taken; it simply cannot be modified at runtime in any way, i.e., the compiler can use its knowledge of the object’s fixed value in any other <a href="constant_expression.htm" title="c/language/constant expression">constant expression</a>.
+<p>A scalar object declared with the <span class="mw-geshi c source-c">constexpr</span> storage-class specifier is a <a href="./constant_expression.htm" title="c/language/constant expression">constant</a>. It must be fully and explicitly initialized according to the static initialization rules. It still has linkage appropriate to its declaration and it exists at runtime to have its address taken; it simply cannot be modified at runtime in any way, i.e., the compiler can use its knowledge of the object’s fixed value in any other <a href="./constant_expression.htm" title="c/language/constant expression">constant expression</a>.
 </p><p>Additionally, the constant expression that is used for the initializer of such a constant is checked at compile time.
 </p><p>An initializer of floating-point type must be evaluated with the translation-time floating-point environment.
 </p><p>There are some restrictions on the type of an object that can be declared with <span class="mw-geshi c source-c">constexpr</span>. Namely, the following constructs are not allowed to be <span class="mw-geshi c source-c">constexpr</span>:
 </p>
-<ul><li> <a href="pointer.htm" title="c/language/pointer">Pointers</a> (except that null pointers can be <span class="mw-geshi c source-c">constexpr</span>),
+<ul><li> <a href="./pointer.htm" title="c/language/pointer">Pointers</a> (except that null pointers can be <span class="mw-geshi c source-c">constexpr</span>),
 </li><li> Variably modified types,
-</li><li> <a href="atomic.htm" title="c/language/atomic">Atomic types</a>,
-</li><li> <a href="volatile.htm" title="c/language/volatile"><code>volatile</code></a> types,
-</li><li> <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a> pointers.
+</li><li> <a href="./atomic.htm" title="c/language/atomic">Atomic types</a>,
+</li><li> <a href="./volatile.htm" title="c/language/volatile"><code>volatile</code></a> types,
+</li><li> <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a> pointers.
 </li></ul>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="constexpr.htm#Keywords"><span class="tocnumber">1</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="constexpr.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="constexpr.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="constexpr.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./constexpr.htm#Keywords"><span class="tocnumber">1</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./constexpr.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./constexpr.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./constexpr.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constexpr&amp;action=edit&amp;section=1" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/constexpr.html" title="c/keyword/constexpr"><tt>constexpr</tt></a>
+<p><a href="../keyword/constexpr.htm" title="c/keyword/constexpr"><tt>constexpr</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constexpr&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -215,9 +215,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     constexpr <span class="kw4">float</span> f <span class="sy1">=</span> <span class="nu17">23.0f</span><span class="sy4">;</span>
     constexpr <span class="kw4">float</span> g <span class="sy1">=</span> <span class="nu17">33.0f</span><span class="sy4">;</span>
-    <a href="../numeric/fenv/feround.html"><span class="kw724">fesetround</span></a><span class="br0">(</span><a href="../numeric/fenv/FE_round.html"><span class="kw737">FE_TOWARDZERO</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../numeric/fenv/feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span><a href="../numeric/fenv/FE_round.htm"><span class="kw737">FE_TOWARDZERO</span></a><span class="br0">)</span><span class="sy4">;</span>
     constexpr <span class="kw4">float</span> h <span class="sy1">=</span> f <span class="sy2">/</span> g<span class="sy4">;</span> <span class="co1">// is not affected by fesetround() above</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f<span class="es1">\n</span>"</span>, h<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%f<span class="es1">\n</span>"</span>, h<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

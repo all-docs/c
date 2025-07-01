@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> c16rtomb<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, char16_t c16, <a href="mbstate_t.htm"><span class="kw591">mbstate_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> ps <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> c16rtomb<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, char16_t c16, <a href="./mbstate_t.htm"><span class="kw591">mbstate_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> ps <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
@@ -207,12 +207,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="c16rtomb.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="c16rtomb.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="c16rtomb.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="c16rtomb.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="c16rtomb.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="c16rtomb.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./c16rtomb.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./c16rtomb.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./c16rtomb.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./c16rtomb.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./c16rtomb.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./c16rtomb.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/c16rtomb&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -242,10 +242,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/c16rtomb&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>On success, returns the number of bytes (including any shift sequences) written to the character array whose first element is pointed to by <span class="t-c"><span class="mw-geshi c source-c">s</span></span>. This value may be <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>, e.g. when processing the leading <span class="mw-geshi c source-c">char16_t</span> units in a multi-<span class="mw-geshi c source-c">char16_t</span>-unit sequence (occurs when processing the leading surrogate in a surrogate pair of UTF-16).
-</p><p>On failure (if <span class="t-c"><span class="mw-geshi c source-c">c16</span></span> is not a valid 16-bit code unit), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span>, stores <span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">EILSEQ</a></span> in <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span>, and leaves <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> in unspecified state.
+</p><p>On failure (if <span class="t-c"><span class="mw-geshi c source-c">c16</span></span> is not a valid 16-bit code unit), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span>, stores <span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">EILSEQ</a></span> in <span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span>, and leaves <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> in unspecified state.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/c16rtomb&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>In C11 as published, unlike <span class="t-lc"><a href="mbrtoc16.htm" title="c/string/multibyte/mbrtoc16">mbrtoc16</a></span>, which converts variable-width multibyte (such as UTF-8) to variable-width 16-bit (such as UTF-16) encoding, this function can only convert single-unit 16-bit encoding, meaning it cannot convert UTF-16 to UTF-8 despite that being the original intent of this function. This was corrected by the post-C11 defect report <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2059.htm#dr_488">DR488</a>.
+<p>In C11 as published, unlike <span class="t-lc"><a href="./mbrtoc16.htm" title="c/string/multibyte/mbrtoc16">mbrtoc16</a></span>, which converts variable-width multibyte (such as UTF-8) to variable-width 16-bit (such as UTF-16) encoding, this function can only convert single-unit 16-bit encoding, meaning it cannot convert UTF-16 to UTF-8 despite that being the original intent of this function. This was corrected by the post-C11 defect report <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2059.htm#dr_488">DR488</a>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/c16rtomb&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Note: this example assumes the fix for the defect report <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2059.htm#dr_488">DR488</a> is applied.<br>
@@ -257,33 +257,33 @@ On MSVC you may need the <code>/utf-8</code> compiler flag for UTF_8 to work pro
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../locale/setlocale.html"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.htm"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.htm"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">const</span> char16_t in<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> u<span class="st0">"zß水🍌"</span><span class="sy4">;</span> <span class="co1">// or "z\u00df\u6c34\U0001F34C"</span>
-    <span class="kw4">const</span> <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> in_sz <span class="sy1">=</span> <span class="kw4">sizeof</span> in <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>in<span class="sy4">;</span>
+    <span class="kw4">const</span> <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> in_sz <span class="sy1">=</span> <span class="kw4">sizeof</span> in <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>in<span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Processing&nbsp;%zu UTF-16 code units: ["</span>, in_sz<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s%04X"</span>, n <span class="sy4">?</span> <span class="st0">" "</span> <span class="sy4">:</span> <span class="st0">""</span>, in<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"]"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Processing&nbsp;%zu UTF-16 code units: ["</span>, in_sz<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s%04X"</span>, n <span class="sy4">?</span> <span class="st0">" "</span> <span class="sy4">:</span> <span class="st0">""</span>, in<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"]"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">char</span><span class="sy2">*</span> out <span class="sy1">=</span> <a href="../../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span>MB_CUR_MAX <span class="sy2">*</span> in_sz<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">char</span><span class="sy2">*</span> out <span class="sy1">=</span> <a href="../../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span>MB_CUR_MAX <span class="sy2">*</span> in_sz<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char</span><span class="sy2">*</span> p <span class="sy1">=</span> out<span class="sy4">;</span>
-    <a href="mbstate_t.htm"><span class="kw591">mbstate_t</span></a> state <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="./mbstate_t.htm"><span class="kw591">mbstate_t</span></a> state <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> in_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> rc <span class="sy1">=</span> c16rtomb<span class="br0">(</span>p, in<span class="br0">[</span>n<span class="br0">]</span>, <span class="sy3">&amp;</span>state<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span> <span class="br0">(</span>rc <span class="sy1">==</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span>
+        <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> rc <span class="sy1">=</span> c16rtomb<span class="br0">(</span>p, in<span class="br0">[</span>n<span class="br0">]</span>, <span class="sy3">&amp;</span>state<span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>rc <span class="sy1">==</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span>
             <span class="kw1">break</span><span class="sy4">;</span>
         p <span class="sy2">+</span><span class="sy1">=</span> rc<span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> out_sz <span class="sy1">=</span> p <span class="sy2">-</span> out<span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"into&nbsp;%zu UTF-8 code units: ["</span>, out_sz<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> x <span class="sy1">&lt;</span> out_sz<span class="sy4">;</span> <span class="sy2">++</span>x<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s%02X"</span>, x <span class="sy4">?</span> <span class="st0">" "</span> <span class="sy4">:</span> <span class="st0">""</span>, <span class="sy2">+</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>out<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"]"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>out<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> out_sz <span class="sy1">=</span> p <span class="sy2">-</span> out<span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"into&nbsp;%zu UTF-8 code units: ["</span>, out_sz<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> x <span class="sy1">&lt;</span> out_sz<span class="sy4">;</span> <span class="sy2">++</span>x<span class="br0">)</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s%02X"</span>, x <span class="sy4">?</span> <span class="st0">" "</span> <span class="sy4">:</span> <span class="st0">""</span>, <span class="sy2">+</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>out<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"]"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>out<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -316,7 +316,7 @@ into 13 UTF-8 code units: [7A C3 9F E6 B0 B4 ED A0 BC ED BD 8C 00]</pre></div></
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="mbrtoc16.htm" title="c/string/multibyte/mbrtoc16"> <span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./mbrtoc16.htm" title="c/string/multibyte/mbrtoc16"> <span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  converts a narrow multibyte character to UTF-16 encoding  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtoc16&amp;action=edit">[edit]</a></span>
 </td></tr>

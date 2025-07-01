@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,18 +198,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> wcstombs<span class="br0">(</span> <span class="kw4">char</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>dst, <span class="kw4">const</span> <span class="kw4">wchar_t</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> len <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> wcstombs<span class="br0">(</span> <span class="kw4">char</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>dst, <span class="kw4">const</span> <span class="kw4">wchar_t</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> len <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> wcstombs<span class="br0">(</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> dst, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> len <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> wcstombs<span class="br0">(</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> dst, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> len <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c">errno_t wcstombs_s<span class="br0">(</span> <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> retval, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> dst, rsize_t dstsz,<br>
+<td> <div><span class="mw-geshi c source-c">errno_t wcstombs_s<span class="br0">(</span> <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> retval, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> dst, rsize_t dstsz,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, rsize_t len <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
@@ -217,39 +217,39 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Converts a sequence of wide characters from the array whose first element is pointed to by <code>src</code> to its narrow multibyte representation that begins in the initial shift state. Converted characters are stored in the successive elements of the char array pointed to by <code>dst</code>. No more than <code>len</code> bytes are written to the destination array.</div>
-<div class="t-li1"><span class="t-li"></span> Each character is converted as if by a call to <span class="t-lc"><a href="wctomb.htm" title="c/string/multibyte/wctomb">wctomb</a></span>, except that the wctomb's conversion state is unaffected. The conversion stops if:</div>
+<div class="t-li1"><span class="t-li"></span> Each character is converted as if by a call to <span class="t-lc"><a href="./wctomb.htm" title="c/string/multibyte/wctomb">wctomb</a></span>, except that the wctomb's conversion state is unaffected. The conversion stops if:</div>
 <div class="t-li1"><span class="t-li"></span> * The null character <span class="t-c"><span class="mw-geshi c source-c">L<span class="st0">'<span class="es5">\0</span>'</span></span></span> was converted and stored. The bytes stored in this case are the unshift sequence (if necessary) followed by <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>,</div>
 <div class="t-li1"><span class="t-li"></span> * A <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span></span></span> was found that does not correspond to a valid character in the current C locale.</div>
 <div class="t-li1"><span class="t-li"></span> * The next multibyte character to be stored would exceed <code>len</code>.</div>
 <div class="t-li1"><span class="t-li"></span> If <code>src</code> and <code>dst</code> overlap, the behavior is unspecified.</div>
 <div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that</div>
-<div class="t-li1"><span class="t-li"></span> * conversion is as-if by <span class="t-lc"><a href="wcrtomb.htm" title="c/string/multibyte/wcrtomb">wcrtomb</a></span>, not <span class="t-lc"><a href="wctomb.htm" title="c/string/multibyte/wctomb">wctomb</a></span></div>
+<div class="t-li1"><span class="t-li"></span> * conversion is as-if by <span class="t-lc"><a href="./wcrtomb.htm" title="c/string/multibyte/wcrtomb">wcrtomb</a></span>, not <span class="t-lc"><a href="./wctomb.htm" title="c/string/multibyte/wctomb">wctomb</a></span></div>
 <div class="t-li1"><span class="t-li"></span> * the function returns its result as an out-parameter <code>retval</code></div>
 <div class="t-li1"><span class="t-li"></span> * if the conversion stops without writing a null character, the function will store <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span> in the next byte in <code>dst</code>, which may be <code>dst[len]</code> or <code>dst[dstsz]</code>, whichever comes first (meaning up to len+1/dstsz+1 total bytes may be written). In this case, there may be no unshift sequence written before the terminating null.</div>
 <div class="t-li1"><span class="t-li"></span> * if <code>dst</code> is a null pointer, the number of bytes that would be produced is stored in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span></div>
 <div class="t-li1"><span class="t-li"></span> * the function clobbers the destination array from the terminating null and until <code>dstsz</code></div>
 <div class="t-li1"><span class="t-li"></span> * If <code>src</code> and <code>dst</code> overlap, the behavior is unspecified.</div>
-<div class="t-li1"><span class="t-li"></span> * the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li"></span> * the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <code>retval</code> or <code>src</code> is a null pointer
 </li><li> <code>dstsz</code> or <code>len</code> is greater than <span class="t-lc">RSIZE_MAX</span> (unless <code>dst</code> is null)
 </li><li> <code>dstsz</code> is not zero (unless <code>dst</code> is null)
 </li><li> <code>len</code> is greater than <code>dstsz</code> and the conversion does not encounter null or encoding error in the <code>src</code> array by the time <code>dstsz</code> is reached (unless <code>dst</code> is null)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>wcstombs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>wcstombs_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcstombs.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcstombs.htm#Parameters"><span class="tocnumber">2</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcstombs.htm#Return_value"><span class="tocnumber">3</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcstombs.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcstombs.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcstombs.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcstombs.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcstombs.htm#Parameters"><span class="tocnumber">2</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcstombs.htm#Return_value"><span class="tocnumber">3</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcstombs.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcstombs.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcstombs.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcstombs&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>In most implementations, <code>wcstombs</code> updates a global static object of type <span class="t-lc"><a href="mbstate_t.htm" title="c/string/multibyte/mbstate t">mbstate_t</a></span> as it processes through the string, and cannot be called simultaneously by two threads, <span class="t-lc"><a href="wcsrtombs.htm" title="c/string/multibyte/wcsrtombs">wcsrtombs</a></span> or <code>wcstombs_s</code> should be used in such cases.
-</p><p>POSIX specifies a common extension: if <code>dst</code> is a null pointer, this function returns the number of bytes that would be written to <code>dst</code>, if converted. Similar behavior is standard for <span class="t-lc"><a href="wcsrtombs.htm" title="c/string/multibyte/wcsrtombs">wcsrtombs</a></span> and <code>wcstombs_s</code>.
+<p>In most implementations, <code>wcstombs</code> updates a global static object of type <span class="t-lc"><a href="./mbstate_t.htm" title="c/string/multibyte/mbstate t">mbstate_t</a></span> as it processes through the string, and cannot be called simultaneously by two threads, <span class="t-lc"><a href="./wcsrtombs.htm" title="c/string/multibyte/wcsrtombs">wcsrtombs</a></span> or <code>wcstombs_s</code> should be used in such cases.
+</p><p>POSIX specifies a common extension: if <code>dst</code> is a null pointer, this function returns the number of bytes that would be written to <code>dst</code>, if converted. Similar behavior is standard for <span class="t-lc"><a href="./wcsrtombs.htm" title="c/string/multibyte/wcsrtombs">wcsrtombs</a></span> and <code>wcstombs_s</code>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcstombs&amp;action=edit&amp;section=2" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
@@ -291,8 +291,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td>  pointer to a size_t object where the result will be stored
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcstombs&amp;action=edit&amp;section=3" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> On success, returns the number of bytes (including any shift sequences, but excluding the terminating <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>) written to the character array whose first element is pointed to by <code>dst</code>. On conversion error (if invalid wide character was encountered), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span>.</div>
-<div class="t-li1"><span class="t-li">2)</span> Returns zero on success (in which case the number of bytes excluding terminating zero that were, or would be written to <code>dst</code>, is stored in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span>), non-zero on error. In case of a runtime constraint violation, stores <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span> in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span> (unless <code>retval</code> is null) and sets <span class="t-c"><span class="mw-geshi c source-c">dst<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span> (unless <code>dst</code> is null or <code>dstmax</code> is zero or greater than <span class="t-lc">RSIZE_MAX</span>)</div>
+<div class="t-li1"><span class="t-li">1)</span> On success, returns the number of bytes (including any shift sequences, but excluding the terminating <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span>) written to the character array whose first element is pointed to by <code>dst</code>. On conversion error (if invalid wide character was encountered), returns <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Returns zero on success (in which case the number of bytes excluding terminating zero that were, or would be written to <code>dst</code>, is stored in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span>), non-zero on error. In case of a runtime constraint violation, stores <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span> in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>retval</span></span> (unless <code>retval</code> is null) and sets <span class="t-c"><span class="mw-geshi c source-c">dst<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es5">\0</span>'</span></span></span> (unless <code>dst</code> is null or <code>dstmax</code> is zero or greater than <span class="t-lc">RSIZE_MAX</span>)</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/wcstombs&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -306,17 +306,17 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="co1">// they occupy 10 bytes in UTF-8</span>
     <span class="kw4">char</span> dst<span class="br0">[</span><span class="nu0">11</span><span class="br0">]</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../locale/setlocale.html"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"wide-character string: '%ls'<span class="es1">\n</span>"</span>,src<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> ndx<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> ndx <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> src<span class="sy2">/</span><span class="kw4">sizeof</span> src<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"   src[%2zu] =&nbsp;%#8x<span class="es1">\n</span>"</span>, ndx, src<span class="br0">[</span>ndx<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.htm"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.htm"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"wide-character string: '%ls'<span class="es1">\n</span>"</span>,src<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> ndx<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> ndx <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> src<span class="sy2">/</span><span class="kw4">sizeof</span> src<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"   src[%2zu] =&nbsp;%#8x<span class="es1">\n</span>"</span>, ndx, src<span class="br0">[</span>ndx<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">int</span> rtn_val <span class="sy1">=</span> wcstombs<span class="br0">(</span>dst, src, <span class="kw4">sizeof</span> dst<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"rtn_val =&nbsp;%d<span class="es1">\n</span>"</span>, rtn_val<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"rtn_val =&nbsp;%d<span class="es1">\n</span>"</span>, rtn_val<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>rtn_val <span class="sy1">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"multibyte string:  '%s'<span class="es1">\n</span>"</span>,dst<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> ndx<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> ndx<span class="sy1">&lt;</span><span class="kw4">sizeof</span> dst<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"   dst[%2zu] =&nbsp;%#2x<span class="es1">\n</span>"</span>, ndx, <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>dst<span class="br0">[</span>ndx<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"multibyte string:  '%s'<span class="es1">\n</span>"</span>,dst<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> ndx<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> ndx<span class="sy1">&lt;</span><span class="kw4">sizeof</span> dst<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"   dst[%2zu] =&nbsp;%#2x<span class="es1">\n</span>"</span>, ndx, <span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>dst<span class="br0">[</span>ndx<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -367,13 +367,13 @@ multibyte string:  'zß水🍌'
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcsrtombs.htm" title="c/string/multibyte/wcsrtombs"> <span class="t-lines"><span>wcsrtombs</span><span>wcsrtombs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcsrtombs.htm" title="c/string/multibyte/wcsrtombs"> <span class="t-lines"><span>wcsrtombs</span><span>wcsrtombs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a wide string to narrow multibyte character string, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wcsrtombs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="mbstowcs.htm" title="c/string/multibyte/mbstowcs"> <span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./mbstowcs.htm" title="c/string/multibyte/mbstowcs"> <span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a narrow multibyte character string to wide string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbstowcs&amp;action=edit">[edit]</a></span>
 </td></tr>

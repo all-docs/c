@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -194,12 +194,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody>
 <tbody class="t-dcl-rev">
 <tr class="t-dcl t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> setbuf<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>stream, <span class="kw4">char</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>buffer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> setbuf<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>stream, <span class="kw4">char</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="sy2">*</span>buffer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> setbuf<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> buffer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> setbuf<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> buffer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
@@ -212,17 +212,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Sets the internal buffer to use for stream operations. It should be at least <code>BUFSIZ</code> characters long. 
-</p><p>If <code>buffer</code> is not null, equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="setvbuf.htm"><span class="kw823">setvbuf</span></a><span class="br0">(</span>stream, buffer, <a href="../io.html"><span class="kw892">_IOFBF</span></a>, <a href="../io.html"><span class="kw891">BUFSIZ</span></a><span class="br0">)</span></span></span>.
-</p><p>If <code>buffer</code> is null, equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="setvbuf.htm"><span class="kw823">setvbuf</span></a><span class="br0">(</span>stream, <a href="../types/NULL.html"><span class="kw103">NULL</span></a>, <a href="../io.html"><span class="kw894">_IONBF</span></a>, <span class="nu0">0</span><span class="br0">)</span></span></span>, which turns off buffering.
+</p><p>If <code>buffer</code> is not null, equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="./setvbuf.htm"><span class="kw823">setvbuf</span></a><span class="br0">(</span>stream, buffer, <a href="../io.htm"><span class="kw892">_IOFBF</span></a>, <a href="../io.htm"><span class="kw891">BUFSIZ</span></a><span class="br0">)</span></span></span>.
+</p><p>If <code>buffer</code> is null, equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="./setvbuf.htm"><span class="kw823">setvbuf</span></a><span class="br0">(</span>stream, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a>, <a href="../io.htm"><span class="kw894">_IONBF</span></a>, <span class="nu0">0</span><span class="br0">)</span></span></span>, which turns off buffering.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="setbuf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="setbuf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="setbuf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="setbuf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="setbuf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="setbuf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./setbuf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./setbuf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./setbuf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./setbuf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./setbuf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./setbuf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setbuf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -247,14 +247,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>None.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setbuf&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>If <span class="t-lc"><a href="../io.html" title="c/io">BUFSIZ</a></span> is not the appropriate buffer size, <span class="t-lc"><a href="setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> can be used to change it.
-</p><p><span class="t-lc"><a href="setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> should also be used to detect errors, since <code>setbuf</code> does not indicate success or failure.
+<p>If <span class="t-lc"><a href="../io.htm" title="c/io">BUFSIZ</a></span> is not the appropriate buffer size, <span class="t-lc"><a href="./setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> can be used to change it.
+</p><p><span class="t-lc"><a href="./setvbuf.htm" title="c/io/setvbuf">setvbuf</a></span> should also be used to detect errors, since <code>setbuf</code> does not indicate success or failure.
 </p><p>This function may only be used after <code>stream</code> has been associated with an open file, but before any other operation (other than a failed call to <span class="t-lc"><strong class="selflink">setbuf</strong></span>/<code>setvbuf</code>).
 </p><p>A common error is setting the buffer of stdin or stdout to an array whose lifetime ends before the program terminates:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw4">char</span> buf<span class="br0">[</span><a href="../io.html"><span class="kw891">BUFSIZ</span></a><span class="br0">]</span><span class="sy4">;</span>
-    setbuf<span class="br0">(</span><a href="std_streams.htm"><span class="kw885">stdin</span></a>, buf<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">char</span> buf<span class="br0">[</span><a href="../io.htm"><span class="kw891">BUFSIZ</span></a><span class="br0">]</span><span class="sy4">;</span>
+    setbuf<span class="br0">(</span><a href="./std_streams.htm"><span class="kw885">stdin</span></a>, buf<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span> <span class="co1">// lifetime of buf ends, undefined behavior</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setbuf&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p><code>setbuf</code> may be used to disable buffering on streams that require immediate output.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -263,10 +263,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    setbuf<span class="br0">(</span><a href="std_streams.htm"><span class="kw886">stdout</span></a>, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// unbuffered stdout</span>
-    <a href="putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 'a' appears immediately if stdout is unbuffered</span>
-    <a href="../thread/thrd_sleep.html"><span class="kw999">thrd_sleep</span></a><span class="br0">(</span><span class="sy3">&amp;</span><span class="br0">(</span><span class="kw1">struct</span> timespec<span class="br0">)</span><span class="br0">{</span>.<span class="me1">tv_sec</span><span class="sy1">=</span><span class="nu0">1</span><span class="br0">}</span>, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// sleep 1 sec</span>
-    <a href="putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span><span class="st0">'b'</span><span class="br0">)</span><span class="sy4">;</span> 
+    setbuf<span class="br0">(</span><a href="./std_streams.htm"><span class="kw886">stdout</span></a>, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// unbuffered stdout</span>
+    <a href="./putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 'a' appears immediately if stdout is unbuffered</span>
+    <a href="../thread/thrd_sleep.htm"><span class="kw999">thrd_sleep</span></a><span class="br0">(</span><span class="sy3">&amp;</span><span class="br0">(</span><span class="kw1">struct</span> timespec<span class="br0">)</span><span class="br0">{</span>.<span class="me1">tv_sec</span><span class="sy1">=</span><span class="nu0">1</span><span class="br0">}</span>, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// sleep 1 sec</span>
+    <a href="./putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span><span class="st0">'b'</span><span class="br0">)</span><span class="sy4">;</span> 
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -305,7 +305,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="setvbuf.htm" title="c/io/setvbuf"> <span class="t-lines"><span>setvbuf</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./setvbuf.htm" title="c/io/setvbuf"> <span class="t-lines"><span>setvbuf</span></span></a></div></div>
 </td>
 <td>   sets the buffer and its size for a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_setvbuf&amp;action=edit">[edit]</a></span>
 </td></tr>

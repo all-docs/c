@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/complex.html" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,13 +198,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>This macro expands to the keyword <a href="../../keyword/_Imaginary.html" title="c/keyword/ Imaginary"><tt>_Imaginary</tt></a>.
+<p>This macro expands to the keyword <a href="../../keyword/_Imaginary.htm" title="c/keyword/ Imaginary"><tt>_Imaginary</tt></a>.
 </p><p>This is a convenience macro that makes it possible to use <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> imaginary</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> imaginary</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> imaginary</span></span> as an alternative way to write the three pure imaginary C types <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> _Imaginary</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> _Imaginary</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> _Imaginary</span></span>
 </p><p>As with any pure imaginary number support in C, this macro is only defined if the imaginary numbers are supported.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99 t-until-c11"><td>
-<p>A compiler that defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_IEC_559_COMPLEX__</span></span> is not required to support imaginary numbers. POSIX recommends checking if the macro <span class="t-c"><span class="mw-geshi c source-c"><a href="Imaginary_I.htm"><span class="kw745">_Imaginary_I</span></a></span></span> is defined to identify imaginary number support.
+<p>A compiler that defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_IEC_559_COMPLEX__</span></span> is not required to support imaginary numbers. POSIX recommends checking if the macro <span class="t-c"><span class="mw-geshi c source-c"><a href="./Imaginary_I.htm"><span class="kw745">_Imaginary_I</span></a></span></span> is defined to identify imaginary number support.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span><br><span class="t-mark-rev t-until-c11">(until C11)</span></td></tr>
@@ -216,10 +216,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="imaginary.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="imaginary.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="imaginary.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="imaginary.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./imaginary.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./imaginary.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./imaginary.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./imaginary.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/imaginary&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
@@ -235,8 +235,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">double</span> imaginary i <span class="sy1">=</span> <span class="sy2">-</span><span class="nu16">2.0</span><span class="sy2">*</span>I<span class="sy4">;</span> <span class="co1">// pure imaginary</span>
     <span class="kw4">double</span> f <span class="sy1">=</span> <span class="nu16">1.0</span><span class="sy4">;</span> <span class="co1">// pure real</span>
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> f <span class="sy2">+</span> i<span class="sy4">;</span> <span class="co1">// complex number</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"z =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> f <span class="sy2">+</span> i<span class="sy4">;</span> <span class="co1">// complex number</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"z =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -277,7 +277,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="complex.htm" title="c/numeric/complex/complex"> <span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./complex.htm" title="c/numeric/complex/complex"> <span class="t-lines"><span>complex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   complex type macro  <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_complex&amp;action=edit">[edit]</a></span>
 </td></tr>

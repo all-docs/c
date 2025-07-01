@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/signal.html" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/signal.htm" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -215,12 +215,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="coMULTI">/* Install a signal handler. */</span>
-    <a href="signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw505">SIGINT</span></a>, signal_handler<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a>, signal_handler<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:   &nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Sending signal:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:   &nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:   &nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Sending signal:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:   &nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -261,7 +261,7 @@ SignalValue:    2</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="signal.htm" title="c/program/signal"> <span class="t-lines"><span>signal</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./signal.htm" title="c/program/signal"> <span class="t-lines"><span>signal</span></span></a></div></div>
 </td>
 <td>   sets a signal handler for particular signal  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_signal&amp;action=edit">[edit]</a></span>
 </td></tr>

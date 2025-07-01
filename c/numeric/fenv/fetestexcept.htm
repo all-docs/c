@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,15 +198,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Determines which of the specified subset of the floating-point exceptions are currently set. The argument <code>excepts</code> is a bitwise OR of the <a href="FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">floating-point exception macros</a>.
+<p>Determines which of the specified subset of the floating-point exceptions are currently set. The argument <code>excepts</code> is a bitwise OR of the <a href="./FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">floating-point exception macros</a>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="fetestexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="fetestexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="fetestexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="fetestexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="fetestexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./fetestexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./fetestexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./fetestexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./fetestexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./fetestexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/fenv/fetestexcept&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -234,14 +234,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> show_fe_exceptions<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span>fetestexcept<span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -250,12 +250,12 @@ html { font-variant-ligatures: no-common-ligatures; }
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="coMULTI">/* Perform some computations which raise exceptions. */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0     =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>        <span class="coMULTI">/* FE_DIVBYZERO            */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"1.0/10.0    =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span><span class="br0">)</span><span class="sy4">;</span>       <span class="coMULTI">/* FE_INEXACT              */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(-1)    =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>       <span class="coMULTI">/* FE_INVALID              */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MAX*2.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a><span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>    <span class="coMULTI">/* FE_INEXACT FE_OVERFLOW  */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(DBL_MIN/pow(2.0,52),0.0) =&nbsp;%.1f<span class="es1">\n</span>"</span>,
-           <a href="../math/nexttoward.html"><span class="kw701">nextafter</span></a><span class="br0">(</span><a href="../../types/limits.html"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><a href="../math/pow.html"><span class="kw668">pow</span></a><span class="br0">(</span><span class="nu16">2.0</span>,<span class="nu0">52</span><span class="br0">)</span>,<span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* FE_INEXACT FE_UNDERFLOW */</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0     =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>        <span class="coMULTI">/* FE_DIVBYZERO            */</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"1.0/10.0    =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span><span class="br0">)</span><span class="sy4">;</span>       <span class="coMULTI">/* FE_INEXACT              */</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(-1)    =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../math/sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>       <span class="coMULTI">/* FE_INVALID              */</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MAX*2.0 =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a><span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>    <span class="coMULTI">/* FE_INEXACT FE_OVERFLOW  */</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(DBL_MIN/pow(2.0,52),0.0) =&nbsp;%.1f<span class="es1">\n</span>"</span>,
+           <a href="../math/nexttoward.htm"><span class="kw701">nextafter</span></a><span class="br0">(</span><a href="../../types/limits.htm"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><a href="../math/pow.htm"><span class="kw668">pow</span></a><span class="br0">(</span><span class="nu16">2.0</span>,<span class="nu0">52</span><span class="br0">)</span>,<span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* FE_INEXACT FE_UNDERFLOW */</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
@@ -288,7 +288,7 @@ current exceptions raised:  FE_DIVBYZERO FE_INEXACT FE_INVALID FE_OVERFLOW FE_UN
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feclearexcept.htm" title="c/numeric/fenv/feclearexcept"> <span class="t-lines"><span>feclearexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feclearexcept.htm" title="c/numeric/fenv/feclearexcept"> <span class="t-lines"><span>feclearexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   clears the specified floating-point status flags <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feclearexcept&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -188,14 +188,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="generic.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="generic.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="generic.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="generic.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="generic.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="generic.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="generic.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="generic.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./generic.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./generic.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./generic.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./generic.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./generic.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./generic.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./generic.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./generic.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/generic&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -260,40 +260,40 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> any complete <a href="compatible_type.htm" title="c/language/type">object type</a> that isn't variably-modified (that is, not VLA or pointer to VLA).
+<td> any complete <a href="./compatible_type.htm" title="c/language/type">object type</a> that isn't variably-modified (that is, not VLA or pointer to VLA).
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">controlling-expression</span>
 </td>
 <td> -
 </td>
-<td> any expression (except for the <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>) whose type must be compatible with one of the <span class="t-spar">type-name</span>s if the <span class="mw-geshi c source-c"><span class="kw1">default</span></span> association is not used
+<td> any expression (except for the <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>) whose type must be compatible with one of the <span class="t-spar">type-name</span>s if the <span class="mw-geshi c source-c"><span class="kw1">default</span></span> association is not used
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">expression</span>
 </td>
 <td> -
 </td>
-<td> any expression (except for the <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>) of any type and value category
+<td> any expression (except for the <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>) of any type and value category
 </td></tr></tbody></table>
-<p>No two <span class="t-spar">type-name</span>s in the <span class="t-spar">association-list</span> may specify <a href="compatible_type.htm#Compatible_types" title="c/language/type">compatible types</a>. There may be only one association that uses the keyword <span class="mw-geshi c source-c"><span class="kw1">default</span></span>. If <span class="mw-geshi c source-c"><span class="kw1">default</span></span> is not used and none of the <span class="t-spar">type-name</span>s are compatible with the type of the controlling expression, the program will not compile.
+<p>No two <span class="t-spar">type-name</span>s in the <span class="t-spar">association-list</span> may specify <a href="./compatible_type.htm#Compatible_types" title="c/language/type">compatible types</a>. There may be only one association that uses the keyword <span class="mw-geshi c source-c"><span class="kw1">default</span></span>. If <span class="mw-geshi c source-c"><span class="kw1">default</span></span> is not used and none of the <span class="t-spar">type-name</span>s are compatible with the type of the controlling expression, the program will not compile.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/generic&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>First, the type of <span class="t-spar">controlling-expression</span> undergoes <a href="conversion.htm#Lvalue_conversions" title="c/language/conversion">lvalue conversions</a>. The conversion is performed in type domain only: it discards the top-level cvr-qualifiers and atomicity and applies array-to-pointer/function-to-pointer transformations to the type of the controlling expression, without initiating any side-effects or calculating any values.
+<p>First, the type of <span class="t-spar">controlling-expression</span> undergoes <a href="./conversion.htm#Lvalue_conversions" title="c/language/conversion">lvalue conversions</a>. The conversion is performed in type domain only: it discards the top-level cvr-qualifiers and atomicity and applies array-to-pointer/function-to-pointer transformations to the type of the controlling expression, without initiating any side-effects or calculating any values.
 </p><p>The type after conversion is compared with <span class="t-spar">type-name</span>s from the list of associations.
-</p><p>If the type is <a href="compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with the <span class="t-spar">type-name</span> of one of the associations, then the type, value, and <a href="value_category.htm" title="c/language/value category">value category</a> of the generic selection are the type, value, and value category of the  <span class="t-spar">expression</span> that appears after the colon for that <span class="t-spar">type-name</span>.
+</p><p>If the type is <a href="./compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with the <span class="t-spar">type-name</span> of one of the associations, then the type, value, and <a href="./value_category.htm" title="c/language/value category">value category</a> of the generic selection are the type, value, and value category of the  <span class="t-spar">expression</span> that appears after the colon for that <span class="t-spar">type-name</span>.
 </p><p>If none of the <span class="t-spar">type-name</span>s are compatible with the type of the <span class="t-spar">controlling-expression</span>, and the <span class="mw-geshi c source-c"><span class="kw1">default</span></span> association is provided, then the type, value, and value category of the generic selection are the type, value, and value category of the expression after the <span class="t-c"><code>default&nbsp;:</code></span> label.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/generic&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The <span class="t-spar">controlling-expression</span> and the <span class="t-spar">expression</span>s of the selections that are not chosen are never evaluated.
 </p><p>Because of the lvalue conversions, <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"abc"</span></span></span> matches <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span><span class="sy2">*</span></span></span> and not <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">char</span><span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="kw4">int</span> <span class="kw4">const</span><span class="br0">)</span><span class="br0">{</span><span class="nu0">0</span><span class="br0">}</span></span></span> matches <span class="mw-geshi c source-c"><span class="kw4">int</span></span>, and not <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">const</span> <span class="kw4">int</span></span></span>.
-</p><p>All <a href="value_category.htm" title="c/language/value category">value categories</a>, including function designators and void expressions, are allowed as <span class="t-spar">expression</span>s in a generic selection, and if selected, the generic selection itself has the same value category.
-</p><p>The <a href="../numeric/tgmath.html" title="c/numeric/tgmath">type-generic math macros</a> from <a href="../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a>, introduced in C99, were implemented in compiler-specific manner. Generic selections, introduced in C11, gave the programmers the ability to write similar type-dependent code.
+</p><p>All <a href="./value_category.htm" title="c/language/value category">value categories</a>, including function designators and void expressions, are allowed as <span class="t-spar">expression</span>s in a generic selection, and if selected, the generic selection itself has the same value category.
+</p><p>The <a href="../numeric/tgmath.htm" title="c/numeric/tgmath">type-generic math macros</a> from <a href="../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a>, introduced in C99, were implemented in compiler-specific manner. Generic selections, introduced in C11, gave the programmers the ability to write similar type-dependent code.
 </p><p>Generic selection is similar to overloading in C++ (where one of several functions is chosen at compile time based on the types of the arguments), except that it makes the selection between arbitrary expressions.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/generic&amp;action=edit&amp;section=4" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/_Generic.html" title="c/keyword/ Generic"><tt>_Generic</tt></a>,
-<a href="../keyword/default.html" title="c/keyword/default"><tt>default</tt></a>
+<p><a href="../keyword/_Generic.htm" title="c/keyword/ Generic"><tt>_Generic</tt></a>,
+<a href="../keyword/default.htm" title="c/keyword/default"><tt>default</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/generic&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -311,8 +311,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">double</span> x <span class="sy1">=</span> <span class="nu16">8.0</span><span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">float</span> y <span class="sy1">=</span> <span class="nu16">3.375</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"cbrt(8.0) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/cbrt.html"><span class="kw666">cbrt</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// selects the default cbrt</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"cbrtf(3.375) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/cbrt.html"><span class="kw666">cbrt</span></a><span class="br0">(</span>y<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// converts const float to float,</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"cbrt(8.0) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/cbrt.htm"><span class="kw666">cbrt</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// selects the default cbrt</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"cbrtf(3.375) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/cbrt.htm"><span class="kw666">cbrt</span></a><span class="br0">(</span>y<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// converts const float to float,</span>
                                             <span class="co1">// then selects cbrtf</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:

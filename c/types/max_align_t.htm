@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -202,14 +202,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="max_align_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="max_align_t.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="max_align_t.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="max_align_t.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./max_align_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./max_align_t.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./max_align_t.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./max_align_t.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/max_align_t&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Pointers returned by allocation functions such as <span class="t-lc"><a href="../memory/malloc.html" title="c/memory/malloc">malloc</a></span> are suitably aligned for any object, which means they are aligned at least as strictly as <code>max_align_t</code>.
+<p>Pointers returned by allocation functions such as <span class="t-lc"><a href="../memory/malloc.htm" title="c/memory/malloc">malloc</a></span> are suitably aligned for any object, which means they are aligned at least as strictly as <code>max_align_t</code>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/max_align_t&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -222,13 +222,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="size_t.htm"><span class="kw100">size_t</span></a> a <span class="sy1">=</span> alignof<span class="br0">(</span>max_align_t<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Alignment of max_align_t is&nbsp;%zu (%#zx)<span class="es1">\n</span>"</span>, a, a<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./size_t.htm"><span class="kw100">size_t</span></a> a <span class="sy1">=</span> alignof<span class="br0">(</span>max_align_t<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Alignment of max_align_t is&nbsp;%zu (%#zx)<span class="es1">\n</span>"</span>, a, a<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">void</span> <span class="sy2">*</span>p <span class="sy1">=</span> <a href="../memory/malloc.html"><span class="kw402">malloc</span></a><span class="br0">(</span><span class="nu0">123</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"The address obtained from malloc(123) is&nbsp;%#"</span> <a href="integer.htm"><span class="kw244">PRIxPTR</span></a><span class="st0">"<span class="es1">\n</span>"</span>,
-            <span class="br0">(</span><a href="integer.htm"><span class="kw132">uintptr_t</span></a><span class="br0">)</span>p<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../memory/free.html"><span class="kw405">free</span></a><span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">void</span> <span class="sy2">*</span>p <span class="sy1">=</span> <a href="../memory/malloc.htm"><span class="kw402">malloc</span></a><span class="br0">(</span><span class="nu0">123</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"The address obtained from malloc(123) is&nbsp;%#"</span> <a href="./integer.htm"><span class="kw244">PRIxPTR</span></a><span class="st0">"<span class="es1">\n</span>"</span>,
+            <span class="br0">(</span><a href="./integer.htm"><span class="kw132">uintptr_t</span></a><span class="br0">)</span>p<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../memory/free.htm"><span class="kw405">free</span></a><span class="br0">(</span>p<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

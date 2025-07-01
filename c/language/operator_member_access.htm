@@ -231,7 +231,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> <span class="t-c"><span class="mw-geshi c source-c">a.<span class="me1">b</span></span></span>
 </td>
-<td> access member <b>b</b> of <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> <b>a</b>
+<td> access member <b>b</b> of <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> <b>a</b>
 </td></tr>
 <tr style="text-align:center">
 <td> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="sy1">&gt;</span></span></span>
@@ -240,18 +240,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> <span class="t-c"><span class="mw-geshi c source-c">a<span class="sy2">-</span><span class="sy1">&gt;</span>b</span></span>
 </td>
-<td> access member <b>b</b> of <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> pointed to by <b>a</b>
+<td> access member <b>b</b> of <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> pointed to by <b>a</b>
 </td></tr></tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="operator_member_access.htm#Subscript"><span class="tocnumber">1</span> <span class="toctext">Subscript</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="operator_member_access.htm#Dereference"><span class="tocnumber">2</span> <span class="toctext">Dereference</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="operator_member_access.htm#Address_of"><span class="tocnumber">3</span> <span class="toctext">Address of</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="operator_member_access.htm#Member_access"><span class="tocnumber">4</span> <span class="toctext">Member access</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="operator_member_access.htm#Member_access_through_pointer"><span class="tocnumber">5</span> <span class="toctext">Member access through pointer</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="operator_member_access.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="operator_member_access.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="operator_member_access.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./operator_member_access.htm#Subscript"><span class="tocnumber">1</span> <span class="toctext">Subscript</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./operator_member_access.htm#Dereference"><span class="tocnumber">2</span> <span class="toctext">Dereference</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./operator_member_access.htm#Address_of"><span class="tocnumber">3</span> <span class="toctext">Address of</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./operator_member_access.htm#Member_access"><span class="tocnumber">4</span> <span class="toctext">Member access</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./operator_member_access.htm#Member_access_through_pointer"><span class="tocnumber">5</span> <span class="toctext">Member access through pointer</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./operator_member_access.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./operator_member_access.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./operator_member_access.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_member_access&amp;action=edit&amp;section=1" title="Edit section: Subscript">edit</a>]</span> <span class="mw-headline" id="Subscript">Subscript</span></h3>
@@ -298,36 +298,36 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  an <a href="operators.htm" title="c/language/expressions">expression</a> of type pointer to complete object
+<td>  an <a href="./operators.htm" title="c/language/expressions">expression</a> of type pointer to complete object
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">integer-expression</span>
 </td>
 <td> -
 </td>
-<td>  an <a href="operators.htm" title="c/language/expressions">expression</a> of integer type
+<td>  an <a href="./operators.htm" title="c/language/expressions">expression</a> of integer type
 </td></tr></tbody></table>
-<p>The subscript operator expression is an <a href="value_category.htm" title="c/language/value category">lvalue expression</a> whose type is the type of the object pointed to by <span class="t-spar">pointer-expression</span>.
-</p><p>By definition, the subscript operator <span class="t-c"><span class="mw-geshi c source-c">E1<span class="br0">[</span>E2<span class="br0">]</span></span></span> is exactly identical to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span><span class="br0">(</span><span class="br0">(</span>E1<span class="br0">)</span><span class="sy2">+</span><span class="br0">(</span>E2<span class="br0">)</span><span class="br0">)</span></span></span>.  If <span class="t-spar">pointer-expression</span> is an array expression, it undergoes <a href="conversion.htm" title="c/language/conversion">lvalue-to-rvalue conversion</a> and becomes a pointer to the first element of the array.
-</p><p>Due to the definition of the <a href="operator_arithmetic.htm" title="c/language/operator arithmetic">addition between a pointer and an integer</a>, the result is the element of the array with the index equal to the result of <span class="t-spar">integer-expression</span> (or, if <span class="t-spar">pointer-expression</span> was pointing at ith element of some array, the index of the result is i plus the result of <span class="t-spar">integer-expression</span>)
-</p><p>Note: see <a href="array.htm" title="c/language/array">array</a> for the details on multidimensional arrays.
+<p>The subscript operator expression is an <a href="./value_category.htm" title="c/language/value category">lvalue expression</a> whose type is the type of the object pointed to by <span class="t-spar">pointer-expression</span>.
+</p><p>By definition, the subscript operator <span class="t-c"><span class="mw-geshi c source-c">E1<span class="br0">[</span>E2<span class="br0">]</span></span></span> is exactly identical to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span><span class="br0">(</span><span class="br0">(</span>E1<span class="br0">)</span><span class="sy2">+</span><span class="br0">(</span>E2<span class="br0">)</span><span class="br0">)</span></span></span>.  If <span class="t-spar">pointer-expression</span> is an array expression, it undergoes <a href="./conversion.htm" title="c/language/conversion">lvalue-to-rvalue conversion</a> and becomes a pointer to the first element of the array.
+</p><p>Due to the definition of the <a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">addition between a pointer and an integer</a>, the result is the element of the array with the index equal to the result of <span class="t-spar">integer-expression</span> (or, if <span class="t-spar">pointer-expression</span> was pointing at ith element of some array, the index of the result is i plus the result of <span class="t-spar">integer-expression</span>)
+</p><p>Note: see <a href="./array.htm" title="c/language/array">array</a> for the details on multidimensional arrays.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d<span class="es1">\n</span>"</span>, a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span>,  <span class="co1">// n == 3</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d<span class="es1">\n</span>"</span>, a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span>,  <span class="co1">// n == 3</span>
                       <span class="nu0">2</span><span class="br0">[</span>a<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same, n == 3</span>
     a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span> <span class="co1">// subscripts are lvalues</span>
 &nbsp;
     <span class="kw4">int</span> n<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span>,<span class="br0">{</span><span class="nu0">4</span>,<span class="nu0">5</span>,<span class="nu0">6</span><span class="br0">}</span><span class="br0">}</span><span class="sy4">;</span>
     <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// elements of n are arrays</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d&nbsp;%d<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, p<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span>, p<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// access n[1][] via p</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d&nbsp;%d<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, p<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span>, p<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// access n[1][] via p</span>
     <span class="kw4">int</span> x <span class="sy1">=</span> n<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// applying [] again to the array n[1]</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, x<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, x<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%c&nbsp;%c<span class="es1">\n</span>"</span>, <span class="st0">"abc"</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span>, <span class="nu0">2</span><span class="br0">[</span><span class="st0">"abc"</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// string literals are arrays too</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%c&nbsp;%c<span class="es1">\n</span>"</span>, <span class="st0">"abc"</span><span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span>, <span class="nu0">2</span><span class="br0">[</span><span class="st0">"abc"</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// string literals are arrays too</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -367,10 +367,10 @@ c c</pre></div></div>
 </td>
 <td> -
 </td>
-<td>  an <a href="operators.htm" title="c/language/expressions">expression</a> of any pointer type
+<td>  an <a href="./operators.htm" title="c/language/expressions">expression</a> of any pointer type
 </td></tr></tbody></table>
 <p>If <span class="t-spar">pointer-expression</span> is a pointer to function, the result of the dereference operator is a function designator for that function.
-</p><p>If <span class="t-spar">pointer-expression</span> is a pointer to object, the result is an <a href="value_category.htm" title="c/language/value category">lvalue expression</a> that designates the pointed-to object.
+</p><p>If <span class="t-spar">pointer-expression</span> is a pointer to object, the result is an <a href="./value_category.htm" title="c/language/value category">lvalue expression</a> that designates the pointed-to object.
 </p><p>Dereferencing a null pointer, a pointer to an object outside of its lifetime (a dangling pointer), a misaligned pointer, or a pointer with indeterminate value is undefined behavior, except when the dereference operator is nullified by applying the address-of operator to its result, as in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">&amp;</span><span class="sy2">*</span>E</span></span>.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -379,9 +379,9 @@ c c</pre></div></div>
 <span class="br0">{</span>
     <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
     <span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> <span class="sy3">&amp;</span>n<span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"*p =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// the value of *p is what's stored in n</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"*p =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// the value of *p is what's stored in n</span>
     <span class="sy2">*</span>p <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span> <span class="co1">// *p is lvalue</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"*p =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"*p =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">*</span>p<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -462,9 +462,9 @@ c c</pre></div></div>
 </td>
 <td> -
 </td>
-<td>  an <a href="value_category.htm" title="c/language/value category">lvalue</a> expression of any type that is not a <a href="bit_field.htm" title="c/language/bit field">bit-field</a> and does not have <a href="storage_class_specifiers.htm" title="c/language/storage duration">register</a> storage class
+<td>  an <a href="./value_category.htm" title="c/language/value category">lvalue</a> expression of any type that is not a <a href="./bit_field.htm" title="c/language/bit field">bit-field</a> and does not have <a href="./storage_class_specifiers.htm" title="c/language/storage duration">register</a> storage class
 </td></tr></tbody></table>
-<p>The address-of operator produces the <a href="value_category.htm" title="c/language/value category">non-lvalue</a> address of its operand, suitable for initializing a pointer to the type of the operand. If the operand is a function designator <span class="t-v">(1)</span>, the result is a pointer to function. If the operand is an object <span class="t-v">(2)</span>, the result is a pointer to object.
+<p>The address-of operator produces the <a href="./value_category.htm" title="c/language/value category">non-lvalue</a> address of its operand, suitable for initializing a pointer to the type of the operand. If the operand is a function designator <span class="t-v">(1)</span>, the result is a pointer to function. If the operand is an object <span class="t-v">(2)</span>, the result is a pointer to object.
 </p><p>If the operand is the dereference operator, no action is taken (so it's okay to apply &amp;* to a null pointer), except that the result is not an lvalue.
 </p><p>If the operand is an array index expression, no action is taken other than the array-to-pointer conversion and the addition, so &amp;a[N] is valid for an array of size N (obtaining a pointer one past the end is okay, dereferencing it is not, but dereference cancels out in this expression).
 </p>
@@ -510,18 +510,18 @@ c c</pre></div></div>
 </td>
 <td> -
 </td>
-<td>  an expression of <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> type
+<td>  an expression of <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> type
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">member-name</span>
 </td>
 <td> -
 </td>
-<td>  an <a href="identifiers.htm" title="c/language/identifier">identifier</a> that names a member of the struct or union designated by <span class="t-spar">expression</span>
+<td>  an <a href="./identifiers.htm" title="c/language/identifier">identifier</a> that names a member of the struct or union designated by <span class="t-spar">expression</span>
 </td></tr></tbody></table>
-<p>The member access expression designates the named member of the <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> designated by its left operand. It has the same <a href="value_category.htm" title="c/language/value category">value category</a> as its left operand. 
-</p><p>If the left operand is <a href="const.htm" title="c/language/const">const</a> or <a href="volatile.htm" title="c/language/volatile">volatile</a> qualified, the result is also qualified. If the left operand is <a href="atomic.htm" title="c/language/atomic">atomic</a>, the behavior is undefined.
-</p><p>Note: besides identifiers that name objects of struct or union type, the following expressions may have struct or union types: <a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="operator_other.htm#Function_call" title="c/language/operator other">function call</a>, <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>, <a href="operator_other.htm#Conditional_operator" title="c/language/operator other">conditional operator</a>, and <a href="compound_literal.htm" title="c/language/compound literal">compound literal</a>.
+<p>The member access expression designates the named member of the <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> designated by its left operand. It has the same <a href="./value_category.htm" title="c/language/value category">value category</a> as its left operand. 
+</p><p>If the left operand is <a href="./const.htm" title="c/language/const">const</a> or <a href="./volatile.htm" title="c/language/volatile">volatile</a> qualified, the result is also qualified. If the left operand is <a href="./atomic.htm" title="c/language/atomic">atomic</a>, the behavior is undefined.
+</p><p>Note: besides identifiers that name objects of struct or union type, the following expressions may have struct or union types: <a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="./operator_other.htm#Function_call" title="c/language/operator other">function call</a>, <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>, <a href="./operator_other.htm#Conditional_operator" title="c/language/operator other">conditional operator</a>, and <a href="./compound_literal.htm" title="c/language/compound literal">compound literal</a>.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -572,17 +572,17 @@ c c</pre></div></div>
 </td>
 <td> -
 </td>
-<td>  an expression of type <a href="pointer.htm" title="c/language/pointer">pointer</a> to <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a>
+<td>  an expression of type <a href="./pointer.htm" title="c/language/pointer">pointer</a> to <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">member-name</span>
 </td>
 <td> -
 </td>
-<td>  an <a href="identifiers.htm" title="c/language/identifier">identifier</a> that names a member of the struct or union pointed by <span class="t-spar">expression</span>
+<td>  an <a href="./identifiers.htm" title="c/language/identifier">identifier</a> that names a member of the struct or union pointed by <span class="t-spar">expression</span>
 </td></tr></tbody></table>
-<p>The member access through pointer expression designates the named member of the <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> type pointed to by its left operand. Its value category is always <a href="value_category.htm" title="c/language/value category">lvalue</a>
-</p><p>If the type pointed to by the left operand is <a href="const.htm" title="c/language/const">const</a> or <a href="volatile.htm" title="c/language/volatile">volatile</a> qualified, the result is also qualified. If the type pointed to by the left operand is <a href="atomic.htm" title="c/language/atomic">atomic</a>, the behavior is undefined.
+<p>The member access through pointer expression designates the named member of the <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> type pointed to by its left operand. Its value category is always <a href="./value_category.htm" title="c/language/value category">lvalue</a>
+</p><p>If the type pointed to by the left operand is <a href="./const.htm" title="c/language/const">const</a> or <a href="./volatile.htm" title="c/language/volatile">volatile</a> qualified, the result is also qualified. If the type pointed to by the left operand is <a href="./atomic.htm" title="c/language/atomic">atomic</a>, the behavior is undefined.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -591,7 +591,7 @@ c c</pre></div></div>
 <span class="br0">{</span>
     <span class="kw1">struct</span> s s<span class="sy1">=</span><span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span>, <span class="sy2">*</span>p <span class="sy1">=</span> <span class="sy3">&amp;</span>s<span class="sy4">;</span>
     p<span class="sy2">-</span><span class="sy1">&gt;</span>x <span class="sy1">=</span> <span class="nu0">7</span><span class="sy4">;</span> <span class="co1">// changes the value of s.x through the pointer</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, p<span class="sy2">-</span><span class="sy1">&gt;</span>x<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 7</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, p<span class="sy2">-</span><span class="sy1">&gt;</span>x<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 7</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_member_access&amp;action=edit&amp;section=6" title="Edit section: Defect reports">edit</a>]</span> <span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
@@ -670,7 +670,7 @@ c c</pre></div></div>
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_member_access&amp;action=edit&amp;section=8" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="operator_precedence.htm" title="c/language/operator precedence">Operator precedence</a>
+<ul><li> <a href="./operator_precedence.htm" title="c/language/operator precedence">Operator precedence</a>
 </li></ul>
 <table class="wikitable">
 
@@ -678,19 +678,19 @@ c c</pre></div></div>
 <th colspan="7">Common operators
 </th></tr>
 <tr style="text-align:center">
-<td><a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>
+<td><a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>
 </td>
-<td><a href="operator_incdec.htm" title="c/language/operator incdec">increment<br>decrement</a>
+<td><a href="./operator_incdec.htm" title="c/language/operator incdec">increment<br>decrement</a>
 </td>
-<td><a href="operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
+<td><a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
 </td>
-<td><a href="operator_logical.htm" title="c/language/operator logical">logical</a>
+<td><a href="./operator_logical.htm" title="c/language/operator logical">logical</a>
 </td>
-<td><a href="operator_comparison.htm" title="c/language/operator comparison">comparison</a>
+<td><a href="./operator_comparison.htm" title="c/language/operator comparison">comparison</a>
 </td>
 <td><strong class="selflink">member<br>access</strong>
 </td>
-<td><a href="operator_other.htm" title="c/language/operator other">other</a>
+<td><a href="./operator_other.htm" title="c/language/operator other">other</a>
 </td></tr>
 <tr style="text-align:center">
 <td>

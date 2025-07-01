@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -210,27 +210,27 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> show_fe_exceptions<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw730">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw731">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw732">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw733">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw734">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw729">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw730">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw731">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw732">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw733">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw734">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw729">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">void</span> show_fe_rounding_method<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current rounding method:    "</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">switch</span> <span class="br0">(</span><a href="feround.htm"><span class="kw723">fegetround</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
-           <span class="kw1">case</span> <a href="FE_round.htm"><span class="kw736">FE_TONEAREST</span></a><span class="sy4">:</span>  <a href="../../io/fprintf.html"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_TONEAREST"</span><span class="br0">)</span><span class="sy4">;</span>  <span class="kw1">break</span><span class="sy4">;</span>
-           <span class="kw1">case</span> <a href="FE_round.htm"><span class="kw735">FE_DOWNWARD</span></a><span class="sy4">:</span>   <a href="../../io/fprintf.html"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_DOWNWARD"</span><span class="br0">)</span><span class="sy4">;</span>   <span class="kw1">break</span><span class="sy4">;</span>
-           <span class="kw1">case</span> <a href="FE_round.htm"><span class="kw738">FE_UPWARD</span></a><span class="sy4">:</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_UPWARD"</span><span class="br0">)</span><span class="sy4">;</span>     <span class="kw1">break</span><span class="sy4">;</span>
-           <span class="kw1">case</span> <a href="FE_round.htm"><span class="kw737">FE_TOWARDZERO</span></a><span class="sy4">:</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_TOWARDZERO"</span><span class="br0">)</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
-           <span class="kw1">default</span><span class="sy4">:</span>            <a href="../../io/fprintf.html"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"unknown"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current rounding method:    "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span><a href="./feround.htm"><span class="kw723">fegetround</span></a><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+           <span class="kw1">case</span> <a href="./FE_round.htm"><span class="kw736">FE_TONEAREST</span></a><span class="sy4">:</span>  <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_TONEAREST"</span><span class="br0">)</span><span class="sy4">;</span>  <span class="kw1">break</span><span class="sy4">;</span>
+           <span class="kw1">case</span> <a href="./FE_round.htm"><span class="kw735">FE_DOWNWARD</span></a><span class="sy4">:</span>   <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_DOWNWARD"</span><span class="br0">)</span><span class="sy4">;</span>   <span class="kw1">break</span><span class="sy4">;</span>
+           <span class="kw1">case</span> <a href="./FE_round.htm"><span class="kw738">FE_UPWARD</span></a><span class="sy4">:</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_UPWARD"</span><span class="br0">)</span><span class="sy4">;</span>     <span class="kw1">break</span><span class="sy4">;</span>
+           <span class="kw1">case</span> <a href="./FE_round.htm"><span class="kw737">FE_TOWARDZERO</span></a><span class="sy4">:</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"FE_TOWARDZERO"</span><span class="br0">)</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
+           <span class="kw1">default</span><span class="sy4">:</span>            <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a> <span class="br0">(</span><span class="st0">"unknown"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">void</span> show_fe_environment<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -241,17 +241,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"On startup:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"On startup:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_environment<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// Change environment</span>
-    <a href="feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span><a href="FE_round.htm"><span class="kw735">FE_DOWNWARD</span></a><span class="br0">)</span><span class="sy4">;</span>     <span class="co1">// change rounding mode</span>
-    <a href="feraiseexcept.htm"><span class="kw720">feraiseexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw732">FE_INVALID</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// raise exception</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>Before restoration:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span><a href="./FE_round.htm"><span class="kw735">FE_DOWNWARD</span></a><span class="br0">)</span><span class="sy4">;</span>     <span class="co1">// change rounding mode</span>
+    <a href="./feraiseexcept.htm"><span class="kw720">feraiseexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw732">FE_INVALID</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// raise exception</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>Before restoration:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_environment<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="feenv.htm"><span class="kw726">fesetenv</span></a><span class="br0">(</span>FE_DFL_ENV<span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// restore</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>After restoring default environment:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feenv.htm"><span class="kw726">fesetenv</span></a><span class="br0">(</span>FE_DFL_ENV<span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// restore</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>After restoring default environment:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_environment<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -286,13 +286,13 @@ current rounding method:    FE_TONEAREST</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feenv.htm" title="c/numeric/fenv/feenv"> <span class="t-lines"><span>fegetenv</span><span>fesetenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feenv.htm" title="c/numeric/fenv/feenv"> <span class="t-lines"><span>fegetenv</span><span>fesetenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>    saves or restores the current floating-point environment <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feenv&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feupdateenv.htm" title="c/numeric/fenv/feupdateenv"> <span class="t-lines"><span>feupdateenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feupdateenv.htm" title="c/numeric/fenv/feupdateenv"> <span class="t-lines"><span>feupdateenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   restores the floating-point environment and raises the previously raise exceptions <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feupdateenv&amp;action=edit">[edit]</a></span>
 </td></tr>

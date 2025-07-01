@@ -188,12 +188,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="cast.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="cast.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="cast.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="cast.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="cast.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="cast.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./cast.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./cast.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./cast.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./cast.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./cast.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./cast.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/cast&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -225,33 +225,33 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> either the type <span class="mw-geshi c source-c"><span class="kw4">void</span></span> or any <a href="compatible_type.htm#Type_groups" title="c/language/type">scalar type</a>
+<td> either the type <span class="mw-geshi c source-c"><span class="kw4">void</span></span> or any <a href="./compatible_type.htm#Type_groups" title="c/language/type">scalar type</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">expression</span>
 </td>
 <td> -
 </td>
-<td> any <a href="operators.htm" title="c/language/expressions">expression</a> of <a href="compatible_type.htm#Type_groups" title="c/language/type">scalar type</a> (unless <span class="t-spar">type-name</span> is <span class="mw-geshi c source-c"><span class="kw4">void</span></span>, in which case it can be anything)
+<td> any <a href="./operators.htm" title="c/language/expressions">expression</a> of <a href="./compatible_type.htm#Type_groups" title="c/language/type">scalar type</a> (unless <span class="t-spar">type-name</span> is <span class="mw-geshi c source-c"><span class="kw4">void</span></span>, in which case it can be anything)
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/cast&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>If <span class="t-spar">type-name</span> is <span class="mw-geshi c source-c"><span class="kw4">void</span></span>, then <span class="t-spar">expression</span> is evaluated for its side-effects and its returned value is discarded, same as when <span class="t-spar">expression</span> is used on its own, as an <a href="statements.htm#Expression_statements" title="c/language/statements">expression statement</a>.
+<p>If <span class="t-spar">type-name</span> is <span class="mw-geshi c source-c"><span class="kw4">void</span></span>, then <span class="t-spar">expression</span> is evaluated for its side-effects and its returned value is discarded, same as when <span class="t-spar">expression</span> is used on its own, as an <a href="./statements.htm#Expression_statements" title="c/language/statements">expression statement</a>.
 </p><p>Otherwise, if <span class="t-spar">type-name</span> is exactly the type of <span class="t-spar">expression</span>, nothing is done (except that if <span class="t-spar">expression</span> has floating type and is represented with greater range and precision than its type indicates – see below).
 </p><p>Otherwise, the value of <span class="t-spar">expression</span> is converted to the type named by <span class="t-spar">type-name</span>, as follows:
-</p><p>Every <a href="conversion.htm" title="c/language/conversion">implicit conversion as if by assignment</a> is allowed.
+</p><p>Every <a href="./conversion.htm" title="c/language/conversion">implicit conversion as if by assignment</a> is allowed.
 </p><p>In addition to the implicit conversions, the following conversions are allowed:
 </p>
-<ul><li> Any integer can be cast to any pointer type. Except for the null pointer constants such as <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span> (which <a href="conversion.htm" title="c/language/conversion">doesn't need a cast</a>), the result is implementation-defined, may not be correctly aligned, may not point to an object of the referenced type, and may be a <a href="object.htm" title="c/language/object">trap representation</a>.
+<ul><li> Any integer can be cast to any pointer type. Except for the null pointer constants such as <span class="t-lc"><a href="../types/NULL.htm" title="c/types/NULL">NULL</a></span> (which <a href="./conversion.htm" title="c/language/conversion">doesn't need a cast</a>), the result is implementation-defined, may not be correctly aligned, may not point to an object of the referenced type, and may be a <a href="./object.htm" title="c/language/object">trap representation</a>.
 </li><li> Any pointer type can be cast to any integer type. The result is implementation-defined, even for null pointer values (they do not necessarily result in the value zero). If the result cannot be represented in the target type, the behavior is undefined (unsigned integers do not implement modulo arithmetic on a cast from pointer).
-</li><li> Any pointer to object can be cast to any other pointer to object. If the value is not correctly aligned for the target type, the behavior is undefined. Otherwise, if the value is converted back to the original type, it compares equal to the original value. If a pointer to object is cast to pointer to any character type, the result points at the lowest byte of the object and may be incremented up to sizeof the target type (in other words, can be used to examine <a href="object.htm" title="c/language/object">object representation</a> or to make a copy via <span class="t-lc"><a href="../string/byte/memcpy.html" title="c/string/byte/memcpy">memcpy</a></span> or <span class="t-lc"><a href="../string/byte/memmove.html" title="c/string/byte/memmove">memmove</a></span>).
-</li><li> Any pointer to function can be cast to a pointer to any other function type. If the resulting pointer is converted back to the original type, it compares equal to the original value. If the converted pointer is used to make a function call, the behavior is undefined (unless the function types are <a href="compatible_type.htm#Compatible_types" title="c/language/type">compatible</a>).
+</li><li> Any pointer to object can be cast to any other pointer to object. If the value is not correctly aligned for the target type, the behavior is undefined. Otherwise, if the value is converted back to the original type, it compares equal to the original value. If a pointer to object is cast to pointer to any character type, the result points at the lowest byte of the object and may be incremented up to sizeof the target type (in other words, can be used to examine <a href="./object.htm" title="c/language/object">object representation</a> or to make a copy via <span class="t-lc"><a href="../string/byte/memcpy.htm" title="c/string/byte/memcpy">memcpy</a></span> or <span class="t-lc"><a href="../string/byte/memmove.htm" title="c/string/byte/memmove">memmove</a></span>).
+</li><li> Any pointer to function can be cast to a pointer to any other function type. If the resulting pointer is converted back to the original type, it compares equal to the original value. If the converted pointer is used to make a function call, the behavior is undefined (unless the function types are <a href="./compatible_type.htm#Compatible_types" title="c/language/type">compatible</a>).
 </li><li> When casting between pointers (either object or function), if the original value is a null pointer value of its type, the result is the correct null pointer value for the target type.
 </li></ul>
-<p>In any case (both when executing an implicit conversion and in the same-type cast), if <span class="t-spar">expression</span> and <span class="t-spar">type-name</span> are floating types and <span class="t-spar">expression</span> is represented with greater range and precision than its type indicates (see <span class="t-c"><span class="mw-geshi c source-c"><a href="../types/limits/FLT_EVAL_METHOD.html"><span class="kw402">FLT_EVAL_METHOD</span></a></span></span>), the range and precision are stripped off to match the target type.
-</p><p>The <a href="value_category.htm" title="c/language/value category">value category</a> of the cast expression is always non-lvalue.
+<p>In any case (both when executing an implicit conversion and in the same-type cast), if <span class="t-spar">expression</span> and <span class="t-spar">type-name</span> are floating types and <span class="t-spar">expression</span> is represented with greater range and precision than its type indicates (see <span class="t-c"><span class="mw-geshi c source-c"><a href="../types/limits/FLT_EVAL_METHOD.htm"><span class="kw402">FLT_EVAL_METHOD</span></a></span></span>), the range and precision are stripped off to match the target type.
+</p><p>The <a href="./value_category.htm" title="c/language/value category">value category</a> of the cast expression is always non-lvalue.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/cast&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Because <a href="const.htm" title="c/language/const"><code>const</code></a>, <a href="volatile.htm" title="c/language/volatile"><code>volatile</code></a>, <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a>, and <a href="atomic.htm" title="c/language/atomic"><code>_Atomic</code></a> qualifiers have effect on <a href="value_category.htm" title="c/language/value category">lvalues</a> only, a cast to a cvr-qualified or atomic type is exactly equivalent to the cast to the corresponding unqualified type.
+<p>Because <a href="./const.htm" title="c/language/const"><code>const</code></a>, <a href="./volatile.htm" title="c/language/volatile"><code>volatile</code></a>, <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a>, and <a href="./atomic.htm" title="c/language/atomic"><code>_Atomic</code></a> qualifiers have effect on <a href="./value_category.htm" title="c/language/value category">lvalues</a> only, a cast to a cvr-qualified or atomic type is exactly equivalent to the cast to the corresponding unqualified type.
 </p><p>The cast to <span class="mw-geshi c source-c"><span class="kw4">void</span></span> is sometimes useful to silence compiler warnings about unused results.
 </p><p>The conversions not listed here are not allowed. In particular,
 </p>
@@ -260,7 +260,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </li></ul>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>If the implementation provides <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">intptr_t</a></span> and/or <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">uintptr_t</a></span>, then a cast from a pointer to an object type (including <i>cv</i> <span class="mw-geshi c source-c"><span class="kw4">void</span></span>) to these types is always well-defined. However, this is not guaranteed for a function pointer.
+<p>If the implementation provides <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">intptr_t</a></span> and/or <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">uintptr_t</a></span>, then a cast from a pointer to an object type (including <i>cv</i> <span class="mw-geshi c source-c"><span class="kw4">void</span></span>) to these types is always well-defined. However, this is not guaranteed for a function pointer.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
@@ -275,9 +275,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="co1">// examining object representation is a legitimate use of cast</span>
     <span class="kw4">const</span> <span class="kw4">double</span> d <span class="sy1">=</span> <span class="nu16">3.14</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The double&nbsp;%.2f (%a) is: "</span>, d, d<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> d<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%02X "</span>, <span class="br0">(</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy3">&amp;</span>d<span class="br0">)</span><span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The double&nbsp;%.2f (%a) is: "</span>, d, d<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> d<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%02X "</span>, <span class="br0">(</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="sy2">*</span><span class="br0">)</span><span class="sy3">&amp;</span>d<span class="br0">)</span><span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// edge cases</span>
     <span class="kw1">struct</span> S <span class="br0">{</span> <span class="kw4">int</span> x<span class="sy4">;</span> <span class="br0">}</span> s<span class="sy4">;</span>

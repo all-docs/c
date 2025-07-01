@@ -188,24 +188,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="replace.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="replace.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./replace.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./replace.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a>
 <ul>
-<li class="toclevel-2 tocsection-3"><a href="replace.htm#.23define_directives"><span class="tocnumber">2.1</span> <span class="toctext"><span><span>#define</span></span> directives</span></a>
+<li class="toclevel-2 tocsection-3"><a href="./replace.htm#.23define_directives"><span class="tocnumber">2.1</span> <span class="toctext"><span><span>#define</span></span> directives</span></a>
 <ul>
-<li class="toclevel-3 tocsection-4"><a href="replace.htm#Object-like_macros"><span class="tocnumber">2.1.1</span> <span class="toctext">Object-like macros</span></a></li>
-<li class="toclevel-3 tocsection-5"><a href="replace.htm#Function-like_macros"><span class="tocnumber">2.1.2</span> <span class="toctext">Function-like macros</span></a></li>
+<li class="toclevel-3 tocsection-4"><a href="./replace.htm#Object-like_macros"><span class="tocnumber">2.1.1</span> <span class="toctext">Object-like macros</span></a></li>
+<li class="toclevel-3 tocsection-5"><a href="./replace.htm#Function-like_macros"><span class="tocnumber">2.1.2</span> <span class="toctext">Function-like macros</span></a></li>
 </ul>
 </li>
-<li class="toclevel-2 tocsection-6"><a href="replace.htm#.23_and_.23.23_operators"><span class="tocnumber">2.2</span> <span class="toctext"><span><span>#</span></span> and <span><span>##</span></span> operators</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="replace.htm#.23undef_directive"><span class="tocnumber">2.3</span> <span class="toctext"><span><span>#undef</span></span> directive</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="./replace.htm#.23_and_.23.23_operators"><span class="tocnumber">2.2</span> <span class="toctext"><span><span>#</span></span> and <span><span>##</span></span> operators</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="./replace.htm#.23undef_directive"><span class="tocnumber">2.3</span> <span class="toctext"><span><span>#undef</span></span> directive</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-8"><a href="replace.htm#Predefined_macros"><span class="tocnumber">3</span> <span class="toctext">Predefined macros</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="replace.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-10"><a href="replace.htm#Defect_reports"><span class="tocnumber">5</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-11"><a href="replace.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-12"><a href="replace.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./replace.htm#Predefined_macros"><span class="tocnumber">3</span> <span class="toctext">Predefined macros</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="./replace.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="./replace.htm#Defect_reports"><span class="tocnumber">5</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="./replace.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="./replace.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -314,7 +314,7 @@ SDEF<span class="br0">(</span>bar, <span class="nu0">1</span>, <span class="nu0"
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table>
 <p><br>
-Note: if an argument of a function-like macro includes commas that are not protected by matched pairs of left and right parentheses (such as <span class="t-c"><span class="mw-geshi c source-c">macro<span class="br0">(</span>array<span class="br0">[</span>x <span class="sy1">=</span> y, x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_store.html"><span class="kw937">atomic_store</span></a><span class="br0">(</span>p, <span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">{</span> a, b <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the comma is interpreted as macro argument separator, causing a compilation failure due to argument count mismatch.
+Note: if an argument of a function-like macro includes commas that are not protected by matched pairs of left and right parentheses (such as <span class="t-c"><span class="mw-geshi c source-c">macro<span class="br0">(</span>array<span class="br0">[</span>x <span class="sy1">=</span> y, x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_store.htm"><span class="kw937">atomic_store</span></a><span class="br0">(</span>p, <span class="br0">(</span><span class="kw1">struct</span> S<span class="br0">)</span><span class="br0">{</span> a, b <span class="br0">}</span><span class="br0">)</span><span class="sy4">;</span></span></span>), the comma is interpreted as macro argument separator, causing a compilation failure due to argument count mismatch.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;action=edit&amp;section=6" title="Edit section: # and ## operators">edit</a>]</span> <span class="mw-headline" id=".23_and_.23.23_operators"><span class="mw-geshi c source-c"><span class="co2">#</span></span> and <span class="mw-geshi c source-c"><span class="co2">##</span></span> operators</span></h4>
 <p>In function-like macros, a <code>#</code> operator before an identifier in the <span class="t-spar">replacement-list</span> runs the identifier through parameter replacement and encloses the result in quotes, effectively creating a string literal. In addition, the preprocessor adds backslashes to escape the quotes surrounding embedded string literals, if any, and doubles the backslashes within the string as necessary. All leading and trailing whitespace is removed, and any sequence of whitespace in the middle of the text (but not inside embedded string literals) is collapsed to a single space. This operation is called “stringification”. If the result of stringification is not a valid string literal, the behavior is undefined.
@@ -330,7 +330,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <p>A <code>##</code> operator between any two successive identifiers in the <span class="t-spar">replacement-list</span> runs parameter replacement on the two identifiers and then concatenates the result. This operation is called “concatenation” or “token pasting”. Only tokens that form a valid token together may be pasted: identifiers that form a longer identifier, digits that form a number, or operators <code><b>+</b></code> and <code><b>=</b></code> that form a <code><b>+=</b></code>. A comment cannot be created by pasting <code><b>/</b></code> and <code><b>*</b></code> because comments are removed from text before macro substitution is considered. If the result of concatenation is not a valid token, the behavior is undefined.
-</p><p>Note: Some compilers offer an extension that allows <code>##</code> to appear after a comma and before <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span>, in which case the <code>##</code> does nothing when <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span> is non-empty, but removes the comma when <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span> is empty: this makes it possible to define macros such as <span class="t-c"><span class="mw-geshi c source-c"><a href="../io/fprintf.html"><span class="kw852">fprintf</span></a><span class="br0">(</span><a href="../io/std_streams.html"><span class="kw888">stderr</span></a>, format, <span class="co2">##__VA_ARGS__)</span></span></span>.
+</p><p>Note: Some compilers offer an extension that allows <code>##</code> to appear after a comma and before <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span>, in which case the <code>##</code> does nothing when <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span> is non-empty, but removes the comma when <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span> is empty: this makes it possible to define macros such as <span class="t-c"><span class="mw-geshi c source-c"><a href="../io/fprintf.htm"><span class="kw852">fprintf</span></a><span class="br0">(</span><a href="../io/std_streams.htm"><span class="kw888">stderr</span></a>, format, <span class="co2">##__VA_ARGS__)</span></span></span>.
 </p><p>The order of evaluation of <code>#</code> and <code>##</code> operators is unspecified.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/replace&amp;action=edit&amp;section=7" title="Edit section: #undef directive">edit</a>]</span> <span class="mw-headline" id=".23undef_directive"><span class="mw-geshi c source-c"><span class="co2">#undef</span></span> directive</span></h4>
@@ -371,28 +371,28 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__FILE__</span></span></div></div>
 </td>
-<td>  expands to the name of the current file, as a character string literal, can be changed by the <a href="line.htm" title="c/preprocessor/line"><code>#line</code></a> directive <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to the name of the current file, as a character string literal, can be changed by the <a href="./line.htm" title="c/preprocessor/line"><code>#line</code></a> directive <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__LINE__</span></span></div></div>
 </td>
-<td>  expands to the source file line number, an integer constant, can be changed by the <a href="line.htm" title="c/preprocessor/line"><code>#line</code></a> directive <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to the source file line number, an integer constant, can be changed by the <a href="./line.htm" title="c/preprocessor/line"><code>#line</code></a> directive <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__DATE__</span></span></div></div>
 </td>
-<td>  expands to the date of translation, a character string literal of the form “Mmm dd yyyy”. The name of the month is as if generated by <span class="t-lc"><a href="../chrono/asctime.html" title="c/chrono/asctime">asctime</a></span> and the first character of “dd” is a space if the day of the month is less than 10 <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to the date of translation, a character string literal of the form “Mmm dd yyyy”. The name of the month is as if generated by <span class="t-lc"><a href="../chrono/asctime.htm" title="c/chrono/asctime">asctime</a></span> and the first character of “dd” is a space if the day of the month is less than 10 <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__TIME__</span></span></div></div>
 </td>
-<td>  expands to the time of translation, a character string literal of the form “hh:mm:ss”, as in the time generated by <span class="t-c"><span class="mw-geshi c source-c"><a href="../chrono/asctime.html"><span class="kw515">asctime</span></a><span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to the time of translation, a character string literal of the form “hh:mm:ss”, as in the time generated by <span class="t-c"><span class="mw-geshi c source-c"><a href="../chrono/asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -466,42 +466,42 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_ANALYZABLE__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/analyzability.html" title="c/language/analyzability">analyzability</a> is supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/analyzability.htm" title="c/language/analyzability">analyzability</a> is supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_LIB_EXT1__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to an integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">201112L</span></span></span> if <a href="../error.html" title="c/error">bounds-checking interfaces</a> are supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to an integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">201112L</span></span></span> if <a href="../error.htm" title="c/error">bounds-checking interfaces</a> are supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_NO_ATOMICS__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/atomic.html" title="c/language/atomic">atomic</a> types and <a href="../thread.html#Atomic_operations" title="c/thread">atomic operations library</a> are not supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/atomic.htm" title="c/language/atomic">atomic</a> types and <a href="../thread.htm#Atomic_operations" title="c/thread">atomic operations library</a> are not supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_NO_COMPLEX__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/arithmetic_types.html#Complex_floating_types" title="c/language/arithmetic types">complex types</a> and <a href="../numeric/complex.html" title="c/numeric/complex">complex math library</a> are not supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/arithmetic_types.htm#Complex_floating_types" title="c/language/arithmetic types">complex types</a> and <a href="../numeric/complex.htm" title="c/numeric/complex">complex math library</a> are not supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_NO_THREADS__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if  <a href="../thread.html" title="c/thread">multithreading</a> is not supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if  <a href="../thread.htm" title="c/thread">multithreading</a> is not supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><span class="t-lines"><span>__STDC_NO_VLA__</span></span></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/array.html#Variable-length_arrays" title="c/language/array">variable-length arrays</a> <span class="t-rev-inl t-until-c23"><span>and variably-modified types</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>of automatic storage duration</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> are not supported <br> <span class="t-mark">(macro constant)</span>
+<td>  expands to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <a href="../language/array.htm#Variable-length_arrays" title="c/language/array">variable-length arrays</a> <span class="t-rev-inl t-until-c23"><span>and variably-modified types</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>of automatic storage duration</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> are not supported <br> <span class="t-mark">(macro constant)</span>
 </td></tr>
 
 
@@ -537,7 +537,7 @@ showlist<span class="br0">(</span><span class="nu0">1</span>, <span class="st0">
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>The predefined variable <span class="t-c"><span class="mw-geshi c source-c">__func__</span></span> (see <a href="../language/function_definition.html#func" title="c/language/function definition">function definition</a> for details) is not a preprocessor macro, even though it is sometimes used together with <code>__FILE__</code> and <code>__LINE__</code>, e.g., by <span class="t-lc"><a href="../error/assert.html" title="c/error/assert">assert</a></span>.
+<p>The predefined variable <span class="t-c"><span class="mw-geshi c source-c">__func__</span></span> (see <a href="../language/function_definition.htm#func" title="c/language/function definition">function definition</a> for details) is not a preprocessor macro, even though it is sometimes used together with <code>__FILE__</code> and <code>__LINE__</code>, e.g., by <span class="t-lc"><a href="../error/assert.htm" title="c/error/assert">assert</a></span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
@@ -558,9 +558,9 @@ FUNCTION<span class="br0">(</span><span class="kw4">double</span>, <span class="
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"quadruple(13):&nbsp;%d<span class="es1">\n</span>"</span>, fun_quadruple<span class="br0">(</span><span class="nu0">13</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"double(21):&nbsp;%d<span class="es1">\n</span>"</span>, fun_double<span class="br0">(</span><span class="nu0">21</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, FUNCTION<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"quadruple(13):&nbsp;%d<span class="es1">\n</span>"</span>, fun_quadruple<span class="br0">(</span><span class="nu0">13</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"double(21):&nbsp;%d<span class="es1">\n</span>"</span>, fun_double<span class="br0">(</span><span class="nu0">21</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, FUNCTION<span class="br0">)</span><span class="sy4">;</span>
     OUTPUT<span class="br0">(</span>billion<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// note the lack of quotes</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:

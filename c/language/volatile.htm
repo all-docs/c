@@ -184,8 +184,8 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>Each individual type in the C <a href="compatible_type.htm" title="c/language/type">type system</a> has several <i>qualified</i> versions of that type, corresponding to one, two, or all three of the <a href="const.htm" title="c/language/const"><code>const</code></a>, <code>volatile</code>, and, for pointers to object types, <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a> qualifiers. This page describes the effects of the <code>volatile</code> qualifier.
-</p><p>Every access (both read and write) made through an lvalue expression of volatile-qualified type is considered an observable side effect for the purpose of optimization and is evaluated strictly according to the rules of the abstract machine (that is, all writes are completed at some time before the next sequence point). This means that within a single thread of execution, a volatile access cannot be optimized out or reordered relative to another visible side effect that is separated by a <a href="eval_order.htm" title="c/language/eval order">sequence point</a> from the volatile access.
+<p>Each individual type in the C <a href="./compatible_type.htm" title="c/language/type">type system</a> has several <i>qualified</i> versions of that type, corresponding to one, two, or all three of the <a href="./const.htm" title="c/language/const"><code>const</code></a>, <code>volatile</code>, and, for pointers to object types, <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a> qualifiers. This page describes the effects of the <code>volatile</code> qualifier.
+</p><p>Every access (both read and write) made through an lvalue expression of volatile-qualified type is considered an observable side effect for the purpose of optimization and is evaluated strictly according to the rules of the abstract machine (that is, all writes are completed at some time before the next sequence point). This means that within a single thread of execution, a volatile access cannot be optimized out or reordered relative to another visible side effect that is separated by a <a href="./eval_order.htm" title="c/language/eval order">sequence point</a> from the volatile access.
 </p><p>A cast of a non-volatile value to a volatile type has no effect. To access a non-volatile object using volatile semantics, its address must be cast to a pointer-to-volatile and then the access must be made through that pointer.
 </p><p>Any attempt to read or write to an object whose type is volatile-qualified through a non-volatile lvalue results in undefined behavior:
 </p>
@@ -200,7 +200,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co1">// the types of vs.i and vs.ci are volatile int and const volatile int</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c23"><td>
-<p>If an array type is declared with the volatile type qualifier (through the use of <a href="typedef.htm" title="c/language/typedef"><code>typedef</code></a>), the array type is not volatile-qualified, but its element type is.
+<p>If an array type is declared with the volatile type qualifier (through the use of <a href="./typedef.htm" title="c/language/typedef"><code>typedef</code></a>), the array type is not volatile-qualified, but its element type is.
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
@@ -215,7 +215,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span><span class="sy2">*</span> pi <span class="sy1">=</span> a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// Error: a[0] has type volatile int*</span>
 <span class="kw4">void</span> <span class="sy2">*</span>unqual_ptr <span class="sy1">=</span> a<span class="sy4">;</span> <span class="co1">// OK until C23; error since C23</span>
 <span class="co1">// Notes: clang applies the rule in C++/C23 even in C89-C17 modes</span></pre></div></div>
-<p>If a function type is declared with the volatile type qualified (through the use of <a href="typedef.htm" title="c/language/typedef"><code>typedef</code></a>), the behavior is undefined.
+<p>If a function type is declared with the volatile type qualified (through the use of <a href="./typedef.htm" title="c/language/typedef"><code>typedef</code></a>), the behavior is undefined.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
@@ -227,7 +227,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
-<p>A pointer to a non-volatile type can be implicitly converted to a pointer to the volatile-qualified version of the same or <a href="compatible_type.htm" title="c/language/compatible type" class="mw-redirect">compatible</a> type. The reverse conversion requires a cast expression.
+<p>A pointer to a non-volatile type can be implicitly converted to a pointer to the volatile-qualified version of the same or <a href="./compatible_type.htm" title="c/language/compatible type" class="mw-redirect">compatible</a> type. The reverse conversion requires a cast expression.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
 <span class="kw4">volatile</span> <span class="kw4">int</span><span class="sy2">*</span> vp <span class="sy1">=</span> p<span class="sy4">;</span> <span class="co1">// OK: adds qualifiers (int to volatile int)</span>
@@ -240,20 +240,20 @@ p <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</sp
 <span class="kw4">char</span> <span class="sy2">*</span> <span class="kw4">volatile</span> <span class="sy2">*</span>pvp <span class="sy1">=</span> <span class="sy3">&amp;</span>p<span class="sy4">;</span> <span class="co1">// OK, adds qualifiers (char* to char*volatile)</span></pre></div></div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="volatile.htm#Uses_of_volatile"><span class="tocnumber">1</span> <span class="toctext">Uses of volatile</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="volatile.htm#Keywords"><span class="tocnumber">2</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="volatile.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="volatile.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="volatile.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./volatile.htm#Uses_of_volatile"><span class="tocnumber">1</span> <span class="toctext">Uses of volatile</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./volatile.htm#Keywords"><span class="tocnumber">2</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./volatile.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./volatile.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./volatile.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/volatile&amp;action=edit&amp;section=1" title="Edit section: Uses of volatile">edit</a>]</span> <span class="mw-headline" id="Uses_of_volatile">Uses of volatile</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> <a href="static_storage_duration.htm" title="c/language/static storage duration"><code>static</code></a> <code>volatile</code> objects model memory-mapped I/O ports, and <code>static</code> <code>const</code> <code>volatile</code> objects model memory-mapped input ports, such as a real-time clock:
+<div class="t-li1"><span class="t-li">1)</span> <a href="./static_storage_duration.htm" title="c/language/static storage duration"><code>static</code></a> <code>volatile</code> objects model memory-mapped I/O ports, and <code>static</code> <code>const</code> <code>volatile</code> objects model memory-mapped input ports, such as a real-time clock:
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">volatile</span> <span class="kw4">short</span> <span class="sy2">*</span>ttyport <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">volatile</span> <span class="kw4">short</span><span class="sy2">*</span><span class="br0">)</span>TTYPORT_ADDR<span class="sy4">;</span>
 <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> N<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
     <span class="sy2">*</span>ttyport <span class="sy1">=</span> a<span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// *ttyport is an lvalue of type volatile short</span></pre></div></div></div>
-<div class="t-li1"><span class="t-li">2)</span> <code>static</code> <code>volatile</code> objects of type <span class="t-lc"><a href="../program/sig_atomic_t.html" title="c/program/sig atomic t">sig_atomic_t</a></span> are used for communication with <span class="t-lc"><a href="../program/signal.html" title="c/program/signal">signal</a></span> handlers.</div>
-<div class="t-li1"><span class="t-li">3)</span> <code>volatile</code> variables that are local to a function that contains an invocation of the <span class="t-lc"><a href="../program/setjmp.html" title="c/program/setjmp">setjmp</a></span> macro are the only local variables guaranteed to retain their values after <span class="t-lc"><a href="../program/longjmp.html" title="c/program/longjmp">longjmp</a></span> returns.</div>
+<div class="t-li1"><span class="t-li">2)</span> <code>static</code> <code>volatile</code> objects of type <span class="t-lc"><a href="../program/sig_atomic_t.htm" title="c/program/sig atomic t">sig_atomic_t</a></span> are used for communication with <span class="t-lc"><a href="../program/signal.htm" title="c/program/signal">signal</a></span> handlers.</div>
+<div class="t-li1"><span class="t-li">3)</span> <code>volatile</code> variables that are local to a function that contains an invocation of the <span class="t-lc"><a href="../program/setjmp.htm" title="c/program/setjmp">setjmp</a></span> macro are the only local variables guaranteed to retain their values after <span class="t-lc"><a href="../program/longjmp.htm" title="c/program/longjmp">longjmp</a></span> returns.</div>
 <div class="t-li1"><span class="t-li">4)</span> In addition, volatile variables can be used to disable certain forms of optimization, e.g. to disable dead store elimination or constant folding for micro-benchmarks.</div>
 <p>Note that volatile variables are not suitable for communication between threads; they do not offer atomicity, synchronization, or memory ordering. A read from a volatile variable that is modified by another thread without synchronization or concurrent modification from two unsynchronized threads is undefined behavior due to a data race.
 </p>
@@ -267,25 +267,25 @@ p <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</sp
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../chrono/clock_t.html"><span class="kw525">clock_t</span></a> t <span class="sy1">=</span> <a href="../chrono/clock.html"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../chrono/clock_t.htm"><span class="kw525">clock_t</span></a> t <span class="sy1">=</span> <a href="../chrono/clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">double</span> d <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> m <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> m <span class="sy1">&lt;</span> <span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>m<span class="br0">)</span>
             d <span class="sy2">+</span><span class="sy1">=</span> d <span class="sy2">*</span> n <span class="sy2">*</span> m<span class="sy4">;</span> <span class="co1">// reads from and writes to a non-volatile </span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Modified a non-volatile variable 100m times. "</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Modified a non-volatile variable 100m times. "</span>
            <span class="st0">"Time used:&nbsp;%.2f seconds<span class="es1">\n</span>"</span>,
-           <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">(</span><a href="../chrono/clock.html"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> t<span class="br0">)</span><span class="sy2">/</span><a href="../chrono/CLOCKS_PER_SEC.html"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="br0">)</span><span class="sy4">;</span>
+           <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">(</span><a href="../chrono/clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> t<span class="br0">)</span><span class="sy2">/</span><a href="../chrono/CLOCKS_PER_SEC.htm"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    t <span class="sy1">=</span> <a href="../chrono/clock.html"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    t <span class="sy1">=</span> <a href="../chrono/clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">volatile</span> <span class="kw4">double</span> vd <span class="sy1">=</span> <span class="nu16">0.0</span><span class="sy4">;</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> m <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> m <span class="sy1">&lt;</span> <span class="nu0">10000</span><span class="sy4">;</span> <span class="sy2">++</span>m<span class="br0">)</span> <span class="br0">{</span>
             <span class="kw4">double</span> prod <span class="sy1">=</span> vd <span class="sy2">*</span> n <span class="sy2">*</span> m<span class="sy4">;</span> <span class="co1">// reads from a volatile</span>
             vd <span class="sy2">+</span><span class="sy1">=</span> prod<span class="sy4">;</span> <span class="co1">// reads from and writes to a volatile</span>
         <span class="br0">}</span> 
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Modified a volatile variable 100m times. "</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Modified a volatile variable 100m times. "</span>
            <span class="st0">"Time used:&nbsp;%.2f seconds<span class="es1">\n</span>"</span>,
-           <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">(</span><a href="../chrono/clock.html"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> t<span class="br0">)</span><span class="sy2">/</span><a href="../chrono/CLOCKS_PER_SEC.html"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="br0">)</span><span class="sy4">;</span>
+           <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">(</span><a href="../chrono/clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">-</span> t<span class="br0">)</span><span class="sy2">/</span><a href="../chrono/CLOCKS_PER_SEC.htm"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

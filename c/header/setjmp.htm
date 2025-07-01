@@ -160,24 +160,24 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>This header is part of the <a href="../program.html#Non-local_jumps" title="c/program">program support utilities</a> library.
+<p>This header is part of the <a href="../program.htm#Non-local_jumps" title="c/program">program support utilities</a> library.
 </p>
 <table class="t-dsc-begin">
 
 <tbody><tr>
 <td colspan="2"> <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1"><a href="setjmp.htm#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
-<li class="toclevel-1"><a href="setjmp.htm#Macros"><span class="tocnumber">2</span> <span class="toctext">Macros</span></a></li>
-<li class="toclevel-1"><a href="setjmp.htm#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a></li>
-<li class="toclevel-1 tocsection-1"><a href="setjmp.htm#Synopsis"><span class="tocnumber">4</span> <span class="toctext">Synopsis</span></a></li>
+<li class="toclevel-1"><a href="./setjmp.htm#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1"><a href="./setjmp.htm#Macros"><span class="tocnumber">2</span> <span class="toctext">Macros</span></a></li>
+<li class="toclevel-1"><a href="./setjmp.htm#Functions"><span class="tocnumber">3</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./setjmp.htm#Synopsis"><span class="tocnumber">4</span> <span class="toctext">Synopsis</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3> <span class="mw-headline" id="Types">Types</span></h3>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../program/jmp_buf.html" title="c/program/jmp buf"> <span class="t-lines"><span>jmp_buf</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../program/jmp_buf.htm" title="c/program/jmp buf"> <span class="t-lines"><span>jmp_buf</span></span></a></div></div>
 </td>
 <td>   execution context type  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_jmp_buf&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -187,7 +187,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../program/setjmp.html" title="c/program/setjmp"> <span class="t-lines"><span>setjmp</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../program/setjmp.htm" title="c/program/setjmp"> <span class="t-lines"><span>setjmp</span></span></a></div></div>
 </td>
 <td>   saves the context  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_setjmp&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -197,7 +197,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../program/longjmp.html" title="c/program/longjmp"> <span class="t-lines"><span>longjmp</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../program/longjmp.htm" title="c/program/longjmp"> <span class="t-lines"><span>longjmp</span></span></a></div></div>
 </td>
 <td>   jumps to specified location  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_longjmp&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -205,10 +205,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/setjmp&amp;action=edit&amp;section=1" title="Edit section: Synopsis">edit</a>]</span> <span class="mw-headline" id="Synopsis">Synopsis</span></h3>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define __STDC_VERSION_SETJMP_H__ 202311L</span>
 &nbsp;
-<span class="kw1">typedef</span> <span class="coMULTI">/* unspecified */</span> <a href="../program/jmp_buf.html"><span class="kw511">jmp_buf</span></a><span class="sy4">;</span>
+<span class="kw1">typedef</span> <span class="coMULTI">/* unspecified */</span> <a href="../program/jmp_buf.htm"><span class="kw511">jmp_buf</span></a><span class="sy4">;</span>
 &nbsp;
-<span class="kw4">int</span> <a href="../program/setjmp.html"><span class="kw510">setjmp</span></a><span class="br0">(</span><a href="../program/jmp_buf.html"><span class="kw511">jmp_buf</span></a> env<span class="br0">)</span><span class="sy4">;</span>
-<span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> <a href="../program/longjmp.html"><span class="kw509">longjmp</span></a><span class="br0">(</span><a href="../program/jmp_buf.html"><span class="kw511">jmp_buf</span></a> env, <span class="kw4">int</span> val<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<span class="kw4">int</span> <a href="../program/setjmp.htm"><span class="kw510">setjmp</span></a><span class="br0">(</span><a href="../program/jmp_buf.htm"><span class="kw511">jmp_buf</span></a> env<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> <a href="../program/longjmp.htm"><span class="kw509">longjmp</span></a><span class="br0">(</span><a href="../program/jmp_buf.htm"><span class="kw511">jmp_buf</span></a> env, <span class="kw4">int</span> val<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 
 <!-- 
 NewPP limit report

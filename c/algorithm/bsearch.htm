@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span> bsearch<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>key, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>ptr, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size,<br>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span> bsearch<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>key, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>ptr, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>comp<span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
@@ -206,7 +206,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="coMULTI">/*QVoid*/</span><span class="sy2">*</span> bsearch<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>key, <span class="coMULTI">/*QVoid*/</span> <span class="sy2">*</span>ptr, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size,<br>
+<td> <div><span class="mw-geshi c source-c"><span class="coMULTI">/*QVoid*/</span><span class="sy2">*</span> bsearch<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>key, <span class="coMULTI">/*QVoid*/</span> <span class="sy2">*</span>ptr, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>comp<span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
@@ -222,11 +222,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Finds an element equal to element pointed to by <code>key</code> in an array pointed to by <code>ptr</code>. The array contains <code>count</code> elements of <code>size</code> bytes and must be partitioned with respect to <code>key</code>, that is, all the elements that compare less than must appear before all the elements that compare equal to, and those must appear before all the elements that compare greater than the key object. A fully sorted array satisfies these requirements. The elements are compared using function pointed to by <code>comp</code>. The behavior is undefined if the array is not already partitioned with respect to <code>*key</code> in ascending order according to the same criterion that <code>comp</code> uses.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the additional state argument <code>context</code> is passed to <code>comp</code> and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the additional state argument <code>context</code> is passed to <code>comp</code> and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <code>count</code> or <code>size</code> is greater than <span class="t-lc">RSIZE_MAX</span>
 </li><li> <code>key</code>, <code>ptr</code> or <code>comp</code> is a null pointer (unless <code>count</code> is zero)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>bsearch_s</code> <span class="t-rev-inl t-since-c23"><span> (and the corresponding type-generic macro)</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>bsearch_s</code> <span class="t-rev-inl t-since-c23"><span> (and the corresponding type-generic macro)</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
 
 <div class="t-li1"><span class="t-li">3,4)</span> Type-generic macros equivalent to <span class="t-v">(1)</span> and <span class="t-v">(2)</span> respectively. Let <code>T</code> be a unqualified object type (including <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>).
 <dl><dd><ul><li> If <code>ptr</code> is of type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">const</span> T<span class="sy2">*</span></span></span>, the return type is <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span></span></span>.
@@ -246,12 +246,12 @@ If a macro definition of each of these generic functions is suppressed to access
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="bsearch.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="bsearch.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="bsearch.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="bsearch.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="bsearch.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="bsearch.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./bsearch.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./bsearch.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./bsearch.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./bsearch.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./bsearch.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./bsearch.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/algorithm/bsearch&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -345,9 +345,9 @@ If a macro definition of each of these generic functions is suppressed to access
     <span class="kw1">struct</span> data <span class="kw4">const</span> <span class="sy2">*</span>res <span class="sy1">=</span> bsearch<span class="br0">(</span><span class="sy3">&amp;</span>key, dat, <span class="kw4">sizeof</span> dat <span class="sy2">/</span> <span class="kw4">sizeof</span> dat<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>,
                                      <span class="kw4">sizeof</span> dat<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, data_cmp<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>res<span class="br0">)</span> <span class="br0">{</span>
-        <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"No&nbsp;%d:&nbsp;%s<span class="es1">\n</span>"</span>, res<span class="sy2">-</span><span class="sy1">&gt;</span>nr, res<span class="sy2">-</span><span class="sy1">&gt;</span>value<span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"No&nbsp;%d:&nbsp;%s<span class="es1">\n</span>"</span>, res<span class="sy2">-</span><span class="sy1">&gt;</span>nr, res<span class="sy2">-</span><span class="sy1">&gt;</span>value<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
-        <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"No&nbsp;%d not found<span class="es1">\n</span>"</span>, key.<span class="me1">nr</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"No&nbsp;%d not found<span class="es1">\n</span>"</span>, key.<span class="me1">nr</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -393,7 +393,7 @@ If a macro definition of each of these generic functions is suppressed to access
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="qsort.htm" title="c/algorithm/qsort"> <span class="t-lines"><span>qsort</span><span>qsort_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./qsort.htm" title="c/algorithm/qsort"> <span class="t-lines"><span>qsort</span><span>qsort_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   sorts a range of elements with unspecified type <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/algorithm/dsc_qsort&amp;action=edit">[edit]</a></span>
 </td></tr>

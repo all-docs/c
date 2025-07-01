@@ -162,29 +162,29 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/threads.html" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>tss_get<span class="br0">(</span> <a href="../thread.html"><span class="kw1034">tss_t</span></a> tss_key <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>tss_get<span class="br0">(</span> <a href="../thread.htm"><span class="kw1034">tss_t</span></a> tss_key <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Returns the value held in thread-specific storage for the current thread identified by <code>tss_key</code>. Different threads may get different values identified by the same key.
-</p><p>On thread startup (see <span class="t-lc"><a href="thrd_create.htm" title="c/thread/thrd create">thrd_create</a></span>), the values associated with all TSS keys are NULL. Different value may be placed in the thread-specific storage with <span class="t-lc"><a href="tss_set.htm" title="c/thread/tss set">tss_set</a></span>.
+</p><p>On thread startup (see <span class="t-lc"><a href="./thrd_create.htm" title="c/thread/thrd create">thrd_create</a></span>), the values associated with all TSS keys are NULL. Different value may be placed in the thread-specific storage with <span class="t-lc"><a href="./tss_set.htm" title="c/thread/tss set">tss_set</a></span>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="tss_get.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="tss_get.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="tss_get.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="tss_get.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="tss_get.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="tss_get.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./tss_get.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./tss_get.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./tss_get.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./tss_get.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./tss_get.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./tss_get.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_get&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -196,10 +196,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  thread-specific storage key, obtained from <span class="t-lc"><a href="tss_create.htm" title="c/thread/tss create">tss_create</a></span> and not deleted by <span class="t-lc"><a href="tss_delete.htm" title="c/thread/tss delete">tss_delete</a></span>
+<td>  thread-specific storage key, obtained from <span class="t-lc"><a href="./tss_create.htm" title="c/thread/tss create">tss_create</a></span> and not deleted by <span class="t-lc"><a href="./tss_delete.htm" title="c/thread/tss delete">tss_delete</a></span>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_get&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>The value on success, <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span> on failure.
+<p>The value on success, <span class="t-lc"><a href="../types/NULL.htm" title="c/types/NULL">NULL</a></span> on failure.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_get&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The POSIX equivalent for this function is <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/pthread_getspecific.html"><code>pthread_getspecific</code></a>.
@@ -225,7 +225,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="tss_set.htm" title="c/thread/tss set"> <span class="t-lines"><span>tss_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./tss_set.htm" title="c/thread/tss set"> <span class="t-lines"><span>tss_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   write to thread-specific storage  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_tss_set&amp;action=edit">[edit]</a></span>
 </td></tr>

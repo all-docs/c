@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/threads.html" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -182,17 +182,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>First, for every thread-specific storage key which was created with a non-null destructor and for which the associated value is non-null (see <span class="t-lc"><a href="tss_create.htm" title="c/thread/tss create">tss_create</a></span>), <code>thrd_exit</code> sets the value associated with the key to <span class="t-c"><span class="mw-geshi c source-c"><a href="../types/NULL.html"><span class="kw103">NULL</span></a></span></span> and then invokes the destructor with the previous value of the key. The order in which the destructors are invoked is unspecified.
-</p><p>If, after this, there remain keys with both non-null destructors and values (e.g. if a destructor executed <span class="t-lc"><a href="tss_set.htm" title="c/thread/tss set">tss_set</a></span>), the process is repeated up to <span class="t-lc"><a href="TSS_DTOR_ITERATIONS.htm" title="c/thread/TSS DTOR ITERATIONS">TSS_DTOR_ITERATIONS</a></span> times.
+<p>First, for every thread-specific storage key which was created with a non-null destructor and for which the associated value is non-null (see <span class="t-lc"><a href="./tss_create.htm" title="c/thread/tss create">tss_create</a></span>), <code>thrd_exit</code> sets the value associated with the key to <span class="t-c"><span class="mw-geshi c source-c"><a href="../types/NULL.htm"><span class="kw103">NULL</span></a></span></span> and then invokes the destructor with the previous value of the key. The order in which the destructors are invoked is unspecified.
+</p><p>If, after this, there remain keys with both non-null destructors and values (e.g. if a destructor executed <span class="t-lc"><a href="./tss_set.htm" title="c/thread/tss set">tss_set</a></span>), the process is repeated up to <span class="t-lc"><a href="./TSS_DTOR_ITERATIONS.htm" title="c/thread/TSS DTOR ITERATIONS">TSS_DTOR_ITERATIONS</a></span> times.
 </p><p>Finally, the <code>thrd_exit</code> function terminates execution of the calling thread and sets its result code to <code>res</code>.
-</p><p>If the last thread in the program is terminated with <code>thrd_exit</code>, the entire program terminates as if by calling <span class="t-lc"><a href="../program/exit.html" title="c/program/exit">exit</a></span> with <span class="t-lc"><a href="../program/EXIT_status.html" title="c/program/EXIT status">EXIT_SUCCESS</a></span> as the argument (so the functions registered by <span class="t-lc"><a href="../program/atexit.html" title="c/program/atexit">atexit</a></span> are executed in the context of that last thread)
+</p><p>If the last thread in the program is terminated with <code>thrd_exit</code>, the entire program terminates as if by calling <span class="t-lc"><a href="../program/exit.htm" title="c/program/exit">exit</a></span> with <span class="t-lc"><a href="../program/EXIT_status.htm" title="c/program/EXIT status">EXIT_SUCCESS</a></span> as the argument (so the functions registered by <span class="t-lc"><a href="../program/atexit.htm" title="c/program/atexit">atexit</a></span> are executed in the context of that last thread)
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="thrd_exit.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="thrd_exit.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="thrd_exit.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="thrd_exit.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./thrd_exit.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./thrd_exit.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./thrd_exit.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./thrd_exit.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/thrd_exit&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -228,13 +228,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="thrd_join.htm" title="c/thread/thrd join"> <span class="t-lines"><span>thrd_join</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./thrd_join.htm" title="c/thread/thrd join"> <span class="t-lines"><span>thrd_join</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   blocks until a thread terminates  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_join&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="thrd_detach.htm" title="c/thread/thrd detach"> <span class="t-lines"><span>thrd_detach</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./thrd_detach.htm" title="c/thread/thrd detach"> <span class="t-lines"><span>thrd_detach</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   detaches a thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/thread/dsc_thrd_detach&amp;action=edit">[edit]</a></span>
 </td></tr>

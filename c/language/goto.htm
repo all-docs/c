@@ -189,13 +189,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="goto.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="goto.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="goto.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="goto.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="goto.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="goto.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="goto.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./goto.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./goto.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./goto.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./goto.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./goto.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./goto.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./goto.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/goto&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -225,17 +225,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  target <a href="statements.htm#Labels" title="c/language/statements">label</a> for the <code>goto</code> statement
+<td>  target <a href="./statements.htm#Labels" title="c/language/statements">label</a> for the <code>goto</code> statement
 </td></tr>
 <tr class="t-par">
 <td>  <span class="t-spar">attr-spec-seq</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>goto</code> statement
+<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>goto</code> statement
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/goto&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The <code>goto</code> statement causes an unconditional jump (transfer of control) to the statement prefixed by the named <span class="t-spar">label</span> (which must appear in the same function as the goto statement)<span class="t-rev-inl t-since-c99"><span>, except when this jump would enter the scope of a <a href="array.htm" title="c/language/array">variable-length array</a> or another <a href="declarations.htm" title="c/language/declarations">variably-modified type</a>.</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
+<p>The <code>goto</code> statement causes an unconditional jump (transfer of control) to the statement prefixed by the named <span class="t-spar">label</span> (which must appear in the same function as the goto statement)<span class="t-rev-inl t-since-c99"><span>, except when this jump would enter the scope of a <a href="./array.htm" title="c/language/array">variable-length array</a> or another <a href="./declarations.htm" title="c/language/declarations">variably-modified type</a>.</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
 </p><p>A <span class="t-spar">label</span> is an identifier followed by a colon (<code><b>:</b></code>)<span class="t-rev-inl t-until-c23"><span> and a statement</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span>. Labels are the only identifiers that have <i>function scope</i>: they can be used (in a goto statement) anywhere in the same function in which they appear. There may be multiple labels before any statement.
 </p>
 <table class="t-rev-begin">
@@ -262,7 +262,7 @@ label<span class="sy4">:;</span>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/goto&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/goto.html" title="c/keyword/goto"><tt>goto</tt></a>
+<p><a href="../keyword/goto.htm" title="c/keyword/goto"><tt>goto</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/goto&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <table class="t-rev-begin">
@@ -283,7 +283,7 @@ label<span class="sy4">:;</span>
     <span class="co1">// goto can be used to leave a multi-level loop easily</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> x <span class="sy1">&lt;</span> <span class="nu0">3</span><span class="sy4">;</span> x<span class="sy2">++</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> y <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> y <span class="sy1">&lt;</span> <span class="nu0">3</span><span class="sy4">;</span> y<span class="sy2">++</span><span class="br0">)</span> <span class="br0">{</span>
-            <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"(%d;%d)<span class="es1">\n</span>"</span>,x,y<span class="br0">)</span><span class="sy4">;</span>
+            <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"(%d;%d)<span class="es1">\n</span>"</span>,x,y<span class="br0">)</span><span class="sy4">;</span>
             <span class="kw1">if</span> <span class="br0">(</span>x <span class="sy2">+</span> y <span class="sy1">&gt;=</span> <span class="nu0">3</span><span class="br0">)</span> <span class="kw1">goto</span> endloop<span class="sy4">;</span>
         <span class="br0">}</span>
     <span class="br0">}</span>

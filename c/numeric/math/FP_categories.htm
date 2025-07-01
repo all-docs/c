@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -271,7 +271,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;float.h&gt;</span>
 &nbsp;
 <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>show_classification<span class="br0">(</span><span class="kw4">double</span> x<span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">switch</span><span class="br0">(</span><a href="fpclassify.htm"><span class="kw704">fpclassify</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">switch</span><span class="br0">(</span><a href="./fpclassify.htm"><span class="kw704">fpclassify</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">case</span> FP_INFINITE<span class="sy4">:</span>  <span class="kw1">return</span> <span class="st0">"Inf"</span><span class="sy4">;</span>
         <span class="kw1">case</span> FP_NAN<span class="sy4">:</span>       <span class="kw1">return</span> <span class="st0">"NaN"</span><span class="sy4">;</span>
         <span class="kw1">case</span> FP_NORMAL<span class="sy4">:</span>    <span class="kw1">return</span> <span class="st0">"normal"</span><span class="sy4">;</span>
@@ -282,11 +282,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">}</span>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu0">1</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"0.0/0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu16">0.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MIN/2 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><a href="../../types/limits.html"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"-0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">" 1.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu16">1.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"1.0/0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu0">1</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"0.0/0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu16">0.0</span><span class="sy2">/</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"DBL_MIN/2 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><a href="../../types/limits.htm"><span class="kw375">DBL_MIN</span></a><span class="sy2">/</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">"-0.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw846">printf</span></a><span class="br0">(</span><span class="st0">" 1.0 is&nbsp;%s<span class="es1">\n</span>"</span>, show_classification<span class="br0">(</span><span class="nu16">1.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -322,7 +322,7 @@ DBL_MIN/2 is subnormal
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fpclassify.htm" title="c/numeric/math/fpclassify"> <span class="t-lines"><span>fpclassify</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fpclassify.htm" title="c/numeric/math/fpclassify"> <span class="t-lines"><span>fpclassify</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   classifies the given floating-point value  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_fpclassify&amp;action=edit">[edit]</a></span>
 </td></tr>

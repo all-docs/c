@@ -160,8 +160,8 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>The <i>typedef declaration</i> provides a way to declare an identifier as a type alias, to be used to replace a possibly complex <a href="compatible_type.htm#Type_names" title="c/language/type">type name</a>
-</p><p>The keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">typedef</span></span></span> is used in a <a href="declarations.htm" title="c/language/declarations">declaration</a>, in the grammatical position of a <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage-class specifier</a>, except that it does not affect storage or linkage:
+<p>The <i>typedef declaration</i> provides a way to declare an identifier as a type alias, to be used to replace a possibly complex <a href="./compatible_type.htm#Type_names" title="c/language/type">type name</a>
+</p><p>The keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">typedef</span></span></span> is used in a <a href="./declarations.htm" title="c/language/declarations">declaration</a>, in the grammatical position of a <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage-class specifier</a>, except that it does not affect storage or linkage:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">typedef</span> <span class="kw4">int</span> int_t<span class="sy4">;</span> <span class="co1">// declares int_t to be an alias for the type int</span>
 <span class="kw1">typedef</span> <span class="kw4">char</span> char_t, <span class="sy2">*</span>char_p, <span class="br0">(</span><span class="sy2">*</span>fp<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// declares char_t to be an alias for char</span>
@@ -169,16 +169,16 @@ html { font-variant-ligatures: no-common-ligatures; }
                                            <span class="co1">// fp to be an alias for char(*)(void)</span></pre></div></div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="typedef.htm#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="typedef.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="typedef.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="typedef.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="typedef.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./typedef.htm#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./typedef.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./typedef.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./typedef.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./typedef.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/typedef&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>If a <a href="declarations.htm" title="c/language/declarations">declaration</a> uses <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">typedef</span></span></span> as storage-class specifier, every declarator in it defines an identifier as an alias to the type specified. Since only one storage-class specifier is permitted in a declaration, typedef declaration cannot be <a href="storage_class_specifiers.htm" title="c/language/storage duration">static or extern</a>.
-</p><p>typedef declaration does not introduce a distinct type, it only establishes a synonym for an existing type, thus typedef names are <a href="compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with the types they alias. Typedef names share the <a href="name_space.htm" title="c/language/name space">name space</a> with ordinary identifiers such as enumerators, variables and function.
+<p>If a <a href="./declarations.htm" title="c/language/declarations">declaration</a> uses <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">typedef</span></span></span> as storage-class specifier, every declarator in it defines an identifier as an alias to the type specified. Since only one storage-class specifier is permitted in a declaration, typedef declaration cannot be <a href="./storage_class_specifiers.htm" title="c/language/storage duration">static or extern</a>.
+</p><p>typedef declaration does not introduce a distinct type, it only establishes a synonym for an existing type, thus typedef names are <a href="./compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with the types they alias. Typedef names share the <a href="./name_space.htm" title="c/language/name space">name space</a> with ordinary identifiers such as enumerators, variables and function.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
@@ -197,11 +197,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/typedef&amp;action=edit&amp;section=2" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>typedef name may be an <a href="compatible_type.htm#Incomplete_types" title="c/language/type">incomplete type</a>, which may be completed as usual:
+<p>typedef name may be an <a href="./compatible_type.htm#Incomplete_types" title="c/language/type">incomplete type</a>, which may be completed as usual:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">typedef</span> <span class="kw4">int</span> A<span class="br0">[</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// A is int[]</span>
 A a <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span><span class="br0">}</span>, b <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// type of a is int[2], type of b is int[3]</span></pre></div></div>
-<p>typedef declarations are often used to inject names from the tag <a href="name_space.htm" title="c/language/name space">name space</a> into the ordinary name space:
+<p>typedef declarations are often used to inject names from the tag <a href="./name_space.htm" title="c/language/name space">name space</a> into the ordinary name space:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">typedef</span> <span class="kw1">struct</span> tnode tnode<span class="sy4">;</span> <span class="co1">// tnode in ordinary name space</span>
                             <span class="co1">// is an alias to tnode in tag name space</span>
@@ -267,7 +267,7 @@ fp callbacks<span class="br0">[</span><span class="nu0">5</span><span class="br0
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/typedef&amp;action=edit&amp;section=4" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/typedef.html" title="c/keyword/typedef"><tt>typedef</tt></a>
+<p><a href="../keyword/typedef.htm" title="c/keyword/typedef"><tt>typedef</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/typedef&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">

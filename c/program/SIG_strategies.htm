@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/signal.html" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/signal.htm" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -203,7 +203,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>The <span class="t-lc"><strong class="selflink">SIG_DFL</strong></span> and <span class="t-lc"><strong class="selflink">SIG_IGN</strong></span> macros expand into integral expressions that are not equal to an address of any function. The macros define signal handling strategies for <span class="t-c"><span class="mw-geshi c source-c"><a href="signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><span class="br0">)</span></span></span> function.
+<p>The <span class="t-lc"><strong class="selflink">SIG_DFL</strong></span> and <span class="t-lc"><strong class="selflink">SIG_IGN</strong></span> macros expand into integral expressions that are not equal to an address of any function. The macros define signal handling strategies for <span class="t-c"><span class="mw-geshi c source-c"><a href="./signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><span class="br0">)</span></span></span> function.
 </p>
 <table class="t-dsc-begin">
 
@@ -230,10 +230,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="SIG_strategies.htm#Example"><span class="tocnumber">1</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="SIG_strategies.htm#Example_2"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="SIG_strategies.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="SIG_strategies.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./SIG_strategies.htm#Example"><span class="tocnumber">1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./SIG_strategies.htm#Example_2"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./SIG_strategies.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./SIG_strategies.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/SIG_strategies&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -244,8 +244,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="coMULTI">/* using the default signal handler */</span>
-    <a href="raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw506">SIGTERM</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Exit main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* never reached */</span>
+    <a href="./raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw506">SIGTERM</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Exit main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* never reached */</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -259,9 +259,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="coMULTI">/* ignoring the signal */</span>
-    <a href="signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw506">SIGTERM</span></a>, SIG_IGN<span class="br0">)</span><span class="sy4">;</span>
-    <a href="raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw506">SIGTERM</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Exit main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./signal.htm"><span class="kw497">signal</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw506">SIGTERM</span></a>, SIG_IGN<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./raise.htm"><span class="kw498">raise</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw506">SIGTERM</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Exit main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

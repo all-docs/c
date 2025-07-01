@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -207,7 +207,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -225,13 +225,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="hypot.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="hypot.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="hypot.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="hypot.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="hypot.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="hypot.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="hypot.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./hypot.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./hypot.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./hypot.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./hypot.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./hypot.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./hypot.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./hypot.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/hypot&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -254,23 +254,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/hypot&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If no errors occur, the hypotenuse of a right-angled triangle, <span class="mjax" style="display:none">\(\scriptsize{\sqrt{x^2+y^2} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;"><span class="t-mrad"><span>√</span><span>x<span class="t-su">2<br></span>+y<span class="t-su">2<br></span></span></span></span>, is returned.
-</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">+HUGE_VAL</a></span>, <code>+HUGE_VALF</code>, or <code>+HUGE_VALL</code> is returned.
+</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="./HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">+HUGE_VAL</a></span>, <code>+HUGE_VALF</code>, or <code>+HUGE_VALL</code> is returned.
 </p><p>If a range error due to underflow occurs, the correct result (after rounding) is returned.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/hypot&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
 <ul><li> <span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>x, y<span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>y, x<span class="br0">)</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>x, <span class="sy2">-</span>y<span class="br0">)</span></span></span> are equivalent
-</li><li> if one of the arguments is ±0, <code>hypot</code> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="fabs.htm"><span class="kw644">fabs</span></a></span></span> called with the non-zero argument
+</li><li> if one of the arguments is ±0, <code>hypot</code> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="./fabs.htm"><span class="kw644">fabs</span></a></span></span> called with the non-zero argument
 </li><li> if one of the arguments is ±∞, <code>hypot</code> returns +∞ even if the other argument is NaN
 </li><li> otherwise, if any of the arguments is NaN, NaN is returned.
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/hypot&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Implementations usually guarantee precision of less than 1 ulp (<a href="https://en.wikipedia.org/wiki/Unit_in_the_last_place" class="extiw" title="enwiki:Unit in the last place">units in the last place</a>): <a rel="nofollow" class="external text" href="https://sourceware.org/git/?p=glibc.git;a=blob_plain;f=sysdeps/ieee754/dbl-64/e_hypot.c">GNU</a>, <a rel="nofollow" class="external text" href="https://www.freebsd.org/cgi/cvsweb.cgi/src/lib/msun/src/e_hypot.c">BSD</a>.
-</p><p><span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>x, y<span class="br0">)</span></span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="../complex/cabs.html"><span class="kw765">cabs</span></a><span class="br0">(</span>x <span class="sy2">+</span> I<span class="sy2">*</span>y<span class="br0">)</span></span></span>.
+</p><p><span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>x, y<span class="br0">)</span></span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="../complex/cabs.htm"><span class="kw765">cabs</span></a><span class="br0">(</span>x <span class="sy2">+</span> I<span class="sy2">*</span>y<span class="br0">)</span></span></span>.
 </p><p><a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/hypot.html">POSIX specifies</a> that underflow may only occur when both arguments are subnormal and the correct result is also subnormal (this forbids naive implementations).
-</p><p><span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>INFINITY, NAN<span class="br0">)</span></span></span> returns +∞, but <span class="t-c"><span class="mw-geshi c source-c"><a href="sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>INFINITY <span class="sy2">*</span> INFINITY <span class="sy2">+</span> NAN <span class="sy2">*</span> NAN<span class="br0">)</span></span></span> returns NaN.
+</p><p><span class="t-c"><span class="mw-geshi c source-c">hypot<span class="br0">(</span>INFINITY, NAN<span class="br0">)</span></span></span> returns +∞, but <span class="t-c"><span class="mw-geshi c source-c"><a href="./sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>INFINITY <span class="sy2">*</span> INFINITY <span class="sy2">+</span> NAN <span class="sy2">*</span> NAN<span class="br0">)</span></span></span> returns NaN.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/hypot&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -284,19 +284,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="co1">// typical usage</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"(1,1) cartesian is (%f,%f) polar<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">1</span><span class="br0">)</span>, <a href="atan2.htm"><span class="kw674">atan2</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"(1,1) cartesian is (%f,%f) polar<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span><span class="nu0">1</span>,<span class="nu0">1</span><span class="br0">)</span>, <a href="./atan2.htm"><span class="kw674">atan2</span></a><span class="br0">(</span><span class="nu0">1</span>, <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// special values</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(NAN,INFINITY) =&nbsp;%f<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span>NAN, INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(NAN,INFINITY) =&nbsp;%f<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span>NAN, INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// error handling</span>
     <span class="kw2">errno</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-    <a href="../fenv/feclearexcept.html"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(DBL_MAX,DBL_MAX) =&nbsp;%f<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span><a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a>, <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.html"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
-        <a href="../../io/perror.html"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"    errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_OVERFLOW raised"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../fenv/feclearexcept.htm"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(DBL_MAX,DBL_MAX) =&nbsp;%f<span class="es1">\n</span>"</span>, hypot<span class="br0">(</span><a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a>, <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.htm"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
+        <a href="../../io/perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"    errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_OVERFLOW raised"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -363,25 +363,25 @@ hypot(DBL_MAX,DBL_MAX) = inf
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="pow.htm" title="c/numeric/math/pow"> <span class="t-lines"><span>pow</span><span>powf</span><span>powl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./pow.htm" title="c/numeric/math/pow"> <span class="t-lines"><span>pow</span><span>powf</span><span>powl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes a number raised to the given power (<span class="mjax" style="display:none">\(\small{x^y}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">x<sup>y</sup></span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_pow&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="sqrt.htm" title="c/numeric/math/sqrt"> <span class="t-lines"><span>sqrt</span><span>sqrtf</span><span>sqrtl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./sqrt.htm" title="c/numeric/math/sqrt"> <span class="t-lines"><span>sqrt</span><span>sqrtf</span><span>sqrtl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes square root (<span class="mjax" style="display:none">\(\small{\sqrt{x} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;"><span class="t-mrad"><span>√</span><span>x</span></span></span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_sqrt&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="cbrt.htm" title="c/numeric/math/cbrt"> <span class="t-lines"><span>cbrt</span><span>cbrtf</span><span>cbrtl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./cbrt.htm" title="c/numeric/math/cbrt"> <span class="t-lines"><span>cbrt</span><span>cbrtf</span><span>cbrtl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>  computes cube root (<span class="mjax" style="display:none">\(\small{\sqrt[3]{x} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;"><span class="t-mrad"><span>3</span><span>√</span><span>x</span></span></span>) <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_cbrt&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../complex/cabs.html" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../complex/cabs.htm" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the magnitude of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cabs&amp;action=edit">[edit]</a></span>
 </td></tr>

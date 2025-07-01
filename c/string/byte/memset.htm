@@ -186,18 +186,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>memset<span class="br0">(</span> <span class="kw4">void</span> <span class="sy2">*</span>dest, <span class="kw4">int</span> ch, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>memset<span class="br0">(</span> <span class="kw4">void</span> <span class="sy2">*</span>dest, <span class="kw4">int</span> ch, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>memset_explicit<span class="br0">(</span> <span class="kw4">void</span> <span class="sy2">*</span>dest, <span class="kw4">int</span> ch, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> <span class="sy2">*</span>memset_explicit<span class="br0">(</span> <span class="kw4">void</span> <span class="sy2">*</span>dest, <span class="kw4">int</span> ch, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
@@ -212,23 +212,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1)</span> Copies the value <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span>ch</span></span> into each of the first <code>count</code> characters of the object pointed to by <code>dest</code>.</div>
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if access occurs beyond the end of the dest array. The behavior is undefined if <code>dest</code> is a null pointer.</div>
 <div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that is safe for sensitive information.</div>
-<div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(1)</span>, except that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function after storing <code>ch</code> in every location of the destination range <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span>dest, dest<span class="sy2">+</span>destsz<span class="br0">)</span></span></span> if <code>dest</code> and <code>destsz</code> are themselves valid:
+<div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(1)</span>, except that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function after storing <code>ch</code> in every location of the destination range <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span>dest, dest<span class="sy2">+</span>destsz<span class="br0">)</span></span></span> if <code>dest</code> and <code>destsz</code> are themselves valid:
 <dl><dd><ul><li> <code>dest</code> is a null pointer
 </li><li> <code>destsz</code> or <code>count</code> is greater than <span class="t-lc">RSIZE_MAX</span>
 </li><li> <code>count</code> is greater than <code>destsz</code> (buffer overflow would occur)</li></ul></dd></dl></div>
 
 
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the size of the character array pointed to by <code>dest</code> &lt; <code>count</code> &lt;= <code>destsz</code>; in other words, an erroneous value of <code>destsz</code> does not expose the impending buffer overflow.
-<dl><dd>As with all bounds-checked functions, <code>memset_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>memset_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="memset.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="memset.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="memset.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="memset.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="memset.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="memset.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./memset.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./memset.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./memset.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./memset.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./memset.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./memset.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/memset&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -267,7 +267,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1,2)</span> A copy of <code>dest</code></div>
 <div class="t-li1"><span class="t-li">3)</span> zero on success, non-zero on error. Also on error, if <code>dest</code> is not a null pointer and <code>destsz</code> is valid, writes <code>destsz</code> fill bytes <code>ch</code> to the destination array.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/memset&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>memset</code> may be optimized away (under the <a href="../../language/as_if.html" title="c/language/as if">as-if</a> rules) if the object modified by this function is not accessed again for the rest of its lifetime (e.g., <a rel="nofollow" class="external text" href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=8537">gcc bug 8537</a>). For that reason, this function cannot be used to scrub memory (e.g., to fill an array that stored a password with zeroes).
+<p><code>memset</code> may be optimized away (under the <a href="../../language/as_if.htm" title="c/language/as if">as-if</a> rules) if the object modified by this function is not accessed again for the rest of its lifetime (e.g., <a rel="nofollow" class="external text" href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=8537">gcc bug 8537</a>). For that reason, this function cannot be used to scrub memory (e.g., to fill an array that stored a password with zeroes).
 </p><p>This optimization is prohibited for <code>memset_explicit</code> and <code>memset_s</code>: they are guaranteed to perform the memory write.
 </p><p>Third-party solutions for that include FreeBSD <a rel="nofollow" class="external text" href="https://www.freebsd.org/cgi/man.cgi?query=explicit_bzero"><code>explicit_bzero</code></a> or Microsoft <a rel="nofollow" class="external text" href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa366877.aspx"><code>SecureZeroMemory</code></a>.
 </p>
@@ -281,16 +281,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">char</span> str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"ghghghghghghghghghghgh"</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
     memset<span class="br0">(</span>str,<span class="st0">'a'</span>,<span class="nu0">5</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
 <span class="co2">#ifdef __STDC_LIB_EXT1__</span>
     set_constraint_handler_s<span class="br0">(</span>ignore_handler_s<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">int</span> r <span class="sy1">=</span> memset_s<span class="br0">(</span>str, <span class="kw4">sizeof</span> str, <span class="st0">'b'</span>, <span class="nu0">5</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"str = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, str, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"str = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, str, r<span class="br0">)</span><span class="sy4">;</span>
     r <span class="sy1">=</span> memset_s<span class="br0">(</span>str, <span class="nu0">5</span>, <span class="st0">'c'</span>, <span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// count is greater than destsz  </span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"str = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, str, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"str = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, str, r<span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -339,13 +339,13 @@ str = "ccccchghghghghghghghgh", r = 22</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one buffer to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memcpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../wide/wmemset.html" title="c/string/wide/wmemset"> <span class="t-lines"><span>wmemset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../wide/wmemset.htm" title="c/string/wide/wmemset"> <span class="t-lines"><span>wmemset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   copies the given wide character to every position in a wide character array <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wmemset&amp;action=edit">[edit]</a></span>
 </td></tr>

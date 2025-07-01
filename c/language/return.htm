@@ -188,12 +188,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="return.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="return.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="return.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="return.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="return.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="return.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./return.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./return.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./return.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./return.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./return.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./return.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/return&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -243,12 +243,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>return</code> statement
+<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>return</code> statement
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/return&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Evaluates the <span class="t-spar">expression</span>, terminates the current function and returns the result of the <span class="t-spar">expression</span> to the caller (the value returned becomes the value of the function call expression). Only valid if the function return type is not <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Terminates the current function. Only valid if the function return type is <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>.</div>
-<p>If the type of the <span class="t-spar">expression</span> is different from the return type of the function, its value is <a href="conversion.htm" title="c/language/conversion">converted</a> as if by assignment to an object whose type is the return type of the function, except that overlap between object representations is permitted:
+<p>If the type of the <span class="t-spar">expression</span> is different from the return type of the function, its value is <a href="./conversion.htm" title="c/language/conversion">converted</a> as if by assignment to an object whose type is the return type of the function, except that overlap between object representations is permitted:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> s <span class="br0">{</span> <span class="kw4">double</span> i<span class="sy4">;</span> <span class="br0">}</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// function returning struct s</span>
 <span class="kw1">union</span> <span class="br0">{</span> <span class="kw1">struct</span> <span class="br0">{</span> <span class="kw4">int</span> f1<span class="sy4">;</span> <span class="kw1">struct</span> s f2<span class="sy4">;</span> <span class="br0">}</span> u1<span class="sy4">;</span>
@@ -262,18 +262,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co1">// g.u2.f3 = g.u1.f2; // undefined behavior (overlap in assignment)</span>
    g.<span class="me1">u2</span>.<span class="me1">f3</span> <span class="sy1">=</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>     <span class="co1">// well-defined</span>
 <span class="br0">}</span></pre></div></div>
-<p>If the return type is a real floating type, the result may be represented in <a href="../types/limits/FLT_EVAL_METHOD.html" title="c/types/limits/FLT EVAL METHOD">greater range and precision</a> than implied by the new type.
-</p><p>Reaching the end of a function returning <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">return</span><span class="sy4">;</span></span></span>. Reaching the end of any other value-returning function is undefined behavior if the result of the function is used in an expression (it is allowed to discard such return value). For <code>main</code>, see <a href="main_function.htm" title="c/language/main function"><code>main</code> function</a>.
+<p>If the return type is a real floating type, the result may be represented in <a href="../types/limits/FLT_EVAL_METHOD.htm" title="c/types/limits/FLT EVAL METHOD">greater range and precision</a> than implied by the new type.
+</p><p>Reaching the end of a function returning <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">return</span><span class="sy4">;</span></span></span>. Reaching the end of any other value-returning function is undefined behavior if the result of the function is used in an expression (it is allowed to discard such return value). For <code>main</code>, see <a href="./main_function.htm" title="c/language/main function"><code>main</code> function</a>.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
-<p>Executing the <code>return</code> statement in a <a href="noreturn.htm" title="c/language/ Noreturn">no-return function</a> is undefined behavior.
+<p>Executing the <code>return</code> statement in a <a href="./noreturn.htm" title="c/language/ Noreturn">no-return function</a> is undefined behavior.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/return&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/return.html" title="c/keyword/return"><tt>return</tt></a>
+<p><a href="../keyword/return.htm" title="c/keyword/return"><tt>return</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/return&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: improve </td></tr></tbody></table>
@@ -284,14 +284,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw1">if</span> <span class="br0">(</span>i <span class="sy1">==</span> <span class="nu0">2</span><span class="br0">)</span>
        <span class="kw1">return</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"fa():  &nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"fa():  &nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span> <span class="co1">// implied return;</span>
 &nbsp;
 <span class="kw4">int</span> fb<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">if</span> <span class="br0">(</span>i <span class="sy1">&gt;</span> <span class="nu0">4</span><span class="br0">)</span>
        <span class="kw1">return</span> <span class="nu0">4</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"fb():  &nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"fb():  &nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="nu0">2</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
@@ -301,7 +301,7 @@ html { font-variant-ligatures: no-common-ligatures; }
     fa<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">int</span> i <span class="sy1">=</span> fb<span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// the return value 4 used to initializes i</span>
     i <span class="sy1">=</span> fb<span class="br0">(</span>i<span class="br0">)</span><span class="sy4">;</span>       <span class="co1">// the return value 2 used as rhs of assignment</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"main():&nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"main():&nbsp;%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

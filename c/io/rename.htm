@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -203,12 +203,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="rename.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="rename.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="rename.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="rename.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="rename.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="rename.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./rename.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./rename.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./rename.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./rename.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./rename.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./rename.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/rename&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -242,32 +242,32 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"from.txt"</span>, <span class="st0">"w"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// create file "from.txt"</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"from.txt"</span>, <span class="st0">"w"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// create file "from.txt"</span>
     <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>fp<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"from.txt"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"from.txt"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="putc.htm"><span class="kw830">fputc</span></a><span class="br0">(</span><span class="st0">'a'</span>, fp<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// write to "from.txt"</span>
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./putc.htm"><span class="kw830">fputc</span></a><span class="br0">(</span><span class="st0">'a'</span>, fp<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// write to "from.txt"</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">int</span> rc <span class="sy1">=</span> rename<span class="br0">(</span><span class="st0">"from.txt"</span>, <span class="st0">"to.txt"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>rc<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"rename"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"rename"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    fp <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"to.txt"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
+    fp <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"to.txt"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span><span class="br0">(</span><span class="sy3">!</span>fp<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"to.txt"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"to.txt"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%c<span class="es1">\n</span>"</span>, <a href="fgetc.htm"><span class="kw827">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// read from "to.txt"</span>
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%c<span class="es1">\n</span>"</span>, <a href="./fgetc.htm"><span class="kw827">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// read from "to.txt"</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
+    <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -313,7 +313,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="remove.htm" title="c/io/remove"> <span class="t-lines"><span>remove</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./remove.htm" title="c/io/remove"> <span class="t-lines"><span>remove</span></span></a></div></div>
 </td>
 <td>   erases a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_remove&amp;action=edit">[edit]</a></span>
 </td></tr>

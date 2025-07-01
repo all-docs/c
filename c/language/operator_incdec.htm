@@ -251,10 +251,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></tbody></table>
-<p>The operand <span class="t-spar">expr</span> of both prefix and postfix increment or decrement must be a <a href="value_category.htm" title="c/language/value category">modifiable lvalue</a> of <a href="compatible_type.htm" title="c/language/type">integer type</a> (including <code>_Bool</code> and enums), real floating type, or a pointer type. It may be cvr-qualified, unqualified, or <a href="atomic.htm" title="c/language/atomic">atomic</a>.
+<p>The operand <span class="t-spar">expr</span> of both prefix and postfix increment or decrement must be a <a href="./value_category.htm" title="c/language/value category">modifiable lvalue</a> of <a href="./compatible_type.htm" title="c/language/type">integer type</a> (including <code>_Bool</code> and enums), real floating type, or a pointer type. It may be cvr-qualified, unqualified, or <a href="./atomic.htm" title="c/language/atomic">atomic</a>.
 </p><p>The result of the postfix increment and decrement operators is the value of <span class="t-spar">expr</span>.
 </p><p>The result of the prefix increment operator is the result of adding the value <code>1</code> to the value of <span class="t-spar">expr</span>: the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">++</span>e</span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c">e <span class="sy2">+</span><span class="sy1">=</span> <span class="nu0">1</span></span></span>. The result of the prefix decrement operator is the result of subtracting the value <code>1</code> from the value of <span class="t-spar">expr</span>: the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">--</span>e</span></span> is equivalent to <span class="t-c"><span class="mw-geshi c source-c">e <span class="sy2">-</span><span class="sy1">=</span> <span class="nu0">1</span></span></span>.
-</p><p>Increment operators initiate the side-effect of adding the value <code>1</code> of appropriate type to the operand. Decrement operators initiate the side-effect of subtracting the value <code>1</code> of appropriate type from the operand. As with any other side-effects, these operations complete at or before the next <a href="eval_order.htm" title="c/language/eval order">sequence point</a>.
+</p><p>Increment operators initiate the side-effect of adding the value <code>1</code> of appropriate type to the operand. Decrement operators initiate the side-effect of subtracting the value <code>1</code> of appropriate type from the operand. As with any other side-effects, these operations complete at or before the next <a href="./eval_order.htm" title="c/language/eval order">sequence point</a>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 <span class="kw4">int</span> b <span class="sy1">=</span> a<span class="sy2">++</span><span class="sy4">;</span> <span class="co1">// stores 1+a (which is 2) to a</span>
@@ -266,23 +266,23 @@ a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span
              <span class="co1">// after this line, c == 2 and a == 2</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
-<p>Post-increment or post-decrement on any <a href="atomic.htm" title="c/language/atomic">atomic variable</a> is an atomic read-modify-write operation with memory order <span class="t-lc"><a href="../atomic/memory_order.html" title="c/atomic/memory order">memory_order_seq_cst</a></span>.
+<p>Post-increment or post-decrement on any <a href="./atomic.htm" title="c/language/atomic">atomic variable</a> is an atomic read-modify-write operation with memory order <span class="t-lc"><a href="../atomic/memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
 </tbody></table>
-<p>See <a href="operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic operators</a> for limitations on pointer arithmetic, as well as for implicit conversions applied to the operands.
+<p>See <a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic operators</a> for limitations on pointer arithmetic, as well as for implicit conversions applied to the operands.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="operator_incdec.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="operator_incdec.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="operator_incdec.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="operator_incdec.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./operator_incdec.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./operator_incdec.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./operator_incdec.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./operator_incdec.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_incdec&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Because of the side-effects involved, increment and decrement operators must be used with care to avoid undefined behavior due to violations of <a href="eval_order.htm" title="c/language/eval order">sequencing rules</a>.
+<p>Because of the side-effects involved, increment and decrement operators must be used with care to avoid undefined behavior due to violations of <a href="./eval_order.htm" title="c/language/eval order">sequencing rules</a>.
 </p><p>Increment/decrement operators are not defined for complex or imaginary types: the usual definition of adding/subtracting the real number 1 would have no effect on imaginary types, and making it add/subtract <code>i</code> for imaginaries but <code>1</code> for complex numbers would have made it handle <code>0+yi</code> different from <code>yi</code>.
 </p><p>Unlike C++ (and some implementations of C), the increment/decrement expressions are never themselves lvalues: <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">&amp;</span><span class="sy2">++</span>a</span></span> is invalid.
 </p>
@@ -296,18 +296,18 @@ a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span
     <span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
     <span class="kw4">int</span> b <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"original values: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"result of postfix operators: a++ ==&nbsp;%d, b-- ==&nbsp;%d<span class="es1">\n</span>"</span>, a<span class="sy2">++</span>, b<span class="sy2">--</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"after postfix operators applied: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"original values: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"result of postfix operators: a++ ==&nbsp;%d, b-- ==&nbsp;%d<span class="es1">\n</span>"</span>, a<span class="sy2">++</span>, b<span class="sy2">--</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"after postfix operators applied: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// Reset a and b.</span>
     a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
     b <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"original values: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"result of prefix operators: ++a ==&nbsp;%d, --b ==&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">++</span>a, <span class="sy2">--</span>b<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"after prefix operators applied: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"original values: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"result of prefix operators: ++a ==&nbsp;%d, --b ==&nbsp;%d<span class="es1">\n</span>"</span>, <span class="sy2">++</span>a, <span class="sy2">--</span>b<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"after prefix operators applied: a ==&nbsp;%d, b ==&nbsp;%d<span class="es1">\n</span>"</span>, a, b<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -371,7 +371,7 @@ after prefix operators applied: a == 2, b == 0</pre></div></div>
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_incdec&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
-<p><a href="operator_precedence.htm" title="c/language/operator precedence">Operator precedence</a>
+<p><a href="./operator_precedence.htm" title="c/language/operator precedence">Operator precedence</a>
 </p>
 <table class="wikitable">
 
@@ -379,19 +379,19 @@ after prefix operators applied: a == 2, b == 0</pre></div></div>
 <th colspan="7">Common operators
 </th></tr>
 <tr style="text-align:center">
-<td><a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>
+<td><a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>
 </td>
 <td><strong class="selflink">increment<br>decrement</strong>
 </td>
-<td><a href="operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
+<td><a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
 </td>
-<td><a href="operator_logical.htm" title="c/language/operator logical">logical</a>
+<td><a href="./operator_logical.htm" title="c/language/operator logical">logical</a>
 </td>
-<td><a href="operator_comparison.htm" title="c/language/operator comparison">comparison</a>
+<td><a href="./operator_comparison.htm" title="c/language/operator comparison">comparison</a>
 </td>
-<td><a href="operator_member_access.htm" title="c/language/operator member access">member<br>access</a>
+<td><a href="./operator_member_access.htm" title="c/language/operator member access">member<br>access</a>
 </td>
-<td><a href="operator_other.htm" title="c/language/operator other">other</a>
+<td><a href="./operator_other.htm" title="c/language/operator other">other</a>
 </td></tr>
 <tr style="text-align:center">
 <td>

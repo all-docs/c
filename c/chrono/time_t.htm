@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/time.html" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/time.htm" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -203,10 +203,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="time_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="time_t.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="time_t.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="time_t.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./time_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./time_t.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./time_t.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./time_t.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/chrono/time_t&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
@@ -221,8 +221,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     time_t epoch <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%jd seconds since the epoch began<span class="es1">\n</span>"</span>, <span class="br0">(</span><a href="../types/integer.html"><span class="kw118">intmax_t</span></a><span class="br0">)</span>epoch<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s"</span>, <a href="asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="gmtime.htm"><span class="kw519">gmtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>epoch<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%jd seconds since the epoch began<span class="es1">\n</span>"</span>, <span class="br0">(</span><a href="../types/integer.htm"><span class="kw118">intmax_t</span></a><span class="br0">)</span>epoch<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s"</span>, <a href="./asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="./gmtime.htm"><span class="kw519">gmtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>epoch<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -262,19 +262,19 @@ Thu Jan  1 00:00:00 1970</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="time.htm" title="c/chrono/time"> <span class="t-lines"><span>time</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./time.htm" title="c/chrono/time"> <span class="t-lines"><span>time</span></span></a></div></div>
 </td>
 <td>   returns the current calendar time of the system as time since epoch <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_time&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="localtime.htm" title="c/chrono/localtime"> <span class="t-lines"><span>localtime</span><span>localtime_r</span><span>localtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./localtime.htm" title="c/chrono/localtime"> <span class="t-lines"><span>localtime</span><span>localtime_r</span><span>localtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts time since epoch to calendar time expressed as local time <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_localtime&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="gmtime.htm" title="c/chrono/gmtime"> <span class="t-lines"><span>gmtime</span><span>gmtime_r</span><span>gmtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./gmtime.htm" title="c/chrono/gmtime"> <span class="t-lines"><span>gmtime</span><span>gmtime_r</span><span>gmtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts time since epoch to calendar time expressed as Coordinated Universal Time (UTC) <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_gmtime&amp;action=edit">[edit]</a></span>
 </td></tr>

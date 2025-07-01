@@ -162,14 +162,14 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> mbrtoc8<span class="br0">(</span> char8_t<span class="sy2">*</span> <span class="kw4">restrict</span> pc8, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="mbstate_t.htm"><span class="kw592">mbstate_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> ps <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> mbrtoc8<span class="br0">(</span> char8_t<span class="sy2">*</span> <span class="kw4">restrict</span> pc8, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="./mbstate_t.htm"><span class="kw592">mbstate_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> ps <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
@@ -184,11 +184,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="mbrtoc8.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="mbrtoc8.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="mbrtoc8.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="mbrtoc8.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="mbrtoc8.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./mbrtoc8.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./mbrtoc8.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./mbrtoc8.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./mbrtoc8.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./mbrtoc8.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mbrtoc8&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -228,9 +228,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <ul><li> <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> if the character converted from <span class="t-c"><span class="mw-geshi c source-c">s</span></span> (and stored in <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span> if non-null) was the null character.
 </li><li> The number of bytes <span style="display: inline-block;"><code>[</code><span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span><code>,&nbsp;</code><span class="t-c"><span class="mw-geshi c source-c">n</span></span><code>]</code></span> of the multibyte character successfully converted from <span class="t-c"><span class="mw-geshi c source-c">s</span></span>.
-</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">3</span></span></span> if the next UTF-8 code unit from a character whose encoding consists of multiple code units has now been written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>. No bytes are processed from the input in this case.
-</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">2</span></span></span> if the next <span class="t-c"><span class="mw-geshi c source-c">n</span></span> bytes constitute an incomplete, but so far valid, multibyte character. Nothing is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>.
-</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span> if encoding error occurs. Nothing is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>, the value <span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">EILSEQ</a></span> is stored in <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span> and the value of <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> is unspecified.
+</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">3</span></span></span> if the next UTF-8 code unit from a character whose encoding consists of multiple code units has now been written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>. No bytes are processed from the input in this case.
+</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">2</span></span></span> if the next <span class="t-c"><span class="mw-geshi c source-c">n</span></span> bytes constitute an incomplete, but so far valid, multibyte character. Nothing is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>.
+</li><li> <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a><span class="br0">)</span><span class="sy2">-</span><span class="nu0">1</span></span></span> if encoding error occurs. Nothing is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>pc8</span></span>, the value <span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">EILSEQ</a></span> is stored in <span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span> and the value of <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ps</span></span> is unspecified.
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte/mbrtoc8&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>
@@ -246,7 +246,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="c8rtomb.htm" title="c/string/multibyte/c8rtomb"> <span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./c8rtomb.htm" title="c/string/multibyte/c8rtomb"> <span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td>   converts UTF-8 string to narrow multibyte encoding  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_c8rtomb&amp;action=edit">[edit]</a></span>
 </td></tr>

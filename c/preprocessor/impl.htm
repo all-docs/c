@@ -164,18 +164,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="impl.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="impl.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="impl.htm#Standard_pragmas"><span class="tocnumber">3</span> <span class="toctext">Standard pragmas</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="impl.htm#Non-standard_pragmas"><span class="tocnumber">4</span> <span class="toctext">Non-standard pragmas</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./impl.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./impl.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./impl.htm#Standard_pragmas"><span class="tocnumber">3</span> <span class="toctext">Standard pragmas</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./impl.htm#Non-standard_pragmas"><span class="tocnumber">4</span> <span class="toctext">Non-standard pragmas</span></a>
 <ul>
-<li class="toclevel-2 tocsection-5"><a href="impl.htm#.23pragma_once"><span class="tocnumber">4.1</span> <span class="toctext"><span><span>#pragma once</span></span></span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="impl.htm#.23pragma_pack"><span class="tocnumber">4.2</span> <span class="toctext"><span><span>#pragma pack</span></span></span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="./impl.htm#.23pragma_once"><span class="tocnumber">4.1</span> <span class="toctext"><span><span>#pragma once</span></span></span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="./impl.htm#.23pragma_pack"><span class="tocnumber">4.2</span> <span class="toctext"><span><span>#pragma pack</span></span></span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-7"><a href="impl.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="impl.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="impl.htm#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./impl.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./impl.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="./impl.htm#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/impl&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -211,7 +211,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Behaves in an implementation-defined manner (unless <span class="t-spar">pragma_params</span> is one of the standard pragmas shown below).</div>
-<div class="t-li1"><span class="t-li">2)</span> Removes the encoding prefix (if any), the outer quotes, and leading/trailing whitespace from <span class="t-spar">string-literal</span>, replaces each <code>\"</code> with <code>"</code> and each <code>\\</code> with <code>\</code>, then tokenizes the result (as in <a href="../language/translation_phases.html" title="c/language/translation phases">translation stage 3</a>), and then uses the result as if the input to <code>#pragma</code> in <span class="t-v">(1)</span>.</div>
+<div class="t-li1"><span class="t-li">2)</span> Removes the encoding prefix (if any), the outer quotes, and leading/trailing whitespace from <span class="t-spar">string-literal</span>, replaces each <code>\"</code> with <code>"</code> and each <code>\\</code> with <code>\</code>, then tokenizes the result (as in <a href="../language/translation_phases.htm" title="c/language/translation phases">translation stage 3</a>), and then uses the result as if the input to <code>#pragma</code> in <span class="t-v">(1)</span>.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/impl&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The pragma directive controls implementation-specific behavior of the compiler, such as disabling compiler warnings or changing alignment requirements. Any pragma that is not recognized is ignored.
 </p>
@@ -264,7 +264,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <p>where <span class="t-spar">arg</span> is either <code><b>ON</b></code> or <code><b>OFF</b></code> or <code><b>DEFAULT</b></code>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> If set to <code><b>ON</b></code>, informs the compiler that the program will access or modify <a href="../numeric/fenv.html" title="c/numeric/fenv">floating-point environment</a>, which means that optimizations that could subvert flag tests and mode changes (e.g., global common subexpression elimination, code motion, and constant folding) are prohibited. The default value is implementation-defined, usually <code><b>OFF</b></code>.</div>
+<div class="t-li1"><span class="t-li">1)</span> If set to <code><b>ON</b></code>, informs the compiler that the program will access or modify <a href="../numeric/fenv.htm" title="c/numeric/fenv">floating-point environment</a>, which means that optimizations that could subvert flag tests and mode changes (e.g., global common subexpression elimination, code motion, and constant folding) are prohibited. The default value is implementation-defined, usually <code><b>OFF</b></code>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Allows <i>contracting</i> of floating-point expressions, that is optimizations that omit rounding errors and floating-point exceptions that would be observed if the expression was evaluated exactly as written. For example, allows the implementation of <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>x <span class="sy2">*</span> y<span class="br0">)</span> <span class="sy2">+</span> z</span></span> with a single fused multiply-add CPU instruction. The default value is implementation-defined, usually <code><b>ON</b></code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Informs the compiler that multiplication, division, and absolute value of complex numbers may use simplified mathematical formulas <span class="texhtml" style="white-space: nowrap;">(x+iy)×(u+iv) = (xu-yv)+i(yu+xv)</span>, <span class="texhtml" style="white-space: nowrap;">(x+iy)/(u+iv) = [(xu+yv)+i(yu-xv)]/(u<span class="t-su">2<br></span>+v<span class="t-su">2<br></span>)</span>, and <span class="texhtml" style="white-space: nowrap;">|x+iy| = <span class="t-mrad"><span>√</span><span>x<span class="t-su">2<br></span>+y<span class="t-su">2<br></span></span></span></span>, despite the possibility of intermediate overflow. In other words, the programmer guarantees that the range of the values that will be passed to those function is limited. The default value is <code><b>OFF</b></code>.</div>
 <p>Note: compilers that do not support these pragmas may provide equivalent compile-time options, such as gcc's <code>-fcx-limited-range</code> and <code>-ffp-contract</code>.

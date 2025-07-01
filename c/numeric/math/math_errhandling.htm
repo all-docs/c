@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -209,7 +209,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>The macro constant <code>math_errhandling</code> expands to an expression of type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span> that is either equal to <code>MATH_ERRNO</code>, or equal to <code>MATH_ERREXCEPT</code>, or equal to their bitwise OR (<span class="t-c"><span class="mw-geshi c source-c">MATH_ERRNO <span class="sy3">|</span> MATH_ERREXCEPT</span></span>).
-</p><p>The value of <code>math_errhandling</code> indicates the type of error handling that is performed by the floating-point operators and <a href="../math.html" title="c/numeric/math">functions</a>:
+</p><p>The value of <code>math_errhandling</code> indicates the type of error handling that is performed by the floating-point operators and <a href="../math.htm" title="c/numeric/math">functions</a>:
 </p>
 <table class="t-dsc-begin">
 
@@ -223,14 +223,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td>  <code>MATH_ERREXCEPT</code>
 </td>
-<td>  indicates that floating-point exceptions are used: at least <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span>, <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>, and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span> are defined in <code>&lt;fenv.h&gt;</code>.
+<td>  indicates that floating-point exceptions are used: at least <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span>, <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>, and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span> are defined in <code>&lt;fenv.h&gt;</code>.
 </td></tr>
 
 
 <tr class="t-dsc">
 <td>  <code>MATH_ERRNO</code>
 </td>
-<td>  indicates that floating-point operations use the variable <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span> to report errors.
+<td>  indicates that floating-point operations use the variable <span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span> to report errors.
 </td></tr>
 
 </tbody></table>
@@ -249,44 +249,44 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr>
 <td>Domain error
 </td>
-<td>the argument is outside the range in which the operation is mathematically defined (the description of <a href="../math.html" title="c/numeric/math">each function</a> lists the required domain errors)
+<td>the argument is outside the range in which the operation is mathematically defined (the description of <a href="../math.htm" title="c/numeric/math">each function</a> lists the required domain errors)
 </td>
-<td><span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">EDOM</a></span>
+<td><span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">EDOM</a></span>
 </td>
-<td><span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>
+<td><span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>
 </td>
-<td><span class="t-c"><span class="mw-geshi c source-c"><a href="acos.htm"><span class="kw673">acos</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span></span></span>
+<td><span class="t-c"><span class="mw-geshi c source-c"><a href="./acos.htm"><span class="kw673">acos</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span></span></span>
 </td></tr>
 <tr>
 <td>Pole error
 </td>
 <td>the mathematical result of the function is exactly infinite or undefined
 </td>
-<td><span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">ERANGE</a></span>
+<td><span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">ERANGE</a></span>
 </td>
-<td><span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span>
+<td><span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span>
 </td>
-<td><span class="t-c"><span class="mw-geshi c source-c"><a href="log.htm"><span class="kw660">log</span></a><span class="br0">(</span><span class="nu16">0.0</span><span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span></span></span>
+<td><span class="t-c"><span class="mw-geshi c source-c"><a href="./log.htm"><span class="kw660">log</span></a><span class="br0">(</span><span class="nu16">0.0</span><span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">0.0</span></span></span>
 </td></tr>
 <tr>
 <td>Range error due to overflow
 </td>
 <td>the mathematical result is finite, but becomes infinite after rounding, or becomes the largest representable finite value after rounding down
 </td>
-<td><span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">ERANGE</a></span>
+<td><span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">ERANGE</a></span>
 </td>
-<td><span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span>
+<td><span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span>
 </td>
-<td><span class="t-c"><span class="mw-geshi c source-c"><a href="pow.htm"><span class="kw668">pow</span></a><span class="br0">(</span><a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a>,<span class="nu0">2</span><span class="br0">)</span></span></span>
+<td><span class="t-c"><span class="mw-geshi c source-c"><a href="./pow.htm"><span class="kw668">pow</span></a><span class="br0">(</span><a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a>,<span class="nu0">2</span><span class="br0">)</span></span></span>
 </td></tr>
 <tr>
 <td>Range error due to underflow
 </td>
 <td>the result is non-zero, but becomes zero after rounding, or becomes subnormal with a loss of precision
 </td>
-<td><span class="t-lc"><a href="../../error/errno_macros.html" title="c/error/errno macros">ERANGE</a></span> or unchanged (implementation-defined)
+<td><span class="t-lc"><a href="../../error/errno_macros.htm" title="c/error/errno macros">ERANGE</a></span> or unchanged (implementation-defined)
 </td>
-<td><span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_UNDERFLOW</a></span> or nothing (implementation-defined)
+<td><span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_UNDERFLOW</a></span> or nothing (implementation-defined)
 </td>
 <td><span class="t-c"><span class="mw-geshi c source-c">DBL_TRUE_MIN<span class="sy2">/</span><span class="nu0">2</span></span></span>
 </td></tr>
@@ -297,21 +297,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td>unchanged
 </td>
-<td><span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> or nothing (unspecified)
+<td><span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> or nothing (unspecified)
 </td>
-<td><span class="t-c"><span class="mw-geshi c source-c"><a href="sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span></span></span>
+<td><span class="t-c"><span class="mw-geshi c source-c"><a href="./sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">1.0</span><span class="sy2">/</span><span class="nu16">10.0</span></span></span>
 </td></tr></tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="math_errhandling.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="math_errhandling.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="math_errhandling.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="math_errhandling.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./math_errhandling.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./math_errhandling.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./math_errhandling.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./math_errhandling.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/math_errhandling&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Whether <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> is raised by the mathematical library functions is unspecified in general, but may be explicitly specified in the description of the function (e.g. <span class="t-lc"><a href="rint.htm" title="c/numeric/math/rint">rint</a></span> vs <span class="t-lc"><a href="nearbyint.htm" title="c/numeric/math/nearbyint">nearbyint</a></span>).
-</p><p>Before C99, floating-point exceptions were not specified, <span class="t-c"><span class="mw-geshi c source-c"><a href="../../error/errno_macros.html"><span class="kw426">EDOM</span></a></span></span> was required for any domain error, <span class="t-c"><span class="mw-geshi c source-c"><a href="../../error/errno_macros.html"><span class="kw478">ERANGE</span></a></span></span> was required for overflows and implementation-defined for underflows.
+<p>Whether <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> is raised by the mathematical library functions is unspecified in general, but may be explicitly specified in the description of the function (e.g. <span class="t-lc"><a href="./rint.htm" title="c/numeric/math/rint">rint</a></span> vs <span class="t-lc"><a href="./nearbyint.htm" title="c/numeric/math/nearbyint">nearbyint</a></span>).
+</p><p>Before C99, floating-point exceptions were not specified, <span class="t-c"><span class="mw-geshi c source-c"><a href="../../error/errno_macros.htm"><span class="kw426">EDOM</span></a></span></span> was required for any domain error, <span class="t-c"><span class="mw-geshi c source-c"><a href="../../error/errno_macros.htm"><span class="kw478">ERANGE</span></a></span></span> was required for overflows and implementation-defined for underflows.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/math_errhandling&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -322,16 +322,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#pragma STDC FENV_ACCESS ON</span>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERRNO is&nbsp;%s<span class="es1">\n</span>"</span>, math_errhandling <span class="sy3">&amp;</span> MATH_ERRNO <span class="sy4">?</span> <span class="st0">"set"</span> <span class="sy4">:</span> <span class="st0">"not set"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERREXCEPT is&nbsp;%s<span class="es1">\n</span>"</span>,
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERRNO is&nbsp;%s<span class="es1">\n</span>"</span>, math_errhandling <span class="sy3">&amp;</span> MATH_ERRNO <span class="sy4">?</span> <span class="st0">"set"</span> <span class="sy4">:</span> <span class="st0">"not set"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"MATH_ERREXCEPT is&nbsp;%s<span class="es1">\n</span>"</span>,
            math_errhandling <span class="sy3">&amp;</span> MATH_ERREXCEPT <span class="sy4">?</span> <span class="st0">"set"</span> <span class="sy4">:</span> <span class="st0">"not set"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../fenv/feclearexcept.html"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw729">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../fenv/feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw729">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw2">errno</span> <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"log(0) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="log.htm"><span class="kw660">log</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.html"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
-        <a href="../../io/perror.html"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw730">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"FE_DIVBYZERO (pole error) reported"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"log(0) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="./log.htm"><span class="kw660">log</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><span class="kw2">errno</span> <span class="sy1">==</span> <a href="../../error/errno_macros.htm"><span class="kw478">ERANGE</span></a><span class="br0">)</span>
+        <a href="../../io/perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"errno == ERANGE"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw730">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"FE_DIVBYZERO (pole error) reported"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -376,13 +376,13 @@ FE_DIVBYZERO (pole error) reported</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions"> <span class="t-lines"><span>FE_ALL_EXCEPT</span><span>FE_DIVBYZERO</span><span>FE_INEXACT</span><span>FE_INVALID</span><span>FE_OVERFLOW</span><span>FE_UNDERFLOW</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions"> <span class="t-lines"><span>FE_ALL_EXCEPT</span><span>FE_DIVBYZERO</span><span>FE_INEXACT</span><span>FE_INVALID</span><span>FE_OVERFLOW</span><span>FE_UNDERFLOW</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   floating-point exceptions  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_FE_exceptions&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../error/errno.html" title="c/error/errno"> <span class="t-lines"><span>errno</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../error/errno.htm" title="c/error/errno"> <span class="t-lines"><span>errno</span></span></a></div></div>
 </td>
 <td>  macro which expands to POSIX-compatible thread-local error number variable<br><span class="t-mark">(macro variable)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/error/dsc_errno&amp;action=edit">[edit]</a></span>
 </td></tr>

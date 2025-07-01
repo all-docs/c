@@ -226,12 +226,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="operator_logical.htm#Logical_NOT"><span class="tocnumber">1</span> <span class="toctext">Logical NOT</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="operator_logical.htm#Logical_AND"><span class="tocnumber">2</span> <span class="toctext">Logical AND</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="operator_logical.htm#Logical_OR"><span class="tocnumber">3</span> <span class="toctext">Logical OR</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="operator_logical.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="operator_logical.htm#See_Also"><span class="tocnumber">5</span> <span class="toctext">See Also</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="operator_logical.htm#See_also_2"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./operator_logical.htm#Logical_NOT"><span class="tocnumber">1</span> <span class="toctext">Logical NOT</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./operator_logical.htm#Logical_AND"><span class="tocnumber">2</span> <span class="toctext">Logical AND</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./operator_logical.htm#Logical_OR"><span class="tocnumber">3</span> <span class="toctext">Logical OR</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./operator_logical.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./operator_logical.htm#See_Also"><span class="tocnumber">5</span> <span class="toctext">See Also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./operator_logical.htm#See_also_2"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_logical&amp;action=edit&amp;section=1" title="Edit section: Logical NOT">edit</a>]</span> <span class="mw-headline" id="Logical_NOT">Logical NOT</span></h3>
@@ -265,7 +265,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  an expression of any <a href="compatible_type.htm#Type_groups" title="c/language/type">scalar type</a>
+<td>  an expression of any <a href="./compatible_type.htm#Type_groups" title="c/language/type">scalar type</a>
 </td></tr></tbody></table>
 <p>The logical NOT operator has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span>. Its value is <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> if <span class="t-spar">expression</span> evaluates to a value that compares unequal to zero. Its value is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if <span class="t-spar">expression</span> evaluates to a value that compares equal to zero. (so <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">!</span>E</span></span> is the same as <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="nu0">0</span><span class="sy1">==</span>E<span class="br0">)</span></span></span>)
 </p>
@@ -276,13 +276,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     bool b <span class="sy1">=</span> <span class="sy3">!</span><span class="br0">(</span><span class="nu0">2</span><span class="sy2">+</span><span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// not true</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"!(2+2==4) =&nbsp;%s<span class="es1">\n</span>"</span>, b <span class="sy4">?</span> <span class="st0">"true"</span> <span class="sy4">:</span> <span class="st0">"false"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"!(2+2==4) =&nbsp;%s<span class="es1">\n</span>"</span>, b <span class="sy4">?</span> <span class="st0">"true"</span> <span class="sy4">:</span> <span class="st0">"false"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">int</span> n <span class="sy1">=</span> <a href="../string/byte/isspace.html"><span class="kw534">isspace</span></a><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// non-zero if 'a' is a space, zero otherwise</span>
+    <span class="kw4">int</span> n <span class="sy1">=</span> <a href="../string/byte/isspace.htm"><span class="kw534">isspace</span></a><span class="br0">(</span><span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// non-zero if 'a' is a space, zero otherwise</span>
     <span class="kw4">int</span> x <span class="sy1">=</span> <span class="sy3">!!</span>n<span class="sy4">;</span> <span class="co1">// "bang-bang", common C idiom for mapping integers to [0,1]</span>
                  <span class="co1">// (all non-zero values become 1)</span>
     <span class="kw4">char</span> <span class="sy2">*</span>a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="st0">"non-space"</span>, <span class="st0">"space"</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span>a<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// now x can be safely used as an index to array of 2 strings</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span>a<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// now x can be safely used as an index to array of 2 strings</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -330,7 +330,7 @@ non-space</pre></div></div>
 <td>  an expression of any scalar type, which is only evaluated if <span class="t-spar">lhs</span> does not compare equal to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>
 </td></tr></tbody></table>
 <p>The logical-AND operator has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span> and the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> compare unequal to zero. It has the value <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> otherwise (if either <span class="t-spar">lhs</span> or <span class="t-spar">rhs</span> or both compare equal to zero).
-</p><p>There is a <a href="eval_order.htm" title="c/language/eval order">sequence point</a> after the evaluation of <span class="t-spar">lhs</span>. If the result of <span class="t-spar">lhs</span> compares equal to zero, then <span class="t-spar">rhs</span> is not evaluated at all (so-called <i>short-circuit evaluation</i>)
+</p><p>There is a <a href="./eval_order.htm" title="c/language/eval order">sequence point</a> after the evaluation of <span class="t-spar">lhs</span>. If the result of <span class="t-spar">lhs</span> compares equal to zero, then <span class="t-spar">rhs</span> is not evaluated at all (so-called <i>short-circuit evaluation</i>)
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdbool.h&gt;</span>
@@ -339,7 +339,7 @@ non-space</pre></div></div>
 <span class="br0">{</span>
     bool b <span class="sy1">=</span> <span class="nu0">2</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy1">==</span><span class="nu0">4</span> <span class="sy3">&amp;&amp;</span> <span class="nu0">2</span><span class="sy2">*</span><span class="nu0">2</span><span class="sy1">==</span><span class="nu0">4</span><span class="sy4">;</span> <span class="co1">// b == true</span>
 &nbsp;
-    <span class="nu0">1</span> <span class="sy1">&gt;</span> <span class="nu0">2</span> <span class="sy3">&amp;&amp;</span> <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this won't print"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="nu0">1</span> <span class="sy1">&gt;</span> <span class="nu0">2</span> <span class="sy3">&amp;&amp;</span> <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"this won't print"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">char</span> <span class="sy2">*</span>p <span class="sy1">=</span> <span class="st0">"abc"</span><span class="sy4">;</span>
     <span class="kw1">if</span><span class="br0">(</span>p <span class="sy3">&amp;&amp;</span> <span class="sy2">*</span>p<span class="br0">)</span> <span class="co1">// common C idiom: if p is not null</span>
@@ -391,7 +391,7 @@ non-space</pre></div></div>
 <td>  an expression of any scalar type, which is only evaluated if <span class="t-spar">lhs</span> compares equal to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>
 </td></tr></tbody></table>
 <p>The logical-OR operator has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span> and the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if either <span class="t-spar">lhs</span> or <span class="t-spar">rhs</span> compare unequal to zero. It has value <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> otherwise (if both <span class="t-spar">lhs</span> and <span class="t-spar">rhs</span> compare equal to zero).
-</p><p>There is a <a href="eval_order.htm" title="c/language/eval order">sequence point</a> after the evaluation of <span class="t-spar">lhs</span>. If the result of <span class="t-spar">lhs</span> compares unequal to zero, then <span class="t-spar">rhs</span> is not evaluated at all (so-called <i>short-circuit evaluation</i>)
+</p><p>There is a <a href="./eval_order.htm" title="c/language/eval order">sequence point</a> after the evaluation of <span class="t-spar">lhs</span>. If the result of <span class="t-spar">lhs</span> compares unequal to zero, then <span class="t-spar">rhs</span> is not evaluated at all (so-called <i>short-circuit evaluation</i>)
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdbool.h&gt;</span>
@@ -401,10 +401,10 @@ non-space</pre></div></div>
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     bool b <span class="sy1">=</span> <span class="nu0">2</span><span class="sy2">+</span><span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">4</span> <span class="sy3">||</span> <span class="nu0">2</span><span class="sy2">+</span><span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">5</span><span class="sy4">;</span> <span class="co1">// true</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"true or false =&nbsp;%s<span class="es1">\n</span>"</span>, b <span class="sy4">?</span> <span class="st0">"true"</span> <span class="sy4">:</span> <span class="st0">"false"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"true or false =&nbsp;%s<span class="es1">\n</span>"</span>, b <span class="sy4">?</span> <span class="st0">"true"</span> <span class="sy4">:</span> <span class="st0">"false"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// logical OR can be used simialar to perl's "or die", as long as rhs has scalar type</span>
-    <a href="../io/fopen.html"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"test.txt"</span>, <span class="st0">"r"</span><span class="br0">)</span> <span class="sy3">||</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"could not open test.txt:&nbsp;%s<span class="es1">\n</span>"</span>, <a href="../string/byte/strerror.html"><span class="kw574">strerror</span></a><span class="br0">(</span><span class="kw2">errno</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"test.txt"</span>, <span class="st0">"r"</span><span class="br0">)</span> <span class="sy3">||</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"could not open test.txt:&nbsp;%s<span class="es1">\n</span>"</span>, <a href="../string/byte/strerror.htm"><span class="kw574">strerror</span></a><span class="br0">(</span><span class="kw2">errno</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -450,7 +450,7 @@ could not open test.txt: No such file or directory</pre></div></div>
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/operator_logical&amp;action=edit&amp;section=5" title="Edit section: See Also">edit</a>]</span> <span class="mw-headline" id="See_Also">See Also</span></h3>
-<p><a href="operator_precedence.htm" title="c/language/operator precedence"> Operator precedence</a>
+<p><a href="./operator_precedence.htm" title="c/language/operator precedence"> Operator precedence</a>
 </p>
 <table class="wikitable">
 
@@ -458,19 +458,19 @@ could not open test.txt: No such file or directory</pre></div></div>
 <th colspan="7">Common operators
 </th></tr>
 <tr style="text-align:center">
-<td><a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>
+<td><a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>
 </td>
-<td><a href="operator_incdec.htm" title="c/language/operator incdec">increment<br>decrement</a>
+<td><a href="./operator_incdec.htm" title="c/language/operator incdec">increment<br>decrement</a>
 </td>
-<td><a href="operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
+<td><a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic</a>
 </td>
 <td><strong class="selflink">logical</strong>
 </td>
-<td><a href="operator_comparison.htm" title="c/language/operator comparison">comparison</a>
+<td><a href="./operator_comparison.htm" title="c/language/operator comparison">comparison</a>
 </td>
-<td><a href="operator_member_access.htm" title="c/language/operator member access">member<br>access</a>
+<td><a href="./operator_member_access.htm" title="c/language/operator member access">member<br>access</a>
 </td>
-<td><a href="operator_other.htm" title="c/language/operator other">other</a>
+<td><a href="./operator_other.htm" title="c/language/operator other">other</a>
 </td></tr>
 <tr style="text-align:center">
 <td>

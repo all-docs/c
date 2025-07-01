@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdbit.html" title="c/header/stdbit"><tt>&lt;stdbit.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdbit.htm" title="c/header/stdbit"><tt>&lt;stdbit.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -235,10 +235,10 @@ generic_return_type stdc_leading_zeros<span class="br0">(</span> generic_value_t
 The <code>generic_return_type</code> shall be a suitable large unsigned integer type capable of representing the computed result.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="stdc_leading_zeros.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="stdc_leading_zeros.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="stdc_leading_zeros.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="stdc_leading_zeros.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./stdc_leading_zeros.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./stdc_leading_zeros.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./stdc_leading_zeros.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./stdc_leading_zeros.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/bit/stdc_leading_zeros&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -274,28 +274,28 @@ const char* bin_##suffix(T x) \
     return buf; \
 }</span>
 &nbsp;
-bin_impl<span class="br0">(</span><a href="../../types/integer.html"><span class="kw120">uint8_t</span></a>, u8<span class="br0">)</span>
-bin_impl<span class="br0">(</span><a href="../../types/integer.html"><span class="kw121">uint16_t</span></a>, u16<span class="br0">)</span>
-bin_impl<span class="br0">(</span><a href="../../types/integer.html"><span class="kw122">uint32_t</span></a>, u32<span class="br0">)</span>
-bin_impl<span class="br0">(</span><a href="../../types/integer.html"><span class="kw123">uint64_t</span></a>, u64<span class="br0">)</span>
+bin_impl<span class="br0">(</span><a href="../../types/integer.htm"><span class="kw120">uint8_t</span></a>, u8<span class="br0">)</span>
+bin_impl<span class="br0">(</span><a href="../../types/integer.htm"><span class="kw121">uint16_t</span></a>, u16<span class="br0">)</span>
+bin_impl<span class="br0">(</span><a href="../../types/integer.htm"><span class="kw122">uint32_t</span></a>, u32<span class="br0">)</span>
+bin_impl<span class="br0">(</span><a href="../../types/integer.htm"><span class="kw123">uint64_t</span></a>, u64<span class="br0">)</span>
 &nbsp;
 <span class="co2">#define bin(x) _Generic((x), \
     uint8_t: bin_u8, uint16_t: bin_u16, uint32_t: bin_u32, default: bin_u64)(x)</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"uint8_t:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/integer.html"><span class="kw120">uint8_t</span></a> x <span class="sy1">=</span> <span class="nu6">0b11000000</span><span class="sy4">;</span> <span class="sy4">;</span> x <span class="sy1">&gt;&gt;=</span> <span class="nu0">1</span><span class="br0">)</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"uint8_t:"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/integer.htm"><span class="kw120">uint8_t</span></a> x <span class="sy1">=</span> <span class="nu6">0b11000000</span><span class="sy4">;</span> <span class="sy4">;</span> x <span class="sy1">&gt;&gt;=</span> <span class="nu0">1</span><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"x = [%s], leading zeros:&nbsp;%d<span class="es1">\n</span>"</span>, bin<span class="br0">(</span>x<span class="br0">)</span>, stdc_leading_zeros<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"x = [%s], leading zeros:&nbsp;%d<span class="es1">\n</span>"</span>, bin<span class="br0">(</span>x<span class="br0">)</span>, stdc_leading_zeros<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
         <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>x<span class="br0">)</span>
             <span class="kw1">break</span><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"uint16_t:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/integer.html"><span class="kw121">uint16_t</span></a> x <span class="sy1">=</span> <span class="nu6">0b11000000</span><span class="sy4">;</span> <span class="sy4">;</span> x <span class="sy1">&gt;&gt;=</span> <span class="nu0">1</span><span class="br0">)</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"uint16_t:"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/integer.htm"><span class="kw121">uint16_t</span></a> x <span class="sy1">=</span> <span class="nu6">0b11000000</span><span class="sy4">;</span> <span class="sy4">;</span> x <span class="sy1">&gt;&gt;=</span> <span class="nu0">1</span><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"x = [%s], leading zeros:&nbsp;%d<span class="es1">\n</span>"</span>, bin<span class="br0">(</span>x<span class="br0">)</span>, stdc_leading_zeros<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"x = [%s], leading zeros:&nbsp;%d<span class="es1">\n</span>"</span>, bin<span class="br0">(</span>x<span class="br0">)</span>, stdc_leading_zeros<span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
         <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>x<span class="br0">)</span>
             <span class="kw1">break</span><span class="sy4">;</span>
     <span class="br0">}</span>

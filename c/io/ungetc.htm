@@ -186,34 +186,34 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> ungetc<span class="br0">(</span> <span class="kw4">int</span> ch, <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> ungetc<span class="br0">(</span> <span class="kw4">int</span> ch, <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>If <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> does not equal <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span>, pushes the character <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> (reinterpreted as <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>) into the input buffer associated with the stream <span class="t-c"><span class="mw-geshi c source-c">stream</span></span> in such a manner that subsequent read operation from <span class="t-c"><span class="mw-geshi c source-c">stream</span></span> will retrieve that character. The external device associated with the stream is not modified.
-</p><p>Stream repositioning operations <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span>, and <span class="t-lc"><a href="rewind.htm" title="c/io/rewind">rewind</a></span> discard the effects of <code>ungetc</code>.
+<p>If <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> does not equal <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span>, pushes the character <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> (reinterpreted as <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>) into the input buffer associated with the stream <span class="t-c"><span class="mw-geshi c source-c">stream</span></span> in such a manner that subsequent read operation from <span class="t-c"><span class="mw-geshi c source-c">stream</span></span> will retrieve that character. The external device associated with the stream is not modified.
+</p><p>Stream repositioning operations <span class="t-lc"><a href="./fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="./fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span>, and <span class="t-lc"><a href="./rewind.htm" title="c/io/rewind">rewind</a></span> discard the effects of <code>ungetc</code>.
 </p><p>If <code>ungetc</code> is called more than once without an intervening read or repositioning, it may fail (in other words, a pushback buffer of size 1 is guaranteed, but any larger buffer is implementation-defined). If multiple successful <code>ungetc</code> were performed, read operations retrieve the pushed-back characters in reverse order of <code>ungetc</code>.
-</p><p>If <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> equals <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span>, the operation fails and the stream is not affected.
-</p><p>A successful call to <code>ungetc</code> clears the end of file status flag <span class="t-lc"><a href="feof.htm" title="c/io/feof">feof</a></span>.
+</p><p>If <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> equals <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span>, the operation fails and the stream is not affected.
+</p><p>A successful call to <code>ungetc</code> clears the end of file status flag <span class="t-lc"><a href="./feof.htm" title="c/io/feof">feof</a></span>.
 </p><p>A successful call to <code>ungetc</code> on a binary stream decrements the stream position indicator by one (the behavior is indeterminate if the stream position indicator was zero).
 </p><p>A successful call to <code>ungetc</code> on a text stream modifies the stream position indicator in unspecified manner but guarantees that after all pushed-back characters are retrieved with a read operation, the stream position indicator is equal to its value before <code>ungetc</code>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="ungetc.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="ungetc.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="ungetc.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="ungetc.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="ungetc.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="ungetc.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./ungetc.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./ungetc.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./ungetc.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./ungetc.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./ungetc.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./ungetc.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/ungetc&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -236,18 +236,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/ungetc&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>On success <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> is returned.
-</p><p>On failure <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span> is returned and the given stream remains unchanged.
+</p><p>On failure <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span> is returned and the given stream remains unchanged.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/ungetc&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The size of the pushback buffer varies in practice from 4k (Linux, MacOS) to as little as 4 (Solaris) or the guaranteed minimum 1 (HPUX, AIX).
 </p><p>The apparent size of the pushback buffer may be larger if the character that is pushed back equals the character existing at that location in the external character sequence (the implementation may simply decrement the read file position indicator and avoid maintaining a pushback buffer).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/ungetc&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>Demonstrates the original purpose of <code>ungetc</code>: implementation of <span class="t-lc"><a href="fscanf.htm" title="c/io/fscanf">scanf</a></span></p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
+<div class="t-example"><p>Demonstrates the original purpose of <code>ungetc</code>: implementation of <span class="t-lc"><a href="./fscanf.htm" title="c/io/fscanf">scanf</a></span></p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;ctype.h&gt;</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
 &nbsp;
-<span class="kw4">void</span> demo_scanf<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> fmt, <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> s<span class="br0">)</span>
+<span class="kw4">void</span> demo_scanf<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> fmt, <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> s<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">while</span> <span class="br0">(</span><span class="sy2">*</span>fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="br0">)</span>
     <span class="br0">{</span>
@@ -257,19 +257,19 @@ html { font-variant-ligatures: no-common-ligatures; }
             <span class="kw1">switch</span> <span class="br0">(</span><span class="sy2">*++</span>fmt<span class="br0">)</span>
             <span class="br0">{</span>
                 <span class="kw1">case</span> <span class="st0">'u'</span><span class="sy4">:</span>
-                    <span class="kw1">while</span> <span class="br0">(</span><a href="../string/byte/isspace.html"><span class="kw534">isspace</span></a><span class="br0">(</span>c<span class="sy1">=</span><a href="fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
+                    <span class="kw1">while</span> <span class="br0">(</span><a href="../string/byte/isspace.htm"><span class="kw534">isspace</span></a><span class="br0">(</span>c<span class="sy1">=</span><a href="./fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span>
                     <span class="kw4">unsigned</span> <span class="kw4">int</span> num <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
-                    <span class="kw1">while</span> <span class="br0">(</span><a href="../string/byte/isdigit.html"><span class="kw530">isdigit</span></a><span class="br0">(</span>c<span class="br0">)</span><span class="br0">)</span>
+                    <span class="kw1">while</span> <span class="br0">(</span><a href="../string/byte/isdigit.htm"><span class="kw530">isdigit</span></a><span class="br0">(</span>c<span class="br0">)</span><span class="br0">)</span>
                     <span class="br0">{</span>
                         num <span class="sy1">=</span> num<span class="sy2">*</span><span class="nu0">10</span> <span class="sy2">+</span> c<span class="sy2">-</span><span class="st0">'0'</span><span class="sy4">;</span>
-                        c <span class="sy1">=</span> <a href="fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy4">;</span>
+                        c <span class="sy1">=</span> <a href="./fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy4">;</span>
                     <span class="br0">}</span>
-                    <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%%u scanned&nbsp;%u<span class="es1">\n</span>"</span>, num<span class="br0">)</span><span class="sy4">;</span>
+                    <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%%u scanned&nbsp;%u<span class="es1">\n</span>"</span>, num<span class="br0">)</span><span class="sy4">;</span>
                     ungetc<span class="br0">(</span>c, s<span class="br0">)</span><span class="sy4">;</span>
                     <span class="kw1">break</span><span class="sy4">;</span>
                 <span class="kw1">case</span> <span class="st0">'c'</span><span class="sy4">:</span>
-                    c <span class="sy1">=</span> <a href="fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy4">;</span>
-                    <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%%c scanned '%c'<span class="es1">\n</span>"</span>, c<span class="br0">)</span><span class="sy4">;</span>
+                    c <span class="sy1">=</span> <a href="./fgetc.htm"><span class="kw828">getc</span></a><span class="br0">(</span>s<span class="br0">)</span><span class="sy4">;</span>
+                    <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%%c scanned '%c'<span class="es1">\n</span>"</span>, c<span class="br0">)</span><span class="sy4">;</span>
                     <span class="kw1">break</span><span class="sy4">;</span>
             <span class="br0">}</span>
         <span class="br0">}</span>
@@ -280,13 +280,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"input.txt"</span>, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>f <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"input.txt"</span>, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>f <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="fputs.htm"><span class="kw832">fputs</span></a><span class="br0">(</span><span class="st0">"123x"</span>, f<span class="br0">)</span><span class="sy4">;</span>
-        <a href="rewind.htm"><span class="kw874">rewind</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./fputs.htm"><span class="kw832">fputs</span></a><span class="br0">(</span><span class="st0">"123x"</span>, f<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./rewind.htm"><span class="kw874">rewind</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
         demo_scanf<span class="br0">(</span><span class="st0">"%u%c"</span>, f<span class="br0">)</span><span class="sy4">;</span>
-        <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
@@ -335,7 +335,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fgetc.htm" title="c/io/fgetc"> <span class="t-lines"><span>fgetc</span><span>getc</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fgetc.htm" title="c/io/fgetc"> <span class="t-lines"><span>fgetc</span><span>getc</span></span></a></div></div>
 </td>
 <td>   gets a character from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetc&amp;action=edit">[edit]</a></span>
 </td></tr>

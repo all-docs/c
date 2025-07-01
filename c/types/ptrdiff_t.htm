@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,7 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p><code>ptrdiff_t</code> is the signed integer type of the result of <a href="../language/operator_arithmetic.html#Pointer_arithmetic" title="c/language/operator arithmetic">subtracting two pointers</a>.
+<p><code>ptrdiff_t</code> is the signed integer type of the result of <a href="../language/operator_arithmetic.htm#Pointer_arithmetic" title="c/language/operator arithmetic">subtracting two pointers</a>.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99 t-until-c23"><td>
@@ -214,18 +214,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="ptrdiff_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="ptrdiff_t.htm#Possible_implementation"><span class="tocnumber">2</span> <span class="toctext">Possible implementation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="ptrdiff_t.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="ptrdiff_t.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="ptrdiff_t.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./ptrdiff_t.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./ptrdiff_t.htm#Possible_implementation"><span class="tocnumber">2</span> <span class="toctext">Possible implementation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./ptrdiff_t.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./ptrdiff_t.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./ptrdiff_t.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/ptrdiff_t&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>ptrdiff_t</code> is used for pointer arithmetic and array indexing, if negative values are possible. Programs that use other types, such as <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span>, may fail on, e.g. 64-bit systems when the index exceeds <span class="t-lc"><a href="limits.htm" title="c/types/limits">INT_MAX</a></span> or if it relies on 32-bit modular arithmetic.
+<p><code>ptrdiff_t</code> is used for pointer arithmetic and array indexing, if negative values are possible. Programs that use other types, such as <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span></span></span>, may fail on, e.g. 64-bit systems when the index exceeds <span class="t-lc"><a href="./limits.htm" title="c/types/limits">INT_MAX</a></span> or if it relies on 32-bit modular arithmetic.
 </p><p>Only pointers to elements of the same array (including the pointer one past the end of the array) may be subtracted from each other.
-</p><p>If an array is so large (greater than <span class="t-lc"><a href="limits.htm" title="c/types/limits">PTRDIFF_MAX</a></span> elements, but equal to or less than <span class="t-lc"><a href="limits.htm" title="c/types/limits">SIZE_MAX</a></span> bytes), that the difference between two pointers may not be representable as <code>ptrdiff_t</code>, the result of subtracting two such pointers is undefined.
-</p><p>For char arrays shorter than <span class="t-lc"><a href="limits.htm" title="c/types/limits">PTRDIFF_MAX</a></span>, <code>ptrdiff_t</code> acts as the signed counterpart of <span class="t-lc"><a href="size_t.htm" title="c/types/size t">size_t</a></span>: it can store the size of the array of any type and is, on most platforms, synonymous with <code>intptr_t</code>).
+</p><p>If an array is so large (greater than <span class="t-lc"><a href="./limits.htm" title="c/types/limits">PTRDIFF_MAX</a></span> elements, but equal to or less than <span class="t-lc"><a href="./limits.htm" title="c/types/limits">SIZE_MAX</a></span> bytes), that the difference between two pointers may not be representable as <code>ptrdiff_t</code>, the result of subtracting two such pointers is undefined.
+</p><p>For char arrays shorter than <span class="t-lc"><a href="./limits.htm" title="c/types/limits">PTRDIFF_MAX</a></span>, <code>ptrdiff_t</code> acts as the signed counterpart of <span class="t-lc"><a href="./size_t.htm" title="c/types/size t">size_t</a></span>: it can store the size of the array of any type and is, on most platforms, synonymous with <code>intptr_t</code>).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/ptrdiff_t&amp;action=edit&amp;section=2" title="Edit section: Possible implementation">edit</a>]</span> <span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
 <table class="eq-fun-cpp-table">
@@ -243,13 +243,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">const</span> <a href="size_t.htm"><span class="kw100">size_t</span></a> N <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <a href="./size_t.htm"><span class="kw100">size_t</span></a> N <span class="sy1">=</span> <span class="nu0">100</span><span class="sy4">;</span>
     <span class="kw4">int</span> numbers<span class="br0">[</span>N<span class="br0">]</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"PTRDIFF_MAX =&nbsp;%ld<span class="es1">\n</span>"</span>, <a href="limits.htm"><span class="kw344">PTRDIFF_MAX</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"PTRDIFF_MAX =&nbsp;%ld<span class="es1">\n</span>"</span>, <a href="./limits.htm"><span class="kw344">PTRDIFF_MAX</span></a><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">int</span> <span class="sy2">*</span>p1 <span class="sy1">=</span> <span class="sy3">&amp;</span>numbers<span class="br0">[</span><span class="nu0">18</span><span class="br0">]</span>, <span class="sy2">*</span>p2 <span class="sy1">=</span> <span class="sy3">&amp;</span>numbers<span class="br0">[</span><span class="nu0">23</span><span class="br0">]</span><span class="sy4">;</span>
     ptrdiff_t diff <span class="sy1">=</span> p2 <span class="sy2">-</span> p1<span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"p2-p1 =&nbsp;%td<span class="es1">\n</span>"</span>, diff<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"p2-p1 =&nbsp;%td<span class="es1">\n</span>"</span>, diff<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -308,13 +308,13 @@ p2-p1 = 5</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="size_t.htm" title="c/types/size t"> <span class="t-lines"><span>size_t</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./size_t.htm" title="c/types/size t"> <span class="t-lines"><span>size_t</span></span></a></div></div>
 </td>
-<td>   unsigned integer type returned by the <a href="../language/sizeof.html" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_size_t&amp;action=edit">[edit]</a></span>
+<td>   unsigned integer type returned by the <a href="../language/sizeof.htm" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_size_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="offsetof.htm" title="c/types/offsetof"> <span class="t-lines"><span>offsetof</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./offsetof.htm" title="c/types/offsetof"> <span class="t-lines"><span>offsetof</span></span></a></div></div>
 </td>
 <td>   byte offset from the beginning of a struct type to specified member <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_offsetof&amp;action=edit">[edit]</a></span>
 </td></tr>

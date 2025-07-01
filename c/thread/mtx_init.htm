@@ -162,13 +162,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/threads.html" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> mtx_init<span class="br0">(</span> <a href="../thread.html"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mutex, <span class="kw4">int</span> type <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> mtx_init<span class="br0">(</span> <a href="../thread.htm"><span class="kw1011">mtx_t</span></a><span class="sy2">*</span> mutex, <span class="kw4">int</span> type <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
@@ -177,17 +177,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>Creates a new mutex object with <code>type</code>. The object pointed to by <code>mutex</code> is set to an identifier of the newly created mutex.
 </p><p><code>type</code> must have one of the following values:
 </p>
-<ul><li><span class="t-lc"><a href="mtx_types.htm" title="c/thread/mtx types">mtx_plain</a></span> - a simple, non-recursive mutex is created.
-</li><li><span class="t-lc"><a href="mtx_types.htm" title="c/thread/mtx types">mtx_timed</a></span> - a non-recursive mutex, that supports timeout, is created.
-</li><li><span class="t-c"><span class="mw-geshi c source-c"><a href="mtx_types.htm"><span class="kw1017">mtx_plain</span></a> <span class="sy3">|</span> <a href="mtx_types.htm"><span class="kw1018">mtx_recursive</span></a></span></span> - a recursive mutex is created.
-</li><li><span class="t-c"><span class="mw-geshi c source-c"><a href="mtx_types.htm"><span class="kw1019">mtx_timed</span></a> <span class="sy3">|</span> <a href="mtx_types.htm"><span class="kw1018">mtx_recursive</span></a></span></span> - a recursive mutex, that supports timeout, is created.
+<ul><li><span class="t-lc"><a href="./mtx_types.htm" title="c/thread/mtx types">mtx_plain</a></span> - a simple, non-recursive mutex is created.
+</li><li><span class="t-lc"><a href="./mtx_types.htm" title="c/thread/mtx types">mtx_timed</a></span> - a non-recursive mutex, that supports timeout, is created.
+</li><li><span class="t-c"><span class="mw-geshi c source-c"><a href="./mtx_types.htm"><span class="kw1017">mtx_plain</span></a> <span class="sy3">|</span> <a href="./mtx_types.htm"><span class="kw1018">mtx_recursive</span></a></span></span> - a recursive mutex is created.
+</li><li><span class="t-c"><span class="mw-geshi c source-c"><a href="./mtx_types.htm"><span class="kw1019">mtx_timed</span></a> <span class="sy3">|</span> <a href="./mtx_types.htm"><span class="kw1018">mtx_recursive</span></a></span></span> - a recursive mutex, that supports timeout, is created.
 </li></ul>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="mtx_init.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="mtx_init.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="mtx_init.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="mtx_init.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./mtx_init.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./mtx_init.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./mtx_init.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./mtx_init.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/mtx_init&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -209,7 +209,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td>  the type of the mutex
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/mtx_init&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<p><span class="t-lc"><a href="thrd_errors.htm" title="c/thread/thrd errors">thrd_success</a></span> if successful, <span class="t-lc"><a href="thrd_errors.htm" title="c/thread/thrd errors">thrd_error</a></span> otherwise.
+<p><span class="t-lc"><a href="./thrd_errors.htm" title="c/thread/thrd errors">thrd_success</a></span> if successful, <span class="t-lc"><a href="./thrd_errors.htm" title="c/thread/thrd errors">thrd_error</a></span> otherwise.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/mtx_init&amp;action=edit&amp;section=3" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-17">

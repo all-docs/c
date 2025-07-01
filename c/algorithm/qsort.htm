@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> qsort<span class="br0">(</span> <span class="kw4">void</span><span class="sy2">*</span> ptr, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size,<br>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> qsort<span class="br0">(</span> <span class="kw4">void</span><span class="sy2">*</span> ptr, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> count, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>comp<span class="br0">)</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
@@ -208,22 +208,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Sorts the given array pointed to by <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span> in ascending order. The array contains <span class="t-c"><span class="mw-geshi c source-c">count</span></span> elements of <span class="t-c"><span class="mw-geshi c source-c">size</span></span> bytes. Function pointed to by <span class="t-c"><span class="mw-geshi c source-c">comp</span></span> is used for object comparison.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the additional context parameter <span class="t-c"><span class="mw-geshi c source-c">context</span></span> is passed to <span class="t-c"><span class="mw-geshi c source-c">comp</span></span> and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the additional context parameter <span class="t-c"><span class="mw-geshi c source-c">context</span></span> is passed to <span class="t-c"><span class="mw-geshi c source-c">comp</span></span> and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">count</span></span> or <span class="t-c"><span class="mw-geshi c source-c">size</span></span> is greater than <span class="t-lc">RSIZE_MAX</span>
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span> or <span class="t-c"><span class="mw-geshi c source-c">comp</span></span> is a null pointer (unless <span class="t-c"><span class="mw-geshi c source-c">count</span></span> is zero)
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>qsort_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>qsort_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a>.</dd></dl></div>
 
 <p>If <span class="t-c"><span class="mw-geshi c source-c">comp</span></span> indicates two elements as equivalent, their order in the resulting sorted array is unspecified.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="qsort.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="qsort.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="qsort.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="qsort.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="qsort.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="qsort.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./qsort.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./qsort.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./qsort.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./qsort.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./qsort.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./qsort.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/algorithm/qsort&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -278,7 +278,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p><p>Unlike other bounds-checked functions, <code>qsort_s</code> does not treat arrays of zero size as a runtime constraint violation and instead returns successfully without altering the array (the other function that accepts arrays of zero size is <span class="t-lc">bsearch_s</span>).
 </p><p>The implementation of <code>qsort_s</code> in the <a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/qsort-s">Windows CRT</a> is incompatible with the C standard. The Microsoft's version
 is declared as:
-<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span> qsort_s<span class="br0">(</span><span class="kw4">void</span> <span class="sy2">*</span>base, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> num, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> width,<br>
+<span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span> qsort_s<span class="br0">(</span><span class="kw4">void</span> <span class="sy2">*</span>base, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> num, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> width,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>compare <span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span> <span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span>, <span class="kw4">const</span> <span class="kw4">void</span> <span class="sy2">*</span><span class="br0">)</span>, <span class="kw4">void</span> <span class="sy2">*</span> context<span class="br0">)</span><span class="sy4">;</span></span></span>.
 It does not return a value, and the comparison function has a reversed parameter order with regard to the standard: the <span class="t-c"><span class="mw-geshi c source-c">context</span></span> is passed first.
 </p>
@@ -305,15 +305,15 @@ It does not return a value, and the comparison function has a reversed parameter
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">int</span> ints<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="sy2">-</span><span class="nu0">2</span>, <span class="nu0">99</span>, <span class="nu0">0</span>, <span class="sy2">-</span><span class="nu0">743</span>, <span class="nu0">2</span>, <a href="../types/limits.html"><span class="kw359">INT_MIN</span></a>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw4">int</span> ints<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="sy2">-</span><span class="nu0">2</span>, <span class="nu0">99</span>, <span class="nu0">0</span>, <span class="sy2">-</span><span class="nu0">743</span>, <span class="nu0">2</span>, <a href="../types/limits.htm"><span class="kw359">INT_MIN</span></a>, <span class="nu0">4</span><span class="br0">}</span><span class="sy4">;</span>
     <span class="kw4">int</span> size <span class="sy1">=</span> <span class="kw4">sizeof</span> ints <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>ints<span class="sy4">;</span>
 &nbsp;
     qsort<span class="br0">(</span>ints, size, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>, compare_ints<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> size<span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">)</span>
-        <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, ints<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, ints<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -368,7 +368,7 @@ It does not return a value, and the comparison function has a reversed parameter
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="bsearch.htm" title="c/algorithm/bsearch"> <span class="t-lines"><span>bsearch</span><span>bsearch_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./bsearch.htm" title="c/algorithm/bsearch"> <span class="t-lines"><span>bsearch</span><span>bsearch_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   searches an array for an element of unspecified type <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/algorithm/dsc_bsearch&amp;action=edit">[edit]</a></span>
 </td></tr>

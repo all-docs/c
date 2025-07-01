@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,15 +198,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>The function-like macro <code>unreachable</code> expands to a <span class="mw-geshi c source-c"><span class="kw4">void</span></span> expression. Executing <span class="t-c"><span class="mw-geshi c source-c">unreachable<span class="br0">(</span><span class="br0">)</span></span></span> results in <a href="../language/behavior.html" title="c/language/behavior">undefined behavior</a>.
+<p>The function-like macro <code>unreachable</code> expands to a <span class="mw-geshi c source-c"><span class="kw4">void</span></span> expression. Executing <span class="t-c"><span class="mw-geshi c source-c">unreachable<span class="br0">(</span><span class="br0">)</span></span></span> results in <a href="../language/behavior.htm" title="c/language/behavior">undefined behavior</a>.
 </p><p>An implementation may use this to optimize impossible code branches away (typically, in optimized builds) or to trap them to prevent further execution (typically, in debug builds).
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="unreachable.htm#Possible_implementation"><span class="tocnumber">1</span> <span class="toctext">Possible implementation</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="unreachable.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="unreachable.htm#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="unreachable.htm#External_Links"><span class="tocnumber">4</span> <span class="toctext">External Links</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./unreachable.htm#Possible_implementation"><span class="tocnumber">1</span> <span class="toctext">Possible implementation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./unreachable.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./unreachable.htm#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./unreachable.htm#External_Links"><span class="tocnumber">4</span> <span class="toctext">External Links</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/unreachable&amp;action=edit&amp;section=1" title="Edit section: Possible implementation">edit</a>]</span> <span class="mw-headline" id="Possible_implementation">Possible implementation</span></h3>
@@ -243,11 +243,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;stdint.h&gt;</span>
 <span class="co2">#include &lt;stdlib.h&gt;</span>
 &nbsp;
-<span class="kw1">struct</span> Color <span class="br0">{</span> <a href="../types/integer.html"><span class="kw120">uint8_t</span></a> r, g, b, a<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
-<span class="kw1">struct</span> ColorSpan <span class="br0">{</span> <span class="kw1">struct</span> Color<span class="sy2">*</span> data<span class="sy4">;</span> <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> Color <span class="br0">{</span> <a href="../types/integer.htm"><span class="kw120">uint8_t</span></a> r, g, b, a<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
+<span class="kw1">struct</span> ColorSpan <span class="br0">{</span> <span class="kw1">struct</span> Color<span class="sy2">*</span> data<span class="sy4">;</span> <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
 <span class="co1">// Assume that only restricted set of texture caps is supported.</span>
-<span class="kw1">struct</span> ColorSpan allocate_texture<span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> xy<span class="br0">)</span>
+<span class="kw1">struct</span> ColorSpan allocate_texture<span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> xy<span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">switch</span> <span class="br0">(</span>xy<span class="br0">)</span>
     <span class="br0">{</span>
@@ -257,7 +257,7 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="br0">{</span>
         <span class="coMULTI">/* ... */</span>
         <span class="kw1">struct</span> ColorSpan result <span class="sy1">=</span> <span class="br0">{</span>
-            .<span class="me1">data</span> <span class="sy1">=</span> <a href="../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span>xy <span class="sy2">*</span> xy <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw1">struct</span> Color<span class="br0">)</span><span class="br0">)</span>,
+            .<span class="me1">data</span> <span class="sy1">=</span> <a href="../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span>xy <span class="sy2">*</span> xy <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw1">struct</span> Color<span class="br0">)</span><span class="br0">)</span>,
             .<span class="me1">size</span> <span class="sy1">=</span> xy <span class="sy2">*</span> xy
         <span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
@@ -274,12 +274,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw1">struct</span> ColorSpan tex <span class="sy1">=</span> allocate_texture<span class="br0">(</span><span class="nu0">128</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-    <a href="../error/assert.html"><span class="kw407">assert</span></a><span class="br0">(</span>tex.<span class="me1">size</span> <span class="sy1">==</span> <span class="nu0">128</span> <span class="sy2">*</span> <span class="nu0">128</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../error/assert.htm"><span class="kw407">assert</span></a><span class="br0">(</span>tex.<span class="me1">size</span> <span class="sy1">==</span> <span class="nu0">128</span> <span class="sy2">*</span> <span class="nu0">128</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw1">struct</span> ColorSpan badtex <span class="sy1">=</span> allocate_texture<span class="br0">(</span><span class="nu0">32</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// Undefined behavior</span>
 &nbsp;
-    <a href="../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>badtex.<span class="me1">data</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>tex.<span class="me1">data</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>badtex.<span class="me1">data</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>tex.<span class="me1">data</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

@@ -189,13 +189,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="asm.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="asm.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="asm.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="asm.htm#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="asm.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="asm.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="asm.htm#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./asm.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./asm.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./asm.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./asm.htm#Examples"><span class="tocnumber">4</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./asm.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./asm.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./asm.htm#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/asm&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -247,8 +247,8 @@ __asm__<span class="br0">(</span><span class="st0">".globl func<span class="es1"
     __asm__ <span class="br0">(</span><span class="st0">"leal (%0,%0,4),%0"</span>
            <span class="sy4">:</span> <span class="st0">"=r"</span> <span class="br0">(</span>n<span class="br0">)</span>
            <span class="sy4">:</span> <span class="st0">"0"</span> <span class="br0">(</span>n<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"7*5 =&nbsp;%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fflush.html"><span class="kw821">fflush</span></a><span class="br0">(</span><a href="../io/std_streams.html"><span class="kw887">stdout</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// flush is intentional</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"7*5 =&nbsp;%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fflush.htm"><span class="kw821">fflush</span></a><span class="br0">(</span><a href="../io/std_streams.htm"><span class="kw887">stdout</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// flush is intentional</span>
 &nbsp;
     <span class="co1">// standard inline assembly in C++</span>
     __asm__ <span class="br0">(</span><span class="st0">"movq $60,&nbsp;%rax<span class="es1">\n</span><span class="es1">\t</span>"</span> <span class="co1">// the exit syscall number on Linux</span>

@@ -162,12 +162,12 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="bool_constant.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="bool_constant.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="bool_constant.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="bool_constant.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="bool_constant.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="bool_constant.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./bool_constant.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./bool_constant.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./bool_constant.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./bool_constant.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./bool_constant.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./bool_constant.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/bool_constant&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -203,11 +203,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/bool_constant&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>Keywords <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> represent predefined constants. They are <a href="value_category.htm#Non-lvalue_object_expressions" title="c/language/value category">non-lvalues</a> of type <a href="compatible_type.htm" title="c/language/types" class="mw-redirect"><code>bool</code></a>.
+<p>Keywords <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> represent predefined constants. They are <a href="./value_category.htm#Non-lvalue_object_expressions" title="c/language/value category">non-lvalues</a> of type <a href="./compatible_type.htm" title="c/language/types" class="mw-redirect"><code>bool</code></a>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/bool_constant&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>See <a href="conversion.htm#Integer_conversions" title="c/language/conversion">integral conversions</a> for implicit conversions from <span class="mw-geshi c source-c">bool</span> to other types and <a href="conversion.htm#Boolean_conversion" title="c/language/conversion">boolean conversions</a> for the implicit conversions from other types to <span class="mw-geshi c source-c">bool</span>.
-</p><p>Until C23, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> were implemented as macros provided in <a href="../header/stdbool.html" title="c/header/stdbool"><tt>&lt;stdbool.h&gt;</tt></a>. An implementation may also define <span class="mw-geshi c source-c">bool</span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> as predefined macros in C23 for compatibility.
+<p>See <a href="./conversion.htm#Integer_conversions" title="c/language/conversion">integral conversions</a> for implicit conversions from <span class="mw-geshi c source-c">bool</span> to other types and <a href="./conversion.htm#Boolean_conversion" title="c/language/conversion">boolean conversions</a> for the implicit conversions from other types to <span class="mw-geshi c source-c">bool</span>.
+</p><p>Until C23, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> were implemented as macros provided in <a href="../header/stdbool.htm" title="c/header/stdbool"><tt>&lt;stdbool.h&gt;</tt></a>. An implementation may also define <span class="mw-geshi c source-c">bool</span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> as predefined macros in C23 for compatibility.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/bool_constant&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -215,7 +215,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../error/assert.html"><span class="kw407">assert</span></a><span class="br0">(</span><span class="kw2">true</span> <span class="sy1">==</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> <span class="nu0">0</span> <span class="sy1">==</span> <span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../error/assert.htm"><span class="kw407">assert</span></a><span class="br0">(</span><span class="kw2">true</span> <span class="sy1">==</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> <span class="nu0">0</span> <span class="sy1">==</span> <span class="kw2">false</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/bool_constant&amp;action=edit&amp;section=5" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>

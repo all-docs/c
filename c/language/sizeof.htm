@@ -189,13 +189,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="sizeof.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="sizeof.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="sizeof.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="sizeof.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="sizeof.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="sizeof.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="sizeof.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./sizeof.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./sizeof.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./sizeof.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./sizeof.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./sizeof.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./sizeof.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./sizeof.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/sizeof&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -230,39 +230,39 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></tbody></table>
-<p>Both versions return a value of type <span class="t-lc"><a href="../types/size_t.html" title="c/types/size t">size_t</a></span>.
+<p>Both versions return a value of type <span class="t-lc"><a href="../types/size_t.htm" title="c/types/size t">size_t</a></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/sizeof&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> Returns the size, in bytes, of the <a href="object.htm#Object_representation" title="c/language/object">object representation</a> of <span class="t-spar">type</span></div>
+<div class="t-li1"><span class="t-li">1)</span> Returns the size, in bytes, of the <a href="./object.htm#Object_representation" title="c/language/object">object representation</a> of <span class="t-spar">type</span></div>
 <div class="t-li1"><span class="t-li">2)</span> Returns the size, in bytes, of the object representation of the type of <span class="t-spar">expression</span>. No implicit conversions are applied to <span class="t-spar">expression</span>.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/sizeof&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Depending on the computer architecture, a <a href="https://en.wikipedia.org/wiki/byte" class="extiw" title="enwiki:byte">byte</a> may consist of 8 or more bits, the exact number provided as <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">CHAR_BIT</a></span>.
+<p>Depending on the computer architecture, a <a href="https://en.wikipedia.org/wiki/byte" class="extiw" title="enwiki:byte">byte</a> may consist of 8 or more bits, the exact number provided as <span class="t-lc"><a href="../types/limits.htm" title="c/types/limits">CHAR_BIT</a></span>.
 </p><p><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">)</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">signed</span> <span class="kw4">char</span><span class="br0">)</span></span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span></span></span> always return <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.
-</p><p>sizeof cannot be used with function types, incomplete types (including <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>), or <a href="bit_field.htm" title="c/language/bit field">bit-field</a> lvalues.
-</p><p>When applied to an operand that has <a href="struct.htm" title="c/language/struct">structure</a> or <a href="union.htm" title="c/language/union">union</a> type, the result is the total number of bytes in such an object, including internal and trailing padding. The trailing padding is such that if the object were an element of an array, the alignment requirement of the next element of this array would be satisfied, in other words, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span>T<span class="br0">)</span></span></span> returns the size of an element of a <span class="t-c"><span class="mw-geshi c source-c">T<span class="br0">[</span><span class="br0">]</span></span></span> array.
+</p><p>sizeof cannot be used with function types, incomplete types (including <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">void</span></span></span>), or <a href="./bit_field.htm" title="c/language/bit field">bit-field</a> lvalues.
+</p><p>When applied to an operand that has <a href="./struct.htm" title="c/language/struct">structure</a> or <a href="./union.htm" title="c/language/union">union</a> type, the result is the total number of bytes in such an object, including internal and trailing padding. The trailing padding is such that if the object were an element of an array, the alignment requirement of the next element of this array would be satisfied, in other words, <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span>T<span class="br0">)</span></span></span> returns the size of an element of a <span class="t-c"><span class="mw-geshi c source-c">T<span class="br0">[</span><span class="br0">]</span></span></span> array.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>If <span class="t-spar">type</span> is a <a href="array.htm" title="c/language/array">VLA</a> type and changing the value of its
+<p>If <span class="t-spar">type</span> is a <a href="./array.htm" title="c/language/array">VLA</a> type and changing the value of its
 size expression would not affect the result of <code>sizeof</code>, it is unspecified whether or not
 the size expression is evaluated.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
-<p><span class="t-rev-inl t-since-c99"><span>Except if the type of <span class="t-spar">expression</span> is a <a href="array.htm" title="c/language/array">VLA</a>,</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span><span class="t-spar">expression</span> is not evaluated and the <code>sizeof</code> operator may be used in an integer <a href="constant_expression.htm" title="c/language/constant expression">constant expression</a>.
+<p><span class="t-rev-inl t-since-c99"><span>Except if the type of <span class="t-spar">expression</span> is a <a href="./array.htm" title="c/language/array">VLA</a>,</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span><span class="t-spar">expression</span> is not evaluated and the <code>sizeof</code> operator may be used in an integer <a href="./constant_expression.htm" title="c/language/constant expression">constant expression</a>.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>If the type of <span class="t-spar">expression</span> is a <a href="array.htm" title="c/language/array">variable-length array</a> type, <span class="t-spar">expression</span> is evaluated and the size of the array it evaluates to is calculated at run time.
+<p>If the type of <span class="t-spar">expression</span> is a <a href="./array.htm" title="c/language/array">variable-length array</a> type, <span class="t-spar">expression</span> is evaluated and the size of the array it evaluates to is calculated at run time.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
-<p>Number of elements in any <a href="array.htm" title="c/language/array">array</a> <span class="t-c"><span class="mw-geshi c source-c">a</span></span> <span class="t-rev-inl t-since-c99"><span>including VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> may be determined with the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span> a <span class="sy2">/</span> <span class="kw4">sizeof</span> a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span>. Note that if <span class="t-c"><span class="mw-geshi c source-c">a</span></span> has pointer type (such as after array-to-pointer conversion of function parameter type adjustment), this expression would simply divide the number of bytes in a pointer type by the number of bytes in the pointed type.
+<p>Number of elements in any <a href="./array.htm" title="c/language/array">array</a> <span class="t-c"><span class="mw-geshi c source-c">a</span></span> <span class="t-rev-inl t-since-c99"><span>including VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> may be determined with the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span> a <span class="sy2">/</span> <span class="kw4">sizeof</span> a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span>. Note that if <span class="t-c"><span class="mw-geshi c source-c">a</span></span> has pointer type (such as after array-to-pointer conversion of function parameter type adjustment), this expression would simply divide the number of bytes in a pointer type by the number of bytes in the pointed type.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/sizeof&amp;action=edit&amp;section=4" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/sizeof.html" title="c/keyword/sizeof"><tt>sizeof</tt></a>
+<p><a href="../keyword/sizeof.htm" title="c/keyword/sizeof"><tt>sizeof</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/sizeof&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Sample output corresponds to a platform with 64-bit pointers and 32-bit int</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -272,19 +272,19 @@ the size expression is evaluated.
 <span class="br0">{</span>
     <span class="kw4">short</span> x<span class="sy4">;</span>
     <span class="co1">// type argument:</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(float)          =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">float</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(void(*)(void))  =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(char[10])       =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(float)          =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">float</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(void(*)(void))  =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">(</span><span class="sy2">*</span><span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(char[10])       =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">char</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co1">//  printf("sizeof(void(void))     =&nbsp;%zu\n", sizeof(void(void))); // Error: function type</span>
 <span class="co1">//  printf("sizeof(char[])         =&nbsp;%zu\n", sizeof(char[])); // Error: incomplete type</span>
 &nbsp;
     <span class="co1">// expression argument:</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof 'a'             =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of 'a' is int</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof 'a'             =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="st0">'a'</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of 'a' is int</span>
 <span class="co1">//  printf("sizeof main            =&nbsp;%zu\n", sizeof main); // Error: Function type</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof &amp;main           =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="sy3">&amp;</span>main<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof <span class="es1">\"</span>hello<span class="es1">\"</span>         =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="st0">"hello"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type is char[6]</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof x               =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> x<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of x is short</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof (x+1)           =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span>x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of x+1 is int</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof &amp;main           =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="sy3">&amp;</span>main<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof <span class="es1">\"</span>hello<span class="es1">\"</span>         =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> <span class="st0">"hello"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type is char[6]</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof x               =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> x<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of x is short</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof (x+1)           =&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span><span class="br0">(</span>x <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// type of x+1 is int</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

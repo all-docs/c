@@ -188,10 +188,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="deprecated.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="deprecated.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="deprecated.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="deprecated.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./deprecated.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./deprecated.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./deprecated.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./deprecated.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/deprecated&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -240,12 +240,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>Indicates that the use of the name or entity declared with this attribute is allowed, but discouraged for some reason. Compilers typically issue warnings on such uses. The <span class="t-spar">string-literal</span>, if specified, is usually included in the warnings.
 </p><p>This attribute is allowed in declarations of the following names or entities:
 </p>
-<ul><li> <a href="../struct.html" title="c/language/struct">struct</a>/<a href="../union.html" title="c/language/union">union</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">struct</span> <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> S<span class="sy4">;</span></span></span>,
-</li><li> <a href="../typedef.html" title="c/language/typedef">typedef-name</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw1">typedef</span> S<span class="sy2">*</span> PS<span class="sy4">;</span></span></span>,
+<ul><li> <a href="../struct.htm" title="c/language/struct">struct</a>/<a href="../union.htm" title="c/language/union">union</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">struct</span> <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> S<span class="sy4">;</span></span></span>,
+</li><li> <a href="../typedef.htm" title="c/language/typedef">typedef-name</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw1">typedef</span> S<span class="sy2">*</span> PS<span class="sy4">;</span></span></span>,
 </li><li> objects: <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw4">int</span> x<span class="sy4">;</span></span></span>,
 </li><li> struct/union member: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">union</span> U <span class="br0">{</span> <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw4">int</span> n<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span></span></span>,
-</li><li> <a href="../function_definition.html" title="c/language/function definition">function</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span></span></span>,
-</li><li> <a href="../enum.html" title="c/language/enum">enumeration</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">enum</span> <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> E <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span></span></span>,
+</li><li> <a href="../function_definition.htm" title="c/language/function definition">function</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy4">;</span></span></span>,
+</li><li> <a href="../enum.htm" title="c/language/enum">enumeration</a>: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">enum</span> <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> E <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span></span></span>,
 </li><li> enumerator: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">enum</span> <span class="br0">{</span> A <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span>, B <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">42</span> <span class="br0">}</span><span class="sy4">;</span></span></span>.
 </li></ul>
 <p>A name declared non-deprecated may be redeclared deprecated. A name declared deprecated cannot be un-deprecated by redeclaring it without this attribute.
@@ -257,13 +257,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">]</span><span class="br0">]</span>
 <span class="kw4">void</span> TriassicPeriod<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Triassic Period: [251.9 - 208.5] million years ago."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Triassic Period: [251.9 - 208.5] million years ago."</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">(</span><span class="st0">"Use NeogenePeriod() instead."</span><span class="br0">)</span><span class="br0">]</span><span class="br0">]</span>
 <span class="kw4">void</span> JurassicPeriod<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Jurassic Period: [201.3 - 152.1] million years ago."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"Jurassic Period: [201.3 - 152.1] million years ago."</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="br0">[</span><span class="br0">[</span>deprecated<span class="br0">(</span><span class="st0">"Use calcSomethingDifferently(int)."</span><span class="br0">)</span><span class="br0">]</span><span class="br0">]</span>

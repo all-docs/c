@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/setjmp.html" title="c/header/setjmp"><tt>&lt;setjmp.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/setjmp.htm" title="c/header/setjmp"><tt>&lt;setjmp.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -194,25 +194,25 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody>
 <tbody class="t-dcl-rev">
 <tr class="t-dcl t-until-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="./jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c11">(until C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11 t-until-c23">
-<td> <div><span class="mw-geshi c source-c">_Noreturn <span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c">_Noreturn <span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="./jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> <br><span class="t-mark-rev t-until-c23">(until C23)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="br0">[</span><span class="br0">[</span>noreturn<span class="br0">]</span><span class="br0">]</span> <span class="kw4">void</span> longjmp<span class="br0">(</span> <a href="./jmp_buf.htm"><span class="kw510">jmp_buf</span></a> env, <span class="kw4">int</span> status <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Loads the execution context <code>env</code> saved by a previous call to <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span>. This function does not return. Control is transferred to the call site of the macro <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span> that set up <code>env</code>. That <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span> then returns the value, passed as the <code>status</code>.
-</p><p>If the function that called <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span> has exited (whether by return or by a different <code>longjmp</code> higher up the stack), the behavior is undefined. In other words, only long jumps up the call stack are allowed.
+<p>Loads the execution context <code>env</code> saved by a previous call to <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span>. This function does not return. Control is transferred to the call site of the macro <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span> that set up <code>env</code>. That <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span> then returns the value, passed as the <code>status</code>.
+</p><p>If the function that called <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span> has exited (whether by return or by a different <code>longjmp</code> higher up the stack), the behavior is undefined. In other words, only long jumps up the call stack are allowed.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
@@ -223,7 +223,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>If when <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span> was called, a <a href="../language/array.html" title="c/language/array">VLA</a> or another <a href="../language/declarations.html" title="c/language/declarations">variably-modified type</a> variable was in scope and control left that scope, <code>longjmp</code> to that <code>setjmp</code> invokes undefined behavior even if control remained within the function.
+<p>If when <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span> was called, a <a href="../language/array.htm" title="c/language/array">VLA</a> or another <a href="../language/declarations.htm" title="c/language/declarations">variably-modified type</a> variable was in scope and control left that scope, <code>longjmp</code> to that <code>setjmp</code> invokes undefined behavior even if control remained within the function.
 </p><p>On the way up the stack, <code>longjmp</code> does not deallocate any VLAs, memory leaks may occur if their lifetimes are terminated in this way:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span>
@@ -241,12 +241,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="longjmp.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="longjmp.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="longjmp.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="longjmp.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="longjmp.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="longjmp.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./longjmp.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./longjmp.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./longjmp.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./longjmp.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./longjmp.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./longjmp.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/longjmp&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -258,14 +258,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  variable referring to the execution state of the program saved by <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span>
+<td>  variable referring to the execution state of the program saved by <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span>
 </td></tr>
 <tr class="t-par">
 <td>  status
 </td>
 <td> -
 </td>
-<td>  the value to return from <span class="t-lc"><a href="setjmp.htm" title="c/program/setjmp">setjmp</a></span>. If it is equal to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> is used instead
+<td>  the value to return from <span class="t-lc"><a href="./setjmp.htm" title="c/program/setjmp">setjmp</a></span>. If it is equal to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> is used instead
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/longjmp&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
@@ -279,18 +279,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;setjmp.h&gt;</span>
 <span class="co2">#include &lt;stdnoreturn.h&gt;</span>
 &nbsp;
-<a href="jmp_buf.htm"><span class="kw510">jmp_buf</span></a> my_jump_buffer<span class="sy4">;</span>
+<a href="./jmp_buf.htm"><span class="kw510">jmp_buf</span></a> my_jump_buffer<span class="sy4">;</span>
 &nbsp;
 noreturn <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">int</span> status<span class="br0">)</span> 
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"foo(%d) called<span class="es1">\n</span>"</span>, status<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"foo(%d) called<span class="es1">\n</span>"</span>, status<span class="br0">)</span><span class="sy4">;</span>
     longjmp<span class="br0">(</span>my_jump_buffer, status <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// will return status+1 out of setjmp</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">volatile</span> <span class="kw4">int</span> count <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="co1">// modified local vars in setjmp scope must be volatile</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="setjmp.htm"><span class="kw509">setjmp</span></a><span class="br0">(</span>my_jump_buffer<span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">5</span><span class="br0">)</span> <span class="co1">// compare against constant in an if</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="./setjmp.htm"><span class="kw509">setjmp</span></a><span class="br0">(</span>my_jump_buffer<span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">5</span><span class="br0">)</span> <span class="co1">// compare against constant in an if</span>
         foo<span class="br0">(</span><span class="sy2">++</span>count<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -333,7 +333,7 @@ foo(4) called</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="setjmp.htm" title="c/program/setjmp"> <span class="t-lines"><span>setjmp</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./setjmp.htm" title="c/program/setjmp"> <span class="t-lines"><span>setjmp</span></span></a></div></div>
 </td>
 <td>   saves the context  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_setjmp&amp;action=edit">[edit]</a></span>
 </td></tr>

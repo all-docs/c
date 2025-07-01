@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,7 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Expands to an integer constant expression equal to the maximum value returned by the function <span class="t-lc"><a href="rand.htm" title="c/numeric/random/rand">rand()</a></span>. This value is implementation dependent. It's guaranteed that this value is at least <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">32767</span></span></span>.
+<p>Expands to an integer constant expression equal to the maximum value returned by the function <span class="t-lc"><a href="./rand.htm" title="c/numeric/random/rand">rand()</a></span>. This value is implementation dependent. It's guaranteed that this value is at least <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">32767</span></span></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/random/RAND_MAX&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -209,10 +209,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="srand.htm"><span class="kw740">srand</span></a><span class="br0">(</span><a href="../../chrono/time.html"><span class="kw513">time</span></a><span class="br0">(</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// use current time as seed for random generator</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"RAND_MAX:&nbsp;%i<span class="es1">\n</span>"</span>, RAND_MAX<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"INT_MAX:&nbsp;%i<span class="es1">\n</span>"</span>, <a href="../../types/limits.html"><span class="kw364">INT_MAX</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Random value on [0,1]:&nbsp;%f<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><a href="rand.htm"><span class="kw741">rand</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">/</span> RAND_MAX<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./srand.htm"><span class="kw740">srand</span></a><span class="br0">(</span><a href="../../chrono/time.htm"><span class="kw513">time</span></a><span class="br0">(</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// use current time as seed for random generator</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"RAND_MAX:&nbsp;%i<span class="es1">\n</span>"</span>, RAND_MAX<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"INT_MAX:&nbsp;%i<span class="es1">\n</span>"</span>, <a href="../../types/limits.htm"><span class="kw364">INT_MAX</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Random value on [0,1]:&nbsp;%f<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><a href="./rand.htm"><span class="kw741">rand</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">/</span> RAND_MAX<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -253,13 +253,13 @@ Random value on [0,1]: 0.362509</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="rand.htm" title="c/numeric/random/rand"> <span class="t-lines"><span>rand</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./rand.htm" title="c/numeric/random/rand"> <span class="t-lines"><span>rand</span></span></a></div></div>
 </td>
 <td>   generates a pseudo-random number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/random/dsc_rand&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="srand.htm" title="c/numeric/random/srand"> <span class="t-lines"><span>srand</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./srand.htm" title="c/numeric/random/srand"> <span class="t-lines"><span>srand</span></span></a></div></div>
 </td>
 <td>   seeds pseudo-random number generator <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/random/dsc_srand&amp;action=edit">[edit]</a></span>
 </td></tr>

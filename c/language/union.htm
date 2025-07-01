@@ -185,18 +185,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>A union is a type consisting of a sequence of members whose storage overlaps (as opposed to struct, which is a type consisting of a sequence of members whose storage is allocated in an ordered sequence). The value of at most one of the members can be stored in a union at any one time.
-</p><p>The <a href="declarations.htm" title="c/language/declarations">type specifier</a> for a union is identical to the <a href="struct.htm" title="c/language/struct"><code>struct</code></a> type specifier except for the keyword used:
+</p><p>The <a href="./declarations.htm" title="c/language/declarations">type specifier</a> for a union is identical to the <a href="./struct.htm" title="c/language/struct"><code>struct</code></a> type specifier except for the keyword used:
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="union.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="union.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="union.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="union.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="union.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="union.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="union.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="union.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./union.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./union.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./union.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./union.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./union.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./union.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./union.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./union.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/union&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -246,14 +246,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> any number of variable declarations, <a href="bit_field.htm" title="c/language/bit field">bit-field</a> declarations, and static assert declarations. Members of incomplete type and members of function type are not allowed.
+<td> any number of variable declarations, <a href="./bit_field.htm" title="c/language/bit field">bit-field</a> declarations, and static assert declarations. Members of incomplete type and members of function type are not allowed.
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">attr-spec-seq</span>
 </td>
 <td> -
 </td>
-<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the union type, not allowed for <span class="t-v">(2)</span> if such form is not followed by a <code><b>;</b></code> (i.e. not a forward declaration).
+<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the union type, not allowed for <span class="t-v">(2)</span> if such form is not followed by a <code><b>;</b></code> (i.e. not a forward declaration).
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/union&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The union is only as big as necessary to hold its largest member (additional unnamed trailing padding may also be added). The other members are allocated in the same bytes as part of that largest member.
@@ -289,10 +289,10 @@ v1.<span class="me1">w</span>.<span class="me1">k</span> <span class="sy1">=</sp
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/union&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/union.html" title="c/keyword/union"><tt>union</tt></a>
+<p><a href="../keyword/union.htm" title="c/keyword/union"><tt>union</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/union&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>See <a href="struct_initialization.htm" title="c/language/struct initialization">struct initialization</a> for the rules about initialization of structs and unions.
+<p>See <a href="./struct_initialization.htm" title="c/language/struct initialization">struct initialization</a> for the rules about initialization of structs and unions.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/union&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -304,18 +304,18 @@ v1.<span class="me1">w</span>.<span class="me1">k</span> <span class="sy1">=</sp
 <span class="br0">{</span>
     <span class="kw1">union</span> S
     <span class="br0">{</span>
-        <a href="../types/integer.html"><span class="kw122">uint32_t</span></a> u32<span class="sy4">;</span>
-        <a href="../types/integer.html"><span class="kw121">uint16_t</span></a> u16<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
-        <a href="../types/integer.html"><span class="kw120">uint8_t</span></a>  u8<span class="sy4">;</span>
+        <a href="../types/integer.htm"><span class="kw122">uint32_t</span></a> u32<span class="sy4">;</span>
+        <a href="../types/integer.htm"><span class="kw121">uint16_t</span></a> u16<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+        <a href="../types/integer.htm"><span class="kw120">uint8_t</span></a>  u8<span class="sy4">;</span>
     <span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><span class="nu12">0x12345678</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// s.u32 is now the active member</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Union S has size&nbsp;%zu and holds&nbsp;%x<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> s, s.<span class="me1">u32</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Union S has size&nbsp;%zu and holds&nbsp;%x<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> s, s.<span class="me1">u32</span><span class="br0">)</span><span class="sy4">;</span>
     s.<span class="me1">u16</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu12">0x0011</span><span class="sy4">;</span>  <span class="co1">// s.u16 is now the active member</span>
     <span class="co1">// reading from s.u32 or from s.u8 reinterprets the object representation</span>
 <span class="co1">//  printf("s.u8 is now&nbsp;%x\n", s.u8); // unspecified, typically 11 or 00</span>
 <span class="co1">//  printf("s.u32 is now&nbsp;%x\n", s.u32); // unspecified, typically 12340011 or 00115678</span>
 &nbsp;
     <span class="co1">// pointers to all members of a union compare equal to themselves and the union</span>
-    <a href="../error/assert.html"><span class="kw407">assert</span></a><span class="br0">(</span><span class="br0">(</span><a href="../types/integer.html"><span class="kw120">uint8_t</span></a><span class="sy2">*</span><span class="br0">)</span><span class="sy3">&amp;</span>s <span class="sy1">==</span> <span class="sy3">&amp;</span>s.<span class="me1">u8</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../error/assert.htm"><span class="kw407">assert</span></a><span class="br0">(</span><span class="br0">(</span><a href="../types/integer.htm"><span class="kw120">uint8_t</span></a><span class="sy2">*</span><span class="br0">)</span><span class="sy3">&amp;</span>s <span class="sy1">==</span> <span class="sy3">&amp;</span>s.<span class="me1">u8</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// this union has 3 bytes of trailing padding</span>
     <span class="kw1">union</span> pad
@@ -323,7 +323,7 @@ v1.<span class="me1">w</span>.<span class="me1">k</span> <span class="sy1">=</sp
         <span class="kw4">char</span>  c<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// occupies 5 bytes</span>
         <span class="kw4">float</span> f<span class="sy4">;</span>    <span class="co1">// occupies 4 bytes, imposes alignment 4</span>
     <span class="br0">}</span> p <span class="sy1">=</span> <span class="br0">{</span> .<span class="me1">f</span> <span class="sy1">=</span> <span class="nu16">1.23</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// the size is 8 to satisfy float's alignment</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"size of union of char[5] and float is&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> p<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"size of union of char[5] and float is&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> p<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

@@ -186,18 +186,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/threads.html" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> call_once<span class="br0">(</span> <a href="../thread.html"><span class="kw1022">once_flag</span></a><span class="sy2">*</span> flag, <span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>func<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> call_once<span class="br0">(</span> <a href="../thread.htm"><span class="kw1022">once_flag</span></a><span class="sy2">*</span> flag, <span class="kw4">void</span> <span class="br0">(</span><span class="sy2">*</span>func<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw1">typedef</span> <span class="coMULTI">/* unspecified */</span> <a href="../thread.html"><span class="kw1022">once_flag</span></a></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw1">typedef</span> <span class="coMULTI">/* unspecified */</span> <a href="../thread.htm"><span class="kw1022">once_flag</span></a></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
@@ -213,12 +213,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">3)</span> Expands to a value that can be used to initialize an object of type <code>once_flag</code>.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="ONCE_FLAG_INIT.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="ONCE_FLAG_INIT.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="ONCE_FLAG_INIT.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="ONCE_FLAG_INIT.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="ONCE_FLAG_INIT.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="ONCE_FLAG_INIT.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./ONCE_FLAG_INIT.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./ONCE_FLAG_INIT.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./ONCE_FLAG_INIT.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./ONCE_FLAG_INIT.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./ONCE_FLAG_INIT.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./ONCE_FLAG_INIT.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/call_once&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -251,10 +251,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;threads.h&gt;</span>
 &nbsp;
 <span class="kw4">void</span> do_once<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"called once"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"called once"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
-<span class="kw4">static</span> <a href="../thread.html"><span class="kw1022">once_flag</span></a> flag <span class="sy1">=</span> <a href="ONCE_FLAG_INIT.htm"><span class="kw1023">ONCE_FLAG_INIT</span></a><span class="sy4">;</span>
+<span class="kw4">static</span> <a href="../thread.htm"><span class="kw1022">once_flag</span></a> flag <span class="sy1">=</span> <a href="./ONCE_FLAG_INIT.htm"><span class="kw1023">ONCE_FLAG_INIT</span></a><span class="sy4">;</span>
 <span class="kw4">int</span> func<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span> data<span class="br0">)</span>
 <span class="br0">{</span>
     call_once<span class="br0">(</span><span class="sy3">&amp;</span>flag, do_once<span class="br0">)</span><span class="sy4">;</span>
@@ -262,16 +262,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../thread.html"><span class="kw996">thrd_t</span></a> t1, t2, t3, t4<span class="sy4">;</span>
-    <a href="thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t1, func, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t2, func, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t3, func, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t4, func, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../thread.htm"><span class="kw996">thrd_t</span></a> t1, t2, t3, t4<span class="sy4">;</span>
+    <a href="./thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t1, func, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t2, func, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t3, func, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_create.htm"><span class="kw997">thrd_create</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t4, func, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t1, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t2, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t3, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t4, <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t1, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t2, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t3, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./thrd_join.htm"><span class="kw1004">thrd_join</span></a><span class="br0">(</span>t4, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

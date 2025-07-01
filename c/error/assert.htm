@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/assert.html" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/assert.htm" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -217,17 +217,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>The definition of the macro <code>assert</code> depends on another macro, <span class="t-c"><span class="mw-geshi c source-c">NDEBUG</span></span>, which is not defined by the standard library.
-</p><p>If <span class="t-c"><span class="mw-geshi c source-c">NDEBUG</span></span> is defined as a macro name at the point in the source code where <a href="../header/assert.html" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a> is included, then <code>assert</code> does nothing.
-</p><p>If <span class="t-c"><span class="mw-geshi c source-c">NDEBUG</span></span> is not defined, then <code>assert</code> checks if <span class="t-rev-inl t-until-c23"><span>its argument</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>the expression synthesized from <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> (which must have scalar type, otherwise, the behavior is undefined) compares equal to zero. If it does, <code>assert</code> outputs implementation-specific diagnostic information on the standard error output and calls <span class="mw-geshi c source-c"><a href="../program/abort.html"><span class="kw486">abort</span></a><span class="br0">(</span><span class="br0">)</span></span>. The diagnostic information is required to include the text of <code>expression</code>, as well as the values of <span class="t-rev-inl t-since-c99"><span> the <a href="../language/function_definition.html" title="c/language/function definition">predefined variable</a> <span class="t-c"><span class="mw-geshi c source-c">__func__</span></span> and of</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> the <a href="../preprocessor/replace.html" title="c/preprocessor/replace">predefined macros</a> <span class="t-c"><span class="mw-geshi c source-c">__FILE__</span></span> and <span class="t-c"><span class="mw-geshi c source-c">__LINE__</span></span>.
+</p><p>If <span class="t-c"><span class="mw-geshi c source-c">NDEBUG</span></span> is defined as a macro name at the point in the source code where <a href="../header/assert.htm" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a> is included, then <code>assert</code> does nothing.
+</p><p>If <span class="t-c"><span class="mw-geshi c source-c">NDEBUG</span></span> is not defined, then <code>assert</code> checks if <span class="t-rev-inl t-until-c23"><span>its argument</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>the expression synthesized from <span class="t-c"><span class="mw-geshi c source-c">__VA_ARGS__</span></span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> (which must have scalar type, otherwise, the behavior is undefined) compares equal to zero. If it does, <code>assert</code> outputs implementation-specific diagnostic information on the standard error output and calls <span class="mw-geshi c source-c"><a href="../program/abort.htm"><span class="kw486">abort</span></a><span class="br0">(</span><span class="br0">)</span></span>. The diagnostic information is required to include the text of <code>expression</code>, as well as the values of <span class="t-rev-inl t-since-c99"><span> the <a href="../language/function_definition.htm" title="c/language/function definition">predefined variable</a> <span class="t-c"><span class="mw-geshi c source-c">__func__</span></span> and of</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> the <a href="../preprocessor/replace.htm" title="c/preprocessor/replace">predefined macros</a> <span class="t-c"><span class="mw-geshi c source-c">__FILE__</span></span> and <span class="t-c"><span class="mw-geshi c source-c">__LINE__</span></span>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="assert.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="assert.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="assert.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="assert.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="assert.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="assert.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./assert.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./assert.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./assert.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./assert.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./assert.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./assert.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/error/assert&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -245,7 +245,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>(none)
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/error/assert&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>There is no standardized interface to add an additional message to <code>assert</code> errors. A portable way to include one is to use a <a href="../language/operator_other.html#Comma_operator" title="c/language/operator other">comma operator</a>, or use <span class="mw-geshi c source-c"><span class="sy3">&amp;&amp;</span></span> with a string literal:
+<p>There is no standardized interface to add an additional message to <code>assert</code> errors. A portable way to include one is to use a <a href="../language/operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>, or use <span class="mw-geshi c source-c"><span class="sy3">&amp;&amp;</span></span> with a string literal:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1">assert<span class="br0">(</span><span class="br0">(</span><span class="st0">"There are five lights"</span>, <span class="nu0">2</span> <span class="sy2">+</span> <span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 assert<span class="br0">(</span><span class="nu0">2</span> <span class="sy2">+</span> <span class="nu0">2</span> <span class="sy1">==</span> <span class="nu0">5</span> <span class="sy3">&amp;&amp;</span> <span class="st0">"There are five lights"</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
@@ -266,7 +266,7 @@ assert<span class="br0">(</span><span class="nu0">2</span> <span class="sy2">+</
 <span class="br0">{</span>
     <span class="kw4">double</span> x <span class="sy1">=</span> <span class="sy2">-</span><span class="nu16">1.0</span><span class="sy4">;</span>
     assert<span class="br0">(</span>x <span class="sy1">&gt;=</span> <span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(x) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/sqrt.html"><span class="kw664">sqrt</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"sqrt(x) =&nbsp;%f<span class="es1">\n</span>"</span>, <a href="../numeric/math/sqrt.htm"><span class="kw664">sqrt</span></a><span class="br0">(</span>x<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     assert<span class="br0">(</span>TEST<span class="br0">(</span>x <span class="sy1">&gt;=</span> <span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
@@ -320,7 +320,7 @@ sqrt(x) = -nan</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../program/abort.html" title="c/program/abort"> <span class="t-lines"><span>abort</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../program/abort.htm" title="c/program/abort"> <span class="t-lines"><span>abort</span></span></a></div></div>
 </td>
 <td>   causes abnormal program termination (without cleaning up) <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_abort&amp;action=edit">[edit]</a></span>
 </td></tr>

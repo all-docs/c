@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/ctype.html" title="c/header/ctype"><tt>&lt;ctype.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/ctype.htm" title="c/header/ctype"><tt>&lt;ctype.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -199,15 +199,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Checks if the given character can be printed, i.e. it is either a number (<code>0123456789</code>), an uppercase letter (<code>ABCDEFGHIJKLMNOPQRSTUVWXYZ</code>), a lowercase letter (<code>abcdefghijklmnopqrstuvwxyz</code>), a punctuation character (<code>!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</code>), or space, or any character classified as printable by the current C locale.
-</p><p>The behavior is undefined if the value of <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> is not representable as <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span> and is not equal to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../io.html"><span class="kw888">EOF</span></a></span></span>.
+</p><p>The behavior is undefined if the value of <span class="t-c"><span class="mw-geshi c source-c">ch</span></span> is not representable as <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span> and is not equal to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../io.htm"><span class="kw888">EOF</span></a></span></span>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="isprint.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="isprint.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="isprint.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="isprint.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="isprint.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./isprint.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./isprint.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./isprint.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./isprint.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./isprint.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/isprint&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -233,9 +233,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">unsigned</span> <span class="kw4">char</span> c <span class="sy1">=</span> <span class="st0">'<span class="es2">\xa0</span>'</span><span class="sy4">;</span> <span class="co1">// the non-breaking space in ISO-8859-1</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In the default C locale, <span class="es1">\\</span>xa0 is&nbsp;%sprintable<span class="es1">\n</span>"</span>, isprint<span class="br0">(</span>c<span class="br0">)</span><span class="sy4">?</span><span class="st0">""</span><span class="sy4">:</span><span class="st0">"not "</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../locale/setlocale.html"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_GB.iso88591"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In ISO-8859-1 locale, <span class="es1">\\</span>xa0 is&nbsp;%sprintable<span class="es1">\n</span>"</span>, isprint<span class="br0">(</span>c<span class="br0">)</span><span class="sy4">?</span><span class="st0">""</span><span class="sy4">:</span><span class="st0">"not "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In the default C locale, <span class="es1">\\</span>xa0 is&nbsp;%sprintable<span class="es1">\n</span>"</span>, isprint<span class="br0">(</span>c<span class="br0">)</span><span class="sy4">?</span><span class="st0">""</span><span class="sy4">:</span><span class="st0">"not "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.htm"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.htm"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_GB.iso88591"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In ISO-8859-1 locale, <span class="es1">\\</span>xa0 is&nbsp;%sprintable<span class="es1">\n</span>"</span>, isprint<span class="br0">(</span>c<span class="br0">)</span><span class="sy4">?</span><span class="st0">""</span><span class="sy4">:</span><span class="st0">"not "</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -282,7 +282,7 @@ In ISO-8859-1 locale, \xa0 is printable</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../wide/iswprint.html" title="c/string/wide/iswprint"> <span class="t-lines"><span>iswprint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../wide/iswprint.htm" title="c/string/wide/iswprint"> <span class="t-lines"><span>iswprint</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   checks if a wide character is a printing character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_iswprint&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -300,63 +300,63 @@ In ISO-8859-1 locale, \xa0 is printable</pre></div></div>
 <th rowspan="2">characters
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="iscntrl.htm" title="c/string/byte/iscntrl"><tt>iscntrl</tt></a><br>
-<a href="../wide/iswcntrl.html" title="c/string/wide/iswcntrl"><tt>iswcntrl</tt></a>
+<p><a href="./iscntrl.htm" title="c/string/byte/iscntrl"><tt>iscntrl</tt></a><br>
+<a href="../wide/iswcntrl.htm" title="c/string/wide/iswcntrl"><tt>iswcntrl</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
 <p><strong class="selflink"><tt>isprint</tt></strong><br>
-<a href="../wide/iswprint.html" title="c/string/wide/iswprint"><tt>iswprint</tt></a>
+<a href="../wide/iswprint.htm" title="c/string/wide/iswprint"><tt>iswprint</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isspace.htm" title="c/string/byte/isspace"><tt>isspace</tt></a><br>
-<a href="../wide/iswspace.html" title="c/string/wide/iswspace"><tt>iswspace</tt></a>
+<p><a href="./isspace.htm" title="c/string/byte/isspace"><tt>isspace</tt></a><br>
+<a href="../wide/iswspace.htm" title="c/string/wide/iswspace"><tt>iswspace</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isblank.htm" title="c/string/byte/isblank"><tt>isblank</tt></a><br>
-<a href="../wide/iswblank.html" title="c/string/wide/iswblank"><tt>iswblank</tt></a>
+<p><a href="./isblank.htm" title="c/string/byte/isblank"><tt>isblank</tt></a><br>
+<a href="../wide/iswblank.htm" title="c/string/wide/iswblank"><tt>iswblank</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isgraph.htm" title="c/string/byte/isgraph"><tt>isgraph</tt></a><br>
-<a href="../wide/iswgraph.html" title="c/string/wide/iswgraph"><tt>iswgraph</tt></a>
+<p><a href="./isgraph.htm" title="c/string/byte/isgraph"><tt>isgraph</tt></a><br>
+<a href="../wide/iswgraph.htm" title="c/string/wide/iswgraph"><tt>iswgraph</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="ispunct.htm" title="c/string/byte/ispunct"><tt>ispunct</tt></a> <br>
-<a href="../wide/iswpunct.html" title="c/string/wide/iswpunct"><tt>iswpunct</tt></a>
+<p><a href="./ispunct.htm" title="c/string/byte/ispunct"><tt>ispunct</tt></a> <br>
+<a href="../wide/iswpunct.htm" title="c/string/wide/iswpunct"><tt>iswpunct</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isalnum.htm" title="c/string/byte/isalnum"><tt>isalnum</tt></a> <br>
-<a href="../wide/iswalnum.html" title="c/string/wide/iswalnum"><tt>iswalnum</tt></a>
+<p><a href="./isalnum.htm" title="c/string/byte/isalnum"><tt>isalnum</tt></a> <br>
+<a href="../wide/iswalnum.htm" title="c/string/wide/iswalnum"><tt>iswalnum</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isalpha.htm" title="c/string/byte/isalpha"><tt>isalpha</tt></a> <br>
-<a href="../wide/iswalpha.html" title="c/string/wide/iswalpha"><tt>iswalpha</tt></a>
+<p><a href="./isalpha.htm" title="c/string/byte/isalpha"><tt>isalpha</tt></a> <br>
+<a href="../wide/iswalpha.htm" title="c/string/wide/iswalpha"><tt>iswalpha</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isupper.htm" title="c/string/byte/isupper"><tt>isupper</tt></a><br>
-<a href="../wide/iswupper.html" title="c/string/wide/iswupper"><tt>iswupper</tt></a>
+<p><a href="./isupper.htm" title="c/string/byte/isupper"><tt>isupper</tt></a><br>
+<a href="../wide/iswupper.htm" title="c/string/wide/iswupper"><tt>iswupper</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="islower.htm" title="c/string/byte/islower"><tt>islower</tt></a><br>
-<a href="../wide/iswlower.html" title="c/string/wide/iswlower"><tt>iswlower</tt></a>
+<p><a href="./islower.htm" title="c/string/byte/islower"><tt>islower</tt></a><br>
+<a href="../wide/iswlower.htm" title="c/string/wide/iswlower"><tt>iswlower</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isdigit.htm" title="c/string/byte/isdigit"><tt>isdigit</tt></a><br>
-<a href="../wide/iswdigit.html" title="c/string/wide/iswdigit"><tt>iswdigit</tt></a>
+<p><a href="./isdigit.htm" title="c/string/byte/isdigit"><tt>isdigit</tt></a><br>
+<a href="../wide/iswdigit.htm" title="c/string/wide/iswdigit"><tt>iswdigit</tt></a>
 </p>
 </th>
 <th rowspan="2" style="font-size:85%">
-<p><a href="isxdigit.htm" title="c/string/byte/isxdigit"><tt>isxdigit</tt></a><br>
-<a href="../wide/iswxdigit.html" title="c/string/wide/iswxdigit"><tt>iswxdigit</tt></a>
+<p><a href="./isxdigit.htm" title="c/string/byte/isxdigit"><tt>isxdigit</tt></a><br>
+<a href="../wide/iswxdigit.htm" title="c/string/wide/iswxdigit"><tt>iswxdigit</tt></a>
 </p>
 </th></tr>
 <tr>

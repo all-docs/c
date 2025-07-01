@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -222,7 +222,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -245,13 +245,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">8)</span> Type-generic macro: If the argument <span class="t-c"><span class="mw-geshi c source-c">from</span></span> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, <code>nexttowardl</code> is called. Otherwise, if <span class="t-c"><span class="mw-geshi c source-c">from</span></span> has integer type or the type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>, <code>nexttoward</code> is called. Otherwise, <code>nexttowardf</code> is called.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="nexttoward.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="nexttoward.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="nexttoward.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="nexttoward.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="nexttoward.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="nexttoward.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="nexttoward.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./nexttoward.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./nexttoward.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./nexttoward.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./nexttoward.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./nexttoward.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./nexttoward.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./nexttoward.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nextafter&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -267,20 +267,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nextafter&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If no errors occur, the next representable value of <span class="t-c"><span class="mw-geshi c source-c">from</span></span> in the direction of <span class="t-c"><span class="mw-geshi c source-c">to</span></span>. is returned. If <span class="t-c"><span class="mw-geshi c source-c">from</span></span> equals <span class="t-c"><span class="mw-geshi c source-c">to</span></span>, then <span class="t-c"><span class="mw-geshi c source-c">to</span></span> is returned, converted to the type of the function.
-</p><p>If a range error due to overflow occurs, <span class="mw-geshi c source-c">±<a href="HUGE_VALL.htm"><span class="kw708">HUGE_VAL</span></a></span>, <code>±HUGE_VALF</code>, or <code>±HUGE_VALL</code> is returned (with the same sign as <span class="t-c"><span class="mw-geshi c source-c">from</span></span>).
+</p><p>If a range error due to overflow occurs, <span class="mw-geshi c source-c">±<a href="./HUGE_VALL.htm"><span class="kw708">HUGE_VAL</span></a></span>, <code>±HUGE_VALF</code>, or <code>±HUGE_VALL</code> is returned (with the same sign as <span class="t-c"><span class="mw-geshi c source-c">from</span></span>).
 </p><p>If a range error occurs due to underflow, the correct result is returned.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nextafter&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
-<ul><li> if <span class="t-c"><span class="mw-geshi c source-c">from</span></span> is finite, but the expected result is an infinity, raises <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span>.
-</li><li> if <span class="t-c"><span class="mw-geshi c source-c">from</span></span> does not equal <code>to</code> and the result is subnormal or zero, raises <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_UNDERFLOW</a></span>.
+<ul><li> if <span class="t-c"><span class="mw-geshi c source-c">from</span></span> is finite, but the expected result is an infinity, raises <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_OVERFLOW</a></span>.
+</li><li> if <span class="t-c"><span class="mw-geshi c source-c">from</span></span> does not equal <code>to</code> and the result is subnormal or zero, raises <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_UNDERFLOW</a></span>.
 </li><li> in any case, the returned value is independent of the current rounding mode
 </li><li> if either <span class="t-c"><span class="mw-geshi c source-c">from</span></span> or <code>to</code> is NaN, NaN is returned.
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/nextafter&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/nextafter.html">POSIX specifies</a> that the overflow and the underflow conditions are range errors (<span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span> may be set).
+<p><a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/nextafter.html">POSIX specifies</a> that the overflow and the underflow conditions are range errors (<span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span> may be set).
 </p><p>IEC 60559 recommends that <span class="t-c"><span class="mw-geshi c source-c">from</span></span> is returned whenever <span class="t-c"><span class="mw-geshi c source-c">from <span class="sy1">==</span> to</span></span>. These functions return <span class="t-c"><span class="mw-geshi c source-c">to</span></span> instead, which makes the behavior around zero consistent: <code>nextafter(-0.0, +0.0)</code> returns <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">+</span><span class="nu16">0.0</span></span></span> and <code>nextafter(+0.0, -0.0)</code> returns <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu16">0.0</span></span></span>.
 </p><p><code>nextafter</code> is typically implemented by manipulation of IEEE representation (<a rel="nofollow" class="external text" href="https://github.com/bminor/glibc/blob/master/math/s_nextafter.c">glibc</a> <a rel="nofollow" class="external text" href="https://github.com/ifduyue/musl/blob/master/src/math/nextafter.c">musl</a>).
 </p>
@@ -294,37 +294,37 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">float</span> from1 <span class="sy1">=</span> <span class="nu0">0</span>, to1 <span class="sy1">=</span> nextafterf<span class="br0">(</span>from1, <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable float after&nbsp;%.2f is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>, from1, to1, to1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable float after&nbsp;%.2f is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>, from1, to1, to1<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">float</span> from2 <span class="sy1">=</span> <span class="nu0">1</span>, to2 <span class="sy1">=</span> nextafterf<span class="br0">(</span>from2, <span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable float after&nbsp;%.2f is&nbsp;%.20f (%a)<span class="es1">\n</span>"</span>, from2, to2, to2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable float after&nbsp;%.2f is&nbsp;%.20f (%a)<span class="es1">\n</span>"</span>, from2, to2, to2<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">double</span> from3 <span class="sy1">=</span> nextafter<span class="br0">(</span><span class="nu16">0.1</span>, <span class="nu0">0</span><span class="br0">)</span>, to3 <span class="sy1">=</span> <span class="nu16">0.1</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The number 0.1 lies between two valid doubles:<span class="es1">\n</span>"</span>
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The number 0.1 lies between two valid doubles:<span class="es1">\n</span>"</span>
            <span class="st0">"   &nbsp;%.56f (%a)<span class="es1">\n</span>and&nbsp;%.55f  (%a)<span class="es1">\n</span>"</span>, from3, from3, to3, to3<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// difference between nextafter and nexttoward:</span>
     <span class="kw4">long</span> <span class="kw4">double</span> dir <span class="sy1">=</span> nextafterl<span class="br0">(</span>from1, <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// first subnormal long double</span>
     <span class="kw4">float</span> x <span class="sy1">=</span> nextafterf<span class="br0">(</span>from1, dir<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// first converts dir to float, giving 0</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Using nextafter, next float after&nbsp;%.2f (%a) is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>,
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Using nextafter, next float after&nbsp;%.2f (%a) is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>,
            from1, from1, x, x<span class="br0">)</span><span class="sy4">;</span>
     x <span class="sy1">=</span> nexttowardf<span class="br0">(</span>from1, dir<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Using nexttoward, next float after&nbsp;%.2f (%a) is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>,
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"Using nexttoward, next float after&nbsp;%.2f (%a) is&nbsp;%.20g (%a)<span class="es1">\n</span>"</span>,
            from1, from1, x, x<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// special values</span>
     <span class="br0">{</span>
         <span class="co2">#pragma STDC FENV_ACCESS ON</span>
-        <a href="../fenv/feclearexcept.html"><span class="kw716">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw727">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw4">double</span> from4 <span class="sy1">=</span> <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a>, to4 <span class="sy1">=</span> nextafter<span class="br0">(</span>from4, INFINITY<span class="br0">)</span><span class="sy4">;</span>
-        <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable double after&nbsp;%.2g (%a) is&nbsp;%.23f (%a)<span class="es1">\n</span>"</span>,
+        <a href="../fenv/feclearexcept.htm"><span class="kw716">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw727">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw4">double</span> from4 <span class="sy1">=</span> <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a>, to4 <span class="sy1">=</span> nextafter<span class="br0">(</span>from4, INFINITY<span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"The next representable double after&nbsp;%.2g (%a) is&nbsp;%.23f (%a)<span class="es1">\n</span>"</span>,
                from4, from4, to4, to4<span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw717">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw731">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span> <a href="../../io/puts.html"><span class="kw834">puts</span></a><span class="br0">(</span><span class="st0">"   raised FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw717">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw729">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span> <a href="../../io/puts.html"><span class="kw834">puts</span></a><span class="br0">(</span><span class="st0">"   raised FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw717">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw731">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span> <a href="../../io/puts.htm"><span class="kw834">puts</span></a><span class="br0">(</span><span class="st0">"   raised FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">if</span><span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw717">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw729">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span> <a href="../../io/puts.htm"><span class="kw834">puts</span></a><span class="br0">(</span><span class="st0">"   raised FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span> <span class="co1">// end FENV_ACCESS block</span>
 &nbsp;
     <span class="kw4">float</span> from5 <span class="sy1">=</span> <span class="nu16">0.0</span>, to5 <span class="sy1">=</span> nextafter<span class="br0">(</span>from5, <span class="sy2">-</span><span class="nu16">0.0</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(+0.0, -0.0) gives&nbsp;%.2g (%a)<span class="es1">\n</span>"</span>, to5, to5<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw849">printf</span></a><span class="br0">(</span><span class="st0">"nextafter(+0.0, -0.0) gives&nbsp;%.2g (%a)<span class="es1">\n</span>"</span>, to5, to5<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>

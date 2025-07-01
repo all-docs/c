@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -207,13 +207,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/inttypes.html" title="c/header/inttypes"><tt>&lt;inttypes.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/inttypes.htm" title="c/header/inttypes"><tt>&lt;inttypes.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/integer.html"><span class="kw118">intmax_t</span></a> imaxabs<span class="br0">(</span> <a href="../../types/integer.html"><span class="kw118">intmax_t</span></a> n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/integer.htm"><span class="kw118">intmax_t</span></a> imaxabs<span class="br0">(</span> <a href="../../types/integer.htm"><span class="kw118">intmax_t</span></a> n <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
@@ -223,12 +223,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="abs.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="abs.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="abs.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="abs.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="abs.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="abs.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./abs.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./abs.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./abs.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./abs.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./abs.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./abs.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/abs&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -246,7 +246,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>The absolute value of <span class="t-c"><span class="mw-geshi c source-c">n</span></span> (i.e. <code>|n|</code>), if it is representable.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/abs&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>In 2's complement systems, the absolute value of the most-negative value is out of range, e.g. for 32-bit 2's complement type <span class="mw-geshi c source-c"><span class="kw4">int</span></span>, <span class="t-lc"><a href="../../types/limits.html" title="c/types/limits">INT_MIN</a></span> is <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">2147483648</span></span></span>, but the would-be result <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2147483648</span></span></span> is greater than <span class="t-lc"><a href="../../types/limits.html" title="c/types/limits">INT_MAX</a></span>, which is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2147483647</span></span></span>.
+<p>In 2's complement systems, the absolute value of the most-negative value is out of range, e.g. for 32-bit 2's complement type <span class="mw-geshi c source-c"><span class="kw4">int</span></span>, <span class="t-lc"><a href="../../types/limits.htm" title="c/types/limits">INT_MIN</a></span> is <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">2147483648</span></span></span>, but the would-be result <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2147483648</span></span></span> is greater than <span class="t-lc"><a href="../../types/limits.htm" title="c/types/limits">INT_MAX</a></span>, which is <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2147483647</span></span></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/abs&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -256,8 +256,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"abs(+3) =&nbsp;%d<span class="es1">\n</span>"</span>, abs<span class="br0">(</span><span class="sy2">+</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"abs(-3) =&nbsp;%d<span class="es1">\n</span>"</span>, abs<span class="br0">(</span><span class="sy2">-</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"abs(+3) =&nbsp;%d<span class="es1">\n</span>"</span>, abs<span class="br0">(</span><span class="sy2">+</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"abs(-3) =&nbsp;%d<span class="es1">\n</span>"</span>, abs<span class="br0">(</span><span class="sy2">-</span><span class="nu0">3</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
 <span class="co1">//  printf("%+d\n", abs(INT_MIN)); // undefined behavior on 2's complement systems</span>
 <span class="br0">}</span></pre></div></div>
@@ -321,13 +321,13 @@ abs(-3) = 3</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fabs.htm" title="c/numeric/math/fabs"> <span class="t-lines"><span>fabs</span><span>fabsf</span><span>fabsl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fabs.htm" title="c/numeric/math/fabs"> <span class="t-lines"><span>fabs</span><span>fabsf</span><span>fabsl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes absolute value of a floating-point value (<span class="mjax" style="display:none">\(\small{|x|}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">|x|</span>) <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_fabs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../complex/cabs.html" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../complex/cabs.htm" title="c/numeric/complex/cabs"> <span class="t-lines"><span>cabs</span><span>cabsf</span><span>cabsl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the magnitude of a complex number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cabs&amp;action=edit">[edit]</a></span>
 </td></tr>

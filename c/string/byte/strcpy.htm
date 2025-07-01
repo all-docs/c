@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -217,7 +217,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Copies the null-terminated byte string pointed to by <span class="t-c"><span class="mw-geshi c source-c">src</span></span>, including the null terminator, to the character array whose first element is pointed to by <span class="t-c"><span class="mw-geshi c source-c">dest</span></span>.</div>
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> array is not large enough. The behavior is undefined if the strings overlap. The behavior is undefined if either <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> is not a pointer to a character array or <span class="t-c"><span class="mw-geshi c source-c">src</span></span> is not a pointer to a null-terminated byte string.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that it may clobber the rest of the destination array with unspecified values and that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that it may clobber the rest of the destination array with unspecified values and that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">src</span></span> or <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> is a null pointer
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> is zero or greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX</span></span>
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> is less or equal <span class="t-c"><span class="mw-geshi c source-c">strnlen_s<span class="br0">(</span>src, destsz<span class="br0">)</span></span></span>; in other words, truncation would occur
@@ -225,16 +225,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the size of the character array pointed to by <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&lt;=</span></span></span> <span class="t-c"><span class="mw-geshi c source-c">strnlen_s<span class="br0">(</span>src, destsz<span class="br0">)</span></span></span> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&lt;</span></span></span> <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span>; in other words, an erroneous value of <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> may permit buffer overflow.
-<dl><dd>As with all bounds-checked functions, <code>strcpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>strcpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="strcpy.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="strcpy.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="strcpy.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="strcpy.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="strcpy.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="strcpy.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./strcpy.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./strcpy.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./strcpy.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./strcpy.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./strcpy.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./strcpy.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strcpy&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -273,7 +273,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </li><li> <code>strlcpy</code> does not perform all the runtime checks that <code>strcpy_s</code> does
 </li><li> <code>strlcpy</code> does not make failures obvious by setting the destination to a null string or calling a handler if the call fails.
 </li></ul>
-<p>Although <code>strcpy_s</code> prohibits truncation due to potential security risks, it's possible to truncate a string using bounds-checked <span class="t-lc"><a href="strncpy.htm" title="c/string/byte/strncpy">strncpy_s</a></span> instead.
+<p>Although <code>strcpy_s</code> prohibits truncation due to potential security risks, it's possible to truncate a string using bounds-checked <span class="t-lc"><a href="./strncpy.htm" title="c/string/byte/strncpy">strncpy_s</a></span> instead.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strcpy&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -286,17 +286,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> src <span class="sy1">=</span> <span class="st0">"Take the test."</span><span class="sy4">;</span>
 <span class="co1">//  src[0] = 'M'&nbsp;; // this would be undefined behavior</span>
-    <span class="kw4">char</span> dst<span class="br0">[</span><a href="strlen.htm"><span class="kw557">strlen</span></a><span class="br0">(</span>src<span class="br0">)</span> <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// +1 to accommodate for the null terminator</span>
+    <span class="kw4">char</span> dst<span class="br0">[</span><a href="./strlen.htm"><span class="kw557">strlen</span></a><span class="br0">(</span>src<span class="br0">)</span> <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// +1 to accommodate for the null terminator</span>
     strcpy<span class="br0">(</span>dst, src<span class="br0">)</span><span class="sy4">;</span>
     dst<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">'M'</span><span class="sy4">;</span> <span class="co1">// OK</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"src =&nbsp;%s<span class="es1">\n</span>dst =&nbsp;%s<span class="es1">\n</span>"</span>, src, dst<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"src =&nbsp;%s<span class="es1">\n</span>dst =&nbsp;%s<span class="es1">\n</span>"</span>, src, dst<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
 <span class="co2">#ifdef __STDC_LIB_EXT1__</span>
     set_constraint_handler_s<span class="br0">(</span>ignore_handler_s<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">int</span> r <span class="sy1">=</span> strcpy_s<span class="br0">(</span>dst, <span class="kw4">sizeof</span> dst, src<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
     r <span class="sy1">=</span> strcpy_s<span class="br0">(</span>dst, <span class="kw4">sizeof</span> dst, <span class="st0">"Take even more tests."</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -355,25 +355,25 @@ dst = "", r = 22</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strncpy.htm" title="c/string/byte/strncpy"> <span class="t-lines"><span>strncpy</span><span>strncpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strncpy.htm" title="c/string/byte/strncpy"> <span class="t-lines"><span>strncpy</span><span>strncpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies a certain amount of characters from one string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one buffer to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memcpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../wide/wcscpy.html" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../wide/wcscpy.htm" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one wide string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcscpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../experimental/dynamic/strdup.html" title="c/experimental/dynamic/strdup"> <span class="t-lines"><span>strdup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-dynamic-tr t-mark-ts">(dynamic memory TR)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../experimental/dynamic/strdup.htm" title="c/experimental/dynamic/strdup"> <span class="t-lines"><span>strdup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-dynamic-tr t-mark-ts">(dynamic memory TR)</span></span></span></div></div>
 </td>
 <td>   allocate a copy of a string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/experimental/dynamic/dsc_strdup&amp;action=edit">[edit]</a></span>
 </td></tr>

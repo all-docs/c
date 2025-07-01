@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,19 +198,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Seeds the pseudo-random number generator used by <span class="t-lc"><a href="rand.htm" title="c/numeric/random/rand">rand()</a></span> with the value <code>seed</code>.
+<p>Seeds the pseudo-random number generator used by <span class="t-lc"><a href="./rand.htm" title="c/numeric/random/rand">rand()</a></span> with the value <code>seed</code>.
 </p><p>If <code>rand()</code> is used before any calls to <code>srand()</code>, <code>rand()</code> behaves as if it was seeded with <span class="t-c"><span class="mw-geshi c source-c">srand<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span></span></span>.
 </p><p>Each time <code>rand()</code> is seeded with the same <code>seed</code>, it must produce the same sequence of values.
 </p><p><code>srand()</code> is not guaranteed to be thread-safe.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="srand.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="srand.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="srand.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="srand.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="srand.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="srand.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./srand.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./srand.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./srand.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./srand.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./srand.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./srand.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/random/srand&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -230,8 +230,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/random/srand&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Generally speaking, the pseudo-random number generator should only be seeded once, before any calls to <code>rand()</code>, and the start of the program.
 It should not be repeatedly seeded, or reseeded every time you wish to generate a new batch of pseudo-random numbers.
-</p><p>Standard practice is to use the result of a call to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../chrono/time.html"><span class="kw513">time</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span></span></span> as the seed.
-However, <code>time()</code> returns a <span class="t-lc"><a href="../../chrono/time_t.html" title="c/chrono/time t">time_t</a></span> value, and <code>time_t</code> is not guaranteed to be an integral type.
+</p><p>Standard practice is to use the result of a call to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../chrono/time.htm"><span class="kw513">time</span></a><span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span></span></span> as the seed.
+However, <code>time()</code> returns a <span class="t-lc"><a href="../../chrono/time_t.htm" title="c/chrono/time t">time_t</a></span> value, and <code>time_t</code> is not guaranteed to be an integral type.
 In practice, though, every major implementation defines <code>time_t</code> to be an integral type, and this is also what POSIX requires.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/random/srand&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -242,9 +242,9 @@ In practice, though, every major implementation defines <code>time_t</code> to b
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    srand<span class="br0">(</span><a href="../../chrono/time.html"><span class="kw513">time</span></a><span class="br0">(</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//use current time as seed for random generator</span>
-    <span class="kw4">int</span> random_variable <span class="sy1">=</span> <a href="rand.htm"><span class="kw740">rand</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Random value on [0,%d]:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="RAND_MAX.htm"><span class="kw741">RAND_MAX</span></a>, random_variable<span class="br0">)</span><span class="sy4">;</span>
+    srand<span class="br0">(</span><a href="../../chrono/time.htm"><span class="kw513">time</span></a><span class="br0">(</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">//use current time as seed for random generator</span>
+    <span class="kw4">int</span> random_variable <span class="sy1">=</span> <a href="./rand.htm"><span class="kw740">rand</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Random value on [0,%d]:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="./RAND_MAX.htm"><span class="kw741">RAND_MAX</span></a>, random_variable<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -283,15 +283,15 @@ In practice, though, every major implementation defines <code>time_t</code> to b
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="rand.htm" title="c/numeric/random/rand"> <span class="t-lines"><span>rand</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./rand.htm" title="c/numeric/random/rand"> <span class="t-lines"><span>rand</span></span></a></div></div>
 </td>
 <td>   generates a pseudo-random number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/random/dsc_rand&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="RAND_MAX.htm" title="c/numeric/random/RAND MAX"> <span class="t-lines"><span>RAND_MAX</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./RAND_MAX.htm" title="c/numeric/random/RAND MAX"> <span class="t-lines"><span>RAND_MAX</span></span></a></div></div>
 </td>
-<td>   maximum possible value generated by <span class="t-c"><span class="mw-geshi c source-c"><a href="rand.htm"><span class="kw740">rand</span></a><span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/random/dsc_RAND_MAX&amp;action=edit">[edit]</a></span>
+<td>   maximum possible value generated by <span class="t-c"><span class="mw-geshi c source-c"><a href="./rand.htm"><span class="kw740">rand</span></a><span class="br0">(</span><span class="br0">)</span></span></span> <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/random/dsc_RAND_MAX&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">

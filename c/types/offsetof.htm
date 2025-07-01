@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,7 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>The macro <span class="t-lc"><strong class="selflink">offsetof</strong></span> expands to an <a href="../language/constant_expression.html#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> of type <span class="t-lc"><a href="size_t.htm" title="c/types/size t">size_t</a></span>, the value of which is the offset, in bytes, from the beginning of an object of specified type to its specified subobject, including padding if any.
+<p>The macro <span class="t-lc"><strong class="selflink">offsetof</strong></span> expands to an <a href="../language/constant_expression.htm#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> of type <span class="t-lc"><a href="./size_t.htm" title="c/types/size t">size_t</a></span>, the value of which is the offset, in bytes, from the beginning of an object of specified type to its specified subobject, including padding if any.
 </p><p>Given an object <code>o</code> of type <code>type</code> with static storage duration, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">&amp;</span><span class="br0">(</span>o.<span class="me1">member</span><span class="br0">)</span></span></span> shall be an address constant expression and point to a subobject of <code>o</code>. Otherwise, the behavior is undefined.
 </p>
 <table class="t-rev-begin">
@@ -210,10 +210,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="offsetof.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="offsetof.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="offsetof.htm#Defect_reports"><span class="tocnumber">3</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="offsetof.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./offsetof.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./offsetof.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./offsetof.htm#Defect_reports"><span class="tocnumber">3</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./offsetof.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/offsetof&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
@@ -223,7 +223,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
-<p><a href="../language/typeof_unqual.html" title="c/language/typeof"><tt>typeof</tt></a> can be used to avoid the bad effect of commas in the definition of a new type, e.g. <span class="t-c"><span class="mw-geshi c source-c">offsetof<span class="br0">(</span>typeof<span class="br0">(</span><span class="kw1">struct</span> <span class="br0">{</span> <span class="kw4">int</span> i, j<span class="sy4">;</span> <span class="br0">}</span><span class="br0">)</span>, i<span class="br0">)</span></span></span> is well-defined.
+<p><a href="../language/typeof_unqual.htm" title="c/language/typeof"><tt>typeof</tt></a> can be used to avoid the bad effect of commas in the definition of a new type, e.g. <span class="t-c"><span class="mw-geshi c source-c">offsetof<span class="br0">(</span>typeof<span class="br0">(</span><span class="kw1">struct</span> <span class="br0">{</span> <span class="kw4">int</span> i, j<span class="sy4">;</span> <span class="br0">}</span><span class="br0">)</span>, i<span class="br0">)</span></span></span> is well-defined.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
@@ -240,8 +240,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"the first element is at offset&nbsp;%zu<span class="es1">\n</span>"</span>, offsetof<span class="br0">(</span><span class="kw1">struct</span> S, c<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"the double is at offset&nbsp;%zu<span class="es1">\n</span>"</span>, offsetof<span class="br0">(</span><span class="kw1">struct</span> S, d<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"the first element is at offset&nbsp;%zu<span class="es1">\n</span>"</span>, offsetof<span class="br0">(</span><span class="kw1">struct</span> S, c<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"the double is at offset&nbsp;%zu<span class="es1">\n</span>"</span>, offsetof<span class="br0">(</span><span class="kw1">struct</span> S, d<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -274,9 +274,9 @@ the double is at offset 8</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="size_t.htm" title="c/types/size t"> <span class="t-lines"><span>size_t</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./size_t.htm" title="c/types/size t"> <span class="t-lines"><span>size_t</span></span></a></div></div>
 </td>
-<td>   unsigned integer type returned by the <a href="../language/sizeof.html" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_size_t&amp;action=edit">[edit]</a></span>
+<td>   unsigned integer type returned by the <a href="../language/sizeof.htm" title="c/language/sizeof"><tt>sizeof</tt></a> operator <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_size_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">

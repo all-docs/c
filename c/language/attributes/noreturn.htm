@@ -112,10 +112,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="noreturn.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="noreturn.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="noreturn.htm#Standard_library"><span class="tocnumber">3</span> <span class="toctext">Standard library</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="noreturn.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./noreturn.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./noreturn.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./noreturn.htm#Standard_library"><span class="tocnumber">3</span> <span class="toctext">Standard library</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./noreturn.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/noreturn&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -152,24 +152,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/noreturn&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>Indicates that the function does not return.
-</p><p>This attribute applies to the name of the function and specifies that the function does not return by executing the return statement or by reaching the end of the function body (it may return by executing <span class="t-lc"><a href="../../program/longjmp.html" title="c/program/longjmp">longjmp</a></span>). The behavior is undefined if the function with this attribute actually returns. A compiler diagnostic is recommended if this can be detected.
-</p><p>It has been previously denoted by the keyword <a href="../noreturn.html" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> until it was deprecated since C23 and replaced by this attribute.
+</p><p>This attribute applies to the name of the function and specifies that the function does not return by executing the return statement or by reaching the end of the function body (it may return by executing <span class="t-lc"><a href="../../program/longjmp.htm" title="c/program/longjmp">longjmp</a></span>). The behavior is undefined if the function with this attribute actually returns. A compiler diagnostic is recommended if this can be detected.
+</p><p>It has been previously denoted by the keyword <a href="../noreturn.htm" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> until it was deprecated since C23 and replaced by this attribute.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/noreturn&amp;action=edit&amp;section=3" title="Edit section: Standard library">edit</a>]</span> <span class="mw-headline" id="Standard_library">Standard library</span></h3>
-<p>The following standard functions are declared with <code>noreturn</code> attribute (they used to be declared with <a href="../noreturn.html" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> specifier until C23):
+<p>The following standard functions are declared with <code>noreturn</code> attribute (they used to be declared with <a href="../noreturn.htm" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> specifier until C23):
 </p>
-<ul><li> <span class="t-lc"><a href="../../program/abort.html" title="c/program/abort">abort()</a></span>
-</li><li> <span class="t-lc"><a href="../../program/exit.html" title="c/program/exit">exit()</a></span>
-</li><li> <span class="t-lc"><a href="../../program/_Exit.html" title="c/program/ Exit">_Exit()</a></span>
-</li><li> <span class="t-lc"><a href="../../program/quick_exit.html" title="c/program/quick exit">quick_exit()</a></span>
-</li><li> <span class="t-lc"><a href="../../thread/thrd_exit.html" title="c/thread/thrd exit">thrd_exit()</a></span>
-</li><li> <span class="t-lc"><a href="../../program/longjmp.html" title="c/program/longjmp">longjmp()</a></span>
+<ul><li> <span class="t-lc"><a href="../../program/abort.htm" title="c/program/abort">abort()</a></span>
+</li><li> <span class="t-lc"><a href="../../program/exit.htm" title="c/program/exit">exit()</a></span>
+</li><li> <span class="t-lc"><a href="../../program/_Exit.htm" title="c/program/ Exit">_Exit()</a></span>
+</li><li> <span class="t-lc"><a href="../../program/quick_exit.htm" title="c/program/quick exit">quick_exit()</a></span>
+</li><li> <span class="t-lc"><a href="../../thread/thrd_exit.htm" title="c/thread/thrd exit">thrd_exit()</a></span>
+</li><li> <span class="t-lc"><a href="../../program/longjmp.htm" title="c/program/longjmp">longjmp()</a></span>
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/attributes/noreturn&amp;action=edit&amp;section=4" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td colspan="2"> <div class="t-dsc-see"><span><a href="../noreturn.html" title="c/language/ Noreturn">C documentation</a></span> for <span class="t-dsc-see-tt"><span>_Noreturn</span></span></div>
+<td colspan="2"> <div class="t-dsc-see"><span><a href="../noreturn.htm" title="c/language/ Noreturn">C documentation</a></span> for <span class="t-dsc-see-tt"><span>_Noreturn</span></span></div>
 </td></tr>
 
 

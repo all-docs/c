@@ -184,18 +184,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>Appears in the <a href="declarations.htm" title="c/language/declarations">declaration</a> syntax as one of the type specifiers to modify the <a href="object.htm#Alignment" title="c/language/object">alignment requirement</a> of the object being declared.
+<p>Appears in the <a href="./declarations.htm" title="c/language/declarations">declaration</a> syntax as one of the type specifiers to modify the <a href="./object.htm#Alignment" title="c/language/object">alignment requirement</a> of the object being declared.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="alignas.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="alignas.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="alignas.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="alignas.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="alignas.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="alignas.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="alignas.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="alignas.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./alignas.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./alignas.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./alignas.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./alignas.htm#Keywords"><span class="tocnumber">4</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./alignas.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./alignas.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./alignas.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./alignas.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Alignas&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -264,39 +264,39 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> any <a href="constant_expression.htm" title="c/language/constant expression">integer constant expression</a> whose value is a valid <a href="object.htm#Alignment" title="c/language/object">alignment</a> or zero
+<td> any <a href="./constant_expression.htm" title="c/language/constant expression">integer constant expression</a> whose value is a valid <a href="./object.htm#Alignment" title="c/language/object">alignment</a> or zero
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">type</span>
 </td>
 <td> -
 </td>
-<td> any <a href="compatible_type.htm#Type_names" title="c/language/type">type name</a>
+<td> any <a href="./compatible_type.htm#Type_names" title="c/language/type">type name</a>
 </td></tr></tbody></table>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c23"><td>
-<p>The keyword <code>_Alignas</code> is also available as convenience macro <a href="../types.html" title="c/types"><tt>alignas</tt></a>, available in the header <a href="../header/stdalign.html" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a>.
+<p>The keyword <code>_Alignas</code> is also available as convenience macro <a href="../types.htm" title="c/types"><tt>alignas</tt></a>, available in the header <a href="../header/stdalign.htm" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a>.
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Alignas&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> specifier can only be used when declaring objects that are not <a href="bit_field.htm" title="c/language/bit field">bit-fields</a>, and don't have the <a href="storage_class_specifiers.htm" title="c/language/storage duration">register</a> storage class. It cannot be used in function parameter declarations, and cannot be used in a typedef.
-</p><p>When used in a declaration, the declared object will have its <a href="object.htm#Alignment" title="c/language/object">alignment requirement</a> set to
+<p>The <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> specifier can only be used when declaring objects that are not <a href="./bit_field.htm" title="c/language/bit field">bit-fields</a>, and don't have the <a href="./storage_class_specifiers.htm" title="c/language/storage duration">register</a> storage class. It cannot be used in function parameter declarations, and cannot be used in a typedef.
+</p><p>When used in a declaration, the declared object will have its <a href="./object.htm#Alignment" title="c/language/object">alignment requirement</a> set to
 </p>
 <div class="t-li1"><span class="t-li">1,2)</span> the result of the <span class="t-spar">expression</span>, unless it is zero</div>
 <div class="t-li1"><span class="t-li">3,4)</span> the alignment requirement of <span class="t-spar">type</span>, that is, to <span class="t-rev-inl t-until-c23"><span><span class="t-c"><span class="mw-geshi c source-c">_Alignof<span class="br0">(</span>type<span class="br0">)</span></span></span></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><span class="t-c"><span class="mw-geshi c source-c">alignof<span class="br0">(</span>type<span class="br0">)</span></span></span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span></div>
 <p>except when this would weaken the alignment the type would have had naturally.
 </p><p>If <span class="t-spar">expression</span> evaluates to zero, this specifier has no effect.
 </p><p>When multiple <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> specifiers appear in the same declaration, the strictest one is used.
-</p><p><span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> specifier only needs to appear on the <a href="declarations.htm#Definitions" title="c/language/declarations">definition</a> of an object, but if any declaration uses <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, it must specify the same alignment as the <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> on the definition. The behavior is undefined if different translation units specify different alignments for the same object.
+</p><p><span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> specifier only needs to appear on the <a href="./declarations.htm#Definitions" title="c/language/declarations">definition</a> of an object, but if any declaration uses <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, it must specify the same alignment as the <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> on the definition. The behavior is undefined if different translation units specify different alignments for the same object.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Alignas&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>In C++, the <code>alignas</code> specifier may also be applied to the declarations of class/struct/union types and enumerations. This is not supported in C, but the alignment of a struct type can be controlled by using <span class="t-rev-inl t-until-c23"><span><code>_Alignas</code></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><code>alignas</code></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> in a member declaration.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Alignas&amp;action=edit&amp;section=4" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/alignas.html" title="c/keyword/alignas"><tt>alignas</tt></a>,
-<a href="../keyword/_Alignas.html" title="c/keyword/ Alignas"><tt>_Alignas</tt></a>
+<p><a href="../keyword/alignas.htm" title="c/keyword/alignas"><tt>alignas</tt></a>,
+<a href="../keyword/_Alignas.htm" title="c/keyword/ Alignas"><tt>_Alignas</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/_Alignas&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -320,10 +320,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(data) =&nbsp;%zu (1 byte + 127 bytes padding + 128-byte array)<span class="es1">\n</span>"</span>,
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"sizeof(data) =&nbsp;%zu (1 byte + 127 bytes padding + 128-byte array)<span class="es1">\n</span>"</span>,
            <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw1">struct</span> data<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"alignment of sse_t is&nbsp;%zu<span class="es1">\n</span>"</span>, alignof<span class="br0">(</span><span class="kw1">struct</span> sse_t<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"alignment of sse_t is&nbsp;%zu<span class="es1">\n</span>"</span>, alignof<span class="br0">(</span><span class="kw1">struct</span> sse_t<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     alignas<span class="br0">(</span><span class="nu0">2048</span><span class="br0">)</span> <span class="kw1">struct</span> data d<span class="sy4">;</span> <span class="co1">// this instance of data is aligned even stricter</span>
     <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>d<span class="sy4">;</span> <span class="co1">// suppresses "maybe unused" warning</span>
@@ -399,13 +399,13 @@ alignment of sse_t is 16</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../types/max_align_t.html" title="c/types/max align t"> <span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../types/max_align_t.htm" title="c/types/max align t"> <span class="t-lines"><span>max_align_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   a type with alignment requirement as great as any other scalar type  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_max_align_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td> <span class="t-rev-inl t-until-c23"><span><a href="alignof.htm" title="c/language/ Alignof"><tt>_Alignof</tt></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="alignof.htm" title="c/language/ Alignof"><tt>alignof</tt></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+<td> <span class="t-rev-inl t-until-c23"><span><a href="./alignof.htm" title="c/language/ Alignof"><tt>_Alignof</tt></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="./alignof.htm" title="c/language/ Alignof"><tt>alignof</tt></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </td>
 <td> queries alignment requirements of an object<br><span style="font-size:0.7em; line-height:130%"><span class="t-mark">(operator)</span></span>
 </td></tr>

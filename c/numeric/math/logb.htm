@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -207,7 +207,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -221,17 +221,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <div class="t-li1"><span class="t-li">1-3)</span> Extracts the value of the unbiased radix-independent exponent from the floating-point argument <span class="t-c"><span class="mw-geshi c source-c">arg</span></span>, and returns it as a floating-point value.</div>
 <div class="t-li1"><span class="t-li">4)</span> Type-generic macros: If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span></span>, <code>logbl</code> is called. Otherwise, if <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> has integer type or the type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span></span></span>, <code>logb</code> is called. Otherwise, <code>logbf</code> is called.</div>
-<p>Formally, the unbiased exponent is the signed integral part of <span class="texhtml" style="white-space: nowrap;">log<span class="t-su t-su-b">r</span>|arg|</span> (returned by this function as a floating-point value), for non-zero <span class="t-c"><span class="mw-geshi c source-c">arg</span></span>, where <code>r</code> is <span class="t-lc"><a href="../../types/limits.html" title="c/types/limits">FLT_RADIX</a></span>. If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is subnormal, it is treated as though it was normalized.
+<p>Formally, the unbiased exponent is the signed integral part of <span class="texhtml" style="white-space: nowrap;">log<span class="t-su t-su-b">r</span>|arg|</span> (returned by this function as a floating-point value), for non-zero <span class="t-c"><span class="mw-geshi c source-c">arg</span></span>, where <code>r</code> is <span class="t-lc"><a href="../../types/limits.htm" title="c/types/limits">FLT_RADIX</a></span>. If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is subnormal, it is treated as though it was normalized.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="logb.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="logb.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="logb.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="logb.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="logb.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="logb.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="logb.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./logb.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./logb.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./logb.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./logb.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./logb.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./logb.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./logb.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/logb&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -248,21 +248,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/logb&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If no errors occur, the unbiased exponent of <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is returned as a signed floating-point value.
 </p><p>If a domain error occurs, an implementation-defined value is returned.
-</p><p>If a pole error occurs, <span class="t-lc"><a href="HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">-HUGE_VAL</a></span>, <code>-HUGE_VALF</code>, or <code>-HUGE_VALL</code> is returned.
+</p><p>If a pole error occurs, <span class="t-lc"><a href="./HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">-HUGE_VAL</a></span>, <code>-HUGE_VALF</code>, or <code>-HUGE_VALL</code> is returned.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/logb&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>Domain or range error may occur if <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is zero.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
-<ul><li> If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is ±0, -∞ is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span> is raised.
+<ul><li> If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is ±0, -∞ is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span> is raised.
 </li><li> If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is ±∞, +∞ is returned.
 </li><li> If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is NaN, NaN is returned.
-</li><li> In all other cases, the result is exact (<span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> is never raised) and <a href="../fenv/FE_round.html" title="c/numeric/fenv/FE round">the current rounding mode</a> is ignored.
+</li><li> In all other cases, the result is exact (<span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INEXACT</a></span> is never raised) and <a href="../fenv/FE_round.htm" title="c/numeric/fenv/FE round">the current rounding mode</a> is ignored.
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/logb&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p><a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/logb.html">POSIX requires</a> that a pole error occurs if <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> is ±0.
-</p><p>The value of the exponent returned by <code>logb</code> is always <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> less than the exponent returned by <span class="t-lc"><a href="frexp.htm" title="c/numeric/math/frexp">frexp</a></span> because of the different normalization requirements: for the exponent <code>e</code> returned by <code>logb</code>, <span class="texhtml" style="white-space: nowrap;">|arg*r<span class="t-su">-e<br></span>|</span> is between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> and <code>r</code> (typically between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2</span></span></span>), but for the exponent <code>e</code> returned by <span class="t-lc"><a href="frexp.htm" title="c/numeric/math/frexp">frexp</a></span>, <span class="texhtml" style="white-space: nowrap;">|arg*2<span class="t-su">-e<br></span>|</span> is between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">0.5</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.
+</p><p>The value of the exponent returned by <code>logb</code> is always <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> less than the exponent returned by <span class="t-lc"><a href="./frexp.htm" title="c/numeric/math/frexp">frexp</a></span> because of the different normalization requirements: for the exponent <code>e</code> returned by <code>logb</code>, <span class="texhtml" style="white-space: nowrap;">|arg*r<span class="t-su">-e<br></span>|</span> is between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> and <code>r</code> (typically between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">2</span></span></span>), but for the exponent <code>e</code> returned by <span class="t-lc"><a href="./frexp.htm" title="c/numeric/math/frexp">frexp</a></span>, <span class="texhtml" style="white-space: nowrap;">|arg*2<span class="t-su">-e<br></span>|</span> is between <span class="t-c"><span class="mw-geshi c source-c"><span class="nu16">0.5</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/logb&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Compares different floating-point decomposition functions.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -275,24 +275,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">double</span> f <span class="sy1">=</span> <span class="nu16">123.45</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Given the number&nbsp;%.2f or&nbsp;%a in hex,<span class="es1">\n</span>"</span>, f, f<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Given the number&nbsp;%.2f or&nbsp;%a in hex,<span class="es1">\n</span>"</span>, f, f<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">double</span> f3<span class="sy4">;</span>
-    <span class="kw4">double</span> f2 <span class="sy1">=</span> <a href="modf.htm"><span class="kw697">modf</span></a><span class="br0">(</span>f, <span class="sy3">&amp;</span>f3<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"modf() makes&nbsp;%.0f +&nbsp;%.2f<span class="es1">\n</span>"</span>, f3, f2<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> f2 <span class="sy1">=</span> <a href="./modf.htm"><span class="kw697">modf</span></a><span class="br0">(</span>f, <span class="sy3">&amp;</span>f3<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"modf() makes&nbsp;%.0f +&nbsp;%.2f<span class="es1">\n</span>"</span>, f3, f2<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">int</span> i<span class="sy4">;</span>
-    f2 <span class="sy1">=</span> <a href="frexp.htm"><span class="kw695">frexp</span></a><span class="br0">(</span>f, <span class="sy3">&amp;</span>i<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"frexp() makes&nbsp;%f * 2^%d<span class="es1">\n</span>"</span>, f2, i<span class="br0">)</span><span class="sy4">;</span>
+    f2 <span class="sy1">=</span> <a href="./frexp.htm"><span class="kw695">frexp</span></a><span class="br0">(</span>f, <span class="sy3">&amp;</span>i<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"frexp() makes&nbsp;%f * 2^%d<span class="es1">\n</span>"</span>, f2, i<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     i <span class="sy1">=</span> logb<span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"logb()/logb() make&nbsp;%f *&nbsp;%d^%d<span class="es1">\n</span>"</span>, f<span class="sy2">/</span><a href="scalbn.htm"><span class="kw698">scalbn</span></a><span class="br0">(</span><span class="nu16">1.0</span>, i<span class="br0">)</span>, <a href="../../types/limits.html"><span class="kw372">FLT_RADIX</span></a>, i<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"logb()/logb() make&nbsp;%f *&nbsp;%d^%d<span class="es1">\n</span>"</span>, f<span class="sy2">/</span><a href="./scalbn.htm"><span class="kw698">scalbn</span></a><span class="br0">(</span><span class="nu16">1.0</span>, i<span class="br0">)</span>, <a href="../../types/limits.htm"><span class="kw372">FLT_RADIX</span></a>, i<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// error handling</span>
-    <a href="../fenv/feclearexcept.html"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"logb(0) =&nbsp;%f<span class="es1">\n</span>"</span>, logb<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_DIVBYZERO raised"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../fenv/feclearexcept.htm"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"logb(0) =&nbsp;%f<span class="es1">\n</span>"</span>, logb<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_DIVBYZERO raised"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -360,21 +360,21 @@ logb(0) = -Inf
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="frexp.htm" title="c/numeric/math/frexp"> <span class="t-lines"><span>frexp</span><span>frexpf</span><span>frexpl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./frexp.htm" title="c/numeric/math/frexp"> <span class="t-lines"><span>frexp</span><span>frexpf</span><span>frexpl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>  breaks a number into significand and a power of <span class="texhtml" style="white-space: nowrap;">2</span> <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_frexp&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="ilogb.htm" title="c/numeric/math/ilogb"> <span class="t-lines"><span>ilogb</span><span>ilogbf</span><span>ilogbl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./ilogb.htm" title="c/numeric/math/ilogb"> <span class="t-lines"><span>ilogb</span><span>ilogbf</span><span>ilogbl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   extracts exponent of the given number  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_ilogb&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="scalbn.htm" title="c/numeric/math/scalbn"> <span class="t-lines"><span>scalbn</span><span>scalbnf</span><span>scalbnl</span><span>scalbln</span><span>scalblnf</span><span>scalblnl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./scalbn.htm" title="c/numeric/math/scalbn"> <span class="t-lines"><span>scalbn</span><span>scalbnf</span><span>scalbnl</span><span>scalbln</span><span>scalblnf</span><span>scalblnl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
-<td>   computes efficiently a number times <span class="t-lc"><a href="../../types/limits.html" title="c/types/limits">FLT_RADIX</a></span> raised to a power  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_scalbn&amp;action=edit">[edit]</a></span>
+<td>   computes efficiently a number times <span class="t-lc"><a href="../../types/limits.htm" title="c/types/limits">FLT_RADIX</a></span> raised to a power  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_scalbn&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">

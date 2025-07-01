@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/signal.html" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/signal.htm" title="c/header/signal"><tt>&lt;signal.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -199,17 +199,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Sets the error handler for signal <code>sig</code>. The signal handler can be set so that default handling will occur, signal is ignored, or a user-defined function is called.
-</p><p>When signal handler is set to a function and a signal occurs, it is implementation defined whether <span class="t-c"><span class="mw-geshi c source-c">signal<span class="br0">(</span>sig, <a href="SIG_strategies.htm"><span class="kw499">SIG_DFL</span></a><span class="br0">)</span></span></span> will be executed immediately before the start of signal handler. Also, the implementation can prevent some implementation-defined set of signals from occurring while the signal handler runs.
+</p><p>When signal handler is set to a function and a signal occurs, it is implementation defined whether <span class="t-c"><span class="mw-geshi c source-c">signal<span class="br0">(</span>sig, <a href="./SIG_strategies.htm"><span class="kw499">SIG_DFL</span></a><span class="br0">)</span></span></span> will be executed immediately before the start of signal handler. Also, the implementation can prevent some implementation-defined set of signals from occurring while the signal handler runs.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="signal.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="signal.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="signal.htm#Signal_handler"><span class="tocnumber">3</span> <span class="toctext">Signal handler</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="signal.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="signal.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="signal.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="signal.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./signal.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./signal.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./signal.htm#Signal_handler"><span class="tocnumber">3</span> <span class="toctext">Signal handler</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./signal.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./signal.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./signal.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./signal.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/signal&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -225,7 +225,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="SIG_types.htm" title="c/program/SIG types"> <span class="t-lines"><span>SIGABRT</span><span>SIGFPE</span><span>SIGILL</span><span>SIGINT</span><span>SIGSEGV</span><span>SIGTERM</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./SIG_types.htm" title="c/program/SIG types"> <span class="t-lines"><span>SIGABRT</span><span>SIGFPE</span><span>SIGILL</span><span>SIGINT</span><span>SIGSEGV</span><span>SIGTERM</span></span></a></div></div>
 </td>
 <td>   defines signal types <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_SIG_types&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -237,8 +237,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> -
 </td>
 <td>  the signal handler. This must be one of the following:
-<ul><li><span class="t-lc"><a href="SIG_strategies.htm" title="c/program/SIG strategies">SIG_DFL</a></span> macro. The signal handler is set to default signal handler.
-</li><li><span class="t-lc"><a href="SIG_strategies.htm" title="c/program/SIG strategies">SIG_IGN</a></span> macro. The signal is ignored.
+<ul><li><span class="t-lc"><a href="./SIG_strategies.htm" title="c/program/SIG strategies">SIG_DFL</a></span> macro. The signal handler is set to default signal handler.
+</li><li><span class="t-lc"><a href="./SIG_strategies.htm" title="c/program/SIG strategies">SIG_IGN</a></span> macro. The signal is ignored.
 </li><li>pointer to a function. The signature of the function must be equivalent to the following:
 </li></ul>
 <table class="t-dcl-begin"><tbody>
@@ -252,33 +252,33 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/signal&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<p>Previous signal handler on success or <span class="t-lc"><a href="SIG_ERR.htm" title="c/program/SIG ERR">SIG_ERR</a></span> on failure (setting a signal handler can be disabled on some implementations).
+<p>Previous signal handler on success or <span class="t-lc"><a href="./SIG_ERR.htm" title="c/program/SIG ERR">SIG_ERR</a></span> on failure (setting a signal handler can be disabled on some implementations).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/signal&amp;action=edit&amp;section=3" title="Edit section: Signal handler">edit</a>]</span> <span class="mw-headline" id="Signal_handler">Signal handler</span></h3>
 <p>The following limitations are imposed on the user-defined function that is installed as a signal handler.
-</p><p>If the user defined function returns when handling <span class="t-lc"><a href="SIG_types.htm" title="c/program/SIG types">SIGFPE</a></span>, <span class="t-lc"><a href="SIG_types.htm" title="c/program/SIG types">SIGILL</a></span> or <span class="t-lc"><a href="SIG_types.htm" title="c/program/SIG types">SIGSEGV</a></span>, the behavior is undefined.
-</p><p>If the signal handler is called as a result of <span class="t-lc"><a href="abort.htm" title="c/program/abort">abort</a></span> or <span class="t-lc"><a href="raise.htm" title="c/program/raise">raise</a></span>, the behavior is undefined if the signal handler calls <span class="t-lc"><a href="raise.htm" title="c/program/raise">raise</a></span>.
-</p><p>If the signal handler is called NOT as a result of <span class="t-lc"><a href="abort.htm" title="c/program/abort">abort</a></span> or <span class="t-lc"><a href="raise.htm" title="c/program/raise">raise</a></span> (in other words, the signal handler is <i>asynchronous</i>), the behavior is undefined if
+</p><p>If the user defined function returns when handling <span class="t-lc"><a href="./SIG_types.htm" title="c/program/SIG types">SIGFPE</a></span>, <span class="t-lc"><a href="./SIG_types.htm" title="c/program/SIG types">SIGILL</a></span> or <span class="t-lc"><a href="./SIG_types.htm" title="c/program/SIG types">SIGSEGV</a></span>, the behavior is undefined.
+</p><p>If the signal handler is called as a result of <span class="t-lc"><a href="./abort.htm" title="c/program/abort">abort</a></span> or <span class="t-lc"><a href="./raise.htm" title="c/program/raise">raise</a></span>, the behavior is undefined if the signal handler calls <span class="t-lc"><a href="./raise.htm" title="c/program/raise">raise</a></span>.
+</p><p>If the signal handler is called NOT as a result of <span class="t-lc"><a href="./abort.htm" title="c/program/abort">abort</a></span> or <span class="t-lc"><a href="./raise.htm" title="c/program/raise">raise</a></span> (in other words, the signal handler is <i>asynchronous</i>), the behavior is undefined if
 </p>
 <ul><li> the signal handler calls any function within the standard library, except
 </li></ul>
-<dl><dd><ul><li> <span class="t-lc"><a href="abort.htm" title="c/program/abort">abort</a></span>
-</li><li> <span class="t-lc"><a href="_Exit.htm" title="c/program/ Exit">_Exit</a></span>
-</li><li> <span class="t-lc"><a href="quick_exit.htm" title="c/program/quick exit">quick_exit</a></span>
+<dl><dd><ul><li> <span class="t-lc"><a href="./abort.htm" title="c/program/abort">abort</a></span>
+</li><li> <span class="t-lc"><a href="./_Exit.htm" title="c/program/ Exit">_Exit</a></span>
+</li><li> <span class="t-lc"><a href="./quick_exit.htm" title="c/program/quick exit">quick_exit</a></span>
 </li><li> <code>signal</code> with the first argument being the number of the signal currently handled (async handler can re-register itself, but not other signals). 
-</li><li> atomic functions from <a href="../thread.html#Atomic_operations" title="c/thread"><code>&lt;stdatomic.h&gt;</code></a> if the atomic arguments are lock-free
-</li><li> <span class="t-lc"><a href="../atomic/atomic_is_lock_free.html" title="c/atomic/atomic is lock free">atomic_is_lock_free</a></span> (with any kind of atomic arguments)
+</li><li> atomic functions from <a href="../thread.htm#Atomic_operations" title="c/thread"><code>&lt;stdatomic.h&gt;</code></a> if the atomic arguments are lock-free
+</li><li> <span class="t-lc"><a href="../atomic/atomic_is_lock_free.htm" title="c/atomic/atomic is lock free">atomic_is_lock_free</a></span> (with any kind of atomic arguments)
 </li></ul>
 </dd></dl>
-<ul><li> the signal handler refers to any object with static <span class="t-rev-inl t-since-c11"><span>or thread-local</span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> <a href="../language/storage_class_specifiers.html" title="c/language/storage duration">storage duration</a> <span class="t-rev-inl t-since-c11"><span>that is not a lock-free <a href="../language/atomic.html" title="c/language/atomic">atomic</a></span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> other than by assigning to a static <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span>.
+<ul><li> the signal handler refers to any object with static <span class="t-rev-inl t-since-c11"><span>or thread-local</span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> <a href="../language/storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> <span class="t-rev-inl t-since-c11"><span>that is not a lock-free <a href="../language/atomic.htm" title="c/language/atomic">atomic</a></span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> other than by assigning to a static <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="./sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span>.
 </li></ul>
 <p>On entry to the signal handler, the state of the floating-point environment and the values of all objects is unspecified, except for
 </p>
-<ul><li> objects of type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span>
+<ul><li> objects of type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="./sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span>
 </li><li> objects of lock-free atomic types <span class="t-mark-rev t-since-c11">(since C11)</span>
-</li><li> side effects made visible through <span class="t-lc"><a href="../atomic/atomic_signal_fence.html" title="c/atomic/atomic signal fence">atomic_signal_fence</a></span> <span class="t-mark-rev t-since-c11">(since C11)</span>
+</li><li> side effects made visible through <span class="t-lc"><a href="../atomic/atomic_signal_fence.htm" title="c/atomic/atomic signal fence">atomic_signal_fence</a></span> <span class="t-mark-rev t-since-c11">(since C11)</span>
 </li></ul>
-<p>On return from a signal handler, the value of any object modified by the signal handler that is not <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span> or lock-free atomic<span class="t-mark-rev t-since-c11">(since C11)</span> is undefined.
+<p>On return from a signal handler, the value of any object modified by the signal handler that is not <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">volatile</span> <a href="./sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a></span></span> or lock-free atomic<span class="t-mark-rev t-since-c11">(since C11)</span> is undefined.
 </p><p>The behavior is undefined if <span class="t-c"><span class="mw-geshi c source-c">signal</span></span> is used in a multithreaded program. It is not required to be thread-safe.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/signal&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
@@ -291,7 +291,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;signal.h&gt;</span>
 <span class="co2">#include &lt;stdio.h&gt;</span>
 &nbsp;
-<span class="kw4">volatile</span> <a href="sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a> gSignalStatus<span class="sy4">;</span>
+<span class="kw4">volatile</span> <a href="./sig_atomic_t.htm"><span class="kw498">sig_atomic_t</span></a> gSignalStatus<span class="sy4">;</span>
 &nbsp;
 <span class="kw4">void</span> signal_handler<span class="br0">(</span><span class="kw4">int</span> signal<span class="br0">)</span>
 <span class="br0">{</span>
@@ -300,12 +300,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-  signal<span class="br0">(</span><a href="SIG_types.htm"><span class="kw505">SIGINT</span></a>, signal_handler<span class="br0">)</span><span class="sy4">;</span>
+  signal<span class="br0">(</span><a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a>, signal_handler<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-  <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:&nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Sending signal:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
-  <a href="raise.htm"><span class="kw497">raise</span></a><span class="br0">(</span><a href="SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
-  <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:&nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:&nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Sending signal:&nbsp;%d<span class="es1">\n</span>"</span>, <a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
+  <a href="./raise.htm"><span class="kw497">raise</span></a><span class="br0">(</span><a href="./SIG_types.htm"><span class="kw505">SIGINT</span></a><span class="br0">)</span><span class="sy4">;</span>
+  <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"SignalValue:&nbsp;%d<span class="es1">\n</span>"</span>, gSignalStatus<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -346,7 +346,7 @@ SignalValue: 2</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="raise.htm" title="c/program/raise"> <span class="t-lines"><span>raise</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./raise.htm" title="c/program/raise"> <span class="t-lines"><span>raise</span></span></a></div></div>
 </td>
 <td>   runs the signal handler for particular signal  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_raise&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -219,7 +219,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Finds the next token in a null-terminated wide string pointed to by <span class="t-c"><span class="mw-geshi c source-c">str</span></span>. The separator characters are identified by null-terminated wide string pointed to by <span class="t-c"><span class="mw-geshi c source-c">delim</span></span>.</div>
 <div class="t-li1"><span class="t-li"></span> This function is designed to be called multiples times to obtain successive tokens from the same string.</div>
-<dl><dd><ul><li> If <span class="t-c"><span class="mw-geshi c source-c">str <span class="sy3">!</span><span class="sy1">=</span> <a href="../../types/NULL.html"><span class="kw103">NULL</span></a></span></span>, the call is treated as the first call to <code>wcstok</code> for this particular wide string. The function searches for the first wide character which is <i>not</i> contained in <span class="t-c"><span class="mw-geshi c source-c">delim</span></span>.
+<dl><dd><ul><li> If <span class="t-c"><span class="mw-geshi c source-c">str <span class="sy3">!</span><span class="sy1">=</span> <a href="../../types/NULL.htm"><span class="kw103">NULL</span></a></span></span>, the call is treated as the first call to <code>wcstok</code> for this particular wide string. The function searches for the first wide character which is <i>not</i> contained in <span class="t-c"><span class="mw-geshi c source-c">delim</span></span>.
 </li></ul>
 <dl><dd><ul><li> If no such wide character was found, there are no tokens in <span class="t-c"><span class="mw-geshi c source-c">str</span></span> at all, and the function returns a null pointer.
 </li><li> If such wide character was found, it is the <i>beginning of the token</i>. The function then searches from that point on for the first wide character that <i>is</i> contained in <span class="t-c"><span class="mw-geshi c source-c">delim</span></span>.
@@ -231,25 +231,25 @@ html { font-variant-ligatures: no-common-ligatures; }
 <ul><li> The function then returns the pointer to the beginning of the token
 </li></ul>
 </dd></dl>
-<ul><li> If <span class="t-c"><span class="mw-geshi c source-c">str <span class="sy1">==</span> <a href="../../types/NULL.html"><span class="kw103">NULL</span></a></span></span>, the call is treated as a subsequent call to <code>wcstok</code>: the function continues from where it left in the previous invocation with the same <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ptr</span></span>. The behavior is the same as if the pointer to the wide character that follows the last detected token is passed as <span class="t-c"><span class="mw-geshi c source-c">str</span></span>.
+<ul><li> If <span class="t-c"><span class="mw-geshi c source-c">str <span class="sy1">==</span> <a href="../../types/NULL.htm"><span class="kw103">NULL</span></a></span></span>, the call is treated as a subsequent call to <code>wcstok</code>: the function continues from where it left in the previous invocation with the same <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ptr</span></span>. The behavior is the same as if the pointer to the wide character that follows the last detected token is passed as <span class="t-c"><span class="mw-geshi c source-c">str</span></span>.
 </li></ul>
 </dd></dl>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that on every step, writes the number of characters left to see in <span class="t-c"><span class="mw-geshi c source-c">str</span></span> into <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>strmax</span></span>. Repeat calls (with null <span class="t-c"><span class="mw-geshi c source-c">str</span></span>) must pass both <span class="t-c"><span class="mw-geshi c source-c">strmax</span></span> and <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span> with the values stored by the previous call. Also, the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function, without storing anything in the object pointed to by <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span>
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that on every step, writes the number of characters left to see in <span class="t-c"><span class="mw-geshi c source-c">str</span></span> into <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>strmax</span></span>. Repeat calls (with null <span class="t-c"><span class="mw-geshi c source-c">str</span></span>) must pass both <span class="t-c"><span class="mw-geshi c source-c">strmax</span></span> and <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span> with the values stored by the previous call. Also, the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function, without storing anything in the object pointed to by <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span>
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">strmax</span></span>, <span class="t-c"><span class="mw-geshi c source-c">delim</span></span>, or <span class="t-c"><span class="mw-geshi c source-c">ptr</span></span> is a null pointer
 </li><li> on a non-initial call (with null <span class="t-c"><span class="mw-geshi c source-c">str</span></span>), <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>ptr</span></span> is a null pointer
 </li><li> on the first call, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>strmax</span></span> is zero or greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX <span class="sy2">/</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="br0">)</span></span></span>
 </li><li> search for the end of a token reaches the end of the source string (as measured by the initial value of <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>strmax</span></span>) without encountering the null terminator
 </li></ul>
-</dd><dd>As all bounds-checked functions, <code>wcstok_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As all bounds-checked functions, <code>wcstok_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcstok.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcstok.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcstok.htm#Note"><span class="tocnumber">3</span> <span class="toctext">Note</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcstok.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcstok.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcstok.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcstok.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcstok.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcstok.htm#Note"><span class="tocnumber">3</span> <span class="toctext">Note</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcstok.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcstok.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcstok.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcstok&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -289,7 +289,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcstok&amp;action=edit&amp;section=3" title="Edit section: Note">edit</a>]</span> <span class="mw-headline" id="Note">Note</span></h3>
 <p>This function is destructive: it writes the <span class="t-c"><span class="mw-geshi c source-c">L<span class="st0">'<span class="es5">\0</span>'</span></span></span> characters in the elements of the string <span class="t-c"><span class="mw-geshi c source-c">str</span></span>. In particular, a wide string literal cannot be used as the first argument of <code>wcstok</code>.
-</p><p>Unlike <span class="t-lc"><a href="../byte/strtok.html" title="c/string/byte/strtok">strtok</a></span>, <code>wcstok</code> does not update static storage: it stores the parser state in the user-provided location.
+</p><p>Unlike <span class="t-lc"><a href="../byte/strtok.htm" title="c/string/byte/strtok">strtok</a></span>, <code>wcstok</code> does not update static storage: it stores the parser state in the user-provided location.
 </p><p>Unlike most other tokenizers, the delimiters in <code>wcstok</code> can be different for each subsequent token, and can even depend on the contents of the previous tokens.
 </p><p>The implementation of <span class="t-c"><span class="mw-geshi c source-c">wcstok_s</span></span> in the <a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l">Windows CRT</a> is incompatible with the C standard, it is merely an alias for <span class="t-c"><span class="mw-geshi c source-c">wcstok</span></span>.
 </p>
@@ -301,19 +301,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">wchar_t</span> input<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> L<span class="st0">"A bird came down the walk"</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Parsing the input string '%ls'<span class="es1">\n</span>"</span>, input<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Parsing the input string '%ls'<span class="es1">\n</span>"</span>, input<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">wchar_t</span><span class="sy2">*</span> buffer<span class="sy4">;</span>
     <span class="kw4">wchar_t</span><span class="sy2">*</span> token <span class="sy1">=</span> wcstok<span class="br0">(</span>input, L<span class="st0">" "</span>, <span class="sy3">&amp;</span>buffer<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">while</span> <span class="br0">(</span>token<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%ls<span class="es1">\n</span>"</span>, token<span class="br0">)</span><span class="sy4">;</span>
-        token <span class="sy1">=</span> wcstok<span class="br0">(</span><a href="../../types/NULL.html"><span class="kw103">NULL</span></a>, L<span class="st0">" "</span>, <span class="sy3">&amp;</span>buffer<span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%ls<span class="es1">\n</span>"</span>, token<span class="br0">)</span><span class="sy4">;</span>
+        token <span class="sy1">=</span> wcstok<span class="br0">(</span><a href="../../types/NULL.htm"><span class="kw103">NULL</span></a>, L<span class="st0">" "</span>, <span class="sy3">&amp;</span>buffer<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Contents of the input string now: '"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> input <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>input<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
-        input<span class="br0">[</span>n<span class="br0">]</span> <span class="sy4">?</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%lc"</span>, input<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span> <span class="sy4">:</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"'"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Contents of the input string now: '"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> input <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>input<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        input<span class="br0">[</span>n<span class="br0">]</span> <span class="sy4">?</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%lc"</span>, input<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span> <span class="sy4">:</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"'"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -348,7 +348,7 @@ Contents of the input string now: 'A\0bird\0came\0down\0the\0walk\0'</pre></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../byte/strtok.html" title="c/string/byte/strtok"> <span class="t-lines"><span>strtok</span><span>strtok_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../byte/strtok.htm" title="c/string/byte/strtok"> <span class="t-lines"><span>strtok</span><span>strtok_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   finds the next token in a byte string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strtok&amp;action=edit">[edit]</a></span>
 </td></tr>

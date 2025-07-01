@@ -162,30 +162,30 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/threads.html" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> tss_delete<span class="br0">(</span> <a href="../thread.html"><span class="kw1034">tss_t</span></a> tss_id <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> tss_delete<span class="br0">(</span> <a href="../thread.htm"><span class="kw1034">tss_t</span></a> tss_id <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Destroys the thread-specific storage identified by <code>tss_id</code>. 
-</p><p>The destructor, if one was registered by <span class="t-lc"><a href="tss_create.htm" title="c/thread/tss create">tss_create</a></span>, is not called (they are only called at thread exit, either by <span class="t-lc"><a href="thrd_exit.htm" title="c/thread/thrd exit">thrd_exit</a></span> or by returning from the thread function), it is the responsibility of the programmer to ensure that every thread that is aware of <code>tss_id</code> performed all necessary cleanup, before the call to <code>tss_delete</code> is made.
+</p><p>The destructor, if one was registered by <span class="t-lc"><a href="./tss_create.htm" title="c/thread/tss create">tss_create</a></span>, is not called (they are only called at thread exit, either by <span class="t-lc"><a href="./thrd_exit.htm" title="c/thread/thrd exit">thrd_exit</a></span> or by returning from the thread function), it is the responsibility of the programmer to ensure that every thread that is aware of <code>tss_id</code> performed all necessary cleanup, before the call to <code>tss_delete</code> is made.
 </p><p>If <code>tss_delete</code> is called while another thread is executing destructors for <code>tss_id</code>, it's unspecified whether this changes the number of invocations to the associated destructor.
 </p><p>If <code>tss_delete</code> is called while the calling thread is executing destructors, then the destructor associated with <code>tss_id</code> will not be executed again on this thread.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="tss_delete.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="tss_delete.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="tss_delete.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="tss_delete.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="tss_delete.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./tss_delete.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./tss_delete.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./tss_delete.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./tss_delete.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./tss_delete.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_delete&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -197,14 +197,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  thread-specific storage key previously returned by <span class="t-lc"><a href="tss_create.htm" title="c/thread/tss create">tss_create</a></span> and not yet deleted by <span class="t-lc"><strong class="selflink">tss_delete</strong></span>
+<td>  thread-specific storage key previously returned by <span class="t-lc"><a href="./tss_create.htm" title="c/thread/tss create">tss_create</a></span> and not yet deleted by <span class="t-lc"><strong class="selflink">tss_delete</strong></span>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_delete&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_delete&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The POSIX equivalent of this function is <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/pthread_key_delete.html"><code>pthread_key_delete</code></a>.
-</p><p>The reason <code>tss_delete</code> never calls destructors is that the destructors (called at thread exit) are normally intended to be executed by the same thread that originally set the value (via <span class="t-lc"><a href="tss_set.htm" title="c/thread/tss set">tss_set</a></span>) that the destructor will be dealing with, and may even rely on the values of that or other thread-specific data as seen by that thread. The thread executing <code>tss_delete</code> has no access to other threads' TSS. Even if it were possible to call the destructor for each thread's own value associated with <code>tss_id</code>, <code>tss_delete</code> would have to synchronize with every thread if only to examine whether the value of this TSS in that thread is null (destructors are only called against non-null values).
+</p><p>The reason <code>tss_delete</code> never calls destructors is that the destructors (called at thread exit) are normally intended to be executed by the same thread that originally set the value (via <span class="t-lc"><a href="./tss_set.htm" title="c/thread/tss set">tss_set</a></span>) that the destructor will be dealing with, and may even rely on the values of that or other thread-specific data as seen by that thread. The thread executing <code>tss_delete</code> has no access to other threads' TSS. Even if it were possible to call the destructor for each thread's own value associated with <code>tss_id</code>, <code>tss_delete</code> would have to synchronize with every thread if only to examine whether the value of this TSS in that thread is null (destructors are only called against non-null values).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/thread/tss_delete&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>

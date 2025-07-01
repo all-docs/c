@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span> memmove<span class="br0">(</span> <span class="kw4">void</span><span class="sy2">*</span> dest, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span><span class="sy2">*</span> memmove<span class="br0">(</span> <span class="kw4">void</span><span class="sy2">*</span> dest, <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
@@ -205,23 +205,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Copies <span class="t-c"><span class="mw-geshi c source-c">count</span></span> characters from the object pointed to by <span class="t-c"><span class="mw-geshi c source-c">src</span></span> to the object pointed to by <span class="t-c"><span class="mw-geshi c source-c">dest</span></span>. Both objects are interpreted as arrays of <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>. The objects may overlap: copying takes place as if the characters were copied to a temporary character array and then the characters were copied from the array to <span class="t-c"><span class="mw-geshi c source-c">dest</span></span>.</div>
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if access occurs beyond the end of the dest array. The behavior is undefined if either <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> or <span class="t-c"><span class="mw-geshi c source-c">src</span></span> is an invalid or null pointer.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except when detecting the following errors at runtime, it zeroes out the entire destination range <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span>dest, dest <span class="sy2">+</span> destsz<span class="br0">)</span></span></span> (if both <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> and <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> are valid) and calls the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except when detecting the following errors at runtime, it zeroes out the entire destination range <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span>dest, dest <span class="sy2">+</span> destsz<span class="br0">)</span></span></span> (if both <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> and <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> are valid) and calls the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> or <span class="t-c"><span class="mw-geshi c source-c">src</span></span> is a null pointer
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> or <span class="t-c"><span class="mw-geshi c source-c">count</span></span> is greater than <span class="t-lc">RSIZE_MAX</span>
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">count</span></span> is greater than <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> (buffer overflow would occur)</li></ul></dd></dl></div>
 
 
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the size of the character array pointed to by <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> &lt; <span class="t-c"><span class="mw-geshi c source-c">count</span></span> &lt;= <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span>; in other words, an erroneous value of <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> does not expose the impending buffer overflow.
-<dl><dd>As with all bounds-checked functions, <code>memmove_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>memmove_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="memmove.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="memmove.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="memmove.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="memmove.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="memmove.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="memmove.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./memmove.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./memmove.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./memmove.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./memmove.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./memmove.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./memmove.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/memmove&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -260,9 +260,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1)</span> Returns a copy of <span class="t-c"><span class="mw-geshi c source-c">dest</span></span></div>
 <div class="t-li1"><span class="t-li">2)</span> Returns zero on success and non-zero value on error. Also on error, if <span class="t-c"><span class="mw-geshi c source-c">dest</span></span> is not a null pointer and <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> is valid, writes <span class="t-c"><span class="mw-geshi c source-c">destsz</span></span> zero bytes in to the destination array.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/memmove&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>memmove</code> may be used to set the <a href="../../language/object.html#Effective_type" title="c/language/object">effective type</a> of an object obtained by an allocation function.
-</p><p>Despite being specified "as if" a temporary buffer is used, actual implementations of this function do not incur the overhead or double copying or extra memory. A common approach (glibc and bsd libc) is to copy bytes forwards from the beginning of the buffer if the destination starts before the source, and backwards from the end otherwise, with a fall back to the more efficient <span class="t-lc"><a href="memcpy.htm" title="c/string/byte/memcpy">memcpy</a></span> when there is no overlap at all.
-</p><p>Where <a href="../../language/object.html#Strict_aliasing" title="c/language/object">strict aliasing</a> prohibits examining the same memory as values of two different types, <code>memmove</code> may be used to convert the values.
+<p><code>memmove</code> may be used to set the <a href="../../language/object.htm#Effective_type" title="c/language/object">effective type</a> of an object obtained by an allocation function.
+</p><p>Despite being specified "as if" a temporary buffer is used, actual implementations of this function do not incur the overhead or double copying or extra memory. A common approach (glibc and bsd libc) is to copy bytes forwards from the beginning of the buffer if the destination starts before the source, and backwards from the end otherwise, with a fall back to the more efficient <span class="t-lc"><a href="./memcpy.htm" title="c/string/byte/memcpy">memcpy</a></span> when there is no overlap at all.
+</p><p>Where <a href="../../language/object.htm#Strict_aliasing" title="c/language/object">strict aliasing</a> prohibits examining the same memory as values of two different types, <code>memmove</code> may be used to convert the values.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/memmove&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -276,36 +276,36 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">char</span> str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"1234567890"</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
     memmove<span class="br0">(</span>str <span class="sy2">+</span> <span class="nu0">4</span>, str <span class="sy2">+</span> <span class="nu0">3</span>, <span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// copy from [4,5,6] to [5,6,7]</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span>str<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// setting effective type of allocated memory to be int</span>
-    <span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> <a href="../../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="nu0">3</span> <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// allocated memory has no effective type</span>
+    <span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> <a href="../../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="nu0">3</span> <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// allocated memory has no effective type</span>
     <span class="kw4">int</span> arr<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
     memmove<span class="br0">(</span>p, arr, <span class="nu0">3</span> <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// allocated memory now has an effective type</span>
 &nbsp;
     <span class="co1">// reinterpreting data</span>
     <span class="kw4">double</span> d <span class="sy1">=</span> <span class="nu16">0.1</span><span class="sy4">;</span>
     <span class="co1">// int64_t n = *(int64_t*)(&amp;d); // strict aliasing violation</span>
-    <a href="../../types/integer.html"><span class="kw109">int64_t</span></a> n<span class="sy4">;</span>
+    <a href="../../types/integer.htm"><span class="kw109">int64_t</span></a> n<span class="sy4">;</span>
     memmove<span class="br0">(</span><span class="sy3">&amp;</span>n, <span class="sy3">&amp;</span>d, <span class="kw4">sizeof</span> d<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%a is&nbsp;%"</span> <a href="../../types/integer.html"><span class="kw235">PRIx64</span></a> <span class="st0">" as an int64_t<span class="es1">\n</span>"</span>, d, n<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%a is&nbsp;%"</span> <a href="../../types/integer.htm"><span class="kw235">PRIx64</span></a> <span class="st0">" as an int64_t<span class="es1">\n</span>"</span>, d, n<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
 <span class="co2">#ifdef __STDC_LIB_EXT1__</span>
     set_constraint_handler_s<span class="br0">(</span>ignore_handler_s<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">char</span> src<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"aaaaaaaaaa"</span><span class="sy4">;</span>
     <span class="kw4">char</span> dst<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"xyxyxyxyxy"</span><span class="sy4">;</span>
     <span class="kw4">int</span> r <span class="sy1">=</span> memmove_s<span class="br0">(</span>dst, <span class="kw4">sizeof</span> dst, src, <span class="nu0">5</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
     r <span class="sy1">=</span> memmove_s<span class="br0">(</span>dst, <span class="nu0">5</span>, src, <span class="nu0">10</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// count is greater than destsz</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> ndx <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> ndx <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> dst<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> ndx <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> ndx <span class="sy1">&lt;</span> <span class="kw4">sizeof</span> dst<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
     <span class="br0">{</span>
         <span class="kw4">char</span> c <span class="sy1">=</span> dst<span class="br0">[</span>ndx<span class="br0">]</span><span class="sy4">;</span>
-        c <span class="sy4">?</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%c"</span>, c<span class="br0">)</span> <span class="sy4">:</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0"</span><span class="br0">)</span><span class="sy4">;</span>
+        c <span class="sy4">?</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%c"</span>, c<span class="br0">)</span> <span class="sy4">:</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, r<span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -365,13 +365,13 @@ dst = "\0\0\0\0\0yxyxy", r = 22</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./memcpy.htm" title="c/string/byte/memcpy"> <span class="t-lines"><span>memcpy</span><span>memcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one buffer to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_memcpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../wide/wmemmove.html" title="c/string/wide/wmemmove"> <span class="t-lines"><span>wmemmove</span><span>wmemmove_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../wide/wmemmove.htm" title="c/string/wide/wmemmove"> <span class="t-lines"><span>wmemmove</span><span>wmemmove_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies a certain amount of wide characters between two, possibly overlapping, arrays <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wmemmove&amp;action=edit">[edit]</a></span>
 </td></tr>

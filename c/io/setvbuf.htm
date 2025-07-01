@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -194,14 +194,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody>
 <tbody class="t-dcl-rev">
 <tr class="t-dcl t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> setvbuf<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span> &nbsp; &nbsp; &nbsp; &nbsp; stream, <span class="kw4">char</span> <span class="sy2">*</span> &nbsp; &nbsp; &nbsp; &nbsp; buffer, <br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> mode, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> setvbuf<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span> &nbsp; &nbsp; &nbsp; &nbsp; stream, <span class="kw4">char</span> <span class="sy2">*</span> &nbsp; &nbsp; &nbsp; &nbsp; buffer, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> mode, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> setvbuf<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> buffer, <br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> mode, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> setvbuf<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream, <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> buffer, <br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">int</span> mode, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
@@ -219,16 +219,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>Changes the buffering mode of the given file stream <code>stream</code> as indicated by the argument <code>mode</code>. In addition,
 </p>
 <ul><li> If <code>buffer</code> is a null pointer, resizes the internal buffer to <code>size</code>.
-</li><li> If <code>buffer</code> is not a null pointer, instructs the stream to use the user-provided buffer of size <code>size</code> beginning at <code>buffer</code>. The stream must be closed (with <span class="t-lc"><a href="fclose.htm" title="c/io/fclose">fclose</a></span>) before the <a href="../language/lifetime.html" title="c/language/lifetime">lifetime</a> of the array pointed to by <code>buffer</code> ends. The contents of the array after a successful call to <code>setvbuf</code> are indeterminate and any attempt to use it is undefined behavior.
+</li><li> If <code>buffer</code> is not a null pointer, instructs the stream to use the user-provided buffer of size <code>size</code> beginning at <code>buffer</code>. The stream must be closed (with <span class="t-lc"><a href="./fclose.htm" title="c/io/fclose">fclose</a></span>) before the <a href="../language/lifetime.htm" title="c/language/lifetime">lifetime</a> of the array pointed to by <code>buffer</code> ends. The contents of the array after a successful call to <code>setvbuf</code> are indeterminate and any attempt to use it is undefined behavior.
 </li></ul>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="setvbuf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="setvbuf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="setvbuf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="setvbuf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="setvbuf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="setvbuf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./setvbuf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./setvbuf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./setvbuf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./setvbuf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./setvbuf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./setvbuf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setvbuf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -258,17 +258,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="wikitable">
 
 <tbody><tr>
-<td> <span class="mw-geshi c source-c"><a href="../io.html"><span class="kw892">_IOFBF</span></a></span>
+<td> <span class="mw-geshi c source-c"><a href="../io.htm"><span class="kw892">_IOFBF</span></a></span>
 </td>
 <td> full buffering
 </td></tr>
 <tr>
-<td> <span class="mw-geshi c source-c"><a href="../io.html"><span class="kw893">_IOLBF</span></a></span>
+<td> <span class="mw-geshi c source-c"><a href="../io.htm"><span class="kw893">_IOLBF</span></a></span>
 </td>
 <td> line buffering
 </td></tr>
 <tr>
-<td> <span class="mw-geshi c source-c"><a href="../io.html"><span class="kw894">_IONBF</span></a></span>
+<td> <span class="mw-geshi c source-c"><a href="../io.htm"><span class="kw894">_IONBF</span></a></span>
 </td>
 <td> no buffering
 </td></tr></tbody></table>
@@ -284,16 +284,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p><span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> on success or nonzero on failure.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setvbuf&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>This function may only be used after <code>stream</code> has been associated with an open file, but before any other operation (other than a failed call to <span class="t-lc"><a href="setbuf.htm" title="c/io/setbuf">setbuf</a></span>/<code>setvbuf</code>).
+<p>This function may only be used after <code>stream</code> has been associated with an open file, but before any other operation (other than a failed call to <span class="t-lc"><a href="./setbuf.htm" title="c/io/setbuf">setbuf</a></span>/<code>setvbuf</code>).
 </p><p>Not all <code>size</code> bytes will necessarily be used for buffering: the actual buffer size is usually rounded down to a multiple of 2, a multiple of page size, etc.
 </p><p>On many implementations, line buffering is only available for terminal input streams.
 </p><p>A common error is setting the buffer of stdin or stdout to an array whose lifetime ends before the program terminates:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw4">char</span> buf<span class="br0">[</span><a href="../io.html"><span class="kw891">BUFSIZ</span></a><span class="br0">]</span><span class="sy4">;</span>
-    <a href="setbuf.htm"><span class="kw823">setbuf</span></a><span class="br0">(</span><a href="std_streams.htm"><span class="kw885">stdin</span></a>, buf<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">char</span> buf<span class="br0">[</span><a href="../io.htm"><span class="kw891">BUFSIZ</span></a><span class="br0">]</span><span class="sy4">;</span>
+    <a href="./setbuf.htm"><span class="kw823">setbuf</span></a><span class="br0">(</span><a href="./std_streams.htm"><span class="kw885">stdin</span></a>, buf<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span> <span class="co1">// lifetime of buf ends, undefined behavior</span></pre></div></div>
-<p>The default buffer size <span class="t-lc"><a href="../io.html" title="c/io">BUFSIZ</a></span> is expected to be the most efficient buffer size for file I/O on the implementation, but POSIX <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/fstat.html">fstat</a> often provides a better estimate.
+<p>The default buffer size <span class="t-lc"><a href="../io.htm" title="c/io">BUFSIZ</a></span> is expected to be the most efficient buffer size for file I/O on the implementation, but POSIX <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/fstat.html">fstat</a> often provides a better estimate.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/setvbuf&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>One use case for changing buffer size is when a better size is known. (This example uses some POSIX function, e.g. <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/7908799/xsh/fileno.html"><code>fileno</code></a>. See also SO: <a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/15749184/fileno-not-available">#1</a> and <a rel="nofollow" class="external text" href="https://stackoverflow.com/questions/44622827/why-am-i-getting-error-implicit-declaration-of-function-fileno-when-i-try-t">#2</a>).</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -306,33 +306,33 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"/tmp/test.txt"</span>, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>fp <span class="sy1">==</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"/tmp/test.txt"</span>, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>fp <span class="sy1">==</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"fopen"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"fopen"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
     <span class="kw1">struct</span> stat stats<span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span>fstat<span class="br0">(</span>fileno<span class="br0">(</span>fp<span class="br0">)</span>, <span class="sy3">&amp;</span>stats<span class="br0">)</span> <span class="sy1">==</span> <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span> <span class="co1">// POSIX only</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"fstat"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"fstat"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"BUFSIZ is&nbsp;%d, but optimal block size is&nbsp;%ld<span class="es1">\n</span>"</span>, <a href="../io.html"><span class="kw891">BUFSIZ</span></a>, stats.<span class="me1">st_blksize</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>setvbuf<span class="br0">(</span>fp, <a href="../types/NULL.html"><span class="kw103">NULL</span></a>, <a href="../io.html"><span class="kw892">_IOFBF</span></a>, stats.<span class="me1">st_blksize</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span>
+    <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"BUFSIZ is&nbsp;%d, but optimal block size is&nbsp;%ld<span class="es1">\n</span>"</span>, <a href="../io.htm"><span class="kw891">BUFSIZ</span></a>, stats.<span class="me1">st_blksize</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>setvbuf<span class="br0">(</span>fp, <a href="../types/NULL.htm"><span class="kw103">NULL</span></a>, <a href="../io.htm"><span class="kw892">_IOFBF</span></a>, stats.<span class="me1">st_blksize</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"setvbuf failed"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// POSIX version sets errno</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"setvbuf failed"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// POSIX version sets errno</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
     <span class="kw4">int</span> ch<span class="sy4">;</span>
-    <span class="kw1">while</span><span class="br0">(</span><span class="br0">(</span>ch<span class="sy1">=</span><a href="fgetc.htm"><span class="kw826">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../io.html"><span class="kw888">EOF</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// read entire file: use truss/strace to</span>
+    <span class="kw1">while</span><span class="br0">(</span><span class="br0">(</span>ch<span class="sy1">=</span><a href="./fgetc.htm"><span class="kw826">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../io.htm"><span class="kw888">EOF</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// read entire file: use truss/strace to</span>
                                   <span class="co1">// observe the read(2) syscalls used</span>
 &nbsp;
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -371,7 +371,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="setbuf.htm" title="c/io/setbuf"> <span class="t-lines"><span>setbuf</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./setbuf.htm" title="c/io/setbuf"> <span class="t-lines"><span>setbuf</span></span></a></div></div>
 </td>
 <td>   sets the buffer for a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_setbuf&amp;action=edit">[edit]</a></span>
 </td></tr>

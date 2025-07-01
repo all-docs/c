@@ -186,18 +186,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c95">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> wcslen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>str <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> wcslen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>str <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> wcsnlen_s<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>str, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> strsz<span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> wcsnlen_s<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>str, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> strsz<span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
@@ -205,16 +205,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Returns the length of a wide string, that is the number of non-null wide characters that precede the terminating null wide character.</div>
 <div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the function returns zero if <code>str</code> is a null pointer and returns <code>strsz</code> if the null wide character was not found in the first <code>strsz</code> wide characters of <code>src</code>
-<dl><dd>As with all bounds-checked functions, <code>wcslen_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>..</dd></dl></div>
+<dl><dd>As with all bounds-checked functions, <code>wcslen_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>..</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcslen.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcslen.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcslen.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcslen.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcslen.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcslen.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcslen.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcslen.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcslen.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcslen.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcslen.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcslen.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcslen&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -239,7 +239,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1)</span> The length of the null-terminated wide string <code>str</code>.</div>
 <div class="t-li1"><span class="t-li">2)</span> The length of the null-terminated wide string <code>str</code> on success, zero if <code>str</code> is a null  pointer, <code>strsz</code> if the null wide character was not found.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcslen&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><code>strnlen_s</code> and <code>wcsnlen_s</code> are the only <a href="../../error.html" title="c/error">bounds-checked functions</a> that do not invoke the runtime constraints handler. They are pure utility functions used to provide limited support for non-null terminated strings.
+<p><code>strnlen_s</code> and <code>wcsnlen_s</code> are the only <a href="../../error.htm" title="c/error">bounds-checked functions</a> that do not invoke the runtime constraints handler. They are pure utility functions used to provide limited support for non-null terminated strings.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcslen&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -250,8 +250,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">wchar_t</span> str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> L<span class="st0">"How many wide characters does this string contain?"</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"without null character:&nbsp;%zu<span class="es1">\n</span>"</span>, wcslen<span class="br0">(</span>str<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"with null character:&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> str <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"without null character:&nbsp;%zu<span class="es1">\n</span>"</span>, wcslen<span class="br0">(</span>str<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"with null character:&nbsp;%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> str <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>str<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -279,7 +279,7 @@ with null character: 51</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../byte/strlen.html" title="c/string/byte/strlen"> <span class="t-lines"><span>strlen</span><span>strnlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../byte/strlen.htm" title="c/string/byte/strlen"> <span class="t-lines"><span>strlen</span><span>strnlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   returns the length of a given string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strlen&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/setjmp.html" title="c/header/setjmp"><tt>&lt;setjmp.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/setjmp.htm" title="c/header/setjmp"><tt>&lt;setjmp.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,28 +198,28 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Saves the current execution context into a variable <code>env</code> of type <span class="t-lc"><a href="jmp_buf.htm" title="c/program/jmp buf">jmp_buf</a></span>. This variable can later be used to restore the current execution context by <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span> function. That is, when a call to <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span> function is made, the execution continues at the particular call site that constructed the <span class="t-lc"><a href="jmp_buf.htm" title="c/program/jmp buf">jmp_buf</a></span> variable passed to <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span>. In that case <code>setjmp</code> returns the value passed to <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span>.
+<p>Saves the current execution context into a variable <code>env</code> of type <span class="t-lc"><a href="./jmp_buf.htm" title="c/program/jmp buf">jmp_buf</a></span>. This variable can later be used to restore the current execution context by <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span> function. That is, when a call to <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span> function is made, the execution continues at the particular call site that constructed the <span class="t-lc"><a href="./jmp_buf.htm" title="c/program/jmp buf">jmp_buf</a></span> variable passed to <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span>. In that case <code>setjmp</code> returns the value passed to <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span>.
 </p><p>The invocation of <code>setjmp</code> must appear only in one of the following contexts:
 </p>
-<ol><li> The entire controlling expression of <a href="../language/if.html" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.html" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.html" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.html" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.html" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span>setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
-</li><li> One operand of a relational or equality operator with the other operand an integer constant expression, with the resulting expression being the entire controlling expression of <a href="../language/if.html" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.html" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.html" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.html" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.html" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">if</span><span class="br0">(</span>setjmp<span class="br0">(</span>env<span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
-</li><li> The operand of a unary&nbsp;! operator with the resulting expression being the entire controlling expression of <a href="../language/if.html" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.html" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.html" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.html" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.html" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
-</li><li> The entire expression of an <a href="../language/statements.html#Expression_statements" title="c/language/statements">expression statement</a> (possibly cast to <code>void</code>).<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1">setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<ol><li> The entire controlling expression of <a href="../language/if.htm" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.htm" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.htm" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.htm" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.htm" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span>setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
+</li><li> One operand of a relational or equality operator with the other operand an integer constant expression, with the resulting expression being the entire controlling expression of <a href="../language/if.htm" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.htm" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.htm" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.htm" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.htm" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">if</span><span class="br0">(</span>setjmp<span class="br0">(</span>env<span class="br0">)</span> <span class="sy1">&gt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
+</li><li> The operand of a unary&nbsp;! operator with the resulting expression being the entire controlling expression of <a href="../language/if.htm" title="c/language/if"><tt>if</tt></a>, <a href="../language/switch.htm" title="c/language/switch"><tt>switch</tt></a>, <a href="../language/while.htm" title="c/language/while"><tt>while</tt></a>, <a href="../language/do.htm" title="c/language/do"><tt>do-while</tt></a>, <a href="../language/for.htm" title="c/language/for"><tt>for</tt></a>.<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">while</span><span class="br0">(</span><span class="sy3">!</span>setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// ...</span></pre></div></div>
+</li><li> The entire expression of an <a href="../language/statements.htm#Expression_statements" title="c/language/statements">expression statement</a> (possibly cast to <code>void</code>).<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1">setjmp<span class="br0">(</span>env<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 </li></ol>
 <p>If <code>setjmp</code> appears in any other context, the behavior is undefined.
 </p><p>Upon return to the scope of <code>setjmp</code>:
 </p>
-<ul><li> all accessible objects, floating-point status flags, and other components of the abstract machine have the same values as they had when <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span> was executed,
-</li><li> except for the non-<a href="../language/volatile.html" title="c/language/volatile"><tt>volatile</tt></a> local variables in the function containing the invocation of <code>setjmp</code>, whose values are indeterminate if they have been changed since the <code>setjmp</code> invocation.
+<ul><li> all accessible objects, floating-point status flags, and other components of the abstract machine have the same values as they had when <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span> was executed,
+</li><li> except for the non-<a href="../language/volatile.htm" title="c/language/volatile"><tt>volatile</tt></a> local variables in the function containing the invocation of <code>setjmp</code>, whose values are indeterminate if they have been changed since the <code>setjmp</code> invocation.
 </li></ul>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="setjmp.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="setjmp.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="setjmp.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="setjmp.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="setjmp.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="setjmp.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./setjmp.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./setjmp.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./setjmp.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./setjmp.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./setjmp.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./setjmp.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/setjmp&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -235,7 +235,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/setjmp&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p><span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> if the macro was called by the original code and the execution context was saved to <code>env</code>.
-</p><p>Non-zero value if a non-local jump was just performed. The return value is the same as passed to <span class="t-lc"><a href="longjmp.htm" title="c/program/longjmp">longjmp</a></span>.
+</p><p>Non-zero value if a non-local jump was just performed. The return value is the same as passed to <span class="t-lc"><a href="./longjmp.htm" title="c/program/longjmp">longjmp</a></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/setjmp&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Above requirements forbid using return value of <code>setjmp</code> in data flow (e.g. to initialize or assign an object with it). The return value can only be either used in control flow or discarded.
@@ -246,12 +246,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;setjmp.h&gt;</span>
 <span class="co2">#include &lt;stdnoreturn.h&gt;</span>
 &nbsp;
-<a href="jmp_buf.htm"><span class="kw510">jmp_buf</span></a> my_jump_buffer<span class="sy4">;</span>
+<a href="./jmp_buf.htm"><span class="kw510">jmp_buf</span></a> my_jump_buffer<span class="sy4">;</span>
 &nbsp;
 noreturn <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">int</span> status<span class="br0">)</span> 
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"foo(%d) called<span class="es1">\n</span>"</span>, status<span class="br0">)</span><span class="sy4">;</span>
-    <a href="longjmp.htm"><span class="kw509">longjmp</span></a><span class="br0">(</span>my_jump_buffer, status <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// will return status+1 out of setjmp</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"foo(%d) called<span class="es1">\n</span>"</span>, status<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./longjmp.htm"><span class="kw509">longjmp</span></a><span class="br0">(</span>my_jump_buffer, status <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// will return status+1 out of setjmp</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -300,7 +300,7 @@ foo(4) called</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="longjmp.htm" title="c/program/longjmp"> <span class="t-lines"><span>longjmp</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./longjmp.htm" title="c/program/longjmp"> <span class="t-lines"><span>longjmp</span></span></a></div></div>
 </td>
 <td>   jumps to specified location  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_longjmp&amp;action=edit">[edit]</a></span>
 </td></tr>

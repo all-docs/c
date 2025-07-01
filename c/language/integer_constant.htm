@@ -188,17 +188,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="integer_constant.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="integer_constant.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="integer_constant.htm#The_type_of_the_integer_constant"><span class="tocnumber">3</span> <span class="toctext">The type of the integer constant</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="integer_constant.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="integer_constant.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="integer_constant.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="integer_constant.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./integer_constant.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./integer_constant.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./integer_constant.htm#The_type_of_the_integer_constant"><span class="tocnumber">3</span> <span class="toctext">The type of the integer constant</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./integer_constant.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./integer_constant.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./integer_constant.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./integer_constant.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/integer_constant&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
-<p>An integer constant is a <a href="value_category.htm" title="c/language/value category">non-lvalue</a> expression of the form
+<p>An integer constant is a <a href="./value_category.htm" title="c/language/value category">non-lvalue</a> expression of the form
 </p>
 <table class="t-sdsc-begin">
 
@@ -397,19 +397,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/integer_constant&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Letters in the integer constants are case-insensitive: <code>0xDeAdBaBeU</code> and <code>0XdeadBABEu</code> represent the same number<span class="t-rev-inl t-since-c99"><span> (one exception is the <span class="t-spar">long-long-suffix</span>, which is either <code>ll</code> or <code>LL</code>, never <code>lL</code> or <code>Ll</code>)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>.
-</p><p>There are no negative integer constants. Expressions such as <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span> apply the <a href="operator_arithmetic.htm" title="c/language/operator arithmetic">unary minus operator</a> to the value represented by the constant.
+</p><p>There are no negative integer constants. Expressions such as <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span><span class="nu0">1</span></span></span> apply the <a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">unary minus operator</a> to the value represented by the constant.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>When used in a controlling expression of <a href="../preprocessor/conditional.html" title="c/preprocessor/conditional"><tt>
-#if</tt></a> or <a href="../preprocessor/conditional.html" title="c/preprocessor/conditional"><tt>
-#elif</tt></a>, all signed integer constants act as if they have type <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">intmax_t</a></span> and all unsigned integer constants act as if they have type <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">uintmax_t</a></span>.
+<p>When used in a controlling expression of <a href="../preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
+#if</tt></a> or <a href="../preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
+#elif</tt></a>, all signed integer constants act as if they have type <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">intmax_t</a></span> and all unsigned integer constants act as if they have type <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">uintmax_t</a></span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
-<p>Integer constants may be used in <a href="constant_expression.htm" title="c/language/constant expression">integer constant expressions</a>.
-</p><p>Due to <a href="translation_phases.htm#maximal_munch" title="c/language/translation phases">maximal munch</a>, hexadecimal integer constants ending in <code>e</code> and <code>E</code>, when followed by the operators <code>+</code> or <code>-</code>, must be separated from the operator with whitespace or parentheses in the source:
+<p>Integer constants may be used in <a href="./constant_expression.htm" title="c/language/constant expression">integer constant expressions</a>.
+</p><p>Due to <a href="./translation_phases.htm#maximal_munch" title="c/language/translation phases">maximal munch</a>, hexadecimal integer constants ending in <code>e</code> and <code>E</code>, when followed by the operators <code>+</code> or <code>-</code>, must be separated from the operator with whitespace or parentheses in the source:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu12">0xE</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy4">;</span>   <span class="co1">// error</span>
 <span class="kw4">int</span> y <span class="sy1">=</span> <span class="nu12">0xa</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy4">;</span>   <span class="co1">// OK</span>
@@ -424,23 +424,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu0">123</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"0123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu8">0123</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"0x123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu12">0x123</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"12345678901234567890ull =&nbsp;%llu<span class="es1">\n</span>"</span>, 12345678901234567890ull<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu0">123</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"0123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu8">0123</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"0x123 =&nbsp;%d<span class="es1">\n</span>"</span>, <span class="nu12">0x123</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"12345678901234567890ull =&nbsp;%llu<span class="es1">\n</span>"</span>, 12345678901234567890ull<span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// the type is a 64-bit type (unsigned long long or possibly unsigned long)</span>
     <span class="co1">// even without a long suffix</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"12345678901234567890u =&nbsp;%"</span><a href="../types/integer.html"><span class="kw207">PRIu64</span></a><span class="st0">"<span class="es1">\n</span>"</span>, 12345678901234567890u <span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"12345678901234567890u =&nbsp;%"</span><a href="../types/integer.htm"><span class="kw207">PRIu64</span></a><span class="st0">"<span class="es1">\n</span>"</span>, 12345678901234567890u <span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// printf("%lld\n", -9223372036854775808); // Error:</span>
         <span class="co1">// the value 9223372036854775808 cannot fit in signed long long, which</span>
         <span class="co1">// is the biggest type allowed for unsuffixed decimal integer constant</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%llu<span class="es1">\n</span>"</span>, <span class="sy2">-</span>9223372036854775808ull <span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%llu<span class="es1">\n</span>"</span>, <span class="sy2">-</span>9223372036854775808ull <span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// unary minus applied to unsigned value subtracts it from 2^64,</span>
     <span class="co1">// this gives unsigned 9223372036854775808</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%lld<span class="es1">\n</span>"</span>, <span class="sy2">-</span>9223372036854775807ll <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%lld<span class="es1">\n</span>"</span>, <span class="sy2">-</span>9223372036854775807ll <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// correct way to form signed value -9223372036854775808</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -208,11 +208,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     char8_t str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> u8<span class="st0">"zß水🍌"</span><span class="sy4">;</span> <span class="co1">// or "z\u00df\u6c34\U0001f34c"</span>
-    <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> str_sz <span class="sy1">=</span> <span class="kw4">sizeof</span> str<span class="sy4">;</span> <span class="co1">// sizeof *str == 1 by definition</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu UTF-8 code units: [ "</span>, str_sz<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> str_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%02X "</span>, str<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"]<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> str_sz <span class="sy1">=</span> <span class="kw4">sizeof</span> str<span class="sy4">;</span> <span class="co1">// sizeof *str == 1 by definition</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu UTF-8 code units: [ "</span>, str_sz<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> str_sz<span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%02X "</span>, str<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"]<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/complex.html" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,21 +198,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>The <code>I</code> macro expands to either <span class="t-lc"><a href="Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span> or <span class="t-lc"><a href="Imaginary_I.htm" title="c/numeric/complex/Imaginary I">_Imaginary_I</a></span>. If the implementation does not support imaginary types, then the macro always expands to <span class="t-lc"><a href="Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span>.
+<p>The <code>I</code> macro expands to either <span class="t-lc"><a href="./Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span> or <span class="t-lc"><a href="./Imaginary_I.htm" title="c/numeric/complex/Imaginary I">_Imaginary_I</a></span>. If the implementation does not support imaginary types, then the macro always expands to <span class="t-lc"><a href="./Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span>.
 </p><p>A program may undefine and perhaps then redefine the macro <span class="t-c"><span class="mw-geshi c source-c">I</span></span>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="I.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="I.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="I.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="I.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./I.htm#Notes"><span class="tocnumber">1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./I.htm#Example"><span class="tocnumber">2</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./I.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./I.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/I&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The macro is not named <span class="t-c"><span class="mw-geshi c source-c">i</span></span>, which is the name of the imaginary unit in mathematics, because the name <code>i</code> was already used in many C programs, e.g. as a loop counter variable.
 </p><p>The macro <span class="t-c"><span class="mw-geshi c source-c">I</span></span> is often used to form complex numbers, with expressions such as <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">+</span> y<span class="sy2">*</span>I</span></span>. 
-If <code>I</code> is defined as <span class="t-lc"><a href="Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span>, then such expression may create a value with imaginary component <code>+0.0</code> even when <code>y</code> is <code>-0.0</code>, which is significant for complex number functions with branch cuts. The macro <span class="t-lc"><a href="CMPLX.htm" title="c/numeric/complex/CMPLX">CMPLX</a></span> provides a way to construct a complex number precisely.
+If <code>I</code> is defined as <span class="t-lc"><a href="./Complex_I.htm" title="c/numeric/complex/Complex I">_Complex_I</a></span>, then such expression may create a value with imaginary component <code>+0.0</code> even when <code>y</code> is <code>-0.0</code>, which is significant for complex number functions with branch cuts. The macro <span class="t-lc"><a href="./CMPLX.htm" title="c/numeric/complex/CMPLX">CMPLX</a></span> provides a way to construct a complex number precisely.
 </p><p>GCC provides a non-portable extension that allows imaginary constants to be specified with the suffix <code>i</code> on integer literals: <code>1.0fi</code>, <code>1.0i</code>, and <code>1.0li</code> are imaginary units in GNU C. A similar approach is part of standard C++ as of C++14 (<code>1.0if</code>, <code>1.0i</code>, and <code>1.0il</code> are the imaginary units in C++)
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/I&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -222,13 +222,13 @@ If <code>I</code> is defined as <span class="t-lc"><a href="Complex_I.htm" title
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"I =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>I<span class="br0">)</span>, <a href="cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>I<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"I =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>I<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>I<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z1 <span class="sy1">=</span> I <span class="sy2">*</span> I<span class="sy4">;</span>     <span class="co1">// imaginary unit squared</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"I * I =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z1<span class="br0">)</span>, <a href="cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z1 <span class="sy1">=</span> I <span class="sy2">*</span> I<span class="sy4">;</span>     <span class="co1">// imaginary unit squared</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"I * I =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z1<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z1<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> <span class="nu16">1.0</span> <span class="sy2">+</span> <span class="nu16">2.0</span><span class="sy2">*</span>I<span class="sy4">;</span> <span class="co1">// usual way to form a complex number pre-C11</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"z =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> <span class="nu16">1.0</span> <span class="sy2">+</span> <span class="nu16">2.0</span><span class="sy2">*</span>I<span class="sy4">;</span> <span class="co1">// usual way to form a complex number pre-C11</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"z =&nbsp;%.1f%+.1fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -260,19 +260,19 @@ z = 1.0+2.0i</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="Imaginary_I.htm" title="c/numeric/complex/Imaginary I"> <span class="t-lines"><span>_Imaginary_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./Imaginary_I.htm" title="c/numeric/complex/Imaginary I"> <span class="t-lines"><span>_Imaginary_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   the imaginary unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Imaginary_I&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="Complex_I.htm" title="c/numeric/complex/Complex I"> <span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./Complex_I.htm" title="c/numeric/complex/Complex I"> <span class="t-lines"><span>_Complex_I</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   the complex unit constant i <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_Complex_I&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="CMPLX.htm" title="c/numeric/complex/CMPLX"> <span class="t-lines"><span>CMPLX</span><span>CMPLXF</span><span>CMPLXL</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./CMPLX.htm" title="c/numeric/complex/CMPLX"> <span class="t-lines"><span>CMPLX</span><span>CMPLXF</span><span>CMPLXL</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   constructs a complex number from real and imaginary parts  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_CMPLX&amp;action=edit">[edit]</a></span>
 </td></tr>

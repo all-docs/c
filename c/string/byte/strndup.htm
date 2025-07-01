@@ -186,29 +186,29 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">char</span> <span class="sy2">*</span>strndup<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">char</span> <span class="sy2">*</span>strndup<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> size <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Returns a pointer to a null-terminated byte string, which contains copies of at most <code>size</code> bytes from the string pointed to by <code>src</code>. The space for the new string is obtained as if <span class="t-lc"><a href="../../memory/malloc.html" title="c/memory/malloc">malloc</a></span> was called. If the null terminator is not encountered in the first <code>size</code> bytes, it is appended to the duplicated string.
-</p><p>The returned pointer must be passed to <span class="t-lc"><a href="../../memory/free.html" title="c/memory/free">free</a></span> to avoid a memory leak.
-</p><p>If an error occurs, a null pointer is returned and <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span> might be set.
+<p>Returns a pointer to a null-terminated byte string, which contains copies of at most <code>size</code> bytes from the string pointed to by <code>src</code>. The space for the new string is obtained as if <span class="t-lc"><a href="../../memory/malloc.htm" title="c/memory/malloc">malloc</a></span> was called. If the null terminator is not encountered in the first <code>size</code> bytes, it is appended to the duplicated string.
+</p><p>The returned pointer must be passed to <span class="t-lc"><a href="../../memory/free.htm" title="c/memory/free">free</a></span> to avoid a memory leak.
+</p><p>If an error occurs, a null pointer is returned and <span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span> might be set.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="strndup.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="strndup.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="strndup.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="strndup.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="strndup.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./strndup.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./strndup.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./strndup.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./strndup.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./strndup.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strndup&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -233,7 +233,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>A pointer to the newly allocated string, or a null pointer if an error occurred.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strndup&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The function is identical to the  <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/strdup.html">POSIX strndup</a> except that it is allowed, but not required to set <span class="t-lc"><a href="../../error/errno.html" title="c/error/errno">errno</a></span> on error.
+<p>The function is identical to the  <a rel="nofollow" class="external text" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/strdup.html">POSIX strndup</a> except that it is allowed, but not required to set <span class="t-lc"><a href="../../error/errno.htm" title="c/error/errno">errno</a></span> on error.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strndup&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -243,22 +243,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">const</span> <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n <span class="sy1">=</span> <span class="nu0">3</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>src <span class="sy1">=</span> <span class="st0">"Replica"</span><span class="sy4">;</span>
     <span class="kw4">char</span> <span class="sy2">*</span>dup <span class="sy1">=</span> strndup<span class="br0">(</span>src, n<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup(<span class="es1">\"</span>%s<span class="es1">\"</span>,&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, src, n, dup<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup(<span class="es1">\"</span>%s<span class="es1">\"</span>,&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, src, n, dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     src <span class="sy1">=</span> <span class="st0">"Hi"</span><span class="sy4">;</span>
     dup <span class="sy1">=</span> strndup<span class="br0">(</span>src, n<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup(<span class="es1">\"</span>%s<span class="es1">\"</span>,&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, src, n, dup<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup(<span class="es1">\"</span>%s<span class="es1">\"</span>,&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, src, n, dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">const</span> <span class="kw4">char</span> arr<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="st0">'A'</span>,<span class="st0">'B'</span>,<span class="st0">'C'</span>,<span class="st0">'D'</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// NB: no trailing '\0'</span>
     dup <span class="sy1">=</span> strndup<span class="br0">(</span>arr, n<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup({'A','B','C','D'},&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, n, dup<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../memory/free.html"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strndup({'A','B','C','D'},&nbsp;%lu) == <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>, n, dup<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../memory/free.htm"><span class="kw406">free</span></a><span class="br0">(</span>dup<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -270,25 +270,25 @@ strndup({'A','B','C','D'}, 3) == "ABC"</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strdup.htm" title="c/string/byte/strdup"> <span class="t-lines"><span>strdup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strdup.htm" title="c/string/byte/strdup"> <span class="t-lines"><span>strdup</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td>   allocates a copy of a string  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strdup&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strcpy.htm" title="c/string/byte/strcpy"> <span class="t-lines"><span>strcpy</span><span>strcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strcpy.htm" title="c/string/byte/strcpy"> <span class="t-lines"><span>strcpy</span><span>strcpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../memory/malloc.html" title="c/memory/malloc"> <span class="t-lines"><span>malloc</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../memory/malloc.htm" title="c/memory/malloc"> <span class="t-lines"><span>malloc</span></span></a></div></div>
 </td>
 <td>   allocates memory <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/memory/dsc_malloc&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../memory/free.html" title="c/memory/free"> <span class="t-lines"><span>free</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../memory/free.htm" title="c/memory/free"> <span class="t-lines"><span>free</span></span></a></div></div>
 </td>
 <td>   deallocates previously allocated memory <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/memory/dsc_free&amp;action=edit">[edit]</a></span>
 </td></tr>

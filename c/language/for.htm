@@ -185,17 +185,17 @@ html { font-variant-ligatures: no-common-ligatures; }
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>Executes a loop.
-</p><p>Used as a shorter equivalent of <a href="while.htm" title="c/language/while">while loop</a>.
+</p><p>Used as a shorter equivalent of <a href="./while.htm" title="c/language/while">while loop</a>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="for.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="for.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="for.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="for.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="for.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="for.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="for.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./for.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./for.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./for.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./for.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./for.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./for.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./for.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/for&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -227,7 +227,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </dd></dl>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<dl><dd><ul><li> An <span class="t-spar">init-clause</span>, which is a declaration, is in scope in the entire loop body, including the remainder of <span class="t-spar">init-clause</span>, the entire <span class="t-spar">cond-expression</span>, the entire <span class="t-spar">iteration-expression</span> and the entire <span class="t-spar">loop-statement</span>. Only <code>auto</code> and <code>register</code> <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage class specifiers</a> are allowed for the variables declared in this declaration.
+<dl><dd><ul><li> An <span class="t-spar">init-clause</span>, which is a declaration, is in scope in the entire loop body, including the remainder of <span class="t-spar">init-clause</span>, the entire <span class="t-spar">cond-expression</span>, the entire <span class="t-spar">iteration-expression</span> and the entire <span class="t-spar">loop-statement</span>. Only <code>auto</code> and <code>register</code> <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage class specifiers</a> are allowed for the variables declared in this declaration.
 </li></ul>
 </dd></dl>
 </td>
@@ -239,33 +239,33 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p><span class="t-spar">init-clause</span>, <span class="t-spar">cond-expression</span>, and <span class="t-spar">iteration-expression</span> are all optional. If <span class="t-spar">cond-expression</span> is omitted, it is replaced with a non-zero integer constant, which makes the loop endless:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">for</span><span class="br0">(</span><span class="sy4">;;</span><span class="br0">)</span> <span class="br0">{</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"endless loop!"</span><span class="br0">)</span><span class="sy4">;</span>
+   <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"endless loop!"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p><span class="t-spar">loop-statement</span> is not optional, but it may be a null statement:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n, <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n, <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="br0">)</span>
     <span class="sy4">;</span> <span class="co1">// null statement</span></pre></div></div>
-<p>If the execution of the loop needs to be terminated at some point, a <a href="break.htm" title="c/language/break"> break statement</a> can be used anywhere within the <span class="t-spar">loop-statement</span>.
-</p><p>The <a href="continue.htm" title="c/language/continue"> continue statement</a> used anywhere within the <span class="t-spar">loop-statement</span> transfers control to <span class="t-spar">iteration-expression</span>.
+<p>If the execution of the loop needs to be terminated at some point, a <a href="./break.htm" title="c/language/break"> break statement</a> can be used anywhere within the <span class="t-spar">loop-statement</span>.
+</p><p>The <a href="./continue.htm" title="c/language/continue"> continue statement</a> used anywhere within the <span class="t-spar">loop-statement</span> transfers control to <span class="t-spar">iteration-expression</span>.
 </p><p>A program with an endless loop has undefined behavior if the loop has no observable behavior (I/O, volatile accesses, atomic or synchronization operation) in any part of its <span class="t-spar">cond-expression</span>, <span class="t-spar">iteration-expression</span> or <span class="t-spar">loop-statement</span>. This allows the compilers to optimize out all unobservable loops without proving that they terminate. The only exceptions are the loops where 
 <span class="t-spar">cond-expression</span> is omitted or is a constant expression; <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">for</span><span class="br0">(</span><span class="sy4">;;</span><span class="br0">)</span></span></span> is always an endless loop.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>As with all other selection and iteration statements, the for statement establishes <a href="scope.htm" title="c/language/scope">block scope</a>: any identifier introduced in the <span class="t-spar">init-clause</span>, <span class="t-spar">cond-expression</span>, or <span class="t-spar">iteration-expression</span> goes out of scope after the <span class="t-spar">loop-statement</span>.
+<p>As with all other selection and iteration statements, the for statement establishes <a href="./scope.htm" title="c/language/scope">block scope</a>: any identifier introduced in the <span class="t-spar">init-clause</span>, <span class="t-spar">cond-expression</span>, or <span class="t-spar">iteration-expression</span> goes out of scope after the <span class="t-spar">loop-statement</span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
-<p><span class="t-spar">attr-spec-seq</span> is an optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>for</code> statement.
+<p><span class="t-spar">attr-spec-seq</span> is an optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>for</code> statement.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/for&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/for.html" title="c/keyword/for"><tt>for</tt></a>
+<p><a href="../keyword/for.htm" title="c/keyword/for"><tt>for</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/for&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The expression statement used as <span class="t-spar">loop-statement</span> establishes its own block scope, distinct from the scope of <span class="t-spar">init-clause</span>, unlike in C++:
@@ -274,7 +274,7 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">long</span> i <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>   <span class="co1">// valid C, invalid C++</span>
     <span class="co1">// ...</span>
 <span class="br0">}</span></pre></div></div>
-<p>It is possible to enter the body of a loop using <a href="goto.htm" title="c/language/goto">goto</a>. When entering a loop in this manner, <span class="t-spar">init-clause</span> and <span class="t-spar">cond-expression</span> are not executed. (If control then reaches the end of the loop body, repetition may occur including execution of <span class="t-spar">cond-expression</span>.)
+<p>It is possible to enter the body of a loop using <a href="./goto.htm" title="c/language/goto">goto</a>. When entering a loop in this manner, <span class="t-spar">init-clause</span> and <span class="t-spar">cond-expression</span> are not executed. (If control then reaches the end of the loop body, repetition may occur including execution of <span class="t-spar">cond-expression</span>.)
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/for&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -284,12 +284,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">int</span> array<span class="br0">[</span>SIZE<span class="br0">]</span><span class="sy4">;</span>
-    <span class="kw1">for</span><span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span> <span class="sy4">;</span> i <span class="sy1">&lt;</span> SIZE<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-        array <span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">=</span> <a href="../numeric/random/rand.html"><span class="kw741">rand</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">%</span> <span class="nu0">2</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Array filled!<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> SIZE<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, array<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/putchar.html"><span class="kw835">putchar</span></a><span class="br0">(</span><span class="st0">'<span class="es1">\n</span>'</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span><span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span> <span class="sy4">;</span> i <span class="sy1">&lt;</span> SIZE<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        array <span class="br0">[</span>i<span class="br0">]</span> <span class="sy1">=</span> <a href="../numeric/random/rand.htm"><span class="kw741">rand</span></a><span class="br0">(</span><span class="br0">)</span> <span class="sy2">%</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"Array filled!<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> SIZE<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, array<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/putchar.htm"><span class="kw835">putchar</span></a><span class="br0">(</span><span class="st0">'<span class="es1">\n</span>'</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

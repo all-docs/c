@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,17 +198,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Writes every character from the null-terminated string <span class="t-c"><span class="mw-geshi c source-c">str</span></span> and one additional newline character <span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span> to the output stream <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdout</a></span>, as if by repeatedly executing <span class="t-lc"><a href="putc.htm" title="c/io/fputc">fputc</a></span>.
+<p>Writes every character from the null-terminated string <span class="t-c"><span class="mw-geshi c source-c">str</span></span> and one additional newline character <span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span> to the output stream <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdout</a></span>, as if by repeatedly executing <span class="t-lc"><a href="./putc.htm" title="c/io/fputc">fputc</a></span>.
 </p><p>The terminating null character from <span class="t-c"><span class="mw-geshi c source-c">str</span></span> is not written.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="puts.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="puts.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="puts.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="puts.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="puts.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="puts.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./puts.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./puts.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./puts.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./puts.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./puts.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./puts.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/puts&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -224,12 +224,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/puts&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>On success, returns a non-negative value.
-</p><p>On failure, returns <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span> and sets the <i>error</i> indicator (see <span class="t-lc"><a href="ferror.htm" title="c/io/ferror">ferror()</a></span>) on <code>stream</code>.
+</p><p>On failure, returns <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span> and sets the <i>error</i> indicator (see <span class="t-lc"><a href="./ferror.htm" title="c/io/ferror">ferror()</a></span>) on <code>stream</code>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/puts&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The <code>puts</code> function appends the newline character to the output, while <span class="t-lc"><a href="fputs.htm" title="c/io/fputs">fputs</a></span> function does not.
-</p><p>Different implementations return different non-negative numbers: some return the last character written, some return the number of characters written (or <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">INT_MAX</a></span> if the string was longer than that), some simply return a non-negative constant.
-</p><p>A typical cause of failure for <code>puts</code> is running out of space on the file system, when <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdout</a></span> is redirected to a file.
+<p>The <code>puts</code> function appends the newline character to the output, while <span class="t-lc"><a href="./fputs.htm" title="c/io/fputs">fputs</a></span> function does not.
+</p><p>Different implementations return different non-negative numbers: some return the last character written, some return the number of characters written (or <span class="t-lc"><a href="../types/limits.htm" title="c/types/limits">INT_MAX</a></span> if the string was longer than that), some simply return a non-negative constant.
+</p><p>A typical cause of failure for <code>puts</code> is running out of space on the file system, when <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdout</a></span> is redirected to a file.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/puts&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -239,8 +239,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">int</span> rc <span class="sy1">=</span> puts<span class="br0">(</span><span class="st0">"Hello World"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">if</span> <span class="br0">(</span>rc <span class="sy1">==</span> <a href="../io.html"><span class="kw888">EOF</span></a><span class="br0">)</span>
-        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"puts()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// POSIX requires that errno is set</span>
+    <span class="kw1">if</span> <span class="br0">(</span>rc <span class="sy1">==</span> <a href="../io.htm"><span class="kw888">EOF</span></a><span class="br0">)</span>
+        <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"puts()"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// POSIX requires that errno is set</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -286,15 +286,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
 </td>
 <td>   writes a character string to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   prints formatted output to <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
+<td>   prints formatted output to <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">

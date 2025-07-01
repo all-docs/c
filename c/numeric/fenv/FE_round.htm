@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -213,7 +213,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Each of these macro constants expands to a nonnegative integer constant expression, which can be used with <span class="t-lc"><a href="feround.htm" title="c/numeric/fenv/feround">fesetround</a></span> and <span class="t-lc"><a href="feround.htm" title="c/numeric/fenv/feround">fegetround</a></span> to indicate one of the supported floating-point rounding modes. The implementation may define additional rounding mode constants in <a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a>, which should all begin with <code>FE_</code> followed by at least one uppercase letter. Each macro is only defined if it is supported.
+<p>Each of these macro constants expands to a nonnegative integer constant expression, which can be used with <span class="t-lc"><a href="./feround.htm" title="c/numeric/fenv/feround">fesetround</a></span> and <span class="t-lc"><a href="./feround.htm" title="c/numeric/fenv/feround">fegetround</a></span> to indicate one of the supported floating-point rounding modes. The implementation may define additional rounding mode constants in <a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a>, which should all begin with <code>FE_</code> followed by at least one uppercase letter. Each macro is only defined if it is supported.
 </p>
 <table class="t-dsc-begin">
 
@@ -260,29 +260,29 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">double</span> x <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 x <span class="sy2">/</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="co1">// 0.09999999999999999167332731531132594682276248931884765625 or</span>
         <span class="co1">// 0.1000000000000000055511151231257827021181583404541015625</span></pre></div></div>
-<ul><li> results of standard library <a href="../math.html" title="c/numeric/math">mathematical functions</a>
+<ul><li> results of standard library <a href="../math.htm" title="c/numeric/math">mathematical functions</a>
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 1.41421356237309492343001693370752036571502685546875 or</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../math/sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 1.41421356237309492343001693370752036571502685546875 or</span>
          <span class="co1">// 1.4142135623730951454746218587388284504413604736328125</span></pre></div></div>
 <ul><li> floating-point to floating-point implicit conversion and casts
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">double</span> d <span class="sy1">=</span> <span class="nu0">1</span> <span class="sy2">+</span> <a href="../../types/limits.html"><span class="kw381">DBL_EPSILON</span></a><span class="sy4">;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">double</span> d <span class="sy1">=</span> <span class="nu0">1</span> <span class="sy2">+</span> <a href="../../types/limits.htm"><span class="kw381">DBL_EPSILON</span></a><span class="sy4">;</span>
 <span class="kw4">float</span> f <span class="sy1">=</span> d<span class="sy4">;</span> <span class="co1">// 1.00000000000000000000000 or</span>
              <span class="co1">// 1.00000011920928955078125</span></pre></div></div>
-<ul><li> string conversions such as <span class="t-lc"><a href="../../string/byte/strtof.html" title="c/string/byte/strtof">strtod</a></span> or <span class="t-lc"><a href="../../io/fprintf.html" title="c/io/fprintf">printf</a></span>
+<ul><li> string conversions such as <span class="t-lc"><a href="../../string/byte/strtof.htm" title="c/string/byte/strtof">strtod</a></span> or <span class="t-lc"><a href="../../io/fprintf.htm" title="c/io/fprintf">printf</a></span>
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../../string/byte/strtof.html"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"0.1"</span>, <a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 0.0999999940395355224609375 or</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../../string/byte/strtof.htm"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"0.1"</span>, <a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 0.0999999940395355224609375 or</span>
                      <span class="co1">// 0.100000001490116119384765625</span></pre></div></div>
-<ul><li> the library rounding functions <span class="t-lc"><a href="../math/nearbyint.html" title="c/numeric/math/nearbyint">nearbyint</a></span>, <span class="t-lc"><a href="../math/rint.html" title="c/numeric/math/rint">rint</a></span>, <span class="t-lc"><a href="../math/rint.html" title="c/numeric/math/rint">lrint</a></span>
+<ul><li> the library rounding functions <span class="t-lc"><a href="../math/nearbyint.htm" title="c/numeric/math/nearbyint">nearbyint</a></span>, <span class="t-lc"><a href="../math/rint.htm" title="c/numeric/math/rint">rint</a></span>, <span class="t-lc"><a href="../math/rint.htm" title="c/numeric/math/rint">lrint</a></span>
 </li></ul>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../math/rint.html"><span class="kw694">lrint</span></a><span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 2 or 3</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><a href="../math/rint.htm"><span class="kw694">lrint</span></a><span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// 2 or 3</span></pre></div></div>
 <p>The current rounding mode does NOT affect the following:
 </p>
 <ul><li> floating-point to integer implicit conversion and casts (always towards zero)
 </li><li> results of floating-point arithmetic operators in constant expressions executed at compile time (always to nearest)
-</li><li> the library functions <span class="t-lc"><a href="../math/round.html" title="c/numeric/math/round">round</a></span>, <span class="t-lc"><a href="../math/round.html" title="c/numeric/math/round">lround</a></span>, <span class="t-lc"><a href="../math/round.html" title="c/numeric/math/round">llround</a></span>, <span class="t-lc"><a href="../math/ceil.html" title="c/numeric/math/ceil">ceil</a></span>, <span class="t-lc"><a href="../math/floor.html" title="c/numeric/math/floor">floor</a></span>, <span class="t-lc"><a href="../math/trunc.html" title="c/numeric/math/trunc">trunc</a></span>
+</li><li> the library functions <span class="t-lc"><a href="../math/round.htm" title="c/numeric/math/round">round</a></span>, <span class="t-lc"><a href="../math/round.htm" title="c/numeric/math/round">lround</a></span>, <span class="t-lc"><a href="../math/round.htm" title="c/numeric/math/round">llround</a></span>, <span class="t-lc"><a href="../math/ceil.htm" title="c/numeric/math/ceil">ceil</a></span>, <span class="t-lc"><a href="../math/floor.htm" title="c/numeric/math/floor">floor</a></span>, <span class="t-lc"><a href="../math/trunc.htm" title="c/numeric/math/trunc">trunc</a></span>
 </li></ul>
-<p>As with any <a href="../fenv.html" title="c/numeric/fenv">floating-point environment</a> functionality, rounding is only guaranteed if <span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#pragma STDC FENV_ACCESS ON</span></span></span> is set.
+<p>As with any <a href="../fenv.htm" title="c/numeric/fenv">floating-point environment</a> functionality, rounding is only guaranteed if <span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#pragma STDC FENV_ACCESS ON</span></span></span> is set.
 </p><p>Compilers that do not support the pragma may offer their own ways to support current rounding mode. For example Clang and GCC have the option <code>-frounding-math</code> intended to disable optimizations that would change the meaning of rounding-sensitive code.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/fenv/FE_round&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -296,16 +296,16 @@ x <span class="sy2">/</span> <span class="nu0">10</span><span class="sy4">;</spa
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span>FE_DOWNWARD<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw832">puts</span></a><span class="br0">(</span><span class="st0">"rounding down: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"           pi =&nbsp;%.22f<span class="es1">\n</span>"</span>, acosf<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"strtof(<span class="es1">\"</span>1.1<span class="es1">\"</span>) =&nbsp;%.22f<span class="es1">\n</span>"</span>, <a href="../../string/byte/strtof.html"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"1.1"</span>, <a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"    rint(2.1) =&nbsp;%.22f<span class="es1">\n</span><span class="es1">\n</span>"</span>, rintf<span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span>FE_UPWARD<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/puts.html"><span class="kw832">puts</span></a><span class="br0">(</span><span class="st0">"rounding up: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"           pi =&nbsp;%.22f<span class="es1">\n</span>"</span>, acosf<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"strtof(<span class="es1">\"</span>1.1<span class="es1">\"</span>) =&nbsp;%.22f<span class="es1">\n</span>"</span>, <a href="../../string/byte/strtof.html"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"1.1"</span>, <a href="../../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"    rint(2.1) =&nbsp;%.22f<span class="es1">\n</span>"</span>, rintf<span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span>FE_DOWNWARD<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw832">puts</span></a><span class="br0">(</span><span class="st0">"rounding down: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"           pi =&nbsp;%.22f<span class="es1">\n</span>"</span>, acosf<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"strtof(<span class="es1">\"</span>1.1<span class="es1">\"</span>) =&nbsp;%.22f<span class="es1">\n</span>"</span>, <a href="../../string/byte/strtof.htm"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"1.1"</span>, <a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"    rint(2.1) =&nbsp;%.22f<span class="es1">\n</span><span class="es1">\n</span>"</span>, rintf<span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feround.htm"><span class="kw724">fesetround</span></a><span class="br0">(</span>FE_UPWARD<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw832">puts</span></a><span class="br0">(</span><span class="st0">"rounding up: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"           pi =&nbsp;%.22f<span class="es1">\n</span>"</span>, acosf<span class="br0">(</span><span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"strtof(<span class="es1">\"</span>1.1<span class="es1">\"</span>) =&nbsp;%.22f<span class="es1">\n</span>"</span>, <a href="../../string/byte/strtof.htm"><span class="kw548">strtof</span></a><span class="br0">(</span><span class="st0">"1.1"</span>, <a href="../../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw847">printf</span></a><span class="br0">(</span><span class="st0">"    rint(2.1) =&nbsp;%.22f<span class="es1">\n</span>"</span>, rintf<span class="br0">(</span><span class="nu16">2.1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -352,7 +352,7 @@ strtof("1.1") = 1.1000000238418579101563
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feround.htm" title="c/numeric/fenv/feround"> <span class="t-lines"><span>fegetround</span><span>fesetround</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feround.htm" title="c/numeric/fenv/feround"> <span class="t-lines"><span>fegetround</span><span>fesetround</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   gets or sets rounding  direction  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feround&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,15 +198,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Attempts to clear the floating-point exceptions that are listed in the bitmask argument <code>excepts</code>, which is a bitwise OR of the <a href="FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">floating-point exception macros</a>.
+<p>Attempts to clear the floating-point exceptions that are listed in the bitmask argument <code>excepts</code>, which is a bitwise OR of the <a href="./FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">floating-point exception macros</a>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="feclearexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="feclearexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="feclearexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="feclearexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="feclearexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./feclearexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./feclearexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./feclearexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./feclearexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./feclearexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/fenv/feclearexcept&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -235,36 +235,36 @@ html { font-variant-ligatures: no-common-ligatures; }
  * floating-point features.
  */</span>
 <span class="kw4">double</span> hypot_demo<span class="br0">(</span><span class="kw4">double</span> a, <span class="kw4">double</span> b<span class="br0">)</span> <span class="br0">{</span>
-  <span class="kw4">const</span> <span class="kw4">int</span> range_problem <span class="sy1">=</span> <a href="FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a> <span class="sy3">|</span> <a href="FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="sy4">;</span>
+  <span class="kw4">const</span> <span class="kw4">int</span> range_problem <span class="sy1">=</span> <a href="./FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a> <span class="sy3">|</span> <a href="./FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="sy4">;</span>
   feclearexcept<span class="br0">(</span>range_problem<span class="br0">)</span><span class="sy4">;</span>
   <span class="co1">// try a fast algorithm</span>
-  <span class="kw4">double</span> result <span class="sy1">=</span> <a href="../math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span>a <span class="sy2">*</span> a <span class="sy2">+</span> b <span class="sy2">*</span> b<span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><a href="fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span>range_problem<span class="br0">)</span><span class="br0">)</span>  <span class="co1">// no overflow or underflow</span>
+  <span class="kw4">double</span> result <span class="sy1">=</span> <a href="../math/sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>a <span class="sy2">*</span> a <span class="sy2">+</span> b <span class="sy2">*</span> b<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span><a href="./fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span>range_problem<span class="br0">)</span><span class="br0">)</span>  <span class="co1">// no overflow or underflow</span>
     <span class="kw1">return</span> result<span class="sy4">;</span>                   <span class="co1">// return the fast result</span>
   <span class="co1">// do a more complicated calculation to avoid overflow or underflow</span>
   <span class="kw4">int</span> a_exponent,b_exponent<span class="sy4">;</span>
-  <a href="../math/frexp.html"><span class="kw696">frexp</span></a><span class="br0">(</span>a, <span class="sy3">&amp;</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
-  <a href="../math/frexp.html"><span class="kw696">frexp</span></a><span class="br0">(</span>b, <span class="sy3">&amp;</span>b_exponent<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../math/frexp.htm"><span class="kw696">frexp</span></a><span class="br0">(</span>a, <span class="sy3">&amp;</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../math/frexp.htm"><span class="kw696">frexp</span></a><span class="br0">(</span>b, <span class="sy3">&amp;</span>b_exponent<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-  <span class="kw1">if</span> <span class="br0">(</span>a_exponent <span class="sy2">-</span> b_exponent <span class="sy1">&gt;</span> <a href="../../types/limits.html"><span class="kw396">DBL_MAX_EXP</span></a><span class="br0">)</span>
-    <span class="kw1">return</span> <a href="../math/fabs.html"><span class="kw644">fabs</span></a><span class="br0">(</span>a<span class="br0">)</span> <span class="sy2">+</span> <a href="../math/fabs.html"><span class="kw644">fabs</span></a><span class="br0">(</span>b<span class="br0">)</span><span class="sy4">;</span>        <span class="co1">// we can ignore the smaller value</span>
+  <span class="kw1">if</span> <span class="br0">(</span>a_exponent <span class="sy2">-</span> b_exponent <span class="sy1">&gt;</span> <a href="../../types/limits.htm"><span class="kw396">DBL_MAX_EXP</span></a><span class="br0">)</span>
+    <span class="kw1">return</span> <a href="../math/fabs.htm"><span class="kw644">fabs</span></a><span class="br0">(</span>a<span class="br0">)</span> <span class="sy2">+</span> <a href="../math/fabs.htm"><span class="kw644">fabs</span></a><span class="br0">(</span>b<span class="br0">)</span><span class="sy4">;</span>        <span class="co1">// we can ignore the smaller value</span>
   <span class="co1">// scale so that fabs(a) is near 1</span>
-  <span class="kw4">double</span> a_scaled <span class="sy1">=</span> <a href="../math/scalbn.html"><span class="kw699">scalbn</span></a><span class="br0">(</span>a, <span class="sy2">-</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw4">double</span> b_scaled <span class="sy1">=</span> <a href="../math/scalbn.html"><span class="kw699">scalbn</span></a><span class="br0">(</span>b, <span class="sy2">-</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">double</span> a_scaled <span class="sy1">=</span> <a href="../math/scalbn.htm"><span class="kw699">scalbn</span></a><span class="br0">(</span>a, <span class="sy2">-</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">double</span> b_scaled <span class="sy1">=</span> <a href="../math/scalbn.htm"><span class="kw699">scalbn</span></a><span class="br0">(</span>b, <span class="sy2">-</span>a_exponent<span class="br0">)</span><span class="sy4">;</span>
   <span class="co1">// overflow and underflow is now impossible </span>
-  result <span class="sy1">=</span> <a href="../math/sqrt.html"><span class="kw665">sqrt</span></a><span class="br0">(</span>a_scaled <span class="sy2">*</span> a_scaled <span class="sy2">+</span> b_scaled <span class="sy2">*</span> b_scaled<span class="br0">)</span><span class="sy4">;</span>
+  result <span class="sy1">=</span> <a href="../math/sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>a_scaled <span class="sy2">*</span> a_scaled <span class="sy2">+</span> b_scaled <span class="sy2">*</span> b_scaled<span class="br0">)</span><span class="sy4">;</span>
   <span class="co1">// undo scaling</span>
-  <span class="kw1">return</span> <a href="../math/scalbn.html"><span class="kw699">scalbn</span></a><span class="br0">(</span>result, a_exponent<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw1">return</span> <a href="../math/scalbn.htm"><span class="kw699">scalbn</span></a><span class="br0">(</span>result, a_exponent<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
   <span class="co1">// Normal case takes the fast route</span>
-  <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(%f,&nbsp;%f) =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">3.0</span>, <span class="nu16">4.0</span>, hypot_demo<span class="br0">(</span><span class="nu16">3.0</span>, <span class="nu16">4.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(%f,&nbsp;%f) =&nbsp;%f<span class="es1">\n</span>"</span>, <span class="nu16">3.0</span>, <span class="nu16">4.0</span>, hypot_demo<span class="br0">(</span><span class="nu16">3.0</span>, <span class="nu16">4.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
   <span class="co1">// Extreme case takes the slow but more accurate route</span>
-  <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(%e,&nbsp;%e) =&nbsp;%e<span class="es1">\n</span>"</span>, <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, 
-                                <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, 
-                                hypot_demo<span class="br0">(</span><a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, <a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+  <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"hypot(%e,&nbsp;%e) =&nbsp;%e<span class="es1">\n</span>"</span>, <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, 
+                                <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, 
+                                hypot_demo<span class="br0">(</span><a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span>, <a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a> <span class="sy2">/</span> <span class="nu16">2.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
@@ -291,7 +291,7 @@ hypot(8.988466e+307, 8.988466e+307) = 1.271161e+308</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fetestexcept.htm" title="c/numeric/fenv/fetestexcept"> <span class="t-lines"><span>fetestexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fetestexcept.htm" title="c/numeric/fenv/fetestexcept"> <span class="t-lines"><span>fetestexcept</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   determines which of the specified floating-point status flags are set <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_fetestexcept&amp;action=edit">[edit]</a></span>
 </td></tr>

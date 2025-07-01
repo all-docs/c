@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -213,12 +213,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 If a macro definition of each of these generic functions is suppressed to access an actual function (e.g. if <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>wcspbrk<span class="br0">)</span></span></span> or a function pointer is used), the actual function declaration <span class="t-v">(1)</span> becomes visible.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcspbrk.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcspbrk.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcspbrk.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcspbrk.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcspbrk.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcspbrk.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcspbrk.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcspbrk.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcspbrk.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcspbrk.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcspbrk.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcspbrk.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcspbrk&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -258,11 +258,11 @@ If a macro definition of each of these generic functions is suppressed to access
     <span class="kw4">unsigned</span> <span class="kw4">int</span> cnt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
     <span class="kw1">do</span> <span class="br0">{</span>
        str <span class="sy1">=</span> wcspbrk<span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// find separator</span>
-       <span class="kw1">if</span> <span class="br0">(</span>str<span class="br0">)</span> str <span class="sy2">+</span><span class="sy1">=</span> <a href="wcsspn.htm"><span class="kw631">wcsspn</span></a><span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// skip separator</span>
+       <span class="kw1">if</span> <span class="br0">(</span>str<span class="br0">)</span> str <span class="sy2">+</span><span class="sy1">=</span> <a href="./wcsspn.htm"><span class="kw631">wcsspn</span></a><span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// skip separator</span>
        <span class="sy2">++</span>cnt<span class="sy4">;</span> <span class="co1">// increment word count</span>
     <span class="br0">}</span> <span class="kw1">while</span> <span class="br0">(</span>str <span class="sy3">&amp;&amp;</span> <span class="sy2">*</span>str<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fwprintf.html"><span class="kw864">wprintf</span></a><span class="br0">(</span>L<span class="st0">"There are&nbsp;%u words.<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fwprintf.htm"><span class="kw864">wprintf</span></a><span class="br0">(</span>L<span class="st0">"There are&nbsp;%u words.<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -286,19 +286,19 @@ If a macro definition of each of these generic functions is suppressed to access
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcscspn.htm" title="c/string/wide/wcscspn"> <span class="t-lines"><span>wcscspn</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcscspn.htm" title="c/string/wide/wcscspn"> <span class="t-lines"><span>wcscspn</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   returns the length of the maximum initial segment that consists <br> of only the wide chars <i>not</i> found in another wide string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcscspn&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcschr.htm" title="c/string/wide/wcschr"> <span class="t-lines"><span>wcschr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcschr.htm" title="c/string/wide/wcschr"> <span class="t-lines"><span>wcschr</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   finds the first occurrence of a wide character in a wide string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcschr&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../byte/strpbrk.html" title="c/string/byte/strpbrk"> <span class="t-lines"><span>strpbrk</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../byte/strpbrk.htm" title="c/string/byte/strpbrk"> <span class="t-lines"><span>strpbrk</span></span></a></div></div>
 </td>
 <td>   finds the first location of any character in one string, in another string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strpbrk&amp;action=edit">[edit]</a></span>
 </td></tr>

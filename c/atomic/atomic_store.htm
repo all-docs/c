@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdatomic.html" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdatomic.htm" title="c/header/stdatomic"><tt>&lt;stdatomic.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -173,23 +173,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> atomic_store_explicit<span class="br0">(</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> obj, C desired, <a href="memory_order.htm"><span class="kw910">memory_order</span></a> order <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">void</span> atomic_store_explicit<span class="br0">(</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> obj, C desired, <a href="./memory_order.htm"><span class="kw910">memory_order</span></a> order <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Atomically replaces the value of the atomic variable pointed to by <code>obj</code> with <code>desired</code>. The operation is atomic write operation. 
-</p><p>The first version orders memory accesses according to <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span>, the second version orders memory accesses according to <code>order</code>. <code>order</code> must be one of <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_relaxed</a></span>, <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> or <span class="t-lc"><a href="memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span>. Otherwise the behavior is undefined.
-</p><p>This is a <a href="../language/generic.html" title="c/language/generic">generic function</a> defined for all <a href="../language/atomic.html" title="c/language/atomic">atomic object types</a> <code>A</code>. The argument is pointer to a volatile atomic type to accept addresses of both non-volatile and <a href="../language/volatile.html" title="c/language/volatile">volatile</a> (e.g. memory-mapped I/O) atomic objects, and volatile semantic is preserved when applying this operation to volatile atomic objects. <code>C</code> is the non-atomic type corresponding to <code>A</code>.
+</p><p>The first version orders memory accesses according to <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span>, the second version orders memory accesses according to <code>order</code>. <code>order</code> must be one of <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_relaxed</a></span>, <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_release</a></span> or <span class="t-lc"><a href="./memory_order.htm" title="c/atomic/memory order">memory_order_seq_cst</a></span>. Otherwise the behavior is undefined.
+</p><p>This is a <a href="../language/generic.htm" title="c/language/generic">generic function</a> defined for all <a href="../language/atomic.htm" title="c/language/atomic">atomic object types</a> <code>A</code>. The argument is pointer to a volatile atomic type to accept addresses of both non-volatile and <a href="../language/volatile.htm" title="c/language/volatile">volatile</a> (e.g. memory-mapped I/O) atomic objects, and volatile semantic is preserved when applying this operation to volatile atomic objects. <code>C</code> is the non-atomic type corresponding to <code>A</code>.
 </p><p>It is unspecified whether the name of a generic function is a macro or an identifier declared with external linkage. If a macro definition is suppressed in order to access an actual function (e.g. parenthesized like <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>atomic_store<span class="br0">)</span><span class="br0">(</span>...<span class="br0">)</span></span></span>), or a program defines an external identifier with the name of a generic function, the behavior is undefined.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="atomic_store.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="atomic_store.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="atomic_store.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="atomic_store.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./atomic_store.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./atomic_store.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./atomic_store.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./atomic_store.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/atomic/atomic_store&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -232,7 +232,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="atomic_load.htm" title="c/atomic/atomic load"> <span class="t-lines"><span>atomic_load</span><span>atomic_load_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./atomic_load.htm" title="c/atomic/atomic load"> <span class="t-lines"><span>atomic_load</span><span>atomic_load_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   reads a value from an atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_load&amp;action=edit">[edit]</a></span>
 </td></tr>

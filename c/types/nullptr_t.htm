@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stddef.html" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stddef.htm" title="c/header/stddef"><tt>&lt;stddef.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,9 +198,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p><code>nullptr_t</code> is the type of the predefined null pointer constant, <a href="../language/nullptr.html" title="c/language/nullptr"><tt>nullptr</tt></a>. It is a distinct type that is not itself a pointer type. It can be <a href="../language/conversion.html" title="c/language/conversion">implicitly converted</a> to any pointer type or <span class="mw-geshi c source-c">bool</span>, and the result is the null pointer value of that type or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> respectively. No type other than <code>nullptr_t</code> itself can be converted or explicitly cast to <code>nullptr_t</code>.
+<p><code>nullptr_t</code> is the type of the predefined null pointer constant, <a href="../language/nullptr.htm" title="c/language/nullptr"><tt>nullptr</tt></a>. It is a distinct type that is not itself a pointer type. It can be <a href="../language/conversion.htm" title="c/language/conversion">implicitly converted</a> to any pointer type or <span class="mw-geshi c source-c">bool</span>, and the result is the null pointer value of that type or <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span> respectively. No type other than <code>nullptr_t</code> itself can be converted or explicitly cast to <code>nullptr_t</code>.
 </p><p><span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span>nullptr_t<span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c">alignof<span class="br0">(</span>nullptr_t<span class="br0">)</span></span></span> are equal to <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c">alignof<span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span></span></span> respectively.
-</p><p><code>nullptr_t</code> has only one valid value, i.e., <span class="t-c"><span class="mw-geshi c source-c">nullptr</span></span>. The object representation of <span class="t-c"><span class="mw-geshi c source-c">nullptr</span></span> is same as that of <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span></span></span>. If an <a href="../language/conversion.html#Lvalue_conversion" title="c/language/conversion">lvalue conversion</a> produces a <code>nullptr_t</code> value with a different object representation, the behavior is undefined.
+</p><p><code>nullptr_t</code> has only one valid value, i.e., <span class="t-c"><span class="mw-geshi c source-c">nullptr</span></span>. The object representation of <span class="t-c"><span class="mw-geshi c source-c">nullptr</span></span> is same as that of <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span><span class="kw4">void</span><span class="sy2">*</span><span class="br0">)</span><span class="nu0">0</span></span></span>. If an <a href="../language/conversion.htm#Lvalue_conversion" title="c/language/conversion">lvalue conversion</a> produces a <code>nullptr_t</code> value with a different object representation, the behavior is undefined.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/types/nullptr_t&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>Demonstrate that <code>nullptr_t</code> is a distinct type.</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -238,7 +238,7 @@ nullptr_t</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="NULL.htm" title="c/types/NULL"> <span class="t-lines"><span>NULL</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./NULL.htm" title="c/types/NULL"> <span class="t-lines"><span>NULL</span></span></a></div></div>
 </td>
 <td>   implementation-defined null pointer constant <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/types/dsc_NULL&amp;action=edit">[edit]</a></span>
 </td></tr>

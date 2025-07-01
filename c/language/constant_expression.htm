@@ -164,21 +164,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="constant_expression.htm#Preprocessor_constant_expression"><span class="tocnumber">1</span> <span class="toctext">Preprocessor constant expression</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="constant_expression.htm#Integer_constant_expression"><span class="tocnumber">2</span> <span class="toctext">Integer constant expression</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="constant_expression.htm#Static_initializer"><span class="tocnumber">3</span> <span class="toctext">Static initializer</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="constant_expression.htm#Floating-point_constant_expressions"><span class="tocnumber">4</span> <span class="toctext">Floating-point constant expressions</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="constant_expression.htm#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="constant_expression.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="constant_expression.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./constant_expression.htm#Preprocessor_constant_expression"><span class="tocnumber">1</span> <span class="toctext">Preprocessor constant expression</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./constant_expression.htm#Integer_constant_expression"><span class="tocnumber">2</span> <span class="toctext">Integer constant expression</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./constant_expression.htm#Static_initializer"><span class="tocnumber">3</span> <span class="toctext">Static initializer</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./constant_expression.htm#Floating-point_constant_expressions"><span class="tocnumber">4</span> <span class="toctext">Floating-point constant expressions</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./constant_expression.htm#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./constant_expression.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./constant_expression.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constant_expression&amp;action=edit&amp;section=1" title="Edit section: Preprocessor constant expression">edit</a>]</span> <span class="mw-headline" id="Preprocessor_constant_expression">Preprocessor constant expression</span></h3>
-<p>The expression following <a href="../preprocessor/conditional.html" title="c/preprocessor/conditional"><code>#if</code> or <code>#elif</code></a> must expand to
+<p>The expression following <a href="../preprocessor/conditional.htm" title="c/preprocessor/conditional"><code>#if</code> or <code>#elif</code></a> must expand to
 </p>
-<ul><li> <a href="operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma</a> whose arguments are preprocessor constant expressions
-</li><li> <a href="integer_constant.htm" title="c/language/integer constant">integer constants</a>
-</li><li> <a href="character_constant.htm" title="c/language/character constant">character constants</a>
+<ul><li> <a href="./operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="./operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="./operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma</a> whose arguments are preprocessor constant expressions
+</li><li> <a href="./integer_constant.htm" title="c/language/integer constant">integer constants</a>
+</li><li> <a href="./character_constant.htm" title="c/language/character constant">character constants</a>
 </li><li> the special preprocessor operator <code>defined</code>.
 </li></ul>
 <p>Character constants, when evaluated in <code>#if</code>-expressions, may be interpreted in the source
@@ -186,7 +186,7 @@ character set, the execution character set, or some other implementation-defined
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>Integer arithmetic in <code>#if</code>-expressions is performed using the semantics of <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">intmax_t</a></span> for signed types and <span class="t-lc"><a href="../types/integer.html" title="c/types/integer">uintmax_t</a></span> for unsigned types.
+<p>Integer arithmetic in <code>#if</code>-expressions is performed using the semantics of <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">intmax_t</a></span> for signed types and <span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">uintmax_t</a></span> for unsigned types.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
@@ -194,12 +194,12 @@ character set, the execution character set, or some other implementation-defined
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constant_expression&amp;action=edit&amp;section=2" title="Edit section: Integer constant expression">edit</a>]</span> <span class="mw-headline" id="Integer_constant_expression">Integer constant expression</span></h3>
 <p>An integer constant expression is an expression that consists only of
 </p>
-<ul><li> <a href="operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma</a>, except that <a href="cast.htm" title="c/language/cast">cast</a> operators can only cast arithmetic types to integer types unless they are part of an operand to a sizeof <span class="t-rev-inl t-since-c11 t-until-c23"><span>, _Alignof</span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>, alignas</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> <span class="t-rev-inl t-since-c23"><span>or typeof/typeof_unqual</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operator.
-</li><li> <a href="integer_constant.htm" title="c/language/integer constant">integer constants</a>
-</li><li> <a href="enum.htm" title="c/language/enum">enumeration constants</a>
-</li><li> <a href="character_constant.htm" title="c/language/character constant">character constants</a>
-</li><li> <a href="floating_constant.htm" title="c/language/floating constant">floating constants</a>, but only if they are immediately used as operands of casts to integer type
-</li><li> <a href="sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a> operators<span class="t-rev-inl t-since-c99"><span> whose operands are not VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
+<ul><li> <a href="./operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="./operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="./operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma</a>, except that <a href="./cast.htm" title="c/language/cast">cast</a> operators can only cast arithmetic types to integer types unless they are part of an operand to a sizeof <span class="t-rev-inl t-since-c11 t-until-c23"><span>, _Alignof</span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>, alignas</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> <span class="t-rev-inl t-since-c23"><span>or typeof/typeof_unqual</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operator.
+</li><li> <a href="./integer_constant.htm" title="c/language/integer constant">integer constants</a>
+</li><li> <a href="./enum.htm" title="c/language/enum">enumeration constants</a>
+</li><li> <a href="./character_constant.htm" title="c/language/character constant">character constants</a>
+</li><li> <a href="./floating_constant.htm" title="c/language/floating constant">floating constants</a>, but only if they are immediately used as operands of casts to integer type
+</li><li> <a href="./sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a> operators<span class="t-rev-inl t-since-c99"><span> whose operands are not VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
 </li></ul>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
@@ -217,21 +217,21 @@ character set, the execution character set, or some other implementation-defined
 </tbody></table>
 <p>Integer constant expressions are evaluated at compile time. The following contexts require expressions that are known as <i>integer constant expressions</i>:
 </p>
-<ul><li> The size of a <a href="bit_field.htm" title="c/language/bit field">bit-field</a>.
-</li><li> The value of an <a href="enum.htm" title="c/language/enum">enumeration constant</a>
-</li><li> The <code>case</code> label of a <a href="switch.htm" title="c/language/switch">switch statement</a>
+<ul><li> The size of a <a href="./bit_field.htm" title="c/language/bit field">bit-field</a>.
+</li><li> The value of an <a href="./enum.htm" title="c/language/enum">enumeration constant</a>
+</li><li> The <code>case</code> label of a <a href="./switch.htm" title="c/language/switch">switch statement</a>
 </li><li> The size of a <span class="t-rev-inl t-since-c99"><span>non-VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> array
-</li><li> Integer to pointer implicit <a href="conversion.htm" title="c/language/conversion">conversion</a>.
+</li><li> Integer to pointer implicit <a href="./conversion.htm" title="c/language/conversion">conversion</a>.
 </li></ul>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<ul><li> The index in an <a href="array_initialization.htm" title="c/language/array initialization">array designator</a>
+<ul><li> The index in an <a href="./array_initialization.htm" title="c/language/array initialization">array designator</a>
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 <tr class="t-rev t-since-c11"><td>
-<ul><li> The first argument of <a href="static_assert.htm" title="c/language/ Static assert"><code>_Static_assert</code></a>
-</li><li> The integer argument of <span class="t-rev-inl t-until-c23"><span><a href="alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+<ul><li> The first argument of <a href="./static_assert.htm" title="c/language/ Static assert"><code>_Static_assert</code></a>
+</li><li> The integer argument of <span class="t-rev-inl t-until-c23"><span><a href="./alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="./alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
@@ -242,20 +242,20 @@ character set, the execution character set, or some other implementation-defined
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constant_expression&amp;action=edit&amp;section=3" title="Edit section: Static initializer">edit</a>]</span> <span class="mw-headline" id="Static_initializer">Static initializer</span></h3>
-<p>Expressions that are used in the <a href="initialization.htm" title="c/language/initialization">initializers</a> of objects with static and thread_local <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> <span class="t-rev-inl t-since-c23"><span>or declared with the <span class="t-lc">constexpr</span> storage-class specifier</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> must be either string literals or expressions that may be one of the following
+<p>Expressions that are used in the <a href="./initialization.htm" title="c/language/initialization">initializers</a> of objects with static and thread_local <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> <span class="t-rev-inl t-since-c23"><span>or declared with the <span class="t-lc">constexpr</span> storage-class specifier</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> must be either string literals or expressions that may be one of the following
 </p>
 <div class="t-li1"><span class="t-li">1)</span> <i>arithmetic constant expression</i>, which is an expression of any arithmetic type that consists of
-<dl><dd><ul><li> <a href="operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma</a>, except that <a href="cast.htm" title="c/language/cast">cast</a> operators must be converting arithmetic types to other arithmetic types unless they are part of an operand to a sizeof <span class="t-rev-inl t-since-c11 t-until-c23"><span>, _Alignof</span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>, alignof</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> <span class="t-rev-inl t-since-c23"><span>or typeof/typeof_unqual</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operator
-</li><li> <a href="integer_constant.htm" title="c/language/integer constant">integer constants</a>
-</li><li> <a href="floating_constant.htm" title="c/language/floating constant">floating constants</a>
-</li><li> <a href="enum.htm" title="c/language/enum">enumeration constants</a>
-</li><li> <a href="character_constant.htm" title="c/language/character constant">character constants</a>
-</li><li> <a href="sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a> operators <span class="t-rev-inl t-since-c99"><span>whose operands are not VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
+<dl><dd><ul><li> <a href="./operators.htm#Operators" title="c/language/expressions">operators</a> other than <a href="./operator_assignment.htm" title="c/language/operator assignment">assignment</a>, <a href="./operator_incdec.htm" title="c/language/operator incdec">increment, decrement</a>, <a href="./operator_other.htm#Function_call" title="c/language/operator other">function-call</a>, or <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma</a>, except that <a href="./cast.htm" title="c/language/cast">cast</a> operators must be converting arithmetic types to other arithmetic types unless they are part of an operand to a sizeof <span class="t-rev-inl t-since-c11 t-until-c23"><span>, _Alignof</span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span>, alignof</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> <span class="t-rev-inl t-since-c23"><span>or typeof/typeof_unqual</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operator
+</li><li> <a href="./integer_constant.htm" title="c/language/integer constant">integer constants</a>
+</li><li> <a href="./floating_constant.htm" title="c/language/floating constant">floating constants</a>
+</li><li> <a href="./enum.htm" title="c/language/enum">enumeration constants</a>
+</li><li> <a href="./character_constant.htm" title="c/language/character constant">character constants</a>
+</li><li> <a href="./sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a> operators <span class="t-rev-inl t-since-c99"><span>whose operands are not VLA</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>
 </li></ul>
 </dd></dl>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
-<dl><dd><ul><li> <span class="t-rev-inl t-until-c23"><span><a href="alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operators
+<dl><dd><ul><li> <span class="t-rev-inl t-until-c23"><span><a href="./alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="./alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> operators
 </li></ul>
 </dd></dl>
 </td>
@@ -269,14 +269,14 @@ character set, the execution character set, or some other implementation-defined
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table></div>
-<div class="t-li1"><span class="t-li">2)</span> a null pointer constant (e.g., <span class="t-lc"><a href="../types/NULL.html" title="c/types/NULL">NULL</a></span>).</div>
+<div class="t-li1"><span class="t-li">2)</span> a null pointer constant (e.g., <span class="t-lc"><a href="../types/NULL.htm" title="c/types/NULL">NULL</a></span>).</div>
 <div class="t-li1"><span class="t-li">3)</span> <i>address constant expression</i>, which is
 <dl><dd><ul><li> a null pointer
-</li><li> <a href="value_category.htm" title="c/language/value category">lvalue</a> designating an object of static <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> or a function designator, converted to a pointer either
+</li><li> <a href="./value_category.htm" title="c/language/value category">lvalue</a> designating an object of static <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> or a function designator, converted to a pointer either
 </li></ul>
 <dl><dd><ul><li> by using the unary address-of operator
 </li><li> by casting an integer constant to a pointer
-</li><li> by array-to-pointer or function-to-pointer implicit <a href="conversion.htm" title="c/language/conversion">conversion</a>.</li></ul></dd></dl></dd></dl></div>
+</li><li> by array-to-pointer or function-to-pointer implicit <a href="./conversion.htm" title="c/language/conversion">conversion</a>.</li></ul></dd></dl></dd></dl></div>
 
 
 
@@ -291,7 +291,7 @@ character set, the execution character set, or some other implementation-defined
 </dd></dl>
 or a postfix expression that applies the <code><b>.</b></code> member access operator to a named constant of structure or union type, even recursively.</div>
 <div class="t-li1"><span class="t-li">6)</span> a <i>compound literal constant</i>, which is
-<dl><dd><ul><li>a <a href="compound_literal.htm" title="c/language/compound literal">compound literal</a> with storage-class specifier <span class="t-lc">constexpr</span>
+<dl><dd><ul><li>a <a href="./compound_literal.htm" title="c/language/compound literal">compound literal</a> with storage-class specifier <span class="t-lc">constexpr</span>
 </li><li>a postfix expression that applies the <code><b>.</b></code> member access operator to a compound literal constant of structure or union type, even recursively.</li></ul></dd></dl></div>
 
 
@@ -308,7 +308,7 @@ or a postfix expression that applies the <code><b>.</b></code> member access ope
 <p>The value of a floating-point static initializer is never less accurate than the value of the same expression executed at run time, but it may be better.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/constant_expression&amp;action=edit&amp;section=4" title="Edit section: Floating-point constant expressions">edit</a>]</span> <span class="mw-headline" id="Floating-point_constant_expressions">Floating-point constant expressions</span></h3>
-<p>Arithmetic constant expressions of floating-point types that are not used in static initializers are always evaluated as-if during run-time and are affected by the <a href="../numeric/fenv/FE_round.html" title="c/numeric/fenv/FE round">current rounding</a> (if <a href="../preprocessor/impl.html" title="c/preprocessor/impl"><tt>FENV_ACCESS</tt></a> is on) and report errors as specified in <a href="../numeric/math/math_errhandling.html" title="c/numeric/math/math errhandling"><tt>math_errhandling</tt></a>.
+<p>Arithmetic constant expressions of floating-point types that are not used in static initializers are always evaluated as-if during run-time and are affected by the <a href="../numeric/fenv/FE_round.htm" title="c/numeric/fenv/FE round">current rounding</a> (if <a href="../preprocessor/impl.htm" title="c/preprocessor/impl"><tt>FENV_ACCESS</tt></a> is on) and report errors as specified in <a href="../numeric/math/math_errhandling.htm" title="c/numeric/math/math errhandling"><tt>math_errhandling</tt></a>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -211,17 +211,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Causes abnormal program termination unless <span class="t-lc"><a href="SIG_types.htm" title="c/program/SIG types">SIGABRT</a></span> is being caught by a signal handler passed to signal and the handler does not return.
-</p><p>Functions passed to <span class="t-lc"><a href="atexit.htm" title="c/program/atexit">atexit()</a></span> are not called. Whether open resources such as files are closed is implementation defined. An implementation defined status is returned to the host environment that indicates unsuccessful execution.
+<p>Causes abnormal program termination unless <span class="t-lc"><a href="./SIG_types.htm" title="c/program/SIG types">SIGABRT</a></span> is being caught by a signal handler passed to signal and the handler does not return.
+</p><p>Functions passed to <span class="t-lc"><a href="./atexit.htm" title="c/program/atexit">atexit()</a></span> are not called. Whether open resources such as files are closed is implementation defined. An implementation defined status is returned to the host environment that indicates unsuccessful execution.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="abort.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="abort.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="abort.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="abort.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="abort.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="abort.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./abort.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./abort.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./abort.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./abort.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./abort.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./abort.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/abort&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -241,16 +241,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/FILE.html"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fp <span class="sy1">=</span> <a href="../io/fopen.html"><span class="kw818">fopen</span></a><span class="br0">(</span><span class="st0">"data.txt"</span>,<span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>fp <span class="sy1">==</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span>
+    <a href="../io/FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fp <span class="sy1">=</span> <a href="../io/fopen.htm"><span class="kw818">fopen</span></a><span class="br0">(</span><span class="st0">"data.txt"</span>,<span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>fp <span class="sy1">==</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="../io/fprintf.html"><span class="kw851">fprintf</span></a><span class="br0">(</span><a href="../io/std_streams.html"><span class="kw887">stderr</span></a>, <span class="st0">"error opening file data.txt in function main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw851">fprintf</span></a><span class="br0">(</span><a href="../io/std_streams.htm"><span class="kw887">stderr</span></a>, <span class="st0">"error opening file data.txt in function main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
         abort<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
     <span class="coMULTI">/* Normal processing continues here. */</span>
-    <a href="../io/fclose.html"><span class="kw821">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Normal Return<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fclose.htm"><span class="kw821">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Normal Return<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -290,19 +290,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="exit.htm" title="c/program/exit"> <span class="t-lines"><span>exit</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./exit.htm" title="c/program/exit"> <span class="t-lines"><span>exit</span></span></a></div></div>
 </td>
 <td>   causes normal program termination with cleaning up <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_exit&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="atexit.htm" title="c/program/atexit"> <span class="t-lines"><span>atexit</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./atexit.htm" title="c/program/atexit"> <span class="t-lines"><span>atexit</span></span></a></div></div>
 </td>
-<td>   registers a function to be called on <span class="t-lc"><a href="exit.htm" title="c/program/exit">exit()</a></span> invocation <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_atexit&amp;action=edit">[edit]</a></span>
+<td>   registers a function to be called on <span class="t-lc"><a href="./exit.htm" title="c/program/exit">exit()</a></span> invocation <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_atexit&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="quick_exit.htm" title="c/program/quick exit"> <span class="t-lines"><span>quick_exit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./quick_exit.htm" title="c/program/quick exit"> <span class="t-lines"><span>quick_exit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   causes normal program termination without completely cleaning up  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_quick_exit&amp;action=edit">[edit]</a></span>
 </td></tr>

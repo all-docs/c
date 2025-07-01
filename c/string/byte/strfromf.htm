@@ -186,38 +186,38 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfromf<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">float</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfromf<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">float</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfromd<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">double</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfromd<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">double</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfroml<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">long</span> <span class="kw4">double</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> strfroml<span class="br0">(</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> s, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> n, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> <span class="kw4">restrict</span> format, <span class="kw4">long</span> <span class="kw4">double</span> fp <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Converts a floating-point value to a byte string.
-</p><p>The functions are equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../io/fprintf.html"><span class="kw854">snprintf</span></a><span class="br0">(</span>s, n, format, fp<span class="br0">)</span></span></span>, except that the format string shall only contain the character <span class="mw-geshi c source-c"><span class="sy2">%</span></span>, an optional precision that does not contain an asterisk <span class="mw-geshi c source-c"><span class="sy2">*</span></span>, and one of the conversion specifiers <code>a</code>, <code>A</code>, <code>e</code>, <code>E</code>, <code>f</code>, <code>F</code>, <code>g</code>, or <code>G</code>, which applies to the type <span class="mw-geshi c source-c"><span class="kw4">double</span></span>, <span class="mw-geshi c source-c"><span class="kw4">float</span></span>, or <span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span>) indicated by the function suffix (rather than by a length modifier). Use of these functions with any other format string results in undefined behavior.
+</p><p>The functions are equivalent to <span class="t-c"><span class="mw-geshi c source-c"><a href="../../io/fprintf.htm"><span class="kw854">snprintf</span></a><span class="br0">(</span>s, n, format, fp<span class="br0">)</span></span></span>, except that the format string shall only contain the character <span class="mw-geshi c source-c"><span class="sy2">%</span></span>, an optional precision that does not contain an asterisk <span class="mw-geshi c source-c"><span class="sy2">*</span></span>, and one of the conversion specifiers <code>a</code>, <code>A</code>, <code>e</code>, <code>E</code>, <code>f</code>, <code>F</code>, <code>g</code>, or <code>G</code>, which applies to the type <span class="mw-geshi c source-c"><span class="kw4">double</span></span>, <span class="mw-geshi c source-c"><span class="kw4">float</span></span>, or <span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span>) indicated by the function suffix (rather than by a length modifier). Use of these functions with any other format string results in undefined behavior.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="strfromf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="strfromf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="strfromf.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="strfromf.htm#Reference"><span class="tocnumber">4</span> <span class="toctext">Reference</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="strfromf.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./strfromf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./strfromf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./strfromf.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./strfromf.htm#Reference"><span class="tocnumber">4</span> <span class="toctext">Reference</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./strfromf.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strfromf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -266,26 +266,26 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">int</span> written<span class="sy4">;</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> format<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="st0">"%a"</span>, <span class="st0">"%A"</span>, <span class="st0">"%e"</span>, <span class="st0">"%E"</span>, <span class="st0">"%f"</span>, <span class="st0">"%F"</span>, <span class="st0">"%g"</span>, <span class="st0">"%G"</span><span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
     <span class="br0">{</span>
         written <span class="sy1">=</span> strfromf<span class="br0">(</span>buffer, <span class="kw4">sizeof</span> buffer, format<span class="br0">[</span>fmt<span class="br0">]</span>, <span class="nu17">3.1415f</span><span class="br0">)</span><span class="sy4">;</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfromf(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfromf(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
                format<span class="br0">[</span>fmt<span class="br0">]</span>, written, buffer<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
     <span class="br0">{</span>
         written <span class="sy1">=</span> strfromd<span class="br0">(</span>buffer, <span class="kw4">sizeof</span> buffer, format<span class="br0">[</span>fmt<span class="br0">]</span>, <span class="nu16">3.1415</span><span class="br0">)</span><span class="sy4">;</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfromd(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfromd(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
                format<span class="br0">[</span>fmt<span class="br0">]</span>, written, buffer<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="../../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.html"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> fmt <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> fmt <span class="sy3">!</span><span class="sy1">=</span> <span class="kw4">sizeof</span> format <span class="sy2">/</span> <span class="kw4">sizeof</span> format<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy4">;</span> <span class="sy2">++</span>fmt<span class="br0">)</span>
     <span class="br0">{</span>
         written <span class="sy1">=</span> strfroml<span class="br0">(</span>buffer, <span class="kw4">sizeof</span> buffer, format<span class="br0">[</span>fmt<span class="br0">]</span>, <span class="nu16">3.1415</span><span class="br0">)</span><span class="sy4">;</span>
-        <a href="../../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfroml(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
+        <a href="../../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"strfroml(...&nbsp;%s ...) =&nbsp;%2i, buffer: <span class="es1">\"</span>%s<span class="es1">\"</span><span class="es1">\n</span>"</span>,
                format<span class="br0">[</span>fmt<span class="br0">]</span>, written, buffer<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
@@ -330,13 +330,13 @@ strfroml(...&nbsp;%G ...) =  6, buffer: "3.1415"</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../../io/fprintf.html" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../../io/fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   prints formatted output to <span class="t-lc"><a href="../../io/std_streams.html" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
+<td>   prints formatted output to <span class="t-lc"><a href="../../io/std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strtof.htm" title="c/string/byte/strtof"> <span class="t-lines"><span>strtof</span><span>strtod</span><span>strtold</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strtof.htm" title="c/string/byte/strtof"> <span class="t-lines"><span>strtof</span><span>strtod</span><span>strtold</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>  converts a byte string to a floating-point value <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strtof&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -207,7 +207,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -223,14 +223,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> has type <span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span>, <code>erfl</code> is called. Otherwise, if <span class="t-c"><span class="mw-geshi c source-c">arg</span></span> has integer type or the type <span class="mw-geshi c source-c"><span class="kw4">double</span></span>, <code>erf</code> is called. Otherwise, <code>erff</code> is called.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="erf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="erf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="erf.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="erf.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="erf.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="erf.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="erf.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="erf.htm#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./erf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./erf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./erf.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./erf.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./erf.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./erf.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./erf.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./erf.htm#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/erf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -248,7 +248,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 If no errors occur, value of the error function of <span class="t-c"><span class="mw-geshi c source-c">arg</span></span>, that is <span class="mjax" style="display:none">\(\frac{2}{\sqrt{\pi} }\int_{0}^{arg}{e^{-{t^2} }\mathsf{d}t}\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;"><span class="t-mfrac"><table><tbody><tr><td>2</td></tr><tr><td><span class="t-mrad"><span>√</span><span>π</span></span></td></tr></tbody></table></span><span style="font-size: 1.3em; vertical-align:-0.08em; margin-right: 0.08em;">∫</span><span class="t-su t-su-b">arg<br>0</span><i>e</i><sup>-t<span class="t-su">2<br></span></sup>d<i>t</i></span>, is returned.
 If a range error occurs due to underflow, the correct result (after rounding), that is <span class="mjax" style="display:none">\(\frac{2\cdot arg}{\sqrt{\pi} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;"><span class="t-mfrac"><table><tbody><tr><td>2*arg</td></tr><tr><td><span class="t-mrad"><span>√</span><span>π</span></span></td></tr></tbody></table></span></span>, is returned.
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/erf&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
 <ul><li> If the argument is ±0, ±0 is returned
@@ -256,7 +256,7 @@ If a range error occurs due to underflow, the correct result (after rounding), t
 </li><li> If the argument is NaN, NaN is returned
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/erf&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Underflow is guaranteed if <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">|</span>arg<span class="sy3">|</span> <span class="sy1">&lt;</span> <a href="../../types/limits.html"><span class="kw375">DBL_MIN</span></a><span class="sy2">*</span><span class="br0">(</span><a href="sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>π<span class="br0">)</span><span class="sy2">/</span><span class="nu0">2</span><span class="br0">)</span></span></span>.
+<p>Underflow is guaranteed if <span class="t-c"><span class="mw-geshi c source-c"><span class="sy3">|</span>arg<span class="sy3">|</span> <span class="sy1">&lt;</span> <a href="../../types/limits.htm"><span class="kw375">DBL_MIN</span></a><span class="sy2">*</span><span class="br0">(</span><a href="./sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span>π<span class="br0">)</span><span class="sy2">/</span><span class="nu0">2</span><span class="br0">)</span></span></span>.
 </p>
 <span class="mjax" style="display:none">\(\operatorname{erf}(\frac{x}{\sigma \sqrt{2} })\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">erf(<span class="t-mfrac"><table><tbody><tr><td>x</td></tr><tr><td>σ<span class="t-mrad"><span>√</span><span>2</span></span></td></tr></tbody></table></span>)</span> is the probability that a measurement whose errors are subject to a normal distribution with standard deviation <span class="mjax" style="display:none">\(\sigma\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">σ</span> is less than <span class="mjax" style="display:none">\(x\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">x</span> away from the mean value.
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/erf&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -266,18 +266,18 @@ If a range error occurs due to underflow, the correct result (after rounding), t
 &nbsp;
 <span class="kw4">double</span> phi<span class="br0">(</span><span class="kw4">double</span> x1, <span class="kw4">double</span> x2<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw1">return</span> <span class="br0">(</span>erf<span class="br0">(</span>x2 <span class="sy2">/</span> <a href="sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span> <span class="sy2">-</span> erf<span class="br0">(</span>x1 <span class="sy2">/</span> <a href="sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="sy2">/</span> <span class="nu0">2</span><span class="sy4">;</span>
+    <span class="kw1">return</span> <span class="br0">(</span>erf<span class="br0">(</span>x2 <span class="sy2">/</span> <a href="./sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span> <span class="sy2">-</span> erf<span class="br0">(</span>x1 <span class="sy2">/</span> <a href="./sqrt.htm"><span class="kw665">sqrt</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span> <span class="sy2">/</span> <span class="nu0">2</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"normal variate probabilities:"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"normal variate probabilities:"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">4</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> <span class="nu0">4</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
-        <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"[%2d:%2d]:&nbsp;%5.2f%%<span class="es1">\n</span>"</span>, n, n <span class="sy2">+</span> <span class="nu0">1</span>, <span class="nu0">100</span> <span class="sy2">*</span> phi<span class="br0">(</span>n, n <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"[%2d:%2d]:&nbsp;%5.2f%%<span class="es1">\n</span>"</span>, n, n <span class="sy2">+</span> <span class="nu0">1</span>, <span class="nu0">100</span> <span class="sy2">*</span> phi<span class="br0">(</span>n, n <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"special values:"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"erf(-0) =&nbsp;%f<span class="es1">\n</span>"</span>, erf<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"erf(Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, erf<span class="br0">(</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"special values:"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"erf(-0) =&nbsp;%f<span class="es1">\n</span>"</span>, erf<span class="br0">(</span><span class="sy2">-</span><span class="nu16">0.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"erf(Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, erf<span class="br0">(</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -325,7 +325,7 @@ erf(Inf) = 1.000000</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="erfc.htm" title="c/numeric/math/erfc"> <span class="t-lines"><span>erfc</span><span>erfcf</span><span>erfcl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./erfc.htm" title="c/numeric/math/erfc"> <span class="t-lines"><span>erfc</span><span>erfcf</span><span>erfcl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes complementary error function  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_erfc&amp;action=edit">[edit]</a></span>
 </td></tr>

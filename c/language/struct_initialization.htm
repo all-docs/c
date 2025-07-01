@@ -184,7 +184,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>When <a href="initialization.htm" title="c/language/initialization">initializing</a> an object of <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> type, the initializer must be a <span class="t-rev-inl t-until-c23"><span>non-empty,</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> brace-enclosed, comma-separated list of initializers for the members:
+<p>When <a href="./initialization.htm" title="c/language/initialization">initializing</a> an object of <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> type, the initializer must be a <span class="t-rev-inl t-until-c23"><span>non-empty,</span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> brace-enclosed, comma-separated list of initializers for the members:
 </p>
 <table class="t-sdsc-begin">
 
@@ -230,26 +230,26 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr></tbody></table>
-<p>where the <span class="t-spar">designator</span> is a sequence (whitespace-separated or adjacent) of individual member designators of the form <code><b>.</b></code> <span class="t-spar">member</span> and <a href="array_initialization.htm" title="c/language/array initialization">array designators</a> of the form <code><b>[</b></code> <span class="t-spar">index</span> <code><b>]</b></code>.
-</p><p>All members that are not initialized explicitly are <a href="initialization.htm#Empty_initialization" title="c/language/initialization">empty-initialized</a>.
+<p>where the <span class="t-spar">designator</span> is a sequence (whitespace-separated or adjacent) of individual member designators of the form <code><b>.</b></code> <span class="t-spar">member</span> and <a href="./array_initialization.htm" title="c/language/array initialization">array designators</a> of the form <code><b>[</b></code> <span class="t-spar">index</span> <code><b>]</b></code>.
+</p><p>All members that are not initialized explicitly are <a href="./initialization.htm#Empty_initialization" title="c/language/initialization">empty-initialized</a>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="struct_initialization.htm#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="struct_initialization.htm#Nested_initialization"><span class="tocnumber">2</span> <span class="toctext">Nested initialization</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="struct_initialization.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="struct_initialization.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="struct_initialization.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="struct_initialization.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./struct_initialization.htm#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./struct_initialization.htm#Nested_initialization"><span class="tocnumber">2</span> <span class="toctext">Nested initialization</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./struct_initialization.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./struct_initialization.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./struct_initialization.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./struct_initialization.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/struct_initialization&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>When initializing a <a href="union.htm" title="c/language/union">union</a>, the initializer list must have only one member, which initializes the first member of the union<span class="t-rev-inl t-since-c99"><span> unless a designated initializer is used</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>.
+<p>When initializing a <a href="./union.htm" title="c/language/union">union</a>, the initializer list must have only one member, which initializes the first member of the union<span class="t-rev-inl t-since-c99"><span> unless a designated initializer is used</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">union</span> <span class="br0">{</span> <span class="kw4">int</span> x<span class="sy4">;</span> <span class="kw4">char</span> c<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span>
   u <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span><span class="br0">}</span>,           <span class="co1">// makes u.x active with value 1</span>
  u2 <span class="sy1">=</span> <span class="br0">{</span> .<span class="me1">c</span><span class="sy1">=</span><span class="br0">{</span><span class="st0">'<span class="es5">\1</span>'</span><span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// makes u2.c active with value {'\1','\0','\0','\0'}</span></pre></div></div>
-<p>When initializing a <a href="struct.htm" title="c/language/struct">struct</a>, the first initializer in the list initializes the first declared member<span class="t-rev-inl t-since-c99"><span> (unless a designator is specified)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, and all subsequent initializers <span class="t-rev-inl t-since-c99"><span>without designators </span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>initialize the struct members declared after the one initialized by the previous expression.
+<p>When initializing a <a href="./struct.htm" title="c/language/struct">struct</a>, the first initializer in the list initializes the first declared member<span class="t-rev-inl t-since-c99"><span> (unless a designator is specified)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, and all subsequent initializers <span class="t-rev-inl t-since-c99"><span>without designators </span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>initialize the struct members declared after the one initialized by the previous expression.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> point <span class="br0">{</span><span class="kw4">double</span> x,y,z<span class="sy4">;</span><span class="br0">}</span> p <span class="sy1">=</span> <span class="br0">{</span><span class="nu16">1.2</span>, <span class="nu16">1.3</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// p.x=1.2, p.y=1.3, p.z=0.0</span>
 div_t answer <span class="sy1">=</span> <span class="br0">{</span>.<span class="me1">quot</span> <span class="sy1">=</span> <span class="nu0">2</span>, .<span class="me1">rem</span> <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span> <span class="br0">}</span><span class="sy4">;</span>      <span class="co1">// order of elements in div_t may vary</span></pre></div></div>
@@ -266,15 +266,15 @@ div_t answer <span class="sy1">=</span> <span class="br0">{</span>.<span class="
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/struct_initialization&amp;action=edit&amp;section=2" title="Edit section: Nested initialization">edit</a>]</span> <span class="mw-headline" id="Nested_initialization">Nested initialization</span></h3>
 <p>If the members of the struct or union are arrays, structs, or unions, the corresponding initializers in the brace-enclosed list of initializers are any initializers that are valid for those members, except that their braces may be omitted as follows:
-</p><p>If the nested initializer begins with an opening brace, the entire nested initializer up to its closing brace initializes the corresponding member object. Each left opening brace establishes a new <i>current object</i>. The members of the current object are initialized in their natural order<span class="t-rev-inl t-since-c99"><span>, unless designators are used</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>: array elements in subscript order, struct members in declaration order, only the first declared member of any union. The subobjects within the current object that are not explicitly initialized by the closing brace are <a href="initialization.htm#Empty_initialization" title="c/language/initialization">empty-initialized</a>.
+</p><p>If the nested initializer begins with an opening brace, the entire nested initializer up to its closing brace initializes the corresponding member object. Each left opening brace establishes a new <i>current object</i>. The members of the current object are initialized in their natural order<span class="t-rev-inl t-since-c99"><span>, unless designators are used</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>: array elements in subscript order, struct members in declaration order, only the first declared member of any union. The subobjects within the current object that are not explicitly initialized by the closing brace are <a href="./initialization.htm#Empty_initialization" title="c/language/initialization">empty-initialized</a>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> example <span class="br0">{</span>
     <span class="kw1">struct</span> addr_t <span class="br0">{</span>
-       <a href="../types/integer.html"><span class="kw122">uint32_t</span></a> port<span class="sy4">;</span>
+       <a href="../types/integer.htm"><span class="kw122">uint32_t</span></a> port<span class="sy4">;</span>
     <span class="br0">}</span> addr<span class="sy4">;</span>
     <span class="kw1">union</span> <span class="br0">{</span>
-       <a href="../types/integer.html"><span class="kw120">uint8_t</span></a> a8<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span><span class="sy4">;</span>
-       <a href="../types/integer.html"><span class="kw121">uint16_t</span></a> a16<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
+       <a href="../types/integer.htm"><span class="kw120">uint8_t</span></a> a8<span class="br0">[</span><span class="nu0">4</span><span class="br0">]</span><span class="sy4">;</span>
+       <a href="../types/integer.htm"><span class="kw121">uint16_t</span></a> a16<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
     <span class="br0">}</span> in_u<span class="sy4">;</span>
 <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> example ex <span class="sy1">=</span> <span class="br0">{</span> <span class="co1">// start of initializer list for struct example</span>
@@ -303,8 +303,8 @@ div_t answer <span class="sy1">=</span> <span class="br0">{</span>.<span class="
                       <span class="br0">}</span> <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <p>If any subobject is explicitly initialized twice (which may happen when designators are used), the initializer that appears later in the list is the one used (the earlier initializer may not be evaluated):
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> <span class="br0">{</span><span class="kw4">int</span> n<span class="sy4">;</span><span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"a<span class="es1">\n</span>"</span><span class="br0">)</span>, <span class="co1">// this may be printed or skipped</span>
-                     .<span class="me1">n</span><span class="sy1">=</span><a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"b<span class="es1">\n</span>"</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// always printed</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> <span class="br0">{</span><span class="kw4">int</span> n<span class="sy4">;</span><span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"a<span class="es1">\n</span>"</span><span class="br0">)</span>, <span class="co1">// this may be printed or skipped</span>
+                     .<span class="me1">n</span><span class="sy1">=</span><a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"b<span class="es1">\n</span>"</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// always printed</span></pre></div></div>
 <p>Although any non-initialized subobjects are initialized implicitly, implicit initialization of a subobject never overrides explicit initialization of the same subobject if it appeared earlier in the initializer list (choose clang to observe the correct output):
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -320,7 +320,7 @@ T x <span class="sy1">=</span> <span class="br0">{</span>.<span class="me1">l</s
            .<span class="me1">t</span>.<span class="me1">l</span> <span class="sy1">=</span> <span class="nu0">41</span>,   <span class="co1">// changes l.t to {42, 41, {18, 19} }</span>
            .<span class="me1">t</span>.<span class="me1">a</span><span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span> <span class="sy1">=</span> <span class="nu0">17</span> <span class="co1">// changes l.t to {42, 41, {18, 17} }</span>
           <span class="br0">}</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"l.t.k is&nbsp;%d<span class="es1">\n</span>"</span>, l.<span class="me1">t</span>.<span class="me1">k</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// .t = x sets l.t.k to 42 explicitly</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"l.t.k is&nbsp;%d<span class="es1">\n</span>"</span>, l.<span class="me1">t</span>.<span class="me1">k</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// .t = x sets l.t.k to 42 explicitly</span>
                                     <span class="co1">// .t.l = 41 would zero out l.t.k implicitly</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -349,7 +349,7 @@ T x <span class="sy1">=</span> <span class="br0">{</span>.<span class="me1">l</s
                           <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c23"><td>
-<p>In C, the braced list of initializers cannot be empty (note that C++ allows empty lists, and also note that a <a href="struct.htm" title="c/language/struct">struct</a> in C cannot be empty):
+<p>In C, the braced list of initializers cannot be empty (note that C++ allows empty lists, and also note that a <a href="./struct.htm" title="c/language/struct">struct</a> in C cannot be empty):
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
@@ -365,15 +365,15 @@ T x <span class="sy1">=</span> <span class="br0">{</span>.<span class="me1">l</s
 <span class="kw1">struct</span> <span class="br0">{</span><span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// Error: struct cannot be empty</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c99"><td>
-<p>Every expression in the initializer list must be a <a href="constant_expression.htm" title="c/language/constant expression">constant expression</a> when initializing aggregates of any storage duration.
+<p>Every expression in the initializer list must be a <a href="./constant_expression.htm" title="c/language/constant expression">constant expression</a> when initializing aggregates of any storage duration.
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c99">(until C99)</span></td></tr>
 <tr class="t-rev t-since-c99"><td>
-<p>As with all other <a href="initialization.htm" title="c/language/initialization">initialization</a>, every expression in the initializer list must be a <a href="constant_expression.htm" title="c/language/constant expression">constant expression</a> when initializing aggregates of static<span class="t-rev-inl t-since-c11"><span> or thread-local</span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a>:
+<p>As with all other <a href="./initialization.htm" title="c/language/initialization">initialization</a>, every expression in the initializer list must be a <a href="./constant_expression.htm" title="c/language/constant expression">constant expression</a> when initializing aggregates of static<span class="t-rev-inl t-since-c11"><span> or thread-local</span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span> <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a>:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">static</span> <span class="kw1">struct</span> <span class="br0">{</span><span class="kw4">char</span><span class="sy2">*</span> p<span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><a href="../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// error</span></pre></div></div>
-<p>The <a href="eval_order.htm" title="c/language/eval order">order of evaluation</a> of the subexpressions in any initializer is indeterminately sequenced (but not in C++ since C++11):
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">static</span> <span class="kw1">struct</span> <span class="br0">{</span><span class="kw4">char</span><span class="sy2">*</span> p<span class="br0">}</span> s <span class="sy1">=</span> <span class="br0">{</span><a href="../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// error</span></pre></div></div>
+<p>The <a href="./eval_order.htm" title="c/language/eval order">order of evaluation</a> of the subexpressions in any initializer is indeterminately sequenced (but not in C++ since C++11):
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 <span class="kw1">struct</span> <span class="br0">{</span><span class="kw4">int</span> x,y<span class="sy4">;</span><span class="br0">}</span> p <span class="sy1">=</span> <span class="br0">{</span>n<span class="sy2">++</span>, n<span class="sy2">++</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// unspecified, but well-defined behavior:</span>
@@ -393,10 +393,10 @@ T x <span class="sy1">=</span> <span class="br0">{</span>.<span class="me1">l</s
     <span class="kw4">char</span> buff<span class="br0">[</span><span class="nu0">70</span><span class="br0">]</span><span class="sy4">;</span>
     <span class="co1">// designated initializers simplify the use of structs whose</span>
     <span class="co1">// order of members is unspecified</span>
-    <span class="kw1">struct</span> <a href="../chrono/tm.html"><span class="kw523">tm</span></a> my_time <span class="sy1">=</span> <span class="br0">{</span> .<span class="me1">tm_year</span><span class="sy1">=</span><span class="nu0">2012</span><span class="sy2">-</span><span class="nu0">1900</span>, .<span class="me1">tm_mon</span><span class="sy1">=</span><span class="nu0">9</span>, .<span class="me1">tm_mday</span><span class="sy1">=</span><span class="nu0">9</span>,
+    <span class="kw1">struct</span> <a href="../chrono/tm.htm"><span class="kw523">tm</span></a> my_time <span class="sy1">=</span> <span class="br0">{</span> .<span class="me1">tm_year</span><span class="sy1">=</span><span class="nu0">2012</span><span class="sy2">-</span><span class="nu0">1900</span>, .<span class="me1">tm_mon</span><span class="sy1">=</span><span class="nu0">9</span>, .<span class="me1">tm_mday</span><span class="sy1">=</span><span class="nu0">9</span>,
                           .<span class="me1">tm_hour</span><span class="sy1">=</span><span class="nu0">8</span>, .<span class="me1">tm_min</span><span class="sy1">=</span><span class="nu0">10</span>, .<span class="me1">tm_sec</span><span class="sy1">=</span><span class="nu0">20</span> <span class="br0">}</span><span class="sy4">;</span>
-    <a href="../chrono/strftime.html"><span class="kw517">strftime</span></a><span class="br0">(</span>buff, <span class="kw4">sizeof</span> buff, <span class="st0">"%A&nbsp;%c"</span>, <span class="sy3">&amp;</span>my_time<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span>buff<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../chrono/strftime.htm"><span class="kw517">strftime</span></a><span class="br0">(</span>buff, <span class="kw4">sizeof</span> buff, <span class="st0">"%A&nbsp;%c"</span>, <span class="sy3">&amp;</span>my_time<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span>buff<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>

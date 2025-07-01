@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -179,23 +179,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1)</span> Reads <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span> into the character array pointed to by <span class="t-c"><span class="mw-geshi c source-c">str</span></span> until a newline character is found or end-of-file occurs. A null character is written immediately after the last character read into the array. The newline character is discarded but not stored in the buffer.</div>
-<div class="t-li1"><span class="t-li">2)</span> Reads characters from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span> until a newline is found or end-of-file occurs. Writes only at most <span class="t-c"><span class="mw-geshi c source-c">n <span class="sy2">-</span> <span class="nu0">1</span></span></span> characters into the array pointed to by <span class="t-c"><span class="mw-geshi c source-c">str</span></span>, and always writes the terminating null character (unless <span class="t-c"><span class="mw-geshi c source-c">str</span></span> is a null pointer). The newline character, if found, is discarded and does not count toward the number of characters written to the buffer.</div>
-<div class="t-li1"><span class="t-li"></span> The following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">1)</span> Reads <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span> into the character array pointed to by <span class="t-c"><span class="mw-geshi c source-c">str</span></span> until a newline character is found or end-of-file occurs. A null character is written immediately after the last character read into the array. The newline character is discarded but not stored in the buffer.</div>
+<div class="t-li1"><span class="t-li">2)</span> Reads characters from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span> until a newline is found or end-of-file occurs. Writes only at most <span class="t-c"><span class="mw-geshi c source-c">n <span class="sy2">-</span> <span class="nu0">1</span></span></span> characters into the array pointed to by <span class="t-c"><span class="mw-geshi c source-c">str</span></span>, and always writes the terminating null character (unless <span class="t-c"><span class="mw-geshi c source-c">str</span></span> is a null pointer). The newline character, if found, is discarded and does not count toward the number of characters written to the buffer.</div>
+<div class="t-li1"><span class="t-li"></span> The following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <ul><li> <span class="t-c"><span class="mw-geshi c source-c">n</span></span> is zero;
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">n</span></span> is greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX</span></span>;
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">str</span></span> is a null pointer;
 </li><li> <i>endline</i> or <i>eof</i> not encountered after storing <span class="t-c"><span class="mw-geshi c source-c">n <span class="sy2">-</span> <span class="nu0">1</span></span></span> characters to the buffer.</li></ul></div>
 
-<div class="t-li1"><span class="t-li"></span> In any case, <code>gets_s</code> first finishes reading and discarding the characters from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span> until new-line character, end-of-file condition, or read error before calling the constraint handler.</div>
-<div class="t-li1"><span class="t-li"></span> As with all bounds-checked functions, <code>gets_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</div>
+<div class="t-li1"><span class="t-li"></span> In any case, <code>gets_s</code> first finishes reading and discarding the characters from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span> until new-line character, end-of-file condition, or read error before calling the constraint handler.</div>
+<div class="t-li1"><span class="t-li"></span> As with all bounds-checked functions, <code>gets_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="gets.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="gets.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="gets.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="gets.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="gets.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./gets.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./gets.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./gets.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./gets.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./gets.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/gets&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -207,7 +207,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> a character array the characters from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span> to be written to
+<td> a character array the characters from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span> to be written to
 </td></tr>
 <tr class="t-par">
 <td> n
@@ -218,10 +218,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/gets&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p><span class="t-c"><span class="mw-geshi c source-c">str</span></span> on success, a null pointer on failure.
-</p><p>If the failure has been caused by end of file condition, additionally sets the <i>eof</i> indicator (see <span class="t-lc"><a href="feof.htm" title="c/io/feof">feof()</a></span>) on <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span>. If the failure has been caused by some other error, sets the <i>error</i> indicator (see <span class="t-lc"><a href="ferror.htm" title="c/io/ferror">ferror()</a></span>) on <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span>.
+</p><p>If the failure has been caused by end of file condition, additionally sets the <i>eof</i> indicator (see <span class="t-lc"><a href="./feof.htm" title="c/io/feof">feof()</a></span>) on <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span>. If the failure has been caused by some other error, sets the <i>error</i> indicator (see <span class="t-lc"><a href="./ferror.htm" title="c/io/ferror">ferror()</a></span>) on <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/gets&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>The <code>gets()</code> function does not perform bounds checking, therefore this function is extremely vulnerable to buffer-overflow attacks. It cannot be used safely (unless the program runs in an environment which restricts what can appear on <code>stdin</code>). For this reason, the function has been deprecated in the third corrigendum to the C99 standard and removed altogether in the C11 standard. <span class="t-lc"><a href="fgets.htm" title="c/io/fgets">fgets()</a></span> and <code>gets_s()</code> are the recommended replacements.
+<p>The <code>gets()</code> function does not perform bounds checking, therefore this function is extremely vulnerable to buffer-overflow attacks. It cannot be used safely (unless the program runs in an environment which restricts what can appear on <code>stdin</code>). For this reason, the function has been deprecated in the third corrigendum to the C99 standard and removed altogether in the C11 standard. <span class="t-lc"><a href="./fgets.htm" title="c/io/fgets">fgets()</a></span> and <code>gets_s()</code> are the recommended replacements.
 </p><p><b>WARNING: Never use <code>gets()</code></b>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/gets&amp;action=edit&amp;section=4" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
@@ -264,25 +264,25 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fscanf.htm" title="c/io/fscanf"> <span class="t-lines"><span>scanf</span><span>fscanf</span><span>sscanf</span><span>scanf_s</span><span>fscanf_s</span><span>sscanf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fscanf.htm" title="c/io/fscanf"> <span class="t-lines"><span>scanf</span><span>fscanf</span><span>sscanf</span><span>scanf_s</span><span>fscanf_s</span><span>sscanf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   reads formatted input from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fscanf&amp;action=edit">[edit]</a></span>
+<td>   reads formatted input from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fscanf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fgets.htm" title="c/io/fgets"> <span class="t-lines"><span>fgets</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fgets.htm" title="c/io/fgets"> <span class="t-lines"><span>fgets</span></span></a></div></div>
 </td>
 <td>   gets a character string from a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgets&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
 </td>
 <td>   writes a character string to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../experimental/dynamic/getline.html" title="c/experimental/dynamic/getline"> <span class="t-lines"><span>getline</span><span>getwline</span><span>getdelim</span><span>getwdelim</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-dynamic-tr t-mark-ts">(dynamic memory TR)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../experimental/dynamic/getline.htm" title="c/experimental/dynamic/getline"> <span class="t-lines"><span>getline</span><span>getwline</span><span>getdelim</span><span>getwdelim</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-dynamic-tr t-mark-ts">(dynamic memory TR)</span></span></span></div></div>
 </td>
 <td>   read from a stream into an automatically resized buffer until delimiter/end of line <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/experimental/dynamic/dsc_getline&amp;action=edit">[edit]</a></span>
 </td></tr>

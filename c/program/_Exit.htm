@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -212,16 +212,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>Causes normal program termination to occur without completely cleaning the resources.
-</p><p>Functions passed to <span class="t-lc"><a href="at_quick_exit.htm" title="c/program/at quick exit">at_quick_exit()</a></span> or <span class="t-lc"><a href="atexit.htm" title="c/program/atexit">atexit()</a></span> are not called. Whether open streams with unwritten buffered data are flushed, open streams are closed, or temporary files are removed is implementation-defined.
-</p><p>If <code>exit_code</code> is <span class="t-lc">0</span> or <span class="t-lc"><a href="EXIT_status.htm" title="c/program/EXIT status">EXIT_SUCCESS</a></span>, an implementation-defined status indicating successful termination is returned to the host environment. If <code>exit_code</code> is <span class="t-lc"><a href="EXIT_status.htm" title="c/program/EXIT status">EXIT_FAILURE</a></span>, an implementation-defined status, indicating <i>unsuccessful</i> termination, is returned. In other cases an implementation-defined status value is returned. 
+</p><p>Functions passed to <span class="t-lc"><a href="./at_quick_exit.htm" title="c/program/at quick exit">at_quick_exit()</a></span> or <span class="t-lc"><a href="./atexit.htm" title="c/program/atexit">atexit()</a></span> are not called. Whether open streams with unwritten buffered data are flushed, open streams are closed, or temporary files are removed is implementation-defined.
+</p><p>If <code>exit_code</code> is <span class="t-lc">0</span> or <span class="t-lc"><a href="./EXIT_status.htm" title="c/program/EXIT status">EXIT_SUCCESS</a></span>, an implementation-defined status indicating successful termination is returned to the host environment. If <code>exit_code</code> is <span class="t-lc"><a href="./EXIT_status.htm" title="c/program/EXIT status">EXIT_FAILURE</a></span>, an implementation-defined status, indicating <i>unsuccessful</i> termination, is returned. In other cases an implementation-defined status value is returned. 
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="_Exit.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="_Exit.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="_Exit.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="_Exit.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="_Exit.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./_Exit.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./_Exit.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./_Exit.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./_Exit.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./_Exit.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/program/_Exit&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -246,20 +246,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="coMULTI">/* _Exit does not call functions registered with atexit. */</span>
 <span class="kw4">void</span> f1<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"pushed first"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"pushed first"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">void</span> f2<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"pushed second"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"pushed second"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Enter main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="atexit.htm"><span class="kw490">atexit</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
-    <a href="atexit.htm"><span class="kw490">atexit</span></a><span class="br0">(</span>f2<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fflush.html"><span class="kw820">fflush</span></a><span class="br0">(</span><a href="../io/std_streams.html"><span class="kw886">stdout</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* _Exit may not flush unwritten buffered data */</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Enter main()<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./atexit.htm"><span class="kw490">atexit</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./atexit.htm"><span class="kw490">atexit</span></a><span class="br0">(</span>f2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fflush.htm"><span class="kw820">fflush</span></a><span class="br0">(</span><a href="../io/std_streams.htm"><span class="kw886">stdout</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* _Exit may not flush unwritten buffered data */</span>
     _Exit<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
@@ -292,13 +292,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="abort.htm" title="c/program/abort"> <span class="t-lines"><span>abort</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./abort.htm" title="c/program/abort"> <span class="t-lines"><span>abort</span></span></a></div></div>
 </td>
 <td>   causes abnormal program termination (without cleaning up) <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_abort&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="exit.htm" title="c/program/exit"> <span class="t-lines"><span>exit</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./exit.htm" title="c/program/exit"> <span class="t-lines"><span>exit</span></span></a></div></div>
 </td>
 <td>   causes normal program termination with cleaning up <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/program/dsc_exit&amp;action=edit">[edit]</a></span>
 </td></tr>

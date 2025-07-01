@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> ftell<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td class="t-dcl-nopad"> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> ftell<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
@@ -200,16 +200,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <p>Returns the file position indicator for the file stream <span class="t-c"><span class="mw-geshi c source-c">stream</span></span>.
 </p><p>If the stream is open in binary mode, the value obtained by this function is the number of bytes from the beginning of the file.
-</p><p>If the stream is open in text mode, the value returned by this function is unspecified and is only meaningful as the input to <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek()</a></span>.
+</p><p>If the stream is open in text mode, the value returned by this function is unspecified and is only meaningful as the input to <span class="t-lc"><a href="./fseek.htm" title="c/io/fseek">fseek()</a></span>.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="ftell.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="ftell.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="ftell.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="ftell.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="ftell.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="ftell.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./ftell.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./ftell.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./ftell.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./ftell.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./ftell.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./ftell.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/ftell&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -240,9 +240,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw1">if</span> <span class="br0">(</span>condition<span class="br0">)</span>
         <span class="kw1">return</span><span class="sy4">;</span>
-    <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span>func<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw852">fprintf</span></a><span class="br0">(</span><a href="std_streams.htm"><span class="kw887">stderr</span></a>, <span class="st0">"%s failed in file&nbsp;%s at line #&nbsp;%d<span class="es1">\n</span>"</span>, func, __FILE__, line <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../program/exit.html"><span class="kw488">exit</span></a><span class="br0">(</span><a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span>func<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw852">fprintf</span></a><span class="br0">(</span><a href="./std_streams.htm"><span class="kw887">stderr</span></a>, <span class="st0">"%s failed in file&nbsp;%s at line #&nbsp;%d<span class="es1">\n</span>"</span>, func, __FILE__, line <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../program/exit.htm"><span class="kw488">exit</span></a><span class="br0">(</span><a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -253,32 +253,32 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
     <span class="coMULTI">/* Write array to a file. */</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> fname <span class="sy1">=</span> <span class="st0">"/tmp/test.bin"</span><span class="sy4">;</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> file <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span>fname, <span class="st0">"wb"</span><span class="br0">)</span><span class="sy4">;</span>
-    check<span class="br0">(</span>file <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a>, <span class="st0">"fopen()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> file <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span>fname, <span class="st0">"wb"</span><span class="br0">)</span><span class="sy4">;</span>
+    check<span class="br0">(</span>file <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a>, <span class="st0">"fopen()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">const</span> <span class="kw4">int</span> write_count <span class="sy1">=</span> <a href="fwrite.htm"><span class="kw826">fwrite</span></a><span class="br0">(</span>A, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>, SIZE, file<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">int</span> write_count <span class="sy1">=</span> <a href="./fwrite.htm"><span class="kw826">fwrite</span></a><span class="br0">(</span>A, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>, SIZE, file<span class="br0">)</span><span class="sy4">;</span>
     check<span class="br0">(</span>write_count <span class="sy1">==</span> SIZE, <span class="st0">"fwrite()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>file<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>file<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="coMULTI">/* Read the FP values into array B. */</span>
     <span class="kw4">double</span> B<span class="br0">[</span>SIZE<span class="br0">]</span><span class="sy4">;</span>
-    file <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span>fname, <span class="st0">"rb"</span><span class="br0">)</span><span class="sy4">;</span>
-    check<span class="br0">(</span>file <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a>, <span class="st0">"fopen()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
+    file <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span>fname, <span class="st0">"rb"</span><span class="br0">)</span><span class="sy4">;</span>
+    check<span class="br0">(</span>file <span class="sy3">!</span><span class="sy1">=</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a>, <span class="st0">"fopen()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">long</span> <span class="kw4">int</span> pos <span class="sy1">=</span> ftell<span class="br0">(</span>file<span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* position indicator at start of file */</span>
     check<span class="br0">(</span>pos <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1L</span>, <span class="st0">"ftell()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"pos:&nbsp;%ld<span class="es1">\n</span>"</span>, pos<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"pos:&nbsp;%ld<span class="es1">\n</span>"</span>, pos<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">const</span> <span class="kw4">int</span> read_count <span class="sy1">=</span> <a href="fread.htm"><span class="kw825">fread</span></a><span class="br0">(</span>B, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>, <span class="nu0">1</span>, file<span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* read one FP value */</span>
+    <span class="kw4">const</span> <span class="kw4">int</span> read_count <span class="sy1">=</span> <a href="./fread.htm"><span class="kw825">fread</span></a><span class="br0">(</span>B, <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span>, <span class="nu0">1</span>, file<span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* read one FP value */</span>
     check<span class="br0">(</span>read_count <span class="sy1">==</span> <span class="nu0">1</span>, <span class="st0">"fread()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     pos <span class="sy1">=</span> ftell<span class="br0">(</span>file<span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* position indicator after reading one FP value */</span>
     check<span class="br0">(</span>pos <span class="sy3">!</span><span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1L</span>, <span class="st0">"ftell()"</span>, __LINE__<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"pos:&nbsp;%ld<span class="es1">\n</span>"</span>, pos<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"B[0]:&nbsp;%.1f<span class="es1">\n</span>"</span>, B<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* print one FP value */</span>
+    <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"pos:&nbsp;%ld<span class="es1">\n</span>"</span>, pos<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"B[0]:&nbsp;%.1f<span class="es1">\n</span>"</span>, B<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="coMULTI">/* print one FP value */</span>
 &nbsp;
-    <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
+    <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -326,19 +326,19 @@ B[0]: 1.1</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fgetpos.htm" title="c/io/fgetpos"> <span class="t-lines"><span>fgetpos</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fgetpos.htm" title="c/io/fgetpos"> <span class="t-lines"><span>fgetpos</span></span></a></div></div>
 </td>
 <td>   gets the file position indicator <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fgetpos&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fseek.htm" title="c/io/fseek"> <span class="t-lines"><span>fseek</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fseek.htm" title="c/io/fseek"> <span class="t-lines"><span>fseek</span></span></a></div></div>
 </td>
 <td>   moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fseek&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fsetpos.htm" title="c/io/fsetpos"> <span class="t-lines"><span>fsetpos</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fsetpos.htm" title="c/io/fsetpos"> <span class="t-lines"><span>fsetpos</span></span></a></div></div>
 </td>
 <td>   moves the file position indicator to a specific location in a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fsetpos&amp;action=edit">[edit]</a></span>
 </td></tr>

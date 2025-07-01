@@ -184,11 +184,11 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>An object whose identifier is declared without the storage-class specifier <span class="t-c"><span class="mw-geshi c source-c">_Thread_local</span></span>, and either with external or internal <a href="storage_class_specifiers.htm#Linkage" title="c/language/storage duration">linkage</a> or with the storage-class specifier <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">static</span></span></span>, has static storage duration. Its lifetime is the entire execution of the program and its stored value is initialized only once, prior to program startup.
+<p>An object whose identifier is declared without the storage-class specifier <span class="t-c"><span class="mw-geshi c source-c">_Thread_local</span></span>, and either with external or internal <a href="./storage_class_specifiers.htm#Linkage" title="c/language/storage duration">linkage</a> or with the storage-class specifier <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">static</span></span></span>, has static storage duration. Its lifetime is the entire execution of the program and its stored value is initialized only once, prior to program startup.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/static_storage_duration&amp;action=edit&amp;section=1" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Since its stored value is initialized only once, an object with static storage duration can profile the invocations of a function.
-</p><p>The other use of the keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">static</span></span></span> is <a href="file_scope.htm" title="c/language/file scope">file scope</a>.
+</p><p>The other use of the keyword <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">static</span></span></span> is <a href="./file_scope.htm" title="c/language/file scope">file scope</a>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/static_storage_duration&amp;action=edit&amp;section=2" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -198,7 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw4">static</span> <span class="kw4">int</span> count <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>   <span class="co1">// static variable   </span>
     <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>              <span class="co1">// automatic variable</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d<span class="es1">\n</span>"</span>, i<span class="sy2">++</span>, count<span class="sy2">++</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d<span class="es1">\n</span>"</span>, i<span class="sy2">++</span>, count<span class="sy2">++</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>

@@ -189,12 +189,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="switch.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="switch.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="switch.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="switch.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="switch.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="switch.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./switch.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./switch.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./switch.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./switch.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./switch.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./switch.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/switch&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -224,21 +224,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>switch</code> statement
+<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>switch</code> statement
 </td></tr>
 <tr class="t-par">
 <td>  <span class="t-spar">expression</span>
 </td>
 <td> -
 </td>
-<td>  any <a href="operators.htm" title="c/language/expressions">expression</a> of <a href="compatible_type.htm#Type_groups" title="c/language/type">integer type</a> (char, signed or unsigned integer, or enumeration)
+<td>  any <a href="./operators.htm" title="c/language/expressions">expression</a> of <a href="./compatible_type.htm#Type_groups" title="c/language/type">integer type</a> (char, signed or unsigned integer, or enumeration)
 </td></tr>
 <tr class="t-par">
 <td>  <span class="t-spar">statement</span>
 </td>
 <td> -
 </td>
-<td>  any <a href="statements.htm" title="c/language/statements">statement</a> (typically a compound statement). <code><b>case:</b></code> and <code><b>default:</b></code> labels are permitted in <span class="t-spar">statement</span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">break</span><span class="sy4">;</span></span></span> statement has special meaning.
+<td>  any <a href="./statements.htm" title="c/language/statements">statement</a> (typically a compound statement). <code><b>case:</b></code> and <code><b>default:</b></code> labels are permitted in <span class="t-spar">statement</span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw1">break</span><span class="sy4">;</span></span></span> statement has special meaning.
 </td></tr></tbody></table>
 <table class="t-sdsc-begin">
 
@@ -305,35 +305,35 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  any integer <a href="constant_expression.htm" title="c/language/constant expression">constant expression</a>
+<td>  any integer <a href="./constant_expression.htm" title="c/language/constant expression">constant expression</a>
 </td></tr>
 <tr class="t-par">
 <td>  <span class="t-spar">attr-spec-seq</span>
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the label
+<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the label
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/switch&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The body of a switch statement may have an arbitrary number of <code>case:</code> labels, as long as the values of all <span class="t-spar">constant-expressions</span> are unique (after <a href="conversion.htm" title="c/language/conversion">conversion</a> to the <a href="conversion.htm#Integer_promotions" title="c/language/conversion">promoted type</a> of <span class="t-spar">expression</span>). At most one <code>default:</code> label may be present (although nested switch statements may use their own <code>default:</code> labels or have <code>case:</code> labels whose constants are identical to the ones used in the enclosing switch).
+<p>The body of a switch statement may have an arbitrary number of <code>case:</code> labels, as long as the values of all <span class="t-spar">constant-expressions</span> are unique (after <a href="./conversion.htm" title="c/language/conversion">conversion</a> to the <a href="./conversion.htm#Integer_promotions" title="c/language/conversion">promoted type</a> of <span class="t-spar">expression</span>). At most one <code>default:</code> label may be present (although nested switch statements may use their own <code>default:</code> labels or have <code>case:</code> labels whose constants are identical to the ones used in the enclosing switch).
 </p><p>If <span class="t-spar">expression</span> evaluates to the value that is equal to the value of one of <span class="t-spar">constant-expression</span>s after conversion to the promoted type of <span class="t-spar">expression</span>, then control is transferred to the statement that is labeled with that <span class="t-spar">constant-expression</span>.
 </p><p>If <span class="t-spar">expression</span> evaluates to a value that doesn't match any of the <code>case:</code> labels, and the <code>default:</code> label is present, control is transferred to the statement labeled with the <code>default:</code> label.
 </p><p>If <span class="t-spar">expression</span> evaluates to a value that doesn't match any of the <code>case:</code> labels, and the <code>default:</code> label is not present, none of the switch body is executed.
-</p><p>The <a href="break.htm" title="c/language/break">break</a> statement, when encountered anywhere in <span class="t-spar">statement</span>, exits the switch statement:
+</p><p>The <a href="./break.htm" title="c/language/break">break</a> statement, when encountered anywhere in <span class="t-spar">statement</span>, exits the switch statement:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints "1",</span>
-    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// then prints "2" ("fall-through")</span>
+    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints "1",</span>
+    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// then prints "2" ("fall-through")</span>
 <span class="br0">}</span></pre></div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">switch</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
-    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints "1"</span>
+    <span class="kw1">case</span> <span class="nu0">1</span> <span class="sy4">:</span> <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints "1"</span>
              <span class="kw1">break</span><span class="sy4">;</span>     <span class="co1">// and exits the switch</span>
-    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">case</span> <span class="nu0">2</span> <span class="sy4">:</span> <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2"</span><span class="br0">)</span><span class="sy4">;</span>
              <span class="kw1">break</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>As with all other selection and iteration statements, the switch statement establishes <a href="scope.htm" title="c/language/scope">block scope</a>: any identifier introduced in the <span class="t-spar">expression</span> goes out of scope after the <span class="t-spar">statement</span>.
+<p>As with all other selection and iteration statements, the switch statement establishes <a href="./scope.htm" title="c/language/scope">block scope</a>: any identifier introduced in the <span class="t-spar">expression</span> goes out of scope after the <span class="t-spar">statement</span>.
 </p><p>If a VLA or another identifier with variably-modified type has a <code>case:</code> or a <code>default:</code> label within its scope, the entire switch statement must be in its scope (in other words, a VLA must be declared either before the entire switch or after the last label):
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span>expr<span class="br0">)</span>
@@ -345,15 +345,15 @@ html { font-variant-ligatures: no-common-ligatures; }
         i <span class="sy1">=</span> <span class="nu0">17</span><span class="sy4">;</span>
     <span class="kw1">default</span><span class="sy4">:</span>
         <span class="kw4">int</span> a<span class="br0">[</span>i<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// OK to declare VLA here</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 17 if expr == 0, prints indeterminate value otherwise</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, i<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 17 if expr == 0, prints indeterminate value otherwise</span>
 <span class="br0">}</span></pre></div></div>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/switch&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/switch.html" title="c/keyword/switch"><tt>switch</tt></a>,
-<a href="../keyword/case.html" title="c/keyword/case"><tt>case</tt></a>,
-<a href="../keyword/default.html" title="c/keyword/default"><tt>default</tt></a>
+<p><a href="../keyword/switch.htm" title="c/keyword/switch"><tt>switch</tt></a>,
+<a href="../keyword/case.htm" title="c/keyword/case"><tt>case</tt></a>,
+<a href="../keyword/default.htm" title="c/keyword/default"><tt>default</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/switch&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -361,16 +361,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> func<span class="br0">(</span><span class="kw4">int</span> x<span class="br0">)</span>
 <span class="br0">{</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"func(%d): "</span>, x<span class="br0">)</span><span class="sy4">;</span>
+   <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"func(%d): "</span>, x<span class="br0">)</span><span class="sy4">;</span>
    <span class="kw1">switch</span><span class="br0">(</span>x<span class="br0">)</span>
    <span class="br0">{</span>
-      <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 1, "</span><span class="br0">)</span><span class="sy4">;</span>
-      <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 2, "</span><span class="br0">)</span><span class="sy4">;</span>
-      <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 3.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
-      <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 4, "</span><span class="br0">)</span><span class="sy4">;</span>
+      <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 1, "</span><span class="br0">)</span><span class="sy4">;</span>
+      <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 2, "</span><span class="br0">)</span><span class="sy4">;</span>
+      <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 3.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="kw1">break</span><span class="sy4">;</span>
+      <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 4, "</span><span class="br0">)</span><span class="sy4">;</span>
       <span class="kw1">case</span> <span class="nu0">5</span><span class="sy4">:</span>
-      <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 5 or case 6, "</span><span class="br0">)</span><span class="sy4">;</span>
-      <span class="kw1">default</span><span class="sy4">:</span> <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"default.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+      <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"case 5 or case 6, "</span><span class="br0">)</span><span class="sy4">;</span>
+      <span class="kw1">default</span><span class="sy4">:</span> <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"default.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
    <span class="br0">}</span>
 <span class="br0">}</span>
 &nbsp;

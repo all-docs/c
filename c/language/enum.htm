@@ -184,21 +184,21 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>An <i>enumerated type</i> is a distinct <a href="compatible_type.htm" title="c/language/type">type</a> whose value is a value of its <i>underlying type</i> (see below), which includes the values of explicitly named constants (<i>enumeration constants</i>).
+<p>An <i>enumerated type</i> is a distinct <a href="./compatible_type.htm" title="c/language/type">type</a> whose value is a value of its <i>underlying type</i> (see below), which includes the values of explicitly named constants (<i>enumeration constants</i>).
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="enum.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="enum.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="enum.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="enum.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="enum.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="enum.htm#Keywords"><span class="tocnumber">6</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="enum.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./enum.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./enum.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./enum.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./enum.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./enum.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./enum.htm#Keywords"><span class="tocnumber">6</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./enum.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
-<p>Enumerated type is declared using the following <i>enumeration specifier</i> as the <span class="t-spar">type-specifier</span> in the <a href="declarations.htm" title="c/language/declarations">declaration grammar</a>:
+<p>Enumerated type is declared using the following <i>enumeration specifier</i> as the <span class="t-spar">type-specifier</span> in the <a href="./declarations.htm" title="c/language/declarations">declaration grammar</a>:
 </p>
 <table class="t-sdsc-begin">
 
@@ -283,19 +283,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> <a href="constant_expression.htm" title="c/language/constant expression">integer constant expression</a> <span class="t-rev-inl t-until-c23"><span>whose value is representable as a value of type <span class="mw-geshi c source-c"><span class="kw4">int</span></span></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span>. <span class="t-rev-inl t-since-c23"><span>If the enumeration has a fixed underlying type, representable as a value of <span class="t-spar">type</span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+<td> <a href="./constant_expression.htm" title="c/language/constant expression">integer constant expression</a> <span class="t-rev-inl t-until-c23"><span>whose value is representable as a value of type <span class="mw-geshi c source-c"><span class="kw4">int</span></span></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span>. <span class="t-rev-inl t-since-c23"><span>If the enumeration has a fixed underlying type, representable as a value of <span class="t-spar">type</span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">attr-spec-seq</span>
 </td>
 <td> -
 </td>
-<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>,
+<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>,
 <ul><li> applied to the whole enumeration if appears after <code><b>enum</b></code>,
 </li><li> applied to the <span class="t-spar">enumerator</span> if appears after <span class="t-spar">enumeration-constant</span>
 </li></ul>
 </td></tr></tbody></table>
-<p>As with <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a>, a declaration that introduced an enumerated type and one or more enumeration constants may also declare one or more objects of that type or type derived from it.
+<p>As with <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a>, a declaration that introduced an enumerated type and one or more enumeration constants may also declare one or more objects of that type or type derived from it.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> color <span class="br0">{</span> RED, GREEN, BLUE <span class="br0">}</span> c <span class="sy1">=</span> RED, <span class="sy2">*</span>cp <span class="sy1">=</span> <span class="sy3">&amp;</span>c<span class="sy4">;</span>
 <span class="co1">// introduces the type enum color</span>
@@ -303,7 +303,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co1">// the object c of type enum color</span>
 <span class="co1">// the object cp of type pointer to enum color</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>Each <span class="t-spar">enumeration-constant</span> that appears in the body of an enumeration specifier becomes an <a href="constant_expression.htm" title="c/language/constant expression">integer constant</a> <span class="t-rev-inl t-until-c23"><span>with type <span class="mw-geshi c source-c"><span class="kw4">int</span></span></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> in the enclosing scope and can be used whenever integer constants are required (e.g. as a case label or as a non-VLA array size).
+<p>Each <span class="t-spar">enumeration-constant</span> that appears in the body of an enumeration specifier becomes an <a href="./constant_expression.htm" title="c/language/constant expression">integer constant</a> <span class="t-rev-inl t-until-c23"><span>with type <span class="mw-geshi c source-c"><span class="kw4">int</span></span></span><span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span> in the enclosing scope and can be used whenever integer constants are required (e.g. as a case label or as a non-VLA array size).
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
@@ -328,27 +328,27 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw1">switch</span><span class="br0">(</span>r<span class="br0">)</span>
 <span class="br0">{</span>
 <span class="kw1">case</span> RED<span class="sy4">:</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"red"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"red"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">break</span><span class="sy4">;</span>
 <span class="kw1">case</span> GREEN<span class="sy4">:</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"green"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"green"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">break</span><span class="sy4">;</span>
 <span class="kw1">case</span> BLUE<span class="sy4">:</span>
-    <a href="../io/puts.html"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"blue"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"blue"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">break</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>If <span class="t-spar">enumeration-constant</span> is followed by <span class="t-spar">= constant-expression</span>, its value is the value of that constant expression. If <span class="t-spar">enumeration-constant</span> is not followed by <span class="t-spar">= constant-expression</span>, its value is the value one greater than the value of the previous enumerator in the same enumeration. The value of the first enumerator (if it does not use <span class="t-spar">= constant-expression</span>) is zero.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> Foo <span class="br0">{</span> A, B, C <span class="sy1">=</span> <span class="nu0">10</span>, D, E <span class="sy1">=</span> <span class="nu0">1</span>, F, G <span class="sy1">=</span> F <span class="sy2">+</span> C <span class="br0">}</span><span class="sy4">;</span>
 <span class="co1">// A=0, B=1, C=10, D=11, E=1, F=2, G=12</span></pre></div></div>
-<p>The <span class="t-spar">identifier</span> itself, if used, becomes the name of the enumerated type in the tags <a href="name_space.htm" title="c/language/name space">name space</a> and requires the use of the keyword enum (unless typedef'd into the ordinary name space).
+<p>The <span class="t-spar">identifier</span> itself, if used, becomes the name of the enumerated type in the tags <a href="./name_space.htm" title="c/language/name space">name space</a> and requires the use of the keyword enum (unless typedef'd into the ordinary name space).
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> color <span class="br0">{</span> RED, GREEN, BLUE <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw2">enum</span> color r <span class="sy1">=</span> RED<span class="sy4">;</span> <span class="co1">// OK</span>
 <span class="co1">// color x = GREEN; // Error: color is not in ordinary name space</span>
 <span class="kw1">typedef</span> <span class="kw2">enum</span> color color_t<span class="sy4">;</span>
 color_t x <span class="sy1">=</span> GREEN<span class="sy4">;</span> <span class="co1">// OK</span></pre></div></div>
-<p>Each enumerated type <span class="t-rev-inl t-since-c23"><span>without a fixed underlying type</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> is <a href="compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with one of: <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, a signed integer type, or an unsigned integer type <span class="t-rev-inl t-since-c23"><span>(excluding <span class="mw-geshi c source-c">bool</span> and the bit-precise integer types)</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>. It is implementation-defined which type is compatible with any given enumerated type, but whatever it is, it must be capable of representing all enumerator values of that enumeration. <span class="t-rev-inl t-since-c23"><span>For all enumerations with a fixed underlying type, the enumerated type is compatible with the underlying type of the enumeration.</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+<p>Each enumerated type <span class="t-rev-inl t-since-c23"><span>without a fixed underlying type</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> is <a href="./compatible_type.htm#Compatible_types" title="c/language/type">compatible</a> with one of: <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, a signed integer type, or an unsigned integer type <span class="t-rev-inl t-since-c23"><span>(excluding <span class="mw-geshi c source-c">bool</span> and the bit-precise integer types)</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>. It is implementation-defined which type is compatible with any given enumerated type, but whatever it is, it must be capable of representing all enumerator values of that enumeration. <span class="t-rev-inl t-since-c23"><span>For all enumerations with a fixed underlying type, the enumerated type is compatible with the underlying type of the enumeration.</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
@@ -363,7 +363,7 @@ color_t x <span class="sy1">=</span> GREEN<span class="sy4">;</span> <span class
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table>
-<p>Enumerated types are integer types, and as such can be used anywhere other integer types can, including in <a href="conversion.htm" title="c/language/conversion">implicit conversions</a> and <a href="operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic operators</a>.
+<p>Enumerated types are integer types, and as such can be used anywhere other integer types can, including in <a href="./conversion.htm" title="c/language/conversion">implicit conversions</a> and <a href="./operator_arithmetic.htm" title="c/language/operator arithmetic">arithmetic operators</a>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> <span class="br0">{</span> ONE <span class="sy1">=</span> <span class="nu0">1</span>, TWO <span class="br0">}</span> e<span class="sy4">;</span>
 <span class="kw4">long</span> n <span class="sy1">=</span> ONE<span class="sy4">;</span> <span class="co1">// promotion</span>
@@ -371,7 +371,7 @@ color_t x <span class="sy1">=</span> GREEN<span class="sy4">;</span> <span class
 e <span class="sy1">=</span> <span class="nu16">1.2</span><span class="sy4">;</span> <span class="co1">// conversion, e is now ONE</span>
 e <span class="sy1">=</span> e <span class="sy2">+</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// e is now TWO</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Unlike <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a>, there are no forward-declared enums in C:
+<p>Unlike <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a>, there are no forward-declared enums in C:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> Color<span class="sy4">;</span> <span class="co1">// Error: no forward-declarations for enums in C</span>
 <span class="kw2">enum</span> Color <span class="br0">{</span> RED, GREEN, BLUE <span class="br0">}</span><span class="sy4">;</span></pre></div></div>
@@ -384,11 +384,11 @@ fashion than does <span class="t-c"><span class="mw-geshi c source-c"><span clas
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">enum</span> <span class="br0">{</span> TEN <span class="sy1">=</span> <span class="nu0">10</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw1">struct</span> S <span class="br0">{</span> <span class="kw4">int</span> x <span class="sy4">:</span> TEN<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// also OK</span></pre></div></div>
-<p>Since C23 <a href="constexpr.htm" title="c/language/constexpr">constexpr</a> can be used for the same purpose:
+<p>Since C23 <a href="./constexpr.htm" title="c/language/constexpr">constexpr</a> can be used for the same purpose:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1">constexpr <span class="kw4">int</span> TEN <span class="sy1">=</span> <span class="nu0">10</span><span class="sy4">;</span>
 <span class="kw1">struct</span> S <span class="br0">{</span> <span class="kw4">int</span> x <span class="sy4">:</span> TEN<span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// also OK</span></pre></div></div>
-<p>Moreover, as a <a href="struct.htm" title="c/language/struct">struct</a> or <a href="union.htm" title="c/language/union">union</a> does not establish its scope in C, an enumeration type and its enumeration constants may be introduced in the member specification of the former, and their scope is the same as of the former, afterwards.
+<p>Moreover, as a <a href="./struct.htm" title="c/language/struct">struct</a> or <a href="./union.htm" title="c/language/union">union</a> does not establish its scope in C, an enumeration type and its enumeration constants may be introduced in the member specification of the former, and their scope is the same as of the former, afterwards.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> Element
 <span class="br0">{</span>
@@ -400,7 +400,7 @@ fashion than does <span class="t-c"><span class="mw-geshi c source-c"><span clas
 <span class="kw4">void</span> foo<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw2">enum</span> State e <span class="sy1">=</span> LIQUID<span class="sy4">;</span> <span class="co1">// OK</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d&nbsp;%d "</span>, e, oxygen.<span class="me1">state</span>, PLASMA<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 1 2 3</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d&nbsp;%d&nbsp;%d "</span>, e, oxygen.<span class="me1">state</span>, PLASMA<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 1 2 3</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -410,10 +410,10 @@ fashion than does <span class="t-c"><span class="mw-geshi c source-c"><span clas
 <span class="br0">{</span>
     <span class="kw2">enum</span> TV <span class="br0">{</span> FOX <span class="sy1">=</span> <span class="nu0">11</span>, CNN <span class="sy1">=</span> <span class="nu0">25</span>, ESPN <span class="sy1">=</span> <span class="nu0">15</span>, HBO <span class="sy1">=</span> <span class="nu0">22</span>, MAX <span class="sy1">=</span> <span class="nu0">30</span>, NBC <span class="sy1">=</span> <span class="nu0">32</span> <span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"List of cable stations:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" FOX: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, FOX<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" HBO: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, HBO<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" MAX: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, MAX<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"List of cable stations:<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" FOX: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, FOX<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" HBO: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, HBO<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">" MAX: <span class="es1">\t</span>%2d<span class="es1">\n</span>"</span>, MAX<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -474,7 +474,7 @@ fashion than does <span class="t-c"><span class="mw-geshi c source-c"><span clas
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=6" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/enum.html" title="c/keyword/enum"><tt>enum</tt></a>
+<p><a href="../keyword/enum.htm" title="c/keyword/enum"><tt>enum</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/enum&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">

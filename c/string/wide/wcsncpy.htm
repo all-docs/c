@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,12 +198,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c95 t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span><span class="sy2">*</span> wcsncpy<span class="br0">(</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span><span class="sy2">*</span> wcsncpy<span class="br0">(</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span><span class="sy2">*</span> src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> <br><span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span> <span class="sy2">*</span>wcsncpy<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span> <span class="sy2">*</span>wcsncpy<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
@@ -220,22 +220,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li"></span> If <code>count</code> is reached before the entire string <code>src</code> was copied, the resulting wide character array is not null-terminated.</div>
 <div class="t-li1"><span class="t-li"></span> If, after copying the terminating null wide character from <code>src</code>, <code>count</code> is not reached, additional null wide characters are written to <code>dest</code> until the total of <code>count</code> characters have been written.</div>
 <div class="t-li1"><span class="t-li"></span> If the strings overlap, the behavior is undefined.</div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the function does not continue writing zeroes into the destination array to pad up to <code>count</code>, it stops after writing the terminating null character (if there was no null in the source, it writes one at <span class="t-c"><span class="mw-geshi c source-c">dest<span class="br0">[</span>count<span class="br0">]</span></span></span> and then stops). Also, the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the function does not continue writing zeroes into the destination array to pad up to <code>count</code>, it stops after writing the terminating null character (if there was no null in the source, it writes one at <span class="t-c"><span class="mw-geshi c source-c">dest<span class="br0">[</span>count<span class="br0">]</span></span></span> and then stops). Also, the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <code>src</code> or <code>dest</code> is a null pointer
 </li><li> <code>destsz</code> or <code>count</code> is zero or greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX<span class="sy2">/</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="br0">)</span></span></span>
 </li><li> <code>count</code> is greater or equal <code>destsz</code>, but <code>destsz</code> is less or equal <span class="t-c"><span class="mw-geshi c source-c">wcsnlen_s<span class="br0">(</span>src, count<span class="br0">)</span></span></span>, in other words, truncation would occur
 </li><li> overlap would occur between the source and the destination strings
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>wcsncpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>wcsncpy_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcsncpy.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcsncpy.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcsncpy.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcsncpy.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcsncpy.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcsncpy.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcsncpy.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcsncpy.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcsncpy.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcsncpy.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcsncpy.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcsncpy.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcsncpy&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -290,13 +290,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
     wcsncpy<span class="br0">(</span>dest, src, <span class="nu0">4</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// this will copy わゐ and repeat L'\0' two times</span>
 &nbsp;
-    <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"The contents of dest are: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../locale/setlocale.html"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"The contents of dest are: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.htm"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.htm"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">const</span> <span class="kw4">long</span> dest_size <span class="sy1">=</span> <span class="kw4">sizeof</span> dest <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>dest<span class="sy4">;</span>
     <span class="kw1">for</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="sy2">*</span> p <span class="sy1">=</span> dest<span class="sy4">;</span> p<span class="sy2">-</span>dest <span class="sy3">!</span><span class="sy1">=</span> dest_size<span class="sy4">;</span> <span class="sy2">++</span>p<span class="br0">)</span> <span class="br0">{</span>
-        <span class="sy2">*</span>p <span class="sy4">?</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%lc "</span>, <span class="sy2">*</span>p<span class="br0">)</span>
-           <span class="sy4">:</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0 "</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="sy2">*</span>p <span class="sy4">?</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%lc "</span>, <span class="sy2">*</span>p<span class="br0">)</span>
+           <span class="sy4">:</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\\</span>0 "</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -336,19 +336,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcscpy.htm" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcscpy.htm" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one wide string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcscpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wmemcpy.htm" title="c/string/wide/wmemcpy"> <span class="t-lines"><span>wmemcpy</span><span>wmemcpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wmemcpy.htm" title="c/string/wide/wmemcpy"> <span class="t-lines"><span>wmemcpy</span><span>wmemcpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies a certain amount of wide characters between two non-overlapping arrays <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wmemcpy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../byte/strncpy.html" title="c/string/byte/strncpy"> <span class="t-lines"><span>strncpy</span><span>strncpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../byte/strncpy.htm" title="c/string/byte/strncpy"> <span class="t-lines"><span>strncpy</span><span>strncpy_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies a certain amount of characters from one string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncpy&amp;action=edit">[edit]</a></span>
 </td></tr>

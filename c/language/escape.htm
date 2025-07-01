@@ -184,7 +184,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>Escape sequences are used to represent certain special characters within <a href="string_literal.htm" title="c/language/string literal">string literals</a> and <a href="character_constant.htm" title="c/language/character constant">character constants</a>. 
+<p>Escape sequences are used to represent certain special characters within <a href="./string_literal.htm" title="c/language/string literal">string literals</a> and <a href="./character_constant.htm" title="c/language/character constant">character constants</a>. 
 </p><p>The following escape sequences are available. ISO C requires a diagnostic if the backslash is followed by any character not listed here:
 </p>
 <table class="wikitable">
@@ -315,22 +315,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tbody><tr class="t-rev t-since-c99"><td>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1"><a href="escape.htm#Range_of_universal_character_names"><span class="tocnumber">1</span> <span class="toctext">Range of universal character names</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="escape.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="escape.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="escape.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="escape.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1"><a href="./escape.htm#Range_of_universal_character_names"><span class="tocnumber">1</span> <span class="toctext">Range of universal character names</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./escape.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./escape.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./escape.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./escape.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3> <span class="mw-headline" id="Range_of_universal_character_names">Range of universal character names</span></h3>
-<p>If a universal character name corresponds to a code point that is not <code>0x24</code> (<span class="mw-geshi c source-c"><span class="st0">'$'</span></span>), <code>0x40</code> (<span class="mw-geshi c source-c"><span class="st0">'@'</span></span>), nor <code>0x60</code> (<span class="mw-geshi c source-c"><span class="st0">'`'</span></span>) and less than <code>0xA0</code>, or a surrogate code point (the range <code>0xD800-0xDFFF</code>, inclusive)<span class="t-rev-inl t-since-c23"><span>, or greater than <code>0x10FFFF</code>, i.e. not a Unicode code point</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, the program is ill-formed. In other words, members of <a href="translation_phases.htm" title="c/language/translation phases">basic source character set</a> and control characters (in ranges <code>0x0-0x1F</code> and <code>0x7F-0x9F</code>) cannot be expressed in universal character names.
+<p>If a universal character name corresponds to a code point that is not <code>0x24</code> (<span class="mw-geshi c source-c"><span class="st0">'$'</span></span>), <code>0x40</code> (<span class="mw-geshi c source-c"><span class="st0">'@'</span></span>), nor <code>0x60</code> (<span class="mw-geshi c source-c"><span class="st0">'`'</span></span>) and less than <code>0xA0</code>, or a surrogate code point (the range <code>0xD800-0xDFFF</code>, inclusive)<span class="t-rev-inl t-since-c23"><span>, or greater than <code>0x10FFFF</code>, i.e. not a Unicode code point</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>, the program is ill-formed. In other words, members of <a href="./translation_phases.htm" title="c/language/translation phases">basic source character set</a> and control characters (in ranges <code>0x0-0x1F</code> and <code>0x7F-0x9F</code>) cannot be expressed in universal character names.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/escape&amp;action=edit&amp;section=2" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p><span class="t-c"><span class="mw-geshi c source-c">\<span class="nu0">0</span></span></span> is the most commonly used octal escape sequence, because it represents the terminating null character in null-terminated strings.
-</p><p>The new-line character <span class="t-c"><span class="mw-geshi c source-c">\n</span></span> has special meaning when used in <a href="../io.html" title="c/io">text mode I/O</a>: it is converted to the OS-specific newline byte or byte sequence.
+</p><p>The new-line character <span class="t-c"><span class="mw-geshi c source-c">\n</span></span> has special meaning when used in <a href="../io.htm" title="c/io">text mode I/O</a>: it is converted to the OS-specific newline byte or byte sequence.
 </p><p>Octal escape sequences have a length limit of three octal digits but terminate at the first character that is not a valid octal digit if encountered sooner.
 </p><p>Hexadecimal escape sequences have no length limit and terminate at the first character that is not a valid hexadecimal digit. If the value represented by a single hexadecimal escape sequence does not fit the range of values represented by the character type used in this string literal or character constant (<span class="mw-geshi c source-c"><span class="kw4">char</span></span><span class="t-rev-inl t-since-c23"><span>, <span class="mw-geshi c source-c">char8_t</span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span><span class="t-rev-inl t-since-c11"><span>, <span class="mw-geshi c source-c">char16_t</span>, <span class="mw-geshi c source-c">char32_t</span></span><span><span class="t-mark-rev t-since-c11">(since C11)</span></span></span>, or <span class="mw-geshi c source-c"><span class="kw4">wchar_t</span></span>), the result is unspecified.
 </p>
@@ -343,14 +343,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99 t-until-c23"><td>
-<p>A universal character name corresponding to a code pointer greater than <code>0x10FFFF</code> (which is undefined in ISO/ISC 10646) can be used in <a href="character_constant.htm" title="c/language/character constant">character constants</a> and <a href="string_literal.htm" title="c/language/string literal">string literals</a>. Such usage is not allowed in C++20.
+<p>A universal character name corresponding to a code pointer greater than <code>0x10FFFF</code> (which is undefined in ISO/ISC 10646) can be used in <a href="./character_constant.htm" title="c/language/character constant">character constants</a> and <a href="./string_literal.htm" title="c/language/string literal">string literals</a>. Such usage is not allowed in C++20.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span><br><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
 </tbody></table>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c23"><td>
-<p>The question mark escape sequence <span class="t-c"><span class="mw-geshi c source-c">\<span class="sy4">?</span></span></span> is used to prevent <a href="operator_alternative.htm" title="c/language/operator alternative">trigraphs</a> from being interpreted inside string literals: a string such as <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"??/"</span></span></span> is compiled as <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\"</span></span></span></span>, but if the second question mark is escaped, as in <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"?<span class="es1">\?</span>/"</span></span></span>, it becomes <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"??/"</span></span></span>
+<p>The question mark escape sequence <span class="t-c"><span class="mw-geshi c source-c">\<span class="sy4">?</span></span></span> is used to prevent <a href="./operator_alternative.htm" title="c/language/operator alternative">trigraphs</a> from being interpreted inside string literals: a string such as <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"??/"</span></span></span> is compiled as <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\"</span></span></span></span>, but if the second question mark is escaped, as in <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"?<span class="es1">\?</span>/"</span></span></span>, it becomes <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"??/"</span></span></span>
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
@@ -361,7 +361,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"This<span class="es1">\n</span>is<span class="es1">\n</span>a<span class="es1">\n</span>test<span class="es1">\n</span><span class="es1">\n</span>She said, <span class="es1">\"</span>How are you?<span class="es1">\"</span><span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"This<span class="es1">\n</span>is<span class="es1">\n</span>a<span class="es1">\n</span>test<span class="es1">\n</span><span class="es1">\n</span>She said, <span class="es1">\"</span>How are you?<span class="es1">\"</span><span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -423,7 +423,7 @@ She said, "How are you?"</pre></div></div>
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/escape&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
-<ul><li> <a href="ascii.htm" title="c/language/ascii">ASCII chart</a>
+<ul><li> <a href="./ascii.htm" title="c/language/ascii">ASCII chart</a>
 </li></ul>
 <table class="t-dsc-begin">
 

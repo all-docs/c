@@ -164,12 +164,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="include.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="include.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="include.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="include.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="include.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="include.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./include.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./include.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./include.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./include.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./include.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./include.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/include&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -277,7 +277,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> Any member of the <a href="../language/translation_phases.html#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
+<td> Any member of the <a href="../language/translation_phases.htm#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">q-char-sequence</span>
@@ -296,28 +296,28 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> Any member of the <a href="../language/translation_phases.html#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"</span></span></span>
+<td> Any member of the <a href="../language/translation_phases.htm#Phase_5" title="c/language/translation phases">source character set</a> except new-line and <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"</span></span></span>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">pp-tokens</span>
 </td>
 <td> -
 </td>
-<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="c/language/translation phases">preprocessing tokens</a>
+<td> A sequence of one or more <a href="../language/translation_phases.htm#Phase_3" title="c/language/translation phases">preprocessing tokens</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">string-literal</span>
 </td>
 <td> -
 </td>
-<td> A <a href="../language/string_literal.html" title="c/language/string literal">string literal</a>
+<td> A <a href="../language/string_literal.htm" title="c/language/string literal">string literal</a>
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">h-pp-tokens</span>
 </td>
 <td> -
 </td>
-<td> A sequence of one or more <a href="../language/translation_phases.html#Phase_3" title="c/language/translation phases">preprocessing tokens</a> except <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
+<td> A sequence of one or more <a href="../language/translation_phases.htm#Phase_3" title="c/language/translation phases">preprocessing tokens</a> except <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">&gt;</span></span></span>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/include&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <div class="t-li1"><span class="t-li">1)</span> Searches for the file identified by <span class="t-spar">h-char-sequence</span> in implementation-defined manner. The intent of this syntax is to search for the files under control of the implementation. Typical implementations search only standard include directories. The standard C library is implicitly included in these standard include directories. The standard include directories usually can be controlled by the user through compiler options.</div>
@@ -330,13 +330,13 @@ syntactic requirements of an <span class="mw-geshi c source-c"><span class="co2"
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
-<p><code>__has_include</code> can be expanded in the expression of <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#if</tt></a> and <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#elif</tt></a>. It is treated as a defined macro by <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#ifdef</tt></a>, <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#ifndef</tt></a>, <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#elifdef</tt></a>, <a href="conditional.htm" title="c/preprocessor/conditional"><tt>
-#elifndef</tt></a> and <a href="conditional.htm" title="c/preprocessor/conditional"><tt>defined</tt></a> but cannot be used anywhere else.
+<p><code>__has_include</code> can be expanded in the expression of <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#if</tt></a> and <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#elif</tt></a>. It is treated as a defined macro by <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#ifdef</tt></a>, <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#ifndef</tt></a>, <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#elifdef</tt></a>, <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>
+#elifndef</tt></a> and <a href="./conditional.htm" title="c/preprocessor/conditional"><tt>defined</tt></a> but cannot be used anywhere else.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
@@ -344,13 +344,13 @@ syntactic requirements of an <span class="mw-geshi c source-c"><span class="co2"
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/include&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Typical implementations search only standard include directories for syntax (1). The standard C library is implicitly included in these standard include directories. The standard include directories usually can be controlled by the user through compiler options.
 </p><p>The intent of syntax <span class="t-v">(2)</span> is to search for the files that are not controlled by the implementation. Typical implementations first search the directory where the current file resides then falls back to <span class="t-v">(1)</span>.
-</p><p>When a file is included, it is processed by <a href="../language/translation_phases.html" title="c/language/translation phases">translation phases</a> 1-4, which may include, recursively, expansion of the nested <code>#include</code> directives, up to an implementation-defined nesting limit. To avoid repeated inclusion of the same file and endless recursion when a file includes itself, perhaps transitively, <i>header guards</i> are commonly used: the entire header is wrapped in
+</p><p>When a file is included, it is processed by <a href="../language/translation_phases.htm" title="c/language/translation phases">translation phases</a> 1-4, which may include, recursively, expansion of the nested <code>#include</code> directives, up to an implementation-defined nesting limit. To avoid repeated inclusion of the same file and endless recursion when a file includes itself, perhaps transitively, <i>header guards</i> are commonly used: the entire header is wrapped in
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#ifndef FOO_H_INCLUDED /* any name uniquely mapped to file name */</span>
 <span class="co2">#define FOO_H_INCLUDED</span>
 <span class="co1">// contents of the file are here</span>
 <span class="co2">#endif</span></pre></div></div>
-<p>Many compilers also implement the non-standard <a href="impl.htm" title="c/preprocessor/impl"><tt>pragma</tt></a> <span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#pragma once</span></span></span> with similar effects: it disables processing of a file if the same file (where file identity is determined in OS-specific way) has already been included.
+<p>Many compilers also implement the non-standard <a href="./impl.htm" title="c/preprocessor/impl"><tt>pragma</tt></a> <span class="t-c"><span class="mw-geshi c source-c"><span class="co2">#pragma once</span></span></span> with similar effects: it disables processing of a file if the same file (where file identity is determined in OS-specific way) has already been included.
 </p><p>A <code>__has_include</code> result of <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> only means that a header or source file with the specified name exists. It does not mean that the header or source file, when included, would not cause an error or would contain anything useful.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/include&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -401,7 +401,7 @@ syntactic requirements of an <span class="mw-geshi c source-c"><span class="co2"
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td colspan="2"> <a href="../header.html" title="c/header">A list of C Standard Library header files</a>
+<td colspan="2"> <a href="../header.htm" title="c/header">A list of C Standard Library header files</a>
 </td></tr>
 
 

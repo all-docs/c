@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/complex.html" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,7 +198,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>This macro expands to a type specifier used to identify <a href="../../language/arithmetic_types.html#Complex_floating_types" title="c/language/arithmetic types">complex types</a>.
+<p>This macro expands to a type specifier used to identify <a href="../../language/arithmetic_types.htm#Complex_floating_types" title="c/language/arithmetic types">complex types</a>.
 </p><p>A program may undefine and perhaps then redefine the <code>complex</code> macro.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/complex&amp;action=edit&amp;section=1" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -209,7 +209,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> print_complex<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> note, complex z<span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s&nbsp;%f%+f*i<span class="es1">\n</span>"</span>, note, <a href="creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%s&nbsp;%f%+f*i<span class="es1">\n</span>"</span>, note, <a href="./creal.htm"><span class="kw753">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw750">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -217,8 +217,8 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">double</span> complex z <span class="sy1">=</span> <span class="sy2">-</span><span class="nu16">1.0</span> <span class="sy2">+</span> <span class="nu16">2.0</span><span class="sy2">*</span>I<span class="sy4">;</span>
     print_complex<span class="br0">(</span><span class="st0">"z  ="</span>, z<span class="br0">)</span><span class="sy4">;</span>
     print_complex<span class="br0">(</span><span class="st0">"z<span class="es3">\u00B2</span> ="</span>, z <span class="sy2">*</span> z<span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">double</span> complex z2 <span class="sy1">=</span> <a href="ccos.htm"><span class="kw789">ccos</span></a><span class="br0">(</span><span class="nu16">2.0</span> <span class="sy2">*</span> <a href="carg.htm"><span class="kw756">carg</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="sy2">+</span> <a href="csin.htm"><span class="kw792">csin</span></a><span class="br0">(</span><span class="nu16">2.0</span> <span class="sy2">*</span> <a href="carg.htm"><span class="kw756">carg</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy2">*</span>I<span class="sy4">;</span>
-    print_complex<span class="br0">(</span><span class="st0">"z<span class="es3">\u00B2</span> ="</span>, <a href="cabs.htm"><span class="kw765">cabs</span></a><span class="br0">(</span>z<span class="br0">)</span> <span class="sy2">*</span> <a href="cabs.htm"><span class="kw765">cabs</span></a><span class="br0">(</span>z<span class="br0">)</span> <span class="sy2">*</span> z2<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> complex z2 <span class="sy1">=</span> <a href="./ccos.htm"><span class="kw789">ccos</span></a><span class="br0">(</span><span class="nu16">2.0</span> <span class="sy2">*</span> <a href="./carg.htm"><span class="kw756">carg</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="sy2">+</span> <a href="./csin.htm"><span class="kw792">csin</span></a><span class="br0">(</span><span class="nu16">2.0</span> <span class="sy2">*</span> <a href="./carg.htm"><span class="kw756">carg</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy2">*</span>I<span class="sy4">;</span>
+    print_complex<span class="br0">(</span><span class="st0">"z<span class="es3">\u00B2</span> ="</span>, <a href="./cabs.htm"><span class="kw765">cabs</span></a><span class="br0">(</span>z<span class="br0">)</span> <span class="sy2">*</span> <a href="./cabs.htm"><span class="kw765">cabs</span></a><span class="br0">(</span>z<span class="br0">)</span> <span class="sy2">*</span> z2<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -259,7 +259,7 @@ z² = -3.000000-4.000000*i</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="imaginary.htm" title="c/numeric/complex/imaginary"> <span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./imaginary.htm" title="c/numeric/complex/imaginary"> <span class="t-lines"><span>imaginary</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   imaginary type macro   <br> <span class="t-mark">(keyword macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_imaginary&amp;action=edit">[edit]</a></span>
 </td></tr>

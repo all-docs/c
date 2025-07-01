@@ -165,24 +165,24 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="memory_model.htm#Byte"><span class="tocnumber">1</span> <span class="toctext">Byte</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="memory_model.htm#Memory_location"><span class="tocnumber">2</span> <span class="toctext">Memory location</span></a></li>
-<li class="toclevel-1"><a href="memory_model.htm#Threads_and_data_races"><span class="tocnumber">3</span> <span class="toctext">Threads and data races</span></a></li>
-<li class="toclevel-1"><a href="memory_model.htm#Memory_order"><span class="tocnumber">4</span> <span class="toctext">Memory order</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="memory_model.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="memory_model.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./memory_model.htm#Byte"><span class="tocnumber">1</span> <span class="toctext">Byte</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./memory_model.htm#Memory_location"><span class="tocnumber">2</span> <span class="toctext">Memory location</span></a></li>
+<li class="toclevel-1"><a href="./memory_model.htm#Threads_and_data_races"><span class="tocnumber">3</span> <span class="toctext">Threads and data races</span></a></li>
+<li class="toclevel-1"><a href="./memory_model.htm#Memory_order"><span class="tocnumber">4</span> <span class="toctext">Memory order</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./memory_model.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./memory_model.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/memory_model&amp;action=edit&amp;section=1" title="Edit section: Byte">edit</a>]</span> <span class="mw-headline" id="Byte">Byte</span></h3>
-<p>A <i>byte</i> is the smallest addressable unit of memory. It is defined as a contiguous sequence of bits, large enough to hold any member of the <i>basic execution character set</i> (<a href="translation_phases.htm" title="c/language/translation phases">the 96 characters</a> that are required to be single-byte). C supports bytes of sizes 8 bits and greater.
-</p><p>The <a href="compatible_type.htm" title="c/language/types" class="mw-redirect">types</a> <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>, and <span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span> use one byte for both storage and <a href="object.htm" title="c/language/object">value representation</a>. The number of bits in a byte is accessible as <span class="t-lc"><a href="../types/limits.html" title="c/types/limits">CHAR_BIT</a></span>.
-</p><p>For use of bytes to representation values of other fundamental types (including big-endian and little-endian memory layouts), see <a href="object.htm#Object_representation" title="c/language/object">object representation</a>
+<p>A <i>byte</i> is the smallest addressable unit of memory. It is defined as a contiguous sequence of bits, large enough to hold any member of the <i>basic execution character set</i> (<a href="./translation_phases.htm" title="c/language/translation phases">the 96 characters</a> that are required to be single-byte). C supports bytes of sizes 8 bits and greater.
+</p><p>The <a href="./compatible_type.htm" title="c/language/types" class="mw-redirect">types</a> <span class="mw-geshi c source-c"><span class="kw4">char</span></span>, <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>, and <span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span></span> use one byte for both storage and <a href="./object.htm" title="c/language/object">value representation</a>. The number of bits in a byte is accessible as <span class="t-lc"><a href="../types/limits.htm" title="c/types/limits">CHAR_BIT</a></span>.
+</p><p>For use of bytes to representation values of other fundamental types (including big-endian and little-endian memory layouts), see <a href="./object.htm#Object_representation" title="c/language/object">object representation</a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/memory_model&amp;action=edit&amp;section=2" title="Edit section: Memory location">edit</a>]</span> <span class="mw-headline" id="Memory_location">Memory location</span></h3>
 <p>A <i>memory location</i> is
 </p>
-<ul><li> an object of <a href="compatible_type.htm#Type_groups" title="c/language/type">scalar type</a> (arithmetic type, pointer type, enumeration type)
-</li><li> or the largest contiguous sequence of <a href="bit_field.htm" title="c/language/bit field">bit-fields</a> of non-zero length
+<ul><li> an object of <a href="./compatible_type.htm#Type_groups" title="c/language/type">scalar type</a> (arithmetic type, pointer type, enumeration type)
+</li><li> or the largest contiguous sequence of <a href="./bit_field.htm" title="c/language/bit field">bit-fields</a> of non-zero length
 </li></ul>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> S
 <span class="br0">{</span>
@@ -199,19 +199,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
 <h3> <span class="mw-headline" id="Threads_and_data_races">Threads and data races</span></h3>
-<p>A thread of execution is a flow of control within a program that begins with the invocation of a top-level function by <span class="t-lc"><a href="../thread/thrd_create.html" title="c/thread/thrd create">thrd_create</a></span> or other means.
-</p><p>Any thread can potentially access any object in the program (objects with automatic and thread-local <a href="storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> may still be accessed by another thread through a pointer).
+<p>A thread of execution is a flow of control within a program that begins with the invocation of a top-level function by <span class="t-lc"><a href="../thread/thrd_create.htm" title="c/thread/thrd create">thrd_create</a></span> or other means.
+</p><p>Any thread can potentially access any object in the program (objects with automatic and thread-local <a href="./storage_class_specifiers.htm" title="c/language/storage duration">storage duration</a> may still be accessed by another thread through a pointer).
 </p><p>Different threads of execution are always allowed to access (read and modify) different <i>memory locations</i> concurrently, with no interference and no synchronization requirements. (note that it is not safe to concurrently update two non-atomic bit-fields in the same structure if all members declared between them are also (non-zero-length) bit-fields, no matter what the sizes of those intervening bit-fields happen to be)
-</p><p>When an <a href="eval_order.htm" title="c/language/eval order">evaluation</a> of an expression writes to a memory location and another evaluation reads or modifies the same memory location, the expressions are said to <i>conflict</i>. A program that has two conflicting evaluations has a <i>data race</i> unless either
+</p><p>When an <a href="./eval_order.htm" title="c/language/eval order">evaluation</a> of an expression writes to a memory location and another evaluation reads or modifies the same memory location, the expressions are said to <i>conflict</i>. A program that has two conflicting evaluations has a <i>data race</i> unless either
 </p>
-<ul><li> both conflicting evaluations are <a href="atomic.htm" title="c/language/atomic">atomic operations</a>
-</li><li> one of the conflicting evaluations <i>happens-before</i> another (see <span class="t-lc"><a href="../atomic/memory_order.html" title="c/atomic/memory order">memory_order</a></span>)
+<ul><li> both conflicting evaluations are <a href="./atomic.htm" title="c/language/atomic">atomic operations</a>
+</li><li> one of the conflicting evaluations <i>happens-before</i> another (see <span class="t-lc"><a href="../atomic/memory_order.htm" title="c/atomic/memory order">memory_order</a></span>)
 </li></ul>
 <p>If a data race occurs, the behavior of the program is undefined.
 </p>
-(in particular, <span class="t-lc"><a href="../thread/mtx_unlock.html" title="c/thread/mtx unlock">mtx_unlock</a></span> is <i>synchronized-with</i>, and therefore, <i>happens-before</i> <span class="t-lc"><a href="../thread/mtx_lock.html" title="c/thread/mtx lock">mtx_lock</a></span> of the same mutex by another thread, which makes it possible to use mutex locks to guard against data races) <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: small example or two </td></tr></tbody></table>
+(in particular, <span class="t-lc"><a href="../thread/mtx_unlock.htm" title="c/thread/mtx unlock">mtx_unlock</a></span> is <i>synchronized-with</i>, and therefore, <i>happens-before</i> <span class="t-lc"><a href="../thread/mtx_lock.htm" title="c/thread/mtx lock">mtx_lock</a></span> of the same mutex by another thread, which makes it possible to use mutex locks to guard against data races) <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: small example or two </td></tr></tbody></table>
 <h3> <span class="mw-headline" id="Memory_order">Memory order</span></h3>
-<p>When a thread reads a value from a memory location, it may see the initial value, the value written in the same thread, or the value written in another thread. See <span class="t-lc"><a href="../atomic/memory_order.html" title="c/atomic/memory order">memory_order</a></span> for details on the order in which writes made from threads become visible to other threads.
+<p>When a thread reads a value from a memory location, it may see the initial value, the value written in the same thread, or the value written in another thread. See <span class="t-lc"><a href="../atomic/memory_order.htm" title="c/atomic/memory order">memory_order</a></span> for details on the order in which writes made from threads become visible to other threads.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>

@@ -188,19 +188,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="conditional.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="conditional.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="conditional.htm#Conditional_evaluation"><span class="tocnumber">3</span> <span class="toctext">Conditional evaluation</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./conditional.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./conditional.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./conditional.htm#Conditional_evaluation"><span class="tocnumber">3</span> <span class="toctext">Conditional evaluation</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="conditional.htm#.23if.2C_.23elif"><span class="tocnumber">3.1</span> <span class="toctext"><span><span>#if, #elif</span></span></span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="conditional.htm#Combined_directives"><span class="tocnumber">3.2</span> <span class="toctext">Combined directives</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="./conditional.htm#.23if.2C_.23elif"><span class="tocnumber">3.1</span> <span class="toctext"><span><span>#if, #elif</span></span></span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="./conditional.htm#Combined_directives"><span class="tocnumber">3.2</span> <span class="toctext">Combined directives</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-6"><a href="conditional.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="conditional.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="conditional.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="conditional.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-10"><a href="conditional.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./conditional.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./conditional.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./conditional.htm#Defect_reports"><span class="tocnumber">6</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="./conditional.htm#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="./conditional.htm#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -320,15 +320,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=3" title="Edit section: Conditional evaluation">edit</a>]</span> <span class="mw-headline" id="Conditional_evaluation">Conditional evaluation</span></h3>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=4" title="Edit section: #if, #elif">edit</a>]</span> <span class="mw-headline" id=".23if.2C_.23elif"><span class="mw-geshi c source-c"><span class="co2">#if, #elif</span></span></span></h4>
-<p>The <span class="t-spar">expression</span> is a constant expression, using only <a href="../language/operators.html#Constants_and_literals" title="c/language/expressions">constants</a> and identifiers, defined using <a href="replace.htm" title="c/preprocessor/replace"><tt>
-#define</tt></a> directive. Any identifier, which is not literal, non defined using <a href="replace.htm" title="c/preprocessor/replace"><tt>
+<p>The <span class="t-spar">expression</span> is a constant expression, using only <a href="../language/operators.htm#Constants_and_literals" title="c/language/expressions">constants</a> and identifiers, defined using <a href="./replace.htm" title="c/preprocessor/replace"><tt>
+#define</tt></a> directive. Any identifier, which is not literal, non defined using <a href="./replace.htm" title="c/preprocessor/replace"><tt>
 #define</tt></a> directive, evaluates to <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> <span class="t-rev-inl t-since-c23"><span>except <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> which evaluates to <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>.
-</p><p>The expression may contain unary operators in form <code>defined</code>&nbsp;<span class="t-spar">identifier</span> or  <code>defined (</code><span class="t-spar">identifier</span><code>)</code> which return <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if the <span class="t-spar">identifier</span> was defined using <a href="replace.htm" title="c/preprocessor/replace"><tt>
+</p><p>The expression may contain unary operators in form <code>defined</code>&nbsp;<span class="t-spar">identifier</span> or  <code>defined (</code><span class="t-spar">identifier</span><code>)</code> which return <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> if the <span class="t-spar">identifier</span> was defined using <a href="./replace.htm" title="c/preprocessor/replace"><tt>
 #define</tt></a> directive and <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> otherwise. <span class="t-rev-inl t-since-c23"><span>In this context, <span class="t-c"><span class="mw-geshi c source-c">__has_include</span></span>, <span class="t-c"><span class="mw-geshi c source-c">__has_embed</span></span> and <span class="t-c"><span class="mw-geshi c source-c">__has_c_attribute</span></span> are treated as if they were the name of defined macros.</span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span> If the <span class="t-spar">expression</span> evaluates to nonzero value, the controlled code block is included and skipped otherwise. If any used identifier is not a constant, it is replaced with <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span>.
 </p>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c23"><td>
-<p>In context of a preprocessor directive, a <code>__has_c_attribute</code> expression detects whether a given attribute token is supported and its supported version. See <a href="../language/attributes.html#Attribute_testing" title="c/language/attributes">Attribute testing</a>.
+<p>In context of a preprocessor directive, a <code>__has_c_attribute</code> expression detects whether a given attribute token is supported and its supported version. See <a href="../language/attributes.htm#Attribute_testing" title="c/language/attributes">Attribute testing</a>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
@@ -336,7 +336,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>Note: Until <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/dr_412.htm">DR 412</a>, <code>#if <i>cond1</i></code> ... <code>#elif <i>cond2</i></code> is different from <code>#if <i>cond1</i></code> ... <code>#else</code> followed by <code>#if <i>cond3</i></code> because if <code><i>cond1</i></code> is true, the second <code>#if</code> is skipped and <code><i>cond3</i></code> does not need to be well-formed, while <code>#elif</code>'s <code><i>cond2</i></code> must be a valid expression. As of <a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/dr_412.htm">DR 412</a>, <code>#elif</code> that leads the skipped code block is also skipped.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/preprocessor/conditional&amp;action=edit&amp;section=5" title="Edit section: Combined directives">edit</a>]</span> <span class="mw-headline" id="Combined_directives">Combined directives</span></h4>
-<p>Checks if the identifier was <a href="replace.htm" title="c/preprocessor/replace">defined as a macro name</a>.
+<p>Checks if the identifier was <a href="./replace.htm" title="c/preprocessor/replace">defined as a macro name</a>.
 </p><p><code>#ifdef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if defined</code>&nbsp;<span class="t-spar">identifier</span>.
 </p><p><code>#ifndef</code>&nbsp;<span class="t-spar">identifier</span> is essentially equivalent to <code>#if&nbsp;!defined</code>&nbsp;<span class="t-spar">identifier</span>.
 </p>
@@ -360,32 +360,32 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
 &nbsp;
 <span class="co2">#ifdef ABCD</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: no<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"1: no<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 &nbsp;
 <span class="co2">#ifndef ABCD</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elif ABCD == 2</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"2: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 &nbsp;
 <span class="co2">#if&nbsp;!defined(DCBA) &amp;&amp; (ABCD &lt; 2 * 4 - 3)</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"3: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"3: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 &nbsp;
 <span class="co1">// C23 directives #elifdef/#elifndef</span>
 <span class="co2">#ifdef CPU</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no1<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elifdef GPU</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no2<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#elifndef RAM</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// selected in C23 mode, may be selected in pre-C23 mode</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: yes<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// selected in C23 mode, may be selected in pre-C23 mode</span>
 <span class="co2">#else</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no3<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// may be selected in pre-C23 mode</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"4: no3<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// may be selected in pre-C23 mode</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:

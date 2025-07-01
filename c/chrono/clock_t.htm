@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/time.html" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/time.htm" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -209,15 +209,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">volatile</span> <span class="kw4">double</span> sink<span class="sy4">;</span>
 <span class="kw4">int</span> main <span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-  clock_t start <span class="sy1">=</span> <a href="clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  clock_t start <span class="sy1">=</span> <a href="./clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-  <span class="kw1">for</span><span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i<span class="sy1">&lt;</span><span class="nu0">3141592</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-      sink<span class="sy2">+</span><span class="sy1">=</span><a href="../numeric/math/sin.html"><span class="kw668">sin</span></a><span class="br0">(</span>i<span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw1">for</span><span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> i<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span> i<span class="sy1">&lt;</span><span class="nu0">3141592</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+      sink<span class="sy2">+</span><span class="sy1">=</span><a href="../numeric/math/sin.htm"><span class="kw668">sin</span></a><span class="br0">(</span>i<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-  clock_t end <span class="sy1">=</span> <a href="clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-  <span class="kw4">double</span> cpu_time_used <span class="sy1">=</span> <span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="br0">(</span>end <span class="sy2">-</span> start<span class="br0">)</span><span class="br0">)</span> <span class="sy2">/</span> <a href="CLOCKS_PER_SEC.htm"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="sy4">;</span>
+  clock_t end <span class="sy1">=</span> <a href="./clock.htm"><span class="kw514">clock</span></a><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+  <span class="kw4">double</span> cpu_time_used <span class="sy1">=</span> <span class="br0">(</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="br0">(</span>end <span class="sy2">-</span> start<span class="br0">)</span><span class="br0">)</span> <span class="sy2">/</span> <a href="./CLOCKS_PER_SEC.htm"><span class="kw522">CLOCKS_PER_SEC</span></a><span class="sy4">;</span>
 &nbsp;
-  <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"for loop took&nbsp;%f seconds to execute <span class="es1">\n</span>"</span>, cpu_time_used<span class="br0">)</span><span class="sy4">;</span>
+  <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"for loop took&nbsp;%f seconds to execute <span class="es1">\n</span>"</span>, cpu_time_used<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -256,13 +256,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="clock.htm" title="c/chrono/clock"> <span class="t-lines"><span>clock</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./clock.htm" title="c/chrono/clock"> <span class="t-lines"><span>clock</span></span></a></div></div>
 </td>
 <td>   returns raw processor clock time since the program is started <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_clock&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="CLOCKS_PER_SEC.htm" title="c/chrono/CLOCKS PER SEC"> <span class="t-lines"><span>CLOCKS_PER_SEC</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./CLOCKS_PER_SEC.htm" title="c/chrono/CLOCKS PER SEC"> <span class="t-lines"><span>CLOCKS_PER_SEC</span></span></a></div></div>
 </td>
 <td>   number of processor clock ticks per second <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_CLOCKS_PER_SEC&amp;action=edit">[edit]</a></span>
 </td></tr>

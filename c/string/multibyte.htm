@@ -163,19 +163,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>A null-terminated multibyte string (NTMBS), or "multibyte string", is a sequence of nonzero bytes followed by a byte with value zero (the terminating null character).
 </p><p>Each character stored in the string may occupy more than one byte. The encoding used to represent characters in a multibyte character string is locale-specific: it may be UTF-8, GB18030, EUC-JP, Shift-JIS, etc. For example, the char array <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">{</span><span class="st0">'<span class="es2">\xe4</span>'</span>,<span class="st0">'<span class="es2">\xbd</span>'</span>,<span class="st0">'<span class="es2">\xa0</span>'</span>,<span class="st0">'<span class="es2">\xe5</span>'</span>,<span class="st0">'<span class="es2">\xa5</span>'</span>,<span class="st0">'<span class="es2">\xbd</span>'</span>,<span class="st0">'<span class="es5">\0</span>'</span><span class="br0">}</span></span></span> is an NTMBS holding the string <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"你好"</span></span></span> in UTF-8 multibyte encoding: the first three bytes encode the character 你, the next three bytes encode the character 好. The same string encoded in GB18030 is the char array <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">{</span><span class="st0">'<span class="es2">\xc4</span>'</span>, <span class="st0">'<span class="es2">\xe3</span>'</span>, <span class="st0">'<span class="es2">\xba</span>'</span>, <span class="st0">'<span class="es2">\xc3</span>'</span>, <span class="st0">'<span class="es5">\0</span>'</span><span class="br0">}</span></span></span>, where each of the two characters is encoded as a two-byte sequence.
 </p><p>In some multibyte encodings, any given multibyte character sequence may represent different characters depending on the previous byte sequences, known as "shift sequences". Such encodings are known as state-dependent: knowledge of the current shift state is required to interpret each character. An NTMBS is only valid if it begins and ends in the initial shift state: if a shift sequence was used, the corresponding unshift sequence has to be present before the terminating null character. Examples of such encodings are BOCU-1 and <a rel="nofollow" class="external text" href="https://www.unicode.org/reports/tr6">SCSU</a>.
-</p><p>A multibyte character string is layout-compatible with <a href="byte.htm" title="c/string/byte">null-terminated byte string</a> (NTBS), that is, can be stored, copied, and examined using the same facilities, except for calculating the number of characters. If the correct locale is in effect, I/O functions also handle multibyte strings. Multibyte strings can be converted to and from wide strings using the following locale-dependent conversion functions:
+</p><p>A multibyte character string is layout-compatible with <a href="./byte.htm" title="c/string/byte">null-terminated byte string</a> (NTBS), that is, can be stored, copied, and examined using the same facilities, except for calculating the number of characters. If the correct locale is in effect, I/O functions also handle multibyte strings. Multibyte strings can be converted to and from wide strings using the following locale-dependent conversion functions:
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="multibyte.htm#Functions"><span class="tocnumber">1</span> <span class="toctext">Functions</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./multibyte.htm#Functions"><span class="tocnumber">1</span> <span class="toctext">Functions</span></a>
 <ul>
-<li class="toclevel-2"><a href="multibyte.htm#Multibyte.2Fwide_character_conversions"><span class="tocnumber">1.1</span> <span class="toctext">Multibyte/wide character conversions</span></a></li>
+<li class="toclevel-2"><a href="./multibyte.htm#Multibyte.2Fwide_character_conversions"><span class="tocnumber">1.1</span> <span class="toctext">Multibyte/wide character conversions</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-2"><a href="multibyte.htm#Types"><span class="tocnumber">2</span> <span class="toctext">Types</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="multibyte.htm#Macros"><span class="tocnumber">3</span> <span class="toctext">Macros</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="multibyte.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="multibyte.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./multibyte.htm#Types"><span class="tocnumber">2</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./multibyte.htm#Macros"><span class="tocnumber">3</span> <span class="toctext">Macros</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./multibyte.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./multibyte.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/multibyte&amp;action=edit&amp;section=1" title="Edit section: Functions">edit</a>]</span> <span class="mw-headline" id="Functions">Functions</span></h3>
@@ -186,127 +186,127 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mblen.htm" title="c/string/multibyte/mblen"> <span class="t-lines"><span>mblen</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mblen.htm" title="c/string/multibyte/mblen"> <span class="t-lines"><span>mblen</span></span></a></div></div>
 </td>
 <td>   returns the number of bytes in the next multibyte character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mblen&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbtowc.htm" title="c/string/multibyte/mbtowc"> <span class="t-lines"><span>mbtowc</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbtowc.htm" title="c/string/multibyte/mbtowc"> <span class="t-lines"><span>mbtowc</span></span></a></div></div>
 </td>
 <td>   converts the next multibyte character to wide character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbtowc&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/wctomb.htm" title="c/string/multibyte/wctomb"> <span class="t-lines"><span>wctomb</span><span>wctomb_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/wctomb.htm" title="c/string/multibyte/wctomb"> <span class="t-lines"><span>wctomb</span><span>wctomb_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a wide character to its multibyte representation <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wctomb&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbstowcs.htm" title="c/string/multibyte/mbstowcs"> <span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbstowcs.htm" title="c/string/multibyte/mbstowcs"> <span class="t-lines"><span>mbstowcs</span><span>mbstowcs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a narrow multibyte character string to wide string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbstowcs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/wcstombs.htm" title="c/string/multibyte/wcstombs"> <span class="t-lines"><span>wcstombs</span><span>wcstombs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/wcstombs.htm" title="c/string/multibyte/wcstombs"> <span class="t-lines"><span>wcstombs</span><span>wcstombs_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a wide string to narrow multibyte character string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wcstombs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbsinit.htm" title="c/string/multibyte/mbsinit"> <span class="t-lines"><span>mbsinit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbsinit.htm" title="c/string/multibyte/mbsinit"> <span class="t-lines"><span>mbsinit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   checks if the mbstate_t object represents initial shift state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbsinit&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/btowc.htm" title="c/string/multibyte/btowc"> <span class="t-lines"><span>btowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/btowc.htm" title="c/string/multibyte/btowc"> <span class="t-lines"><span>btowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   widens a single-byte narrow character to wide character, if possible <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_btowc&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/wctob.htm" title="c/string/multibyte/wctob"> <span class="t-lines"><span>wctob</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/wctob.htm" title="c/string/multibyte/wctob"> <span class="t-lines"><span>wctob</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   narrows a wide character to a single-byte narrow character, if possible <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wctob&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbrlen.htm" title="c/string/multibyte/mbrlen"> <span class="t-lines"><span>mbrlen</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbrlen.htm" title="c/string/multibyte/mbrlen"> <span class="t-lines"><span>mbrlen</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   returns the number of bytes in the next multibyte character, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrlen&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbrtowc.htm" title="c/string/multibyte/mbrtowc"> <span class="t-lines"><span>mbrtowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbrtowc.htm" title="c/string/multibyte/mbrtowc"> <span class="t-lines"><span>mbrtowc</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   converts the next multibyte character to wide character, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtowc&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/wcrtomb.htm" title="c/string/multibyte/wcrtomb"> <span class="t-lines"><span>wcrtomb</span><span>wcrtomb_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/wcrtomb.htm" title="c/string/multibyte/wcrtomb"> <span class="t-lines"><span>wcrtomb</span><span>wcrtomb_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a wide character to its multibyte representation, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wcrtomb&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbsrtowcs.htm" title="c/string/multibyte/mbsrtowcs"> <span class="t-lines"><span>mbsrtowcs</span><span>mbsrtowcs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbsrtowcs.htm" title="c/string/multibyte/mbsrtowcs"> <span class="t-lines"><span>mbsrtowcs</span><span>mbsrtowcs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a narrow multibyte character string to wide string, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbsrtowcs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/wcsrtombs.htm" title="c/string/multibyte/wcsrtombs"> <span class="t-lines"><span>wcsrtombs</span><span>wcsrtombs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/wcsrtombs.htm" title="c/string/multibyte/wcsrtombs"> <span class="t-lines"><span>wcsrtombs</span><span>wcsrtombs_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts a wide string to narrow multibyte character string, given state <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_wcsrtombs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbrtoc8.htm" title="c/string/multibyte/mbrtoc8"> <span class="t-lines"><span>mbrtoc8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbrtoc8.htm" title="c/string/multibyte/mbrtoc8"> <span class="t-lines"><span>mbrtoc8</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td>   converts a narrow multibyte character to UTF-8 encoding  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtoc8&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/c8rtomb.htm" title="c/string/multibyte/c8rtomb"> <span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/c8rtomb.htm" title="c/string/multibyte/c8rtomb"> <span class="t-lines"><span>c8rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td>   converts UTF-8 string to narrow multibyte encoding  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_c8rtomb&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbrtoc16.htm" title="c/string/multibyte/mbrtoc16"> <span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbrtoc16.htm" title="c/string/multibyte/mbrtoc16"> <span class="t-lines"><span>mbrtoc16</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  converts a narrow multibyte character to UTF-16 encoding  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtoc16&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/c16rtomb.htm" title="c/string/multibyte/c16rtomb"> <span class="t-lines"><span>c16rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/c16rtomb.htm" title="c/string/multibyte/c16rtomb"> <span class="t-lines"><span>c16rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  converts a UTF-16 character to narrow multibyte encoding <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_c16rtomb&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbrtoc32.htm" title="c/string/multibyte/mbrtoc32"> <span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbrtoc32.htm" title="c/string/multibyte/mbrtoc32"> <span class="t-lines"><span>mbrtoc32</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  converts a narrow multibyte character to UTF-32 encoding <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbrtoc32&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/c32rtomb.htm" title="c/string/multibyte/c32rtomb"> <span class="t-lines"><span>c32rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/c32rtomb.htm" title="c/string/multibyte/c32rtomb"> <span class="t-lines"><span>c32rtomb</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  converts a UTF-32 character to narrow multibyte encoding <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_c32rtomb&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -315,37 +315,37 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/mbstate_t.htm" title="c/string/multibyte/mbstate t"> <span class="t-lines"><span>mbstate_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/mbstate_t.htm" title="c/string/multibyte/mbstate t"> <span class="t-lines"><span>mbstate_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span></span></div></div>
 </td>
 <td>   conversion state information necessary to iterate multibyte character strings <br> <span class="t-mark">(class)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_mbstate_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.html" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/uchar.htm" title="c/header/uchar"><tt>&lt;uchar.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/char8_t.htm" title="c/string/multibyte/char8 t"> <span class="t-lines"><span>char8_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/char8_t.htm" title="c/string/multibyte/char8 t"> <span class="t-lines"><span>char8_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c23">(C23)</span></span></span></div></div>
 </td>
 <td>   8-bit character type <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_char8_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/char16_t.htm" title="c/string/multibyte/char16 t"> <span class="t-lines"><span>char16_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/char16_t.htm" title="c/string/multibyte/char16 t"> <span class="t-lines"><span>char16_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   16-bit character type  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_char16_t&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="multibyte/char32_t.htm" title="c/string/multibyte/char32 t"> <span class="t-lines"><span>char32_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./multibyte/char32_t.htm" title="c/string/multibyte/char32 t"> <span class="t-lines"><span>char32_t</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   32-bit character type  <br> <span class="t-mark">(typedef)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/multibyte/dsc_char32_t&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -354,7 +354,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/limits.html" title="c/header/limits"><tt>&lt;limits.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/limits.htm" title="c/header/limits"><tt>&lt;limits.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">
@@ -364,7 +364,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc-header">
-<td colspan="2"> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code> </div>
+<td colspan="2"> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code> </div>
 </td></tr>
 
 <tr class="t-dsc">

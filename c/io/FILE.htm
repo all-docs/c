@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -180,33 +180,33 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="FILE.htm#Stream_state"><span class="tocnumber">1</span> <span class="toctext">Stream state</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./FILE.htm#Stream_state"><span class="tocnumber">1</span> <span class="toctext">Stream state</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="FILE.htm#Narrow_and_wide_orientation"><span class="tocnumber">1.1</span> <span class="toctext">Narrow and wide orientation</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="FILE.htm#Binary_and_text_modes"><span class="tocnumber">1.2</span> <span class="toctext">Binary and text modes</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="./FILE.htm#Narrow_and_wide_orientation"><span class="tocnumber">1.1</span> <span class="toctext">Narrow and wide orientation</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="./FILE.htm#Binary_and_text_modes"><span class="tocnumber">1.2</span> <span class="toctext">Binary and text modes</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-4"><a href="FILE.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="FILE.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="FILE.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./FILE.htm#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./FILE.htm#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./FILE.htm#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/FILE&amp;action=edit&amp;section=1" title="Edit section: Stream state">edit</a>]</span> <span class="mw-headline" id="Stream_state">Stream state</span></h3>
 <p>Besides the system-specific information necessary to access the device (<i>e.g.,</i> a POSIX file descriptor), each <code>FILE</code> object directly or indirectly holds the following:
 </p>
 <ol><li> <span class="t-mark-rev t-since-c95">(C95)</span> Character width: unset, narrow, or wide.
-</li><li> <span class="t-mark-rev t-since-c95">(C95)</span> Parse state for conversions between multibyte and wide characters (an object of type <span class="t-lc"><a href="../string/multibyte/mbstate_t.html" title="c/string/multibyte/mbstate t">mbstate_t</a></span>)
+</li><li> <span class="t-mark-rev t-since-c95">(C95)</span> Parse state for conversions between multibyte and wide characters (an object of type <span class="t-lc"><a href="../string/multibyte/mbstate_t.htm" title="c/string/multibyte/mbstate t">mbstate_t</a></span>)
 </li><li> Buffering state: unbuffered, line-buffered, fully buffered.
 </li><li> The buffer, which may be replaced by an external, user-provided buffer.
 </li><li> I/O mode: input, output, or update (both input and output).
 </li><li> Binary/text mode indicator.
 </li><li> End-of-file status indicator.
 </li><li> Error status indicator.
-</li><li> File position indicator, accessible as an object of type <span class="t-lc"><a href="fpos_t.htm" title="c/io/fpos t">fpos_t</a></span>, which, for wide streams, includes parse state.
+</li><li> File position indicator, accessible as an object of type <span class="t-lc"><a href="./fpos_t.htm" title="c/io/fpos t">fpos_t</a></span>, which, for wide streams, includes parse state.
 </li><li> <span class="t-mark-rev t-since-c11">(C11)</span> Reentrant lock used to prevent data races when multiple threads read, write, position, or query the position of a stream.
 </li></ol>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/FILE&amp;action=edit&amp;section=2" title="Edit section: Narrow and wide orientation">edit</a>]</span> <span class="mw-headline" id="Narrow_and_wide_orientation">Narrow and wide orientation</span></h4>
-<p>A newly opened stream has no orientation. The first call to <span class="t-lc">fwide</span> or to any I/O function establishes the orientation: a wide I/O function makes the stream wide-oriented; a narrow I/O function makes the stream narrow-oriented. Once set, the orientation can be changed with only <span class="t-lc"><a href="freopen.htm" title="c/io/freopen">freopen</a></span>. Narrow I/O functions cannot be called on a wide-oriented stream; wide I/O functions cannot be called on a narrow-oriented stream. Wide I/O functions convert between wide and multibyte characters as if by calling <span class="t-lc"><a href="../string/multibyte/mbrtowc.html" title="c/string/multibyte/mbrtowc">mbrtowc</a></span> or <span class="t-lc"><a href="../string/multibyte/wcrtomb.html" title="c/string/multibyte/wcrtomb">wcrtomb</a></span> with the conversion state as described by the stream. Unlike the multibyte character strings that are valid in a program, multibyte character sequences in the file may contain embedded nulls and do not have to begin or end in the initial shift state.
+<p>A newly opened stream has no orientation. The first call to <span class="t-lc">fwide</span> or to any I/O function establishes the orientation: a wide I/O function makes the stream wide-oriented; a narrow I/O function makes the stream narrow-oriented. Once set, the orientation can be changed with only <span class="t-lc"><a href="./freopen.htm" title="c/io/freopen">freopen</a></span>. Narrow I/O functions cannot be called on a wide-oriented stream; wide I/O functions cannot be called on a narrow-oriented stream. Wide I/O functions convert between wide and multibyte characters as if by calling <span class="t-lc"><a href="../string/multibyte/mbrtowc.htm" title="c/string/multibyte/mbrtowc">mbrtowc</a></span> or <span class="t-lc"><a href="../string/multibyte/wcrtomb.htm" title="c/string/multibyte/wcrtomb">wcrtomb</a></span> with the conversion state as described by the stream. Unlike the multibyte character strings that are valid in a program, multibyte character sequences in the file may contain embedded nulls and do not have to begin or end in the initial shift state.
 </p><p>The conversion state of a stream with wide orientation is established by the C locale that is installed at the time the stream's orientation is set.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/FILE&amp;action=edit&amp;section=3" title="Edit section: Binary and text modes">edit</a>]</span> <span class="mw-headline" id="Binary_and_text_modes">Binary and text modes</span></h4>
@@ -220,7 +220,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>A <i>binary stream</i> is an ordered sequence of characters that can transparently record internal data. Data read in from a binary stream always equal the data that were earlier written out to that stream, except that an implementation is allowed to append an indeterminate number of null characters to the end of the stream. A wide binary stream doesn't need to end in the initial shift state.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/FILE&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>POSIX explicitly requires that the <code>LC_CTYPE</code> facet of the currently installed C locale be stored within the <code>FILE</code> object the moment the stream's orientation becomes wide; POSIX requires that this <code>LC_CTYPE</code> facet be used for all future I/O on this stream until the orientation is changed, regardless of any subsequent call to <span class="t-lc"><a href="../locale/setlocale.html" title="c/locale/setlocale">setlocale</a></span>.
+<p>POSIX explicitly requires that the <code>LC_CTYPE</code> facet of the currently installed C locale be stored within the <code>FILE</code> object the moment the stream's orientation becomes wide; POSIX requires that this <code>LC_CTYPE</code> facet be used for all future I/O on this stream until the orientation is changed, regardless of any subsequent call to <span class="t-lc"><a href="../locale/setlocale.htm" title="c/locale/setlocale">setlocale</a></span>.
 </p><p>It is intended that each line of text be composed of data that are essentially human-readable. POSIX implementations do not distinguish between text and binary streams (there is no special mapping for <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span></span> or any other characters).
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/FILE&amp;action=edit&amp;section=5" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
@@ -265,7 +265,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="std_streams.htm" title="c/io/std streams"> <span class="t-lines"><span>stdin</span><span>stdout</span><span>stderr</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./std_streams.htm" title="c/io/std streams"> <span class="t-lines"><span>stdin</span><span>stdout</span><span>stderr</span></span></a></div></div>
 </td>
 <td>  expression of type <span class="mw-geshi c source-c">FILE<span class="sy2">*</span></span> associated with the input stream<br>expression of type <span class="mw-geshi c source-c">FILE<span class="sy2">*</span></span> associated with the output stream<br>expression of type <span class="mw-geshi c source-c">FILE<span class="sy2">*</span></span> associated with the error output stream <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_std_streams&amp;action=edit">[edit]</a></span>
 </td></tr>

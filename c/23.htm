@@ -170,92 +170,92 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="23.htm#New_language_features"><span class="tocnumber">1</span> <span class="toctext">New language features</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./23.htm#New_language_features"><span class="tocnumber">1</span> <span class="toctext">New language features</span></a>
 <ul>
-<li class="toclevel-2 tocsection-2"><a href="23.htm#Feature_test_macros_for_optional_features"><span class="tocnumber">1.1</span> <span class="toctext">Feature test macros for optional features</span></a></li>
+<li class="toclevel-2 tocsection-2"><a href="./23.htm#Feature_test_macros_for_optional_features"><span class="tocnumber">1.1</span> <span class="toctext">Feature test macros for optional features</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-3"><a href="23.htm#New_library_features"><span class="tocnumber">2</span> <span class="toctext">New library features</span></a>
+<li class="toclevel-1 tocsection-3"><a href="./23.htm#New_library_features"><span class="tocnumber">2</span> <span class="toctext">New library features</span></a>
 <ul>
-<li class="toclevel-2 tocsection-4"><a href="23.htm#New_headers"><span class="tocnumber">2.1</span> <span class="toctext">New headers</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="23.htm#Library_features"><span class="tocnumber">2.2</span> <span class="toctext">Library features</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="./23.htm#New_headers"><span class="tocnumber">2.1</span> <span class="toctext">New headers</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="./23.htm#Library_features"><span class="tocnumber">2.2</span> <span class="toctext">Library features</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-6"><a href="23.htm#Obsolete_features"><span class="tocnumber">3</span> <span class="toctext">Obsolete features</span></a>
+<li class="toclevel-1 tocsection-6"><a href="./23.htm#Obsolete_features"><span class="tocnumber">3</span> <span class="toctext">Obsolete features</span></a>
 <ul>
-<li class="toclevel-2 tocsection-7"><a href="23.htm#Removed_features"><span class="tocnumber">3.1</span> <span class="toctext">Removed features</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="23.htm#Deprecated_features"><span class="tocnumber">3.2</span> <span class="toctext">Deprecated features</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="./23.htm#Removed_features"><span class="tocnumber">3.1</span> <span class="toctext">Removed features</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="./23.htm#Deprecated_features"><span class="tocnumber">3.2</span> <span class="toctext">Deprecated features</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-9"><a href="23.htm#Defect_reports"><span class="tocnumber">4</span> <span class="toctext">Defect reports</span></a></li>
-<li class="toclevel-1 tocsection-10"><a href="23.htm#Compiler_support"><span class="tocnumber">5</span> <span class="toctext">Compiler support</span></a>
+<li class="toclevel-1 tocsection-9"><a href="./23.htm#Defect_reports"><span class="tocnumber">4</span> <span class="toctext">Defect reports</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="./23.htm#Compiler_support"><span class="tocnumber">5</span> <span class="toctext">Compiler support</span></a>
 <ul>
-<li class="toclevel-2"><a href="23.htm#C23_core_language_features"><span class="tocnumber">5.1</span> <span class="toctext">C23 core language features</span></a></li>
-<li class="toclevel-2"><a href="23.htm#C23_library_features"><span class="tocnumber">5.2</span> <span class="toctext">C23 library features</span></a></li>
+<li class="toclevel-2"><a href="./23.htm#C23_core_language_features"><span class="tocnumber">5.1</span> <span class="toctext">C23 core language features</span></a></li>
+<li class="toclevel-2"><a href="./23.htm#C23_library_features"><span class="tocnumber">5.2</span> <span class="toctext">C23 library features</span></a></li>
 </ul>
 </li>
 </ul>
 </td></tr></tbody></table>
 <h2><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=1" title="Edit section: New language features">edit</a>]</span> <span class="mw-headline" id="New_language_features">New language features</span></h2>
-<ul><li> <a href="language/arithmetic_types.htm" title="c/language/arithmetic types">Decimal floating-point types</a> (<a href="keyword/_Decimal32.htm" title="c/keyword/ Decimal32"><tt>_Decimal32</tt></a>, <a href="keyword/_Decimal64.htm" title="c/keyword/ Decimal64"><tt>_Decimal64</tt></a>, and <a href="keyword/_Decimal128.htm" title="c/keyword/ Decimal128"><tt>_Decimal128</tt></a>)
-</li><li> <a href="language/arithmetic_types.htm" title="c/language/arithmetic types">Bit-precise integers</a> (<a href="https://en.cppreference.com/mwiki/index.php?title=c/keyword/_BitInt&amp;action=edit&amp;redlink=1" class="new" title="c/keyword/ BitInt（页面不存在）"><tt>_BitInt</tt></a>)
-</li><li> <a href="language/integer_constant.htm" title="c/language/integer constant">Binary integer constants</a>
-</li><li> <a href="language/character_constant.htm" title="c/language/character constant"><code>u8</code> character constants</a>
-</li><li> Type change of <a href="language/string_literal.htm" title="c/language/string literal"><code>u8</code> string literals</a>
+<ul><li> <a href="./language/arithmetic_types.htm" title="c/language/arithmetic types">Decimal floating-point types</a> (<a href="./keyword/_Decimal32.htm" title="c/keyword/ Decimal32"><tt>_Decimal32</tt></a>, <a href="./keyword/_Decimal64.htm" title="c/keyword/ Decimal64"><tt>_Decimal64</tt></a>, and <a href="./keyword/_Decimal128.htm" title="c/keyword/ Decimal128"><tt>_Decimal128</tt></a>)
+</li><li> <a href="./language/arithmetic_types.htm" title="c/language/arithmetic types">Bit-precise integers</a> (<a href="https://en.cppreference.com/mwiki/index.php?title=c/keyword/_BitInt&amp;action=edit&amp;redlink=1" class="new" title="c/keyword/ BitInt（页面不存在）"><tt>_BitInt</tt></a>)
+</li><li> <a href="./language/integer_constant.htm" title="c/language/integer constant">Binary integer constants</a>
+</li><li> <a href="./language/character_constant.htm" title="c/language/character constant"><code>u8</code> character constants</a>
+</li><li> Type change of <a href="./language/string_literal.htm" title="c/language/string literal"><code>u8</code> string literals</a>
 </li><li> Digit separator <code>'</code>
-</li><li> Empty <a href="language/initialization.htm" title="c/language/initialization">initializer</a> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">=</span><span class="br0">{</span><span class="br0">}</span></span></span>
-</li><li> <a href="language/attributes.htm" title="c/language/attributes">Attributes</a>
-<ul><li> <code>[[<a href="language/attributes/deprecated.htm" title="c/language/attributes/deprecated">deprecated</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/fallthrough.htm" title="c/language/attributes/fallthrough">fallthrough</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/noreturn.htm" title="c/language/attributes/noreturn">noreturn</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/reproducible.htm" title="c/language/attributes/reproducible" class="mw-redirect">reproducible</a>]]</code>
-</li><li> <code>[[<a href="language/attributes/reproducible.htm" title="c/language/attributes/unsequenced">unsequenced</a>]]</code>
+</li><li> Empty <a href="./language/initialization.htm" title="c/language/initialization">initializer</a> <span class="t-c"><span class="mw-geshi c source-c"><span class="sy1">=</span><span class="br0">{</span><span class="br0">}</span></span></span>
+</li><li> <a href="./language/attributes.htm" title="c/language/attributes">Attributes</a>
+<ul><li> <code>[[<a href="./language/attributes/deprecated.htm" title="c/language/attributes/deprecated">deprecated</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/fallthrough.htm" title="c/language/attributes/fallthrough">fallthrough</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/noreturn.htm" title="c/language/attributes/noreturn">noreturn</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/reproducible.htm" title="c/language/attributes/reproducible" class="mw-redirect">reproducible</a>]]</code>
+</li><li> <code>[[<a href="./language/attributes/reproducible.htm" title="c/language/attributes/unsequenced">unsequenced</a>]]</code>
 </li></ul>
-</li><li> Unnamed parameters in <a href="language/function_definition.htm" title="c/language/function definition">function definitions</a>
-</li><li> Identical cvr-qualifications for <a href="language/array.htm" title="c/language/array">array types</a> and their element types
-</li><li> Single-argument <a href="language/static_assert.htm" title="c/language/static assert" class="mw-redirect"><tt>static_assert</tt></a>
-</li><li> <a href="keyword/alignas.htm" title="c/keyword/alignas"><tt>alignas</tt></a> and <a href="keyword/alignof.htm" title="c/keyword/alignof"><tt>alignof</tt></a> becomes keywords (may be predefined macros for compatibility reasons)
-</li><li> <a href="keyword/static_assert.htm" title="c/keyword/static assert"><tt>static_assert</tt></a> becomes a keyword (may be a predefined macro for compatibility reasons)
-</li><li> <a href="keyword/thread_local.htm" title="c/keyword/thread local"><tt>thread_local</tt></a> becomes a keyword (may be a predefined macro for compatibility reasons)
-</li><li> <a href="language/goto.htm" title="c/language/goto">Labels</a> followed by declarations and <code><b>}</b></code>
-</li><li> <a href="keyword/nullptr.htm" title="c/keyword/nullptr"><tt>nullptr</tt></a> constant and the associated <a href="types/nullptr_t.htm" title="c/types/nullptr t"><tt>nullptr_t</tt></a> type
-</li><li> <a href="keyword/true.htm" title="c/keyword/true"><tt>true</tt></a> and <a href="keyword/false.htm" title="c/keyword/false"><tt>false</tt></a> become keywords (may be predefined macros for compatibility reasons)
+</li><li> Unnamed parameters in <a href="./language/function_definition.htm" title="c/language/function definition">function definitions</a>
+</li><li> Identical cvr-qualifications for <a href="./language/array.htm" title="c/language/array">array types</a> and their element types
+</li><li> Single-argument <a href="./language/static_assert.htm" title="c/language/static assert" class="mw-redirect"><tt>static_assert</tt></a>
+</li><li> <a href="./keyword/alignas.htm" title="c/keyword/alignas"><tt>alignas</tt></a> and <a href="./keyword/alignof.htm" title="c/keyword/alignof"><tt>alignof</tt></a> becomes keywords (may be predefined macros for compatibility reasons)
+</li><li> <a href="./keyword/static_assert.htm" title="c/keyword/static assert"><tt>static_assert</tt></a> becomes a keyword (may be a predefined macro for compatibility reasons)
+</li><li> <a href="./keyword/thread_local.htm" title="c/keyword/thread local"><tt>thread_local</tt></a> becomes a keyword (may be a predefined macro for compatibility reasons)
+</li><li> <a href="./language/goto.htm" title="c/language/goto">Labels</a> followed by declarations and <code><b>}</b></code>
+</li><li> <a href="./keyword/nullptr.htm" title="c/keyword/nullptr"><tt>nullptr</tt></a> constant and the associated <a href="./types/nullptr_t.htm" title="c/types/nullptr t"><tt>nullptr_t</tt></a> type
+</li><li> <a href="./keyword/true.htm" title="c/keyword/true"><tt>true</tt></a> and <a href="./keyword/false.htm" title="c/keyword/false"><tt>false</tt></a> become keywords (may be predefined macros for compatibility reasons)
 </li><li> New preprocessor directives
-<ul><li> <a href="preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
+<ul><li> <a href="./preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
 #elifdef</tt></a>
-</li><li> <a href="preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
+</li><li> <a href="./preprocessor/conditional.htm" title="c/preprocessor/conditional"><tt>
 #elifndef</tt></a>
-</li><li> <a href="preprocessor/warning.htm" title="c/preprocessor/error"><tt>
+</li><li> <a href="./preprocessor/warning.htm" title="c/preprocessor/error"><tt>
 #warning</tt></a>
-</li><li> <a href="preprocessor/embed.htm" title="c/preprocessor/embed"><tt>
+</li><li> <a href="./preprocessor/embed.htm" title="c/preprocessor/embed"><tt>
 #embed</tt></a>
 </li></ul>
 </li><li> Pragmas for rounding direction
-<ul><li> <code>STDC</code> <a href="preprocessor/impl.htm" title="c/preprocessor/impl"><tt>FENV_ROUND</tt></a>
-</li><li> <code>STDC</code> <a href="preprocessor/impl.htm" title="c/preprocessor/impl"><tt>FENV_DEC_ROUND</tt></a>
+<ul><li> <code>STDC</code> <a href="./preprocessor/impl.htm" title="c/preprocessor/impl"><tt>FENV_ROUND</tt></a>
+</li><li> <code>STDC</code> <a href="./preprocessor/impl.htm" title="c/preprocessor/impl"><tt>FENV_DEC_ROUND</tt></a>
 </li></ul>
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=2" title="Edit section: Feature test macros for optional features">edit</a>]</span> <span class="mw-headline" id="Feature_test_macros_for_optional_features">Feature test macros for optional features</span></h3>
-<ul><li> <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_BFP__</tt></a>
+<ul><li> <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_BFP__</tt></a>
 <ul><li> Indicates IEEE-754 binary floating-point arithmetic and required math functions are supported.
 </li></ul>
-<dl><dd> This macro supersedes <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559__</tt></a>.
+<dl><dd> This macro supersedes <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559__</tt></a>.
 </dd></dl>
-</li><li> <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_DFP__</tt></a>
+</li><li> <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_DFP__</tt></a>
 <ul><li> Indicates IEEE-754 decimal floating-point arithmetic and required math functions are supported.
 </li></ul>
-</li><li> <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_COMPLEX__</tt></a>
+</li><li> <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_60559_COMPLEX__</tt></a>
 <ul><li> Indicates IEEE-754 complex arithmetic and required math functions are supported.
 </li></ul>
-<dl><dd> This macro supersedes <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559_COMPLEX__</tt></a>.
+<dl><dd> This macro supersedes <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559_COMPLEX__</tt></a>.
 </dd></dl>
 </li></ul>
 <h2><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=3" title="Edit section: New library features">edit</a>]</span> <span class="mw-headline" id="New_library_features">New library features</span></h2>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=4" title="Edit section: New headers">edit</a>]</span> <span class="mw-headline" id="New_headers">New headers</span></h3>
-<ul><li> <a href="header/stdbit.htm" title="c/header/stdbit"><tt>&lt;stdbit.h&gt;</tt></a>
-</li><li> <a href="header/stdckdint.htm" title="c/header/stdckdint"><tt>&lt;stdckdint.h&gt;</tt></a>
+<ul><li> <a href="./header/stdbit.htm" title="c/header/stdbit"><tt>&lt;stdbit.h&gt;</tt></a>
+</li><li> <a href="./header/stdckdint.htm" title="c/header/stdckdint"><tt>&lt;stdckdint.h&gt;</tt></a>
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=5" title="Edit section: Library features">edit</a>]</span> <span class="mw-headline" id="Library_features">Library features</span></h3>
 <ul><li> Extended binary floating-point math functions
@@ -272,73 +272,73 @@ html { font-variant-ligatures: no-common-ligatures; }
 </li><li> <a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/encodebin&amp;action=edit&amp;redlink=1" class="new" title="c/numeric/math/encodebin（页面不存在）"><tt>encodebind<i>N</i>()</tt></a>
 </li><li> <a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/decodebin&amp;action=edit&amp;redlink=1" class="new" title="c/numeric/math/decodebin（页面不存在）"><tt>decodebind<i>N</i>()</tt></a>
 </li></ul>
-</li><li> <a href="string/byte/strfromf.htm" title="c/string/byte/strfromf">Floating-point formatting functions</a>
+</li><li> <a href="./string/byte/strfromf.htm" title="c/string/byte/strfromf">Floating-point formatting functions</a>
 </li><li> Library support for UTF-8
 <ul><li> <code>char8_t</code> type alias
-</li><li> <a href="string/multibyte/mbrtoc8.htm" title="c/string/multibyte/mbrtoc8"><tt>mbrtoc8()</tt></a>
-</li><li> <a href="string/multibyte/c8rtomb.htm" title="c/string/multibyte/c8rtomb"><tt>c8rtomb()</tt></a>
-</li><li> <a href="thread.htm" title="c/thread"><tt>atomic_char8_t</tt></a> type alias
-</li><li> <a href="atomic/ATOMIC_LOCK_FREE_consts.htm" title="c/atomic/ATOMIC LOCK FREE consts"><tt>ATOMIC_CHAR8_T_LOCK_FREE</tt></a> test macro
+</li><li> <a href="./string/multibyte/mbrtoc8.htm" title="c/string/multibyte/mbrtoc8"><tt>mbrtoc8()</tt></a>
+</li><li> <a href="./string/multibyte/c8rtomb.htm" title="c/string/multibyte/c8rtomb"><tt>c8rtomb()</tt></a>
+</li><li> <a href="./thread.htm" title="c/thread"><tt>atomic_char8_t</tt></a> type alias
+</li><li> <a href="./atomic/ATOMIC_LOCK_FREE_consts.htm" title="c/atomic/ATOMIC LOCK FREE consts"><tt>ATOMIC_CHAR8_T_LOCK_FREE</tt></a> test macro
 </li></ul>
-</li><li> <a href="string/byte/memset.htm" title="c/string/byte/memset"><tt>memset_explicit()</tt></a>
+</li><li> <a href="./string/byte/memset.htm" title="c/string/byte/memset"><tt>memset_explicit()</tt></a>
 </li><li> POSIX functions
-<ul><li> <a href="string/byte/memccpy.htm" title="c/string/byte/memccpy"><tt>memccpy()</tt></a>
-</li><li> <a href="string/byte/strdup.htm" title="c/string/byte/strdup"><tt>strdup()</tt></a>
-</li><li> <a href="string/byte/strndup.htm" title="c/string/byte/strndup"><tt>strndup()</tt></a>
-</li><li> <a href="chrono/gmtime.htm" title="c/chrono/gmtime"><tt>gmtime_r()</tt></a>
-</li><li> <a href="chrono/localtime.htm" title="c/chrono/localtime"><tt>localtime_r()</tt></a>
-</li><li> Extensions for <a href="chrono/strftime.htm" title="c/chrono/strftime"><tt>strftime()</tt></a> and <a href="chrono/wcsftime.htm" title="c/chrono/wcsftime"><tt>wcsftime()</tt></a>
+<ul><li> <a href="./string/byte/memccpy.htm" title="c/string/byte/memccpy"><tt>memccpy()</tt></a>
+</li><li> <a href="./string/byte/strdup.htm" title="c/string/byte/strdup"><tt>strdup()</tt></a>
+</li><li> <a href="./string/byte/strndup.htm" title="c/string/byte/strndup"><tt>strndup()</tt></a>
+</li><li> <a href="./chrono/gmtime.htm" title="c/chrono/gmtime"><tt>gmtime_r()</tt></a>
+</li><li> <a href="./chrono/localtime.htm" title="c/chrono/localtime"><tt>localtime_r()</tt></a>
+</li><li> Extensions for <a href="./chrono/strftime.htm" title="c/chrono/strftime"><tt>strftime()</tt></a> and <a href="./chrono/wcsftime.htm" title="c/chrono/wcsftime"><tt>wcsftime()</tt></a>
 </li></ul>
-</li><li> Extensions for <a href="io/fscanf.htm" title="c/io/fscanf"><tt>fscanf()</tt></a> and <a href="io/fprintf.htm" title="c/io/fprintf"><tt>fprintf()</tt></a> function families
-<ul><li> <code>w<i>N</i></code> and <code>wf<i>N</i></code> length modifiers for <a href="types/integer.htm" title="c/types/integer"><tt>[u]int<i>N</i>_t</tt></a> and <a href="types/integer.htm" title="c/types/integer"><tt>[u]int_fast<i>N</i>_t</tt></a> respectively
+</li><li> Extensions for <a href="./io/fscanf.htm" title="c/io/fscanf"><tt>fscanf()</tt></a> and <a href="./io/fprintf.htm" title="c/io/fprintf"><tt>fprintf()</tt></a> function families
+<ul><li> <code>w<i>N</i></code> and <code>wf<i>N</i></code> length modifiers for <a href="./types/integer.htm" title="c/types/integer"><tt>[u]int<i>N</i>_t</tt></a> and <a href="./types/integer.htm" title="c/types/integer"><tt>[u]int_fast<i>N</i>_t</tt></a> respectively
 </li><li> <code>H</code>, <code>D</code>, and <code>DD</code> length modifiers for <span class="t-c"><span class="mw-geshi c source-c">_Decimal32</span></span>, <span class="t-c"><span class="mw-geshi c source-c">_Decimal64</span></span>, and <span class="t-c"><span class="mw-geshi c source-c">_Decimal128</span></span> respectively
 </li><li> <code>b</code> conversion specifier for unsigned integer types
 </li></ul>
-</li><li> <a href="chrono/timespec_getres.htm" title="c/chrono/timespec getres"><tt>timespec_getres()</tt></a>
+</li><li> <a href="./chrono/timespec_getres.htm" title="c/chrono/timespec getres"><tt>timespec_getres()</tt></a>
 </li><li> Macro constants for width of integer types
 </li><li> Additional numeric limit macros for floating-point types
 </li><li> Library version-test macros
-<ul><li> <a href="numeric/fenv.htm" title="c/numeric/fenv"><tt>__STDC_VERSION_FENV_H__</tt></a>
-</li><li> <a href="numeric/math.htm" title="c/numeric/math"><tt>__STDC_VERSION_MATH_H__</tt></a>
-</li><li> <a href="types/integer.htm" title="c/types/integer"><tt>__STDC_VERSION_STDINT_H__</tt></a>
-</li><li> <a href="string/byte.htm" title="c/string/byte"><tt>__STDC_VERSION_STDLIB_H__</tt></a>
-</li><li> <a href="numeric/tgmath.htm" title="c/numeric/tgmath"><tt>__STDC_VERSION_TGMATH_H__</tt></a>
-</li><li> <a href="chrono.htm" title="c/chrono"><tt>__STDC_VERSION_TIME_H__</tt></a>
+<ul><li> <a href="./numeric/fenv.htm" title="c/numeric/fenv"><tt>__STDC_VERSION_FENV_H__</tt></a>
+</li><li> <a href="./numeric/math.htm" title="c/numeric/math"><tt>__STDC_VERSION_MATH_H__</tt></a>
+</li><li> <a href="./types/integer.htm" title="c/types/integer"><tt>__STDC_VERSION_STDINT_H__</tt></a>
+</li><li> <a href="./string/byte.htm" title="c/string/byte"><tt>__STDC_VERSION_STDLIB_H__</tt></a>
+</li><li> <a href="./numeric/tgmath.htm" title="c/numeric/tgmath"><tt>__STDC_VERSION_TGMATH_H__</tt></a>
+</li><li> <a href="./chrono.htm" title="c/chrono"><tt>__STDC_VERSION_TIME_H__</tt></a>
 </li><li> <a href="https://en.cppreference.com/mwiki/index.php?title=STDC_VERSION_STDCKDINT_H&amp;action=edit&amp;redlink=1" class="new" title="STDC VERSION STDCKDINT H（页面不存在）"><tt>__STDC_VERSION_STDCKDINT_H__</tt></a>
 </li><li> <a href="https://en.cppreference.com/mwiki/index.php?title=STDC_VERSION_STDBIT_H&amp;action=edit&amp;redlink=1" class="new" title="STDC VERSION STDBIT H（页面不存在）"><tt>__STDC_VERSION_STDBIT_H__</tt></a>
 </li></ul>
 </li></ul>
 <h2><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=6" title="Edit section: Obsolete features">edit</a>]</span> <span class="mw-headline" id="Obsolete_features">Obsolete features</span></h2>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=7" title="Edit section: Removed features">edit</a>]</span> <span class="mw-headline" id="Removed_features">Removed features</span></h3>
-<ul><li> Old-style <a href="language/function_declaration.htm" title="c/language/function declaration">function declarations</a> and <a href="language/function_definition.htm" title="c/language/function definition">function definitions</a>
-</li><li> Representations for <a href="language/arithmetic_types.htm" title="c/language/arithmetic types">signed integers</a> other than two's complement
-</li><li> Permission that <span class="t-c"><span class="mw-geshi c source-c">u</span></span>/<span class="t-c"><span class="mw-geshi c source-c">U</span></span>-prefixed <a href="language/character_constant.htm" title="c/language/character constant">character constants</a> and <a href="language/string_literal.htm" title="c/language/string literal">string literals</a> may be not UTF-16/32
-</li><li> Mixed wide <a href="language/string_literal.htm" title="c/language/string literal">string literal</a> concatenation
-</li><li> Support for calling <a href="memory/realloc.htm" title="c/memory/realloc"><tt>realloc()</tt></a> with zero size (the behavior becomes undefined)
-</li><li> <a href="language/alignas.htm" title="c/language/alignas" class="mw-redirect"><tt>alignas</tt></a> and <a href="language/alignof.htm" title="c/language/alignof" class="mw-redirect"><tt>alignof</tt></a> are provided as macros defined in <a href="header/stdalign.htm" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a> (becomes keywords)
-</li><li> <a href="error/static_assert.htm" title="c/error/static assert"><tt>static_assert</tt></a> is provided as a macro defined in <a href="header/assert.htm" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a> (becomes a keyword)
-</li><li> <a href="thread/thread_local.htm" title="c/thread/thread local"><tt>thread_local</tt></a> is provided as a macro defined in <a href="header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a> (becomes a keyword)
+<ul><li> Old-style <a href="./language/function_declaration.htm" title="c/language/function declaration">function declarations</a> and <a href="./language/function_definition.htm" title="c/language/function definition">function definitions</a>
+</li><li> Representations for <a href="./language/arithmetic_types.htm" title="c/language/arithmetic types">signed integers</a> other than two's complement
+</li><li> Permission that <span class="t-c"><span class="mw-geshi c source-c">u</span></span>/<span class="t-c"><span class="mw-geshi c source-c">U</span></span>-prefixed <a href="./language/character_constant.htm" title="c/language/character constant">character constants</a> and <a href="./language/string_literal.htm" title="c/language/string literal">string literals</a> may be not UTF-16/32
+</li><li> Mixed wide <a href="./language/string_literal.htm" title="c/language/string literal">string literal</a> concatenation
+</li><li> Support for calling <a href="./memory/realloc.htm" title="c/memory/realloc"><tt>realloc()</tt></a> with zero size (the behavior becomes undefined)
+</li><li> <a href="./language/alignas.htm" title="c/language/alignas" class="mw-redirect"><tt>alignas</tt></a> and <a href="./language/alignof.htm" title="c/language/alignof" class="mw-redirect"><tt>alignof</tt></a> are provided as macros defined in <a href="./header/stdalign.htm" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a> (becomes keywords)
+</li><li> <a href="./error/static_assert.htm" title="c/error/static assert"><tt>static_assert</tt></a> is provided as a macro defined in <a href="./header/assert.htm" title="c/header/assert"><tt>&lt;assert.h&gt;</tt></a> (becomes a keyword)
+</li><li> <a href="./thread/thread_local.htm" title="c/thread/thread local"><tt>thread_local</tt></a> is provided as a macro defined in <a href="./header/threads.htm" title="c/header/threads"><tt>&lt;threads.h&gt;</tt></a> (becomes a keyword)
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=8" title="Edit section: Deprecated features">edit</a>]</span> <span class="mw-headline" id="Deprecated_features">Deprecated features</span></h3>
-<ul><li> <a href="header/stdnoreturn.htm" title="c/header/stdnoreturn"><tt>&lt;stdnoreturn.h&gt;</tt></a>
-</li><li> <a href="header/stdalign.htm" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a>
-</li><li> <a href="header/stdbool.htm" title="c/header/stdbool"><tt>&lt;stdbool.h&gt;</tt></a>
+<ul><li> <a href="./header/stdnoreturn.htm" title="c/header/stdnoreturn"><tt>&lt;stdnoreturn.h&gt;</tt></a>
+</li><li> <a href="./header/stdalign.htm" title="c/header/stdalign"><tt>&lt;stdalign.h&gt;</tt></a>
+</li><li> <a href="./header/stdbool.htm" title="c/header/stdbool"><tt>&lt;stdbool.h&gt;</tt></a>
 </li><li> Old feature-test macros
-<ul><li> <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559__</tt></a>
-</li><li> <a href="preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559_COMPLEX__</tt></a>
+<ul><li> <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559__</tt></a>
+</li><li> <a href="./preprocessor/replace.htm" title="c/preprocessor/replace"><tt>__STDC_IEC_559_COMPLEX__</tt></a>
 </li></ul>
-</li><li> <a href="language/noreturn.htm" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> function specifier
-</li><li> <a href="language/attributes/noreturn.htm" title="c/language/attributes/noreturn"><tt>_Noreturn</tt></a> attribute token
-</li><li> <span class="t-lc"><a href="chrono/asctime.htm" title="c/chrono/asctime">asctime()</a></span>
-</li><li> <span class="t-lc"><a href="chrono/ctime.htm" title="c/chrono/ctime">ctime()</a></span>
-</li><li> <a href="types/limits.htm" title="c/types/limits"><tt>DECIMAL_DIG</tt></a> (use the appropriate type-specific macro (<a href="types/limits.htm#Limits_of_floating-point_types" title="c/types/limits"><tt>FLT_DECIMAL_DIG</tt></a>, etc) instead)
-</li><li> Definition of following numeric limit macros in <a href="header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a> (they should be used via <a href="header/float.htm" title="c/header/float"><tt>&lt;float.h&gt;</tt></a>)
-<ul><li> <a href="numeric/math.htm" title="c/numeric/math"><tt>INFINITY</tt></a>
-</li><li> <a href="numeric/math.htm" title="c/numeric/math"><tt>DEC_INFINITY</tt></a>
-</li><li> <a href="numeric/math.htm" title="c/numeric/math"><tt>NAN</tt></a>
-</li><li> <a href="numeric/math.htm" title="c/numeric/math"><tt>DEC_NAN</tt></a>
+</li><li> <a href="./language/noreturn.htm" title="c/language/ Noreturn"><tt>_Noreturn</tt></a> function specifier
+</li><li> <a href="./language/attributes/noreturn.htm" title="c/language/attributes/noreturn"><tt>_Noreturn</tt></a> attribute token
+</li><li> <span class="t-lc"><a href="./chrono/asctime.htm" title="c/chrono/asctime">asctime()</a></span>
+</li><li> <span class="t-lc"><a href="./chrono/ctime.htm" title="c/chrono/ctime">ctime()</a></span>
+</li><li> <a href="./types/limits.htm" title="c/types/limits"><tt>DECIMAL_DIG</tt></a> (use the appropriate type-specific macro (<a href="./types/limits.htm#Limits_of_floating-point_types" title="c/types/limits"><tt>FLT_DECIMAL_DIG</tt></a>, etc) instead)
+</li><li> Definition of following numeric limit macros in <a href="./header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a> (they should be used via <a href="./header/float.htm" title="c/header/float"><tt>&lt;float.h&gt;</tt></a>)
+<ul><li> <a href="./numeric/math.htm" title="c/numeric/math"><tt>INFINITY</tt></a>
+</li><li> <a href="./numeric/math.htm" title="c/numeric/math"><tt>DEC_INFINITY</tt></a>
+</li><li> <a href="./numeric/math.htm" title="c/numeric/math"><tt>NAN</tt></a>
+</li><li> <a href="./numeric/math.htm" title="c/numeric/math"><tt>DEC_NAN</tt></a>
 </li></ul>
-</li><li> <a href="types.htm" title="c/types"><tt>__bool_true_false_are_defined</tt></a>
+</li><li> <a href="./types.htm" title="c/types"><tt>__bool_true_false_are_defined</tt></a>
 </li></ul>
 <h2><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/23&amp;action=edit&amp;section=9" title="Edit section: Defect reports">edit</a>]</span> <span class="mw-headline" id="Defect_reports">Defect reports</span></h2>
 <div style="margin-left:0px">
@@ -397,7 +397,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <th>
 </th></tr>
 <tr>
-<td><a href="language/static_assert.htm" title="c/language/ Static assert"><tt>static_assert</tt></a> with no message
+<td><a href="./language/static_assert.htm" title="c/language/ Static assert"><tt>static_assert</tt></a> with no message
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2265.pdf">N2265</a>
 </td>
@@ -420,7 +420,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code>
+<td><code>[[<a href="./language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2267.pdf">N2267</a>
 </td>
@@ -443,7 +443,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code>
+<td><code>[[<a href="./language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2270.pdf">N2270</a>
 </td>
@@ -466,7 +466,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/deprecated.htm" title="c/language/attributes/deprecated">deprecated</a>]]</code>
+<td><code>[[<a href="./language/attributes/deprecated.htm" title="c/language/attributes/deprecated">deprecated</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2334.pdf">N2334</a>
 </td>
@@ -489,7 +489,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/attributes.htm" title="c/language/attributes">Attributes</a>
+<td><a href="./language/attributes.htm" title="c/language/attributes">Attributes</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2335.pdf">N2335</a><br><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2554.pdf">N2554</a>
 </td>
@@ -535,7 +535,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/fallthrough.htm" title="c/language/attributes/fallthrough">fallthrough</a>]]</code>
+<td><code>[[<a href="./language/attributes/fallthrough.htm" title="c/language/attributes/fallthrough">fallthrough</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2408.pdf">N2408</a>
 </td>
@@ -558,7 +558,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/character_constant.htm" title="c/language/character constant"><code>u8</code> character constants</a>
+<td><a href="./language/character_constant.htm" title="c/language/character constant"><code>u8</code> character constants</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2418.pdf">N2418</a>
 </td>
@@ -581,7 +581,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td>Removal of <a href="language/function_definition.htm" title="c/language/function definition">function definitions</a> without prototype
+<td>Removal of <a href="./language/function_definition.htm" title="c/language/function definition">function definitions</a> without prototype
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2432.pdf">N2432</a>
 </td>
@@ -604,7 +604,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code> with message
+<td><code>[[<a href="./language/attributes/nodiscard.htm" title="c/language/attributes/nodiscard">nodiscard</a>]]</code> with message
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2448.pdf">N2448</a>
 </td>
@@ -650,7 +650,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/statements.htm#Labels" title="c/language/statements">Labels</a> before declarations and end of blocks
+<td><a href="./language/statements.htm#Labels" title="c/language/statements">Labels</a> before declarations and end of blocks
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2508.pdf">N2508</a>
 </td>
@@ -674,7 +674,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/integer_constant.htm" title="c/language/integer constant">Binary integer constants</a>
+<td><a href="./language/integer_constant.htm" title="c/language/integer constant">Binary integer constants</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2549.pdf">N2549</a>
 </td>
@@ -697,7 +697,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/attributes.htm#Attribute_testing" title="c/language/attributes"><tt>__has_c_attribute</tt></a> in preprocessor conditionals
+<td><a href="./language/attributes.htm#Attribute_testing" title="c/language/attributes"><tt>__has_c_attribute</tt></a> in preprocessor conditionals
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2553.pdf">N2553</a>
 </td>
@@ -789,7 +789,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="preprocessor/conditional.htm" title="c/preprocessor/conditional"><code>#elifdef</code> and <code>#elifndef</code></a>
+<td><a href="./preprocessor/conditional.htm" title="c/preprocessor/conditional"><code>#elifdef</code> and <code>#elifndef</code></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2645.pdf">N2645</a>
 </td>
@@ -812,7 +812,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td>Type change of <a href="language/string_literal.htm" title="c/language/string literal"><code>u8</code> string literals</a>
+<td>Type change of <a href="./language/string_literal.htm" title="c/language/string literal"><code>u8</code> string literals</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2653.htm">N2653</a>
 </td>
@@ -835,7 +835,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code> for labels
+<td><code>[[<a href="./language/attributes/maybe_unused.htm" title="c/language/attributes/maybe unused">maybe_unused</a>]]</code> for labels
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2662.pdf">N2662</a>
 </td>
@@ -858,7 +858,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="preprocessor/warning.htm" title="c/preprocessor/error"><tt>
+<td><a href="./preprocessor/warning.htm" title="c/preprocessor/error"><tt>
 #warning</tt></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2686.pdf">N2686</a>
@@ -905,7 +905,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/noreturn.htm" title="c/language/attributes/noreturn">noreturn</a>]]</code>
+<td><code>[[<a href="./language/attributes/noreturn.htm" title="c/language/attributes/noreturn">noreturn</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2764.pdf">N2764</a>
 </td>
@@ -951,7 +951,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="preprocessor/include.htm" title="c/preprocessor/include"><tt>__has_include</tt></a> in preprocessor conditionals
+<td><a href="./preprocessor/include.htm" title="c/preprocessor/include"><tt>__has_include</tt></a> in preprocessor conditionals
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2799.pdf">N2799</a>
 </td>
@@ -997,7 +997,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td>Removal of <a href="language/function_declaration.htm" title="c/language/function declaration">function declarations</a> without prototype
+<td>Removal of <a href="./language/function_declaration.htm" title="c/language/function declaration">function declarations</a> without prototype
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2841.htm">N2841</a>
 </td>
@@ -1020,7 +1020,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/initialization.htm#Empty_initialization" title="c/language/initialization">Empty initializers</a>
+<td><a href="./language/initialization.htm#Empty_initialization" title="c/language/initialization">Empty initializers</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2900.htm">N2900</a>
 </td>
@@ -1043,7 +1043,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/typeof_unqual.htm" title="c/language/typeof"><tt>typeof</tt></a> and <a href="language/typeof_unqual.htm" title="c/language/typeof"><tt>typeof_unqual</tt></a>
+<td><a href="./language/typeof_unqual.htm" title="c/language/typeof"><tt>typeof</tt></a> and <a href="./language/typeof_unqual.htm" title="c/language/typeof"><tt>typeof_unqual</tt></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2927.htm">N2927</a><br><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2930.pdf">N2930</a>
 </td>
@@ -1089,7 +1089,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td>Predefined <a href="language/bool_constant.htm" title="c/language/bool constant"><span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span></a>
+<td>Predefined <a href="./language/bool_constant.htm" title="c/language/bool constant"><span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">true</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw2">false</span></span></span></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2935.pdf">N2935</a>
 </td>
@@ -1112,7 +1112,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><code>[[<a href="language/attributes/reproducible.htm" title="c/language/attributes/unsequenced">unsequenced</a>]]</code> and <code>[[<a href="language/attributes/reproducible.htm" title="c/language/attributes/reproducible" class="mw-redirect">reproducible</a>]]</code>
+<td><code>[[<a href="./language/attributes/reproducible.htm" title="c/language/attributes/unsequenced">unsequenced</a>]]</code> and <code>[[<a href="./language/attributes/reproducible.htm" title="c/language/attributes/reproducible" class="mw-redirect">reproducible</a>]]</code>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2956.htm">N2956</a>
 </td>
@@ -1135,7 +1135,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td>Relax requirements for <a href="language/variadic.htm" title="c/language/variadic">variadic parameter list</a>
+<td>Relax requirements for <a href="./language/variadic.htm" title="c/language/variadic">variadic parameter list</a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n2975.pdf">N2975</a>
 </td>
@@ -1181,7 +1181,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="preprocessor/embed.htm" title="c/preprocessor/embed"><tt>
+<td><a href="./preprocessor/embed.htm" title="c/preprocessor/embed"><tt>
 #embed</tt></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n3017.htm">N3017</a>
@@ -1205,7 +1205,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/constexpr.htm" title="c/language/constexpr"><tt>constexpr</tt></a> objects
+<td><a href="./language/constexpr.htm" title="c/language/constexpr"><tt>constexpr</tt></a> objects
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n3018.htm">N3018</a>
 </td>
@@ -1274,7 +1274,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="preprocessor/replace.htm#Function-like_macros" title="c/preprocessor/replace"><code>__VA_OPT__</code></a>
+<td><a href="./preprocessor/replace.htm#Function-like_macros" title="c/preprocessor/replace"><code>__VA_OPT__</code></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n3033.htm">N3033</a>
 </td>
@@ -1320,7 +1320,7 @@ missing support for labels before declarations in old versions">*</span>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><a href="language/nullptr.htm" title="c/language/nullptr"><tt>nullptr</tt></a>
+<td><a href="./language/nullptr.htm" title="c/language/nullptr"><tt>nullptr</tt></a>
 </td>
 <td><a rel="nofollow" class="external text" href="https://open-std.org/JTC1/SC22/WG14/www/docs/n3042.htm">N3042</a>
 </td>

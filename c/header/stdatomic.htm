@@ -160,20 +160,20 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>This header provides <a href="../thread.html#Atomic_operations" title="c/thread">atomic operations</a>, in particular, it's a part of the <a href="../thread.html" title="c/thread">concurrency support</a> library.
+<p>This header provides <a href="../thread.htm#Atomic_operations" title="c/thread">atomic operations</a>, in particular, it's a part of the <a href="../thread.htm" title="c/thread">concurrency support</a> library.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="stdatomic.htm#Atomic_operations"><span class="tocnumber">1</span> <span class="toctext">Atomic operations</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./stdatomic.htm#Atomic_operations"><span class="tocnumber">1</span> <span class="toctext">Atomic operations</span></a>
 <ul>
-<li class="toclevel-2"><a href="stdatomic.htm#Operations_on_atomic_types"><span class="tocnumber">1.1</span> <span class="toctext">Operations on atomic types</span></a></li>
-<li class="toclevel-2"><a href="stdatomic.htm#Flag_type_and_operations"><span class="tocnumber">1.2</span> <span class="toctext">Flag type and operations</span></a></li>
-<li class="toclevel-2"><a href="stdatomic.htm#Initialization"><span class="tocnumber">1.3</span> <span class="toctext">Initialization</span></a></li>
-<li class="toclevel-2"><a href="stdatomic.htm#Memory_synchronization_ordering"><span class="tocnumber">1.4</span> <span class="toctext">Memory synchronization ordering</span></a></li>
-<li class="toclevel-2"><a href="stdatomic.htm#Convenience_type_aliases"><span class="tocnumber">1.5</span> <span class="toctext">Convenience type aliases</span></a></li>
+<li class="toclevel-2"><a href="./stdatomic.htm#Operations_on_atomic_types"><span class="tocnumber">1.1</span> <span class="toctext">Operations on atomic types</span></a></li>
+<li class="toclevel-2"><a href="./stdatomic.htm#Flag_type_and_operations"><span class="tocnumber">1.2</span> <span class="toctext">Flag type and operations</span></a></li>
+<li class="toclevel-2"><a href="./stdatomic.htm#Initialization"><span class="tocnumber">1.3</span> <span class="toctext">Initialization</span></a></li>
+<li class="toclevel-2"><a href="./stdatomic.htm#Memory_synchronization_ordering"><span class="tocnumber">1.4</span> <span class="toctext">Memory synchronization ordering</span></a></li>
+<li class="toclevel-2"><a href="./stdatomic.htm#Convenience_type_aliases"><span class="tocnumber">1.5</span> <span class="toctext">Convenience type aliases</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-2"><a href="stdatomic.htm#Synopsis"><span class="tocnumber">2</span> <span class="toctext">Synopsis</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./stdatomic.htm#Synopsis"><span class="tocnumber">2</span> <span class="toctext">Synopsis</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/header/stdatomic&amp;action=edit&amp;section=1" title="Edit section: Atomic operations">edit</a>]</span> <span class="mw-headline" id="Atomic_operations">Atomic operations</span></h3>
@@ -184,67 +184,67 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_LOCK_FREE_consts.html" title="c/atomic/ATOMIC LOCK FREE consts"> <span class="t-lines"><span>ATOMIC_BOOL_LOCK_FREE</span><span>ATOMIC_CHAR_LOCK_FREE</span><span>ATOMIC_CHAR16_T_LOCK_FREE</span><span>ATOMIC_CHAR32_T_LOCK_FREE</span><span>ATOMIC_WCHAR_T_LOCK_FREE</span><span>ATOMIC_SHORT_LOCK_FREE</span><span>ATOMIC_INT_LOCK_FREE</span><span>ATOMIC_LONG_LOCK_FREE</span><span>ATOMIC_LLONG_LOCK_FREE</span><span>ATOMIC_POINTER_LOCK_FREE</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_LOCK_FREE_consts.htm" title="c/atomic/ATOMIC LOCK FREE consts"> <span class="t-lines"><span>ATOMIC_BOOL_LOCK_FREE</span><span>ATOMIC_CHAR_LOCK_FREE</span><span>ATOMIC_CHAR16_T_LOCK_FREE</span><span>ATOMIC_CHAR32_T_LOCK_FREE</span><span>ATOMIC_WCHAR_T_LOCK_FREE</span><span>ATOMIC_SHORT_LOCK_FREE</span><span>ATOMIC_INT_LOCK_FREE</span><span>ATOMIC_LONG_LOCK_FREE</span><span>ATOMIC_LLONG_LOCK_FREE</span><span>ATOMIC_POINTER_LOCK_FREE</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   indicates that the given atomic type is lock-free  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_ATOMIC_LOCK_FREE_consts&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_is_lock_free.html" title="c/atomic/atomic is lock free"> <span class="t-lines"><span>atomic_is_lock_free</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_is_lock_free.htm" title="c/atomic/atomic is lock free"> <span class="t-lines"><span>atomic_is_lock_free</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   indicates whether the atomic object is lock-free  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_is_lock_free&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_store.html" title="c/atomic/atomic store"> <span class="t-lines"><span>atomic_store</span><span>atomic_store_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_store.htm" title="c/atomic/atomic store"> <span class="t-lines"><span>atomic_store</span><span>atomic_store_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   stores a value in an atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_store&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_load.html" title="c/atomic/atomic load"> <span class="t-lines"><span>atomic_load</span><span>atomic_load_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_load.htm" title="c/atomic/atomic load"> <span class="t-lines"><span>atomic_load</span><span>atomic_load_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   reads a value from an atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_load&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_exchange.html" title="c/atomic/atomic exchange"> <span class="t-lines"><span>atomic_exchange</span><span>atomic_exchange_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_exchange.htm" title="c/atomic/atomic exchange"> <span class="t-lines"><span>atomic_exchange</span><span>atomic_exchange_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   swaps a value with the value of an atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_exchange&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_compare_exchange.html" title="c/atomic/atomic compare exchange"> <span class="t-lines"><span>atomic_compare_exchange_strong</span><span>atomic_compare_exchange_strong_explicit</span><span>atomic_compare_exchange_weak</span><span>atomic_compare_exchange_weak_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_compare_exchange.htm" title="c/atomic/atomic compare exchange"> <span class="t-lines"><span>atomic_compare_exchange_strong</span><span>atomic_compare_exchange_strong_explicit</span><span>atomic_compare_exchange_weak</span><span>atomic_compare_exchange_weak_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   swaps a value with an atomic object if the old value is what is expected, otherwise reads the old value  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_compare_exchange&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_add.html" title="c/atomic/atomic fetch add"> <span class="t-lines"><span>atomic_fetch_add</span><span>atomic_fetch_add_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_add.htm" title="c/atomic/atomic fetch add"> <span class="t-lines"><span>atomic_fetch_add</span><span>atomic_fetch_add_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   atomic addition  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_fetch_add&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_sub.html" title="c/atomic/atomic fetch sub"> <span class="t-lines"><span>atomic_fetch_sub</span><span>atomic_fetch_sub_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_sub.htm" title="c/atomic/atomic fetch sub"> <span class="t-lines"><span>atomic_fetch_sub</span><span>atomic_fetch_sub_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   atomic subtraction  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_fetch_sub&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_or.html" title="c/atomic/atomic fetch or"> <span class="t-lines"><span>atomic_fetch_or</span><span>atomic_fetch_or_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_or.htm" title="c/atomic/atomic fetch or"> <span class="t-lines"><span>atomic_fetch_or</span><span>atomic_fetch_or_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   atomic bitwise OR  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_fetch_or&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_xor.html" title="c/atomic/atomic fetch xor"> <span class="t-lines"><span>atomic_fetch_xor</span><span>atomic_fetch_xor_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_xor.htm" title="c/atomic/atomic fetch xor"> <span class="t-lines"><span>atomic_fetch_xor</span><span>atomic_fetch_xor_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   atomic bitwise exclusive OR  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_fetch_xor&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_and.html" title="c/atomic/atomic fetch and"> <span class="t-lines"><span>atomic_fetch_and</span><span>atomic_fetch_and_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_fetch_and.htm" title="c/atomic/atomic fetch and"> <span class="t-lines"><span>atomic_fetch_and</span><span>atomic_fetch_and_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   atomic bitwise AND  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_fetch_and&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -254,19 +254,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td> <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag.html" title="c/atomic/atomic flag"> <span class="t-lines"><span>atomic_flag</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td> <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag.htm" title="c/atomic/atomic flag"> <span class="t-lines"><span>atomic_flag</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>  lock-free atomic boolean flag <br><span class="t-mark">(struct)</span><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_flag&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag_test_and_set.html" title="c/atomic/atomic flag test and set"> <span class="t-lines"><span>atomic_flag_test_and_set</span><span>atomic_flag_test_and_set_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag_test_and_set.htm" title="c/atomic/atomic flag test and set"> <span class="t-lines"><span>atomic_flag_test_and_set</span><span>atomic_flag_test_and_set_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   sets an atomic_flag to true and returns the old value  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_flag_test_and_set&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag_clear.html" title="c/atomic/atomic flag clear"> <span class="t-lines"><span>atomic_flag_clear</span><span>atomic_flag_clear_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_flag_clear.htm" title="c/atomic/atomic flag clear"> <span class="t-lines"><span>atomic_flag_clear</span><span>atomic_flag_clear_explicit</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   sets an atomic_flag to false  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_flag_clear&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -276,21 +276,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_init.html" title="c/atomic/atomic init"> <span class="t-lines"><span>atomic_init</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_init.htm" title="c/atomic/atomic init"> <span class="t-lines"><span>atomic_init</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   initializes an existing atomic object  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_init&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_VAR_INIT.html" title="c/atomic/ATOMIC VAR INIT"> <span class="t-lines"><span>ATOMIC_VAR_INIT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-deprecated-c17">(deprecated in C17)</span></span><span><span class="t-mark-rev t-until-c23">(removed in C23)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_VAR_INIT.htm" title="c/atomic/ATOMIC VAR INIT"> <span class="t-lines"><span>ATOMIC_VAR_INIT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-deprecated-c17">(deprecated in C17)</span></span><span><span class="t-mark-rev t-until-c23">(removed in C23)</span></span></span></div></div>
 </td>
 <td>  initializes a new atomic object <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_ATOMIC_VAR_INIT&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_FLAG_INIT.html" title="c/atomic/ATOMIC FLAG INIT"> <span class="t-lines"><span>ATOMIC_FLAG_INIT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/ATOMIC_FLAG_INIT.htm" title="c/atomic/ATOMIC FLAG INIT"> <span class="t-lines"><span>ATOMIC_FLAG_INIT</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   initializes a new <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_flag.html"><span class="kw917">atomic_flag</span></a></span></span>  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_ATOMIC_FLAG_INIT&amp;action=edit">[edit]</a></span>
+<td>   initializes a new <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/atomic_flag.htm"><span class="kw917">atomic_flag</span></a></span></span>  <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_ATOMIC_FLAG_INIT&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr>
@@ -298,25 +298,25 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/memory_order.html" title="c/atomic/memory order"> <span class="t-lines"><span>memory_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/memory_order.htm" title="c/atomic/memory order"> <span class="t-lines"><span>memory_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   defines memory ordering constraints  <br> <span class="t-mark">(enum)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_memory_order&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/kill_dependency.html" title="c/atomic/kill dependency"> <span class="t-lines"><span>kill_dependency</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/kill_dependency.htm" title="c/atomic/kill dependency"> <span class="t-lines"><span>kill_dependency</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   breaks a dependency chain for <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/memory_order.html"><span class="kw912">memory_order_consume</span></a></span></span>  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_kill_dependency&amp;action=edit">[edit]</a></span>
+<td>   breaks a dependency chain for <span class="t-c"><span class="mw-geshi c source-c"><a href="../atomic/memory_order.htm"><span class="kw912">memory_order_consume</span></a></span></span>  <br> <span class="t-mark">(function macro)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_kill_dependency&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_thread_fence.html" title="c/atomic/atomic thread fence"> <span class="t-lines"><span>atomic_thread_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_thread_fence.htm" title="c/atomic/atomic thread fence"> <span class="t-lines"><span>atomic_thread_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   generic memory order-dependent fence synchronization primitive   <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_thread_fence&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_signal_fence.html" title="c/atomic/atomic signal fence"> <span class="t-lines"><span>atomic_signal_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../atomic/atomic_signal_fence.htm" title="c/atomic/atomic signal fence"> <span class="t-lines"><span>atomic_signal_fence</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   fence between a thread and a signal handler executed in the same thread  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/atomic/dsc_atomic_signal_fence&amp;action=edit">[edit]</a></span>
 </td></tr>
@@ -450,154 +450,154 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dsc">
 <td> <code>atomic_int_least8_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw114">int_least8_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw114">int_least8_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_least8_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw128">uint_least8_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw128">uint_least8_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_least16_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw115">int_least16_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw115">int_least16_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_least16_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw129">uint_least16_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw129">uint_least16_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_least32_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw116">int_least32_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw116">int_least32_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_least32_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw130">uint_least32_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw130">uint_least32_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_least64_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw117">int_least64_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw117">int_least64_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_least64_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw131">uint_least64_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw131">uint_least64_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_fast8_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw110">int_fast8_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw110">int_fast8_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_fast8_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw124">uint_fast8_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw124">uint_fast8_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_fast16_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw111">int_fast16_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw111">int_fast16_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_fast16_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw125">uint_fast16_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw125">uint_fast16_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_fast32_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw112">int_fast32_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw112">int_fast32_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_fast32_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw126">uint_fast32_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw126">uint_fast32_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_int_fast64_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw113">int_fast64_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw113">int_fast64_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uint_fast64_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw127">uint_fast64_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw127">uint_fast64_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_intptr_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw119">intptr_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw119">intptr_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uintptr_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw133">uintptr_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw133">uintptr_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_size_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/size_t.html"><span class="kw100">size_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/size_t.htm"><span class="kw100">size_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_ptrdiff_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/ptrdiff_t.html"><span class="kw101">ptrdiff_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/ptrdiff_t.htm"><span class="kw101">ptrdiff_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_intmax_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw118">intmax_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw118">intmax_t</span></a></span>
 </td></tr>
 
 
 <tr class="t-dsc">
 <td> <code>atomic_uintmax_t</code> <span class="t-mark-rev t-since-c11">(C11)</span>
 </td>
-<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.html"><span class="kw132">uintmax_t</span></a></span>
+<td> <span class="mw-geshi c source-c">_Atomic <a href="../types/integer.htm"><span class="kw132">uintmax_t</span></a></span>
 </td></tr>
 
 </tbody></table>
@@ -605,31 +605,31 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: add more from 7.17 Atomics &lt;stdatomic.h&gt; and B.16 Atomics &lt;stdatomic.h&gt; </td></tr></tbody></table>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define __STDC_VERSION_STDATOMIC_H__ 202311L</span>
 &nbsp;
-<span class="kw4">void</span> <a href="../atomic/atomic_init.html"><span class="kw935">atomic_init</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> obj, <span class="coMULTI">/*C*/</span> value<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*type*/</span> <a href="../atomic/kill_dependency.html"><span class="kw930">kill_dependency</span></a><span class="br0">(</span><span class="coMULTI">/*type*/</span> y<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_thread_fence.html"><span class="kw957">atomic_thread_fence</span></a><span class="br0">(</span><a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_signal_fence.html"><span class="kw958">atomic_signal_fence</span></a><span class="br0">(</span><a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_is_lock_free.html"><span class="kw936">atomic_is_lock_free</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> obj<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_store.html"><span class="kw937">atomic_store</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_store.html"><span class="kw938">atomic_store_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_load.html"><span class="kw939">atomic_load</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_load.html"><span class="kw940">atomic_load_explicit</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> object, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_exchange.html"><span class="kw941">atomic_exchange</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_exchange.html"><span class="kw942">atomic_exchange_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_compare_exchange.html"><span class="kw945">atomic_compare_exchange_strong</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_compare_exchange.html"><span class="kw946">atomic_compare_exchange_strong_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected,
-<span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> success, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> failure<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_compare_exchange.html"><span class="kw943">atomic_compare_exchange_weak</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_compare_exchange.html"><span class="kw944">atomic_compare_exchange_weak_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected,
-<span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> success, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> failure<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_init.htm"><span class="kw935">atomic_init</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> obj, <span class="coMULTI">/*C*/</span> value<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*type*/</span> <a href="../atomic/kill_dependency.htm"><span class="kw930">kill_dependency</span></a><span class="br0">(</span><span class="coMULTI">/*type*/</span> y<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_thread_fence.htm"><span class="kw957">atomic_thread_fence</span></a><span class="br0">(</span><a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_signal_fence.htm"><span class="kw958">atomic_signal_fence</span></a><span class="br0">(</span><a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_is_lock_free.htm"><span class="kw936">atomic_is_lock_free</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> obj<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_store.htm"><span class="kw937">atomic_store</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_store.htm"><span class="kw938">atomic_store_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_load.htm"><span class="kw939">atomic_load</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_load.htm"><span class="kw940">atomic_load_explicit</span></a><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">volatile</span> A<span class="sy2">*</span> object, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_exchange.htm"><span class="kw941">atomic_exchange</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
+<span class="coMULTI">/*C*/</span> <a href="../atomic/atomic_exchange.htm"><span class="kw942">atomic_exchange_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_compare_exchange.htm"><span class="kw945">atomic_compare_exchange_strong</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_compare_exchange.htm"><span class="kw946">atomic_compare_exchange_strong_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected,
+<span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> success, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> failure<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_compare_exchange.htm"><span class="kw943">atomic_compare_exchange_weak</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected, <span class="coMULTI">/*C*/</span> desired<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_compare_exchange.htm"><span class="kw944">atomic_compare_exchange_weak_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, <span class="coMULTI">/*C*/</span><span class="sy2">*</span> expected,
+<span class="coMULTI">/*C*/</span> desired, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> success, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> failure<span class="br0">)</span><span class="sy4">;</span>
 <span class="coMULTI">/*C*/</span> <span class="coMULTI">/*atomic_fetch_key*/</span><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, M operand<span class="br0">)</span><span class="sy4">;</span>
-<span class="coMULTI">/*C*/</span> <span class="coMULTI">/*atomic_fetch_key_explicit*/</span><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, M operand, <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_flag_test_and_set.html"><span class="kw931">atomic_flag_test_and_set</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.html"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
-bool <a href="../atomic/atomic_flag_test_and_set.html"><span class="kw932">atomic_flag_test_and_set_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.html"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object,
-<a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_flag_clear.html"><span class="kw933">atomic_flag_clear</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.html"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> <a href="../atomic/atomic_flag_clear.html"><span class="kw934">atomic_flag_clear_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.html"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object,
-                                <a href="../atomic/memory_order.html"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
+<span class="coMULTI">/*C*/</span> <span class="coMULTI">/*atomic_fetch_key_explicit*/</span><span class="br0">(</span><span class="kw4">volatile</span> A<span class="sy2">*</span> object, M operand, <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_flag_test_and_set.htm"><span class="kw931">atomic_flag_test_and_set</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.htm"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
+bool <a href="../atomic/atomic_flag_test_and_set.htm"><span class="kw932">atomic_flag_test_and_set_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.htm"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object,
+<a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_flag_clear.htm"><span class="kw933">atomic_flag_clear</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.htm"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object<span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> <a href="../atomic/atomic_flag_clear.htm"><span class="kw934">atomic_flag_clear_explicit</span></a><span class="br0">(</span><span class="kw4">volatile</span> <a href="../atomic/atomic_flag.htm"><span class="kw917">atomic_flag</span></a><span class="sy2">*</span> object,
+                                <a href="../atomic/memory_order.htm"><span class="kw910">memory_order</span></a> order<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 
 <!-- 
 NewPP limit report

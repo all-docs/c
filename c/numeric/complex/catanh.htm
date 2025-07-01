@@ -186,28 +186,28 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/complex.html" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp; catanhf<span class="br0">(</span> <span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp; catanhf<span class="br0">(</span> <span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp;catanh<span class="br0">(</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp;catanh<span class="br0">(</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> catanhl<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> catanhl<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -220,16 +220,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1-3)</span> Computes the complex arc hyperbolic tangent of <code>z</code> with branch cuts outside the interval <span class="texhtml" style="white-space: nowrap;">[−1; +1]</span> along the real axis.</div>
-<div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanhl</code> is called. if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanh</code> is called, if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanhf</code> is called. If <code>z</code> is real or integer, then the macro invokes the corresponding real function (<span class="t-c"><span class="mw-geshi c source-c">atanhf</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/atanh.html"><span class="kw681">atanh</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c">atanhl</span></span>). If <code>z</code> is imaginary, then the macro invokes the corresponding real version of <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/atan.html"><span class="kw674">atan</span></a></span></span>, implementing the formula <span class="texhtml" style="white-space: nowrap;">atanh(iy) = i atan(y)</span>, and the return type is imaginary.</div>
+<div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanhl</code> is called. if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanh</code> is called, if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>catanhf</code> is called. If <code>z</code> is real or integer, then the macro invokes the corresponding real function (<span class="t-c"><span class="mw-geshi c source-c">atanhf</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/atanh.htm"><span class="kw681">atanh</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c">atanhl</span></span>). If <code>z</code> is imaginary, then the macro invokes the corresponding real version of <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/atan.htm"><span class="kw674">atan</span></a></span></span>, implementing the formula <span class="texhtml" style="white-space: nowrap;">atanh(iy) = i atan(y)</span>, and the return type is imaginary.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="catanh.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="catanh.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="catanh.htm#Error_handling_and_special_values"><span class="tocnumber">3</span> <span class="toctext">Error handling and special values</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="catanh.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="catanh.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="catanh.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="catanh.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./catanh.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./catanh.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./catanh.htm#Error_handling_and_special_values"><span class="tocnumber">3</span> <span class="toctext">Error handling and special values</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./catanh.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./catanh.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./catanh.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./catanh.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/catanh&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -247,20 +247,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 <p>If no errors occur, the complex arc hyperbolic tangent of <code>z</code> is returned, in the range of a half-strip mathematically unbounded along the real axis and in the interval <span class="texhtml" style="white-space: nowrap;">[−iπ/2; +iπ/2]</span> along the imaginary axis.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/catanh&amp;action=edit&amp;section=3" title="Edit section: Error handling and special values">edit</a>]</span> <span class="mw-headline" id="Error_handling_and_special_values">Error handling and special values</span></h3>
-<p>Errors are reported consistent with <a href="../math/math_errhandling.html" title="c/numeric/math/math errhandling">math_errhandling</a>
+<p>Errors are reported consistent with <a href="../math/math_errhandling.htm" title="c/numeric/math/math errhandling">math_errhandling</a>
 </p><p>If the implementation supports IEEE floating-point arithmetic,
 </p>
-<ul><li> <span class="t-c"><span class="mw-geshi c source-c">catanh<span class="br0">(</span><a href="conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <a href="conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span>catanh<span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span></span></span>
+<ul><li> <span class="t-c"><span class="mw-geshi c source-c">catanh<span class="br0">(</span><a href="./conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="sy1">==</span> <a href="./conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span>catanh<span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span></span></span>
 </li><li> <span class="t-c"><span class="mw-geshi c source-c">catanh<span class="br0">(</span><span class="sy2">-</span>z<span class="br0">)</span> <span class="sy1">==</span> <span class="sy2">-</span>catanh<span class="br0">(</span>z<span class="br0">)</span></span></span>
 </li><li> If <code>z</code> is <code>+0+0i</code>, the result is <code>+0+0i</code>
 </li><li> If <code>z</code> is <code>+0+NaNi</code>, the result is <code>+0+NaNi</code>
-</li><li> If <code>z</code> is <code>+1+0i</code>, the result is <code>+∞+0i</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span> is raised
+</li><li> If <code>z</code> is <code>+1+0i</code>, the result is <code>+∞+0i</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_DIVBYZERO</a></span> is raised
 </li><li> If <code>z</code> is <code>x+∞i</code> (for any finite positive x), the result is <code>+0+iπ/2</code>
-</li><li> If <code>z</code> is <code>x+NaNi</code> (for any finite nonzero x), the result is <code>NaN+NaNi</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised
+</li><li> If <code>z</code> is <code>x+NaNi</code> (for any finite nonzero x), the result is <code>NaN+NaNi</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised
 </li><li> If <code>z</code> is <code>+∞+yi</code> (for any finite positive y), the result is <code>+0+iπ/2</code>
 </li><li> If <code>z</code> is <code>+∞+∞i</code>, the result is <code>+0+iπ/2</code>
 </li><li> If <code>z</code> is <code>+∞+NaNi</code>, the result is <code>+0+NaNi</code>
-</li><li> If <code>z</code> is <code>NaN+yi</code> (for any finite y), the result is <code>NaN+NaNi</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised
+</li><li> If <code>z</code> is <code>NaN+yi</code> (for any finite y), the result is <code>NaN+NaNi</code> and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised
 </li><li> If <code>z</code> is <code>NaN+∞i</code>, the result is <code>±0+iπ/2</code> (the sign of the real part is unspecified)
 </li><li> If <code>z</code> is <code>NaN+NaNi</code>, the result is <code>NaN+NaNi</code>
 </li></ul>
@@ -279,17 +279,17 @@ For any z, <span class="texhtml" style="white-space: nowrap;">atanh(z) = <span c
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> catanh<span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(+2+0i) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> catanh<span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(+2+0i) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> catanh<span class="br0">(</span><a href="conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or catanh(CMPLX(2, -0.0)) in C11</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(+2-0i) (the other side of the cut) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z2<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> catanh<span class="br0">(</span><a href="./conj.htm"><span class="kw760">conj</span></a><span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// or catanh(CMPLX(2, -0.0)) in C11</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(+2-0i) (the other side of the cut) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z2<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// for any z, atanh(z) = atan(iz)/i</span>
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z3 <span class="sy1">=</span> catanh<span class="br0">(</span><span class="nu0">1</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(1+2i) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z3<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z3<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z4 <span class="sy1">=</span> <a href="catan.htm"><span class="kw787">catan</span></a><span class="br0">(</span><span class="br0">(</span><span class="nu0">1</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy2">/</span>I<span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catan(i * (1+2i))/i =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z4<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z4<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z3 <span class="sy1">=</span> catanh<span class="br0">(</span><span class="nu0">1</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catanh(1+2i) =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z3<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z3<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z4 <span class="sy1">=</span> <a href="./catan.htm"><span class="kw787">catan</span></a><span class="br0">(</span><span class="br0">(</span><span class="nu0">1</span><span class="sy2">+</span><span class="nu0">2</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy2">*</span>I<span class="br0">)</span><span class="sy2">/</span>I<span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"catan(i * (1+2i))/i =&nbsp;%f%+fi<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z4<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z4<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -334,25 +334,25 @@ catan(i * (1+2i))/i = 0.173287+1.178097i</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="casinh.htm" title="c/numeric/complex/casinh"> <span class="t-lines"><span>casinh</span><span>casinhf</span><span>casinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./casinh.htm" title="c/numeric/complex/casinh"> <span class="t-lines"><span>casinh</span><span>casinhf</span><span>casinhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex arc hyperbolic sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casinh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="cacosh.htm" title="c/numeric/complex/cacosh"> <span class="t-lines"><span>cacosh</span><span>cacoshf</span><span>cacoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./cacosh.htm" title="c/numeric/complex/cacosh"> <span class="t-lines"><span>cacosh</span><span>cacoshf</span><span>cacoshl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex arc hyperbolic cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_cacosh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="ctanh.htm" title="c/numeric/complex/ctanh"> <span class="t-lines"><span>ctanh</span><span>ctanhf</span><span>ctanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./ctanh.htm" title="c/numeric/complex/ctanh"> <span class="t-lines"><span>ctanh</span><span>ctanhf</span><span>ctanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex hyperbolic tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctanh&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../math/atanh.html" title="c/numeric/math/atanh"> <span class="t-lines"><span>atanh</span><span>atanhf</span><span>atanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../math/atanh.htm" title="c/numeric/math/atanh"> <span class="t-lines"><span>atanh</span><span>atanhf</span><span>atanhl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes inverse hyperbolic tangent (<span class="mjax" style="display:none">\({\small\operatorname{artanh}{x} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">artanh(x)</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_atanh&amp;action=edit">[edit]</a></span>
 </td></tr>

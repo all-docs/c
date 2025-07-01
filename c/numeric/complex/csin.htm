@@ -186,28 +186,28 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/complex.html" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/complex.htm" title="c/header/complex"><tt>&lt;complex.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp; csinf<span class="br0">(</span> <span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp; csinf<span class="br0">(</span> <span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp;csin<span class="br0">(</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> &nbsp; &nbsp; &nbsp;csin<span class="br0">(</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> csinl<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> csinl<span class="br0">(</span> <span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -220,15 +220,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1-3)</span> Computes the complex sine of <code>z</code>.</div>
-<div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csinl</code> is called. if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csin</code> is called, if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csinf</code> is called. If <code>z</code> is real or integer, then the macro invokes the corresponding real function (<span class="t-c"><span class="mw-geshi c source-c">sinf</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/sin.html"><span class="kw669">sin</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c">sinl</span></span>). If <code>z</code> is imaginary, then the macro invokes the corresponding real version of the function <span class="t-lc"><a href="../math/sinh.html" title="c/numeric/math/sinh">sinh</a></span>, implementing the formula <span class="texhtml" style="white-space: nowrap;">sin(iy) = i ∙ sinh(y)</span>, and the return type of the macro is imaginary.</div>
+<div class="t-li1"><span class="t-li">4)</span> Type-generic macro: If <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csinl</code> is called. if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csin</code> is called, if <code>z</code> has type <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">float</span> <a href="./complex.htm"><span class="kw743">complex</span></a></span></span>, <code>csinf</code> is called. If <code>z</code> is real or integer, then the macro invokes the corresponding real function (<span class="t-c"><span class="mw-geshi c source-c">sinf</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><a href="../math/sin.htm"><span class="kw669">sin</span></a></span></span>, <span class="t-c"><span class="mw-geshi c source-c">sinl</span></span>). If <code>z</code> is imaginary, then the macro invokes the corresponding real version of the function <span class="t-lc"><a href="../math/sinh.htm" title="c/numeric/math/sinh">sinh</a></span>, implementing the formula <span class="texhtml" style="white-space: nowrap;">sin(iy) = i ∙ sinh(y)</span>, and the return type of the macro is imaginary.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="csin.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="csin.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="csin.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="csin.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="csin.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="csin.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./csin.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./csin.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./csin.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./csin.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./csin.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./csin.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/csin&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -244,7 +244,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/csin&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If no errors occur, the complex sine of <code>z</code>.
-</p><p>Errors and special cases are handled as if the operation is implemented by <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span>I <span class="sy2">*</span> <a href="csinh.htm"><span class="kw808">csinh</span></a><span class="br0">(</span>I<span class="sy2">*</span>z<span class="br0">)</span></span></span>
+</p><p>Errors and special cases are handled as if the operation is implemented by <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">-</span>I <span class="sy2">*</span> <a href="./csinh.htm"><span class="kw808">csinh</span></a><span class="br0">(</span>I<span class="sy2">*</span>z<span class="br0">)</span></span></span>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/complex/csin&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The sine is an entire function on the complex plane, and has no branch cuts.
@@ -258,11 +258,11 @@ Mathematical definition of the sine is <span class="texhtml" style="white-space:
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> csin<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// behaves like real sine along the real line</span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"sin(1+0i) =&nbsp;%f%+fi ( sin(1)=%f)<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="../math/sin.html"><span class="kw669">sin</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z <span class="sy1">=</span> csin<span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>  <span class="co1">// behaves like real sine along the real line</span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"sin(1+0i) =&nbsp;%f%+fi ( sin(1)=%f)<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z<span class="br0">)</span>, <a href="../math/sin.htm"><span class="kw669">sin</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw4">double</span> <a href="complex.htm"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> csin<span class="br0">(</span>I<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// behaves like sinh along the imaginary line </span>
-    <a href="../../io/fprintf.html"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"sin(0+1i) =&nbsp;%f%+fi (sinh(1)=%f)<span class="es1">\n</span>"</span>, <a href="creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="../math/sinh.html"><span class="kw676">sinh</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">double</span> <a href="./complex.htm"><span class="kw743">complex</span></a> z2 <span class="sy1">=</span> csin<span class="br0">(</span>I<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// behaves like sinh along the imaginary line </span>
+    <a href="../../io/fprintf.htm"><span class="kw848">printf</span></a><span class="br0">(</span><span class="st0">"sin(0+1i) =&nbsp;%f%+fi (sinh(1)=%f)<span class="es1">\n</span>"</span>, <a href="./creal.htm"><span class="kw754">creal</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="./cimag.htm"><span class="kw751">cimag</span></a><span class="br0">(</span>z2<span class="br0">)</span>, <a href="../math/sinh.htm"><span class="kw676">sinh</span></a><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -313,25 +313,25 @@ sin(0+1i) = 0.000000+1.175201i (sinh(1)=1.175201)</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="ccos.htm" title="c/numeric/complex/ccos"> <span class="t-lines"><span>ccos</span><span>ccosf</span><span>ccosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./ccos.htm" title="c/numeric/complex/ccos"> <span class="t-lines"><span>ccos</span><span>ccosf</span><span>ccosl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex cosine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ccos&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="ctan.htm" title="c/numeric/complex/ctan"> <span class="t-lines"><span>ctan</span><span>ctanf</span><span>ctanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./ctan.htm" title="c/numeric/complex/ctan"> <span class="t-lines"><span>ctan</span><span>ctanf</span><span>ctanl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex tangent <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_ctan&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="casin.htm" title="c/numeric/complex/casin"> <span class="t-lines"><span>casin</span><span>casinf</span><span>casinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./casin.htm" title="c/numeric/complex/casin"> <span class="t-lines"><span>casin</span><span>casinf</span><span>casinl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes the complex arc sine <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/complex/dsc_casin&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../math/sin.html" title="c/numeric/math/sin"> <span class="t-lines"><span>sin</span><span>sinf</span><span>sinl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../math/sin.htm" title="c/numeric/math/sin"> <span class="t-lines"><span>sin</span><span>sinf</span><span>sinl</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes sine (<span class="mjax" style="display:none">\({\small\sin{x} }\)</span><span class="mjax-fallback texhtml" style="white-space: nowrap;">sin(x)</span>)  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_sin&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,43 +186,43 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/time.html" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/time.htm" title="c/header/time"><tt>&lt;time.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime &nbsp;<span class="br0">(</span> <span class="kw4">const</span> <a href="time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> timer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime &nbsp;<span class="br0">(</span> <span class="kw4">const</span> <a href="./time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> timer <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (1) </td>
 <td class="t-dcl-nopad">  </td>
 </tr>
 <tr class="t-dcl t-since-c23">
-<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime_r<span class="br0">(</span> <span class="kw4">const</span> <a href="time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> timer, <span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> buf <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime_r<span class="br0">(</span> <span class="kw4">const</span> <a href="./time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> timer, <span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> buf <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c23">(since C23)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime_s<span class="br0">(</span> <span class="kw4">const</span> <a href="time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> timer, <span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> buf <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> gmtime_s<span class="br0">(</span> <span class="kw4">const</span> <a href="./time_t.htm"><span class="kw523">time_t</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> timer, <span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> buf <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (3) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<div class="t-li1"><span class="t-li">1)</span> Converts given time since epoch (a <span class="t-lc"><a href="time_t.htm" title="c/chrono/time t">time_t</a></span> value pointed to by <span class="t-c"><span class="mw-geshi c source-c">timer</span></span>) into calendar time, expressed in Coordinated Universal Time (UTC) in the <a href="tm.htm" title="c/chrono/tm"><code>struct tm</code></a> format. The result is stored in static storage and a pointer to that static storage is returned.</div>
+<div class="t-li1"><span class="t-li">1)</span> Converts given time since epoch (a <span class="t-lc"><a href="./time_t.htm" title="c/chrono/time t">time_t</a></span> value pointed to by <span class="t-c"><span class="mw-geshi c source-c">timer</span></span>) into calendar time, expressed in Coordinated Universal Time (UTC) in the <a href="./tm.htm" title="c/chrono/tm"><code>struct tm</code></a> format. The result is stored in static storage and a pointer to that static storage is returned.</div>
 <div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the function uses user-provided storage <span class="t-c"><span class="mw-geshi c source-c">buf</span></span> for the result.</div>
-<div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(1)</span>, except that the function uses user-provided storage <span class="t-c"><span class="mw-geshi c source-c">buf</span></span> for the result and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">3)</span> Same as <span class="t-v">(1)</span>, except that the function uses user-provided storage <span class="t-c"><span class="mw-geshi c source-c">buf</span></span> for the result and that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <span class="t-c"><span class="mw-geshi c source-c">timer</span></span> or <span class="t-c"><span class="mw-geshi c source-c">buf</span></span> is a null pointer
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>gmtime_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/time.html" title="c/header/time"><tt>&lt;time.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>gmtime_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/time.htm" title="c/header/time"><tt>&lt;time.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="gmtime.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="gmtime.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="gmtime.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="gmtime.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="gmtime.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="gmtime.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./gmtime.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./gmtime.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./gmtime.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./gmtime.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./gmtime.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./gmtime.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/chrono/gmtime&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -234,21 +234,21 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> pointer to a <span class="t-lc"><a href="time_t.htm" title="c/chrono/time t">time_t</a></span> object to convert
+<td> pointer to a <span class="t-lc"><a href="./time_t.htm" title="c/chrono/time t">time_t</a></span> object to convert
 </td></tr>
 <tr class="t-par">
 <td> buf
 </td>
 <td> -
 </td>
-<td> pointer to a <span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a></span> object to store the result
+<td> pointer to a <span class="mw-geshi c source-c"><span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a></span> object to store the result
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/chrono/gmtime&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> pointer to a static internal <span class="t-lc"><a href="tm.htm" title="c/chrono/tm">tm</a></span> object on success, or null pointer otherwise. The structure may be shared between <code>gmtime</code>, <span class="t-lc"><a href="localtime.htm" title="c/chrono/localtime">localtime</a></span>, and <span class="t-lc"><a href="ctime.htm" title="c/chrono/ctime">ctime</a></span> and may be overwritten on each invocation.</div>
+<div class="t-li1"><span class="t-li">1)</span> pointer to a static internal <span class="t-lc"><a href="./tm.htm" title="c/chrono/tm">tm</a></span> object on success, or null pointer otherwise. The structure may be shared between <code>gmtime</code>, <span class="t-lc"><a href="./localtime.htm" title="c/chrono/localtime">localtime</a></span>, and <span class="t-lc"><a href="./ctime.htm" title="c/chrono/ctime">ctime</a></span> and may be overwritten on each invocation.</div>
 <div class="t-li1"><span class="t-li">2,3)</span> copy of the <span class="t-c"><span class="mw-geshi c source-c">buf</span></span> pointer, or null pointer on error (which may be a runtime constraint violation or a failure to convert the specified time to UTC).</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/chrono/gmtime&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p><code>gmtime</code> may not be thread-safe.
-</p><p>POSIX requires that <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime.html"><code>gmtime</code></a> and <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime_r.html"><code>gmtime_r</code></a> set <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> to <span class="t-c"><span class="mw-geshi c source-c"><a href="../error/errno_macros.html"><span class="kw471">EOVERFLOW</span></a></span></span> if they fail because the argument is too large.
+</p><p>POSIX requires that <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime.html"><code>gmtime</code></a> and <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9799919799/functions/gmtime_r.html"><code>gmtime_r</code></a> set <span class="t-lc"><a href="../error/errno.htm" title="c/error/errno">errno</a></span> to <span class="t-c"><span class="mw-geshi c source-c"><a href="../error/errno_macros.htm"><span class="kw471">EOVERFLOW</span></a></span></span> if they fail because the argument is too large.
 </p><p>The implementation of <code>gmtime_s</code> in <a rel="nofollow" class="external text" href="https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s?view=vs-2019">Microsoft CRT</a> is incompatible with the C standard since it has reversed parameter order.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/chrono/gmtime&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -261,20 +261,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="time_t.htm"><span class="kw523">time_t</span></a> t <span class="sy1">=</span> <a href="time.htm"><span class="kw513">time</span></a><span class="br0">(</span><a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"UTC:      &nbsp;%s"</span>, <a href="asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span>gmtime<span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"local:    &nbsp;%s"</span>, <a href="asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="localtime.htm"><span class="kw519">localtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./time_t.htm"><span class="kw523">time_t</span></a> t <span class="sy1">=</span> <a href="./time.htm"><span class="kw513">time</span></a><span class="br0">(</span><a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"UTC:      &nbsp;%s"</span>, <a href="./asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span>gmtime<span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"local:    &nbsp;%s"</span>, <a href="./asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="./localtime.htm"><span class="kw519">localtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// POSIX-specific</span>
     putenv<span class="br0">(</span><span class="st0">"TZ=Asia/Singapore"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Singapore:&nbsp;%s"</span>, <a href="asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="localtime.htm"><span class="kw519">localtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"Singapore:&nbsp;%s"</span>, <a href="./asctime.htm"><span class="kw515">asctime</span></a><span class="br0">(</span><a href="./localtime.htm"><span class="kw519">localtime</span></a><span class="br0">(</span><span class="sy3">&amp;</span>t<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
 <span class="co2">#ifdef __STDC_LIB_EXT1__</span>
-    <span class="kw1">struct</span> <a href="tm.htm"><span class="kw522">tm</span></a> buf<span class="sy4">;</span>
+    <span class="kw1">struct</span> <a href="./tm.htm"><span class="kw522">tm</span></a> buf<span class="sy4">;</span>
     <span class="kw4">char</span> str<span class="br0">[</span><span class="nu0">26</span><span class="br0">]</span><span class="sy4">;</span>
     asctime_s<span class="br0">(</span>str, <span class="kw4">sizeof</span> str, gmtime_s<span class="br0">(</span><span class="sy3">&amp;</span>t, <span class="sy3">&amp;</span>buf<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"UTC:      &nbsp;%s"</span>, str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"UTC:      &nbsp;%s"</span>, str<span class="br0">)</span><span class="sy4">;</span>
     asctime_s<span class="br0">(</span>str, <span class="kw4">sizeof</span> str, localtime_s<span class="br0">(</span><span class="sy3">&amp;</span>t, <span class="sy3">&amp;</span>buf<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"local:    &nbsp;%s"</span>, str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"local:    &nbsp;%s"</span>, str<span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -334,7 +334,7 @@ local:     Fri Sep 15 14:22:05 2017</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="localtime.htm" title="c/chrono/localtime"> <span class="t-lines"><span>localtime</span><span>localtime_r</span><span>localtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./localtime.htm" title="c/chrono/localtime"> <span class="t-lines"><span>localtime</span><span>localtime_r</span><span>localtime_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c23">(C23)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   converts time since epoch to calendar time expressed as local time <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/chrono/dsc_localtime&amp;action=edit">[edit]</a></span>
 </td></tr>

@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/math.html" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/math.htm" title="c/header/math"><tt>&lt;math.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -222,7 +222,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/tgmath.html" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/tgmath.htm" title="c/header/tgmath"><tt>&lt;tgmath.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -239,13 +239,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">7)</span> Type-generic macro: If any argument has type <span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">double</span></span>, <code>fmal</code> is called. Otherwise, if any argument has integer type or has type <span class="mw-geshi c source-c"><span class="kw4">double</span></span>, <code>fma</code> is called. Otherwise, <code>fmaf</code> is called.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="fma.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="fma.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="fma.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="fma.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="fma.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="fma.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="fma.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./fma.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./fma.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./fma.htm#Error_handling"><span class="tocnumber">3</span> <span class="toctext">Error handling</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./fma.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./fma.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./fma.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./fma.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/fma&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -261,26 +261,26 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/fma&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>If successful, returns the value of <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>x <span class="sy2">*</span> y<span class="br0">)</span> <span class="sy2">+</span> z</span></span> as if calculated to infinite precision and rounded once to fit the result type (or, alternatively, calculated as a single ternary floating-point operation).
-</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">±HUGE_VAL</a></span>, <code>±HUGE_VALF</code>, or <code>±HUGE_VALL</code> is returned.
+</p><p>If a range error due to overflow occurs, <span class="t-lc"><a href="./HUGE_VALL.htm" title="c/numeric/math/HUGE VAL">±HUGE_VAL</a></span>, <code>±HUGE_VALF</code>, or <code>±HUGE_VALL</code> is returned.
 </p><p>If a range error due to underflow occurs, the correct value (after rounding) is returned.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/fma&amp;action=edit&amp;section=3" title="Edit section: Error handling">edit</a>]</span> <span class="mw-headline" id="Error_handling">Error handling</span></h3>
-<p>Errors are reported as specified in <a href="math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
+<p>Errors are reported as specified in <a href="./math_errhandling.htm" title="c/numeric/math/math errhandling"><code>math_errhandling</code></a>.
 </p><p>If the implementation supports IEEE floating-point arithmetic (IEC 60559),
 </p>
 <ul><li> If <span class="t-c"><span class="mw-geshi c source-c">x</span></span> is zero and <span class="t-c"><span class="mw-geshi c source-c">y</span></span> is infinite or if <span class="t-c"><span class="mw-geshi c source-c">x</span></span> is infinite and <span class="t-c"><span class="mw-geshi c source-c">y</span></span> is zero, and
-<ul><li> if <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is not a NaN, then NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised,
-</li><li> if <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is a NaN, then NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised.
+<ul><li> if <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is not a NaN, then NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised,
+</li><li> if <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is a NaN, then NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> may be raised.
 </li></ul>
-</li><li> If <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">*</span> y</span></span> is an exact infinity and <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is an infinity with the opposite sign, NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised.
+</li><li> If <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">*</span> y</span></span> is an exact infinity and <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is an infinity with the opposite sign, NaN is returned and <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span> is raised.
 </li><li> If <span class="t-c"><span class="mw-geshi c source-c">x</span></span> or <span class="t-c"><span class="mw-geshi c source-c">y</span></span> are NaN, NaN is returned.
-</li><li> If <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is NaN, and <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">*</span> y</span></span> is not <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">0</span> <span class="sy2">*</span> Inf</span></span> or <span class="t-c"><span class="mw-geshi c source-c">Inf <span class="sy2">*</span> <span class="nu0">0</span></span></span>, then NaN is returned (without <span class="t-lc"><a href="../fenv/FE_exceptions.html" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>).
+</li><li> If <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is NaN, and <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">*</span> y</span></span> is not <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">0</span> <span class="sy2">*</span> Inf</span></span> or <span class="t-c"><span class="mw-geshi c source-c">Inf <span class="sy2">*</span> <span class="nu0">0</span></span></span>, then NaN is returned (without <span class="t-lc"><a href="../fenv/FE_exceptions.htm" title="c/numeric/fenv/FE exceptions">FE_INVALID</a></span>).
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/fma&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>This operation is commonly implemented in hardware as <a href="https://en.wikipedia.org/wiki/Multiply%E2%80%93accumulate_operation" class="extiw" title="enwiki:Multiply–accumulate operation">fused multiply-add</a> CPU instruction. If supported by hardware, the appropriate <span class="t-c"><span class="mw-geshi c source-c">FP_FAST_FMA<span class="sy2">*</span></span></span> macros are expected to be defined, but many implementations make use of the CPU instruction even when the macros are not defined.
 </p><p><a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/fma.html">POSIX specifies</a> that the situation where the value <span class="t-c"><span class="mw-geshi c source-c">x <span class="sy2">*</span> y</span></span> is invalid and <span class="t-c"><span class="mw-geshi c source-c">z</span></span> is a NaN is a domain error.
-</p><p>Due to its infinite intermediate precision, <code>fma</code> is a common building block of other correctly-rounded mathematical operations, such as <span class="t-lc"><a href="sqrt.htm" title="c/numeric/math/sqrt">sqrt</a></span> or even the division (where not provided by the CPU, e.g. <a href="https://en.wikipedia.org/wiki/Itanium" class="extiw" title="enwiki:Itanium">Itanium</a>).
-</p><p>As with all floating-point expressions, the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>x <span class="sy2">*</span> y<span class="br0">)</span> <span class="sy2">+</span> z</span></span> may be compiled as a fused mutiply-add unless the <a href="../../preprocessor/impl.html" title="c/preprocessor/impl"><tt>
+</p><p>Due to its infinite intermediate precision, <code>fma</code> is a common building block of other correctly-rounded mathematical operations, such as <span class="t-lc"><a href="./sqrt.htm" title="c/numeric/math/sqrt">sqrt</a></span> or even the division (where not provided by the CPU, e.g. <a href="https://en.wikipedia.org/wiki/Itanium" class="extiw" title="enwiki:Itanium">Itanium</a>).
+</p><p>As with all floating-point expressions, the expression <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>x <span class="sy2">*</span> y<span class="br0">)</span> <span class="sy2">+</span> z</span></span> may be compiled as a fused mutiply-add unless the <a href="../../preprocessor/impl.htm" title="c/preprocessor/impl"><tt>
 #pragma</tt></a> <span class="t-c"><span class="mw-geshi c source-c">STDC FP_CONTRACT</span></span> is off.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/math/fma&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
@@ -295,26 +295,26 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="co1">// demo the difference between fma and built-in operators</span>
     <span class="kw4">double</span> in <span class="sy1">=</span> <span class="nu16">0.1</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1 double is&nbsp;%.23f (%a)<span class="es1">\n</span>"</span>, in, in<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1*10 is 1.0000000000000000555112 (0x8.0000000000002p-3),"</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1 double is&nbsp;%.23f (%a)<span class="es1">\n</span>"</span>, in, in<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1*10 is 1.0000000000000000555112 (0x8.0000000000002p-3),"</span>
            <span class="st0">" or 1.0 if rounded to double<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">double</span> expr_result <span class="sy1">=</span> <span class="nu16">0.1</span> <span class="sy2">*</span> <span class="nu0">10</span> <span class="sy2">-</span> <span class="nu0">1</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1 * 10 - 1 =&nbsp;%g&nbsp;: 1 subtracted after "</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"0.1 * 10 - 1 =&nbsp;%g&nbsp;: 1 subtracted after "</span>
            <span class="st0">"intermediate rounding to 1.0<span class="es1">\n</span>"</span>, expr_result<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">double</span> fma_result <span class="sy1">=</span> fma<span class="br0">(</span><span class="nu16">0.1</span>, <span class="nu0">10</span>, <span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"fma(0.1, 10, -1) =&nbsp;%g (%a)<span class="es1">\n</span>"</span>, fma_result, fma_result<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"fma(0.1, 10, -1) =&nbsp;%g (%a)<span class="es1">\n</span>"</span>, fma_result, fma_result<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// fma use in double-double arithmetic</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>in double-double arithmetic, 0.1 * 10 is representable as "</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>in double-double arithmetic, 0.1 * 10 is representable as "</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">double</span> high <span class="sy1">=</span> <span class="nu16">0.1</span> <span class="sy2">*</span> <span class="nu0">10</span><span class="sy4">;</span>
     <span class="kw4">double</span> low <span class="sy1">=</span> fma<span class="br0">(</span><span class="nu16">0.1</span>, <span class="nu0">10</span>, <span class="sy2">-</span>high<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%g +&nbsp;%g<span class="es1">\n</span><span class="es1">\n</span>"</span>, high, low<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%g +&nbsp;%g<span class="es1">\n</span><span class="es1">\n</span>"</span>, high, low<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="co1">// error handling</span>
-    <a href="../fenv/feclearexcept.html"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"fma(+Inf, 10, -Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, fma<span class="br0">(</span>INFINITY, <span class="nu0">10</span>, <span class="sy2">-</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.html"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.html"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>
-        <a href="../../io/puts.html"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_INVALID raised"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../fenv/feclearexcept.htm"><span class="kw717">feclearexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"fma(+Inf, 10, -Inf) =&nbsp;%f<span class="es1">\n</span>"</span>, fma<span class="br0">(</span>INFINITY, <span class="nu0">10</span>, <span class="sy2">-</span>INFINITY<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="../fenv/fetestexcept.htm"><span class="kw718">fetestexcept</span></a><span class="br0">(</span><a href="../fenv/FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>
+        <a href="../../io/puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"    FE_INVALID raised"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -385,13 +385,13 @@ fma(+Inf, 10, -Inf) = -nan
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="remainder.htm" title="c/numeric/math/remainder"> <span class="t-lines"><span>remainder</span><span>remainderf</span><span>remainderl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./remainder.htm" title="c/numeric/math/remainder"> <span class="t-lines"><span>remainder</span><span>remainderf</span><span>remainderl</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes signed remainder of the floating-point division operation  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_remainder&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="remquo.htm" title="c/numeric/math/remquo"> <span class="t-lines"><span>remquo</span><span>remquof</span><span>remquol</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./remquo.htm" title="c/numeric/math/remquo"> <span class="t-lines"><span>remquo</span><span>remquof</span><span>remquol</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   computes signed remainder as well as the three last bits of the division operation  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/math/dsc_remquo&amp;action=edit">[edit]</a></span>
 </td></tr>

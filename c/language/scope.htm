@@ -160,8 +160,8 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>Each <a href="identifiers.htm" title="c/language/identifier">identifier</a> that appears in a C program is <i>visible</i> (that is, may be used) only in some possibly discontiguous portion of the source code called its <i>scope</i>.
-</p><p>Within a scope, an identifier may designate more than one entity only if the entities are in different <a href="name_space.htm" title="c/language/name space">name spaces</a>.
+<p>Each <a href="./identifiers.htm" title="c/language/identifier">identifier</a> that appears in a C program is <i>visible</i> (that is, may be used) only in some possibly discontiguous portion of the source code called its <i>scope</i>.
+</p><p>Within a scope, an identifier may designate more than one entity only if the entities are in different <a href="./name_space.htm" title="c/language/name space">name spaces</a>.
 </p><p>C has four kinds of scopes: 
 </p>
 <dl><dd><ul><li> block scope
@@ -172,19 +172,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </dd></dl>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="scope.htm#Nested_scopes"><span class="tocnumber">1</span> <span class="toctext">Nested scopes</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="scope.htm#Block_scope"><span class="tocnumber">2</span> <span class="toctext">Block scope</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="scope.htm#File_scope"><span class="tocnumber">3</span> <span class="toctext">File scope</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="scope.htm#Function_scope"><span class="tocnumber">4</span> <span class="toctext">Function scope</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="scope.htm#Function_prototype_scope"><span class="tocnumber">5</span> <span class="toctext">Function prototype scope</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="scope.htm#Point_of_declaration"><span class="tocnumber">6</span> <span class="toctext">Point of declaration</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="scope.htm#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-8"><a href="scope.htm#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-9"><a href="scope.htm#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./scope.htm#Nested_scopes"><span class="tocnumber">1</span> <span class="toctext">Nested scopes</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./scope.htm#Block_scope"><span class="tocnumber">2</span> <span class="toctext">Block scope</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./scope.htm#File_scope"><span class="tocnumber">3</span> <span class="toctext">File scope</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./scope.htm#Function_scope"><span class="tocnumber">4</span> <span class="toctext">Function scope</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./scope.htm#Function_prototype_scope"><span class="tocnumber">5</span> <span class="toctext">Function prototype scope</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./scope.htm#Point_of_declaration"><span class="tocnumber">6</span> <span class="toctext">Point of declaration</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./scope.htm#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="./scope.htm#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="./scope.htm#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=1" title="Edit section: Nested scopes">edit</a>]</span> <span class="mw-headline" id="Nested_scopes">Nested scopes</span></h3>
-<p>If two different entities named by the same identifier are in scope at the same time, and they belong to the same <a href="name_space.htm" title="c/language/name space">name space</a>, the scopes are nested (no other form of scope overlap is allowed), and the declaration that appears in the inner scope hides the declaration that appears in the outer scope:
+<p>If two different entities named by the same identifier are in scope at the same time, and they belong to the same <a href="./name_space.htm" title="c/language/name space">name space</a>, the scopes are nested (no other form of scope overlap is allowed), and the declaration that appears in the inner scope hides the declaration that appears in the outer scope:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co1">// The name space here is ordinary identifiers.</span>
 &nbsp;
@@ -195,24 +195,24 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span> <span class="co1">// the block scope of the name a begins here; hides file-scope a</span>
     <span class="br0">{</span>
       <span class="kw4">int</span> a <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>         <span class="co1">// the scope of the inner a begins here, outer a is hidden</span>
-      <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// inner a is in scope, prints 2</span>
+      <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// inner a is in scope, prints 2</span>
     <span class="br0">}</span>                    <span class="co1">// the block scope of the inner a ends here</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// the outer a is in scope, prints 1</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// the outer a is in scope, prints 1</span>
 <span class="br0">}</span>                        <span class="co1">// the scope of the outer a ends here</span>
 &nbsp;
 <span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// name a has function prototype scope; hides file-scope a</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=2" title="Edit section: Block scope">edit</a>]</span> <span class="mw-headline" id="Block_scope">Block scope</span></h3>
-<p>The scope of any identifier declared inside a <a href="statements.htm#Compound_statements" title="c/language/statements">compound statement</a>, including function bodies, <span class="t-rev-inl t-since-c99"><span>or in any expression, declaration, or statement appearing in <a href="if.htm" title="c/language/if">if</a>, <a href="switch.htm" title="c/language/switch">switch</a>, <a href="for.htm" title="c/language/for">for</a>, <a href="while.htm" title="c/language/while">while</a>, or <a href="do.htm" title="c/language/do">do-while</a> statement</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, or within the parameter list of a <a href="function_definition.htm" title="c/language/function definition">function definition</a> begins at the point of declaration and ends at the end of the block or statement in which it was declared.
+<p>The scope of any identifier declared inside a <a href="./statements.htm#Compound_statements" title="c/language/statements">compound statement</a>, including function bodies, <span class="t-rev-inl t-since-c99"><span>or in any expression, declaration, or statement appearing in <a href="./if.htm" title="c/language/if">if</a>, <a href="./switch.htm" title="c/language/switch">switch</a>, <a href="./for.htm" title="c/language/for">for</a>, <a href="./while.htm" title="c/language/while">while</a>, or <a href="./do.htm" title="c/language/do">do-while</a> statement</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, or within the parameter list of a <a href="./function_definition.htm" title="c/language/function definition">function definition</a> begins at the point of declaration and ends at the end of the block or statement in which it was declared.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span>  <span class="co1">// scope of the function parameter 'n' begins</span>
 <span class="br0">{</span>         <span class="co1">// the body of the function begins</span>
    <span class="sy2">++</span>n<span class="sy4">;</span>   <span class="co1">// 'n' is in scope and refers to the function parameter</span>
 <span class="co1">// int n = 2; // error: cannot redeclare identifier in the same scope</span>
    <span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n<span class="sy1">&lt;</span><span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span> <span class="br0">{</span> <span class="co1">// scope of loop-local 'n' begins</span>
-       <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 0 1 2 3 4 5 6 7 8 9</span>
+       <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints 0 1 2 3 4 5 6 7 8 9</span>
    <span class="br0">}</span> <span class="co1">// scope of the loop-local 'n' ends</span>
      <span class="co1">// the function parameter 'n' is back in scope</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints the value of the parameter</span>
+   <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, n<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints the value of the parameter</span>
 <span class="br0">}</span> <span class="co1">// scope of function parameter 'n' ends</span>
 <span class="kw4">int</span> a <span class="sy1">=</span> n<span class="sy4">;</span> <span class="co1">// Error: name 'n' is not in scope</span></pre></div></div>
 <table class="t-rev-begin">
@@ -229,7 +229,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
-<p>Block-scope variables have <a href="storage_class_specifiers.htm" title="c/language/storage duration">no linkage</a> and <a href="storage_class_specifiers.htm" title="c/language/storage duration">automatic storage duration</a> by default. Note that storage duration for non-VLA local variables begins when the block is entered, but until the declaration is seen, the 
+<p>Block-scope variables have <a href="./storage_class_specifiers.htm" title="c/language/storage duration">no linkage</a> and <a href="./storage_class_specifiers.htm" title="c/language/storage duration">automatic storage duration</a> by default. Note that storage duration for non-VLA local variables begins when the block is entered, but until the declaration is seen, the 
 variable is not in scope and cannot be accessed.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=3" title="Edit section: File scope">edit</a>]</span> <span class="mw-headline" id="File_scope">File scope</span></h3>
@@ -241,10 +241,10 @@ variable is not in scope and cannot be accessed.
 <span class="br0">{</span>
     i <span class="sy1">=</span> g<span class="br0">(</span><span class="nu0">2</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// i and g are in scope</span>
 <span class="br0">}</span></pre></div></div>
-<p>File-scope identifiers have <a href="storage_class_specifiers.htm" title="c/language/storage duration">external linkage</a> and <a href="storage_class_specifiers.htm" title="c/language/storage duration">static storage duration</a> by default.
+<p>File-scope identifiers have <a href="./storage_class_specifiers.htm" title="c/language/storage duration">external linkage</a> and <a href="./storage_class_specifiers.htm" title="c/language/storage duration">static storage duration</a> by default.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=4" title="Edit section: Function scope">edit</a>]</span> <span class="mw-headline" id="Function_scope">Function scope</span></h3>
-<p>A <a href="statements.htm#Labels" title="c/language/statements">label (and only a label)</a> declared inside a function is in scope everywhere in that function, in all nested blocks, before and after its own declaration. Note: a label is declared implicitly, by using an otherwise unused identifier before the colon character before any statement.
+<p>A <a href="./statements.htm#Labels" title="c/language/statements">label (and only a label)</a> declared inside a function is in scope everywhere in that function, in all nested blocks, before and after its own declaration. Note: a label is declared implicitly, by using an otherwise unused identifier before the colon character before any statement.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> f<span class="br0">(</span><span class="br0">)</span>
 <span class="br0">{</span>
@@ -260,7 +260,7 @@ label<span class="sy4">:;</span>
     <span class="kw1">goto</span> label<span class="sy4">;</span> <span class="co1">// error: label not in scope in g()</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=5" title="Edit section: Function prototype scope">edit</a>]</span> <span class="mw-headline" id="Function_prototype_scope">Function prototype scope</span></h3>
-<p>The scope of a name introduced in the parameter list of a <a href="function_declaration.htm" title="c/language/function declaration">function declaration</a> that is not a definition ends at the end of the function <a href="declarations.htm" title="c/language/declarations">declarator</a>.
+<p>The scope of a name introduced in the parameter list of a <a href="./function_declaration.htm" title="c/language/function declaration">function declaration</a> that is not a definition ends at the end of the function <a href="./declarations.htm" title="c/language/declarations">declarator</a>.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> n,
       <span class="kw4">int</span> a<span class="br0">[</span>n<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// n is in scope and refers to the first parameter</span></pre></div></div>
@@ -311,12 +311,12 @@ label<span class="sy4">:;</span>
 <span class="br0">{</span>
    <span class="kw1">return</span> n<span class="sy1">&lt;</span><span class="nu0">2</span> <span class="sy4">?</span> <span class="nu0">1</span> <span class="sy4">:</span> n<span class="sy2">*</span>factorial<span class="br0">(</span>n<span class="sy2">-</span><span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// recursive call</span>
 <span class="br0">}</span></pre></div></div>
-<p>As a special case, the scope of a <a href="compatible_type.htm" title="c/language/type">type name</a> that is not a declaration of an identifier is considered to begin just after the place within the type name where the identifier would appear were it not omitted.
+<p>As a special case, the scope of a <a href="./compatible_type.htm" title="c/language/type">type name</a> that is not a declaration of an identifier is considered to begin just after the place within the type name where the identifier would appear were it not omitted.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/scope&amp;action=edit&amp;section=7" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Prior to C89, identifiers with external linkage had file scope even when introduced within a block, and because of that, a C89 compiler is not required to diagnose the use of an extern identifier that has gone out of scope (such use is undefined behavior).
-</p><p>Local variables within a loop body can hide variables declared in the init clause of a <a href="for.htm" title="c/language/for">for</a> loop in C (their scope is nested), but cannot do that in C++.
-</p><p>Unlike C++, C has no struct scope: names declared within a struct/union/enum declaration are in the same scope as the struct declaration (except that data members are in their own <a href="name_space.htm" title="c/language/name space">member name space</a>):
+</p><p>Local variables within a loop body can hide variables declared in the init clause of a <a href="./for.htm" title="c/language/for">for</a> loop in C (their scope is nested), but cannot do that in C++.
+</p><p>Unlike C++, C has no struct scope: names declared within a struct/union/enum declaration are in the same scope as the struct declaration (except that data members are in their own <a href="./name_space.htm" title="c/language/name space">member name space</a>):
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> foo <span class="br0">{</span>
     <span class="kw1">struct</span> baz <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>

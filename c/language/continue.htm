@@ -184,17 +184,17 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
-<p>Causes the remaining portion of the enclosing <a href="for.htm" title="c/language/for">for</a>, <a href="while.htm" title="c/language/while">while</a> or <a href="do.htm" title="c/language/do"> do-while</a> loop body to be skipped.
+<p>Causes the remaining portion of the enclosing <a href="./for.htm" title="c/language/for">for</a>, <a href="./while.htm" title="c/language/while">while</a> or <a href="./do.htm" title="c/language/do"> do-while</a> loop body to be skipped.
 </p><p>Used when it is otherwise awkward to ignore the remaining portion of the loop using conditional statements.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="continue.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="continue.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="continue.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="continue.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="continue.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="continue.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./continue.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./continue.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./continue.htm#Keywords"><span class="tocnumber">3</span> <span class="toctext">Keywords</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./continue.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./continue.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./continue.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/continue&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
@@ -224,11 +224,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>continue</code> statement
+<td>  <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the <code>continue</code> statement
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/continue&amp;action=edit&amp;section=2" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
-<p>The <code>continue</code> statement causes a jump, as if by <a href="goto.htm" title="c/language/goto">goto</a>, to the end of the loop body (it may only appear within the loop body of <a href="for.htm" title="c/language/for">for</a>, <a href="while.htm" title="c/language/while">while</a>, and <a href="do.htm" title="c/language/do">do-while</a> loops).
-</p><p>For <a href="while.htm" title="c/language/while">while</a> loop, it acts as
+<p>The <code>continue</code> statement causes a jump, as if by <a href="./goto.htm" title="c/language/goto">goto</a>, to the end of the loop body (it may only appear within the loop body of <a href="./for.htm" title="c/language/for">for</a>, <a href="./while.htm" title="c/language/while">while</a>, and <a href="./do.htm" title="c/language/do">do-while</a> loops).
+</p><p>For <a href="./while.htm" title="c/language/while">while</a> loop, it acts as
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">while</span> <span class="br0">(</span><span class="coMULTI">/* ... */</span><span class="br0">)</span> <span class="br0">{</span>
    <span class="co1">// ... </span>
@@ -236,7 +236,7 @@ html { font-variant-ligatures: no-common-ligatures; }
    <span class="co1">// ... </span>
    contin<span class="sy4">:;</span>
 <span class="br0">}</span></pre></div></div>
-<p>For <a href="do.htm" title="c/language/do">do-while</a> loop, it acts as:
+<p>For <a href="./do.htm" title="c/language/do">do-while</a> loop, it acts as:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">do</span> <span class="br0">{</span>
     <span class="co1">// ... </span>
@@ -244,7 +244,7 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="co1">// ... </span>
     contin<span class="sy4">:;</span>
 <span class="br0">}</span> <span class="kw1">while</span> <span class="br0">(</span><span class="coMULTI">/* ... */</span><span class="br0">)</span><span class="sy4">;</span></pre></div></div>
-<p>For <a href="for.htm" title="c/language/for">for</a> loop, it acts as:
+<p>For <a href="./for.htm" title="c/language/for">for</a> loop, it acts as:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">for</span> <span class="br0">(</span><span class="coMULTI">/* ... */</span><span class="br0">)</span> <span class="br0">{</span>
     <span class="co1">// ... </span>
@@ -253,7 +253,7 @@ html { font-variant-ligatures: no-common-ligatures; }
     contin<span class="sy4">:;</span>
 <span class="br0">}</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/continue&amp;action=edit&amp;section=3" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
-<p><a href="../keyword/continue.html" title="c/keyword/continue"><tt>continue</tt></a>
+<p><a href="../keyword/continue.htm" title="c/keyword/continue"><tt>continue</tt></a>
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/continue&amp;action=edit&amp;section=4" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -263,15 +263,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="br0">{</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> i<span class="sy2">++</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">if</span> <span class="br0">(</span>i <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">5</span><span class="br0">)</span> <span class="kw1">continue</span><span class="sy4">;</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, i<span class="br0">)</span><span class="sy4">;</span>             <span class="co1">// this statement is skipped each time i&nbsp;!= 5</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d "</span>, i<span class="br0">)</span><span class="sy4">;</span>             <span class="co1">// this statement is skipped each time i&nbsp;!= 5</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> j <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> j <span class="sy1">&lt;</span> <span class="nu0">2</span><span class="sy4">;</span> j<span class="sy2">++</span><span class="br0">)</span> <span class="br0">{</span>
         <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> k <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> k <span class="sy1">&lt;</span> <span class="nu0">5</span><span class="sy4">;</span> k<span class="sy2">++</span><span class="br0">)</span> <span class="br0">{</span> <span class="co1">// only this loop is affected by continue</span>
             <span class="kw1">if</span> <span class="br0">(</span>k <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">)</span> <span class="kw1">continue</span><span class="sy4">;</span>
-            <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d%d "</span>, j, k<span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// this statement is skipped each time k == 3</span>
+            <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d%d "</span>, j, k<span class="br0">)</span><span class="sy4">;</span>    <span class="co1">// this statement is skipped each time k == 3</span>
         <span class="br0">}</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>

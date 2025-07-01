@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,13 +198,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl t-since-c95 t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span> <span class="sy2">*</span>wcsncat<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span> <span class="sy2">*</span>wcsncat<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>dest, <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span>src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> <br><span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
 <td> <div><span class="mw-geshi c source-c"><span class="kw4">wchar_t</span> <span class="sy2">*</span>wcsncat<span class="br0">(</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> dest,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.html"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> src, <a href="../../types/size_t.htm"><span class="kw100">size_t</span></a> count <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
@@ -220,23 +220,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">1)</span> Appends at most <code>count</code> wide characters from the wide string pointed to by <code>src</code>, stopping if the null terminator is copied, to the end of the character string pointed to by <code>dest</code>. The wide character <span class="t-c"><span class="mw-geshi c source-c">src<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> replaces the null terminator at the end of <code>dest</code>. The null terminator is always appended in the end (so the maximum number of wide characters the function may write is <span class="t-c"><span class="mw-geshi c source-c">count<span class="sy2">+</span><span class="nu0">1</span></span></span>).</div>
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the destination array is not large enough for the contents of both <code>str</code> and <code>dest</code> and the terminating null wide character.</div>
 <div class="t-li1"><span class="t-li"></span> The behavior is undefined if the strings overlap. </div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that this function may clobber the remainder of the destination array (from the last wide character written to <code>destsz</code>) and that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that this function may clobber the remainder of the destination array (from the last wide character written to <code>destsz</code>) and that the following errors are detected at runtime and call the currently installed <a href="../../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <code>src</code> or <code>dest</code> is a null pointer
 </li><li> <code>destsz</code> or <code>count</code> is zero or greater than <span class="t-c"><span class="mw-geshi c source-c">RSIZE_MAX<span class="sy2">/</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">wchar_t</span><span class="br0">)</span></span></span>
 </li><li> there is no null wide character in the first <code>destsz</code> wide characters of <code>dest</code>
 </li><li> truncation would occur: <code>count</code> or the length of <code>src</code>, whichever is less, exceeds the space available between the null terminator of <code>dest</code> and <code>destsz</code>.
 </li><li> overlap would occur between the source and the destination strings
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>wcsncat_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>wcsncat_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="wcsncat.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="wcsncat.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="wcsncat.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="wcsncat.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="wcsncat.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="wcsncat.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./wcsncat.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./wcsncat.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./wcsncat.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./wcsncat.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./wcsncat.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./wcsncat.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/wide/wcsncat&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -288,8 +288,8 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">wchar_t</span> str<span class="br0">[</span><span class="nu0">50</span><span class="br0">]</span> <span class="sy1">=</span> L<span class="st0">"Земля, прощай."</span><span class="sy4">;</span>
     wcsncat<span class="br0">(</span>str, L<span class="st0">" "</span>, <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
     wcsncat<span class="br0">(</span>str, L<span class="st0">"В добрый путь."</span>, <span class="nu0">8</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// only append the first 8 wide chars</span>
-    <a href="../../locale/setlocale.html"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.html"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%ls"</span>, str<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../locale/setlocale.htm"><span class="kw900">setlocale</span></a><span class="br0">(</span><a href="../../locale/LC_categories.htm"><span class="kw903">LC_ALL</span></a>, <span class="st0">"en_US.utf8"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%ls"</span>, str<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -327,19 +327,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcscat.htm" title="c/string/wide/wcscat"> <span class="t-lines"><span>wcscat</span><span>wcscat_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcscat.htm" title="c/string/wide/wcscat"> <span class="t-lines"><span>wcscat</span><span>wcscat_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   appends a copy of one wide string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcscat&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../byte/strncat.html" title="c/string/byte/strncat"> <span class="t-lines"><span>strncat</span><span>strncat_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../byte/strncat.htm" title="c/string/byte/strncat"> <span class="t-lines"><span>strncat</span><span>strncat_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   concatenates a certain amount of characters of two strings <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strncat&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="wcscpy.htm" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./wcscpy.htm" title="c/string/wide/wcscpy"> <span class="t-lines"><span>wcscpy</span><span>wcscpy_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   copies one wide string to another <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/wide/dsc_wcscpy&amp;action=edit">[edit]</a></span>
 </td></tr>

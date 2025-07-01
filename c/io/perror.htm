@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,19 +198,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Prints a textual description of the error code currently stored in the system variable <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> to <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stderr</a></span>.
+<p>Prints a textual description of the error code currently stored in the system variable <span class="t-lc"><a href="../error/errno.htm" title="c/error/errno">errno</a></span> to <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stderr</a></span>.
 </p><p>The description is formed by concatenating the following components:
 </p>
 <ul><li> the contents of the null-terminated byte string pointed to by <code>s</code>, followed by <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">": "</span></span></span> (unless <code>s</code> is a null pointer or the character pointed to by <code>s</code> is the null character)
-</li><li> implementation-defined error message string describing the error code stored in <code>errno</code>, followed by <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span></span>. The error message string is identical to the result of <span class="t-c"><span class="mw-geshi c source-c"><a href="../string/byte/strerror.html"><span class="kw574">strerror</span></a><span class="br0">(</span><span class="kw2">errno</span><span class="br0">)</span></span></span>.
+</li><li> implementation-defined error message string describing the error code stored in <code>errno</code>, followed by <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'<span class="es1">\n</span>'</span></span></span>. The error message string is identical to the result of <span class="t-c"><span class="mw-geshi c source-c"><a href="../string/byte/strerror.htm"><span class="kw574">strerror</span></a><span class="br0">(</span><span class="kw2">errno</span><span class="br0">)</span></span></span>.
 </li></ul>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="perror.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="perror.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="perror.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="perror.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="perror.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./perror.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./perror.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./perror.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./perror.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./perror.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/perror&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -233,11 +233,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>f <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"non_existent"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span>f <span class="sy1">==</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span> <span class="br0">{</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>f <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"non_existent"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>f <span class="sy1">==</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span> <span class="br0">{</span>
         perror<span class="br0">(</span><span class="st0">"fopen() failed"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
-        <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
+        <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f<span class="br0">)</span><span class="sy4">;</span>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -268,7 +268,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strerror.html" title="c/string/byte/strerror"> <span class="t-lines"><span>strerror</span><span>strerror_s</span><span>strerrorlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="../string/byte/strerror.htm" title="c/string/byte/strerror"> <span class="t-lines"><span>strerror</span><span>strerror_s</span><span>strerrorlen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   returns a text version of a given error code <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strerror&amp;action=edit">[edit]</a></span>
 </td></tr>

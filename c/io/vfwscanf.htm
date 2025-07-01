@@ -162,7 +162,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -173,7 +173,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> vfwscanf<span class="br0">(</span> <a href="FILE.htm"><span class="kw881">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream,<br>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> vfwscanf<span class="br0">(</span> <a href="./FILE.htm"><span class="kw881">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> format, va_list vlist <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (2) </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
@@ -190,7 +190,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> vfwscanf_s<span class="br0">(</span> <a href="FILE.htm"><span class="kw881">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream,<br>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> vfwscanf_s<span class="br0">(</span> <a href="./FILE.htm"><span class="kw881">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> stream,<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <span class="kw4">wchar_t</span> <span class="sy2">*</span><span class="kw4">restrict</span> format, va_list vlist <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td> (5) </td>
 <td> <span class="t-mark-rev t-since-c11">(since C11)</span> </td>
@@ -205,25 +205,25 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <p>Reads data from the a variety of sources, interprets it according to <code>format</code> and stores the results into locations defined by <code>vlist</code>.
 </p>
-<div class="t-li1"><span class="t-li">1)</span> Reads the data from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span>.</div>
+<div class="t-li1"><span class="t-li">1)</span> Reads the data from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Reads the data from file stream <code>stream</code>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Reads the data from null-terminated wide string <code>buffer</code>. Reaching the end of the string is equivalent to reaching the end-of-file condition for <code>fwscanf</code></div>
-<div class="t-li1"><span class="t-li">4-6)</span> Same as <span class="t-v">(1-3)</span>, except that <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>c</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>s</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span><span class="br0">[</span></span></span> conversion specifiers each expect two arguments (the usual pointer and a value of type <span class="t-lc">rsize_t</span> indicating the size of the receiving array, which may be 1 when reading with a&nbsp;%lc into a single wide character) and except that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">4-6)</span> Same as <span class="t-v">(1-3)</span>, except that <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>c</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>s</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span><span class="br0">[</span></span></span> conversion specifiers each expect two arguments (the usual pointer and a value of type <span class="t-lc">rsize_t</span> indicating the size of the receiving array, which may be 1 when reading with a&nbsp;%lc into a single wide character) and except that the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> any of the arguments of pointer type is a null pointer
 </li><li> <code>format</code>, <code>stream</code>, or <code>buffer</code> is a null pointer
 </li><li> the number of characters that would be written by&nbsp;%c,&nbsp;%s, or&nbsp;%[, plus the terminating null character, would exceed the second (rsize_t) argument provided for each of those conversion specifiers
 </li><li> optionally, any other detectable error, such as unknown conversion specifier
 </li></ul>
-</dd><dd>As with all bounds-checked functions, <code>vwscanf_s</code>, <code>vfwscanf_s</code>, and <code>vswscanf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
+</dd><dd>As with all bounds-checked functions, <code>vwscanf_s</code>, <code>vfwscanf_s</code>, and <code>vswscanf_s</code> are only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</dd></dl></div>
 
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="vfwscanf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="vfwscanf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="vfwscanf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="vfwscanf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="vfwscanf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="vfwscanf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./vfwscanf.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./vfwscanf.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./vfwscanf.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./vfwscanf.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./vfwscanf.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./vfwscanf.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/vfwscanf&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -262,7 +262,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 The <b>format</b> string consists of
 </p>
 <ul><li> non-whitespace wide characters except <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span></span></span>: each such character in the format string consumes exactly one identical character from the input stream, or causes the function to fail if the next character on the stream does not compare equal.
-</li><li> whitespace characters: any single whitespace character in the format string consumes all available consecutive whitespace characters from the input (determined as if by calling <span class="t-lc"><a href="../string/wide/iswspace.html" title="c/string/wide/iswspace">iswspace</a></span> in a loop). Note that there is no difference between <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\n</span>"</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">" "</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\t</span><span class="es1">\t</span>"</span></span></span>, or other whitespace in the format string.
+</li><li> whitespace characters: any single whitespace character in the format string consumes all available consecutive whitespace characters from the input (determined as if by calling <span class="t-lc"><a href="../string/wide/iswspace.htm" title="c/string/wide/iswspace">iswspace</a></span> in a loop). Note that there is no difference between <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\n</span>"</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">" "</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"<span class="es1">\t</span><span class="es1">\t</span>"</span></span></span>, or other whitespace in the format string.
 </li><li> conversion specifications. Each conversion specification has the following format:
 </li></ul>
 <dl><dd><ul><li> introductory <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span></span></span> character.
@@ -414,7 +414,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches a <b>decimal integer</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstol.html" title="c/string/wide/wcstol">wcstol</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstol.htm" title="c/string/wide/wcstol">wcstol</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
 </li></ul>
 </td>
 <td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">char</span><span class="sy2">*</span></span> or <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="sy2">*</span></span></div></div>
@@ -427,11 +427,11 @@ The <b>format</b> string consists of
 </td>
 <td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">long</span><span class="sy2">*</span></span> or <span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span><span class="sy2">*</span></span></div></div>
 </td>
-<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/integer.html"><span class="kw118">intmax_t</span></a><span class="sy2">*</span></span> or <span class="mw-geshi c source-c"><a href="../types/integer.html"><span class="kw132">uintmax_t</span></a><span class="sy2">*</span></span></div></div>
+<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/integer.htm"><span class="kw118">intmax_t</span></a><span class="sy2">*</span></span> or <span class="mw-geshi c source-c"><a href="../types/integer.htm"><span class="kw132">uintmax_t</span></a><span class="sy2">*</span></span></div></div>
 </td>
-<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/size_t.html"><span class="kw100">size_t</span></a><span class="sy2">*</span></span></div></div>
+<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/size_t.htm"><span class="kw100">size_t</span></a><span class="sy2">*</span></span></div></div>
 </td>
-<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/ptrdiff_t.html"><span class="kw101">ptrdiff_t</span></a><span class="sy2">*</span></span></div></div>
+<td rowspan="6"><div class="t-vertical"><div><span class="mw-geshi c source-c"><a href="../types/ptrdiff_t.htm"><span class="kw101">ptrdiff_t</span></a><span class="sy2">*</span></span></div></div>
 </td>
 <td rowspan="6" style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
 </td></tr>
@@ -441,7 +441,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches an <b>integer</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstol.html" title="c/string/wide/wcstol">wcstol</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument (base is determined by the first characters parsed).
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstol.htm" title="c/string/wide/wcstol">wcstol</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c">​<span class="nu0">0</span>​</span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument (base is determined by the first characters parsed).
 </li></ul>
 </td></tr>
 <tr>
@@ -450,7 +450,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches an unsigned <b>decimal integer</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.html" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.htm" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">10</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
 </li></ul>
 </td></tr>
 <tr>
@@ -459,7 +459,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches an unsigned <b>octal integer</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.html" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">8</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.htm" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">8</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
 </li></ul>
 </td></tr>
 <tr>
@@ -468,7 +468,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches an unsigned <b>hexadecimal integer</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.html" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">16</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstoul.htm" title="c/string/wide/wcstoul">wcstoul</a></span> with the value <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">16</span></span></span> for the <span class="t-c"><span class="mw-geshi c source-c">base</span></span> argument.
 </li></ul>
 </td></tr>
 <tr>
@@ -487,7 +487,7 @@ The <b>format</b> string consists of
 <td style="text-align: left;">
 <p>Matches a <b>floating-point number</b>.
 </p>
-<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstof.html" title="c/string/wide/wcstof">wcstof</a></span>.
+<ul><li> The format of the number is the same as expected by <span class="t-lc"><a href="../string/wide/wcstof.htm" title="c/string/wide/wcstof">wcstof</a></span>.
 </li></ul>
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
@@ -541,18 +541,18 @@ The <b>format</b> string consists of
 <tr>
 <td colspan="11" style="text-align: start;">
 <p>For every conversion specifier other than <span class="t-c"><span class="mw-geshi c source-c">n</span></span>, the longest sequence of input characters which does not exceed any specified ﬁeld width and which either is exactly what the conversion specifier expects or is a prefix of a sequence it would expect, is what's consumed from the stream. The ﬁrst character, if any, after this consumed sequence remains unread. If the consumed sequence has length zero or if the consumed sequence cannot be converted as specified above, the matching failure occurs unless end-of-ﬁle, an encoding error, or a read error prevented input from the stream, in which case it is an input failure.
-</p><p>All conversion specifiers other than <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c">c</span></span>, and <span class="t-c"><span class="mw-geshi c source-c">n</span></span> consume and discard all leading whitespace characters (determined as if by calling <span class="t-lc"><a href="../string/wide/iswspace.html" title="c/string/wide/iswspace">iswspace</a></span>) before attempting to parse the input. These consumed characters do not count towards the specified maximum field width.
-</p><p>If the length specifier <span class="t-c"><span class="mw-geshi c source-c">l</span></span> is not used, the conversion specifiers <span class="t-c"><span class="mw-geshi c source-c">c</span></span>, <span class="t-c"><span class="mw-geshi c source-c">s</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span> perform wide-to-multibyte character conversion as if by calling <span class="t-lc"><a href="../string/multibyte/wcrtomb.html" title="c/string/multibyte/wcrtomb">wcrtomb</a></span> with an <span class="t-lc"><a href="../string/multibyte/mbstate_t.html" title="c/string/multibyte/mbstate t">mbstate_t</a></span> object initialized to zero before the first character is converted.
-</p><p>The conversion specifiers <span class="t-c"><span class="mw-geshi c source-c">s</span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span> always store the null terminator in addition to the matched characters. The size of the destination array must be at least one greater than the specified field width. The use of <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>s</span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span><span class="br0">[</span></span></span>, without specifying the destination array size, is as unsafe as <span class="t-lc"><a href="gets.htm" title="c/io/gets">gets</a></span>.
-</p><p>The correct conversion specifications for the <a href="../types/integer.html" title="c/types/integer">fixed-width integer types</a> (<span class="t-lc"><a href="../types/integer.html" title="c/types/integer">int8_t</a></span>, etc) are defined in the header <a href="../types/integer.html" title="c/types/integer"><code>&lt;inttypes.h&gt;</code></a> (although <a href="../types/integer.html" title="c/types/integer"><tt>SCNdMAX</tt></a>, <a href="../types/integer.html" title="c/types/integer"><tt>SCNuMAX</tt></a>, etc is synonymous with <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>jd</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>ju</span></span>, etc).
-</p><p>There is a <a href="../language/eval_order.html" title="c/language/eval order">sequence point</a> after the action of each conversion specifier; this permits storing multiple fields in the same “sink” variable.
+</p><p>All conversion specifiers other than <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span>, <span class="t-c"><span class="mw-geshi c source-c">c</span></span>, and <span class="t-c"><span class="mw-geshi c source-c">n</span></span> consume and discard all leading whitespace characters (determined as if by calling <span class="t-lc"><a href="../string/wide/iswspace.htm" title="c/string/wide/iswspace">iswspace</a></span>) before attempting to parse the input. These consumed characters do not count towards the specified maximum field width.
+</p><p>If the length specifier <span class="t-c"><span class="mw-geshi c source-c">l</span></span> is not used, the conversion specifiers <span class="t-c"><span class="mw-geshi c source-c">c</span></span>, <span class="t-c"><span class="mw-geshi c source-c">s</span></span>, and <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span> perform wide-to-multibyte character conversion as if by calling <span class="t-lc"><a href="../string/multibyte/wcrtomb.htm" title="c/string/multibyte/wcrtomb">wcrtomb</a></span> with an <span class="t-lc"><a href="../string/multibyte/mbstate_t.htm" title="c/string/multibyte/mbstate t">mbstate_t</a></span> object initialized to zero before the first character is converted.
+</p><p>The conversion specifiers <span class="t-c"><span class="mw-geshi c source-c">s</span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="br0">[</span></span></span> always store the null terminator in addition to the matched characters. The size of the destination array must be at least one greater than the specified field width. The use of <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>s</span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span><span class="br0">[</span></span></span>, without specifying the destination array size, is as unsafe as <span class="t-lc"><a href="./gets.htm" title="c/io/gets">gets</a></span>.
+</p><p>The correct conversion specifications for the <a href="../types/integer.htm" title="c/types/integer">fixed-width integer types</a> (<span class="t-lc"><a href="../types/integer.htm" title="c/types/integer">int8_t</a></span>, etc) are defined in the header <a href="../types/integer.htm" title="c/types/integer"><code>&lt;inttypes.h&gt;</code></a> (although <a href="../types/integer.htm" title="c/types/integer"><tt>SCNdMAX</tt></a>, <a href="../types/integer.htm" title="c/types/integer"><tt>SCNuMAX</tt></a>, etc is synonymous with <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>jd</span></span>, <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>ju</span></span>, etc).
+</p><p>There is a <a href="../language/eval_order.htm" title="c/language/eval order">sequence point</a> after the action of each conversion specifier; this permits storing multiple fields in the same “sink” variable.
 </p><p>When parsing an incomplete floating-point value that ends in the exponent with no digits, such as parsing <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"100er"</span></span></span> with the conversion specifier <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">%</span>f</span></span>, the sequence <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"100e"</span></span></span> (the longest prefix of a possibly valid floating-point number) is consumed, resulting in a matching error (the consumed sequence cannot be converted to a floating-point number), with <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"r"</span></span></span> remaining. Some existing implementations do not follow this rule and roll back to consume only <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"100"</span></span></span>, leaving <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"er"</span></span></span>, e.g., <a rel="nofollow" class="external text" href="https://sourceware.org/bugzilla/show_bug.cgi?id=1765">glibc bug 1765</a>.
 </p><p>If a conversion specification is invalid, the behavior is undefined.
 </p>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/vfwscanf&amp;action=edit&amp;section=2" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<div class="t-li1"><span class="t-li">1-3)</span> Number of receiving arguments successfully assigned, or <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span> if read failure occurs before the first receiving argument was assigned.</div>
-<div class="t-li1"><span class="t-li">4-6)</span> Same as <span class="t-v">(1-3)</span>, except that <span class="t-lc"><a href="../io.html" title="c/io">EOF</a></span> is also returned if there is a runtime constraint violation.</div>
+<div class="t-li1"><span class="t-li">1-3)</span> Number of receiving arguments successfully assigned, or <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span> if read failure occurs before the first receiving argument was assigned.</div>
+<div class="t-li1"><span class="t-li">4-6)</span> Same as <span class="t-v">(1-3)</span>, except that <span class="t-lc"><a href="../io.htm" title="c/io">EOF</a></span> is also returned if there is a runtime constraint violation.</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/vfwscanf&amp;action=edit&amp;section=3" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>All these functions may invoke <span class="t-lc">va_arg</span>, the value of <code>arg</code> is indeterminate after the return. These functions to not invoke <span class="t-lc">va_end</span>, and it must be done by the caller.
 </p>
@@ -597,9 +597,9 @@ The <b>format</b> string consists of
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fwscanf.htm" title="c/io/fwscanf"> <span class="t-lines"><span>wscanf</span><span>fwscanf</span><span>swscanf</span><span>wscanf_s</span><span>fwscanf_s</span><span>swscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fwscanf.htm" title="c/io/fwscanf"> <span class="t-lines"><span>wscanf</span><span>fwscanf</span><span>swscanf</span><span>wscanf_s</span><span>fwscanf_s</span><span>swscanf_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c95">(C95)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   reads formatted wide character input from <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwscanf&amp;action=edit">[edit]</a></span>
+<td>   reads formatted wide character input from <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdin</a></span>, a file stream or a buffer <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fwscanf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">

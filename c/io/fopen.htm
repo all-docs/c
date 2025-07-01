@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,18 +198,18 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span>mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span>fopen<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> filename, <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl t-since-c11">
-<td> <div><span class="mw-geshi c source-c">errno_t fopen_s<span class="br0">(</span> <a href="FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> <span class="sy2">*</span><span class="kw4">restrict</span> streamptr,<br>
+<td> <div><span class="mw-geshi c source-c">errno_t fopen_s<span class="br0">(</span> <a href="./FILE.htm"><span class="kw883">FILE</span></a> <span class="sy2">*</span><span class="kw4">restrict</span> <span class="sy2">*</span><span class="kw4">restrict</span> streamptr,<br>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> filename,<br>
 </p>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="kw4">const</span> <span class="kw4">char</span> <span class="sy2">*</span><span class="kw4">restrict</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
@@ -219,22 +219,22 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> Opens a file indicated by <code>filename</code> and returns a pointer to the file stream associated with that file. <code>mode</code> is used to determine the file access mode. </div>
-<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the pointer to the file stream is written to <code>streamptr</code> and the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.html" title="c/error/set constraint handler s">constraint handler</a> function:
+<div class="t-li1"><span class="t-li">2)</span> Same as <span class="t-v">(1)</span>, except that the pointer to the file stream is written to <code>streamptr</code> and the following errors are detected at runtime and call the currently installed <a href="../error/set_constraint_handler_s.htm" title="c/error/set constraint handler s">constraint handler</a> function:
 <dl><dd><ul><li> <code>streamptr</code> is a null pointer
 </li><li> <code>filename</code> is a null pointer
 </li><li> <code>mode</code> is a null pointer
 </li></ul>
 </dd></dl>
-As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</div>
+As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a>.</div>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="fopen.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="fopen.htm#File_access_flags"><span class="tocnumber">2</span> <span class="toctext">File access flags</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="fopen.htm#Return_value"><span class="tocnumber">3</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="fopen.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="fopen.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="fopen.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-7"><a href="fopen.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./fopen.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./fopen.htm#File_access_flags"><span class="tocnumber">2</span> <span class="toctext">File access flags</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./fopen.htm#Return_value"><span class="tocnumber">3</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./fopen.htm#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./fopen.htm#Example"><span class="tocnumber">5</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./fopen.htm#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="./fopen.htm#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -253,7 +253,7 @@ As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to
 </td>
 <td> -
 </td>
-<td>  null-terminated character string determining <a href="fopen.htm#File_access_flags">file access mode</a>
+<td>  null-terminated character string determining <a href="./fopen.htm#File_access_flags">file access mode</a>
 </td></tr>
 <tr class="t-par">
 <td>  streamptr
@@ -349,7 +349,7 @@ As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to
 <td colspan="5"> The behavior is undefined if the mode is not one of the strings listed above. Some implementations define additional supported modes (e.g. <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/fopen-wfopen">Windows</a>).
 </td></tr>
 <tr>
-<td colspan="5"> In update mode (<span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'+'</span></span></span>), both input and output may be performed, but output cannot be followed by input without an intervening call to <span class="t-lc"><a href="fflush.htm" title="c/io/fflush">fflush</a></span>, <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="rewind.htm" title="c/io/rewind">rewind</a></span>, and input cannot be followed by output without an intervening call to <span class="t-lc"><a href="fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="rewind.htm" title="c/io/rewind">rewind</a></span>, unless the input operation encountered end of file. In update mode, implementations are permitted to use binary mode even when text mode is specified.
+<td colspan="5"> In update mode (<span class="t-c"><span class="mw-geshi c source-c"><span class="st0">'+'</span></span></span>), both input and output may be performed, but output cannot be followed by input without an intervening call to <span class="t-lc"><a href="./fflush.htm" title="c/io/fflush">fflush</a></span>, <span class="t-lc"><a href="./fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="./fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="./rewind.htm" title="c/io/rewind">rewind</a></span>, and input cannot be followed by output without an intervening call to <span class="t-lc"><a href="./fseek.htm" title="c/io/fseek">fseek</a></span>, <span class="t-lc"><a href="./fsetpos.htm" title="c/io/fsetpos">fsetpos</a></span> or <span class="t-lc"><a href="./rewind.htm" title="c/io/rewind">rewind</a></span>, unless the input operation encountered end of file. In update mode, implementations are permitted to use binary mode even when text mode is specified.
 </td></tr>
 <tr>
 <td colspan="5"> File access mode flag <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"x"</span></span></span> can optionally be appended to <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w+"</span></span></span> specifiers. This flag forces the function to fail if the file exists, instead of overwriting it. <span class="t-mark-rev t-since-c11">(C11)</span>
@@ -358,7 +358,7 @@ As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to
 <td colspan="5"> When using <span class="t-lc">fopen_s</span> or <span class="t-lc">freopen_s</span>, file access permissions for any file created with <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a"</span></span></span> prevents other users from accessing it. File access mode flag <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"u"</span></span></span> can optionally be prepended to any specifier that begins with <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"w"</span></span></span> or <span class="t-c"><span class="mw-geshi c source-c"><span class="st0">"a"</span></span></span>, to enable the default <span class="t-lc"><strong class="selflink">fopen</strong></span> permissions. <span class="t-mark-rev t-since-c11">(C11)</span>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=3" title="Edit section: Return value">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
-<div class="t-li1"><span class="t-li">1)</span> If successful, returns a pointer to the new file stream. The stream is fully buffered unless <code>filename</code> refers to an interactive device. On error, returns a null pointer. <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/fopen.html">POSIX requires</a> that <span class="t-lc"><a href="../error/errno.html" title="c/error/errno">errno</a></span> be set in this case.</div>
+<div class="t-li1"><span class="t-li">1)</span> If successful, returns a pointer to the new file stream. The stream is fully buffered unless <code>filename</code> refers to an interactive device. On error, returns a null pointer. <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/fopen.html">POSIX requires</a> that <span class="t-lc"><a href="../error/errno.htm" title="c/error/errno">errno</a></span> be set in this case.</div>
 <div class="t-li1"><span class="t-li">2)</span> If successful, returns zero and a pointer to the new file stream is written to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>streamptr</span></span>.  On error, returns a non-zero error code and writes the null pointer to <span class="t-c"><span class="mw-geshi c source-c"><span class="sy2">*</span>streamptr</span></span> (unless <code>streamptr</code> is a null pointer itself).</div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fopen&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>The format of <code>filename</code> is implementation-defined, and does not necessarily refer to a file (e.g. it may be the console or another device accessible though filesystem API). On platforms that support them, <code>filename</code> may include absolute or relative filesystem path.
@@ -371,31 +371,31 @@ As with all bounds-checked functions, <code>fopen_s</code> is only guaranteed to
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> fname <span class="sy1">=</span> <span class="st0">"/tmp/unique_name.txt"</span><span class="sy4">;</span> <span class="co1">// or tmpnam(NULL);</span>
-    <span class="kw4">int</span> is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+    <span class="kw4">int</span> is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
 &nbsp;
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> fopen<span class="br0">(</span>fname, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> fopen<span class="br0">(</span>fname, <span class="st0">"w+"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>fp<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"File opening failed"</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw878">perror</span></a><span class="br0">(</span><span class="st0">"File opening failed"</span><span class="br0">)</span><span class="sy4">;</span>
         <span class="kw1">return</span> is_ok<span class="sy4">;</span>
     <span class="br0">}</span>
-    <a href="fputs.htm"><span class="kw831">fputs</span></a><span class="br0">(</span><span class="st0">"Hello, world!<span class="es1">\n</span>"</span>, fp<span class="br0">)</span><span class="sy4">;</span>
-    <a href="rewind.htm"><span class="kw874">rewind</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fputs.htm"><span class="kw831">fputs</span></a><span class="br0">(</span><span class="st0">"Hello, world!<span class="es1">\n</span>"</span>, fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./rewind.htm"><span class="kw874">rewind</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">int</span> c<span class="sy4">;</span> <span class="co1">// note: int, not char, required to handle EOF</span>
-    <span class="kw1">while</span> <span class="br0">(</span><span class="br0">(</span>c <span class="sy1">=</span> <a href="fgetc.htm"><span class="kw826">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../io.html"><span class="kw888">EOF</span></a><span class="br0">)</span> <span class="co1">// standard C I/O file reading loop</span>
-        <a href="putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">while</span> <span class="br0">(</span><span class="br0">(</span>c <span class="sy1">=</span> <a href="./fgetc.htm"><span class="kw826">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span> <span class="sy3">!</span><span class="sy1">=</span> <a href="../io.htm"><span class="kw888">EOF</span></a><span class="br0">)</span> <span class="co1">// standard C I/O file reading loop</span>
+        <a href="./putchar.htm"><span class="kw834">putchar</span></a><span class="br0">(</span>c<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <span class="kw1">if</span> <span class="br0">(</span><a href="ferror.htm"><span class="kw877">ferror</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
-        <a href="puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"I/O error when reading"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span><a href="feof.htm"><span class="kw876">feof</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="./ferror.htm"><span class="kw877">ferror</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
+        <a href="./puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"I/O error when reading"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">else</span> <span class="kw1">if</span> <span class="br0">(</span><a href="./feof.htm"><span class="kw876">feof</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"End of file is reached successfully"</span><span class="br0">)</span><span class="sy4">;</span>
-        is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.html"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
+        <a href="./puts.htm"><span class="kw835">puts</span></a><span class="br0">(</span><span class="st0">"End of file is reached successfully"</span><span class="br0">)</span><span class="sy4">;</span>
+        is_ok <span class="sy1">=</span> <a href="../program/EXIT_status.htm"><span class="kw493">EXIT_SUCCESS</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="fclose.htm"><span class="kw821">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
-    <a href="remove.htm"><span class="kw879">remove</span></a><span class="br0">(</span>fname<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw821">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./remove.htm"><span class="kw879">remove</span></a><span class="br0">(</span>fname<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> is_ok<span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -442,19 +442,19 @@ End of file is reached successfully</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fclose.htm" title="c/io/fclose"> <span class="t-lines"><span>fclose</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fclose.htm" title="c/io/fclose"> <span class="t-lines"><span>fclose</span></span></a></div></div>
 </td>
 <td>   closes a file  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fclose&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fflush.htm" title="c/io/fflush"> <span class="t-lines"><span>fflush</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fflush.htm" title="c/io/fflush"> <span class="t-lines"><span>fflush</span></span></a></div></div>
 </td>
 <td>   synchronizes an output stream with the actual file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fflush&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="freopen.htm" title="c/io/freopen"> <span class="t-lines"><span>freopen</span><span>freopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./freopen.htm" title="c/io/freopen"> <span class="t-lines"><span>freopen</span><span>freopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   open an existing stream with a different name <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_freopen&amp;action=edit">[edit]</a></span>
 </td></tr>

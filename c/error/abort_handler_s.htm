@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdlib.html" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdlib.htm" title="c/header/stdlib"><tt>&lt;stdlib.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -202,19 +202,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Writes an implementation-defined message to <span class="t-lc"><a href="../io/std_streams.html" title="c/io/std streams">stderr</a></span> which must include the string pointed to by <code>msg</code> and calls <span class="t-lc"><a href="../program/abort.html" title="c/program/abort">abort()</a></span>.
-</p><p>A pointer to this function can be passed to <a href="set_constraint_handler_s.htm" title="c/error/set constraint handler s">set_constraint_handler_s</a> to establish a runtime constraints violation handler.
+<p>Writes an implementation-defined message to <span class="t-lc"><a href="../io/std_streams.htm" title="c/io/std streams">stderr</a></span> which must include the string pointed to by <code>msg</code> and calls <span class="t-lc"><a href="../program/abort.htm" title="c/program/abort">abort()</a></span>.
+</p><p>A pointer to this function can be passed to <a href="./set_constraint_handler_s.htm" title="c/error/set constraint handler s">set_constraint_handler_s</a> to establish a runtime constraints violation handler.
 </p>
 <dl><dd>As with all bounds-checked functions, <code>abort_handler_s</code> is only guaranteed to be available if <span class="t-c"><span class="mw-geshi c source-c">__STDC_LIB_EXT1__</span></span> is defined by the implementation and if the user defines <span class="t-c"><span class="mw-geshi c source-c">__STDC_WANT_LIB_EXT1__</span></span> to the integer constant <span class="t-c"><span class="mw-geshi c source-c"><span class="nu0">1</span></span></span> before including <code>&lt;stdlib.h&gt;</code>.
 </dd></dl>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="abort_handler_s.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="abort_handler_s.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="abort_handler_s.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="abort_handler_s.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="abort_handler_s.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="abort_handler_s.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./abort_handler_s.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./abort_handler_s.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./abort_handler_s.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./abort_handler_s.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./abort_handler_s.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./abort_handler_s.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/error/abort_handler_s&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -261,10 +261,10 @@ html { font-variant-ligatures: no-common-ligatures; }
     <span class="kw4">char</span> dst<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
     set_constraint_handler_s<span class="br0">(</span>ignore_handler_s<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw4">int</span> r <span class="sy1">=</span> strcpy_s<span class="br0">(</span>dst, <span class="kw4">sizeof</span> dst, <span class="st0">"Too long!"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
     set_constraint_handler_s<span class="br0">(</span>abort_handler_s<span class="br0">)</span><span class="sy4">;</span>
     r <span class="sy1">=</span> strcpy_s<span class="br0">(</span>dst, <span class="kw4">sizeof</span> dst, <span class="st0">"Too long!"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"dst = <span class="es1">\"</span>%s<span class="es1">\"</span>, r =&nbsp;%d<span class="es1">\n</span>"</span>, dst, r<span class="br0">)</span><span class="sy4">;</span>
 <span class="co2">#endif</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
@@ -292,13 +292,13 @@ Aborted</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="ignore_handler_s.htm" title="c/error/ignore handler s"> <span class="t-lines"><span>ignore_handler_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./ignore_handler_s.htm" title="c/error/ignore handler s"> <span class="t-lines"><span>ignore_handler_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   ignore callback for the bounds-checked functions  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/error/ignore_handler_s&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="set_constraint_handler_s.htm" title="c/error/set constraint handler s"> <span class="t-lines"><span>set_constraint_handler_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./set_constraint_handler_s.htm" title="c/error/set constraint handler s"> <span class="t-lines"><span>set_constraint_handler_s</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   set the error callback for bounds-checked functions  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/error/set_constraint_handler_s&amp;action=edit">[edit]</a></span>
 </td></tr>

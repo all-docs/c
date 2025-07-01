@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/string.html" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/string.htm" title="c/header/string"><tt>&lt;string.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -215,12 +215,12 @@ If a macro definition of each of these generic functions is suppressed to access
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="strpbrk.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="strpbrk.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="strpbrk.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="strpbrk.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="strpbrk.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-6"><a href="strpbrk.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./strpbrk.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./strpbrk.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./strpbrk.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./strpbrk.htm#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./strpbrk.htm#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="./strpbrk.htm#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/string/byte/strpbrk&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -261,12 +261,12 @@ If a macro definition of each of these generic functions is suppressed to access
     <span class="kw1">do</span>
     <span class="br0">{</span>
        str <span class="sy1">=</span> strpbrk<span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// find separator</span>
-       <span class="kw1">if</span><span class="br0">(</span>str<span class="br0">)</span> str <span class="sy2">+</span><span class="sy1">=</span> <a href="strspn.htm"><span class="kw564">strspn</span></a><span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// skip separator</span>
+       <span class="kw1">if</span><span class="br0">(</span>str<span class="br0">)</span> str <span class="sy2">+</span><span class="sy1">=</span> <a href="./strspn.htm"><span class="kw564">strspn</span></a><span class="br0">(</span>str, sep<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// skip separator</span>
        <span class="sy2">++</span>cnt<span class="sy4">;</span> <span class="co1">// increment word count</span>
     <span class="br0">}</span>
     <span class="kw1">while</span><span class="br0">(</span>str <span class="sy3">&amp;&amp;</span> <span class="sy2">*</span>str<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"There are&nbsp;%u words<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"There are&nbsp;%u words<span class="es1">\n</span>"</span>, cnt<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -312,19 +312,19 @@ If a macro definition of each of these generic functions is suppressed to access
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strcspn.htm" title="c/string/byte/strcspn"> <span class="t-lines"><span>strcspn</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strcspn.htm" title="c/string/byte/strcspn"> <span class="t-lines"><span>strcspn</span></span></a></div></div>
 </td>
 <td>   returns the length of the maximum initial segment that consists <br> of only the characters not found in another byte string  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strcspn&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strchr.htm" title="c/string/byte/strchr"> <span class="t-lines"><span>strchr</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strchr.htm" title="c/string/byte/strchr"> <span class="t-lines"><span>strchr</span></span></a></div></div>
 </td>
 <td>   finds the first occurrence of a character <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strchr&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="strtok.htm" title="c/string/byte/strtok"> <span class="t-lines"><span>strtok</span><span>strtok_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./strtok.htm" title="c/string/byte/strtok"> <span class="t-lines"><span>strtok</span><span>strtok_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   finds the next token in a byte string <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/string/byte/dsc_strtok&amp;action=edit">[edit]</a></span>
 </td></tr>

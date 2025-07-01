@@ -186,13 +186,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/wchar.html" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/wchar.htm" title="c/header/wchar"><tt>&lt;wchar.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> fwide<span class="br0">(</span> <a href="FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> stream, <span class="kw4">int</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><span class="kw4">int</span> fwide<span class="br0">(</span> <a href="./FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> stream, <span class="kw4">int</span> mode <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c95">(since C95)</span> </td>
 </tr>
@@ -203,11 +203,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="fwide.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="fwide.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="fwide.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="fwide.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="fwide.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./fwide.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./fwide.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./fwide.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./fwide.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./fwide.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fwide&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -239,57 +239,57 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> show_orientation<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span>
 <span class="br0">{</span>
-    n <span class="sy1">&lt;</span> <span class="nu0">0</span> <span class="sy4">?</span> <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow orientation"</span><span class="br0">)</span><span class="sy4">:</span>
-    n <span class="sy1">&gt;</span> <span class="nu0">0</span> <span class="sy4">?</span> <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide orientation"</span><span class="br0">)</span><span class="sy4">:</span>
-            <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>no orientation"</span><span class="br0">)</span><span class="sy4">;</span>
+    n <span class="sy1">&lt;</span> <span class="nu0">0</span> <span class="sy4">?</span> <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow orientation"</span><span class="br0">)</span><span class="sy4">:</span>
+    n <span class="sy1">&gt;</span> <span class="nu0">0</span> <span class="sy4">?</span> <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide orientation"</span><span class="br0">)</span><span class="sy4">:</span>
+            <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>no orientation"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
-<span class="kw4">void</span> try_read<span class="br0">(</span><a href="FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> fp<span class="br0">)</span>
+<span class="kw4">void</span> try_read<span class="br0">(</span><a href="./FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> fp<span class="br0">)</span>
 <span class="br0">{</span>
-    <span class="kw4">int</span> c <span class="sy1">=</span> <a href="fgetc.htm"><span class="kw827">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
-    c <span class="sy1">==</span> <a href="../io.html"><span class="kw889">EOF</span></a>
-        <span class="sy4">?</span> <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow character read failed<span class="es1">\n</span>"</span><span class="br0">)</span>
-        <span class="sy4">:</span> <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow character read '%c'<span class="es1">\n</span>"</span>, c<span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw4">int</span> c <span class="sy1">=</span> <a href="./fgetc.htm"><span class="kw827">fgetc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    c <span class="sy1">==</span> <a href="../io.htm"><span class="kw889">EOF</span></a>
+        <span class="sy4">?</span> <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow character read failed<span class="es1">\n</span>"</span><span class="br0">)</span>
+        <span class="sy4">:</span> <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>narrow character read '%c'<span class="es1">\n</span>"</span>, c<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    wint_t wc <span class="sy1">=</span> <a href="fgetwc.htm"><span class="kw838">fgetwc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    wint_t wc <span class="sy1">=</span> <a href="./fgetwc.htm"><span class="kw838">fgetwc</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
     wc <span class="sy1">==</span> WEOF
-        <span class="sy4">?</span> <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide character read failed<span class="es1">\n</span>"</span><span class="br0">)</span>
-        <span class="sy4">:</span> <a href="fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide character read '%lc'<span class="es1">\n</span>"</span>, wc<span class="br0">)</span><span class="sy4">;</span>
+        <span class="sy4">?</span> <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide character read failed<span class="es1">\n</span>"</span><span class="br0">)</span>
+        <span class="sy4">:</span> <a href="./fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\t</span>wide character read '%lc'<span class="es1">\n</span>"</span>, wc<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw2">enum</span> fwide_orientation <span class="br0">{</span> narrow <span class="sy1">=</span> <span class="sy2">-</span><span class="nu0">1</span>, query, wide <span class="br0">}</span><span class="sy4">;</span>
 &nbsp;
-    <a href="FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"main.cpp"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./FILE.htm"><span class="kw884">FILE</span></a><span class="sy2">*</span> fp <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"main.cpp"</span>, <span class="st0">"r"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>fp<span class="br0">)</span>
     <span class="br0">{</span>
-        <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"fopen() failed"</span><span class="br0">)</span><span class="sy4">;</span>
-        <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+        <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"fopen() failed"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1) A newly opened stream has no orientation."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"1) A newly opened stream has no orientation."</span><span class="br0">)</span><span class="sy4">;</span>
     show_orientation<span class="br0">(</span>fwide<span class="br0">(</span>fp, query<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2) Establish byte orientation."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"2) Establish byte orientation."</span><span class="br0">)</span><span class="sy4">;</span>
     show_orientation<span class="br0">(</span>fwide<span class="br0">(</span>fp, narrow<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     try_read<span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"3) Only freopen() can reset stream orientation."</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">(</span><a href="freopen.htm"><span class="kw820">freopen</span></a><span class="br0">(</span><span class="st0">"main.cpp"</span>, <span class="st0">"r"</span>, fp<span class="br0">)</span> <span class="sy1">==</span> <a href="../types/NULL.html"><span class="kw103">NULL</span></a><span class="br0">)</span>
+    <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"3) Only freopen() can reset stream orientation."</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><a href="./freopen.htm"><span class="kw820">freopen</span></a><span class="br0">(</span><span class="st0">"main.cpp"</span>, <span class="st0">"r"</span>, fp<span class="br0">)</span> <span class="sy1">==</span> <a href="../types/NULL.htm"><span class="kw103">NULL</span></a><span class="br0">)</span>
     <span class="br0">{</span>
-       <a href="perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"freopen() failed"</span><span class="br0">)</span><span class="sy4">;</span>
-       <span class="kw1">return</span> <a href="../program/EXIT_status.html"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
+       <a href="./perror.htm"><span class="kw879">perror</span></a><span class="br0">(</span><span class="st0">"freopen() failed"</span><span class="br0">)</span><span class="sy4">;</span>
+       <span class="kw1">return</span> <a href="../program/EXIT_status.htm"><span class="kw494">EXIT_FAILURE</span></a><span class="sy4">;</span>
     <span class="br0">}</span>
 &nbsp;
-    <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"4) A reopened stream has no orientation."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"4) A reopened stream has no orientation."</span><span class="br0">)</span><span class="sy4">;</span>
     show_orientation<span class="br0">(</span>fwide<span class="br0">(</span>fp, query<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"5) Establish wide orientation."</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./puts.htm"><span class="kw836">puts</span></a><span class="br0">(</span><span class="st0">"5) Establish wide orientation."</span><span class="br0">)</span><span class="sy4">;</span>
     show_orientation<span class="br0">(</span>fwide<span class="br0">(</span>fp, wide<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     try_read<span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>fp<span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
@@ -340,7 +340,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fopen.htm" title="c/io/fopen"> <span class="t-lines"><span>fopen</span><span>fopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fopen.htm" title="c/io/fopen"> <span class="t-lines"><span>fopen</span><span>fopen_s</span></span></a></div><div><span class="t-lines"><span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
 <td>   opens a file  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fopen&amp;action=edit">[edit]</a></span>
 </td></tr>

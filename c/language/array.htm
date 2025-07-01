@@ -165,25 +165,25 @@ particular <i>element type</i>. The number of those objects (the array size) nev
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="array.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="array.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a>
+<li class="toclevel-1 tocsection-1"><a href="./array.htm#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./array.htm#Explanation"><span class="tocnumber">2</span> <span class="toctext">Explanation</span></a>
 <ul>
-<li class="toclevel-2 tocsection-3"><a href="array.htm#Arrays_of_constant_known_size"><span class="tocnumber">2.1</span> <span class="toctext">Arrays of constant known size</span></a></li>
-<li class="toclevel-2"><a href="array.htm#Variable-length_arrays"><span class="tocnumber">2.2</span> <span class="toctext">Variable-length arrays</span></a></li>
-<li class="toclevel-2 tocsection-5"><a href="array.htm#Arrays_of_unknown_size"><span class="tocnumber">2.3</span> <span class="toctext">Arrays of unknown size</span></a></li>
-<li class="toclevel-2 tocsection-6"><a href="array.htm#Qualifiers"><span class="tocnumber">2.4</span> <span class="toctext">Qualifiers</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="array.htm#Assignment"><span class="tocnumber">2.5</span> <span class="toctext">Assignment</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="array.htm#Array_to_pointer_conversion"><span class="tocnumber">2.6</span> <span class="toctext">Array to pointer conversion</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="array.htm#Multidimensional_arrays"><span class="tocnumber">2.7</span> <span class="toctext">Multidimensional arrays</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="./array.htm#Arrays_of_constant_known_size"><span class="tocnumber">2.1</span> <span class="toctext">Arrays of constant known size</span></a></li>
+<li class="toclevel-2"><a href="./array.htm#Variable-length_arrays"><span class="tocnumber">2.2</span> <span class="toctext">Variable-length arrays</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="./array.htm#Arrays_of_unknown_size"><span class="tocnumber">2.3</span> <span class="toctext">Arrays of unknown size</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="./array.htm#Qualifiers"><span class="tocnumber">2.4</span> <span class="toctext">Qualifiers</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="./array.htm#Assignment"><span class="tocnumber">2.5</span> <span class="toctext">Assignment</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="./array.htm#Array_to_pointer_conversion"><span class="tocnumber">2.6</span> <span class="toctext">Array to pointer conversion</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="./array.htm#Multidimensional_arrays"><span class="tocnumber">2.7</span> <span class="toctext">Multidimensional arrays</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-10"><a href="array.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
-<li class="toclevel-1 tocsection-11"><a href="array.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-12"><a href="array.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="./array.htm#Notes"><span class="tocnumber">3</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="./array.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="./array.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
-<p>In the <a href="declarations.htm" title="c/language/declarations">declaration grammar</a> of an array declaration, the <i>type-specifier</i> sequence designates the <i>element type</i> (which must be a complete object type), and the <i>declarator</i> has the form:
+<p>In the <a href="./declarations.htm" title="c/language/declarations">declaration grammar</a> of an array declaration, the <i>type-specifier</i> sequence designates the <i>element type</i> (which must be a complete object type), and the <i>declarator</i> has the form:
 </p>
 <table class="t-sdsc-begin">
 
@@ -240,21 +240,21 @@ where</div>
 </td>
 <td> -
 </td>
-<td> any expression other than <a href="operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>, designates the number of elements in the array
+<td> any expression other than <a href="./operator_other.htm#Comma_operator" title="c/language/operator other">comma operator</a>, designates the number of elements in the array
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">qualifiers</span>
 </td>
 <td> -
 </td>
-<td> any combination of <a href="const.htm" title="c/language/const"><code>const</code></a>, <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a>, or <a href="volatile.htm" title="c/language/volatile"><code>volatile</code></a> qualifiers, only allowed in function parameter lists; this qualifies the pointer type to which this array parameter is transformed
+<td> any combination of <a href="./const.htm" title="c/language/const"><code>const</code></a>, <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a>, or <a href="./volatile.htm" title="c/language/volatile"><code>volatile</code></a> qualifiers, only allowed in function parameter lists; this qualifies the pointer type to which this array parameter is transformed
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">attr-spec-seq</span>
 </td>
 <td> -
 </td>
-<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="attributes.htm" title="c/language/attributes">attributes</a>, applied to the declared array
+<td> <span class="t-mark-rev t-since-c23">(C23)</span>optional list of <a href="./attributes.htm" title="c/language/attributes">attributes</a>, applied to the declared array
 </td></tr></tbody></table>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">float</span> fa<span class="br0">[</span><span class="nu0">11</span><span class="br0">]</span>, <span class="sy2">*</span>afp<span class="br0">[</span><span class="nu0">17</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// fa is an array of 11 floats</span>
                         <span class="co1">// afp is an array of 17 pointers to floats</span></pre></div></div>
@@ -262,20 +262,20 @@ where</div>
 <p>There are several variations of array types: arrays of known constant size, variable-length arrays, and arrays of unknown size.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=3" title="Edit section: Arrays of constant known size">edit</a>]</span> <span class="mw-headline" id="Arrays_of_constant_known_size">Arrays of constant known size</span></h4>
-<p>If <span class="t-spar">expression</span> in an array declarator is an <a href="constant_expression.htm#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> with a value greater than zero <span class="t-rev-inl t-since-c99"><span>and the element type is a type with a known constant size (that is, elements are not VLA)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, then the declarator declares an array of constant known size:
+<p>If <span class="t-spar">expression</span> in an array declarator is an <a href="./constant_expression.htm#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a> with a value greater than zero <span class="t-rev-inl t-since-c99"><span>and the element type is a type with a known constant size (that is, elements are not VLA)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>, then the declarator declares an array of constant known size:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// integer constants are constant expressions</span>
 <span class="kw4">char</span> o<span class="br0">[</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// sizeof is a constant expression</span>
 <span class="kw2">enum</span> <span class="br0">{</span> MAX_SZ<span class="sy1">=</span><span class="nu0">100</span> <span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span> n<span class="br0">[</span>MAX_SZ<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// enum constants are constant expressions</span></pre></div></div>
-<p>Arrays of constant known size can use <a href="array_initialization.htm" title="c/language/array initialization">array initializers</a> to provide their initial values:
+<p>Arrays of constant known size can use <a href="./array_initialization.htm" title="c/language/array initialization">array initializers</a> to provide their initial values:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// declares int[5] initialized to 1,2,3,0,0</span>
 <span class="kw4">char</span> str<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="st0">"abc"</span><span class="sy4">;</span> <span class="co1">// declares char[4] initialized to 'a','b','c','\0'</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
 <p>In function parameter lists, additional syntax elements are allowed within the array declarators: the keyword <code><b>static</b></code> and <span class="t-spar">qualifiers</span>, which may appear in any order before the size expression (they may also appear even when the size expression is omitted).
-</p><p>In each <a href="operator_other.htm#Function_call" title="c/language/operator other">function call</a> to a function where an array parameter uses the keyword <code><b>static</b></code> between <code><b>[</b></code> and <code><b>]</b></code>, the value of the actual parameter must be a valid pointer to the first element of an array with at least as many elements as specified by <span class="t-spar">expression</span>:
+</p><p>In each <a href="./operator_other.htm#Function_call" title="c/language/operator other">function call</a> to a function where an array parameter uses the keyword <code><b>static</b></code> between <code><b>[</b></code> and <code><b>]</b></code>, the value of the actual parameter must be a valid pointer to the first element of an array with at least as many elements as specified by <span class="t-spar">expression</span>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> fadd<span class="br0">(</span><span class="kw4">double</span> a<span class="br0">[</span><span class="kw4">static</span> <span class="nu0">10</span><span class="br0">]</span>, <span class="kw4">const</span> <span class="kw4">double</span> b<span class="br0">[</span><span class="kw4">static</span> <span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span>
 <span class="br0">{</span>
@@ -304,7 +304,7 @@ where</div>
 <span class="br0">{</span>
     <span class="co1">// in this function, a has type const int* const (const pointer to const int)</span>
 <span class="br0">}</span></pre></div></div>
-<p>This is commonly used with the <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a> type qualifier:
+<p>This is commonly used with the <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a> type qualifier:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> fadd<span class="br0">(</span><span class="kw4">double</span> a<span class="br0">[</span><span class="kw4">static</span> <span class="kw4">restrict</span> <span class="nu0">10</span><span class="br0">]</span>,
           <span class="kw4">const</span> <span class="kw4">double</span> b<span class="br0">[</span><span class="kw4">static</span> <span class="kw4">restrict</span> <span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span>
@@ -317,8 +317,8 @@ where</div>
     <span class="br0">}</span>
 <span class="br0">}</span></pre></div></div>
 <h4> <span class="mw-headline" id="Variable-length_arrays">Variable-length arrays</span></h4>
-<p>If <span class="t-spar">expression</span> is not an <a href="constant_expression.htm#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a>, the declarator is for an array of variable size.
-</p><p>Each time the flow of control passes over the declaration, <span class="t-spar">expression</span> is evaluated (and it must always evaluate to a value greater than zero), and the array is allocated (correspondingly, <a href="lifetime.htm" title="c/language/lifetime">lifetime</a> of a VLA ends when the declaration goes out of scope). The size of each VLA instance does not change during its lifetime, but on another pass over the same code, it may be allocated with a different size.
+<p>If <span class="t-spar">expression</span> is not an <a href="./constant_expression.htm#Integer_constant_expression" title="c/language/constant expression">integer constant expression</a>, the declarator is for an array of variable size.
+</p><p>Each time the flow of control passes over the declaration, <span class="t-spar">expression</span> is evaluated (and it must always evaluate to a value greater than zero), and the array is allocated (correspondingly, <a href="./lifetime.htm" title="c/language/lifetime">lifetime</a> of a VLA ends when the declaration goes out of scope). The size of each VLA instance does not change during its lifetime, but on another pass over the same code, it may be allocated with a different size.
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#include &lt;stdio.h&gt;</span>
@@ -328,17 +328,17 @@ where</div>
    <span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
 label<span class="sy4">:;</span>
    <span class="kw4">int</span> a<span class="br0">[</span>n<span class="br0">]</span><span class="sy4">;</span> <span class="co1">// re-allocated 10 times, each with a different size</span>
-   <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The array has&nbsp;%zu elements<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>a<span class="br0">)</span><span class="sy4">;</span>
+   <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"The array has&nbsp;%zu elements<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a <span class="sy2">/</span> <span class="kw4">sizeof</span> <span class="sy2">*</span>a<span class="br0">)</span><span class="sy4">;</span>
    <span class="kw1">if</span> <span class="br0">(</span>n<span class="sy2">++</span> <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="br0">)</span>
        <span class="kw1">goto</span> label<span class="sy4">;</span> <span class="co1">// leaving the scope of a VLA ends its lifetime</span>
 <span class="br0">}</span></pre></div></div>
 </div>
 <p>If the size is <code><b>*</b></code>, the declaration is for a VLA of unspecified size. Such declaration may only appear in a function prototype scope, and declares an array of a complete type. In fact, all VLA declarators in function prototype scope are treated as if <span class="t-spar">expression</span> were replaced by <code><b>*</b></code>.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> foo<span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> x, <span class="kw4">int</span> a<span class="br0">[</span><span class="sy2">*</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
-<span class="kw4">void</span> foo<span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> x, <span class="kw4">int</span> a<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">void</span> foo<span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> x, <span class="kw4">int</span> a<span class="br0">[</span><span class="sy2">*</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="kw4">void</span> foo<span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> x, <span class="kw4">int</span> a<span class="br0">[</span>x<span class="br0">]</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same as sizeof(int*)</span>
+    <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// same as sizeof(int*)</span>
 <span class="br0">}</span></pre></div></div>
 <p>Variable-length arrays and the types derived from them (pointers to them, etc) are commonly known as "variably-modified types" (VM). Objects of any variably-modified type may only be declared at block scope or function prototype scope.
 </p>
@@ -356,7 +356,7 @@ label<span class="sy4">:;</span>
 <span class="co1">//  static int E[m]; // Error: static duration VLA</span>
 <span class="co1">//  extern int F[m]; // Error: VLA with linkage</span>
     <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>s<span class="br0">)</span><span class="br0">[</span>m<span class="br0">]</span><span class="sy4">;</span>     <span class="co1">// OK: block scope/auto duration VM</span>
-    s <span class="sy1">=</span> <a href="../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span>m <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: s points to VLA in allocated storage</span>
+    s <span class="sy1">=</span> <a href="../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span>m <span class="sy2">*</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// OK: s points to VLA in allocated storage</span>
 <span class="co1">//  extern int (*r)[m]; // Error: VM with linkage</span>
     <span class="kw4">static</span> <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>q<span class="br0">)</span><span class="br0">[</span>m<span class="br0">]</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>B<span class="sy4">;</span> <span class="co1">// OK: block scope/static duration VM}</span>
 <span class="br0">}</span></pre></div></div>
@@ -382,16 +382,16 @@ label<span class="sy4">:;</span>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
 </tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=5" title="Edit section: Arrays of unknown size">edit</a>]</span> <span class="mw-headline" id="Arrays_of_unknown_size">Arrays of unknown size</span></h4>
-<p>If <span class="t-spar">expression</span> in an array declarator is omitted, it declares an array of unknown size. Except in function parameter lists (where such arrays are transformed to pointers) and when an  <a href="array_initialization.htm" title="c/language/array initialization">initializer</a> is available, such type is an <a href="compatible_type.htm#Incomplete_types" title="c/language/type">incomplete type</a><span class="t-rev-inl t-since-c99"><span> (note that VLA of unspecified size, declared with <code><b>*</b></code> as the size, is a complete type)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>:
+<p>If <span class="t-spar">expression</span> in an array declarator is omitted, it declares an array of unknown size. Except in function parameter lists (where such arrays are transformed to pointers) and when an  <a href="./array_initialization.htm" title="c/language/array initialization">initializer</a> is available, such type is an <a href="./compatible_type.htm#Incomplete_types" title="c/language/type">incomplete type</a><span class="t-rev-inl t-since-c99"><span> (note that VLA of unspecified size, declared with <code><b>*</b></code> as the size, is a complete type)</span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span>:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw2">extern</span> <span class="kw4">int</span> x<span class="br0">[</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// the type of x is "array of unknown bound of int"</span>
 <span class="kw4">int</span> a<span class="br0">[</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span> <span class="co1">// the type of a is "array of 3 int"</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c99"><td>
-<p>Within a <a href="struct.htm" title="c/language/struct">struct</a> definition, an array of unknown size may appear as the last member (as long as there is at least one other named member), in which case it is a special case known as <i>flexible array member</i>. See <a href="struct.htm" title="c/language/struct">struct</a> for details:
+<p>Within a <a href="./struct.htm" title="c/language/struct">struct</a> definition, an array of unknown size may appear as the last member (as long as there is at least one other named member), in which case it is a special case known as <i>flexible array member</i>. See <a href="./struct.htm" title="c/language/struct">struct</a> for details:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">struct</span> s <span class="br0">{</span> <span class="kw4">int</span> n<span class="sy4">;</span> <span class="kw4">double</span> d<span class="br0">[</span><span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span><span class="sy4">;</span> <span class="co1">// s.d is a flexible array member</span>
-<span class="kw1">struct</span> s <span class="sy2">*</span>s1 <span class="sy1">=</span> <a href="../memory/malloc.html"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="kw4">sizeof</span> <span class="br0">(</span><span class="kw1">struct</span> s<span class="br0">)</span> <span class="sy2">+</span> <span class="br0">(</span><span class="kw4">sizeof</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="sy2">*</span> <span class="nu0">8</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// as if d was double d[8]</span></pre></div></div>
+<span class="kw1">struct</span> s <span class="sy2">*</span>s1 <span class="sy1">=</span> <a href="../memory/malloc.htm"><span class="kw403">malloc</span></a><span class="br0">(</span><span class="kw4">sizeof</span> <span class="br0">(</span><span class="kw1">struct</span> s<span class="br0">)</span> <span class="sy2">+</span> <span class="br0">(</span><span class="kw4">sizeof</span> <span class="br0">(</span><span class="kw4">double</span><span class="br0">)</span> <span class="sy2">*</span> <span class="nu0">8</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// as if d was double d[8]</span></pre></div></div>
 <p><br>
 </p>
 </td>
@@ -400,12 +400,12 @@ label<span class="sy4">:;</span>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=6" title="Edit section: Qualifiers">edit</a>]</span> <span class="mw-headline" id="Qualifiers">Qualifiers</span></h4>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-until-c23"><td>
-<p>If an array type is declared with a <a href="const.htm" title="c/language/const"><code>const</code></a>, <a href="volatile.htm" title="c/language/volatile"><code>volatile</code></a><span class="t-rev-inl t-since-c99"><span>, or <a href="restrict.htm" title="c/language/restrict"><code>restrict</code></a></span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> qualifier (which is possible through the use of <a href="typedef.htm" title="c/language/typedef">typedef</a>), the array type is not qualified, but its element type is:
+<p>If an array type is declared with a <a href="./const.htm" title="c/language/const"><code>const</code></a>, <a href="./volatile.htm" title="c/language/volatile"><code>volatile</code></a><span class="t-rev-inl t-since-c99"><span>, or <a href="./restrict.htm" title="c/language/restrict"><code>restrict</code></a></span><span><span class="t-mark-rev t-since-c99">(since C99)</span></span></span> qualifier (which is possible through the use of <a href="./typedef.htm" title="c/language/typedef">typedef</a>), the array type is not qualified, but its element type is:
 </p>
 </td>
 <td><span class="t-mark-rev t-until-c23">(until C23)</span></td></tr>
 <tr class="t-rev t-since-c23"><td>
-<p>An array type and its element type are always considered to be identically qualified, except that an array type is never considered to be <a href="atomic.htm" title="c/language/atomic"><code>_Atomic</code></a>-qualified.
+<p>An array type and its element type are always considered to be identically qualified, except that an array type is never considered to be <a href="./atomic.htm" title="c/language/atomic"><code>_Atomic</code></a>-qualified.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-c23">(since C23)</span></td></tr>
@@ -417,7 +417,7 @@ label<span class="sy4">:;</span>
 <span class="co1">// Notes: clang applies the rule in C++/C23 even in C89-C17 modes</span></pre></div></div>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
-<p><a href="atomic.htm" title="c/language/atomic"><code>_Atomic</code></a> is not allowed to be applied to an array type, although an array of atomic type is allowed.
+<p><a href="./atomic.htm" title="c/language/atomic"><code>_Atomic</code></a> is not allowed to be applied to an array type, although an array of atomic type is allowed.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw1">typedef</span> <span class="kw4">int</span> A<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="sy4">;</span>
 <span class="co1">// _Atomic A a0 = {0};    // Error</span>
@@ -428,7 +428,7 @@ _Atomic<span class="br0">(</span><span class="kw4">int</span><span class="br0">)
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
 </tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=7" title="Edit section: Assignment">edit</a>]</span> <span class="mw-headline" id="Assignment">Assignment</span></h4>
-<p>Objects of array type are not <a href="value_category.htm" title="c/language/value category">modifiable lvalues</a>, and although their address may be taken, they cannot appear on the left hand side of an assignment operator. However, structs with array members are modifiable lvalues and can be assigned:
+<p>Objects of array type are not <a href="./value_category.htm" title="c/language/value category">modifiable lvalues</a>, and although their address may be taken, they cannot appear on the left hand side of an assignment operator. However, structs with array members are modifiable lvalues and can be assigned:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span>, b<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">4</span>,<span class="nu0">5</span>,<span class="nu0">6</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>p<span class="br0">)</span><span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="sy3">&amp;</span>a<span class="sy4">;</span> <span class="co1">// okay, address of a can be taken</span>
@@ -436,27 +436,27 @@ _Atomic<span class="br0">(</span><span class="kw4">int</span><span class="br0">)
 <span class="kw1">struct</span> <span class="br0">{</span> <span class="kw4">int</span> c<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span><span class="sy4">;</span> <span class="br0">}</span> s1, s2 <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">3</span>,<span class="nu0">4</span>,<span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
 s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// okay: can assign structs holding array members</span></pre></div></div>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=8" title="Edit section: Array to pointer conversion">edit</a>]</span> <span class="mw-headline" id="Array_to_pointer_conversion">Array to pointer conversion</span></h4>
-<p>Any <a href="value_category.htm" title="c/language/value category">lvalue expression</a> of array type, when used in any context other than
+<p>Any <a href="./value_category.htm" title="c/language/value category">lvalue expression</a> of array type, when used in any context other than
 </p>
-<ul><li> as the operand of the <a href="operator_member_access.htm" title="c/language/operator member access">address-of operator</a>
-</li><li> as the operand of <a href="sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a>
-</li><li> as the operand of <a href="typeof_unqual.htm" title="c/language/typeof"><code>typeof</code></a> and <a href="typeof_unqual.htm" title="c/language/typeof unqual" class="mw-redirect"><code>typeof_unqual</code></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
-</li><li> as the string literal used for <a href="array_initialization.htm" title="c/language/array initialization">array initialization</a>
+<ul><li> as the operand of the <a href="./operator_member_access.htm" title="c/language/operator member access">address-of operator</a>
+</li><li> as the operand of <a href="./sizeof.htm" title="c/language/sizeof"><code>sizeof</code></a>
+</li><li> as the operand of <a href="./typeof_unqual.htm" title="c/language/typeof"><code>typeof</code></a> and <a href="./typeof_unqual.htm" title="c/language/typeof unqual" class="mw-redirect"><code>typeof_unqual</code></a> <span class="t-mark-rev t-since-c23">(since C23)</span>
+</li><li> as the string literal used for <a href="./array_initialization.htm" title="c/language/array initialization">array initialization</a>
 </li></ul>
 <table class="t-rev-begin">
 <tbody><tr class="t-rev t-since-c11"><td>
-<ul><li> as the operand of <span class="t-rev-inl t-since-c11 t-until-c23"><span><a href="alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
+<ul><li> as the operand of <span class="t-rev-inl t-since-c11 t-until-c23"><span><a href="./alignof.htm" title="c/language/ Alignof"><code>_Alignof</code></a></span><span><span class="t-mark-rev t-since-c11">(since C11)</span><span class="t-mark-rev t-until-c23">(until C23)</span></span></span><span class="t-rev-inl t-since-c23"><span><a href="./alignof.htm" title="c/language/alignof" class="mw-redirect"><code>alignof</code></a></span><span><span class="t-mark-rev t-since-c23">(since C23)</span></span></span>
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-c11">(since C11)</span></td></tr>
 </tbody></table>
-<p>undergoes an <a href="conversion.htm" title="c/language/conversion">implicit conversion</a> to the pointer to its first element. The result is not an lvalue.
-</p><p>If the array was declared <a href="storage_class_specifiers.htm" title="c/language/storage duration"><code>register</code></a>, the behavior of the program that attempts such conversion is undefined.
+<p>undergoes an <a href="./conversion.htm" title="c/language/conversion">implicit conversion</a> to the pointer to its first element. The result is not an lvalue.
+</p><p>If the array was declared <a href="./storage_class_specifiers.htm" title="c/language/storage duration"><code>register</code></a>, the behavior of the program that attempts such conversion is undefined.
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">3</span><span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>,<span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
 <span class="kw4">int</span><span class="sy2">*</span> p <span class="sy1">=</span> a<span class="sy4">;</span>
-<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints size of array</span>
-<a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints size of a pointer</span></pre></div></div>
+<a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> a<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints size of array</span>
+<a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%zu<span class="es1">\n</span>"</span>, <span class="kw4">sizeof</span> p<span class="br0">)</span><span class="sy4">;</span> <span class="co1">// prints size of a pointer</span></pre></div></div>
 <p>When an array type is used in a function parameter list, it is transformed to the corresponding pointer type: <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">[</span><span class="nu0">2</span><span class="br0">]</span><span class="br0">)</span></span></span> and <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span><span class="sy2">*</span> a<span class="br0">)</span></span></span> declare the same function. Since the function's actual parameter type is pointer type, a function call with an array argument performs array-to-pointer conversion; the size of the argument array is not available to the called function and must be passed explicitly:
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -465,13 +465,13 @@ s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// 
 <span class="kw4">void</span> f<span class="br0">(</span><span class="kw4">int</span> a<span class="br0">[</span><span class="br0">]</span>, <span class="kw4">int</span> sz<span class="br0">)</span> <span class="co1">// actually declares void f(int* a, int sz)</span>
 <span class="br0">{</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> sz<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, a<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">void</span> g<span class="br0">(</span><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span>a<span class="br0">)</span><span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="br0">)</span> <span class="co1">// pointer to array parameter is not transformed</span>
 <span class="br0">{</span>
     <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> <span class="nu0">10</span><span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-        <a href="../io/fprintf.html"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="sy2">*</span>a<span class="br0">)</span><span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+        <a href="../io/fprintf.htm"><span class="kw851">printf</span></a><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span>, <span class="br0">(</span><span class="sy2">*</span>a<span class="br0">)</span><span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
@@ -503,11 +503,11 @@ s1 <span class="sy1">=</span> s2<span class="sy4">;</span> <span class="co1">// 
 <td><span class="t-mark-rev t-since-c99">(since C99)</span></td></tr>
 </tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=10" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p>Zero-length array declarations are not allowed, even though some compilers offer them as extensions (typically as a pre-C99 implementation of <a href="struct.htm" title="c/language/struct">flexible array members</a>).
+<p>Zero-length array declarations are not allowed, even though some compilers offer them as extensions (typically as a pre-C99 implementation of <a href="./struct.htm" title="c/language/struct">flexible array members</a>).
 </p><p>If the size <span class="t-spar">expression</span> of a VLA has side effects, they are guaranteed to be produced except when it is a part of a sizeof expression whose result doesn't depend on it:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">5</span>, m <span class="sy1">=</span> <span class="nu0">5</span><span class="sy4">;</span>
-<a href="../types/size_t.html"><span class="kw100">size_t</span></a> sz <span class="sy1">=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">[</span>n<span class="sy2">++</span><span class="br0">]</span><span class="br0">)</span><span class="br0">[</span>m<span class="sy2">++</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// n is incremented, m may or may not be incremented</span></pre></div></div>
+<a href="../types/size_t.htm"><span class="kw100">size_t</span></a> sz <span class="sy1">=</span> <span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span> <span class="br0">(</span><span class="sy2">*</span><span class="br0">[</span>n<span class="sy2">++</span><span class="br0">]</span><span class="br0">)</span><span class="br0">[</span>m<span class="sy2">++</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// n is incremented, m may or may not be incremented</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/language/array&amp;action=edit&amp;section=11" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-23">
 <ul><li> C23 standard (ISO/IEC 9899:2024): 

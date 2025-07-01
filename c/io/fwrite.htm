@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../header/stdio.html" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../header/stdio.htm" title="c/header/stdio"><tt>&lt;stdio.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -194,30 +194,30 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody>
 <tbody class="t-dcl-rev">
 <tr class="t-dcl t-until-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="../types/size_t.html"><span class="kw100">size_t</span></a> fwrite<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> buffer, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> count,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> fwrite<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> buffer, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> count,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-until-c99">(until C99)</span> </td>
 </tr>
 <tr class="t-dcl t-since-c99">
-<td> <div><span class="mw-geshi c source-c"><a href="../types/size_t.html"><span class="kw100">size_t</span></a> fwrite<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> buffer, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> size, <a href="../types/size_t.html"><span class="kw100">size_t</span></a> count,<br>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi c source-c"><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> fwrite<span class="br0">(</span> <span class="kw4">const</span> <span class="kw4">void</span><span class="sy2">*</span> <span class="kw4">restrict</span> buffer, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> size, <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> count,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> <span class="kw4">restrict</span> stream <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-c99">(since C99)</span> </td>
 </tr>
 </tbody><tbody>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>Writes <span class="t-c"><span class="mw-geshi c source-c">count</span></span> of objects from the given array <span class="t-c"><span class="mw-geshi c source-c">buffer</span></span> to the output stream <span class="t-c"><span class="mw-geshi c source-c">stream</span></span>. The objects are written as if by reinterpreting each object as an array of <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> and calling <span class="t-lc"><a href="putc.htm" title="c/io/fputc">fputc</a></span> <span class="t-c"><span class="mw-geshi c source-c">size</span></span> times for each object to write those <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>s into <span class="t-c"><span class="mw-geshi c source-c">stream</span></span>, in order. The file position indicator for the stream is advanced by the number of characters written.
+<p>Writes <span class="t-c"><span class="mw-geshi c source-c">count</span></span> of objects from the given array <span class="t-c"><span class="mw-geshi c source-c">buffer</span></span> to the output stream <span class="t-c"><span class="mw-geshi c source-c">stream</span></span>. The objects are written as if by reinterpreting each object as an array of <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span> and calling <span class="t-lc"><a href="./putc.htm" title="c/io/fputc">fputc</a></span> <span class="t-c"><span class="mw-geshi c source-c">size</span></span> times for each object to write those <span class="t-c"><span class="mw-geshi c source-c"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></span>s into <span class="t-c"><span class="mw-geshi c source-c">stream</span></span>, in order. The file position indicator for the stream is advanced by the number of characters written.
 </p><p>If an error occurs, the resulting value of the file position indicator for the stream is indeterminate.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="fwrite.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="fwrite.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="fwrite.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="fwrite.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="fwrite.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./fwrite.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./fwrite.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./fwrite.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./fwrite.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./fwrite.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/io/fwrite&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -267,19 +267,19 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
     <span class="kw4">double</span> a<span class="br0">[</span>SIZE<span class="br0">]</span> <span class="sy1">=</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span>, <span class="nu0">4</span>, <span class="nu0">5</span><span class="br0">}</span><span class="sy4">;</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f1 <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"file.bin"</span>, <span class="st0">"wb"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../error/assert.html"><span class="kw407">assert</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
-    <a href="../types/size_t.html"><span class="kw100">size_t</span></a> r1 <span class="sy1">=</span> fwrite<span class="br0">(</span>a, <span class="kw4">sizeof</span> a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, SIZE, f1<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"wrote&nbsp;%zu elements out of&nbsp;%d requested<span class="es1">\n</span>"</span>, r1, SIZE<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f1 <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"file.bin"</span>, <span class="st0">"wb"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../error/assert.htm"><span class="kw407">assert</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> r1 <span class="sy1">=</span> fwrite<span class="br0">(</span>a, <span class="kw4">sizeof</span> a<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, SIZE, f1<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"wrote&nbsp;%zu elements out of&nbsp;%d requested<span class="es1">\n</span>"</span>, r1, SIZE<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f1<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw4">double</span> b<span class="br0">[</span>SIZE<span class="br0">]</span><span class="sy4">;</span>
-    <a href="FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f2 <span class="sy1">=</span> <a href="fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"file.bin"</span>, <span class="st0">"rb"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../types/size_t.html"><span class="kw100">size_t</span></a> r2 <span class="sy1">=</span> <a href="fread.htm"><span class="kw825">fread</span></a><span class="br0">(</span>b, <span class="kw4">sizeof</span> b<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, SIZE, f2<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f2<span class="br0">)</span><span class="sy4">;</span>
-    <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"read back: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> r2<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
-        <a href="fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%0.2f "</span>, b<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./FILE.htm"><span class="kw883">FILE</span></a><span class="sy2">*</span> f2 <span class="sy1">=</span> <a href="./fopen.htm"><span class="kw819">fopen</span></a><span class="br0">(</span><span class="st0">"file.bin"</span>, <span class="st0">"rb"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../types/size_t.htm"><span class="kw100">size_t</span></a> r2 <span class="sy1">=</span> <a href="./fread.htm"><span class="kw825">fread</span></a><span class="br0">(</span>b, <span class="kw4">sizeof</span> b<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>, SIZE, f2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fclose.htm"><span class="kw822">fclose</span></a><span class="br0">(</span>f2<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"read back: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.htm"><span class="kw100">size_t</span></a> i <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> i <span class="sy1">&lt;</span> r2<span class="sy4">;</span> <span class="sy2">++</span>i<span class="br0">)</span>
+        <a href="./fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"%0.2f "</span>, b<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
@@ -326,19 +326,19 @@ read back: 1.00 2.00 3.00 4.00 5.00</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fprintf.htm" title="c/io/fprintf"> <span class="t-lines"><span>printf</span><span>fprintf</span><span>sprintf</span><span>snprintf</span><span>printf_s</span><span>fprintf_s</span><span>sprintf_s</span><span>snprintf_s</span></span></a></div><div><span class="t-lines"><span></span><span></span><span></span><span><span class="t-mark-rev t-since-c99">(C99)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span><span><span class="t-mark-rev t-since-c11">(C11)</span></span></span></div></div>
 </td>
-<td>   prints formatted output to <span class="t-lc"><a href="std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
+<td>   prints formatted output to <span class="t-lc"><a href="./std_streams.htm" title="c/io/std streams">stdout</a></span>, a file stream or a buffer  <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fprintf&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fputs.htm" title="c/io/fputs"> <span class="t-lines"><span>fputs</span></span></a></div></div>
 </td>
 <td>   writes a character string to a file stream <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fputs&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="fread.htm" title="c/io/fread"> <span class="t-lines"><span>fread</span></span></a></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./fread.htm" title="c/io/fread"> <span class="t-lines"><span>fread</span></span></a></div></div>
 </td>
 <td>   reads from a file <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/io/dsc_fread&amp;action=edit">[edit]</a></span>
 </td></tr>

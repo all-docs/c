@@ -186,7 +186,7 @@ html { font-variant-ligatures: no-common-ligatures; }
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
-<td> <div>Defined in header <code><a href="../../header/fenv.html" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
+<td> <div>Defined in header <code><a href="../../header/fenv.htm" title="c/header/fenv"><tt>&lt;fenv.h&gt;</tt></a></code>
  </div></td>
 <td></td>
 <td></td>
@@ -198,16 +198,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tr>
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
-<p>First, saves the current floating-point environment to the object pointed to by <code>envp</code> (similar to <span class="t-lc"><a href="feenv.htm" title="c/numeric/fenv/feenv">fegetenv</a></span>), then clears all floating-point status flags, and then installs the non-stop mode: future floating-point exceptions will not interrupt execution (will not trap), until the floating-point environment is restored by <span class="t-lc"><a href="feupdateenv.htm" title="c/numeric/fenv/feupdateenv">feupdateenv</a></span> or <span class="t-lc"><a href="feenv.htm" title="c/numeric/fenv/feenv">fesetenv</a></span>.
-</p><p>This function may be used in the beginning of a subroutine that must hide the floating-point exceptions it may raise from the caller. If only some exceptions must be suppressed, while others must be reported, the non-stop mode is usually ended with a call to <span class="t-lc"><a href="feupdateenv.htm" title="c/numeric/fenv/feupdateenv">feupdateenv</a></span> after clearing the unwanted exceptions.
+<p>First, saves the current floating-point environment to the object pointed to by <code>envp</code> (similar to <span class="t-lc"><a href="./feenv.htm" title="c/numeric/fenv/feenv">fegetenv</a></span>), then clears all floating-point status flags, and then installs the non-stop mode: future floating-point exceptions will not interrupt execution (will not trap), until the floating-point environment is restored by <span class="t-lc"><a href="./feupdateenv.htm" title="c/numeric/fenv/feupdateenv">feupdateenv</a></span> or <span class="t-lc"><a href="./feenv.htm" title="c/numeric/fenv/feenv">fesetenv</a></span>.
+</p><p>This function may be used in the beginning of a subroutine that must hide the floating-point exceptions it may raise from the caller. If only some exceptions must be suppressed, while others must be reported, the non-stop mode is usually ended with a call to <span class="t-lc"><a href="./feupdateenv.htm" title="c/numeric/fenv/feupdateenv">feupdateenv</a></span> after clearing the unwanted exceptions.
 </p>
 <table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
-<li class="toclevel-1 tocsection-1"><a href="feholdexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
-<li class="toclevel-1 tocsection-2"><a href="feholdexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
-<li class="toclevel-1 tocsection-3"><a href="feholdexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
-<li class="toclevel-1 tocsection-4"><a href="feholdexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
-<li class="toclevel-1 tocsection-5"><a href="feholdexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-1"><a href="./feholdexcept.htm#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="./feholdexcept.htm#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="./feholdexcept.htm#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="./feholdexcept.htm#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="./feholdexcept.htm#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
 </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=c/numeric/fenv/feholdexcept&amp;action=edit&amp;section=1" title="Edit section: Parameters">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
@@ -234,14 +234,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 &nbsp;
 <span class="kw4">void</span> show_fe_exceptions<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
-    <span class="kw1">if</span><span class="br0">(</span><a href="fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"current exceptions raised: "</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw729">FE_DIVBYZERO</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_DIVBYZERO"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INEXACT"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="br0">)</span>       <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_INVALID"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw732">FE_OVERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>      <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_OVERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw733">FE_UNDERFLOW</span></a><span class="br0">)</span><span class="br0">)</span>     <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" FE_UNDERFLOW"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><a href="./fetestexcept.htm"><span class="kw719">fetestexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy1">==</span><span class="nu0">0</span><span class="br0">)</span> <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">" none"</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">double</span> x2 <span class="br0">(</span><span class="kw4">double</span> x<span class="br0">)</span>   <span class="coMULTI">/* times two */</span>
@@ -252,22 +252,22 @@ html { font-variant-ligatures: no-common-ligatures; }
     feholdexcept<span class="br0">(</span><span class="sy3">&amp;</span>curr_excepts<span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="coMULTI">/* Raise inexact and overflow exceptions. */</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In x2():  x =&nbsp;%f<span class="es1">\n</span>"</span>, x<span class="sy1">=</span>x<span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"In x2():  x =&nbsp;%f<span class="es1">\n</span>"</span>, x<span class="sy1">=</span>x<span class="sy2">*</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* hide inexact exception from caller */</span>
+    <a href="./feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw730">FE_INEXACT</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* hide inexact exception from caller */</span>
 &nbsp;
     <span class="coMULTI">/* Merge caller's exceptions (FE_INVALID)        */</span>
     <span class="coMULTI">/* with remaining x2's exceptions (FE_OVERFLOW). */</span>
-    <a href="feupdateenv.htm"><span class="kw727">feupdateenv</span></a><span class="br0">(</span><span class="sy3">&amp;</span>curr_excepts<span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feupdateenv.htm"><span class="kw727">feupdateenv</span></a><span class="br0">(</span><span class="sy3">&amp;</span>curr_excepts<span class="br0">)</span><span class="sy4">;</span>
     <span class="kw1">return</span> x<span class="sy4">;</span>
 <span class="br0">}</span>
 &nbsp;
 <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
 <span class="br0">{</span>    
-    <a href="feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
-    <a href="feraiseexcept.htm"><span class="kw720">feraiseexcept</span></a><span class="br0">(</span><a href="FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* some computation with invalid argument */</span>
+    <a href="./feclearexcept.htm"><span class="kw718">feclearexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw728">FE_ALL_EXCEPT</span></a><span class="br0">)</span><span class="sy4">;</span>
+    <a href="./feraiseexcept.htm"><span class="kw720">feraiseexcept</span></a><span class="br0">(</span><a href="./FE_exceptions.htm"><span class="kw731">FE_INVALID</span></a><span class="br0">)</span><span class="sy4">;</span>   <span class="coMULTI">/* some computation with invalid argument */</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
-    <a href="../../io/fprintf.html"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"x2(DBL_MAX) =&nbsp;%f<span class="es1">\n</span>"</span>, x2<span class="br0">(</span><a href="../../types/limits.html"><span class="kw378">DBL_MAX</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../io/fprintf.htm"><span class="kw850">printf</span></a><span class="br0">(</span><span class="st0">"x2(DBL_MAX) =&nbsp;%f<span class="es1">\n</span>"</span>, x2<span class="br0">(</span><a href="../../types/limits.htm"><span class="kw378">DBL_MAX</span></a><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
     show_fe_exceptions<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
 &nbsp;
     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
@@ -298,19 +298,19 @@ current exceptions raised:  FE_INVALID FE_OVERFLOW</pre></div></div>
 <table class="t-dsc-begin">
 
 <tbody><tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feupdateenv.htm" title="c/numeric/fenv/feupdateenv"> <span class="t-lines"><span>feupdateenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feupdateenv.htm" title="c/numeric/fenv/feupdateenv"> <span class="t-lines"><span>feupdateenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   restores the floating-point environment and raises the previously raise exceptions <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feupdateenv&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="feenv.htm" title="c/numeric/fenv/feenv"> <span class="t-lines"><span>fegetenv</span><span>fesetenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./feenv.htm" title="c/numeric/fenv/feenv"> <span class="t-lines"><span>fegetenv</span><span>fesetenv</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>    saves or restores the current floating-point environment <br> <span class="t-mark">(function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_feenv&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
-<td>  <div class="t-dsc-member-div"><div><a href="FE_DFL_ENV.htm" title="c/numeric/fenv/FE DFL ENV"> <span class="t-lines"><span>FE_DFL_ENV</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
+<td>  <div class="t-dsc-member-div"><div><a href="./FE_DFL_ENV.htm" title="c/numeric/fenv/FE DFL ENV"> <span class="t-lines"><span>FE_DFL_ENV</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-c99">(C99)</span></span></span></div></div>
 </td>
 <td>   default floating-point environment <br> <span class="t-mark">(macro constant)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:c/numeric/fenv/dsc_FE_DFL_ENV&amp;action=edit">[edit]</a></span>
 </td></tr>
